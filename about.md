@@ -12,3 +12,9 @@ public static void main(String[] args){
 }
 ```
 
+```haskell
+reverse :: [int] -> [int]
+reverse []      = []
+reverse x : xs  = reverse xs : x
+```
+
