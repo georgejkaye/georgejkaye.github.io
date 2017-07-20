@@ -6,5 +6,9 @@ permalink: /about/
 
 Hello! I'm George Kaye ;)
 
-'''System.out.println("Hello world!");'''
+```java
+    public static void main(String[] args){
+        System.out.println("Hello world!");
+    }
+```
 
