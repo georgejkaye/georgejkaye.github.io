@@ -18,7 +18,8 @@ email: georgejkaye@googlemail.com
 description: > # this means to ignore newlines until "baseurl:"
   Welcome to the home of the Bountiful Bizon Buddies!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://www.georgejkaye.com
+avatar: https://raw.girhubusercontent.com/georgejkaye/georgejkaye.github.io/master/images/profile.jpg
 twitter_username: thelordwibble
 github_username:  georgejkaye
 
