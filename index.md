@@ -5,5 +5,3 @@
 layout: home
 ---
 
--Hello world!-
-'''System.out.println("Hello world!");'''
