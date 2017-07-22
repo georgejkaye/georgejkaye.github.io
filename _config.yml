@@ -26,7 +26,7 @@ github_username:  georgejkaye
 
 # Build settings
 markdown: kramdown
-theme: slate
+theme: minima
 plugins:
   - jekyll-feed
 
