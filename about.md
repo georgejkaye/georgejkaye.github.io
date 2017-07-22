@@ -1,20 +1,15 @@
 ---
-# layout: page
+layout: page
 title: About
 permalink: /about/
 ---
 
-Hello! I'm George Kaye ;)
+Some information about you!
 
-```java
-public static void main(String[] args){
-    System.out.println("Hello world!");
-}
-```
+### More Information
 
-```haskell
-reverse :: [int] -> [int]
-reverse []      = []
-reverse x : xs  = reverse xs : x
-```
+A place to include any other types of information that you'd like to include about yourself.
 
+### Contact me
+
+[email@domain.com](mailto:email@domain.com)
