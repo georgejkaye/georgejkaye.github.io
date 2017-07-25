@@ -3,6 +3,7 @@ layout: page
 title: Trains
 permalink: /trains/
 ---
-I like trains
 
-![A nice train](/images/train.jpg)
+-CrossCountry to the Coast-
+![CrossCountry to the Coast](/images/scenarios/crosscountry-to-the-coast.jpg)
+[Download](scenarios/CrossCountry to the Coast.rwp)
