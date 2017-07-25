@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Trains
+title: Train Simulator Scenarios
 permalink: /trains/
 ---
-# Train Simulator Scenarios
 [![CrossCountry to the Coast](/images/scenarios/crosscountry-to-the-coast-thumbnail.jpg)](001)
