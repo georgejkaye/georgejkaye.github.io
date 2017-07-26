@@ -2,6 +2,7 @@
 layout: scenario
 title: CrossCountry to the Coast
 image: /images/scenarios/crosscountry-to-the-coast.jpg
+alttext: crosscountry-to-the-coast
 
 traction: Class 390 Pendolino (Virgin Trains)
 toc: Virgin Trains Cross Country

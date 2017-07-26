@@ -2,6 +2,7 @@
 layout: scenario
 title: A Return to the Riviera
 image: /images/scenarios/return-to-the-riviera.jpg
+alttext: a-return-to-the-riviera
 
 traction: High Speed Train
 toc: Great Western Railway
