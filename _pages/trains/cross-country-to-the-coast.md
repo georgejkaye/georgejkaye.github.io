@@ -1,7 +1,7 @@
 ---
 layout: scenario
 title: CrossCountry to the Coast
-image: /images/trains/crosscountry-to-the-coast.jpg
+image: /images/scenarios/crosscountry-to-the-coast.jpg
 download: /scenarios/CrossCountry to the Coast.rwp
 steam: http://steamcommunity.com/sharedfiles/filedetails/?id=1089082966
 
