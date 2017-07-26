@@ -3,7 +3,6 @@ layout: page
 title: About
 permalink: /about/
 ---
-
 Hello there!
 
 ### More Information
