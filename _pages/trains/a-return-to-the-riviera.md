@@ -15,8 +15,6 @@ Although the age is diesel is but a distant memory, the Intercity 125 'High Spee
 
 This scenario uses the lovely Riviera Line Electrified by joethefish! I decided to go along with his story, so the CrossCountry franchise is now owned by Virgin again, who use Pendolinos across their network. GWR continue to operate the Greater Western franchise, and now operate a 4tph stopping service between Paignton and Exmouth (using the Class 365), in addition to 2tph fast services between Penzance and Paddington (using the Class 800). Freight operations are handled by DRS, who use their extensive fleet of Class 68s across the country.
 
-Timetables are somewhat based on current timetables, but it's the future so who knows!
-
 Have fun!
 
 ## Downloads
