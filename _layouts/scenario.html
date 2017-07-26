@@ -6,6 +6,12 @@ layout: default
     <div class="entry">
         <img src = {{ page.image }} alt = {{ page.title}}>
         <b><a href = {{ page.download }}>Download rwp</a>    <a href = {{ page.steam }}>Steam Workshop</a></b>
+        
+        <b>Traction:</b> {{page.traction}}
+        <b>Route:</b> {{page.route}}
+        <b>Duration:</b> {{page.duration}}
+        <b>Difficulty:</b> {{page.difficulty}}
+        
         {{ content }}
     </div>
 </article>
