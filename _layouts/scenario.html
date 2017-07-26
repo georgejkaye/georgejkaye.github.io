@@ -4,8 +4,8 @@ layout: default
 <article class="page"> 
     <h1>{{ page.title }}</h1>
     <div class="entry">
-        <img src = "/images" + {{ page.hyphens }} + ".jpg" alt = {{ page.title}}>
-        <b><a href = "/scenarios/" + {{ page.hyphens }}>Download rwp</a>    <a href = "http://steamcommunity.com/sharedfiles/filedetails/?id=" + {{ page.steam }}>Steam Workshop</a></b>
+        <img src = {{ page.image }} alt = {{ page.title}}>
+        <b><a href = {{ page.download }}>Download rwp</a>    <a href = {{ page.steam }}>Steam Workshop</a></b>
         {{ content }}
     </div>
 </article>

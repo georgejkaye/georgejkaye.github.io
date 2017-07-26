@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: scenario
 title: A Return to the Riviera
+image: /images/trains/return-to-the-riviera.jpg
+download: /scenarios/A Return to the Riviera.rwp
+steam: http://steamcommunity.com/sharedfiles/filedetails/?id=1090186754
 permalink: /trains/002
 ---
-![A Return to the Riviera](/images/scenarios/return-to-the-riviera.jpg)
-**[Download rwp](/scenarios/A Return to the Riviera.rwp)** **[Steam workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1090186754)**
+Testing!
