@@ -4,6 +4,7 @@ title: CrossCountry to the Coast
 image: /images/scenarios/crosscountry-to-the-coast.jpg
 
 traction: Class 390 Pendolino (Virgin Trains)
+toc: Virgin Trains Cross Country
 route: Riviera Line Electrified
 duration: 40 mins
 difficulty: Medium

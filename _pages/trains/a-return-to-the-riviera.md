@@ -3,7 +3,8 @@ layout: scenario
 title: A Return to the Riviera
 image: /images/scenarios/return-to-the-riviera.jpg
 
-traction: High Speed Train (Great Western Railway)
+traction: High Speed Train
+toc: Great Western Railway
 route: Riviera Line Electrified
 duration: 65 mins
 difficulty: Medium
