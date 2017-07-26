@@ -25,7 +25,7 @@ Have fun!
 
 ## Requirements
 
-###Payware
+### Payware
 
 #### Steam
 * [Riviera Line](http://store.steampowered.com/app/222632)
