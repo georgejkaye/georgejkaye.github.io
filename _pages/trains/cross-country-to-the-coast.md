@@ -21,29 +21,28 @@ Timetables are somewhat based on current timetables, but it's the future so who 
 
 Have fun!
 
-##Requirements:
+## Requirements:
 
-###Payware:
+### Payware:
 
-####Steam
-
+#### Steam
 * [Riviera Line](http://store.steampowered.com/app/222632)
 * [Class 390](http://store.steampowered.com/app/222632)
 * [East Coast Main Line South (London - Peterborough)](http://store.steampowered.com/app/222618)
 * [Class 68 Scotrail](http://store.steampowered.com/app/376930)*
 * [Class 66 EWS v2.0](http://store.steampowered.com/app/376930)*
 
-###Workshop
+### Workshop
 * [Riviera Line Electrified](http://steamcommunity.com/workshop/filedetails/?id=564595230)
 
-###Reskins:
-####DPSimulation
+### Reskins:
+#### DPSimulation
 * [Class 390 VT EMU](http://dpsimulation.org.uk/reskins.html#DefEMU)
 
-####Superalbs
+#### Superalbs
 * [Class 800 GWR](http://superalbs.weebly.com/class800greatwesternrailway.html)
 
-####BH Reskins
+#### BH Reskins
 * [Class 68 DRS](https://www.facebook.com/photo.php?fbid=1114446985268228&set=oa.515760421890353&type=1&theater)*
 
 #### Blue Rail Studios 

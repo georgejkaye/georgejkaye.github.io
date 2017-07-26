@@ -25,29 +25,29 @@ Have fun!
 
 ###Payware:
 
-####Steam
-
+#### Steam
 * [Riviera Line](http://store.steampowered.com/app/222632)
 * [Class 390](http://store.steampowered.com/app/222632)
 * [East Coast Main Line South (London - Peterborough)](http://store.steampowered.com/app/222618)
 * [Class 68 Scotrail](http://store.steampowered.com/app/376930)*
 * [Class 66 EWS v2.0](http://store.steampowered.com/app/376930)*
 
-####Armstrong Powerhouse
+#### Armstrong Powerhouse
 
 * [Class 43 (MTU)/Mk3 Enhancement Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_89&product_id=168)
 
-###Workshop
+### Workshop
 * [Riviera Line Electrified](http://steamcommunity.com/workshop/filedetails/?id=564595230)
 
-###Reskins:
-####DPSimulation
+### Reskins:
+
+#### DPSimulation
 * [Class 390 VT EMU](http://dpsimulation.org.uk/reskins.html#DefEMU)
 
-####Superalbs
+#### Superalbs
 * [Class 800 GWR](http://superalbs.weebly.com/class800greatwesternrailway.html)
 
-####BH Reskins
+#### BH Reskins
 * [Class 68 DRS](https://www.facebook.com/photo.php?fbid=1114446985268228&set=oa.515760421890353&type=1&theater)*
 
 #### Blue Rail Studios 
