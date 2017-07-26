@@ -2,8 +2,6 @@
 layout: scenario
 title: CrossCountry to the Coast
 image: /images/scenarios/crosscountry-to-the-coast.jpg
-download: /scenarios/CrossCountry to the Coast.rwp
-steam: http://steamcommunity.com/sharedfiles/filedetails/?id=1089082966
 
 traction: Class 390 Pendolino (Virgin Trains)
 route: Riviera Line Electrified
@@ -21,9 +19,13 @@ Timetables are somewhat based on current timetables, but it's the future so who 
 
 Have fun!
 
-## Requirements:
+## Downloads
+* [Direct download (rwp file)](/scenarios/CrossCountry to the Coast.rwp)
+* [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1089082966)
 
-### Payware:
+## Requirements
+
+### Payware
 
 #### Steam
 * [Riviera Line](http://store.steampowered.com/app/222632)
@@ -35,7 +37,7 @@ Have fun!
 ### Workshop
 * [Riviera Line Electrified](http://steamcommunity.com/workshop/filedetails/?id=564595230)
 
-### Reskins:
+### Reskins
 #### DPSimulation
 * [Class 390 VT EMU](http://dpsimulation.org.uk/reskins.html#DefEMU)
 

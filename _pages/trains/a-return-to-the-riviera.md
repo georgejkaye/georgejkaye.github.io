@@ -2,8 +2,6 @@
 layout: scenario
 title: A Return to the Riviera
 image: /images/scenarios/return-to-the-riviera.jpg
-download: /scenarios/A Return to the Riviera.rwp
-steam: http://steamcommunity.com/sharedfiles/filedetails/?id=1090186754
 
 traction: High Speed Train (Great Western Railway)
 route: Riviera Line Electrified
@@ -21,9 +19,13 @@ Timetables are somewhat based on current timetables, but it's the future so who 
 
 Have fun!
 
-##Requirements:
+## Downloads
+* [Direct download (rwp file)](/scenarios/A Return to the Riviera.rwp)
+* [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1090186754)
 
-###Payware:
+## Requirements
+
+###Payware
 
 #### Steam
 * [Riviera Line](http://store.steampowered.com/app/222632)
@@ -39,7 +41,7 @@ Have fun!
 ### Workshop
 * [Riviera Line Electrified](http://steamcommunity.com/workshop/filedetails/?id=564595230)
 
-### Reskins:
+### Reskins
 
 #### DPSimulation
 * [Class 390 VT EMU](http://dpsimulation.org.uk/reskins.html#DefEMU)
