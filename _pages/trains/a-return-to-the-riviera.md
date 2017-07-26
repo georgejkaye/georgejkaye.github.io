@@ -1,7 +1,7 @@
 ---
 layout: page
-title: CrossCountry to the Coast
-permalink: /trains/001
+title: A Return to the Riviera
+permalink: /trains/002
 ---
-![CrossCountry to the Coast](/images/scenarios/crosscountry-to-the-coast.jpg)
-**[Download](/scenarios/CrossCountry to the Coast.rwp)**
+![A Return to the Riviera](/images/scenarios/return-to-the-riviera.jpg)
+**[Download](/scenarios/A Return to the Riviera.rwp)**
