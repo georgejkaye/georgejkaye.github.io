@@ -33,6 +33,7 @@ Have fun!
 * [East Coast Main Line South (London - Peterborough)](http://store.steampowered.com/app/222618)
 * [Class 68 Scotrail](http://store.steampowered.com/app/376930)*
 * [Class 66 EWS v2.0](http://store.steampowered.com/app/222568)*
+* Class 801 (free to all TS users)
 
 ### Workshop
 * [Riviera Line Electrified](http://steamcommunity.com/workshop/filedetails/?id=564595230)
