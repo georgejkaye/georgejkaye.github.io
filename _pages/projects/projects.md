@@ -6,8 +6,8 @@ permalink: /projects/
 
 Below you can find a selection of projects I've worked on.
 
-[![Theorem Prover](/images/projects/theorem-prover-thumb.jpg){: id="theorem-pic"}](#theorem-prover)
-[![Ballin'](/images/projects/ballin-thumb.jpg){: id="ballin-pic"}](#ballin)
+[![Theorem Prover](/images/projects/theorem-prover-thumb.jpg){: .thumb id="theorem-pic"}](#theorem-prover)
+[![Ballin'](/images/projects/ballin-thumb.jpg){: .thumb id="ballin-pic"}](#ballin)
 
 ## [Theorem Prover](https://github.com/georgejkaye/theorem-prover)
 ![Theorem Prover](/images/projects/theorem-prover.jpg)

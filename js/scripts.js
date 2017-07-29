@@ -13,16 +13,10 @@ $(document).ready(function(){
 	    });
 	});
 
-    $('#theorem-pic').hover(function() {
-        $(this).attr('src', '/images/projects/theorem-prover-thumb-1.jpg');
+    $('.thumb').hover(function() {
+        $(this).attr('src', $(this).attr('src').slice(0, -4) + '-1.jpg');
     }, function() {
-        $(this).attr('src', '/images/projects/theorem-prover-thumb.jpg')
+        $(this).attr('src', $(this).attr('src').slice(0, -6) + '.jpg')
     });
-
-    $('#ballin-pic').hover(function() {
-        $(this).attr('src', '/images/projects/ballin-thumb-1.jpg');
-    }, function() {
-        $(this).attr('src', '/images/projects/ballin-thumb.jpg')
-    });
-
+    
 });
