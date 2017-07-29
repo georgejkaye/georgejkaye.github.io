@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 
@@ -12,4 +12,17 @@ $(document).ready(function(){
 	        window.location.hash = target;
 	    });
 	});
+
+    $('#theorem-pic').hover(function() {
+        $(this).attr('src', '/images/projects/theorem-prover-thumb-1.jpg');
+    }, function() {
+        $(this).attr('src', '/images/projects/theorem-prover-thumb.jpg')
+    });
+
+    $('#ballin-pic').hover(function() {
+        $(this).attr('src', '/images/projects/ballin-thumb-1.jpg');
+    }, function() {
+        $(this).attr('src', '/images/projects/ballin-thumb.jpg')
+    });
+
 });
