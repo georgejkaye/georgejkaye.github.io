@@ -7,7 +7,7 @@ permalink: /trains/
 Here you'll find all the Train Simulator scenarios I've made! 
 
 ## Route
-[Riviera Line Electrified](#riviera-line-electrified)
+[![Riviera Line Electrified](/images/routes/riviera-line-electrified-thumb.jpg){: .thumb}](#riviera-line-electrified)
 
 ## Traction
 [![High Speed Train](/images/trains/hst.jpg){: .thumb}](#high-speed-train)
