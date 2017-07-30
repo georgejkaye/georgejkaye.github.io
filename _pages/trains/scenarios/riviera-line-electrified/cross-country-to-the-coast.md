@@ -10,7 +10,7 @@ route: Riviera Line Electrified
 duration: 40 mins
 difficulty: Medium
 
-permalink: /trains/001
+permalink: /trains/crosscountry-to-the-coast
 ---
 
 Today you are driving the 1V41 0642 Birmingham New Street to Paignton Virgin CrossCountry service, for the last leg from Exeter St Davids to Paignton. Traction is in the form of a Class 390 Pendolino. It is a lovely spring morning so it should be a good drive! You will be stopping at Newton Abbot, Torquay and finally Paignton.

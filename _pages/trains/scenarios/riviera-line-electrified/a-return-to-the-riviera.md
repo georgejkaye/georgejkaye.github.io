@@ -1,8 +1,8 @@
 ---
 layout: scenario
-title: A Return to the Riviera
+title: Return to the Riviera
 image: /images/scenarios/return-to-the-riviera.jpg
-alttext: a-return-to-the-riviera
+alttext: return-to-the-riviera
 
 traction: High Speed Train
 toc: Great Western Railway
@@ -10,7 +10,7 @@ route: Riviera Line Electrified
 duration: 65 mins
 difficulty: Medium
 
-permalink: /trains/002
+permalink: /trains/return-to-the-riviera
 ---
 
 Although the age is diesel is but a distant memory, the Intercity 125 'High Speed Train' is still fondly regarded by many railway enthusiasts. Fortunately, GWR have arranged a special railtour using one of their old HSTs and have chosen you to have the honour of driving this very special journey! You will be calling at Exeter St Davids, Dawlish, Teignmouth, Newton Abbot, Torquay and Paignton. 
