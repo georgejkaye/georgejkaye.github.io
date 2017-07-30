@@ -9,7 +9,7 @@ Here you'll find all the Train Simulator scenarios I've made!
 Items indicated by an asterisk (*) in requirements lists are not required for enjoyment of the scenario.
 ## Riviera Line Electrified 
 [![CrossCountry to the Coast](/images/scenarios/crosscountry-to-the-coast-thumb.jpg){: .thumb id="s001"}](#crosscountry-to-the-coast) 
-[![A Return to the Riviera](/images/scenarios/return-to-the-riviera-thumb.jpg){: .thumb id="s002"}](#return-to-the-riviera)
+[![A Return to the Riviera](/images/scenarios/return-to-the-riviera-thumb.jpg){: .thumb id="s002"}](#a-return-to-the-riviera)
 
 # CrossCountry to the Coast
 
