@@ -61,9 +61,9 @@ Have fun!
 
 [Back](#top)
 
-# A Return to the Riviera
+# Return to the Riviera
 
-![A Return to the Riviera](/images/scenarios/return-to-the-riviera.jpg)
+![Return to the Riviera](/images/scenarios/return-to-the-riviera.jpg)
 
 * **Traction:** High Speed Train
 * **TOC:** Great Western Railway
@@ -79,7 +79,7 @@ Have fun!
 
 ## Downloads
 * [Direct download (rwp file)](/scenarios/A Return to the Riviera.rwp)
-* [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1090186754)
+* [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1095038719)
 
 ## Requirements
 
@@ -91,6 +91,7 @@ Have fun!
 * [East Coast Main Line South (London - Peterborough)](http://store.steampowered.com/app/222618)
 * [Class 68 Scotrail](http://store.steampowered.com/app/376930)*
 * [Class 66 EWS v2.0](http://store.steampowered.com/app/222568/)*
+* [European Loco and Asset Pack](http://store.steampowered.com/app/208300)
 * Class 801 (free to all TS users)
 
 #### Armstrong Powerhouse
