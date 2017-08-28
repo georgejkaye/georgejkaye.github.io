@@ -58,10 +58,12 @@ h1 {
 
 h2 {
   font-size: 24px;
+
 }
 
 h3 {
   font-size: 20px;
+  margin-top: 1em 0 15px;
 }
 
 h4 {
@@ -113,6 +115,20 @@ strong, b {
 
 img {
   max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+table, th, td {
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #d1d1d1;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    width: 60%;
 }
 
 // Fixes images in popup boxes from Google Translate
