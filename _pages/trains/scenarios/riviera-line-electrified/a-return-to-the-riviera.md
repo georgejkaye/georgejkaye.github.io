@@ -20,7 +20,7 @@ This scenario uses the lovely Riviera Line Electrified by joethefish! I decided 
 Have fun!
 
 ## Downloads
-* [Direct download (rwp file)](/scenarios/A Return to the Riviera.rwp)
+* [Direct download (rwp file)](/scenarios/Return to the Riviera.zip)
 * [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1090186754)
 
 ## Requirements
