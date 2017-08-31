@@ -1,0 +1,16 @@
+u, Show Mee the Mane, 2, 0, 0, 126, 6
+s, SchoolMooy Errors, 2, 0, 0, 125, 6
+u, The Badmans, 2, 0, 0, 119, 6
+u, Kim Jong-un XI, 2, 0, 0, 86, 6
+u, Batshuayi Crazy, 1, 1, 0, 138, 4
+u, DC Kievs, 1, 1, 0, 135, 4
+d, Men Behaving Chadli, 1, 0, 1, 126, 3
+d, The Pique Blinders, 1, 0, 1, 123, 3
+d, Bilbo Baggies, 1, 0, 1, 120, 3
+u, Schindler's Lisp, 1, 0, 1, 110, 3
+u, Bilbao Baggins, 1, 0, 1, 89, 3
+d, Bony & Clyne, 0, 0, 2, 114, 0
+s, Kadaras in Pyjamas, 0, 0, 2, 90, 0
+d, Ospina Colada, 0, 0, 2, 88, 0
+d, Tekkaslovakia, 0, 0, 2, 74, 0
+s, Wiltshire Wanderers, 0, 0, 2, 64, 0

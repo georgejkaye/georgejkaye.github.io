@@ -123,12 +123,16 @@ table {
 
 
 table, th, td {
-    padding-left: 15px;
-    padding-right: 15px;
+    vertical-align: middle;
+    padding: 0px 32px 0px 32px;
     border: 1px solid #d1d1d1;
     margin-top: 7px;
     margin-bottom: 7px;
     width: 60%;
+    
+    @include mobile {
+      width: 100%;
+    }
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -301,16 +305,27 @@ nav {
     }
 }
 
+.icon {
+
+    padding: -50px;
+    max-height: 100px;
+    max-width: 100px;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+    //position: fixed; bottom: 0; left: 0; right: 0; height: 50px
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: $lightGray;
+    
 }
 
 footer {
-  padding: 20px 0;
-  text-align: center;
+    padding: 20px 0;
+    text-align: center;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
