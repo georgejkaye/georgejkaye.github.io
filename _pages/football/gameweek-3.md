@@ -37,6 +37,8 @@ While the win will be a huge boost to the Wanderers' and Kaye's morale, the seco
 ## What's next?
 The Wanderers will attempt to add a second win to their collection against Medakovic's Ospina Colada: the only team to have lost every game so far, while the Baggies host Carrington's DC Kievs at home in a bid to end their run of poor form.
 
+[Gameweek 4 >](/football/gameweek-4)
+
 ## Lineups
 
 ### Wiltshire Wanderers

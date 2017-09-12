@@ -44,6 +44,7 @@ The Wanderers are travelling again to tenth-placed Tekkaslovakia, while Ospina C
 * **Kadaras in Pyjamas** also lost, despite scoring 52 points in an exciting 69-52 game.
 * Morris' **Bilbao Baggins** were another team who performed well with 50 points but still lost 60-50.
 
+[< Gameweek 3](/football/gameweek-3)
 
 ## Lineups
 
