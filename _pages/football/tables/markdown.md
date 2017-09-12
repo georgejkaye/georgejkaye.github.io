@@ -1,18 +1,18 @@
 |    | **Team** | **W** | **D** | **L** | **S** | **Pts** |
 |:--:|:--------:|:------|:-----:|:-----:|:-----:|:-------:|
-| ![u](/images/football/u.webp){: .icon} | The Badmans | 3 | 0 | 0 | 175 | 9 |
-| ![u](/images/football/u.webp){: .icon} | Batshuayi Crazy | 2 | 1 | 0 | 189 | 7 |
-| ![u](/images/football/u.webp){: .icon} | The Pique Blinders | 2 | 0 | 1 | 183 | 6 |
-| ![d](/images/football/d.webp){: .icon} | Show Mee the Mane | 2 | 0 | 1 | 172 | 6 |
-| ![d](/images/football/d.webp){: .icon} | SchoolMooy Errors | 2 | 0 | 1 | 161 | 6 |
-| ![u](/images/football/u.webp){: .icon} | Bilbao Baggins | 2 | 0 | 1 | 137 | 6 |
-| ![d](/images/football/d.webp){: .icon} | Kim Jong-un XI | 2 | 0 | 1 | 136 | 6 |
-| ![d](/images/football/d.webp){: .icon} | DC Kievs | 1 | 1 | 1 | 189 | 4 |
-| ![u](/images/football/u.webp){: .icon} | Bony & Clyne | 1 | 0 | 2 | 171 | 3 |
-| ![d](/images/football/d.webp){: .icon} | Men Behaving Chadli | 1 | 0 | 2 | 165 | 3 |
-| ![d](/images/football/d.webp){: .icon} | Bilbo Baggies | 1 | 0 | 2 | 152 | 3 |
-| ![d](/images/football/d.webp){: .icon} | Schindler's Lisp | 1 | 0 | 2 | 149 | 3 |
-| ![s](/images/football/s.webp){: .icon} | Kadaras in Pyjamas | 1 | 0 | 2 | 129 | 3 |
-| ![u](/images/football/u.webp){: .icon} | Tekkaslovakia | 1 | 0 | 2 | 121 | 3 |
-| ![u](/images/football/u.webp){: .icon} | Wiltshire Wanderers | 1 | 0 | 2 | 106 | 3 |
-| ![d](/images/football/d.webp){: .icon} | Ospina Colada | 0 | 0 | 3 | 116 | 0 |
+| ![s](/images/football/s.webp){: .icon} | The Badmans | 4 | 0 | 0 | 222 | 12 |
+| ![u](/images/football/u.webp){: .icon} | Show Mee the Mane | 3 | 0 | 1 | 232 | 9 |
+| ![u](/images/football/u.webp){: .icon} | SchoolMooy Errors | 3 | 0 | 1 | 211 | 9 |
+| ![u](/images/football/u.webp){: .icon} | DC Kievs | 2 | 1 | 1 | 230 | 7 |
+| ![d](/images/football/d.webp){: .icon} | Batshuayi Crazy | 2 | 1 | 1 | 227 | 7 |
+| ![d](/images/football/d.webp){: .icon} | The Pique Blinders | 2 | 0 | 2 | 220 | 6 |
+| ![u](/images/football/u.webp){: .icon} | Schindler's Lisp | 2 | 0 | 2 | 218 | 6 |
+| ![u](/images/football/u.webp){: .icon} | Bony & Clyne | 2 | 0 | 2 | 214 | 6 |
+| ![d](/images/football/d.webp){: .icon} | Bilbao Baggins | 2 | 0 | 2 | 187 | 6 |
+| ![u](/images/football/u.webp){: .icon} | Tekkaslovakia | 2 | 0 | 2 | 183 | 6 |
+| ![d](/images/football/d.webp){: .icon} | Kim Jong-un XI | 2 | 0 | 2 | 178 | 6 |
+| ![d](/images/football/d.webp){: .icon} | Men Behaving Chadli | 1 | 0 | 3 | 212 | 3 |
+| ![d](/images/football/d.webp){: .icon} | Bilbo Baggies | 1 | 0 | 3 | 186 | 3 |
+| ![d](/images/football/d.webp){: .icon} | Kadaras in Pyjamas | 1 | 0 | 3 | 181 | 3 |
+| ![u](/images/football/u.webp){: .icon} | Ospina Colada | 1 | 0 | 3 | 162 | 3 |
+| ![d](/images/football/d.webp){: .icon} | Wiltshire Wanderers | 1 | 0 | 3 | 150 | 3 |
