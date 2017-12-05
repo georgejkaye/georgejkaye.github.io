@@ -298,7 +298,6 @@ nav {
 
 .small-scenario{
     max-width: 49%;
-
     @include mobile {
       max-width: 99%;
     }
