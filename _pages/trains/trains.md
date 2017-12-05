@@ -6,6 +6,8 @@ permalink: /trains/
 
 Here you can find all the Train Simulator scenarios that I've made!
 
+You can [download all](/scenarios/GJK Scenarios.zip) or browse them individually below.
+
 * [Riviera Line Electrified](#riviera-line-electrified)
 * [South London Network](#south-london-network)
 * [South London to Brighton](#south-london-to-brighton)
