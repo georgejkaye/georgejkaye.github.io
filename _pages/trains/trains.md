@@ -12,6 +12,10 @@ You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them indi
 * [South London Network](#south-london-network)
 * [South London to Brighton](#south-london-to-brighton)
 
+## East Coast Main Line
+### London - Peterborough
+[![East Coast Carols (Part One)](/images/scenarios/east-coast-carols-1.jpg){: .small-scenario}](east-coast-carols-1)
+
 ## Riviera Line Electrified 
 [![CrossCountry to the Coast](/images/scenarios/crosscountry-to-the-coast.jpg){: .small-scenario}](crosscountry-to-the-coast) 
 [![Return to the Riviera](/images/scenarios/return-to-the-riviera.jpg){: .small-scenario}](return-to-the-riviera)
