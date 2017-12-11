@@ -1,6 +1,6 @@
 ---
 layout: scenario
-title: East Coast Carols (Part One)
+title: East Coast Carols (Part Two)
 image: /images/scenarios/east-coast-carols-2.jpg
 alttext: stopper-in-the-showers
 
