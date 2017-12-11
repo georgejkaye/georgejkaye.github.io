@@ -53,7 +53,7 @@ I would strongly recommend reducing your graphics settings for this scenario, as
 
 ### Freeware
 
-#### Fincy
+#### Finchy
 * [Class 185](http://jakesrailworksaddons.webs.com/downloads.htm)*
 
 ### Reskins
