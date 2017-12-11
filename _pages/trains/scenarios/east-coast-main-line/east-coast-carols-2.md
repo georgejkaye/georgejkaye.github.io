@@ -17,7 +17,7 @@ Hello driver! Welcome back aboard the 1S23 1530 London Kings Cross to Glasgow Ce
 
 It’s Christmas! So here’s a present for the festive season: a multipart scenario up the East Coast Main Line all the way to Scotland! I am a big fan of Christmas liveries and the wordplay in ‘Claus 91’ is simply too good to resist.
 
-I would strongly recommend reducing your graphics settings for this scenario, as there are places (such as Kings Cross) that are quite intensive and the game may crash!
+I would strongly recommend reducing your graphics settings for this scenario, as there are places that are quite intensive and the game may crash!
 
 ## Downloads
 * [Direct download - AP Version (rwp file)](/scenarios/East Coast Carols Part 2 AP.zip)
