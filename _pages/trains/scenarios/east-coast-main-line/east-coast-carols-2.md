@@ -65,6 +65,7 @@ I would strongly recommend reducing your graphics settings for this scenario, as
 #### Superalbs
 * [InterCity 125 Virgin Trains East Coast](https://superalbs.weebly.com/ic125virgintrainseastcoast.html)
 * [Class 156 East Midlands Trains](https://superalbs.weebly.com/class156eastmidlandstrains.html)
+* [Class 365 Great Northern](https://superalbs.weebly.com/class365greatnorthern.html)*
 * [Class 158 East Midlands Trains](https://superalbs.weebly.com/class158eastmidlandstrains.html)*
 * [Class 156 Arriva Rail North](https://superalbs.weebly.com/class156arrivarailnorth.html)*
 * [Class 158 Arriva Rail North](https://superalbs.weebly.com/class158arrivarailnorth.html)*
