@@ -8,6 +8,9 @@ Here you can find all the Train Simulator scenarios that I've made!
 
 You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them individually below.
 
+* [East Coast Main Line](#east-coast-main-line) 
+    * [London - Peterborough](#london---peterborough) 
+    * [Peterborough - York](#peterborough---york)
 * [Riviera Line Electrified](#riviera-line-electrified)
 * [South London Network](#south-london-network)
 * [South London to Brighton](#south-london-to-brighton)
@@ -15,6 +18,9 @@ You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them indi
 ## East Coast Main Line
 ### London - Peterborough
 [![East Coast Carols (Part One)](/images/scenarios/east-coast-carols-1.jpg){: .small-scenario}](east-coast-carols-1)
+
+### Peterborough - York
+[![East Coast Carols (Part Two)](/images/scenarios/east-coast-carols-2.jpg){: .small-scenario}](east-coast-carols-2)
 
 ## Riviera Line Electrified 
 [![CrossCountry to the Coast](/images/scenarios/crosscountry-to-the-coast.jpg){: .small-scenario}](crosscountry-to-the-coast) 
