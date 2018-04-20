@@ -22,6 +22,9 @@ You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them indi
 ### Peterborough - York
 [![East Coast Carols (Part Two)](/images/scenarios/east-coast-carols-2.jpg){: .small-scenario}](east-coast-carols-2)
 
+## North Somerset Line Electrified
+[![Ramble to Radstock](/images/scenarios/ramble-to-radstock.jpg){: .small-scenario}](ramble-to-radstock)
+
 ## Riviera Line Electrified 
 [![CrossCountry to the Coast](/images/scenarios/crosscountry-to-the-coast.jpg){: .small-scenario}](crosscountry-to-the-coast) 
 [![Return to the Riviera](/images/scenarios/return-to-the-riviera.jpg){: .small-scenario}](return-to-the-riviera)
