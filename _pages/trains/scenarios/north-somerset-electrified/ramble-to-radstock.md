@@ -20,7 +20,7 @@ This is a fun fictional scenario using the North Somerset Railway Electrified li
 Have fun!
 
 ## Downloads
-* [Direct download (rwp file)](/scenarios/Ramble to Radstock.zip)
+* [Direct download](/scenarios/Ramble to Radstock.zip)
 * Steam Workshop *(currenly not on Workshop as route not final)*
 
 ## Requirements
