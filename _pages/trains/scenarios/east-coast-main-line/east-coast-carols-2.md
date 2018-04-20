@@ -20,7 +20,7 @@ It’s Christmas! So here’s a present for the festive season: a multipart scen
 I would strongly recommend reducing your graphics settings for this scenario, as there are places that are quite intensive and the game may crash!
 
 ## Downloads
-* [Direct download - AP Version (rwp file)](/scenarios/East Coast Carols Part 2 AP.zip)
+* [Direct download - AP Version](/scenarios/East Coast Carols Part 2 AP.zip)
 
 *This scenario does not have a workshop version as the York-Peterborough route is not on Steam*
 
