@@ -4,10 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Hello there! I'm George, a Computer Science student from the University of Birmingham and a fan of functional programming, reasoning, big data and computing theory.
+Hello there! I'm George, a Computer Science student from the University of Birmingham and a fan of functional programming, the lambda calculus, reasoning, and computing theory.
 
-I am also a pianist and avid train enthusiast, creating train simulator scenarios in my spare time.
+I am also a pianist, Arsenal supporter and casual train enthusiast.
+
+Here are some [pictures](/pictures) of me.
 
 ### Contact me
 
-[georgejkaye@googlemail.com](mailto:georgejkaye:googlemail.com)
+[georgejkaye@gmail.com](mailto:georgejkaye:gmail.com)
