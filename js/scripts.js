@@ -1,6 +1,11 @@
 $(document).ready(function(){
 
-	$('a[href^="#"]').on('click',function (e) {
+	$('h2,h3').each(function(){
+		var hyphenated = $(this).text().toLowerCase().replace(/\s/g, '-');
+		$(this).attr('id', hyphenated);
+	});
+
+	/*$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 
 	    var target = this.hash;
@@ -11,7 +16,7 @@ $(document).ready(function(){
 	    }, 900, 'swing', function () {
 	        window.location.hash = target;
 	    });
-	});
+	});*/
 
     $('.thumb').hover(function() {
         $(this).attr('src', $(this).attr('src').slice(0, -4) + '-1.jpg');

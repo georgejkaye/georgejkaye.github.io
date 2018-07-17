@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page2
 title: Wanderers' Weekly - End of Year Report
 permalink: /football/end-of-year-report
 ---
