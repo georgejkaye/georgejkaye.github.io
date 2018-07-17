@@ -25,8 +25,7 @@ paginate:         5
 # Custom vars
 version:          2.1.0
 
-github:
-  repo:           https://github.com/georgejkaye/georgejkaye.github.io
+github:           https://github.com/georgejkaye
 
 # Gems
 gems: 
