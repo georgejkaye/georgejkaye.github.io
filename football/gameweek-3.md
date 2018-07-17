@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page2
 title: Wanderers' Weekly - Gameweek 3
 permalink: /football/gameweek-3
 ---
