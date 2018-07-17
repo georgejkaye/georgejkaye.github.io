@@ -14,7 +14,7 @@ title:            George Kaye
 tagline:          'Computer scientist'
 description:      'Hello world!'
 url:              https://georgejkaye.com
-baseurl:          /index
+baseurl:          /
 
 author:
   name:           'George Kaye'
@@ -29,7 +29,9 @@ github:
   repo:           https://github.com/georgejkaye/georgejkaye.github.io
 
 # Gems
-gems: [jekyll-paginate, jekyll-gist]
+gems: 
+  - jekyll-paginate
+  - jekyll-gist
 
 exclude:
   - Gemfile
