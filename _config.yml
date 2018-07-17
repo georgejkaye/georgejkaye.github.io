@@ -14,7 +14,7 @@ title:            George Kaye
 tagline:          'Computer scientist'
 description:      'Hello world!'
 url:              https://georgejkaye.com
-baseurl:          ""
+baseurl:          "/"
 
 author:
   name:           'George Kaye'
