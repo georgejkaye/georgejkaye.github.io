@@ -17,8 +17,8 @@ url:              https://georgejkaye.com
 baseurl:          /
 
 author:
-  name:           'George Kaye'
-  url:            
+  name:           'George Kaye'            
+  avatar:         /images/me/fb3.jpg
 
 paginate:         5
 
@@ -28,7 +28,7 @@ version:          2.1.0
 github:           https://github.com/georgejkaye
 
 # Gems
-gems: 
+plugins: 
   - jekyll-paginate
   - jekyll-gist
   - jekyll-github-metadata
