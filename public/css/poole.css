@@ -430,9 +430,9 @@ a.pagination-item:hover {
 .small-scenario {
   margin-top: 5px;
   margin-right: 5px;
-  max-width: 100%;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-  .small-scenario{max-width: 48%;}
+  .small-scenario{width: 48%;}
 }
