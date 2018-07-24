@@ -12,7 +12,8 @@ You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them indi
     - [London - Peterborough](#london---peterborough)
     - [Peterborough - York](#peterborough---york)
 - [North Somerset Line Electrified](#north-somerset-line-electrified)
-- [Portsmouth Direct Line: London Waterloo to Portsmouth](#portsmouth-direct-line-london-waterloo-to-portsmouth)
+- [Portsmouth Direct Line](#portsmouth-direct-line)
+    - [London Waterloo - Portsmouth](#london-waterloo---portsmouth)
 - [Riviera Line Electrified](#riviera-line-electrified)
 - [South London Network](#south-london-network)
 - [South London to Brighton](#south-london-to-brighton)
@@ -34,7 +35,9 @@ You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them indi
 
 [Top](#top)
 
-## Portsmouth Direct Line: London Waterloo to Portsmouth
+## Portsmouth Direct Line
+
+### London Waterloo - Portsmouth 
 [![1D13 0824 London Waterloo to Dorking](/images/scenarios/1D13-0824-london-waterloo-to-dorking.jpg){:class="small-scenario"}](1D13-0824-london-waterloo-to-dorking)
 
 [Top](#top)
