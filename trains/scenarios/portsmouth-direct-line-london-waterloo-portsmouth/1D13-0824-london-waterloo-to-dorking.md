@@ -17,6 +17,7 @@ The British summer has truly arrived with a heatwave surging across the country.
 
 ## Downloads
 * [Direct download](/scenarios/1D13 0824 London Waterloo to Dorking.zip)
+* [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1459064187)
 
 ## Timetable
 
