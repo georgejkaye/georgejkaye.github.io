@@ -43,7 +43,7 @@ You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them indi
 [Top](#top)
 
 ## Riviera Line Electrified 
-[![CrossCountry to the Coast](/images/scenarios/crosscountry-to-the-coast.jpg){:class="small-scenario"}](crosscountry-to-the-coast) 
+[![1V41 0642 Birmingham New Street to Paignton](/images/scenarios/1v41-0642-birmingham-new-street-to-paignton.jpg){:class="small-scenario"}](1V41-0642-birmingham-new-street-to-paignton) 
 [![Return to the Riviera](/images/scenarios/return-to-the-riviera.jpg){:class="small-scenario"}](return-to-the-riviera)
 
 [Top](#top)
