@@ -1,8 +1,8 @@
 ---
 layout: scenario
-title: CrossCountry to the Coast
-image: /images/scenarios/crosscountry-to-the-coast.jpg
-alttext: crosscountry-to-the-coast
+title: 1V41 0642 Birmingham New Street to Paignton
+image: /images/scenarios/1V41-0642-birmingham-new-street-to-paignton.jpg
+alttext: 1V41-0642-birmingham-new-street-to-paignton
 
 traction: Class 390 Pendolino
 toc: Virgin Trains Cross Country
@@ -10,7 +10,7 @@ route: Riviera Line Electrified
 duration: 40 mins
 difficulty: Medium
 
-permalink: /trains/crosscountry-to-the-coast
+permalink: /trains/1V41-0642-birmingham-new-street-to-paignton
 ---
 
 Today you are driving the 1V41 0642 Birmingham New Street to Paignton Virgin CrossCountry service, for the last leg from Exeter St Davids to Paignton. Traction is in the form of a Class 390 Pendolino. It is a lovely spring morning so it should be a good drive! You will be stopping at Newton Abbot, Torquay and finally Paignton.
@@ -20,8 +20,8 @@ This scenario uses the lovely Riviera Line Electrified by joethefish! I decided 
 Have fun!
 
 ## Downloads
-* [Direct download](/scenarios/CrossCountry to the Coast.zip)
-* [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1089082966)
+* [Direct download](/scenarios/1V41 0642 Birmingham New Street to Paignton.zip)
+* [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1089082966) *old version*
 
 ## Requirements
 
@@ -30,7 +30,7 @@ Have fun!
 #### Steam
 * [Riviera Line](http://store.steampowered.com/app/222632)
 * [Class 390](http://store.steampowered.com/app/208343)
-* [East Coast Main Line South (London - Peterborough)](http://store.steampowered.com/app/222618)
+* [South London Network](https://store.steampowered.com/app/222638)
 * [Class 68 Scotrail](http://store.steampowered.com/app/376930)*
 * [Class 66 EWS v2.0](http://store.steampowered.com/app/222568)*
 * Class 801 (free to all TS users)
@@ -43,12 +43,10 @@ Have fun!
 * [Class 390 VT EMU](http://dpsimulation.org.uk/reskins.html#DefEMU)
 
 #### Superalbs
-* [Class 800 GWR](http://superalbs.weebly.com/class800greatwesternrailway.html)
+* [Class 800 Great Western Railway](http://superalbs.weebly.com/class800greatwesternrailway.html)
+* [Class 387/1 Great Western Railway](http://superalbs.weebly.com/class387greatwesternrailway.html)
 
 #### BH Reskins
 * [Class 68 DRS](https://www.facebook.com/photo.php?fbid=1114446985268228&set=oa.515760421890353&type=1&theater)*
-
-#### Blue Rail Studios 
-* [Class 365 GWR](https://bluerail.co.uk/downloads/class-365-gwr/)
 
 (items with an asterisk are not essential for enjoyment of the scenario)
