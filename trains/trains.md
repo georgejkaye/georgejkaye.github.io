@@ -43,8 +43,8 @@ You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them indi
 [Top](#top)
 
 ## Riviera Line Electrified 
-[![1V41 0642 Birmingham New Street to Paignton](/images/scenarios/1v41-0642-birmingham-new-street-to-paignton.jpg){:class="small-scenario"}](1V41-0642-birmingham-new-street-to-paignton) 
-[![Return to the Riviera](/images/scenarios/return-to-the-riviera.jpg){:class="small-scenario"}](return-to-the-riviera)
+[![1V41 0642 Birmingham New Street to Paignton](/images/scenarios/1V41-0642-birmingham-new-street-to-paignton.jpg){:class="small-scenario"}](1V41-0642-birmingham-new-street-to-paignton) 
+[![1Z56 1700 Exeter St Davids to Paignton](/images/scenarios/1Z56-1700-exeter-st-davids-to-paignton.jpg){:class="small-scenario"}](1Z56-1700-exeter-st-davids-to-paignton)
 
 [Top](#top)
 
