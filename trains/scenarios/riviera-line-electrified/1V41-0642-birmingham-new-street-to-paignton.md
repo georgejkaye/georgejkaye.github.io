@@ -21,7 +21,7 @@ Have fun!
 
 ## Downloads
 * [Direct download](/scenarios/1V41 0642 Birmingham New Street to Paignton.zip)
-* [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1089082966) *old version*
+* [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1474607185)
 
 ## Requirements
 
