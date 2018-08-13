@@ -21,7 +21,7 @@ Have fun!
 
 ## Downloads
 * [Direct download](/scenarios/Ramble to Radstock v1.0.zip)
-* Steam Workshop *(currenly not on Workshop as route not final)*
+* Steam Workshop *(currently not on Workshop as route not final)*
 
 ## Requirements
 
