@@ -54,7 +54,7 @@ You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them indi
 [Top](#top)
 
 ## South London to Brighton
-[![Pushing Through the Storm](/images/scenarios/pushing-through-the-storm.jpg){:class="small-scenario"}](pushing-through-the-storm)
+[![1A15 1948 Brighton to London Victoria](/images/scenarios/1A15-1948-brighton-to-london-victoria.jpg){:class="small-scenario"}](1A15-1948-brighton-to-london-victoria)
 
 [Top](#top)
 
