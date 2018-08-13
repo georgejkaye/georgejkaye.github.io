@@ -18,7 +18,7 @@ Hello driver! Today you are taking 1V06 from Birmingham New Street all the way t
 This journey is one I tend to make every year on a trip to Cardiff (getting on at University), so I thought I might recreate it on the very well-made Birmingham – Bristol XC Route. This was also a chance to whip out the new AP Turbostar enhancement pack which I picked up in the recent sales.
 
 ## Downloads
-* [Direct download](/scenarios/1V06 0907 Nottingham to Cardiff Central.zip)
+* [Direct download](/scenarios/1V06 0907 Nottingham to Cardiff Central v1.0.zip)
 
 ## Requirements
 

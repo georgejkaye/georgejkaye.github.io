@@ -1,7 +1,7 @@
 ---
 layout: scenario
-title: Return to the Riviera
-image: /images/scenarios/return-to-the-riviera.jpg
+title: 1Z56 1700 Exeter St Davids to Paignton
+image: /images/scenarios/1Z56-1700-exeter-st-davids-to-paignton.jpg
 alttext: return-to-the-riviera
 
 traction: High Speed Train
@@ -10,7 +10,7 @@ route: Riviera Line Electrified
 duration: 65 mins
 difficulty: Medium
 
-permalink: /trains/return-to-the-riviera
+permalink: /trains/1Z56-1700-exeter-st-davids-to-paignton
 ---
 
 Although the age is diesel is but a distant memory, the Intercity 125 'High Speed Train' is still fondly regarded by many railway enthusiasts. Fortunately, GWR have arranged a special railtour using one of their old HSTs and have chosen you to have the honour of driving this very special journey! You will be calling at Exeter St Davids, Dawlish, Teignmouth, Newton Abbot, Torquay and Paignton. 
@@ -20,8 +20,8 @@ This scenario uses the lovely Riviera Line Electrified by joethefish! I decided 
 Have fun!
 
 ## Downloads
-* [Direct download](/scenarios/Return to the Riviera.zip)
-* [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1090186754)
+* [Direct download](/scenarios/1Z56 1700 Exeter St Davids to Paignton v2.0.zip)
+* [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1476297578)
 
 ## Requirements
 
@@ -30,7 +30,7 @@ Have fun!
 #### Steam
 * [Riviera Line](http://store.steampowered.com/app/222632)
 * [Class 390](http://store.steampowered.com/app/208343)
-* [East Coast Main Line South (London - Peterborough)](http://store.steampowered.com/app/222618)
+* [East Coast Main Line South (London - Peterborough)](https://store.steampowered.com/app/222638)
 * [Class 68 Scotrail](http://store.steampowered.com/app/376930)*
 * [Class 66 EWS v2.0](http://store.steampowered.com/app/222568/)*
 * Class 801 (free to all TS users)
@@ -48,12 +48,10 @@ Have fun!
 * [Class 390 VT EMU](http://dpsimulation.org.uk/reskins.html#DefEMU)
 
 #### Superalbs
-* [Class 800 GWR](http://superalbs.weebly.com/class800greatwesternrailway.html)
+* [Class 800 Great Western Railway](http://superalbs.weebly.com/class800greatwesternrailway.html)
+* [Class 387 Great Western Railway](http://superalbs.weebly.com/class387greatwesternrailway.html)
 
 #### BH Reskins
 * [Class 68 DRS](https://www.facebook.com/photo.php?fbid=1114446985268228&set=oa.515760421890353&type=1&theater)*
-
-#### Blue Rail Studios 
-* [Class 365 GWR](https://bluerail.co.uk/downloads/class-365-gwr/)
 
 (items with an asterisk are not essential for enjoyment of the scenario)

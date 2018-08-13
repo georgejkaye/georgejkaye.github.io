@@ -20,7 +20,7 @@ Another busy scenario ending up in south London, but not everything may go to pl
 I would **strongly recommend** reducing your graphics settings for this scenario, as there are places that are extremely intensive and the game may crash!
 
 ## Downloads
-* [Direct download](/scenarios/Pushing Through the Storm.zip)
+* [Direct download](/scenarios/Pushing Through the Storm v1.0.zip)
 * [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1123961570)
 
 ## Requirements
