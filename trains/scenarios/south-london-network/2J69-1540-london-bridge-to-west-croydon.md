@@ -20,7 +20,7 @@ I've always enjoyed driving the Class 455/8, so here it is in my first attempt a
 I would **strongly recommend** reducing your graphics settings for this scenario, as there are places (especially the start at London Bridge) that are extremely intensive and the game may crash!
 
 ## Downloads
-* [Direct download](/scenarios/Stopper in the Showers.zip)
+* [Direct download](/scenarios/2J69 1540 London Bridge to West Croydon v2.0.zip)
 * [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1097997024)
 
 ## Requirements
