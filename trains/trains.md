@@ -60,5 +60,6 @@ You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them indi
 
 ## XC Route (Birmingham - Bristol)
 [![1V06 0907 Nottingham to Cardiff Central](/images/scenarios/1V06-0907-nottingham-to-cardiff-central.jpg){:class="small-scenario"}](1V06-0907-nottingham-to-cardiff-central)
+![2G85 1336 Swindon to Cheltenham Spa](/images/scenarios/2G85-1336-swindon-to-cheltenham-spa.jpg){:class="small-scenario"}
 
 [Top](#top)
