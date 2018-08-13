@@ -23,6 +23,21 @@ Have fun!
 * [Direct download](/scenarios/1V41 0642 Birmingham New Street to Paignton v2.0.zip)
 * [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1474607185)
 
+## Timetable
+
+| Location | Pl | Arr | Dep |
+|:-|:-:|:-:|:-:|
+| Exeter St Davids (EXD) | 4 |  | 0909 |
+| *Exeter St Thomas (EXT)* | *1* | *pass* | *0910* |
+| *Starcross (SCS)* | *1* | *pass* | *0916* |
+| *Dawlish Warren (DWW)* |  | *pass* | *0917* |
+| *Dawlish (DWL)* | *1* | *pass* | *0919* |
+| *Teignmouth (TGM)* | *1* | *pass* | *0922* |
+| Newton Abbot (NTA) | 2 | 0927 | 0929 |
+| *Torre (TRR)* | *1* | *pass* | *0937* |
+| Torquay (TQY) | 1 | 0938 | 0940 |
+| Paignton (PGN) | 2 | 0947 | |
+
 ## Requirements
 
 ### Payware

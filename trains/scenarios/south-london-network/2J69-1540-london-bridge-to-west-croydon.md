@@ -23,6 +23,24 @@ I would **strongly recommend** reducing your graphics settings for this scenario
 * [Direct download](/scenarios/2J69 1540 London Bridge to West Croydon v2.0.zip)
 * [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1097997024)
 
+## Timetable
+
+| Location | Pl | Arr | Dep |
+|:-|:-:|:-:|:-:|
+| London Bridge (LBG) | 15 |  | 1540 |
+| South Bermondsey (SBM) | 2 | 1544 | 1544 |
+| Queens Road Peckham (QRP) | 2 | 1547 | 1547 |
+| Peckham Rye (PMR) | 1 | 1549 | 1550 |
+| East Dulwich (EDW) | 2 | 1552 | 1553 |
+| North Dulwich (NDL) | 2 | 1554 | 1555 |
+| Tulse Hill (TUH) | 4 | 1558 | 1559 | 
+| Streatham (STE) | 1 | 1602 | 1603 |
+| Streatham Common (SRC) | 1 | 1606 | 1606 |
+| Norbury (NRB) | 1 | 1608 | 1608 |
+| Thornton Heath (TTH) | 1 | 1611 | 1611 |
+| Selhurst (SRS) | 1 | 1613 | 1614 |
+| West Croydon (WCY) | 1 | 1619 | |
+
 ## Requirements
 
 ### Payware

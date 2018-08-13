@@ -1,6 +1,6 @@
 ---
 layout: scenario
-title: 1D13 London Waterloo to Dorking
+title: 1D13 0824 London Waterloo to Dorking
 image: /images/scenarios/1D13-0824-london-waterloo-to-dorking.jpg
 alttext: 1D13-0824-london-waterloo-to-dorking
 

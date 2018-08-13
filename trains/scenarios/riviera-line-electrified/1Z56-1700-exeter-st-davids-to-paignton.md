@@ -23,6 +23,23 @@ Have fun!
 * [Direct download](/scenarios/1Z56 1700 Exeter St Davids to Paignton v2.0.zip)
 * [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1476297578)
 
+## Timetable
+
+| Location | Pl | Arr | Dep |
+|:-|:-:|:-:|:-:|
+| Riverside Yard | 1 |  | 1652 |
+| Exeter St Davids (EXD) | 6 | 1658 | 1700 |
+| *Exeter St Thomas (EXT)* | *1* | *pass* | *1702* |
+| *Starcross (SCS)* | *1* | *pass* | *1710* | 
+| Dawlish Warren (DWW) | 1 | 1712 | 1715 |
+| Dawlish (DWL) | 1 | 1717  | 1719 |
+| Teignmouth (TGM) | 1 | 1724 | 1726 | 
+| Newton Abbot (NTA) | 2 | 1732 | 1734 |
+| *Torre (TRR)* | *1* | *pass* | *1741* |
+| Torquay (TQY) | 1 | 1743 | 1745 |
+| Paignton (PGN) | 1 | 1751 | 1753 |
+| Goodrington Yard Sidings | 4 | 1757 | |
+
 ## Requirements
 
 ### Payware
