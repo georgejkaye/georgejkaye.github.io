@@ -49,7 +49,7 @@ You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them indi
 [Top](#top)
 
 ## South London Network
-[![Stopper in the Showers](/images/scenarios/stopper-in-the-showers.jpg){:class="small-scenario"}](stopper-in-the-showers)
+[![2J69 1540 London Bridge to West Croydon](/images/scenarios/2J69-1540-london-bridge-to-west-croydon.jpg){:class="small-scenario"}](2J69-1540-london-bridge-to-west-croydon)
 
 [Top](#top)
 

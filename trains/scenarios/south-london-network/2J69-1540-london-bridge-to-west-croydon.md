@@ -1,8 +1,8 @@
 ---
 layout: scenario
-title: Stopper in the Showers
-image: /images/scenarios/stopper-in-the-showers.jpg
-alttext: stopper-in-the-showers
+title: 2J69 1540 London Bridge to West Croydon
+image: /images/scenarios/2J69-1540-london-bridge-to-west-croydon.jpg
+alttext: 2J69-1540-london-bridge-to-west-croydon
 
 traction: Class 455/8
 toc: Southern
@@ -10,7 +10,7 @@ route: South London Network
 duration: 45 mins
 difficulty: Easy
 
-permalink: /trains/stopper-in-the-showers
+permalink: /trains/2J69-1540-london-bridge-to-west-croydon
 ---
 
 Hello driver! Today you are driving the 2J69 1540 London Bridge to West Croydon Southern service. As always the lines are busy but you should have no problems today! Prepare your cab and allow passengers on board for departure at 15:40. You will be calling at South Bermondsey, Queens Road Peckham, Peckham Rye, East Dulwich, North Dulwich, Tulse Hill, Streatham, Streatham Common, Norbury, Thornton Heath, Selhurst and West Croydon.
