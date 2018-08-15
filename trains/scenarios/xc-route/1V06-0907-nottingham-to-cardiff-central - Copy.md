@@ -2,7 +2,7 @@
 layout: scenario
 title: 1V06 0907 Nottingham to Cardiff Central
 image: /images/scenarios/1V06-0907-nottingham-to-cardiff-central.jpg
-alttext: 1V06-0907nottingham-to-cardiff-central
+alttext: 1V06-0907-nottingham-to-cardiff-central
 
 traction: Class 170
 toc: Arriva CrossCountry
