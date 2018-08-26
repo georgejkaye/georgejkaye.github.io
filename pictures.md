@@ -7,7 +7,7 @@ permalink: /pictures/
 Some pictures of me through the years. May feature copious amounts of Lindt chocolate bunnies and Waitrose.
 
 ![picture4](/images/me/train.jpg)
-*Kindly taken by my colleague Todd Waugh Ambridge from the University of Birmingham*
+*Kindly taken by my colleague Todd Waugh Ambridge!*
 
 ![picture3](/images/me/fb3.jpg)
 
