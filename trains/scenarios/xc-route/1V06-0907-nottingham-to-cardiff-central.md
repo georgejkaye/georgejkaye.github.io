@@ -57,8 +57,8 @@ This journey is one I tend to make every year on a trip to Cardiff (getting on a
 * [Class 350/2 London Midland](https://www.dpsimulation.org.uk/rf72reskins.html#RFEMU)*
 
 #### Train Sim Designs
-* HST Great Western Railway 'Welshman'*
-* HST Great Western Railway 43093 'Old Oak Common'*
+* [HST Great Western Railway 'Welshman'](http://www.trainsimdesigns.co.uk/reskins/locomotives/hst-great-western-railway-welshman/)*
+* [HST Great Western Railway 43093 'Old Oak Common'](http://www.trainsimdesigns.co.uk/reskins/locomotives/hst-great-western-railway-43093-old-oak-common/)*
 
 Requirements marked with an asterisk (*) feature fairly fleetingly and can be omitted without loss of enjoyment. 
 
