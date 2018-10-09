@@ -5,7 +5,7 @@ title: Adventures in Academia - Part One
 
 ![Todd cradles his newly born child](/images/adventures/001/soup2.jpg)
 
-*Todd has recently started his PhD, whereas I am still working hard in the final year of my MSci.*
+*Todd has recently started his PhD, whereas I am still working hard in the final year of my MSci. Together we eat soup, visit pubs and struggle with second-year functional programming assignments.*
 
 Todd eagerly invited me to a 'soupy lunch in Sloman', so of course I could not refuse! I had previously accompanied Todd to big Sainsburys as he purchased the soup of the day, where I had also obtained a one hundred pack of Twining's Lady Grey teabags for £3.50 - a bargain!
 
