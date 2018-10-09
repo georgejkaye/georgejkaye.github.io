@@ -15,7 +15,7 @@ Alas, this bowl could not come soon enough! Todd frantically searched the cupboa
 
 ![Todd prepares his soup](/images/adventures/001/soup1.jpg)
 
-Todd bunged his soup into the microwave and set it going (ensuring that it was not set to the 'warm' setting - a microwave crime!). It was at this point that people started coming in and out of the kitchen at alarming frequency. When the casserole dish was removed from the microwave, things got worse: the legendary Andrew Howes entered the room and observed the casserole dish with a smirk on his face. Fortunately Todd and I managed to banter the embarrassment away with aplomb.
+Todd bunged his soup into the microwave and set it going (ensuring that it was not set to the 'warm' setting - a microwave crime!). It was at this point that people started coming in and out of the kitchen at alarming frequency. When the casserole dish was removed from the microwave, things got worse: the legendary Andrew Howes (head of CS!) entered the room and observed the casserole dish with a smirk on his face. Fortunately Todd and I managed to banter the embarrassment away with aplomb.
 
 I was also distraught to find that the CS building used milk bottles from the milkman rather than the traditional plastic supermarket variety. I was forced to contend with the strange foil lid which apparently kept it fresh. This milk was then applied to our cups of Lady Grey, although a large amount was spilt due to a mix of poor motor skills and poor bottle design! It also turned out that Todd's 'insulated' uni cup was anything but, and caused a large amount of discomfort to me as I held it.
 
