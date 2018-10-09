@@ -16,8 +16,9 @@ title: Home
 
     {% if post.image %}
     <img src="{{ post.image }}" alt="{{ post.alttext }}" width="100%">
-    {% endif %}
     <br>
+    {% endif %}
+
     {{ post.tagline }}
     <br>
     <h6><a href="{{ site.basurl }}{{ post.url }}">Read more</a></h6>
