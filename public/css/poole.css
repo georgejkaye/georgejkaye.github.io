@@ -231,6 +231,10 @@ img {
   margin-bottom: 5px;
 }
 
+.post-img {
+  width: 100%;
+}
+
 /* Tables */
 table {
   margin-bottom: 1rem;
