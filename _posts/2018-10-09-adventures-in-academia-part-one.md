@@ -14,7 +14,7 @@ I arrived at Todd's office with urgency, straight from my Evaluation Methods and
 
 Alas, this bowl could not come soon enough! Todd frantically searched the cupboards for bowls, but they were all too small. We ventured downstairs on our quest, but no bowls could be found there either, only a strong fishy smell. We returned in shame to the first floor kitchen, and Todd riskily opened the running dishwasher to be sprayed with boiling hot steam. But there were no bowls! The only thing remotely feasible was a china casserole dish - it would have to do.
 
-![Todd prepares his soup](/images/adventures/001/soup1.jpg)
+![Todd prepares his soup](/images/adventures/001/soup1.jpg){:class="post-img"}
 
 Todd bunged his soup into the microwave and set it going (ensuring that it was not set to the 'warm' setting - a microwave crime!). It was at this point that people started coming in and out of the kitchen at alarming frequency. When the casserole dish was removed from the microwave, things got worse: the legendary Andrew Howes (head of CS!) entered the room and observed the casserole dish with a smirk on his face. Fortunately Todd and I managed to banter the embarrassment away with aplomb.
 
