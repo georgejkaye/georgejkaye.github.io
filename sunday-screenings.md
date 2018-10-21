@@ -26,15 +26,13 @@ NB: not all the screenings are actually on Sundays
 | 09/12 | *TBC* |
 
 ## 07/10: Starter for Ten
-![Starter for Ten](/images/screenings/starter-for-ten/1.jpg){:class="poster-img"}
-
+![Starter for Ten](/images/screenings/starter-for-ten/1.jpg){:class="post-img"}
 One of the first films that Vanessa recommended to me, featuring a very young James McAvoy, a very young Benedict Cumberbatch and University Challenge. Kickstarted the Sunday Screenings in style.
 
 [Top](#top)
 
 ## 14/10: Baby Driver
-![Baby Driver](/images/screenings/baby-driver/1.jpg){:class="poster-img"}
-
+![Baby Driver](/images/screenings/baby-driver/1.jpg){:class="post-img"}
 One of Alex's favourite films, this is an action-packed car caper with some good tunes to boot. Plus it has Lily James in it, which might be why Alex likes it so much.
 
 [Review](/2018/10/14/sunday-screenings-baby-driver/)
@@ -42,15 +40,13 @@ One of Alex's favourite films, this is an action-packed car caper with some good
 [Top](#top)
 
 ## 21/10: Bridget Jones: The Edge of Reason
-![Bridget Jones: The Edge of Reason](/images/screenings/bridget-jones-the-edge-of-reason/1.jpg){:class="poster-img"}
-
+![Bridget Jones: The Edge of Reason](/images/screenings/bridget-jones-the-edge-of-reason/1.jpg){:class="post-img"}
 The bête noire of the *Bridget Jones* trilogy (and a film I've seen!), we have to watch this one because we need to see Bridget Jones' Baby at some point as well and we're not skippers!
 
 [Top](#top)
 
 ## 28/10: A Knight's Tale
-![A Knight's Tale](/images/screenings/a-knights-tale/1.jpg){:class="poster-img"}
-
+![A Knight's Tale](/images/screenings/a-knights-tale/1.jpg){:class="post-img"}
 This film has a naked Paul Bettany in it.
 
 [Top](#top)
