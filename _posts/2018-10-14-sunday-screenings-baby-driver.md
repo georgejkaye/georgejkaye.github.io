@@ -6,6 +6,8 @@ alttext: Baby Driver
 tagline: In the first official Sunday Screening of the term, the crew watches Baby Driver on the recommendation of my trusty housemate Alex. Is it just Fast & Furious - The Musical, or is it actually a bit more sophisticated than that?
 ---
 
+**This is part of the [Sunday Screenings](/sunday-screenings) series.**
+
 *In the first official Sunday Screening of the term, the crew watches Baby Driver on the recommendation of my trusty housemate Alex. Is it just Fast & Furious - The Musical, or is it actually a bit more sophisticated than that?*
 
 Apparently there's a large selection of 'important' films that I haven't seen, and [Alex](http://obsidianeagle.github.io) has taken upon the mammoth task of compiling a list of these films with the intention of forcing me to watch them. One of the top ones on the list is Baby Driver, a film by the guy that did Hot Fuzz (a film I've seen!). As cars are the natural enemy of trains I was initially hestitant to watch this blasphemy but I relented and we all sat down in my living room to enjoy the film (accompanied by several [cups of tea](/tea)).
