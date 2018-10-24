@@ -17,6 +17,7 @@ You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them indi
 - [Riviera Line Electrified](#riviera-line-electrified)
 - [South London Network](#south-london-network)
 - [South London to Brighton](#south-london-to-brighton)
+- [Western Mainlines](#western-mainlines)
 - [XC Route (Birmingham - Bristol)](#xc-route-birmingham---bristol)
 
 ## East Coast Main Line
@@ -57,6 +58,9 @@ You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them indi
 [![1A15 1948 Brighton to London Victoria](/images/scenarios/1A15-1948-brighton-to-london-victoria.jpg){:class="small-scenario"}](1A15-1948-brighton-to-london-victoria)
 
 [Top](#top)
+
+## Western Mainlines
+![2M53 0930 Westbury to Swindon](/images/scenarios/2M53-0930-westbury-to-swindon.jpg){:class="small-scenario"}
 
 ## XC Route (Birmingham - Bristol)
 [![1V06 0907 Nottingham to Cardiff Central](/images/scenarios/1V06-0907-nottingham-to-cardiff-central.jpg){:class="small-scenario"}](1V06-0907-nottingham-to-cardiff-central)
