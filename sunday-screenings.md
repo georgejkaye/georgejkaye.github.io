@@ -16,14 +16,14 @@ NB: not all the screenings are actually on Sundays
 | 14/10 | [Baby Driver](#1410-baby-driver) |
 | 21/10 | [Bridget Jones: The Edge of Reason](#2110-bridget-jones-the-edge-of-reason) |
 | 28/10 | [A Knight's Tale](#2810-a-knights-tale) |
-| 31/10 | [The Silence of the Lambs](#3110-the-silence-of-the-lambs)|
+| 31/10 | [The Silence of the Lambs](#3110-the-silence-of-the-lambs) *(Spooky Screening)*|
 | 04/11 | [The Nightmare Before Christmas](#0411-the-nightmare-before-christmas) |
 | 11/11 | [Kick-Ass](#1111-kick-ass) |
 | 18/11 | *TBC* |
 | 25/11 | *TBC* |
 | 01/12 | Love Actually |
 | 02/12 | Arthur Christmas |
-| 09/12 | *TBC* |
+| 09/12 | Gremlins |
 
 ## 07/10: Starter for Ten
 ![Starter for Ten](/images/screenings/starter-for-ten/1.jpg){:class="post-img"}
