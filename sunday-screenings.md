@@ -18,8 +18,8 @@ NB: not all the screenings are actually on Sundays
 | 28/10 | [A Knight's Tale](#2810-a-knights-tale) |
 | 31/10 | [The Silence of the Lambs](#3110-the-silence-of-the-lambs) *(Spooky Screening)*|
 | 04/11 | [The Nightmare Before Christmas](#0411-the-nightmare-before-christmas) |
-| 11/11 | *TBC* |
-| 18/11 | *TBC* |
+| 11/11 | [Hot Fuzz](#1111-hot-fuzz) |
+| 18/11 | [Kill Bill](#1811-kill-bill) |
 | 25/11 | *TBC* |
 | 01/12 | Love Actually |
 | 02/12 | Arthur Christmas |
@@ -62,5 +62,19 @@ A very famous film! A psyschological horror with Tallulah from Bugsy Malone and 
 ![The Nightmare Before Christmas](/images/screenings/the-nightmare-before-christmas/1.jpg){:class="post-img"}
 
 A true classic (and a film I've seen!) to conclude the Halloween screenings, and also to set up a nice segue into Christmas scheduling! Christmas of course does not actually start until December 1st.
+
+[Top](#top)
+
+## 11/11: Hot Fuzz
+![Hot Fuzz](/images/screenings/hot-fuzz/1.jpg){:class="post-img"}
+
+Another well-loved Edgar Wright romp (and a film I've seen!). I aptly ate an Aldi knockoff Cornetto before watching this, but I think it was the wrong flavour.
+
+[Top](#top)
+
+## 18/11: Kill Bill
+![Kill Bill](/images/screenings/kill-bill/1.jpg){:class="post-img"}
+
+I don't know anything about this film, except that it's by some guy called Tarantino and it has a good rhyme in the title. A rare Ash suggestion!
 
 [Top](#top)
