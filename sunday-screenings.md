@@ -19,8 +19,8 @@ NB: not all the screenings are actually on Sundays
 | 31/10 | [The Silence of the Lambs](#3110-the-silence-of-the-lambs) *(Spooky Screening)*|
 | 04/11 | [The Nightmare Before Christmas](#0411-the-nightmare-before-christmas) |
 | 11/11 | [Hot Fuzz](#1111-hot-fuzz) |
-| 18/11 | [Kill Bill](#1811-kill-bill) |
-| 25/11 | *TBC* |
+| 18/11 | [I'm a Celebrity... Get Me Out Of Here!](#1811-im-a-celebrity-get-me-out-of-here-series-18-premiere) |
+| 25/11 | [Coco](#2511-coco) |
 | 01/12 | Love Actually |
 | 02/12 | Arthur Christmas |
 | 09/12 | Gremlins |
