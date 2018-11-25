@@ -72,9 +72,14 @@ Another well-loved Edgar Wright romp (and a film I've seen!). I aptly ate an Ald
 
 [Top](#top)
 
-## 18/11: Kill Bill
-![Kill Bill](/images/screenings/kill-bill/1.jpg){:class="post-img"}
+## 18/11: I'm A Celebrity... Get Me Out of Here! Series 18 Premiere
+![I'm A Celebrity: Get Me Out of Here... Series 18 Premiere](/images/screenings/im-a-celeb/1.jpg){:class="post-img"}
 
-I don't know anything about this film, except that it's by some guy called Tarantino and it has a good rhyme in the title. A rare Ash suggestion!
+This isn't a film! But it has Anne Hegerty in it so I'm willing to let it slide.
 
 [Top](#top)
+
+## 25/11: Coco
+![Coco](/images/screenings/coco/1.jpg){:class="post-img"}
+
+Watching this is apparently the closest Ash has ever come to crying during a film. That doesn't really bode well for the rest of us...
