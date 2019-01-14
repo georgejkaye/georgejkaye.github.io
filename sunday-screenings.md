@@ -24,6 +24,7 @@ NB: not all the screenings are actually on Sundays
 | 01/12 | Love Actually |
 | 02/12 | Arthur Christmas |
 | 09/12 | Gremlins |
+| 13/01 | Kingsman |
 
 ## 07/10: Starter for Ten
 ![Starter for Ten](/images/screenings/starter-for-ten/1.jpg){:class="post-img"}
