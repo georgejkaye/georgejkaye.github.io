@@ -1,0 +1,79 @@
+---
+layout: default
+permalink: /fyp/gallery
+title: Lambda-term generator
+---
+
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <style>
+        .portrait {
+            height: 100%;
+            width: 100%;
+            text-align: left;
+            border-style:solid; 
+            border-color: black;
+            display: inline-block;
+        }
+        .frame {
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            display: inline-block;
+            margin: 15px;
+        }
+        .big-frame {
+            width: 400px;
+            height: 400px;
+            margin: 0px;
+        }
+        .caption {
+            font-size: 200%;
+            margin-top: 0;
+        }
+        table,td{
+            padding-left: 5px;
+            vertical-align: top;
+        }
+        .term-heading{
+            font-size: 48px;
+        }
+        .term-fact{
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class = "column gallery-column">
+        <h1>Welcome to the Tate &lambda; Gallery</h1>
+
+        Graph display powerered by <a href="http://js.cytoscape.org/">Cytoscape.js</a>
+
+        <h2>&lambda; term generators</h2>
+        n <input type = "text" id = "n" style = "width: 25px"> k <input type = "text" id = "k" style = "width: 25px">
+        <button type = "button" id = "generate-btn" onclick = "generate_button(0);">Pure</button>
+        <button type = "button" id = "generate-btn" onclick = "generate_button(1);">Linear</button>
+        <button type = "button" id = "generate-btn" onclick = "generate_button(2);">Planar</button> 
+        <button type = "button" id = "generate-btn" onclick = "test();">Test</button> <span id = "number-of-terms"></span>
+
+        <p id = "church-room"></p>
+    </div>
+
+    <div class = "column portrait-column" id="main-portrait"></div>
+
+    <script src = "definition.js"></script>
+    <script src = "parser.js"></script>
+    <script src = "cytoscape.min.js"></script>
+    <script src = "graph.js"></script>
+    <script src = "functions2.js"></script>
+    <script src = "evaluator.js"></script>
+    <script src = "generator.js"></script>
+
+    
+
+</body>
+</html> 
