@@ -21,10 +21,17 @@ NB: not all the screenings are actually on Sundays
 | 11/11 | [Hot Fuzz](#1111-hot-fuzz) |
 | 18/11 | [I'm a Celebrity... Get Me Out Of Here!](#1811-im-a-celebrity-get-me-out-of-here-series-18-premiere) |
 | 25/11 | [Coco](#2511-coco) |
-| 01/12 | Love Actually |
-| 02/12 | Arthur Christmas |
-| 09/12 | Gremlins |
-| 13/01 | Kingsman |
+| 01/12 | [Love Actually](#0112-love-actually) |
+| 02/12 | [Arthur Christmas](#0212-arthur-christmas) |
+| 09/12 | [Gremlins](#0912-gremlins) |
+| 13/01 | [Kingsman](#1301-kingsman) |
+| 20/01 | [Sing Street](#2001-sing-street) |
+| 27/01 | [Spy Kids 2](#2701-spy-kids-2) |
+| 03/02 | [Singh is Kinng](#0302-singh-is-kinng) |
+| 10/02 | [Scooby-Doo](#1002-scooby-doo) |
+| 17/02 | [Ex Machina](#1702-ex-machina) |
+| 24/02 | [Back to the Future](#2402-back-to-the-future) |
+| 03/03 | [Slumdog Millionaire](#0303-slumdog-millionaire) |
 
 ## 07/10: Starter for Ten
 ![Starter for Ten](/images/screenings/starter-for-ten/1.jpg){:class="post-img"}
@@ -84,3 +91,47 @@ This isn't a film! But it has Anne Hegerty in it so I'm willing to let it slide.
 ![Coco](/images/screenings/coco/1.jpg){:class="post-img"}
 
 Watching this is apparently the closest Ash has ever come to crying during a film. That doesn't really bode well for the rest of us...
+
+## 01/12: Love Actually
+![Love Actually](/images/screenings/love-actually/1.jpg){:class="post-img"}
+The best Christmas film is the only choice for the first festive screening!
+
+## 02/12: Arthur Christmas
+![Arthur Christmas](/images/screenings/arthur-christmas/1.jpg){:class="post-img"}
+Another excellent Christmas film that makes me a bit weepy from time to time.
+
+## 09/12: Gremlins
+![Gremlins](/images/screenings/gremlins/1.jpg){:class="post-img"}
+Alex's chosen Christmas film is another cult classic (but one I haven't watched before!)
+
+## 13/01: Kingsman
+![Kingsman](/images/screenings/kingsman/1.jpg){:class="post-img"}
+We begin the new year in style with this smooth spy flick.
+
+## 20/01: Sing Street
+![Sing Street](/images/screenings/sing-street/1.jpg){:class="post-img"}
+A rare Ed suggestion since we had literally no other ideas, but this film has plenty of bangers so that's alright.
+
+## 27/01: Spy Kids 2
+![Spy Kids 2](/images/screenings/spy-kids-2/1.jpg){:class="post-img"}
+One of the greatest spy films ever made gets a sequel, it's even more bizarro but with less Alan Cumming.
+
+## 03/02: Singh is Kinng
+![Singh is Kinng](/images/screenings/singh-is-kinng/1.jpg){:class="post-img"}
+Ash gets us to watch a Bollywood film and it's actually pretty good!
+
+## 10/02: Scooby-Doo
+![Scooby-Doo](/images/screenings/scooby-doo/1.jpg){:class="post-img"}
+After a spike of Shaggy memes, I make everyone watch the Scooby-Doo film. Everyone enjoys it so much that we watch the second one afterwards!
+
+## 17/02: Ex Machina
+![Ex Machina](/images/screenings/ex-machina/1.jpg){:class="post-img"}
+Ed dives into the mix with this edgy film about artificial intelligence, but they're sexy robots!
+
+## 24/02: Back to the Future
+![Back to the Future](/images/screenings/back-to-the-future/1.jpg){:class="post-img"}
+I am once again overruled and we watch this very important film.
+
+## 03/03: Slumdog Millionaire
+![Slumdog Millionaire](/images/screenings/slumdog-millionaire/1.jpg){:class="post-img"}
+It's another game show film!
