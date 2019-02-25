@@ -6,8 +6,6 @@ permalink: /sunday-screenings/
 
 Sunday Screenings are a new feature for the 2018-19 UoB season! 
 
-NB: not all the screenings are actually on Sundays
-
 ## Schedule
 
 | Date | Film |
