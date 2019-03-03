@@ -4,16 +4,16 @@ title: Trains
 permalink: /trains/
 ---
 
-Here you can find all the Train Simulator scenarios that I've made!
+Here you can find all the Train Simulator scenarios that I've made! You can also download them from [alanthomsonsim.com](https://alanthomsonsim.com/?page_id=5&vendor=georgejkaye).
 
 You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them individually below.
 
 - [East Coast Main Line](#east-coast-main-line)
-    - [London - Peterborough](#london---peterborough)
-    - [Peterborough - York](#peterborough---york)
+  - [London - Peterborough](#london---peterborough)
+  - [Peterborough - York](#peterborough---york)
 - [North Somerset Line Electrified](#north-somerset-line-electrified)
 - [Portsmouth Direct Line](#portsmouth-direct-line)
-    - [London Waterloo - Portsmouth](#london-waterloo---portsmouth)
+  - [London Waterloo - Portsmouth](#london-waterloo---portsmouth)
 - [Riviera Line Electrified](#riviera-line-electrified)
 - [South London Network](#south-london-network)
 - [South London to Brighton](#south-london-to-brighton)
