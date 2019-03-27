@@ -3,7 +3,7 @@ layout: page2
 title: Home
 ---
 
-Hello there! I'm George, a fourth year MSci Computer Science student studying at the University of Birmingham!
+Hello! I'm George, a fourth year MSci Computer Science student studying at the University of Birmingham!
 
 ## Current work
 Currently I'm working on finishing my [final year project](/fyp), under the supervision of [Noam Zeilberger](http://noamz.org/).
@@ -15,12 +15,15 @@ Currently I'm working on finishing my [final year project](/fyp), under the supe
 * Reasoning
 
 ## About me
-I am also a pianist, Arsenal supporter and train fan.
+I like trains, play the piano, and support Arsenal.
+
+I occasionally take photos of pretty things and put them on [Instagram](https://www.instagram.com/georgejkaye/).
 
 ## Pictures
 Here are some [pictures](/pictures) of me!
 
-### Contact me
+## Contact me
 
 **Personal:** [georgejkaye@gmail.com](mailto:georgejkaye:gmail.com)
+
 **University:** [gjk591@student.bham.ac.uk](mailto:gjk591@student.bham.ac.uk)
