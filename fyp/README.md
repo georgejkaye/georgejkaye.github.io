@@ -1,10 +1,9 @@
-# fyp
 The repo for my masters project, a set of tools to help investigation of terms from various fragments of the λ-calculus. The core function of the tools is to represent these λ-terms as *maps* - some background on maps and how λ-terms can be represented as them can be found in my [**Scientific Paper**](/docs/2018-11-23-scientific-paper.pdf).
 
 ## Tools
 There are currently two tools available:
-   * **λ-term visualiser**
-   * **λ-term gallery** 
+   * [**λ-term visualiser**](/visualiser.html)
+   * [**λ-term gallery**](/gallery.html)
 
 ### λ-term visualiser
 ![λ-term visualiser](/pics/visualiser.png)
