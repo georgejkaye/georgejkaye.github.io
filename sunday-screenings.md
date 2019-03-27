@@ -30,6 +30,9 @@ Sunday Screenings are a new feature for the 2018-19 UoB season!
 | 17/02 | [Ex Machina](#1702-ex-machina) |
 | 24/02 | [Back to the Future](#2402-back-to-the-future) |
 | 03/03 | [Slumdog Millionaire](#0303-slumdog-millionaire) |
+| 10/03 | [Princess Diaries](#1003-princess-diaries)|
+| 17/03 | [Twilight](#1703-twilight)|
+| 24/03 | [The Wolf of Wall Street](#2403-the-wolf-of-wall-street)|
 
 ## 07/10: Starter for Ten
 ![Starter for Ten](/images/screenings/starter-for-ten/1.jpg){:class="post-img"}
@@ -133,3 +136,15 @@ I am once again overruled and we watch this very important film.
 ## 03/03: Slumdog Millionaire
 ![Slumdog Millionaire](/images/screenings/slumdog-millionaire/1.jpg){:class="post-img"}
 It's another game show film!
+
+## 10/03: Princess Diaries
+![Princess Diaries](/images/screenings/princess-diaries/1.jpg){:class="post-img"}
+There was a reason behind this choice but I forgot what it was. We also watched the second one and ordered KFC that went on a magical mystery tour of Selly!
+
+## 17/03: Twilight
+![Twilight](/images/screenings/twilight/1.jpg){:class="post-img"}
+I randomly choose a film and am baffled when people actually want to watch it. We watched New Moon too! (And then everyone watched the first 30 minutes of Eclipse without me and I complained for hours)
+
+## 24/03: The Wolf of Wall Street
+![The Wolf of Wall Street](/images/screenings/the-wolf-of-wall-street/1.jpg){:class="post-img"}
+Alex wanted to watch Ferris Bueller but he was overruled (it's not just me!) and we watched this film instead! It's an experience.
