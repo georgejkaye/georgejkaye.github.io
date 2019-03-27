@@ -4,4 +4,17 @@ title: Tea
 permalink: /tea/
 ---
 
-I have my tea filled right to the top, with a teaspoon of semi-skimmed milk and no sugar. My go-to blend is Yorkshire Tea but I am also partial to a Twinings Lady Grey and have been known to enjoy a Lapsang Souchong.
+## Brew
+* Boil kettle
+* Put teabag into one of many mugs
+* Pour water into mug
+* Leave it for a couple of minutes
+* A splash of milk first then teabag in bin
+* No sugar
+
+## Blends
+* Yorkshire Tea
+* Twinings
+  * English Breakfast
+  * Lady Grey
+  * Lapsang Souchong

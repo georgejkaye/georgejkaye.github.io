@@ -1,0 +1,29 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+  <article class="post">
+    <h2 class="post-title">
+      <a href="{{ site.basurl }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+
+    {% if post.image %}
+    <img src="{{ post.image }}" alt="{{ post.alttext }}" width="100%">
+    <br>
+    {% endif %}
+
+    {{ post.tagline }}
+    <br>
+    <h6><a href="{{ site.basurl }}{{ post.url }}">Read more</a></h6>
+
+  </article>
+  {% endfor %}
+</div>

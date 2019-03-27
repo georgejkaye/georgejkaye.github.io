@@ -1,6 +1,6 @@
 ---
-layout: page
-title: About
+layout: page2
+title: Home
 ---
 
 Hello there! I'm George, a Computer Science student from the University of Birmingham and a fan of functional programming, the lambda calculus, reasoning, and computing theory.
