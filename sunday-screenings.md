@@ -30,7 +30,7 @@ Sunday Screenings are a new feature for the 2018-19 UoB season!
 | 17/02 | [Ex Machina](#1702-ex-machina) |
 | 24/02 | [Back to the Future](#2402-back-to-the-future) |
 | 03/03 | [Slumdog Millionaire](#0303-slumdog-millionaire) |
-| 10/03 | [Princess Diaries](#1003-princess-diaries)|
+| 10/03 | [The Princess Diaries](#1003-the-princess-diaries)|
 | 17/03 | [Twilight](#1703-twilight)|
 | 24/03 | [The Wolf of Wall Street](#2403-the-wolf-of-wall-street)|
 
@@ -137,8 +137,8 @@ I am once again overruled and we watch this very important film.
 ![Slumdog Millionaire](/images/screenings/slumdog-millionaire/1.jpg){:class="post-img"}
 It's another game show film!
 
-## 10/03: Princess Diaries
-![Princess Diaries](/images/screenings/princess-diaries/1.jpg){:class="post-img"}
+## 10/03: The Princess Diaries
+![The Princess Diaries](/images/screenings/the-princess-diaries/1.jpg){:class="post-img"}
 There was a reason behind this choice but I forgot what it was. We also watched the second one and ordered KFC that went on a magical mystery tour of Selly!
 
 ## 17/03: Twilight
