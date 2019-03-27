@@ -23,8 +23,6 @@ function parse(tokens, env){
  */
 function parseTerm(tokens, initial, env){
 
-    console.log("Parsing term: " + tokens);
-
     const len = tokens.length;
 
     var abstractionVariable = "";
@@ -38,18 +36,17 @@ function parseTerm(tokens, initial, env){
 
     while(i < len){
 
-        console.log("Looking at token " + (initial + i) + ": " + tokens[i]);
-
         switch(tokens[i]){
             
             /* lambda abstraction, next token must be a variable */
             case '\\':
 
                 i++;
-                console.log("Looking at token " + (initial + i) + ": " + tokens[i]);
+
                 abstractionVariable = tokens[i]; 
 
                 i++;
+
                 env.pushTerm(abstractionVariable);
                 var scope = findScope(tokens.slice(i));
 
@@ -61,7 +58,6 @@ function parseTerm(tokens, initial, env){
 
                 t2 = new LambdaAbstraction (t, abstractionVariable);
                 i += scope.length;
-                console.log("New abstraction: " + t2.prettyPrint());
                 env.popTerm();
 
                 break;
@@ -70,9 +66,8 @@ function parseTerm(tokens, initial, env){
             case '(':
 
                 i++;
+
                 var scope = findScope(tokens.slice(i));
-                console.log("Scope of subterm: " + scope);
-                console.log("Length of scope: " + scope.length);
                 t2 = parseTerm(scope, initial + i, env);
 
                 if(typeof t2 === "string"){
@@ -80,35 +75,51 @@ function parseTerm(tokens, initial, env){
                 }
 
                 i += (scope.length - 1);
-                console.log("New subterm: " + t2.prettyPrint());
-                console.log("Remaining tokens: " + tokens.slice(i + 1));
 
                 break;
 
             /* end of a subterm */
             case ')':
                 
-                console.log("Returning term: " + t1.prettyPrint());
                 return t1;
 
             /* otherwise */
             default:
 
-                var index = env.find(tokens[i]);
-                var label = env.determine(index);
+                /* Check if this is an alias being parsed. */
+                var body = getFunctionBody(tokens[i]);
 
-                if(index === -1){
-                    return "Parse error: Variable " + tokens[i] + " with no associated binding encountered";
+                /* If it is an alias: */
+                if(body !== null){
+                    switch(body.getType()){
+                        case APP:
+                            t2 = new LambdaApplication(body.t1, body.t2, tokens[i]);
+                            break;
+                        case ABS:
+                            t2 = new LambdaAbstraction(body.t, body.label, tokens[i]);
+                            break;
+                        case VAR:
+                            t2 = new LambdaVariable(body.index, tokens[i]);
+                            break;
+                    }
+                } else {
+
+                    var index = env.find(tokens[i]);
+                    
+                    if(index === -1){
+                        return "Parse error: Variable " + tokens[i] + " with no associated binding encountered";
+                    }
+
+                    t2 = new LambdaVariable(index);
                 }
 
-                t2 = new LambdaVariable(index, label, pos);
                 pos++;
                 break;
                 
         } 
 
+        /* Check if this is the second part of an application. */
         if(secondTerm){
-                console.log("Applying " + t2.prettyPrint() + " to " + t1.prettyPrint());
                 t1 = new LambdaApplication(t1, t2);
         } else {
                 t1 = t2;
@@ -118,7 +129,6 @@ function parseTerm(tokens, initial, env){
         i++;
     }
 
-    console.log("Returning term: " + t1.prettyPrint());
     return t1;
 }
 
@@ -225,6 +235,7 @@ function tokenise(text){
                 tokens = pushString(tokens, string);
                 string = "";
                 tokens = pushString(tokens, currentCharacter);
+                awaitingContent = true;
                 break;
 
             /* start of a subterm, need to check there is a matching closing bracket */
@@ -240,12 +251,17 @@ function tokenise(text){
                     brackets++;
                     tokens = pushString(tokens, currentCharacter);
                 }
+                awaitingContent = true;
                 break;
 
             /* any other character is part of a string */
             default:
                 string += currentCharacter;
-                awaitingContent = false;
+
+                if(!abstraction){
+                    awaitingContent = false;
+                }
+
                 break;
         }
 
@@ -334,5 +350,22 @@ function findClosingBracket(initial, text){
     }
 
     return -1;
+
+}
+
+/**
+ * Checks if a word corresponds to a function in the context, and returns it if so.
+ * @param {string} functionName - The function name to check.
+ * @return {Object} The corresponding function, or null if none exist.
+ */
+function getFunctionBody(functionName){
+    
+    for(var i = 0; i < functions.length; i++){
+        if(functions[i][0] === functionName){
+            return functions[i][1];
+        }
+    }
+
+    return null;
 
 }
