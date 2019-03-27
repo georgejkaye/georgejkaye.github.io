@@ -1,79 +1,56 @@
----
-layout: default
-permalink: /fyp/gallery
-title: Lambda-term generator
----
-
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
 <head>
-    <style>
-        .portrait {
-            height: 100%;
-            width: 100%;
-            text-align: left;
-            border-style:solid; 
-            border-color: black;
-            display: inline-block;
-        }
-        .frame {
-            width: 250px;
-            height: 250px;
-            text-align: center;
-            display: inline-block;
-            margin: 15px;
-        }
-        .big-frame {
-            width: 400px;
-            height: 400px;
-            margin: 0px;
-        }
-        .caption {
-            font-size: 200%;
-            margin-top: 0;
-        }
-        table,td{
-            padding-left: 5px;
-            vertical-align: top;
-        }
-        .term-heading{
-            font-size: 48px;
-        }
-        .term-fact{
-            font-size: 24px;
-        }
-
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class = "column gallery-column">
-        <h1>Welcome to the Tate &lambda; Gallery</h1>
+        <h1>&lambda;-term gallery</h1>
 
-        Graph display powerered by <a href="http://js.cytoscape.org/">Cytoscape.js</a>
+        <p><b><a href="visualiser.html">&lambda;-term visualiser</a></b></p>
+
+        <p>Graph display powerered by <a href="http://js.cytoscape.org/">Cytoscape.js</a></p>
+
+        The underlying algorithms behind the term generators can be found <a href="Generator.hs">here</a> (in Haskell!).
 
         <h2>&lambda; term generators</h2>
-        n <input type = "text" id = "n" style = "width: 25px"> k <input type = "text" id = "k" style = "width: 25px">
-        <button type = "button" id = "generate-btn" onclick = "generate_button(0);">Pure</button>
-        <button type = "button" id = "generate-btn" onclick = "generate_button(1);">Linear</button>
-        <button type = "button" id = "generate-btn" onclick = "generate_button(2);">Planar</button> 
-        <button type = "button" id = "generate-btn" onclick = "test();">Test</button> <span id = "number-of-terms"></span>
+        n <input type = "text" class = "number-box" id = "n"> k <input type = "text" class = "number-box" id = "k">
+        <button type = "button" id = "generate-btn" onclick = "generateButton(0, false);">Pure</button>
+        <button type = "button" id = "generate-btn" onclick = "generateButton(1, false);">Linear</button>
+        <button type = "button" id = "generate-btn" onclick = "generateButton(2, false);">Planar</button> 
+
+        <p>You might need to be patient for larger values of n and k while the maps are drawn. For n > 10 be prepared to wait a while, or until the universe collapses!</p>
+        <p>For larger terms, you may wish to disable map generation to speed up the process a bit.</p>
+
+        <h3>Generation options</h3>
+        <p>Draw maps (costly)<input type = "checkbox" id = "draw" checked></p>
+        <p>Use de Bruijn notation<input type = "checkbox" id = "de-bruijn"></p>
+
+        <h3>Filtering options</h3>
+        Crossings <input type = "text" class = "number-box" id = "crossings">
+        Abstractions <input type = "text" class = "number-box" id = "abstractions">
+        Applications <input type = "text" class = "number-box" id = "applications">
+        Variables <input type = "text" class = "number-box" id = "variables">
+        &beta;-redexes<input type = "text" class = "number-box" id = "betas">
+
+        <b><p id = "number-of-terms"></p></b>
+        <b><p id = "help"></p></b>
 
         <p id = "church-room"></p>
+        <p id = "normalisation-studio"></p>
     </div>
-
-    <div class = "column portrait-column" id="main-portrait"></div>
 
     <script src = "definition.js"></script>
     <script src = "parser.js"></script>
     <script src = "cytoscape.min.js"></script>
     <script src = "graph.js"></script>
-    <script src = "functions2.js"></script>
+    <script src = "sharedFunctions.js"></script>
+    <script src = "galleryFunctions.js"></script>
     <script src = "evaluator.js"></script>
     <script src = "generator.js"></script>
-
-    
 
 </body>
 </html> 
