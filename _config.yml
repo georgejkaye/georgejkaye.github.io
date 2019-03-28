@@ -34,6 +34,7 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-github-metadata
+  - jekyll-seo-tag
 
 exclude:
   - Gemfile
