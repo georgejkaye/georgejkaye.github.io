@@ -16,7 +16,9 @@ permalink: /blog/
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
     {% if post.image %}
-    <img src="{{ post.image }}" alt="{{ post.alttext }}" width="100%">
+    <a href="{{ site.basurl }}{{ post.url }}">
+      <img src="{{ post.image }}" alt="{{ post.alttext }}" width="100%">
+    </a>
     <br>
     {% endif %}
 
