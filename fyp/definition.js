@@ -12,7 +12,7 @@ const ABS = 1;
 const APP = 2;
 
 /** The number of reduction steps to perform before halting operations. */
-const maximumPathLength = 100;
+const maximumPathLength = 5000;
 
 /** Constants to represent different modes */
 const MAX = 0;
@@ -22,7 +22,7 @@ const MODE = 3;
 const MEDIAN = 4;
 
 var currentVariableIndex = 0;
-const variableNames = ['x', 'y', 'z', 'w', 'u', 'v', 't', 'p', 'q', 'r', 's', 'm', 'n', 'o', '\u03C8', '\u03C8', '\u03C9'];
+const variableNames = ['x', 'y', 'z', 'w', 'u', 'v', 't', 'p', 'q', 'r', 's', 'm', 'n', 'o', '\u03D5', '\u03C8', '\u03C9'];
 
 var currentFreeVariableIndex = 0;
 const freeVariableNames = ['a', 'b', 'c', 'd', 'e'];
@@ -1060,8 +1060,15 @@ class ReductionGraph{
         var frontier = [[term, 0]];
         var i = 0;
 
+        var failed = false;
 
         while(frontier.length !== 0){
+
+            console.log(i);
+
+            if(i > maximumPathLength){
+                break;
+            }
 
             /* Examine the next term in the frontier containing all next reductions. */
             var nextTerm = frontier.shift();
@@ -1212,7 +1219,7 @@ class ReductionGraph{
         /* The first element of the matrix is the start point */
         var allPaths = this.pathLengthsFromTerm(0);
         
-        if(allPaths === -1){
+        if(allPaths === -1 || allPaths[0].length === 0){
             console.log("timeout!");
             return ["unknown", "unknown", "unknown", "unknown", "unknown", "unknown"];
         }
