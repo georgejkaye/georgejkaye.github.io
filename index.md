@@ -6,7 +6,7 @@ title: Home
 Hello! I'm George, a fourth year MSci Computer Science student studying at the University of Birmingham!
 
 ## Current work
-Currently I'm working on finishing my [final year project](/fyp), under the supervision of [Noam Zeilberger](http://noamz.org/).
+Having finished my [final year project](/fyp), it's time to start revising for exams!
 
 ## Interests
 * Programming languages
