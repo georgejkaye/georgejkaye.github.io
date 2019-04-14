@@ -17,6 +17,7 @@ You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them indi
 - [Riviera Line Electrified](#riviera-line-electrified)
 - [South London Network](#south-london-network)
 - [South London to Brighton](#south-london-to-brighton)
+- [South Western Expressways](#south-western-expressways)
 - [Western Mainlines](#western-mainlines)
 - [XC Route (Birmingham - Bristol)](#xc-route-birmingham---bristol)
 
@@ -59,8 +60,15 @@ You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them indi
 
 [Top](#top)
 
+## South Western Expressways
+[![2M12 1410 Frome to Swindon (Part 1)](/images/scenarios/2M12-1410-frome-to-swindon-part-1.jpg){:class="small-scenario"}](2M12-1410-frome-to-swindon)
+
+[Top](#top)
+
 ## Western Mainlines
-![2M53 0930 Westbury to Swindon](/images/scenarios/2M53-0930-westbury-to-swindon.jpg){:class="small-scenario"}
+[![2M12 1410 Frome to Swindon (Part 2)](/images/scenarios/2M12-1410-frome-to-swindon-part-2.jpg){:class="small-scenario"}](2M12-1410-frome-to-swindon)
+
+[Top](#top)
 
 ## XC Route (Birmingham - Bristol)
 [![1V06 0907 Nottingham to Cardiff Central](/images/scenarios/1V06-0907-nottingham-to-cardiff-central.jpg){:class="small-scenario"}](1V06-0907-nottingham-to-cardiff-central)
