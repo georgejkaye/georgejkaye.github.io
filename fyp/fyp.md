@@ -40,7 +40,7 @@ The [**Project Proposal**](/fyp/2018-10-26-project-proposal.pdf) is a brief over
 
 The [**Scientific Paper**](/fyp/2018-11-23-scientific-paper.pdf) gives some background on the topics involved, and how the project was progressing towards the end of November.
 
-The **Project Report** (coming soon!) is the actual dissertation.
+The [**Project Report**](/fyp/2018-11-23-scientific-paper.pdf) is the report from the end of the project - the dissertation!
 
 ## Source code
 
