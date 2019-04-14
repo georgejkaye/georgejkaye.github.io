@@ -25,14 +25,16 @@ In Part 1, you’ll drive between Frome and Bradford Jn, calling at Frome, Westb
 ## Timetable
 
 ### Part 1
+
 | Location | Pl | Arr | Dep |
 |:-|:-:|:-:|:-:|
-| Frome (FRO) |  | | 1410 |
+| Frome (FRO) | | | 1410 |
 | Westbury (WSB) | 3 | 1419 | 1424 |
 | Trowbridge (TRO) | 1 | 1430 | 1431 |
 | *Bradford Jn* | | *pass* | *1433* |
 
 ### Part 2
+
 | Location | Pl | Arr | Dep |
 |:-|:-:|:-:|:-:|
 | *Thingley Jn* |  | *pass* | *1445* |
