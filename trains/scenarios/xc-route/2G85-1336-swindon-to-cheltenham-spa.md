@@ -19,6 +19,13 @@ One last thing to note is that there is a temporary speed restriction of 10mph o
 ## Downloads
 * [Direct download](/scenarios/2G85 1336 Swindon to Cheltenham Spa v1.1.zip)
 
+## Timetable
+
+| Location | Pl | Arr | Dep |
+|:-|:-:|:-:|:-:|
+| Gloucester (GCR) | 2 | 1428 | 1433 |
+| Cheltenham Spa (CNM) | 2 | 1445 | |
+
 ## Requirements
 
 ### Payware
