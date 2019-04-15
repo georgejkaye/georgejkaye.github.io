@@ -12,10 +12,12 @@ difficulty: Medium
 permalink: /trains/2G85-1336-swindon-to-cheltenham-spa
 ---
 
-Hello driver! Today you are behind the controls of 2G85, a First Great Western stopping service from Swindon bound for Cheltenham Spa. Currently you are waiting at a signal at Standish Jn, south of Gloucester, waiting for a delayed CrossCountry service to pass. Ensure your cab is ready so that you can depart immediately once you are given the road: hopefully you should be on time again once you depart Gloucester! One last thing to note is that there is a temporary speed restriction of 10mph over Barnwood Jn (which you will travel over as you leave Gloucester for Cheltenham) due to the heat causing the tracks to be in danger of buckling. Drive safely!
+Hello driver! Welcome aboard unit 150129, which is currently standing at a signal at Standish Jn, south of Gloucester. It's a sweltering summer's day, and you are being held here to allow a delayed CrossCountry service to pass. Today you are driving service 2G85, the 1336 from Swindon to Cheltenham Spa, on the leg between Standish Jn and Cheltenham Spa. You'll be calling at Gloucester and Cheltenham Spa.
+
+One last thing to note is that there is a temporary speed restriction of 10mph over Barnwood Jn (which you will travel over as you leave Gloucester for Cheltenham) due to the heat causing the tracks to be in danger of buckling.
 
 ## Downloads
-* [Direct download](/scenarios/2G85 1336 Swindon to Cheltenham Spa v1.0.zip)
+* [Direct download](/scenarios/2G85 1336 Swindon to Cheltenham Spa v1.1.zip)
 
 ## Requirements
 
