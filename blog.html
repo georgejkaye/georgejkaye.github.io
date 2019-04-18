@@ -16,14 +16,14 @@ permalink: /blog/
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
     {% if post.image %}
-    <a href="{{ site.basurl }}{{ post.url }}">
-      <img src="{{ post.image }}" alt="{{ post.alttext }}" width="100%">
-    </a>
-    <br>
+    <p>
+      <a href="{{ site.basurl }}{{ post.url }}">
+        <img src="{{ post.image }}" alt="{{ post.alttext }}" width="100%">
+      </a>
+    </p>
     {% endif %}
 
-    {{ post.tagline }}
-    <br>
+    <p>{{ post.tagline }}</p>
     <h6><a href="{{ site.basurl }}{{ post.url }}">Read more</a></h6>
 
   </article>
