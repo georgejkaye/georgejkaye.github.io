@@ -22,6 +22,7 @@ Have fun!
 ## Downloads
 * [Direct download](/scenarios/1V41 0642 Birmingham New Street to Paignton v2.0.zip)
 * [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1474607185)
+* [Alan Thomson Sim](https://alanthomsonsim.com/?download=1v41-0642-birmingham-new-street-to-paignton)
 
 ## Timetable
 

@@ -22,6 +22,7 @@ I would **strongly recommend** reducing your graphics settings for this scenario
 ## Downloads
 * [Direct download](/scenarios/1A15 1948 Brighton to London Victoria v2.0.zip)
 * [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1123961570)
+* [Alan Thomson Sim](https://alanthomsonsim.com/?download=1a15-1948-brighton-to-london-victoria)
 
 ## Timetable
 

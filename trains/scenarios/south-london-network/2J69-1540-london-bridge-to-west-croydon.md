@@ -22,6 +22,7 @@ I would **strongly recommend** reducing your graphics settings for this scenario
 ## Downloads
 * [Direct download](/scenarios/2J69 1540 London Bridge to West Croydon v2.0.zip)
 * [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1097997024)
+* [Alan Thomson Sim](https://alanthomsonsim.com/?download=2j69-1540-london-bridge-to-west-croydon)
 
 ## Timetable
 
