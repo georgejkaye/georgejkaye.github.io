@@ -18,6 +18,7 @@ One last thing to note is that there is a temporary speed restriction of 10mph o
 
 ## Downloads
 * [Direct download](/scenarios/2G85 1336 Swindon to Cheltenham Spa v1.1.zip)
+* [Alan Thomson Sim](https://alanthomsonsim.com/?download=1v06-0907-nottingham-to-cardiff-central)
 
 ## Timetable
 
