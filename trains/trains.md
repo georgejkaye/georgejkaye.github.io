@@ -4,9 +4,11 @@ title: Trains
 permalink: /trains/
 ---
 
-I make Train Simulator scenarios! You can also download them from [alanthomsonsim.com](https://alanthomsonsim.com/?page_id=5&vendor=georgejkaye).
+I make Train Simulator scenarios! 
 
-You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them individually below.
+You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them individually below. Alternatively, you can download them from [Alan Thomson Sim](https://alanthomsonsim.com/?page_id=5&vendor=georgejkaye).
+
+If you enjoyed my scenarios and would like to help me make more, feel free to [donate](https://www.paypal.me/georgejkaye) - it'll help me buy future DLC and make my next scenarios even better!
 
 - [East Coast Main Line](#east-coast-main-line)
   - [London - Peterborough](#london---peterborough)
