@@ -20,7 +20,7 @@ Unfortunately, you’ve been pathed behind a late-running freight train from Wha
 In Part 1, you’ll drive between Frome and Bradford Jn, calling at Frome, Westbury and Trowbridge. In Part 2, you’ll drive between Thingley Jn and Swindon, calling at Chippenham and Swindon.
 
 ## Downloads
-* [Direct download](/scenarios/2M12 1410 Frome to Swindon v1.0.zip)
+* [Direct download - Parts 1 and 2](/scenarios/2M12 1410 Frome to Swindon v1.0.zip)
 * [Alan Thomson Sim]() *(awaiting approval)*
 
 ## Timetable
