@@ -8,6 +8,8 @@ I make Train Simulator scenarios!
 
 You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them individually below. Alternatively, you can download them from [Alan Thomson Sim](https://alanthomsonsim.com/?page_id=5&vendor=georgejkaye).
 
+To keep up to date with what I'm doing, you can follow the [GJK Scenarios page](https://www.facebook.com/gjkscenarios/) on Facebook.
+
 If you enjoyed my scenarios and would like to help me make more, feel free to [donate](https://www.paypal.me/georgejkaye) - it'll help me buy future DLC and make my next scenarios even better!
  
 ## Routes<!-- omit in toc -->
