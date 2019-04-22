@@ -21,7 +21,7 @@ In Part 1, you’ll drive between Frome and Bradford Jn, calling at Frome, Westb
 
 ## Downloads
 * [Direct download - Parts 1 and 2](/scenarios/2M12 1410 Frome to Swindon v1.0.zip)
-* [Alan Thomson Sim]() *(awaiting approval)*
+* [Alan Thomson Sim](https://alanthomsonsim.com/?download=2m12-1410-frome-to-swindon)
 
 ## Timetable
 
