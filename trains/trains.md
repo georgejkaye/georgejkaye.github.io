@@ -66,17 +66,19 @@ If you enjoyed my scenarios and would like to help me make more, feel free to [d
 [Top](#top)
 
 ## South Western Expressways
-[![2M12 1410 Frome to Swindon (Part 1)](/images/scenarios/2M12-1410-frome-to-swindon-part-1.jpg){:class="small-scenario"}](2M12-1410-frome-to-swindon)
+[![2M12 1410 Frome to Swindon (Part 1)](/images/scenarios/2M12-1410-frome-to-swindon.jpg){:class="small-scenario"}](2M12-1410-frome-to-swindon)
+![6M08 0826 Westbury Up T.C. to Swindon](/images/scenarios/6M08-0826-westbury-up-tc-to-swindon.jpg){:class="small-scenario"}
 
 [Top](#top)
 
 ## Western Mainlines
-[![2M12 1410 Frome to Swindon (Part 2)](/images/scenarios/2M12-1410-frome-to-swindon-part-2.jpg){:class="small-scenario"}](2M12-1410-frome-to-swindon)
+[![2M12 1410 Frome to Swindon (Part 2)](/images/scenarios/2M12-1410-frome-to-swindon.jpg){:class="small-scenario"}](2M12-1410-frome-to-swindon)
 
 [Top](#top)
 
 ## XC Route (Birmingham - Bristol)
 [![1V06 0907 Nottingham to Cardiff Central](/images/scenarios/1V06-0907-nottingham-to-cardiff-central.jpg){:class="small-scenario"}](1V06-0907-nottingham-to-cardiff-central)
 [![2G85 1336 Swindon to Cheltenham Spa](/images/scenarios/2G85-1336-swindon-to-cheltenham-spa.jpg){:class="small-scenario"}](2G85-1336-swindon-to-cheltenham-spa)
+![6M08 0826 Westbury Up T.C. to Swindon](/images/scenarios/6M08-0826-westbury-up-tc-to-swindon.jpg){:class="small-scenario"}
 
 [Top](#top)
