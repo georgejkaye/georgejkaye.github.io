@@ -28,7 +28,7 @@
       {% endfor %}
 
       <a class="sidebar-nav-item" href="{{ site.github }}">GitHub</a>
-      <a class="sidebar-nav-item" href="{{ site.basurl }}/misc/">Misc</a>
+      <a class="sidebar-nav-item{% if page.url == https://www.georgejkaye.com/misc/%} active{% endif %}" href="{{ site.basurl }}/misc/">Misc</a>
       <span class="sidebar-nav-item">Running <a href="http://hyde.getpoole.com/">Hyde</a>, a Jekyll theme</span>
     </nav>
 
