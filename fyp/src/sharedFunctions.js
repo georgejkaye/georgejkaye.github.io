@@ -18,6 +18,10 @@ var reducing = false;
 var bigScreen = false;
 var cyNorm;
 var cyMap;
+var cyMapWidth;
+var cyNormWidth;
+
+var imageWindow;
 
 const fullScreenWidth = "96vw";
 const fullScreenHeight = "92vh";
@@ -295,14 +299,15 @@ function getStats(currentTerm){
             getRow(getCell("", getButton("fullScreen-btn", "fullScreenMapButton();", "Full screen", false) +
                                 getButton("reset-btn", "resetViewButton();", "Reset view", true) +
                                 getButton("reset-btn", "resetButton();", "Reset to original term", true) + 
-                                getButton("back-btn", "backButton();", "Back", false)
+                                getButton("export-btn", "exportButton(true)", "Export map", false)
             )) +
             getRow(getCell("", getButton("normalise-btn", "normaliseButton()", "Normalise") + getButton("watch-reduction-btn", "playReduction()", "Watch normalisation") +
                                 '<select id="strategy">' +
                                     "<option value=0>Outermost</value>" +
                                     "<option value=1>Innermost</value>" +
                                     "<option value=2>Random</value>" +
-                                "<select")) +
+                                "<select>")) +
+            getRow(getCell("", getButton("back-btn", "backButton();", "Back", false))) +
             getRow(getCell("", "<br>")) +
             getRow(getCell("term-fact", "<b>Normalisation graph options<b>")) +
             getRow(getCell("", 'Draw maps (very costly for large maps) <input type = "checkbox" id = "normalisation-maps" checked>')) +
@@ -361,7 +366,10 @@ function viewPortrait(exhibitName, term, label, full, i){
         );
     }
 
-    cyMap = drawMap('portrait' + currentFrame, currentTerm, freeVariables, true, true, label);
+    var map = drawMap('portrait' + currentFrame, currentTerm, freeVariables, true, true, label);
+    cyMap = map[0];
+    cyMapWidth = map[1];
+    
     scrollToElement("church-room");
 }
 
@@ -382,6 +390,36 @@ function resetButton(){
  */
 function resetViewButton(){
     viewPortrait(exhibit, currentTerm, labels, bigScreen, currentFrame);
+}
+
+/**
+ * Function to execute when the export button is pressed.
+ * @param {boolean} map - Whether to export the map or the normalisation graph
+ */
+function exportButton(map){
+
+    var scale = 1;
+    var png64;
+
+    if(map){
+        scale = 10000 / cyMapWidth;
+        png64 = cyMap.png({
+            bg: '#fff',
+            full: true,
+            scale: scale
+        });
+    } else {
+        scale = 1000 / (cyNormWidth / 4);
+        png64 = cyNorm.png({
+            bg: '#fff',
+            full: true,
+            scale: scale,
+            maxWidth: 10000,
+            maxHeight: 10000
+        });
+    }
+
+    imageWindow = window.open(png64, '_blank');
 }
 
 /**
@@ -578,7 +616,9 @@ function showNormalisationGraph(){
                                                 '</td>'
     );
     
-    cyNorm = drawNormalisationGraph("normalisation-graph", currentTerm, freeVariables, document.getElementById('normalisation-maps').checked, document.getElementById('normalisation-labels').checked, document.getElementById('normalisation-arrows').checked);
+    var norm = drawNormalisationGraph("normalisation-graph", currentTerm, freeVariables, document.getElementById('normalisation-maps').checked, document.getElementById('normalisation-labels').checked, document.getElementById('normalisation-arrows').checked);
+    cyNorm = norm[0];
+    cyNormWidth = norm[1];
 
     document.getElementById("reset-btn").disabled = false;
     scrollToElement('normalisation-studio');
@@ -619,6 +659,7 @@ function getNormalisationGraphText(pathStats){
                 pathStatsText +
                 getRow(getCell("", getButton('fullscreen-norm-btn', 'fullScreenNormalisationGraphButton()', "Full screen", false))) +
                 getRow(getCell("", getButton('clear-norm-btn', 'clearNormalisationGraph()', "Back", false))) +
+                getRow(getCell("", getButton('export-norm-btn', 'exportButton(false)', "Export graph", false))) +
            '</table>';
 }
 
