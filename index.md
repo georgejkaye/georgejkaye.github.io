@@ -5,9 +5,6 @@ title: Home
 
 Hello! I'm George, a fourth year MSci Computer Science student studying at the University of Birmingham!
 
-## Current work
-Having finished my [final year project](/fyp), it's time to start revising for exams!
-
 ## Interests
 * Programming languages
 * The lambda calculus
