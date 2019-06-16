@@ -14,7 +14,7 @@
 
       {% if page.url == "/" | relative_url %}
       <a class="sidebar-nav-item{% if page.url == '/'' | relative_url %} active{% endif %}" href="{{ site.basurl }}#top">Home</a>
-      <a class="sidebar-nav-item{% if page.url == '{{ site-basurl }}#about-me' %} active {% endif %}" href="{{ site.basurl }}#about-me">About</a>
+      <a class="sidebar-nav-item{% if page.url == '{{ site-basurl }}/#about-me' %} active {% endif %}" href="{{ site.basurl }}#about-me">About</a>
       <a class="sidebar-nav-item" href="{{ site.basurl }}#projects">Projects</a>
       <a class="sidebar-nav-item" href="{{ site.basurl }}#talks">Talks</a>
       <a class="sidebar-nav-item" href="{{ site.basurl }}#misc">Misc</a>
@@ -26,6 +26,7 @@
       <a class="sidebar-nav-item{% if page.type == 'misc' %} active {% endif %}" href="{{ site.basurl }}/#misc">Misc</a>
       {% endif %}
 
+      <a class="sidebar-nav-item" href="{{ site.basurl }}/blog">Blog</a>
       <a class="sidebar-nav-item" href="{{ site.github }}">GitHub</a>
       <span class="sidebar-nav-item">Running <a href="http://hyde.getpoole.com/">Hyde</a>, a Jekyll theme</span>
     </nav>
