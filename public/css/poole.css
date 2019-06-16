@@ -240,6 +240,13 @@ img {
   margin-bottom: -5px;
 }
 
+.img-left {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
+
 /* Tables */
 table {
   margin-bottom: 1rem;

@@ -2,6 +2,7 @@
 layout: page2
 title: Final Year Project
 permalink: /fyp/
+type: project
 ---
 
 ## A visualiser for λ-terms as rooted maps
