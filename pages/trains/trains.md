@@ -2,6 +2,7 @@
 layout: page
 title: Trains
 permalink: /trains/
+type: misc
 ---
 
 I make Train Simulator scenarios! 

@@ -2,6 +2,7 @@
 layout: page2
 title: Pictures
 permalink: /pictures/
+type: about
 ---
 
 Some pictures of me through the years.
