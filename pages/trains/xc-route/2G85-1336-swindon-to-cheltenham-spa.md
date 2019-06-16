@@ -17,7 +17,7 @@ Hello driver! Welcome aboard unit 150129, which is currently standing at a signa
 One last thing to note is that there is a temporary speed restriction of 10mph over Barnwood Jn (which you will travel over as you leave Gloucester for Cheltenham) due to the heat causing the tracks to be in danger of buckling.
 
 ## Downloads
-* [Direct download](/scenarios/2G85 1336 Swindon to Cheltenham Spa v1.1.zip)
+* [Direct download](/pages/trains/scenarios/2G85 1336 Swindon to Cheltenham Spa v1.1.zip)
 * [Alan Thomson Sim](https://alanthomsonsim.com/?download=1v06-0907-nottingham-to-cardiff-central)
 
 ## Timetable
