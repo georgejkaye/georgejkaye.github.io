@@ -1,6 +1,7 @@
 ---
 layout: page2
 title: Miscellany
+permalink: /misc/
 ---
 
 A collection of miscellany.

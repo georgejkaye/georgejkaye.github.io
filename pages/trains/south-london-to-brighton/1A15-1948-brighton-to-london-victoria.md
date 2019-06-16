@@ -20,7 +20,7 @@ Another busy scenario ending up in south London, but not everything may go to pl
 I would **strongly recommend** reducing your graphics settings for this scenario, as there are places that are extremely intensive and the game may crash!
 
 ## Downloads
-* [Direct download](/scenarios/1A15 1948 Brighton to London Victoria v2.0.zip)
+* [Direct download](/pages/trains/scenarios/1A15 1948 Brighton to London Victoria v2.0.zip)
 * [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1123961570)
 * [Alan Thomson Sim](https://alanthomsonsim.com/?download=1a15-1948-brighton-to-london-victoria)
 

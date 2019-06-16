@@ -20,7 +20,7 @@ This scenario uses the lovely Riviera Line Electrified by joethefish! I decided 
 Have fun!
 
 ## Downloads
-* [Direct download](/scenarios/1Z56 1700 Exeter St Davids to Paignton v2.0.zip)
+* [Direct download](/pages/trains/scenarios/1Z56 1700 Exeter St Davids to Paignton v2.0.zip)
 * [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1476297578)
 
 ## Timetable

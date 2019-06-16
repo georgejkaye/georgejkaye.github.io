@@ -18,7 +18,7 @@ Hello driver! Welcome aboard unit 170109, which is currently standing at Birming
 There are no delays reported but we have had word that some signals are on the blink, so you may have to request permission to pass them! Otherwise enjoy the ride!
 
 ## Downloads
-* [Direct download](/scenarios/1V06 0907 Nottingham to Cardiff Central v1.1.zip)
+* [Direct download](/pages/trains/scenarios/1V06 0907 Nottingham to Cardiff Central v1.1.zip)
 * [Alan Thomson Sim](https://alanthomsonsim.com/?download=1v06-0907-nottingham-to-cardiff-central)
 
 ## Timetable

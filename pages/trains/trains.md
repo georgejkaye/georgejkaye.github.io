@@ -6,7 +6,7 @@ permalink: /trains/
 
 I make Train Simulator scenarios! 
 
-You can [download all of them](/scenarios/GJK Scenarios.zip) or browse them individually below. Alternatively, you can download them from [Alan Thomson Sim](https://alanthomsonsim.com/?page_id=5&vendor=georgejkaye).
+You can [download all of them](/pages/trains/scenarios/GJK Scenarios.zip) or browse them individually below. Alternatively, you can download them from [Alan Thomson Sim](https://alanthomsonsim.com/?page_id=5&vendor=georgejkaye).
 
 To keep up to date with what I'm doing, you can follow the [GJK Scenarios page](https://www.facebook.com/gjkscenarios/) on Facebook.
 
