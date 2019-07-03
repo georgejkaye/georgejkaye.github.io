@@ -19,13 +19,13 @@ Here are some [pictures](/pictures) of me!
 * Reasoning
 
 ## Projects
-**A visualiser for linear lambda-terms as rooted 3-valent maps** \[[x](\fyp)\]  
+**A visualiser for linear lambda-terms as rooted 3-valent maps** \[[Page](\fyp)\]  
 *A set of tools for the representation of lambda terms as their corresponding rooted maps. Developed for my MSci final year project.*
 
 ## Talks
 
 **A visualiser for linear lambda-terms as rooted 3-valent maps**  
-[CLA 2019](http://cla.tcs.uj.edu.pl/) *July 1-2, 2019* 
+[CLA 2019](http://cla.tcs.uj.edu.pl/) *July 1-2, 2019* \[[Slides](/pages/fyp/docs/CLA'2019 - A visualiser for linear lambda-terms as rooted 3-valent maps.pdf)\]
 
 ## Contact me
 

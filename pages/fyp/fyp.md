@@ -9,6 +9,8 @@ type: project
 
 My MSci final year project: a set of tools to help investigation of terms from various fragments of the λ-calculus. The core function of the tools is to represent these λ-terms as *maps*. Background information can be found in the [Project Report](/pages/fyp/docs/2019-04-08-final-report.pdf).
 
+These tools were presented at [CLA 2019](http://cla.tcs.uj.edu.pl/)! You can download the slides [here](/pages/fyp/docs/CLA'2019 - A visualiser for linear lambda-terms as rooted 3-valent maps.pdf).
+
 ## Tools
 
 Two tools were made for the project:
