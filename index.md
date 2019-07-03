@@ -3,7 +3,7 @@ layout: page2
 title: Home
 ---
 
-Hello! I'm George, a Computer Science graduand studying at the University of Birmingham!
+Hello! I'm George, a Computer Science graduand, going on to study a PhD at the University of Birmingham in September!
 
 ## About me
 I like trains, play the piano, and support Arsenal.
@@ -31,7 +31,7 @@ Here are some [pictures](/pictures) of me!
 
 **Personal:** [georgejkaye@gmail.com](mailto:georgejkaye:gmail.com)
 
-**University:** [gjk591@student.bham.ac.uk](mailto:gjk591@student.bham.ac.uk)
+**University:** ~~[gjk591@student.bham.ac.uk](mailto:gjk591@student.bham.ac.uk)~~ (presumably won't be accessible while I'm between undergrad and postgrad)
 
 ## Misc
 
