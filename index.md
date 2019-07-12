@@ -3,7 +3,7 @@ layout: page2
 title: Home
 ---
 
-Hello! I'm George, a Computer Science graduand, going on to study a PhD at the University of Birmingham in September!
+Hello! I'm George, a Computer Science graduate, going on to study a PhD at the University of Birmingham in September!
 
 ## About me
 I like trains, play the piano, and support Arsenal.
