@@ -15,8 +15,8 @@ These tools were presented at [CLA 2019](http://cla.tcs.uj.edu.pl/)! You can dow
 
 Two tools were made for the project:
 
-* [**λ-term visualiser**](/pages/fyp/visualiser.html)
-* [**λ-term gallery**](/pages/fyp/gallery.html)
+* [**λ-term visualiser**](/fyp/visualiser)
+* [**λ-term gallery**](/fyp/gallery)
 
 ### λ-term visualiser
 
