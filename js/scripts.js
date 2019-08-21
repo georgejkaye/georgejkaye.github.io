@@ -1,12 +1,16 @@
 $(document).ready(function(){
 
-	$(function(e){
-		if(document.location.pathname == '/') {
-			var hash = window.location.hash.substr(1);
-			console.log(hash);
-			$('#' + hash + '-link').addClass('active');
-		}
-	});
+	var home = false;
+	var url = "";
+
+	if(document.location.pathname == '/'){
+		home = true;
+		url = window.location.hash;
+	} else {
+		url = "#" + window.location.pathname.slice(1,-1);
+	}
+
+	updateSidebarLinks(home, url);
 
 	$('h2,h3').not('.keep-id').each(function(){
 		var hyphenated = $(this).text().toLowerCase().replace(/[^a-z0-9\s-]/gi, '').replace(/\s/g, '-');
@@ -31,11 +35,30 @@ $(document).ready(function(){
 	        window.location.hash = target;
 		});
 		
-		if(document.location.pathname == '/') {
-			$('.active').removeClass('active');
-			console.log("target");
-			$(target + '-link').addClass('active');
+		if(document.location.pathname == '/'){
+			home = true;
+			url = target;
+		} else {
+			url = "#" + window.location.pathname.slice(1,-1);
 		}
+
+		updateSidebarLinks(home, url);
 	});
     
 });
+
+function updateSidebarLinks(home, target){
+	
+	if(home) {
+		$('.active').removeClass('active');
+		console.log(target);
+
+		if(target === ""){
+			target = '#top'
+		}
+	}
+	
+	console.log(target + '-link');
+	$(target + '-link').addClass('active');
+
+}
