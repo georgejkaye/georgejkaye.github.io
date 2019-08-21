@@ -18,7 +18,7 @@ baseurl:          /
 
 author:
   name:           'George Kaye'            
-  avatar:         /images/me/fb3.jpg
+  avatar:         /images/me/fb4.jpg
 
 paginate:         5
 paginate_path:    "/blog/page:num/"
