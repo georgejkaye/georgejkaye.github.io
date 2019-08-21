@@ -13,13 +13,13 @@
     <nav class="sidebar-nav">
 
       {% if page.url == "/" | relative_url %}
-      <a class="sidebar-nav-item{% if page.url == '/'' | relative_url %} active{% endif %}" href="{{ site.basurl }}#top">Home</a>
-      <a class="sidebar-nav-item{% if page.url == '{{ site-basurl }}/#about-me' %} active {% endif %}" href="{{ site.basurl }}#about-me">About</a>
-      <a class="sidebar-nav-item" href="{{ site.basurl }}#projects">Projects</a>
-      <a class="sidebar-nav-item" href="{{ site.basurl }}#talks">Talks</a>
-      <a class="sidebar-nav-item" href="{{ site.basurl }}#misc">Misc</a>
+      <a class="sidebar-nav-item home-item{% if page.url == '/' | relative_url %} active{% endif %}" href="{{ site.basurl }}#top">Home</a>
+      <a id="about-me" class="sidebar-nav-item home-item{% if page.url == '/#about' | relative_url %} active{% endif %}" href="{{ site.basurl }}#about-me">About</a>
+      <a id="projects" class="sidebar-nav-item home-item{% if page.url == '/#projects' | relative_url %} active{% endif %}" href="{{ site.basurl }}#projects">Projects</a>
+      <a id="talks" class="sidebar-nav-item home-item{% if page.url == '/#talks' | relative_url %} active{% endif %}" href="{{ site.basurl }}#talks">Talks</a>
+      <a id="misc" class="sidebar-nav-item home-item{% if page.url == '/#misc' | relative_url %} active{% endif %}" href="{{ site.basurl }}#misc">Misc</a>
       {% else %}
-      <a class="sidebar-nav-item{% if page.url == "/" | relative_url %} active{% endif %}" href="{{ "/" | relative_url }}">Home</a>
+      <a class="sidebar-nav-item{% if page.url == '/'' | relative_url %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
       <a class="sidebar-nav-item{% if page.type == 'about' %} active {% endif %}" href="{{ site.basurl }}/#about-me">About</a>
       <a class="sidebar-nav-item{% if page.type == 'projects' %} active {% endif %}" href="{{ site.basurl }}/#projects">Projects</a>
       <a class="sidebar-nav-item{% if page.type == 'talks' %} active {% endif %}" href="{{ site.basurl }}/#talks">Talks</a>

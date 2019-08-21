@@ -5,6 +5,12 @@ $(document).ready(function(){
 		$(this).attr('id', hyphenated);
 	});
 
+	$(".home-item").on('click', function (e) {
+		console.log("work");
+		$(".active").removeClass('active');
+		$(this).addClass('active');
+	}); 
+
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 
@@ -17,5 +23,7 @@ $(document).ready(function(){
 	        window.location.hash = target;
 	    });
 	});
+
+	
     
 });
