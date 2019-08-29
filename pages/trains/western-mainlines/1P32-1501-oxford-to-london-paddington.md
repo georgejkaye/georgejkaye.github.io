@@ -14,6 +14,7 @@ permalink: /trains/1P32-1501-oxford-to-london-paddington
 ---
 
 Hello driver! Welcome aboard unit 180102, which is currently standing at Oxford. Today you’ll be driving 1P32, the 1501 service from Oxford to London Paddington. You are scheduled to stop at Oxford, Reading, Slough and London Paddington.
+
 You may be held at Didcot to allow a late-running service from Bristol to pass, but otherwise there are no problems reported - let's hope it stays that way!
 
 
