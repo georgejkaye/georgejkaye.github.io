@@ -26,7 +26,7 @@ You may be held at Didcot to allow a late-running service from Bristol to pass, 
 | Location | Pl | Arr | Dep |
 |:-|:-:|:-:|:-:|
 | Oxford (OXF) | 1 | | 1501 |
-| Didcot East Jn | | pass | 1512 |
+| *Didcot East Jn* | | *pass* | *1512* |
 | Reading (RDG) | 10 | 1525 | 1527 |
 | Slough (SLO) | 3 | 1540 | 1541 |
 | London Paddington (PAD) | 5 | 1559 | |
@@ -47,12 +47,12 @@ You may be held at Didcot to allow a late-running service from Bristol to pass, 
 * [Class 43 (MTU)/Mk3 Enhancement Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_89&product_id=168)
 * [Class 66 Enhancement Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_89&product_id=173)
 * [JHA Wagon Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=45_85&product_id=107)
-* [JNA-C Wagon Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=45_85&product_id=179)
-* [Class 444/450 Enhancement Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_91&product_id=193)
+* [JNA-C Wagon Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=45_85&product_id=179)*
+* [Class 444/450 Enhancement Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_91&product_id=193)*
 
 #### Just Trains
 * [Western Mainlines](https://www.justtrains.net/product/western-mainlines)
-* [Voyager Advanced](https://www.justtrains.net/product/voyager-advanced-2019)
+* [Voyager Advanced](https://www.justtrains.net/product/voyager-advanced-2019)*
 
 ### Reskins
 
@@ -64,5 +64,7 @@ You may be held at Didcot to allow a late-running service from Bristol to pass, 
 
 #### UKTrainSim
 * [Class 360 Heathrow Connect and Express](https://www.uktrainsim.com/filelib-info.php?form_fileid=34469)
+
+Requirements listed with an asterisk (*) appear only fleetingly and are not required for full enjoyment of the scenario.
 
 If you don't have any of the requirements you can still play the scenario, just press F2 when the 'Missing consist' error comes up and click 'cancel' to bypass it.
