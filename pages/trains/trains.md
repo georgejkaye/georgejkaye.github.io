@@ -73,7 +73,7 @@ If you enjoyed my scenarios and would like to help me make more, feel free to [d
 [Top](#top)
 
 ## Western Mainlines
-![1P32 1501 Oxford to London Paddington](/images/scenarios/1P32-1501-oxford-to-london-paddington.jpg){:class="small-scenario"}
+[![1P32 1501 Oxford to London Paddington](/images/scenarios/1P32-1501-oxford-to-london-paddington.jpg){:class="small-scenario"}](1P32-1501-oxford-to-london-paddington)
 [![2M12 1410 Frome to Swindon (Part 2)](/images/scenarios/2M12-1410-frome-to-swindon.jpg){:class="small-scenario"}](2M12-1410-frome-to-swindon)
 
 [Top](#top)
