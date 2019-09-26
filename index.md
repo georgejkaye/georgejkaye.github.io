@@ -31,7 +31,7 @@ Here are some [pictures](/pictures) of me!
 
 **Personal:** [georgejkaye@gmail.com](mailto:georgejkaye:gmail.com)
 
-**University:** ~~[gjk591@student.bham.ac.uk](mailto:gjk591@student.bham.ac.uk)~~ (might not exist over summer!)
+**University:** [gjk591@student.bham.ac.uk](mailto:gjk591@student.bham.ac.uk)
 
 ## Misc
 
