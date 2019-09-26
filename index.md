@@ -3,10 +3,10 @@ layout: page2
 title: Home
 ---
 
-Hello! I'm George, a Computer Science graduate, going on to study a PhD at the University of Birmingham in September!
+Hello! I'm George, a PhD student researcher at the University of Birmingham, under the supervision of [Dan Ghica](http://www.cs.bham.ac.uk/~drg/)!
 
 ## About me
-I like trains, play the piano, and support Arsenal.
+I play the piano, enjoy train journeys and walks down canals, and (unfortunately) support Arsenal.
 
 I occasionally take photos of pretty things and put them on [Instagram](https://www.instagram.com/georgejkaye/).
 
