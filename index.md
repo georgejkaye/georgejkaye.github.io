@@ -27,11 +27,19 @@ Here are some [pictures](/pictures) of me!
 **A visualiser for linear lambda-terms as rooted 3-valent maps**  
 [CLA 2019](http://cla.tcs.uj.edu.pl/) *July 1-2, 2019* \[[Slides](/pages/fyp/docs/CLA'2019 - A visualiser for linear lambda-terms as rooted 3-valent maps.pdf)\]
 
+## Teaching
+### 2019-20
+This year I am a TA for two modules:
+**Semester 1:** [Mathematical Foundations of Computer Science](https://www.cs.bham.ac.uk/internal/modules/2019/06-30181/)
+**Semester 2:** [Compilers & Languages](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/)
+
 ## Contact me
 
 **Personal:** [georgejkaye@gmail.com](mailto:georgejkaye:gmail.com)
 
 **University:** [gjk591@cs.bham.ac.uk](mailto:gjk591@cs.bham.ac.uk)
+
+**Where to find me:** Office 244, Computer Science
 
 ## Misc
 
