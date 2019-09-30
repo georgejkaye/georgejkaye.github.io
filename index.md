@@ -31,9 +31,8 @@ Here are some [pictures](/pictures) of me!
 
 **Personal:** [georgejkaye@gmail.com](mailto:georgejkaye:gmail.com)
 
-**University:** [gjk591@student.bham.ac.uk](mailto:gjk591@student.bham.ac.uk)
+**University:** [gjk591@cs.bham.ac.uk](mailto:gjk591@cs.bham.ac.uk)
 
 ## Misc
 
 * [Train Simulator scenarios](/trains)
-* [Train journeys 2019](https://docs.google.com/spreadsheets/d/1OTRPjguZQNHIo-xYKBTjbUOETZ5tq67Ve-i0CNSYaK4/edit?usp=sharing)
