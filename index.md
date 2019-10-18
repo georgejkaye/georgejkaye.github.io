@@ -39,7 +39,7 @@ Here are some [pictures](/pictures) of me!
 
 **Personal:** [georgejkaye@gmail.com](mailto:georgejkaye:gmail.com)
 
-**University:** [G.J.Kaye@pgr.bham.ac.uk](mailto:G.J.Kaye@pgr.bham.ac.uk)
+**University:** [g.j.kaye@pgr.bham.ac.uk](mailto:G.J.Kaye@pgr.bham.ac.uk)
 
 **Where to find me:** Office 244, Computer Science
 
