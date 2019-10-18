@@ -41,7 +41,7 @@ Here are some [pictures](/pictures) of me!
 
 **University:** [g.j.kaye@pgr.bham.ac.uk](mailto:G.J.Kaye@pgr.bham.ac.uk)
 
-**Where to find me:** Office 244, Computer Science
+**Where to find me:** Office 244, School of Computer Science, University of Birmingham
 
 ## Misc
 
