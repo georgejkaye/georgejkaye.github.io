@@ -22,9 +22,9 @@ Here are some [pictures](/pictures) of me!
 
 ### Contact me
 
-**Personal:** [georgejkaye@gmail.com](mailto:georgejkaye:gmail.com)
+**Personal:** georgejkaye at gmail.com
 
-**University:** [g.j.kaye@cs.bham.ac.uk](mailto:G.J.Kaye@cs.bham.ac.uk)
+**University:** [g.j.kaye] at cs.bham.ac.uk
 
 **Where to find me:** Office 244, School of Computer Science, University of Birmingham
 
