@@ -9,6 +9,8 @@ Hello! I'm George, a PhD student researcher at the University of Birmingham, und
 
 I play the piano, enjoy train journeys and walks down canals, and (unfortunately) support Arsenal.
 
+I'm also currently School of Computer Science Cookie Break admin!
+
 I occasionally take photos of pretty things and put them on [Instagram](https://www.instagram.com/georgejkaye/).
 
 Here are some [pictures](/pictures) of me!
@@ -26,7 +28,7 @@ Here are some [pictures](/pictures) of me!
 
 **University:** g.j.kaye at cs.bham.ac.uk
 
-**Where to find me:** Office 244, School of Computer Science, University of Birmingham
+**Where to find me:** Office 244 (Desk J), School of Computer Science, University of Birmingham
 
 ## Projects
 
