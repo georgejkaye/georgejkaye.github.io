@@ -9,7 +9,7 @@ Hello! I'm George, a PhD student researcher at the University of Birmingham, und
 
 I play the piano, enjoy train journeys and walks down canals, and (unfortunately) support Arsenal.
 
-I'm also currently School of Computer Science Cookie Break admin!
+I'm also currently School of Computer Science [Cookie Break](https://www.cs.bham.ac.uk/internal/research_students/cookiebreaks/) admin!
 
 I occasionally take photos of pretty things and put them on [Instagram](https://www.instagram.com/georgejkaye/).
 
@@ -39,6 +39,12 @@ Here are some [pictures](/pictures) of me!
 
 **A visualiser for linear lambda-terms as rooted 3-valent maps**  
 [CLA 2019](http://cla.tcs.uj.edu.pl/) *July 1-2, 2019* \[[Slides](/pages/fyp/docs/CLA'2019 - A visualiser for linear lambda-terms as rooted 3-valent maps.pdf)\]
+
+## Visits
+
+* [**MGS Christmas Seminar**](https://staffwww.dcs.shef.ac.uk/people/G.Struth/mgs_xmas19.html) (December 18, 2019)
+* [**SYCO 6, Leicester**](http://events.cs.bham.ac.uk/syco/6/) (December 16-17, 2019)
+* [**CLA 2019, Versailles**](http://cla.tcs.uj.edu.pl/) (July 1-2, 2019)
 
 ## Teaching
 
