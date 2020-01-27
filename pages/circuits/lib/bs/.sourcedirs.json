@@ -1,0 +1,1 @@
+{ "dirs" : [ "src" ] , "pkgs" : [ [ "bs-platform" , "/home/george/docs/repos/circuit-visualiser/node_modules/bs-platform" ] , [ "reason-react" , "/home/george/docs/repos/circuit-visualiser/node_modules/reason-react" ] , [ "react-mathjax2" , "/home/george/docs/repos/circuit-visualiser/node_modules/react-mathjax2" ] ] , "generated" : [] }
