@@ -1,0 +1,23 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+.code {
+    font: 14px "Courier New", monospace;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: .2em .4em;
+}
+
+.right {
+    float: right
+}
+
+td {
+    vertical-align: top
+}
