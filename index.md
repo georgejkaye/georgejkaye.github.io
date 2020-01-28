@@ -32,6 +32,9 @@ Here are some [pictures](/pictures) of me!
 
 ## Projects
 
+**Diagrammatic semantics for digital circuits** \[[Visualiser](\circuits\visualiser)\] \[[Very basic talk](\pages\circuits\Diagrammatic semantics for digital circuits.pdf)\]  
+*Defining an operational semantics for digital circuits using hypergraphs.*
+
 **A visualiser for linear lambda-terms as rooted 3-valent maps** \[[Page](\fyp)\]  
 *A set of tools for the representation of lambda terms as their corresponding rooted maps. Developed for my MSci final year project.*
 
