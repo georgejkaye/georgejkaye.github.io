@@ -20,6 +20,35 @@ function graphError(message) {
       ];
 }
 
+function findEdges$prime(string, _edges, _acc) {
+  while(true) {
+    var acc = _acc;
+    var edges = _edges;
+    if (edges) {
+      var xs = edges[1];
+      var x = edges[0];
+      var match = x.contents.label === string;
+      if (match) {
+        _acc = /* :: */[
+          x,
+          acc
+        ];
+        _edges = xs;
+        continue ;
+      } else {
+        _edges = xs;
+        continue ;
+      }
+    } else {
+      return acc;
+    }
+  };
+}
+
+function findEdges(string, net) {
+  return findEdges$prime(string, net.edges, /* [] */0);
+}
+
 function printEdgeRefPortPairArray(es) {
   return Helpers$CircuitVisualiser.printArray(es, (function (param) {
                 return param[0].contents.label + (":" + String(param[1]));
@@ -99,13 +128,45 @@ function identity(array) {
   return array;
 }
 
+function removeEdge$prime(edge, _edges, _acc) {
+  while(true) {
+    var acc = _acc;
+    var edges = _edges;
+    if (edges) {
+      var xs = edges[1];
+      var x = edges[0];
+      var match = x.contents.id === edge.contents.id;
+      if (match) {
+        return Pervasives.$at(acc, xs);
+      } else {
+        _acc = /* :: */[
+          x,
+          acc
+        ];
+        _edges = xs;
+        continue ;
+      }
+    } else {
+      return acc;
+    }
+  };
+}
+
+function removeEdge(param, edge) {
+  return {
+          inputs: param.inputs,
+          edges: removeEdge$prime(edge, param.edges, /* [] */0),
+          outputs: param.outputs
+        };
+}
+
 function composeSequential(f, g) {
   if (f.outputs.sources.length !== g.inputs.targets.length) {
     throw [
           Caml_builtin_exceptions.assert_failure,
           /* tuple */[
             "Hypernets.re",
-            39,
+            58,
             4
           ]
         ];
@@ -171,7 +232,7 @@ function composeParallel(f, g, i) {
           ]);
     } else {
       Caml_array.caml_array_set(e.contents.sources, k, /* tuple */[
-            refOutputs,
+            refInputs,
             i$1
           ]);
     }
@@ -452,6 +513,27 @@ function iterHypernet(circuit, i) {
         ];
 }
 
+function joinLinks(net, l, outlink, inlink) {
+  var outedge = List.hd(findEdges(Circuits$CircuitVisualiser.lookupLink(outlink, l), net));
+  var inedge = List.hd(findEdges(Circuits$CircuitVisualiser.lookupLink(inlink, l), net));
+  var match = Caml_array.caml_array_get(outedge.contents.sources, 0);
+  var k = match[1];
+  var e = match[0];
+  var match$1 = Caml_array.caml_array_get(inedge.contents.targets, 0);
+  var k$prime = match$1[1];
+  var e$prime = match$1[0];
+  Caml_array.caml_array_set(e.contents.targets, k, /* tuple */[
+        e$prime,
+        k$prime
+      ]);
+  Caml_array.caml_array_set(e$prime.contents.sources, k$prime, /* tuple */[
+        e,
+        k
+      ]);
+  var newNet = removeEdge(net, outedge);
+  return removeEdge(newNet, inedge);
+}
+
 function convertCircuitToHypernet$prime(_circuit, i) {
   while(true) {
     var circuit = _circuit;
@@ -554,14 +636,7 @@ function convertCircuitToHypernet$prime(_circuit, i) {
                                 ];
                         }), convertCircuitToHypernet$prime(match$1[0], i), match$1[1]);
           } else {
-            throw [
-                  Caml_builtin_exceptions.match_failure,
-                  /* tuple */[
-                    "Hypernets.re",
-                    208,
-                    4
-                  ]
-                ];
+            return Pervasives.failwith("badly formed circuit");
           }
       case /* Swap */4 :
           return /* tuple */[
@@ -586,18 +661,90 @@ function convertCircuitToHypernet$prime(_circuit, i) {
                   traceHypernet(Circuits$CircuitVisualiser.outputs(f), match$3[0]),
                   match$3[1]
                 ];
+      case /* Inlink */9 :
+          var e$1 = { };
+          var oute$2 = { };
+          Caml_obj.caml_update_dummy(e$1, {
+                contents: {
+                  id: i + 1 | 0,
+                  sources: /* array */[],
+                  targets: /* array */[/* tuple */[
+                      oute$2,
+                      0
+                    ]],
+                  label: Circuits$CircuitVisualiser.lookupLink(match[0], circuit.l)
+                }
+              });
+          Caml_obj.caml_update_dummy(oute$2, {
+                contents: {
+                  id: i + 2 | 0,
+                  sources: /* array */[/* tuple */[
+                      e$1,
+                      0
+                    ]],
+                  targets: /* array */[],
+                  label: "out"
+                }
+              });
+          var ine$2 = floatingEdge(i, "in");
+          return /* tuple */[
+                  {
+                    inputs: ine$2,
+                    edges: /* :: */[
+                      e$1,
+                      /* [] */0
+                    ],
+                    outputs: oute$2.contents
+                  },
+                  i + 3 | 0
+                ];
+      case /* Outlink */10 :
+          var e$2 = { };
+          var ine$3 = { };
+          Caml_obj.caml_update_dummy(e$2, {
+                contents: {
+                  id: i + 1 | 0,
+                  sources: /* array */[/* tuple */[
+                      ine$3,
+                      0
+                    ]],
+                  targets: /* array */[],
+                  label: Circuits$CircuitVisualiser.lookupLink(match[0], circuit.l)
+                }
+              });
+          Caml_obj.caml_update_dummy(ine$3, {
+                contents: {
+                  id: i,
+                  sources: /* array */[],
+                  targets: /* array */[/* tuple */[
+                      e$2,
+                      0
+                    ]],
+                  label: "in"
+                }
+              });
+          var oute$3 = floatingEdge(i + 2 | 0, "out");
+          return /* tuple */[
+                  {
+                    inputs: ine$3.contents,
+                    edges: /* :: */[
+                      e$2,
+                      /* [] */0
+                    ],
+                    outputs: oute$3
+                  },
+                  i + 3 | 0
+                ];
+      case /* Link */11 :
+          var f$1 = convertCircuitToHypernet$prime(match[2], i);
+          return /* tuple */[
+                  joinLinks(f$1[0], circuit.l, match[0], match[1]),
+                  f$1[1]
+                ];
       case /* Macro */12 :
           _circuit = match[2];
           continue ;
-      default:
-        throw [
-              Caml_builtin_exceptions.match_failure,
-              /* tuple */[
-                "Hypernets.re",
-                208,
-                4
-              ]
-            ];
+      
     }
   };
 }
@@ -615,38 +762,6 @@ function getTraceText(x, e, left) {
           name,
           name + "[shape=point, width=0.01]\n"
         ];
-}
-
-function generateTransitions(x, inid, outid, targets) {
-  var string = "";
-  var tracenodes = "";
-  var ranks = "";
-  for(var i = 0 ,i_finish = targets.length - 1 | 0; i <= i_finish; ++i){
-    var match = Caml_array.caml_array_get(targets, i);
-    var k = match[1];
-    var e = match[0];
-    if (e.contents.id < x) {
-      console.log("trace!");
-      var match$1 = getTraceText(x, e, true);
-      var idl = match$1[0];
-      var match$2 = getTraceText(x, e, false);
-      var idr = match$2[0];
-      tracenodes = tracenodes + (tab + (match$1[1] + match$2[1]));
-      string = string + (tab + ("edge" + (String(x) + (":o" + (String(i) + (":e -> " + (idr + (":s;\n" + (tab + (idr + (":n -> " + (idl + (":n;\n" + (tab + (idl + (":s -> edge" + (String(e.contents.id) + (":i" + (String(k) + ":w;\n")))))))))))))))))));
-      ranks = ranks + (tab + ("{rank=same; edge" + (String(inid) + (", " + (idl + ("}\n" + (tab + ("{rank=same; edge" + (String(outid) + (", " + (idr + "}\n")))))))))));
-    } else {
-      string = string + (tab + ("edge" + (String(x) + (":o" + (String(i) + (":e -> edge" + (String(e.contents.id) + (":i" + (String(k) + ":w;\n")))))))));
-    }
-  }
-  return /* array */[
-          ranks,
-          tracenodes,
-          string
-        ];
-}
-
-function generatePorts(n, out) {
-  return "{" + (generatePorts$prime(0, n, out) + "}");
 }
 
 function generateGraphvizCodeEdges(inputs, outputs, _edges, _ranks, _nodes, _traces, _transitions) {
@@ -709,6 +824,19 @@ function generateGraphvizCodeEdges(inputs, outputs, _edges, _ranks, _nodes, _tra
   };
 }
 
+function generatePorts$prime(x, n, out) {
+  var y = out ? "o" : "i";
+  if (n !== 0) {
+    if (n !== 1) {
+      return "<" + (y + (String(x) + ("> " + ("•" + (" | " + generatePorts$prime(x + 1 | 0, n - 1 | 0, out))))));
+    } else {
+      return "<" + (y + (String(x) + ("> " + "•")));
+    }
+  } else {
+    return "";
+  }
+}
+
 function generateGraphvizCodeEdge(edge, inid, outid) {
   var ins = edge.sources.length;
   var outs = edge.targets.length;
@@ -725,17 +853,36 @@ function generateGraphvizCodeEdge(edge, inid, outid) {
         ];
 }
 
-function generatePorts$prime(x, n, out) {
-  var y = out ? "o" : "i";
-  if (n !== 0) {
-    if (n !== 1) {
-      return "<" + (y + (String(x) + ("> " + ("•" + (" | " + generatePorts$prime(x + 1 | 0, n - 1 | 0, out))))));
+function generatePorts(n, out) {
+  return "{" + (generatePorts$prime(0, n, out) + "}");
+}
+
+function generateTransitions(x, inid, outid, targets) {
+  var string = "";
+  var tracenodes = "";
+  var ranks = "";
+  for(var i = 0 ,i_finish = targets.length - 1 | 0; i <= i_finish; ++i){
+    var match = Caml_array.caml_array_get(targets, i);
+    var k = match[1];
+    var e = match[0];
+    if (e.contents.id < x) {
+      console.log("trace!");
+      var match$1 = getTraceText(x, e, true);
+      var idl = match$1[0];
+      var match$2 = getTraceText(x, e, false);
+      var idr = match$2[0];
+      tracenodes = tracenodes + (tab + (match$1[1] + match$2[1]));
+      string = string + (tab + ("edge" + (String(x) + (":o" + (String(i) + (":e -> " + (idr + (":s;\n" + (tab + (idr + (":n -> " + (idl + (":n;\n" + (tab + (idl + (":s -> edge" + (String(e.contents.id) + (":i" + (String(k) + ":w;\n")))))))))))))))))));
+      ranks = ranks + (tab + ("{rank=same; edge" + (String(inid) + (", " + (idl + ("}\n" + (tab + ("{rank=same; edge" + (String(outid) + (", " + (idr + "}\n")))))))))));
     } else {
-      return "<" + (y + (String(x) + ("> " + "•")));
+      string = string + (tab + ("edge" + (String(x) + (":o" + (String(i) + (":e -> edge" + (String(e.contents.id) + (":i" + (String(k) + ":w;\n")))))))));
     }
-  } else {
-    return "";
   }
+  return /* array */[
+          ranks,
+          tracenodes,
+          string
+        ];
 }
 
 function generateGraphvizCode(net) {
@@ -847,6 +994,8 @@ function convertHypernetToEquation(v, net) {
 export {
   GraphError ,
   graphError ,
+  findEdges ,
+  findEdges$prime ,
   printEdge ,
   printEdgeArray ,
   printEdgeRefArray ,
@@ -857,6 +1006,8 @@ export {
   initialisePorts ,
   zeroNet ,
   identity ,
+  removeEdge ,
+  removeEdge$prime ,
   composeSequential ,
   composeParallel ,
   functionNet ,
@@ -866,6 +1017,7 @@ export {
   forkNet ,
   dforkNet ,
   iterHypernet ,
+  joinLinks ,
   convertCircuitToHypernet ,
   convertCircuitToHypernet$prime ,
   tab ,

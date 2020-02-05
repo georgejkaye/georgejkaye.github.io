@@ -24,15 +24,15 @@ function generateUnicodeSubscript(n) {
   return s2;
 }
 
-function t1(a, b, c) {
+function t1(a, param, param$1) {
   return a;
 }
 
-function t2(a, b, c) {
+function t2(param, b, param$1) {
   return b;
 }
 
-function t3(a, b, c) {
+function t3(param, param$1, c) {
   return c;
 }
 

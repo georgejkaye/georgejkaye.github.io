@@ -117,22 +117,25 @@ var exampleFunctions = List.concat(/* :: */[
                             /* :: */[
                               Circuits$CircuitVisualiser.funcBlackBox(Constructs$CircuitVisualiser.v, "d", "\\text{d}", 1, 1),
                               /* :: */[
-                                Constructs$CircuitVisualiser.andGate(Constructs$CircuitVisualiser.v),
+                                Circuits$CircuitVisualiser.funcBlackBox(Constructs$CircuitVisualiser.v, "e", "\\text{e}", 2, 1),
                                 /* :: */[
-                                  Constructs$CircuitVisualiser.orGate(Constructs$CircuitVisualiser.v),
+                                  Constructs$CircuitVisualiser.andGate(Constructs$CircuitVisualiser.v),
                                   /* :: */[
-                                    Constructs$CircuitVisualiser.xorGate(Constructs$CircuitVisualiser.v),
+                                    Constructs$CircuitVisualiser.orGate(Constructs$CircuitVisualiser.v),
                                     /* :: */[
-                                      Constructs$CircuitVisualiser.notGate(Constructs$CircuitVisualiser.v),
+                                      Constructs$CircuitVisualiser.xorGate(Constructs$CircuitVisualiser.v),
                                       /* :: */[
-                                        Constructs$CircuitVisualiser.multiplexer(Constructs$CircuitVisualiser.v),
+                                        Constructs$CircuitVisualiser.notGate(Constructs$CircuitVisualiser.v),
                                         /* :: */[
-                                          Constructs$CircuitVisualiser.first(Constructs$CircuitVisualiser.v),
+                                          Constructs$CircuitVisualiser.multiplexer(Constructs$CircuitVisualiser.v),
                                           /* :: */[
-                                            Constructs$CircuitVisualiser.second(Constructs$CircuitVisualiser.v),
+                                            Constructs$CircuitVisualiser.first(Constructs$CircuitVisualiser.v),
                                             /* :: */[
-                                              Constructs$CircuitVisualiser.id(Constructs$CircuitVisualiser.v, 2),
-                                              /* [] */0
+                                              Constructs$CircuitVisualiser.second(Constructs$CircuitVisualiser.v),
+                                              /* :: */[
+                                                Constructs$CircuitVisualiser.id(Constructs$CircuitVisualiser.v, 2),
+                                                /* [] */0
+                                              ]
                                             ]
                                           ]
                                         ]

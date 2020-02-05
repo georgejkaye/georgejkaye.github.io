@@ -35,7 +35,7 @@ function lookupLink(i, _l) {
         }
       }
     } else {
-      return Pervasives.failwith("link not in list");
+      return Pervasives.failwith("");
     }
   };
 }
@@ -77,8 +77,8 @@ function printComponent$prime(v, c, l, i) {
         return "Tr{" + (String(c[0]) + ("}(" + (printCircuit$prime(c[1], 0) + ")")));
     case /* Iter */8 :
         return "iter{" + (String(c[0]) + ("}(" + (printCircuit$prime(c[1], 0) + ")")));
-    case /* Input */9 :
-    case /* Output */10 :
+    case /* Inlink */9 :
+    case /* Outlink */10 :
         return lookupLink(c[0], l);
     case /* Link */11 :
         return "\\" + (lookupLink(c[0], l) + ("," + (lookupLink(c[1], l) + (". " + printCircuit$prime(c[2], i)))));
@@ -138,11 +138,11 @@ function printComponentLatex$prime(v, c, l, i) {
         return "\\text{Tr}^" + (String(c[0]) + ("(" + (printCircuitLatex$prime(c[1], 0) + ")")));
     case /* Iter */8 :
         return "\\text{iter}^" + (String(c[0]) + ("(" + (printCircuitLatex$prime(c[1], 0) + ")")));
-    case /* Input */9 :
-    case /* Output */10 :
+    case /* Inlink */9 :
+    case /* Outlink */10 :
         return lookupLink(c[0], l);
     case /* Link */11 :
-        return "\\overline{" + (lookupLink(c[0], l) + ("|" + (lookupLink(c[1], l) + ("}." + printCircuitLatex$prime(c[2], i)))));
+        return "\\overline{" + (lookupLink(c[0], l) + ("\\to " + (lookupLink(c[1], l) + ("}." + printCircuitLatex$prime(c[2], i)))));
     case /* Function */5 :
     case /* Macro */12 :
         return c[1];
@@ -216,10 +216,10 @@ function inputs$prime(c) {
     case /* Iter */8 :
         return inputs(c[1]) - c[0] | 0;
     case /* Value */0 :
-    case /* Input */9 :
+    case /* Inlink */9 :
         return 0;
     case /* Delay */6 :
-    case /* Output */10 :
+    case /* Outlink */10 :
         return 1;
     case /* Link */11 :
     case /* Macro */12 :
@@ -249,7 +249,7 @@ function outputs$prime(c) {
     case /* Composition */2 :
     case /* Iter */8 :
         return outputs(c[1]);
-    case /* Output */10 :
+    case /* Outlink */10 :
         return 0;
     case /* Link */11 :
     case /* Macro */12 :
@@ -325,24 +325,16 @@ function tensor(xs) {
         };
 }
 
-function tensor$prime(v, xs) {
-  return /* Tensor */Block.__(3, [xs]);
-}
-
-function func$prime(id, latex, ins, outs, f) {
-  return /* Function */Block.__(5, [
-            id,
-            latex,
-            ins,
-            outs,
-            f
-          ]);
-}
-
 function func(v, id, latex, ins, outs, f) {
   return {
           v: v,
-          c: func$prime(id, latex, ins, outs, f),
+          c: /* Function */Block.__(5, [
+              id,
+              latex,
+              ins,
+              outs,
+              f
+            ]),
           l: /* [] */0
         };
 }
@@ -756,8 +748,6 @@ export {
   idcirc ,
   compose ,
   tensor ,
-  tensor$prime ,
-  func$prime ,
   func ,
   link ,
   macro ,
