@@ -35,7 +35,53 @@ function lookupLink(i, _l) {
         }
       }
     } else {
-      return Pervasives.failwith("");
+      return Pervasives.failwith("Link does not exist, maybe you should be using the option version?");
+    }
+  };
+}
+
+function doesLinkNumberExist(i, _l) {
+  while(true) {
+    var l = _l;
+    if (l) {
+      var l$1 = l[0];
+      var match = Caml_obj.caml_equal(l$1[0][1], i);
+      if (match) {
+        return true;
+      } else {
+        var match$1 = Caml_obj.caml_equal(l$1[1][1], i);
+        if (match$1) {
+          return true;
+        } else {
+          _l = l[1];
+          continue ;
+        }
+      }
+    } else {
+      return false;
+    }
+  };
+}
+
+function doesLinkStringExist(i, _l) {
+  while(true) {
+    var l = _l;
+    if (l) {
+      var l$1 = l[0];
+      var match = Caml_obj.caml_equal(l$1[0][0], i);
+      if (match) {
+        return true;
+      } else {
+        var match$1 = Caml_obj.caml_equal(l$1[1][0], i);
+        if (match$1) {
+          return true;
+        } else {
+          _l = l[1];
+          continue ;
+        }
+      }
+    } else {
+      return false;
     }
   };
 }
@@ -44,8 +90,6 @@ function printComponent$prime(v, c, l, i) {
   switch (c.tag | 0) {
     case /* Value */0 :
         return Curry._1(v.print, c[0]);
-    case /* Identity */1 :
-        return String(c[0]);
     case /* Composition */2 :
         var b = printCircuit$prime(c[0], 0) + (" ⋅ " + printCircuit$prime(c[1], 0));
         var match = i === 0;
@@ -77,15 +121,13 @@ function printComponent$prime(v, c, l, i) {
         return "Tr{" + (String(c[0]) + ("}(" + (printCircuit$prime(c[1], 0) + ")")));
     case /* Iter */8 :
         return "iter{" + (String(c[0]) + ("}(" + (printCircuit$prime(c[1], 0) + ")")));
-    case /* Inlink */9 :
-    case /* Outlink */10 :
-        return lookupLink(c[0], l);
     case /* Link */11 :
         return "\\" + (lookupLink(c[0], l) + ("," + (lookupLink(c[1], l) + (". " + printCircuit$prime(c[2], i)))));
     case /* Function */5 :
     case /* Macro */12 :
         return c[0];
-    
+    default:
+      return String(c[0]);
   }
 }
 
@@ -339,16 +381,81 @@ function func(v, id, latex, ins, outs, f) {
         };
 }
 
+function findLink(x, out, _c) {
+  while(true) {
+    var c = _c;
+    console.log("searching for " + (String(x) + (" in " + printCircuit$prime(c, 0))));
+    var match = c.c;
+    switch (match.tag | 0) {
+      case /* Composition */2 :
+          if (findLink(x, out, match[0])) {
+            return true;
+          } else {
+            _c = match[1];
+            continue ;
+          }
+      case /* Tensor */3 :
+          return List.fold_left((function (f, g) {
+                        if (findLink(x, out, g)) {
+                          return true;
+                        } else {
+                          return f;
+                        }
+                      }), false, match[0]);
+      case /* Trace */7 :
+      case /* Iter */8 :
+          _c = match[1];
+          continue ;
+      case /* Inlink */9 :
+          var match$1 = x === match[0];
+          if (match$1 && !out) {
+            return true;
+          } else {
+            return false;
+          }
+      case /* Outlink */10 :
+          var match$2 = x === match[0];
+          if (match$2 && out) {
+            return true;
+          } else {
+            return false;
+          }
+      case /* Link */11 :
+      case /* Macro */12 :
+          _c = match[2];
+          continue ;
+      default:
+        return false;
+    }
+  };
+}
+
 function link(v, oux, inx, f, l) {
-  return {
-          v: v,
-          c: /* Link */Block.__(11, [
-              oux,
-              inx,
-              f
-            ]),
-          l: l
-        };
+  if (findLink(oux, true, f)) {
+    if (findLink(inx, false, f)) {
+      return {
+              v: v,
+              c: /* Link */Block.__(11, [
+                  oux,
+                  inx,
+                  f
+                ]),
+              l: l
+            };
+    } else {
+      var ins = lookupLink(inx, l);
+      throw [
+            SemanticsError,
+            "Link " + (ins + " does not exist in circuit")
+          ];
+    }
+  } else {
+    var outs = lookupLink(oux, l);
+    throw [
+          SemanticsError,
+          "Link " + (outs + " does not exist in circuit")
+        ];
+  }
 }
 
 function macro(v, id, latex, f, l) {
@@ -724,6 +831,8 @@ export {
   SemanticsError ,
   semanticsError ,
   lookupLink ,
+  doesLinkNumberExist ,
+  doesLinkStringExist ,
   printComponent$prime ,
   printComponent ,
   printCircuit$prime ,
@@ -749,6 +858,7 @@ export {
   compose ,
   tensor ,
   func ,
+  findLink ,
   link ,
   macro ,
   composemany ,

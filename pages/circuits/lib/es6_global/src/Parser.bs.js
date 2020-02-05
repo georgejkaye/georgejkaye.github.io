@@ -624,6 +624,28 @@ function parse$prime(v, _i, _tokens, _stack, _lastterm, tensor, nextlink, defs, 
   };
 }
 
+function processExponential(v, links, n, term, tensor) {
+  if (n === 0 || n === 1) {
+    return /* :: */[
+            term,
+            /* [] */0
+          ];
+  } else if (tensor) {
+    return /* :: */[
+            term,
+            processExponential(v, links, n - 1 | 0, term, tensor)
+          ];
+  } else {
+    return /* :: */[
+            Circuits$CircuitVisualiser.circ(v, /* Tensor */Block.__(3, [/* :: */[
+                      term,
+                      processExponential(v, links, n - 1 | 0, term, true)
+                    ]]), links),
+            /* [] */0
+          ];
+  }
+}
+
 function parseIteration(m, v, i, xs, stack, tensor, nextlink, defs, links) {
   if (List.length(xs) === 0 || List.hd(xs) !== "(") {
     return parseError(i, "iteration expected, no expression found");
@@ -641,6 +663,60 @@ function parseIteration(m, v, i, xs, stack, tensor, nextlink, defs, links) {
                 /* [] */0
               ], tensor, nextlink$1, defs, links);
   }
+}
+
+function parseLink(m, v, i, xs, stack, tensor, nextlink, defs, links) {
+  var oup = Caml_array.caml_array_get(m, 1);
+  var inp = Caml_array.caml_array_get(m, 2);
+  if (oup === inp) {
+    Circuits$CircuitVisualiser.semanticsError("Outlink and Inlink cannot be the same string!");
+  } else if (Circuits$CircuitVisualiser.doesLinkStringExist(oup, links)) {
+    Circuits$CircuitVisualiser.semanticsError("Link " + (oup + " already exists!"));
+  } else if (Circuits$CircuitVisualiser.doesLinkStringExist(inp, links)) {
+    Circuits$CircuitVisualiser.semanticsError("Link " + (inp + " already exists!"));
+  }
+  var inx = nextlink + 1 | 0;
+  var newLinks_000 = /* tuple */[
+    /* tuple */[
+      oup,
+      nextlink
+    ],
+    /* tuple */[
+      inp,
+      inx
+    ]
+  ];
+  var newLinks = /* :: */[
+    newLinks_000,
+    links
+  ];
+  var nextlink$1 = nextlink + 2 | 0;
+  var parsedScope = parse$prime(v, i + 6 | 0, xs, /* [] */0, /* [] */0, false, nextlink$1, defs, newLinks);
+  var actualScope = parsedScope[0];
+  var nextlink$2 = parsedScope[1];
+  var finalLink = Circuits$CircuitVisualiser.link(v, nextlink, inx, actualScope, newLinks);
+  return parse$prime(v, i + 1 | 0, /* [] */0, Pervasives.$at(stack, /* :: */[
+                  finalLink,
+                  /* [] */0
+                ]), /* :: */[
+              finalLink,
+              /* [] */0
+            ], tensor, nextlink$2, defs, links);
+}
+
+function parseComposition(v, i, xs, stack, tensor, nextlink, defs, links) {
+  if (List.length(stack) === 0) {
+    parseError(i, "Unexpected . encountered");
+  } else if (List.length(xs) === 0) {
+    parseError(i, "Unexpected end of term encountered after .");
+  }
+  var parsedArgument = parse$prime(v, i + 2 | 0, xs, List.tl(stack), /* [] */0, tensor, nextlink, defs, links);
+  var actualArgument = parsedArgument[0];
+  var nextlink$1 = parsedArgument[1];
+  return /* tuple */[
+          Circuits$CircuitVisualiser.compose(List.hd(stack), actualArgument),
+          nextlink$1
+        ];
 }
 
 function parseTerm(a, v, i, xs, stack, tensor, nextlink, defs, links) {
@@ -689,46 +765,19 @@ function parseTerm(a, v, i, xs, stack, tensor, nextlink, defs, links) {
   }
 }
 
-function parseLink(m, v, i, xs, stack, tensor, nextlink, defs, links) {
-  var oup = Caml_array.caml_array_get(m, 1);
-  var inp = Caml_array.caml_array_get(m, 2);
-  var inx = nextlink + 1 | 0;
-  var newLinks_000 = /* tuple */[
-    /* tuple */[
-      oup,
-      nextlink
-    ],
-    /* tuple */[
-      inp,
-      inx
-    ]
-  ];
-  var newLinks = /* :: */[
-    newLinks_000,
-    links
-  ];
-  var nextlink$1 = nextlink + 2 | 0;
-  var parsedScope = parse$prime(v, i + 6 | 0, xs, /* [] */0, /* [] */0, false, nextlink$1, defs, newLinks);
-  var actualScope = parsedScope[0];
-  var nextlink$2 = parsedScope[1];
-  var finalLink = Circuits$CircuitVisualiser.link(v, nextlink, inx, actualScope, newLinks);
-  return parse$prime(v, i + 1 | 0, /* [] */0, Pervasives.$at(stack, /* :: */[
-                  finalLink,
+function parseBrackets(close, v, i, xs, stack, tensor, nextlink, defs, links) {
+  var j = scanForClosingBracket(xs, i, close);
+  var subtermTokens = Helpers$CircuitVisualiser.slice(xs, 0, j - 1 | 0);
+  var parsedSubterm = parse$prime(v, i + 1 | 0, subtermTokens, /* [] */0, /* [] */0, false, nextlink, defs, links);
+  var actualSubterm = parsedSubterm[0];
+  var nextlink$1 = parsedSubterm[1];
+  return parse$prime(v, (i + 1 | 0) + lengthOfTokens(subtermTokens) | 0, Helpers$CircuitVisualiser.trim(xs, j + 1 | 0), Pervasives.$at(stack, /* :: */[
+                  actualSubterm,
                   /* [] */0
                 ]), /* :: */[
-              finalLink,
+              actualSubterm,
               /* [] */0
-            ], tensor, nextlink$2, defs, links);
-}
-
-function parseExponential(m, v, i, xs, stack, lastterm, tensor, nextlink, defs, links) {
-  var n = Caml_format.caml_int_of_string(Caml_array.caml_array_get(m, 1));
-  if (List.length(lastterm) !== 1) {
-    return parseError(i, "exponential used without a valid term");
-  } else {
-    var newstack = processExponential(v, links, n, List.hd(lastterm), tensor);
-    return parse$prime(v, (i + Caml_array.caml_array_get(m, 0).length | 0) + 1 | 0, xs, Pervasives.$at(Helpers$CircuitVisualiser.drop(stack, 1), newstack), lastterm, tensor, nextlink, defs, links);
-  }
+            ], tensor, nextlink$1, defs, links);
 }
 
 function parseTrace(m, v, i, xs, stack, tensor, nextlink, defs, links) {
@@ -751,36 +800,12 @@ function parseTrace(m, v, i, xs, stack, tensor, nextlink, defs, links) {
   }
 }
 
-function parseComposition(v, i, xs, stack, tensor, nextlink, defs, links) {
-  if (List.length(stack) === 0) {
-    return parseError(i, "unexpected * encountered");
-  } else {
-    var parsedArgument = parse$prime(v, i + 2 | 0, xs, List.tl(stack), /* [] */0, tensor, nextlink, defs, links);
-    var actualArgument = parsedArgument[0];
-    var nextlink$1 = parsedArgument[1];
-    return /* tuple */[
-            Circuits$CircuitVisualiser.compose(List.hd(stack), actualArgument),
-            nextlink$1
-          ];
-  }
-}
-
-function parseBrackets(close, v, i, xs, stack, tensor, nextlink, defs, links) {
-  var j = scanForClosingBracket(xs, i, close);
-  var subtermTokens = Helpers$CircuitVisualiser.slice(xs, 0, j - 1 | 0);
-  var parsedSubterm = parse$prime(v, i + 1 | 0, subtermTokens, /* [] */0, /* [] */0, false, nextlink, defs, links);
-  var actualSubterm = parsedSubterm[0];
-  var nextlink$1 = parsedSubterm[1];
-  return parse$prime(v, (i + 1 | 0) + lengthOfTokens(subtermTokens) | 0, Helpers$CircuitVisualiser.trim(xs, j + 1 | 0), Pervasives.$at(stack, /* :: */[
-                  actualSubterm,
-                  /* [] */0
-                ]), /* :: */[
-              actualSubterm,
-              /* [] */0
-            ], tensor, nextlink$1, defs, links);
-}
-
 function parseTensor(v, i, xs, stack, tensor, nextlink, defs, links) {
+  if (List.length(stack) === 0) {
+    parseError(i, "Unexpected * encountered");
+  } else if (List.length(xs) === 0) {
+    parseError(i, "Unexpected end of term encountered after *");
+  }
   if (tensor) {
     return parse$prime(v, i + 2 | 0, xs, stack, /* [] */0, tensor, nextlink, defs, links);
   } else {
@@ -796,25 +821,13 @@ function parseTensor(v, i, xs, stack, tensor, nextlink, defs, links) {
   }
 }
 
-function processExponential(v, links, n, term, tensor) {
-  if (n === 0 || n === 1) {
-    return /* :: */[
-            term,
-            /* [] */0
-          ];
-  } else if (tensor) {
-    return /* :: */[
-            term,
-            processExponential(v, links, n - 1 | 0, term, tensor)
-          ];
+function parseExponential(m, v, i, xs, stack, lastterm, tensor, nextlink, defs, links) {
+  var n = Caml_format.caml_int_of_string(Caml_array.caml_array_get(m, 1));
+  if (List.length(lastterm) !== 1) {
+    return parseError(i, "exponential used without a valid term");
   } else {
-    return /* :: */[
-            Circuits$CircuitVisualiser.circ(v, /* Tensor */Block.__(3, [/* :: */[
-                      term,
-                      processExponential(v, links, n - 1 | 0, term, true)
-                    ]]), links),
-            /* [] */0
-          ];
+    var newstack = processExponential(v, links, n, List.hd(lastterm), tensor);
+    return parse$prime(v, (i + Caml_array.caml_array_get(m, 0).length | 0) + 1 | 0, xs, Pervasives.$at(Helpers$CircuitVisualiser.drop(stack, 1), newstack), lastterm, tensor, nextlink, defs, links);
   }
 }
 
