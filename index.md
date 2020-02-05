@@ -53,9 +53,8 @@ Here are some [pictures](/pictures) of me!
 
 ### 2019-20
 
-**Semester 1:** [Mathematical Foundations of Computer Science](https://www.cs.bham.ac.uk/internal/modules/2019/06-30181/)
-
-**Semester 2:** [Compilers & Languages](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/)
+* **Spring 2020:** [Compilers & Languages](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/) [OCaml tutorial](/ocaml)
+* **Autumn 2019:** [Mathematical Foundations of Computer Science](https://www.cs.bham.ac.uk/internal/modules/2019/06-30181/)
 
 ## Misc
 
