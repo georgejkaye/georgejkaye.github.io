@@ -764,6 +764,38 @@ function getTraceText(x, e, left) {
         ];
 }
 
+function generateTransitions(x, inid, outid, targets) {
+  var string = "";
+  var tracenodes = "";
+  var ranks = "";
+  for(var i = 0 ,i_finish = targets.length - 1 | 0; i <= i_finish; ++i){
+    var match = Caml_array.caml_array_get(targets, i);
+    var k = match[1];
+    var e = match[0];
+    if (e.contents.id < x) {
+      console.log("trace!");
+      var match$1 = getTraceText(x, e, true);
+      var idl = match$1[0];
+      var match$2 = getTraceText(x, e, false);
+      var idr = match$2[0];
+      tracenodes = tracenodes + (tab + (match$1[1] + (tab + match$2[1])));
+      string = string + (tab + ("edge" + (String(x) + (":o" + (String(i) + (":e -> " + (idr + (":s;\n" + (tab + (idr + (":n -> " + (idl + (":n;\n" + (tab + (idl + (":s -> edge" + (String(e.contents.id) + (":i" + (String(k) + ":w;\n")))))))))))))))))));
+      ranks = ranks + (tab + ("{rank=same; edge" + (String(inid) + (", " + (idl + ("}\n" + (tab + ("{rank=same; edge" + (String(outid) + (", " + (idr + "}\n")))))))))));
+    } else {
+      string = string + (tab + ("edge" + (String(x) + (":o" + (String(i) + (":e -> edge" + (String(e.contents.id) + (":i" + (String(k) + ":w;\n")))))))));
+    }
+  }
+  return /* array */[
+          ranks,
+          tracenodes,
+          string
+        ];
+}
+
+function generatePorts(n, out) {
+  return "{" + (generatePorts$prime(0, n, out) + "}");
+}
+
 function generateGraphvizCodeEdges(inputs, outputs, _edges, _ranks, _nodes, _traces, _transitions) {
   while(true) {
     var transitions = _transitions;
@@ -819,7 +851,7 @@ function generateGraphvizCodeEdges(inputs, outputs, _edges, _ranks, _nodes, _tra
           transdot$2
         ];
       }
-      return ranks + (nodes + (match$3[0] + (match$1[0] + ("\n" + (match$1[1] + (traces + (transitions + match$3[1])))))));
+      return "\n" + (ranks + ("\n" + (nodes + (match$3[0] + (match$1[0] + (traces + ("\n" + (match$1[1] + (transitions + (match$3[1] + "\n"))))))))));
     }
   };
 }
@@ -853,43 +885,11 @@ function generateGraphvizCodeEdge(edge, inid, outid) {
         ];
 }
 
-function generatePorts(n, out) {
-  return "{" + (generatePorts$prime(0, n, out) + "}");
-}
-
-function generateTransitions(x, inid, outid, targets) {
-  var string = "";
-  var tracenodes = "";
-  var ranks = "";
-  for(var i = 0 ,i_finish = targets.length - 1 | 0; i <= i_finish; ++i){
-    var match = Caml_array.caml_array_get(targets, i);
-    var k = match[1];
-    var e = match[0];
-    if (e.contents.id < x) {
-      console.log("trace!");
-      var match$1 = getTraceText(x, e, true);
-      var idl = match$1[0];
-      var match$2 = getTraceText(x, e, false);
-      var idr = match$2[0];
-      tracenodes = tracenodes + (tab + (match$1[1] + match$2[1]));
-      string = string + (tab + ("edge" + (String(x) + (":o" + (String(i) + (":e -> " + (idr + (":s;\n" + (tab + (idr + (":n -> " + (idl + (":n;\n" + (tab + (idl + (":s -> edge" + (String(e.contents.id) + (":i" + (String(k) + ":w;\n")))))))))))))))))));
-      ranks = ranks + (tab + ("{rank=same; edge" + (String(inid) + (", " + (idl + ("}\n" + (tab + ("{rank=same; edge" + (String(outid) + (", " + (idr + "}\n")))))))))));
-    } else {
-      string = string + (tab + ("edge" + (String(x) + (":o" + (String(i) + (":e -> edge" + (String(e.contents.id) + (":i" + (String(k) + ":w;\n")))))))));
-    }
-  }
-  return /* array */[
-          ranks,
-          tracenodes,
-          string
-        ];
-}
-
 function generateGraphvizCode(net) {
   var graph = generateGraphvizCodeEdges(net.inputs, net.outputs, List.map((function (x) {
               return x.contents;
             }), net.edges), "", "", "", "");
-  return "digraph{\n" + (tab + ("rankdir=LR;\n" + (tab + ("ranksep=1;\n" + (graph + "}")))));
+  return "digraph{\n\n" + (tab + ("rankdir=LR;\n" + (tab + ("ranksep=1;" + (graph + "}")))));
 }
 
 var zeroDot = generateGraphvizCode(zeroNet);

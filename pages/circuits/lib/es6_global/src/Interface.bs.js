@@ -183,7 +183,7 @@ function Interface(Props) {
                                         }, "\\x,y."), React.createElement("b", undefined, " Link"), " outlink x with inlink y"))), React.createElement("td", undefined, React.createElement("div", {
                                   className: "right"
                                 }, React.createElement("textarea", {
-                                      cols: 50,
+                                      cols: 100,
                                       readOnly: true,
                                       rows: 15,
                                       value: dot
@@ -192,7 +192,7 @@ function Interface(Props) {
                   options: {
                     fit: true,
                     height: 1000,
-                    width: 2000
+                    width: 1000
                   }
                 }));
 }
