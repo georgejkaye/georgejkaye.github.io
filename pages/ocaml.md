@@ -1,4 +1,8 @@
-# Intro to OCaml
+---
+layout: page2
+title: Intro to Ocaml
+permalink: /ocaml
+---
 
 *This is based on a tutorial I taught for the [Compilers & Languages](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/) module.*
 
