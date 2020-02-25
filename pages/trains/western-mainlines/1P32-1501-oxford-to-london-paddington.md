@@ -19,7 +19,7 @@ You may be held at Didcot to allow a late-running service from Bristol to pass, 
 
 
 ## Downloads
-* [Direct download](/pages/trains/scenarios/1P32 1501 Oxford to London Paddington v1.0.zip)
+* [Direct download](/pages/trains/scenarios/1P32 1501 Oxford to London Paddington v1.1.zip)
 * [Alan Thomson Sim](https://alanthomsonsim.com/?download=1p32-1501-oxford-to-london-paddington)
 
 ## Timetable
@@ -55,10 +55,10 @@ You may be held at Didcot to allow a late-running service from Bristol to pass, 
 * [Western Mainlines](https://www.justtrains.net/product/western-mainlines)
 * [Voyager Advanced](https://www.justtrains.net/product/voyager-advanced-2019)*
 
-### Reskins
+### Reskins and Patches
 
-#### BH Reskins
-* [Class 180 'First Great Western'](https://www.facebook.com/photo.php?fbid=942191055827156&set=oa.515760421890353&type=3&theater)
+#### Major Wales Design
+* [Class 180 Revamp Pack](https://www.major.wales/revamp-packs/180)
 
 #### Superalbs
 * [Class 166 'FGW Plain Blue'](https://superalbs.weebly.com/class166fgwplain.html)
