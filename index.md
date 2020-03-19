@@ -22,6 +22,10 @@ Here are some [pictures](/pictures) of me!
 * Compilers
 * Reasoning
 
+### Current work
+
+Currently my work involves defining hypergraphs and showing that these hypergraphs can be used to model a traced symmetric monoidal category. Eventually this will lead to developing a sound and complete diagrammatic semantics for digital circuits.
+
 ### Contact me
 
 **Personal:** georgejkaye at gmail.com
