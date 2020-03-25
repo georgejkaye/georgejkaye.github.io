@@ -32,7 +32,7 @@ Currently my work involves defining hypergraphs and showing that these hypergrap
 
 **University:** g.j.kaye at cs.bham.ac.uk
 
-**Where to find me:** Office 244 (Desk J), School of Computer Science, University of Birmingham
+**Where to find me:** ~~Office 244 (Desk J), School of Computer Science, University of Birmingham~~ My house, under lockdown!
 
 ## Projects
 
