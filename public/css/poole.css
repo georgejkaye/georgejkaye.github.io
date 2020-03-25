@@ -51,6 +51,7 @@ html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  background-color: #282A36
 }
 
 @media (min-width: 38em) {
@@ -60,8 +61,7 @@ html {
 }
 
 body {
-  color: #515151;
-  background-color: #fff;
+  color: #d6d3cd;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -92,7 +92,7 @@ h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #313131;
+  color: #d6d3cd;
   text-rendering: optimizeLegibility;
 }
 
@@ -125,7 +125,7 @@ p {
 }
 
 strong {
-  color: #303030;
+  color: #d6d3cd;
 }
 
 
@@ -173,8 +173,8 @@ pre {
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: #bf616a;
-  background-color: #f9f9f9;
+  color: #fff;
+  background-color: #000000;
   border-radius: 3px;
 }
 
@@ -189,7 +189,7 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #f9f9f9;
+  background-color: #000000;
 }
 
 pre code {
@@ -388,7 +388,7 @@ tbody tr:nth-child(even) td {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: #d6d3cd;
 }
 
 .page-title,
