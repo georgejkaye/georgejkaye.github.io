@@ -322,7 +322,7 @@ OCaml can use type inference to deduce the types inside a tuple, even if it can'
 val select : bool * 'a * 'a -> 'a = <fun>
 ```
 
-You might be thinking that this looks very similar to just using n arguments for a function, and indeed it is! A function taking an n-tuple as an argument is *isomorphic* to a function taking n arguments, which means we can switch between them without losing any data. Changing a function takes a tuple as an argument into one that takes multiple arguments is called *currying*, after [Haskell Curry](https://en.wikipedia.org/wiki/Haskell_Curry).
+You might be thinking that this looks very similar to just using n arguments for a function, and indeed it is! A function taking an n-tuple as an argument is *isomorphic* to a function taking n arguments, which means we can switch between them without losing any data. Changing a function that takes a tuple as an argument into one that takes multiple arguments is called *currying*, after [Haskell Curry](https://en.wikipedia.org/wiki/Haskell_Curry).
 
 ```ocaml
 # let swap_curried x y = match (x, y) with
@@ -348,6 +348,7 @@ List concatenation is performed with the `@` operator.
 ```ocaml
 # let biglist = [1;2] @ [3;4]
 val biglist : int list = [1;2;3;4]
+```
 
 We can pattern match on lists based on whether they are empty or of the form `x :: xs`. For example, we can write functions that extract the head or the tail of a list, keeping in mind that these operations will fail on an empty list:
 
