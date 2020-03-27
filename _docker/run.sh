@@ -6,7 +6,7 @@ site_dir="/srv/jekyll" # Note: This must match the other _docker scripts, and th
 agda_opts="--safe"
 agda_src_dir=$site_dir/_agda
 agda_dst_dir=$site_dir/agda
-css_dst_dir=$site_dir/css
+css_dst_dir=$site_dir/public/css
 
 chmod 777 $site_dir
 
