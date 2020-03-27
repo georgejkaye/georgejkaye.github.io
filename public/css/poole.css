@@ -48,7 +48,9 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+
+  font-family: 'Source Code Pro', monospace;
   font-size: 16px;
   line-height: 1.5;
   background-color: #282A36
@@ -68,7 +70,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #8be9fd;
+  color: #268bd2;
   text-decoration: none;
 }
 
@@ -92,7 +94,7 @@ h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #bd93f9;
+  color: #d6d3cd;
   text-rendering: optimizeLegibility;
 }
 
@@ -388,7 +390,7 @@ tbody tr:nth-child(even) td {
 .page-title,
 .post-title,
 .post-title a {
-  color: #bd93f9;
+  color: #d6d3cd;
 }
 
 .page-title,

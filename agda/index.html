@@ -11,7 +11,7 @@
 
   <title>
     
-      404 &middot; George Kaye
+      Agda &middot; George Kaye
     
   </title>
 
@@ -76,9 +76,25 @@
 
 
     <div id="top" class="content container">
-      <h1 id="404">404</h1>
+      <div class="page">
+  <h1 class="page-title">Agda</h1>
+  <p>Hello this is an agda file!</p>
 
-<p>Sorry, that page doesn’t exist!</p>
+<pre><code class="language-agda">module Agda where
+
+
+data Nat : Set where
+  zero : Nat
+  succ : Nat
+
+
+four : Nat
+four = succ (succ (succ (succ zero)))
+</code></pre>
+
+<p>Hello again!</p>
+
+</div>
 
     </div>
 
