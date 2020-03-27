@@ -22,8 +22,7 @@ mv Agda.css $css_dst_dir/Agda.css
 
 cd $site_dir
 jekyll build --future --trace
-
-echo "www.georgejkaye.com" > $site_dir/CNAME
+echo "www.georgejkaye.com" > CNAME
 
 chown -R `stat -c "%u:%g" $site_dir` $site_dir/_site
 chown -R `stat -c "%u:%g" $site_dir` $agda_dst_dir
