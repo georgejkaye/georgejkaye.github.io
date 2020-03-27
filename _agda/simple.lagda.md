@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /agda/simple
+permalink: /agda
 ---
 
 This is a test Agda Markdown file.
@@ -9,4 +9,5 @@ This is a test Agda Markdown file.
 data Nat : Set where
      zero : Nat
      suc : Nat
+     two : Nat
 ```
