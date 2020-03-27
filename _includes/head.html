@@ -8,9 +8,9 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+    {{ site.title }} &middot; {{ site.tagline }}
     {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+    {{ page.title }} &middot; {{ site.title }}
     {% endif %}
   </title>
 
@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="{{ "/public/css/poole.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/public/css/syntax.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/public/css/hyde.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/public/css/agda.css" | relative_url }}">
 
   <!-- Icons -->
   <link rel="icon" href="{{ site.baseurl }}/favicon.png" type="image/png" />
@@ -29,7 +30,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124613172-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-124613172-1');
