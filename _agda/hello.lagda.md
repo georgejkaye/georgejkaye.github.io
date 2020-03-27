@@ -3,7 +3,6 @@ layout: default
 ---
 
 ```agda
-module Hello where
 
 data Bool : Set where
    true : Bool
