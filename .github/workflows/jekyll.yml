@@ -26,3 +26,4 @@ jobs:
         publish_dir: ./_site
         publish_branch: master
         cname: www.georgejkaye.com
+        enable_jekyll: true
