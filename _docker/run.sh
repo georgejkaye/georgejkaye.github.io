@@ -4,8 +4,8 @@ set -e
 
 site_dir="/srv/jekyll" # Note: This must match the other _docker scripts, and the Github Actions workflow
 agda_opts="--safe"
-agda_src_dir=$site_dir/_agda
-agda_dst_dir=$site_dir/agda
+agda_src_dir=$site_dir/_agda/
+agda_dst_dir=$site_dir/agda/
 css_dst_dir=$site_dir/public/css
 
 chmod 777 $site_dir
@@ -22,7 +22,6 @@ mv Agda.css $css_dst_dir/Agda.css
 
 cd $site_dir
 jekyll build --future --trace
-echo "www.georgejkaye.com" > CNAME
 
 chown -R `stat -c "%u:%g" $site_dir` $site_dir/_site
 chown -R `stat -c "%u:%g" $site_dir` $agda_dst_dir
