@@ -15,11 +15,10 @@ jobs:
     - name: Ensure the `run` script is runnable
       run: chmod +x ${{ github.workspace }}/_docker/run.sh
     - name: Build the site in the jekyll/builder container
-        # Replace ednutting/github-pages-agda with your "$dockerUsername/$dockerRepo" below
       run: |
         docker run \
-        -v $georgejkaye/georgejkaye.github.io:/srv/jekyll -v $georgejkaye/georgejkaye.github.io }}/_site:/srv/jekyll/_site \
-        ednutting/github-pages-agda:latest /srv/jekyll/_docker/run.sh
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        georgejkaye/georgejkaye.github.io:latest /srv/jekyll/_docker/run.sh
     - name: Deploy the site to master branch
       uses: peaceiris/actions-gh-pages@v3
       with:
