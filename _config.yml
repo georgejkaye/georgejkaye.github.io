@@ -15,6 +15,7 @@ tagline:          'University of Birmingham'
 description:      'Hello world!'
 url:              https://georgejkaye.com
 baseurl:          /
+repository:       georgejkaye/georgejkaye.github.io
 
 author:
   name:           'George Kaye'            
