@@ -3,7 +3,7 @@ layout: default
 ---
 
 ```agda
-open import simple
+open import Simple
 
 module Hello where
 
