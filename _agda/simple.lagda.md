@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: /agda
 ---
 
 This is a test Agda Markdown file.
