@@ -1,13 +1,13 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <img src="{{ site.author.avatar }}" alt="me" width = "100px" height = "100px">
+      <img src="{{ site.author.avatar }}" alt="me" width="100px" height="100px">
       <h1>
         <a href="{{ "/" | relative_url }}">
           {{ site.title }}
         </a>
       </h1>
-      <p class="lead">{{ site.description }}</p>
+      <p class="sidebar-lead">{{ site.description }}</p>
     </div>
 
     <nav class="sidebar-nav">
@@ -33,6 +33,6 @@
       <span class="sidebar-nav-item">Running <a href="http://hyde.getpoole.com/">Hyde</a>, a Jekyll theme</span>
     </nav>
 
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    <span class="sidebar-nav-item">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</span>
   </div>
 </div>
