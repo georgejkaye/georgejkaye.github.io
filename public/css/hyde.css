@@ -105,6 +105,16 @@ a.sidebar-nav-item:focus {
   font-weight: bold;
 }
 
+.sidebar-lead {
+  text-align: center;
+}
+
+@media (min-width: 48em) {
+  .sidebar-lead {
+    text-align: left;
+  }
+}
+
 /* Sticky sidebar
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
