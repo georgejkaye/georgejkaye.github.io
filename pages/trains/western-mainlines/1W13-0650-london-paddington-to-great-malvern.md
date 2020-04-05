@@ -1,36 +1,36 @@
 ---
 layout: scenario
-title: 1P32 1501 Oxford to London Paddington
-image: /images/scenarios/1P32-1501-oxford-to-london-paddington.jpg
+title: 1W13 0650 London Paddington to Great Malvern
+image: /images/scenarios/1W13-0650-london-paddington-to-great-malvern.jpg
 alttext: 2M12-1410-frome-to-swindon
 
 traction: Class 180
 toc: First Great Western
 route: Western Mainlines
-duration: 60 mins
+duration: 50 mins
 difficulty: Easy
 
-permalink: /trains/1P32-1501-oxford-to-london-paddington
+permalink: /trains/1W13-0650-london-paddington-to-great-malvern
 ---
 
-Hello driver! Welcome aboard unit 180102, which is currently standing at Oxford. Today you’ll be driving 1P32, the 1501 service from Oxford to London Paddington. You are scheduled to stop at Oxford, Reading, Slough and London Paddington.
+Hello driver! Welcome aboard unit 180103, which is currently standing at London Paddington. You are driving 1W13, the 0650 service from London Paddington to Great Malvern. In this scenario, you'll be driving as far as Oxford, calling at Slough, Reading and Oxford.
 
-You may be held at Didcot to allow a late-running service from Bristol to pass, but otherwise there are no problems reported - let's hope it stays that way!
+Although rush hour is just beginning, there are no problems reported so enjoy the early morning drive!
+
 
 
 ## Downloads
-* [Direct download](/pages/trains/scenarios/1P32 1501 Oxford to London Paddington v1.1.zip)
-* [Alan Thomson Sim](https://alanthomsonsim.com/?download=1p32-1501-oxford-to-london-paddington)
+* [Direct download](/pages/trains/scenarios/1W13 0650 London Paddington to Great Malvern v1.0.zip)
+* [Alan Thomson Sim](https://alanthomsonsim.com/?download=1w13-0650-london-paddington-to-great-malvern)
 
 ## Timetable
 
 | Location | Pl | Arr | Dep |
 |:-|:-:|:-:|:-:|
-| Oxford (OXF) | 1 | | 1501 |
-| *Didcot East Jn* | | *pass* | *1512* |
-| Reading (RDG) | 10 | 1525 | 1527 |
-| Slough (SLO) | 3 | 1540 | 1541 |
-| London Paddington (PAD) | 5 | 1559 | |
+| London Paddington (PAD) | 6 | | 0650 |
+| Slough (SLO) | 2 | 0705 | 0706 |
+| Reading (RDG) | 8 | 0717 | 0718 |
+| Oxford | 2 | 1559 | |
 
 ## Requirements
 
@@ -43,12 +43,13 @@ You may be held at Didcot to allow a late-running service from Bristol to pass, 
 * [Freightliner Class 66 v2.0](https://store.steampowered.com/app/222562/)
 * [Great Eastern Main Line](https://store.steampowered.com/app/222593)
 * [Portsmouth Direct Line: London Waterloo - Portsmouth](https://store.steampowered.com/app/820203/)*
+* [Freighliner Class 57/0](https://store.steampowered.com/app/222566/)*
+* [West Coast Main Line Over Shap](https://store.steampowered.com/app/222613/)*
 
 #### Armstrong Powerhouse
 * [Class 43 (MTU)/Mk3 Enhancement Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_89&product_id=168)
 * [Class 66 Enhancement Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_89&product_id=173)
 * [JHA Wagon Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=45_85&product_id=107)
-* [JNA-C Wagon Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=45_85&product_id=179)*
 * [Class 444/450 Enhancement Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_91&product_id=193)*
 
 #### Just Trains
@@ -65,6 +66,12 @@ You may be held at Didcot to allow a late-running service from Bristol to pass, 
 
 #### UKTrainSim
 * [Class 360 Heathrow Connect and Express](https://www.uktrainsim.com/filelib-info.php?form_fileid=34469)
+
+#### Vulcan Productions
+* [Western Region Class 57/6 Pack](https://www.vulcanproductions.co.uk/diesel.html)*
+
+#### Alan Thomson Sim
+* [Night Riviera Mk3 Coach Pack](https://alanthomsonsim.com/?download=night-riviera-mk3-coach-pack)*
 
 Requirements listed with an asterisk (*) appear only fleetingly and are not required for full enjoyment of the scenario.
 
