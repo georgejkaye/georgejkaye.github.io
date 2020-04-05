@@ -24,6 +24,8 @@ If you enjoyed my scenarios and would like to help me make more, feel free to [d
 - [South London Network](#south-london-network)
 - [South London to Brighton](#south-london-to-brighton)
 - [South Western Expressways](#south-western-expressways)
+  - [Original Route](#original-route)
+  - [To Reading](#to-reading)
 - [Western Mainlines](#western-mainlines)
 - [XC Route (Birmingham - Bristol)](#xc-route-birmingham---bristol)
 
@@ -67,12 +69,20 @@ If you enjoyed my scenarios and would like to help me make more, feel free to [d
 [Top](#top)
 
 ## South Western Expressways
+
+### Original Route 
+
 [![2M12 1410 Frome to Swindon (Part 1)](/images/scenarios/2M12-1410-frome-to-swindon.jpg){:class="small-scenario"}](2M12-1410-frome-to-swindon)
 ![6M08 0826 Westbury Up T.C. to Swindon](/images/scenarios/6M08-0826-westbury-up-tc-to-swindon.jpg){:class="small-scenario"}
+
+### To Reading
+
+[![1J93 1807 London Paddington to Frome (Part 2)](/images/scenarios/1J93-1807-london-paddington-to-frome.jpg){:class="small-scenario"}](1J93-1807-london-paddington-to-great-malvern)
 
 [Top](#top)
 
 ## Western Mainlines
+[![1J93 1807 London Paddington to Frome (Part 1)](/images/scenarios/1J93-1807-london-paddington-to-frome.jpg){:class="small-scenario"}](1J93-1807-london-paddington-to-great-malvern)
 [![1W13 0650 London Paddington to Great Malvern](/images/scenarios/1W13-0650-london-paddington-to-great-malvern.jpg){:class="small-scenario"}](1W13-0650-london-paddington-to-great-malvern)
 [![1P32 1501 Oxford to London Paddington](/images/scenarios/1P32-1501-oxford-to-london-paddington.jpg){:class="small-scenario"}](1P32-1501-oxford-to-london-paddington)
 [![2M12 1410 Frome to Swindon (Part 2)](/images/scenarios/2M12-1410-frome-to-swindon.jpg){:class="small-scenario"}](2M12-1410-frome-to-swindon)
