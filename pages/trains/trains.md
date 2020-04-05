@@ -77,12 +77,12 @@ If you enjoyed my scenarios and would like to help me make more, feel free to [d
 
 ### To Reading
 
-[![1J93 1807 London Paddington to Frome (Part 2)](/images/scenarios/1J93-1807-london-paddington-to-frome.jpg){:class="small-scenario"}](1J93-1807-london-paddington-to-great-malvern)
+[![1J93 1807 London Paddington to Frome (Part 2)](/images/scenarios/1J93-1807-london-paddington-to-frome.jpg){:class="small-scenario"}](1J93-1807-london-paddington-to-frome)
 
 [Top](#top)
 
 ## Western Mainlines
-[![1J93 1807 London Paddington to Frome (Part 1)](/images/scenarios/1J93-1807-london-paddington-to-frome.jpg){:class="small-scenario"}](1J93-1807-london-paddington-to-great-malvern)
+[![1J93 1807 London Paddington to Frome (Part 1)](/images/scenarios/1J93-1807-london-paddington-to-frome.jpg){:class="small-scenario"}](1J93-1807-london-paddington-to-frome)
 [![1W13 0650 London Paddington to Great Malvern](/images/scenarios/1W13-0650-london-paddington-to-great-malvern.jpg){:class="small-scenario"}](1W13-0650-london-paddington-to-great-malvern)
 [![1P32 1501 Oxford to London Paddington](/images/scenarios/1P32-1501-oxford-to-london-paddington.jpg){:class="small-scenario"}](1P32-1501-oxford-to-london-paddington)
 [![2M12 1410 Frome to Swindon (Part 2)](/images/scenarios/2M12-1410-frome-to-swindon.jpg){:class="small-scenario"}](2M12-1410-frome-to-swindon)
