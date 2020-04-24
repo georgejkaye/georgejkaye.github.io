@@ -36,6 +36,10 @@ function str(prim) {
   return prim;
 }
 
+function generateSVGString(param) {
+  return "";
+}
+
 function printLatexOrError(string, error) {
   if (error) {
     return React.createElement(Interface$MathJax, {
@@ -125,6 +129,7 @@ function Interface(Props) {
                     macs: state.macs,
                     net: generatedHypernet,
                     dot: generatedDot,
+                    svg: "",
                     error: generatedCircuit[0]
                   };
           }
@@ -137,6 +142,7 @@ function Interface(Props) {
         macs: Examples$CircuitVisualiser.exampleMacros,
         net: Hypernets$CircuitVisualiser.zeroNet,
         dot: Hypernets$CircuitVisualiser.zeroDot,
+        svg: "",
         error: false
       });
   var dispatch = match[1];
@@ -187,14 +193,18 @@ function Interface(Props) {
                                       readOnly: true,
                                       rows: 15,
                                       value: dot
-                                    })))))), React.createElement(GraphvizReact.Graphviz, {
-                  dot: dot,
-                  options: {
-                    fit: true,
-                    height: 1000,
-                    width: 1000
-                  }
-                }));
+                                    })))))), React.createElement("a", {
+                  download: "graph",
+                  href: match$1.svg,
+                  target: "_blank"
+                }, React.createElement(GraphvizReact.Graphviz, {
+                      dot: dot,
+                      options: {
+                        fit: true,
+                        height: 1000,
+                        width: 1000
+                      }
+                    })));
 }
 
 var make = Interface;
@@ -205,6 +215,7 @@ export {
   MathJaxContext ,
   MathJax ,
   str ,
+  generateSVGString ,
   printLatexOrError ,
   generateCircuit ,
   valueFromEvent ,
