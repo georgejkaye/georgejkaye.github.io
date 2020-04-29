@@ -120,6 +120,58 @@ function orGate(v) {
         };
 }
 
+function norGate(v) {
+  return {
+          v: v,
+          c: /* Function */Block.__(5, [
+              "NOR",
+              "\\downarrow",
+              2,
+              1,
+              (function (c) {
+                  var match = c.c;
+                  if (match.tag === /* Tensor */3) {
+                    var match$1 = match[0];
+                    if (match$1) {
+                      var a = match$1[0];
+                      var match$2 = a.c;
+                      if (!match$2.tag) {
+                        var match$3 = match$1[1];
+                        if (match$3) {
+                          var match$4 = match$3[0].c;
+                          if (!match$4.tag) {
+                            if (match$3[1]) {
+                              return Pervasives.failwith("Bad input");
+                            } else {
+                              return Circuits$CircuitVisualiser.value(v, Curry._1(v.notOp, Curry._2(v.orOp, match$2[0], match$4[0])));
+                            }
+                          }
+                          
+                        } else {
+                          return Pervasives.failwith("Bad input");
+                        }
+                      }
+                      var match$5 = match$1[1];
+                      if (match$5 && !match$5[1]) {
+                        var b = match$5[0];
+                        return Circuits$CircuitVisualiser.func(v, Circuits$CircuitVisualiser.printCircuit(a) + (" OR " + Circuits$CircuitVisualiser.printCircuit(b)), Circuits$CircuitVisualiser.printCircuitLatex(a) + (" \\downarrow " + Circuits$CircuitVisualiser.printCircuit(b)), Circuits$CircuitVisualiser.inputs(a) + Circuits$CircuitVisualiser.inputs(b) | 0, 1, (function (param) {
+                                      return Pervasives.failwith("not implemented");
+                                    }));
+                      } else {
+                        return Pervasives.failwith("Bad input");
+                      }
+                    } else {
+                      return Pervasives.failwith("Bad input");
+                    }
+                  } else {
+                    return Pervasives.failwith("Bad input");
+                  }
+                })
+            ]),
+          l: /* [] */0
+        };
+}
+
 function xorGate(v) {
   return {
           v: v,
@@ -294,6 +346,7 @@ export {
   top ,
   andGate ,
   orGate ,
+  norGate ,
   xorGate ,
   notGate ,
   id ,

@@ -2,13 +2,16 @@
 
 import * as Curry from "../../../node_modules/bs-platform/lib/es6/curry.js";
 import * as React from "react";
+import * as CamlinternalOO from "../../../node_modules/bs-platform/lib/es6/camlinternalOO.js";
 import * as GraphvizReact from "graphviz-react";
 import * as ReactMathjax2 from "react-mathjax2";
 import * as Caml_js_exceptions from "../../../node_modules/bs-platform/lib/es6/caml_js_exceptions.js";
 import * as Parser$CircuitVisualiser from "./Parser.bs.js";
+import * as Drawing$CircuitVisualiser from "./Drawing.bs.js";
 import * as Circuits$CircuitVisualiser from "./Circuits.bs.js";
 import * as Examples$CircuitVisualiser from "./Examples.bs.js";
 import * as Lattices$CircuitVisualiser from "./Lattices.bs.js";
+import * as Algebraic$CircuitVisualiser from "./Algebraic.bs.js";
 import * as Hypernets$CircuitVisualiser from "./Hypernets.bs.js";
 
 var Graphviz = { };
@@ -36,10 +39,6 @@ function str(prim) {
   return prim;
 }
 
-function generateSVGString(param) {
-  return "";
-}
-
 function printLatexOrError(string, error) {
   if (error) {
     return React.createElement(Interface$MathJax, {
@@ -51,31 +50,62 @@ function printLatexOrError(string, error) {
 }
 
 function generateCircuit(state, text) {
-  var item;
-  try {
-    item = Parser$CircuitVisualiser.parseFromString(state.lat, state.funs, state.macs, text);
-  }
-  catch (raw_exn){
-    var exn = Caml_js_exceptions.internalToOCamlException(raw_exn);
-    if (exn[0] === Parser$CircuitVisualiser.ParseError || exn[0] === Circuits$CircuitVisualiser.SemanticsError) {
-      return /* tuple */[
-              false,
-              /* tuple */[
-                Circuits$CircuitVisualiser.zero(state.lat),
-                exn[1]
-              ]
-            ];
-    } else {
-      throw exn;
+  if (text === "") {
+    return /* tuple */[
+            true,
+            /* tuple */[
+              Circuits$CircuitVisualiser.zero(state.lat),
+              ""
+            ]
+          ];
+  } else {
+    var item;
+    try {
+      item = Parser$CircuitVisualiser.parseFromString(state.lat, state.funs, state.macs, text);
     }
+    catch (raw_exn){
+      var exn = Caml_js_exceptions.internalToOCamlException(raw_exn);
+      if (exn[0] === Parser$CircuitVisualiser.ParseError || exn[0] === Circuits$CircuitVisualiser.SemanticsError) {
+        return /* tuple */[
+                false,
+                /* tuple */[
+                  Circuits$CircuitVisualiser.zero(state.lat),
+                  exn[1]
+                ]
+              ];
+      } else {
+        throw exn;
+      }
+    }
+    return /* tuple */[
+            true,
+            /* tuple */[
+              item,
+              Circuits$CircuitVisualiser.printCircuitLatex(item)
+            ]
+          ];
   }
-  return /* tuple */[
-          true,
-          /* tuple */[
-            item,
-            Circuits$CircuitVisualiser.printCircuitLatex(item)
-          ]
-        ];
+}
+
+var class_tables = /* Cons */[
+  0,
+  0,
+  0
+];
+
+function minimiseHypergraph(state) {
+  if (!class_tables[0]) {
+    var $$class = CamlinternalOO.create_table(0);
+    var env = CamlinternalOO.new_variable($$class, "");
+    var env_init = function (env$1) {
+      var self = CamlinternalOO.create_object_opt(0, $$class);
+      self[env] = env$1;
+      return self;
+    };
+    CamlinternalOO.init_class($$class);
+    class_tables[0] = env_init;
+  }
+  return Curry._1(class_tables[0], 0);
 }
 
 function valueFromEvent(evt) {
@@ -112,25 +142,49 @@ var Input = {
 
 function Interface(Props) {
   var match = React.useReducer((function (state, action) {
-          var text = action[0];
-          if (state.old === text) {
-            return state;
+          if (action) {
+            var text = action[0];
+            if (state.old === text) {
+              return state;
+            } else {
+              var generatedCircuit = generateCircuit(state, text);
+              var generatedHypernet = Hypernets$CircuitVisualiser.convertCircuitToHypernet(generatedCircuit[1][0]);
+              var generatedDot = Drawing$CircuitVisualiser.generateGraphvizCode(generatedHypernet);
+              var generatedAlg = Algebraic$CircuitVisualiser.generateAlgebraicDefinition(generatedHypernet);
+              var algebraicLatex = Algebraic$CircuitVisualiser.algebraicNetLatex(generatedAlg);
+              var formalDot = Drawing$CircuitVisualiser.generateFormalGraphvizCode(generatedAlg);
+              return {
+                      old: text,
+                      lat: state.lat,
+                      circ: generatedCircuit[1][0],
+                      strn: generatedCircuit[1][1],
+                      funs: state.funs,
+                      macs: state.macs,
+                      net: generatedHypernet,
+                      dot: generatedDot,
+                      alg: algebraicLatex,
+                      form: formalDot,
+                      error: generatedCircuit[0]
+                    };
+            }
           } else {
-            var generatedCircuit = generateCircuit(state, text);
-            var generatedHypernet = Hypernets$CircuitVisualiser.convertCircuitToHypernet(generatedCircuit[1][0]);
-            var generatedDot = Hypernets$CircuitVisualiser.generateGraphvizCode(generatedHypernet);
-            console.log(generatedDot);
+            var minimisedHypernet = Hypernets$CircuitVisualiser.minimise(state.net);
+            var generatedDot$1 = Drawing$CircuitVisualiser.generateGraphvizCode(minimisedHypernet);
+            var generatedAlg$1 = Algebraic$CircuitVisualiser.generateAlgebraicDefinition(minimisedHypernet);
+            var algebraicLatex$1 = Algebraic$CircuitVisualiser.algebraicNetLatex(generatedAlg$1);
+            var formalDot$1 = Drawing$CircuitVisualiser.generateFormalGraphvizCode(generatedAlg$1);
             return {
-                    old: text,
+                    old: "",
                     lat: state.lat,
-                    circ: generatedCircuit[1][0],
-                    strn: generatedCircuit[1][1],
+                    circ: state.circ,
+                    strn: state.strn,
                     funs: state.funs,
                     macs: state.macs,
-                    net: generatedHypernet,
-                    dot: generatedDot,
-                    svg: "",
-                    error: generatedCircuit[0]
+                    net: minimisedHypernet,
+                    dot: generatedDot$1,
+                    alg: algebraicLatex$1,
+                    form: formalDot$1,
+                    error: state.error
                   };
           }
         }), {
@@ -141,8 +195,9 @@ function Interface(Props) {
         funs: Examples$CircuitVisualiser.exampleFunctions,
         macs: Examples$CircuitVisualiser.exampleMacros,
         net: Hypernets$CircuitVisualiser.zeroNet,
-        dot: Hypernets$CircuitVisualiser.zeroDot,
-        svg: "",
+        dot: Drawing$CircuitVisualiser.zeroDot,
+        alg: "",
+        form: "",
         error: false
       });
   var dispatch = match[1];
@@ -158,7 +213,13 @@ function Interface(Props) {
                       onSubmit: (function (text) {
                           return Curry._1(dispatch, /* ParseNewCircuit */[text]);
                         })
-                    })), React.createElement("div", undefined, printLatexOrError(match$1.strn, match$1.error)), React.createElement("table", undefined, React.createElement("tbody", undefined, React.createElement("tr", undefined, React.createElement("td", undefined, React.createElement("div", {
+                    }), React.createElement("button", {
+                      onClick: (function (param) {
+                          return Curry._1(dispatch, /* MinimiseHypergraph */0);
+                        })
+                    }, "Minimise")), React.createElement("div", undefined, printLatexOrError(match$1.strn, match$1.error)), React.createElement("table", undefined, React.createElement("tbody", undefined, React.createElement("tr", undefined, React.createElement("td", {
+                              width: "500px"
+                            }, React.createElement("div", {
                                   className: "instructions"
                                 }, React.createElement("div", undefined, React.createElement("span", {
                                           className: "code"
@@ -186,25 +247,21 @@ function Interface(Props) {
                                           className: "code"
                                         }, "\\xy."), " or ", React.createElement("span", {
                                           className: "code"
-                                        }, "\\x,y."), React.createElement("b", undefined, " Link"), " outlink x with inlink y"))), React.createElement("td", undefined, React.createElement("div", {
-                                  className: "right"
-                                }, React.createElement("textarea", {
+                                        }, "\\x,y."), React.createElement("b", undefined, " Link"), " outlink x with inlink y"))), React.createElement("td", undefined, React.createElement("div", undefined, React.createElement(Interface$MathJax, {
+                                      string: match$1.alg
+                                    }))), React.createElement("td", undefined, React.createElement("div", undefined, React.createElement("textarea", {
                                       cols: 100,
                                       readOnly: true,
                                       rows: 15,
                                       value: dot
-                                    })))))), React.createElement("a", {
-                  download: "graph",
-                  href: match$1.svg,
-                  target: "_blank"
-                }, React.createElement(GraphvizReact.Graphviz, {
-                      dot: dot,
-                      options: {
-                        fit: true,
-                        height: 1000,
-                        width: 1000
-                      }
-                    })));
+                                    })))))), React.createElement(GraphvizReact.Graphviz, {
+                  dot: dot,
+                  options: {
+                    fit: true,
+                    height: 500,
+                    width: 1000
+                  }
+                }));
 }
 
 var make = Interface;
@@ -215,9 +272,9 @@ export {
   MathJaxContext ,
   MathJax ,
   str ,
-  generateSVGString ,
   printLatexOrError ,
   generateCircuit ,
+  minimiseHypergraph ,
   valueFromEvent ,
   Input ,
   make ,
