@@ -11,6 +11,20 @@ import * as Caml_builtin_exceptions from "../../../node_modules/bs-platform/lib/
 import * as Helpers$CircuitVisualiser from "./Helpers.bs.js";
 import * as Circuits$CircuitVisualiser from "./Circuits.bs.js";
 
+var alpha = "α";
+
+var omega = "ω";
+
+var alphaLatex = "\\alpha";
+
+var omegaLatex = "\\omega";
+
+var stubLatex = "\\sim";
+
+var forkLatex = "\\curlywedge";
+
+var dforkLatex = "\\Delta";
+
 var GraphError = Caml_exceptions.create("Hypernets-CircuitVisualiser.GraphError");
 
 function graphError(message) {
@@ -76,15 +90,18 @@ function printEdgeRefList(es) {
 }
 
 function printHypernet(h) {
-  return "hypernet inputs " + (printEdge(h.inputs) + (", outputs " + (printEdge(h.outputs) + (", edges " + printEdgeRefList(h.edges)))));
+  return "hypernet inputs " + (printEdge(h.inputs.contents) + (", outputs " + (printEdge(h.outputs.contents) + (", edges " + printEdgeRefList(h.edges)))));
 }
 
-function floatingEdge(id, label) {
+function floatingEdge(id, label, latex) {
   return {
-          id: id,
-          sources: /* array */[],
-          targets: /* array */[],
-          label: label
+          contents: {
+            id: id,
+            sources: /* array */[],
+            targets: /* array */[],
+            label: label,
+            latex: latex
+          }
         };
 }
 
@@ -96,7 +113,8 @@ function initialisePorts(x) {
                             id: 0,
                             sources: /* array */[],
                             targets: /* array */[],
-                            label: ""
+                            label: "",
+                            latex: ""
                           }
                         },
                         i
@@ -104,19 +122,9 @@ function initialisePorts(x) {
               }));
 }
 
-var zeroNet_inputs = {
-  id: 0,
-  sources: /* array */[],
-  targets: /* array */[],
-  label: "in"
-};
+var zeroNet_inputs = floatingEdge(0, alpha, alphaLatex);
 
-var zeroNet_outputs = {
-  id: 1,
-  sources: /* array */[],
-  targets: /* array */[],
-  label: "out"
-};
+var zeroNet_outputs = floatingEdge(1, omega, omegaLatex);
 
 var zeroNet = {
   inputs: zeroNet_inputs,
@@ -161,21 +169,21 @@ function removeEdge(param, edge) {
 }
 
 function composeSequential(f, g) {
-  if (f.outputs.sources.length !== g.inputs.targets.length) {
+  if (f.outputs.contents.sources.length !== g.inputs.contents.targets.length) {
     throw [
           Caml_builtin_exceptions.assert_failure,
           /* tuple */[
             "Hypernets.re",
-            58,
+            71,
             4
           ]
         ];
   }
-  for(var i = 0 ,i_finish = f.outputs.sources.length - 1 | 0; i <= i_finish; ++i){
-    var match = Caml_array.caml_array_get(f.outputs.sources, i);
+  for(var i = 0 ,i_finish = f.outputs.contents.sources.length - 1 | 0; i <= i_finish; ++i){
+    var match = Caml_array.caml_array_get(f.outputs.contents.sources, i);
     var k = match[1];
     var e = match[0];
-    var match$1 = Caml_array.caml_array_get(g.inputs.targets, i);
+    var match$1 = Caml_array.caml_array_get(g.inputs.contents.targets, i);
     var k$prime = match$1[1];
     var e$prime = match$1[0];
     Caml_array.caml_array_set(e.contents.targets, k, /* tuple */[
@@ -196,35 +204,37 @@ function composeSequential(f, g) {
 
 function composeParallel(f, g, i) {
   var newInputs_sources = /* array */[];
-  var newInputs_targets = $$Array.append(f.inputs.targets, g.inputs.targets);
+  var newInputs_targets = $$Array.append(f.inputs.contents.targets, g.inputs.contents.targets);
   var newInputs = {
     id: 0,
     sources: newInputs_sources,
     targets: newInputs_targets,
-    label: "in"
+    label: alpha,
+    latex: alphaLatex
   };
   var newOutputs_id = i + 1 | 0;
-  var newOutputs_sources = $$Array.append(f.outputs.sources, g.outputs.sources);
+  var newOutputs_sources = $$Array.append(f.outputs.contents.sources, g.outputs.contents.sources);
   var newOutputs_targets = /* array */[];
   var newOutputs = {
     id: newOutputs_id,
     sources: newOutputs_sources,
     targets: newOutputs_targets,
-    label: "out"
+    label: omega,
+    latex: omegaLatex
   };
-  var finputs = f.inputs.targets.length;
-  var foutputs = f.outputs.sources.length;
+  var finputs = f.inputs.contents.targets.length;
+  var foutputs = f.outputs.contents.sources.length;
   var refInputs = {
     contents: newInputs
   };
   var refOutputs = {
     contents: newOutputs
   };
-  for(var i$1 = 0 ,i_finish = f.inputs.targets.length - 1 | 0; i$1 <= i_finish; ++i$1){
-    var match = Caml_array.caml_array_get(f.inputs.targets, i$1);
+  for(var i$1 = 0 ,i_finish = f.inputs.contents.targets.length - 1 | 0; i$1 <= i_finish; ++i$1){
+    var match = Caml_array.caml_array_get(f.inputs.contents.targets, i$1);
     var k = match[1];
     var e = match[0];
-    var match$1 = e.contents.label === "out";
+    var match$1 = e.contents.label === omega;
     if (match$1) {
       Caml_array.caml_array_set(refOutputs.contents.sources, k, /* tuple */[
             refInputs,
@@ -237,11 +247,11 @@ function composeParallel(f, g, i) {
           ]);
     }
   }
-  for(var i$2 = 0 ,i_finish$1 = g.inputs.targets.length - 1 | 0; i$2 <= i_finish$1; ++i$2){
-    var match$2 = Caml_array.caml_array_get(g.inputs.targets, i$2);
+  for(var i$2 = 0 ,i_finish$1 = g.inputs.contents.targets.length - 1 | 0; i$2 <= i_finish$1; ++i$2){
+    var match$2 = Caml_array.caml_array_get(g.inputs.contents.targets, i$2);
     var k$1 = match$2[1];
     var e$1 = match$2[0];
-    var match$3 = e$1.contents.label === "out";
+    var match$3 = e$1.contents.label === omega;
     if (match$3) {
       Caml_array.caml_array_set(refOutputs.contents.sources, k$1 + foutputs | 0, /* tuple */[
             refInputs,
@@ -254,11 +264,11 @@ function composeParallel(f, g, i) {
           ]);
     }
   }
-  for(var i$3 = 0 ,i_finish$2 = f.outputs.sources.length - 1 | 0; i$3 <= i_finish$2; ++i$3){
-    var match$4 = Caml_array.caml_array_get(f.outputs.sources, i$3);
+  for(var i$3 = 0 ,i_finish$2 = f.outputs.contents.sources.length - 1 | 0; i$3 <= i_finish$2; ++i$3){
+    var match$4 = Caml_array.caml_array_get(f.outputs.contents.sources, i$3);
     var k$2 = match$4[1];
     var e$2 = match$4[0];
-    var match$5 = e$2.contents.label === "in";
+    var match$5 = e$2.contents.label === alpha;
     if (match$5) {
       Caml_array.caml_array_set(refInputs.contents.targets, k$2, /* tuple */[
             refOutputs,
@@ -271,11 +281,11 @@ function composeParallel(f, g, i) {
           ]);
     }
   }
-  for(var i$4 = 0 ,i_finish$3 = g.outputs.sources.length - 1 | 0; i$4 <= i_finish$3; ++i$4){
-    var match$6 = Caml_array.caml_array_get(g.outputs.sources, i$4);
+  for(var i$4 = 0 ,i_finish$3 = g.outputs.contents.sources.length - 1 | 0; i$4 <= i_finish$3; ++i$4){
+    var match$6 = Caml_array.caml_array_get(g.outputs.contents.sources, i$4);
     var k$3 = match$6[1];
     var e$3 = match$6[0];
-    var match$7 = e$3.contents.label === "in";
+    var match$7 = e$3.contents.label === alpha;
     if (match$7) {
       Caml_array.caml_array_set(refInputs.contents.targets, k$3 + finputs | 0, /* tuple */[
             refOutputs,
@@ -289,19 +299,15 @@ function composeParallel(f, g, i) {
     }
   }
   return {
-          inputs: refInputs.contents,
+          inputs: refInputs,
           edges: Pervasives.$at(f.edges, g.edges),
-          outputs: refOutputs.contents
+          outputs: refOutputs
         };
 }
 
-function functionNet(id, ins, outs, i) {
-  var ine = {
-    contents: floatingEdge(i, "")
-  };
-  var oute = {
-    contents: floatingEdge(i + 2 | 0, "")
-  };
+function functionNet(label, latex, ins, outs, i) {
+  var ine = floatingEdge(i, "", "");
+  var oute = floatingEdge(i + 2 | 0, "", "");
   var fune = {
     contents: {
       id: i + 1 | 0,
@@ -317,7 +323,8 @@ function functionNet(id, ins, outs, i) {
                       n
                     ];
             })),
-      label: id
+      label: label,
+      latex: latex
     }
   };
   ine.contents = {
@@ -329,7 +336,8 @@ function functionNet(id, ins, outs, i) {
                     n
                   ];
           })),
-    label: "in"
+    label: alpha,
+    latex: alphaLatex
   };
   oute.contents = {
     id: i + 2 | 0,
@@ -340,16 +348,17 @@ function functionNet(id, ins, outs, i) {
                   ];
           })),
     targets: /* array */[],
-    label: "out"
+    label: omega,
+    latex: omegaLatex
   };
   return /* tuple */[
           {
-            inputs: ine.contents,
+            inputs: ine,
             edges: /* :: */[
               fune,
               /* [] */0
             ],
-            outputs: oute.contents
+            outputs: oute
           },
           i + 3 | 0
         ];
@@ -357,10 +366,10 @@ function functionNet(id, ins, outs, i) {
 
 function traceHypernet(x, h) {
   for(var i = 0 ,i_finish = x - 1 | 0; i <= i_finish; ++i){
-    var match = Caml_array.caml_array_get(h.inputs.targets, i);
+    var match = Caml_array.caml_array_get(h.inputs.contents.targets, i);
     var k = match[1];
     var e = match[0];
-    var match$1 = Caml_array.caml_array_get(h.outputs.sources, i);
+    var match$1 = Caml_array.caml_array_get(h.outputs.contents.sources, i);
     var k$prime = match$1[1];
     var e$prime = match$1[0];
     Caml_array.caml_array_set(e$prime.contents.targets, k$prime, /* tuple */[
@@ -373,27 +382,29 @@ function traceHypernet(x, h) {
         ]);
   }
   var newInputs_sources = /* array */[];
-  var newInputs_targets = $$Array.sub(h.inputs.targets, x, h.inputs.targets.length - x | 0);
+  var newInputs_targets = $$Array.sub(h.inputs.contents.targets, x, h.inputs.contents.targets.length - x | 0);
   var newInputs = {
     id: 0,
     sources: newInputs_sources,
     targets: newInputs_targets,
-    label: "in"
+    label: alpha,
+    latex: alphaLatex
   };
-  var newOutputs_id = h.outputs.id;
-  var newOutputs_sources = $$Array.sub(h.outputs.sources, x, h.outputs.sources.length - x | 0);
+  var newOutputs_id = h.outputs.contents.id;
+  var newOutputs_sources = $$Array.sub(h.outputs.contents.sources, x, h.outputs.contents.sources.length - x | 0);
   var newOutputs_targets = /* array */[];
   var newOutputs = {
     id: newOutputs_id,
     sources: newOutputs_sources,
     targets: newOutputs_targets,
-    label: "out"
+    label: omega,
+    latex: omegaLatex
   };
   for(var i$1 = 0 ,i_finish$1 = newInputs_targets.length - 1 | 0; i$1 <= i_finish$1; ++i$1){
     var match$2 = Caml_array.caml_array_get(newInputs_targets, i$1);
     var k$1 = match$2[1];
     var e$1 = match$2[0];
-    var match$3 = e$1.contents.label === "out";
+    var match$3 = e$1.contents.label === omega;
     var k$2 = match$3 ? k$1 - x | 0 : k$1;
     Caml_array.caml_array_set(newInputs_targets, i$1, /* tuple */[
           e$1,
@@ -404,7 +415,7 @@ function traceHypernet(x, h) {
     var match$4 = Caml_array.caml_array_get(newInputs_sources, i$2);
     var k$3 = match$4[1];
     var e$2 = match$4[0];
-    var match$5 = e$2.contents.label === "in";
+    var match$5 = e$2.contents.label === alpha;
     var k$4 = match$5 ? k$3 - x | 0 : k$3;
     Caml_array.caml_array_set(newInputs_sources, i$2, /* tuple */[
           e$2,
@@ -432,9 +443,13 @@ function traceHypernet(x, h) {
         ]);
   }
   return {
-          inputs: newInputs,
+          inputs: {
+            contents: newInputs
+          },
           edges: h.edges,
-          outputs: newOutputs
+          outputs: {
+            contents: newOutputs
+          }
         };
 }
 
@@ -445,7 +460,8 @@ function swapNet(i, x, y) {
     id: 0,
     sources: ine_sources,
     targets: ine_targets,
-    label: "in"
+    label: alpha,
+    latex: alphaLatex
   };
   var oute_id = i + 1 | 0;
   var oute_sources = initialisePorts(x + y | 0);
@@ -454,7 +470,8 @@ function swapNet(i, x, y) {
     id: oute_id,
     sources: oute_sources,
     targets: oute_targets,
-    label: "out"
+    label: omega,
+    latex: omegaLatex
   };
   var refin = {
     contents: ine
@@ -483,28 +500,28 @@ function swapNet(i, x, y) {
         ]);
   }
   return {
-          inputs: refin.contents,
+          inputs: refin,
           edges: /* [] */0,
-          outputs: refout.contents
+          outputs: refout
         };
 }
 
 function delayNet(i, n) {
   var subscript = Helpers$CircuitVisualiser.generateUnicodeSubscript(n);
-  return functionNet("ẟ" + subscript, 1, 1, i);
+  return functionNet("ẟ" + subscript, "\\delta_{" + (subscript + "}"), 1, 1, i);
 }
 
 function forkNet(i) {
-  return functionNet("⋏", 1, 2, i);
+  return functionNet("⋏", forkLatex, 1, 2, i);
 }
 
 function dforkNet(i, n) {
   var subscript = Helpers$CircuitVisualiser.generateUnicodeSubscript(n);
-  return functionNet("Δ" + subscript, n, (n << 1), i);
+  return functionNet("Δ" + subscript, dforkLatex + ("_{" + (subscript + "}")), n, (n << 1), i);
 }
 
 function iterHypernet(circuit, i) {
-  var n = circuit.outputs.sources.length;
+  var n = circuit.outputs.contents.sources.length;
   var nfork = dforkNet(i, n);
   var newCircuit = composeSequential(circuit, nfork[0]);
   return /* tuple */[
@@ -537,10 +554,10 @@ function joinLinks(net, l, outlink, inlink) {
 function convertCircuitToHypernet$prime(_circuit, i) {
   while(true) {
     var circuit = _circuit;
-    console.log(Circuits$CircuitVisualiser.printCircuit(circuit));
     var match = circuit.c;
     switch (match.tag | 0) {
       case /* Value */0 :
+          var x = match[0];
           var e = { };
           var oute = { };
           Caml_obj.caml_update_dummy(e, {
@@ -551,7 +568,8 @@ function convertCircuitToHypernet$prime(_circuit, i) {
                       oute,
                       0
                     ]],
-                  label: Curry._1(circuit.v.print, match[0])
+                  label: Curry._1(circuit.v.print, x),
+                  latex: Curry._1(circuit.v.printLatex, x)
                 }
               });
           Caml_obj.caml_update_dummy(oute, {
@@ -562,10 +580,11 @@ function convertCircuitToHypernet$prime(_circuit, i) {
                       0
                     ]],
                   targets: /* array */[],
-                  label: "out"
+                  label: omega,
+                  latex: omegaLatex
                 }
               });
-          var ine = floatingEdge(i, "in");
+          var ine = floatingEdge(i, alpha, alphaLatex);
           return /* tuple */[
                   {
                     inputs: ine,
@@ -573,15 +592,13 @@ function convertCircuitToHypernet$prime(_circuit, i) {
                       e,
                       /* [] */0
                     ],
-                    outputs: oute.contents
+                    outputs: oute
                   },
                   i + 3 | 0
                 ];
       case /* Identity */1 :
           var n = match[0];
-          var ine$1 = {
-            contents: floatingEdge(i, "")
-          };
+          var ine$1 = floatingEdge(i, "", "");
           var oute$1 = {
             contents: {
               id: i + 1 | 0,
@@ -594,7 +611,8 @@ function convertCircuitToHypernet$prime(_circuit, i) {
                   }
                   }(ine$1))),
               targets: /* array */[],
-              label: "out"
+              label: omega,
+              latex: omegaLatex
             }
           };
           ine$1.contents = {
@@ -608,13 +626,14 @@ function convertCircuitToHypernet$prime(_circuit, i) {
                         ];
                 }
                 }(oute$1))),
-            label: "in"
+            label: alpha,
+            latex: alphaLatex
           };
           return /* tuple */[
                   {
-                    inputs: ine$1.contents,
+                    inputs: ine$1,
                     edges: /* [] */0,
-                    outputs: oute$1.contents
+                    outputs: oute$1
                   },
                   i + 2 | 0
                 ];
@@ -644,7 +663,7 @@ function convertCircuitToHypernet$prime(_circuit, i) {
                   i + 2 | 0
                 ];
       case /* Function */5 :
-          return functionNet(match[0], match[2], match[3], i);
+          return functionNet(match[0], match[1], match[2], match[3], i);
       case /* Delay */6 :
           return delayNet(i, match[0]);
       case /* Trace */7 :
@@ -662,6 +681,7 @@ function convertCircuitToHypernet$prime(_circuit, i) {
                   match$3[1]
                 ];
       case /* Inlink */9 :
+          var x$1 = match[0];
           var e$1 = { };
           var oute$2 = { };
           Caml_obj.caml_update_dummy(e$1, {
@@ -672,7 +692,8 @@ function convertCircuitToHypernet$prime(_circuit, i) {
                       oute$2,
                       0
                     ]],
-                  label: Circuits$CircuitVisualiser.lookupLink(match[0], circuit.l)
+                  label: Circuits$CircuitVisualiser.lookupLink(x$1, circuit.l),
+                  latex: Circuits$CircuitVisualiser.lookupLink(x$1, circuit.l)
                 }
               });
           Caml_obj.caml_update_dummy(oute$2, {
@@ -683,10 +704,11 @@ function convertCircuitToHypernet$prime(_circuit, i) {
                       0
                     ]],
                   targets: /* array */[],
-                  label: "out"
+                  label: omega,
+                  latex: omegaLatex
                 }
               });
-          var ine$2 = floatingEdge(i, "in");
+          var ine$2 = floatingEdge(i, alpha, alphaLatex);
           return /* tuple */[
                   {
                     inputs: ine$2,
@@ -694,11 +716,12 @@ function convertCircuitToHypernet$prime(_circuit, i) {
                       e$1,
                       /* [] */0
                     ],
-                    outputs: oute$2.contents
+                    outputs: oute$2
                   },
                   i + 3 | 0
                 ];
       case /* Outlink */10 :
+          var x$2 = match[0];
           var e$2 = { };
           var ine$3 = { };
           Caml_obj.caml_update_dummy(e$2, {
@@ -709,7 +732,8 @@ function convertCircuitToHypernet$prime(_circuit, i) {
                       0
                     ]],
                   targets: /* array */[],
-                  label: Circuits$CircuitVisualiser.lookupLink(match[0], circuit.l)
+                  label: Circuits$CircuitVisualiser.lookupLink(x$2, circuit.l),
+                  latex: Circuits$CircuitVisualiser.lookupLink(x$2, circuit.l)
                 }
               });
           Caml_obj.caml_update_dummy(ine$3, {
@@ -720,13 +744,14 @@ function convertCircuitToHypernet$prime(_circuit, i) {
                       e$2,
                       0
                     ]],
-                  label: "in"
+                  label: alpha,
+                  latex: alphaLatex
                 }
               });
-          var oute$3 = floatingEdge(i + 2 | 0, "out");
+          var oute$3 = floatingEdge(i + 2 | 0, omega, omegaLatex);
           return /* tuple */[
                   {
-                    inputs: ine$3.contents,
+                    inputs: ine$3,
                     edges: /* :: */[
                       e$2,
                       /* [] */0
@@ -753,245 +778,98 @@ function convertCircuitToHypernet(circuit) {
   return convertCircuitToHypernet$prime(circuit, 0)[0];
 }
 
-var tab = "    ";
-
-function getTraceText(x, e, left) {
-  var dir = left ? "l" : "r";
-  var name = "trace" + (dir + (String(x) + ("to" + String(e.contents.id))));
-  return /* tuple */[
-          name,
-          name + "[shape=point, width=0.01]\n"
-        ];
-}
-
-function generateTransitions(x, inid, outid, targets) {
-  var string = "";
-  var tracenodes = "";
-  var ranks = "";
-  for(var i = 0 ,i_finish = targets.length - 1 | 0; i <= i_finish; ++i){
-    var match = Caml_array.caml_array_get(targets, i);
-    var k = match[1];
-    var e = match[0];
-    if (e.contents.id < x) {
-      console.log("trace!");
-      var match$1 = getTraceText(x, e, true);
-      var idl = match$1[0];
-      var match$2 = getTraceText(x, e, false);
-      var idr = match$2[0];
-      tracenodes = tracenodes + (tab + (match$1[1] + (tab + match$2[1])));
-      string = string + (tab + ("edge" + (String(x) + (":o" + (String(i) + (":e -> " + (idr + (":s;\n" + (tab + (idr + (":n -> " + (idl + (":n;\n" + (tab + (idl + (":s -> edge" + (String(e.contents.id) + (":i" + (String(k) + ":w;\n")))))))))))))))))));
-      ranks = ranks + (tab + ("{rank=same; edge" + (String(inid) + (", " + (idl + ("}\n" + (tab + ("{rank=same; edge" + (String(outid) + (", " + (idr + "}\n")))))))))));
-    } else {
-      string = string + (tab + ("edge" + (String(x) + (":o" + (String(i) + (":e -> edge" + (String(e.contents.id) + (":i" + (String(k) + ":w;\n")))))))));
-    }
-  }
-  return /* array */[
-          ranks,
-          tracenodes,
-          string
-        ];
-}
-
-function generatePorts(n, out) {
-  return "{" + (generatePorts$prime(0, n, out) + "}");
-}
-
-function generateGraphvizCodeEdges(inputs, outputs, _edges, _ranks, _nodes, _traces, _transitions) {
-  while(true) {
-    var transitions = _transitions;
-    var traces = _traces;
-    var nodes = _nodes;
-    var ranks = _ranks;
-    var edges = _edges;
-    var inid = inputs.id;
-    var outid = outputs.id;
-    if (edges) {
-      var edgecode = generateGraphvizCodeEdge(edges[0], inid, outid);
-      var match = edgecode[0] === "";
-      var edgedot = match ? "" : edgecode[0] + ";\n";
-      var ranksdot = Caml_array.caml_array_get(edgecode[1], 0);
-      var tracedot = Caml_array.caml_array_get(edgecode[1], 1);
-      var transdot = Caml_array.caml_array_get(edgecode[1], 2);
-      _transitions = transitions + transdot;
-      _traces = traces + tracedot;
-      _nodes = nodes + edgedot;
-      _ranks = ranks + ranksdot;
-      _edges = edges[1];
-      continue ;
-    } else {
-      var match$1;
-      if (inputs.targets.length === 0) {
-        match$1 = /* tuple */[
-          "",
-          ""
-        ];
-      } else {
-        var inedgecode = generateGraphvizCodeEdge(inputs, inid, outid);
-        var match$2 = inedgecode[0] === "";
-        var edgedot$1 = match$2 ? "" : inedgecode[0] + ";\n";
-        var transdot$1 = Caml_array.caml_array_get(inedgecode[1], 2);
-        match$1 = /* tuple */[
-          edgedot$1,
-          transdot$1
-        ];
-      }
-      var match$3;
-      if (outputs.sources.length === 0) {
-        match$3 = /* tuple */[
-          "",
-          ""
-        ];
-      } else {
-        var outedgecode = generateGraphvizCodeEdge(outputs, inid, outid);
-        var match$4 = outedgecode[0] === "";
-        var edgedot$2 = match$4 ? "" : outedgecode[0] + ";\n";
-        var transdot$2 = Caml_array.caml_array_get(outedgecode[1], 2);
-        match$3 = /* tuple */[
-          edgedot$2,
-          transdot$2
-        ];
-      }
-      return "\n" + (ranks + ("\n" + (nodes + (match$3[0] + (match$1[0] + (traces + ("\n" + (match$1[1] + (transitions + (match$3[1] + "\n"))))))))));
-    }
-  };
-}
-
-function generatePorts$prime(x, n, out) {
-  var y = out ? "o" : "i";
-  if (n !== 0) {
-    if (n !== 1) {
-      return "<" + (y + (String(x) + ("> " + ("•" + (" | " + generatePorts$prime(x + 1 | 0, n - 1 | 0, out))))));
-    } else {
-      return "<" + (y + (String(x) + ("> " + "•")));
-    }
+function reachable$prime(input, output, edge, traversed) {
+  if (edge.contents.id === output.id) {
+    return true;
+  } else if (List.mem(edge.contents.id, traversed)) {
+    return false;
   } else {
-    return "";
+    var result = false;
+    for(var i = 0 ,i_finish = edge.contents.targets.length - 1 | 0; i <= i_finish; ++i){
+      result = result || reachable$prime(input, output, Caml_array.caml_array_get(edge.contents.targets, i)[0], Pervasives.$at(traversed, /* :: */[
+                edge.contents.id,
+                /* [] */0
+              ]));
+    }
+    return result;
   }
 }
 
-function generateGraphvizCodeEdge(edge, inid, outid) {
-  var ins = edge.sources.length;
-  var outs = edge.targets.length;
-  var inports = generatePorts(ins, false);
-  var outports = generatePorts(outs, true);
-  var transitionsdata = generateTransitions(edge.id, inid, outid, edge.targets);
-  var match = inports === "{}";
-  var instring = match ? "" : inports + " | ";
-  var match$1 = outports === "{}";
-  var outstring = match$1 ? "" : " | " + outports;
-  return /* tuple */[
-          tab + ("edge" + (String(edge.id) + (" [shape=Mrecord; label=\"{" + (instring + (edge.label + (outstring + "}\"]")))))),
-          transitionsdata
-        ];
+function reachable(input, output, edge) {
+  return reachable$prime(input, output, edge, /* [] */0);
 }
 
-function generateGraphvizCode(net) {
-  var graph = generateGraphvizCodeEdges(net.inputs, net.outputs, List.map((function (x) {
-              return x.contents;
-            }), net.edges), "", "", "", "");
-  return "digraph{\n\n" + (tab + ("rankdir=LR;\n" + (tab + ("ranksep=1;" + (graph + "}")))));
-}
-
-var zeroDot = generateGraphvizCode(zeroNet);
-
-console.log(zeroDot);
-
-function scanList(_seen, id) {
-  while(true) {
-    var seen = _seen;
-    if (seen) {
-      var match = seen[0];
-      var match$1 = Caml_obj.caml_equal(match[0], id);
-      if (match$1) {
-        return /* tuple */[
-                true,
-                match[1],
-                match[2]
-              ];
-      } else {
-        _seen = seen[1];
-        continue ;
-      }
-    } else {
-      return /* tuple */[
-              false,
-              -1,
-              -1
-            ];
-    }
-  };
-}
-
-function generateTensor$prime(v, _es, _t, _es_next, _outs) {
-  while(true) {
-    var outs = _outs;
-    var es_next = _es_next;
-    var t = _t;
-    var es = _es;
-    if (es) {
-      var xs = es[1];
-      var match = es[0];
-      var e = match[0];
-      var e$prime = e.contents;
-      var match$1 = e$prime.label === "out";
-      if (match$1) {
-        _outs = outs + 1 | 0;
-        _es_next = $$Array.append(es_next, /* array */[/* tuple */[
+function stubEdge(i, e, k) {
+  return {
+          contents: {
+            id: i,
+            sources: /* array */[/* tuple */[
                 e,
-                match[1]
-              ]]);
-        _t = /* :: */[
-          Circuits$CircuitVisualiser.idcirc(v, 1),
-          t
-        ];
-        _es = xs;
-        continue ;
+                k
+              ]],
+            targets: /* array */[],
+            label: "~",
+            latex: stubLatex
+          }
+        };
+}
+
+function minimise$prime(input, output, edge, traversed) {
+  var newStubs = /* [] */0;
+  if (edge.contents.id !== output.contents.id && !List.mem(edge.contents.id, traversed)) {
+    for(var i = 0 ,i_finish = edge.contents.targets.length - 1 | 0; i <= i_finish; ++i){
+      var match = Caml_array.caml_array_get(edge.contents.targets, i);
+      var e = match[0];
+      if (reachable(input.contents, output.contents, e)) {
+        newStubs = Pervasives.$at(newStubs, minimise$prime(input, output, e, Pervasives.$at(traversed, /* :: */[
+                      edge.contents.id,
+                      /* [] */0
+                    ])));
       } else {
-        _es_next = $$Array.append(es_next, e$prime.targets);
-        _t = /* :: */[
-          Circuits$CircuitVisualiser.funcBlackBox(v, e$prime.label, "\\text{" + (e$prime.label + "}"), e$prime.sources.length, e$prime.targets.length),
-          t
-        ];
-        _es = xs;
-        continue ;
+        var newStubEdge = stubEdge(Caml_array.caml_array_get(edge.contents.targets, i)[0].contents.id, edge, i);
+        Caml_array.caml_array_set(edge.contents.targets, i, /* tuple */[
+              newStubEdge,
+              0
+            ]);
+        newStubs = Pervasives.$at(newStubs, /* :: */[
+              newStubEdge,
+              /* [] */0
+            ]);
       }
-    } else {
-      return /* tuple */[
-              List.rev(t),
-              es_next,
-              outs
-            ];
     }
-  };
+  }
+  return newStubs;
 }
 
-function generateTensor(v, es) {
-  return generateTensor$prime(v, es, /* [] */0, /* array */[], 0);
+function minimise(net) {
+  var newStubs = minimise$prime(net.inputs, net.outputs, net.inputs, /* [] */0);
+  var edges = Pervasives.$at(List.filter((function (e) {
+                return reachable(net.inputs.contents, net.outputs.contents, e);
+              }))(net.edges), newStubs);
+  return {
+          inputs: net.inputs,
+          edges: edges,
+          outputs: net.outputs
+        };
 }
 
-function convertHypernetToEquation(v, net) {
-  var cat = /* [] */0;
-  var es_next = /* array */[];
-  es_next = net.inputs.targets;
-  while(es_next.length !== 0) {
-    var es = es_next;
-    var match = generateTensor(v, $$Array.to_list(es));
-    var es_next$prime = match[1];
-    if (match[2] === es_next$prime.length) {
-      es_next = /* array */[];
-    } else {
-      es_next = es_next$prime;
-      cat = List.append(cat, /* :: */[
-            Circuits$CircuitVisualiser.tensor(match[0]),
-            /* [] */0
-          ]);
-    }
-  };
-  console.log(Circuits$CircuitVisualiser.printCircuitListCommas(cat));
-  return Circuits$CircuitVisualiser.composemany(cat);
-}
+var dot = "•";
+
+var joinLatex = "\\curlyvee";
+
+var djoinLatex = "\\nabla";
 
 export {
+  alpha ,
+  omega ,
+  dot ,
+  alphaLatex ,
+  omegaLatex ,
+  stubLatex ,
+  forkLatex ,
+  joinLatex ,
+  dforkLatex ,
+  djoinLatex ,
   GraphError ,
   graphError ,
   findEdges ,
@@ -1020,19 +898,11 @@ export {
   joinLinks ,
   convertCircuitToHypernet ,
   convertCircuitToHypernet$prime ,
-  tab ,
-  getTraceText ,
-  generateGraphvizCode ,
-  generateGraphvizCodeEdges ,
-  generateGraphvizCodeEdge ,
-  generatePorts ,
-  generatePorts$prime ,
-  generateTransitions ,
-  zeroDot ,
-  scanList ,
-  generateTensor ,
-  generateTensor$prime ,
-  convertHypernetToEquation ,
+  reachable ,
+  reachable$prime ,
+  stubEdge ,
+  minimise ,
+  minimise$prime ,
   
 }
-/* zeroDot Not a pure module */
+/* zeroNet Not a pure module */

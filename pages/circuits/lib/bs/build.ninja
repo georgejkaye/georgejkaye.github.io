@@ -15,7 +15,7 @@ rule build_ast_from_re
   description = [34mBuilding[39m [2m${out}[22m
 build  src/Index.reast : build_ast_from_re $src_root_dir/src/Index.re
 rule build_deps
-  command = $bsdep -hash 961bf44157741d555e65318d735963d9 $g_ns -g $bsb_dir_group $in
+  command = $bsdep -hash a747616a04a21821d9134a7ece59ebed $g_ns -g $bsb_dir_group $in
   restat = 1
   description = [34mBuilding[39m [2m${out}[22m
 build  src/Index.d : build_deps src/Index.reast
@@ -29,6 +29,10 @@ build  src/Index-CircuitVisualiser.cmj |  src/Index-CircuitVisualiser.cmi $src_r
 build  src/Parser.reast : build_ast_from_re $src_root_dir/src/Parser.re
 build  src/Parser.d : build_deps src/Parser.reast
 build  src/Parser-CircuitVisualiser.cmj |  src/Parser-CircuitVisualiser.cmi $src_root_dir/lib/es6_global/src/Parser.bs.js : ml_cmj_cmi src/Parser.reast ||  src/Parser.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6-global:lib/es6_global/src
+build  src/Drawing.reast : build_ast_from_re $src_root_dir/src/Drawing.re
+build  src/Drawing.d : build_deps src/Drawing.reast
+build  src/Drawing-CircuitVisualiser.cmj |  src/Drawing-CircuitVisualiser.cmi $src_root_dir/lib/es6_global/src/Drawing.bs.js : ml_cmj_cmi src/Drawing.reast ||  src/Drawing.d
   g_pkg_flg = $g_pkg_flg  -bs-package-output es6-global:lib/es6_global/src
 build  src/Helpers.reast : build_ast_from_re $src_root_dir/src/Helpers.re
 build  src/Helpers.d : build_deps src/Helpers.reast
@@ -49,6 +53,10 @@ build  src/Lattices-CircuitVisualiser.cmj |  src/Lattices-CircuitVisualiser.cmi 
 build  src/Rewrites.reast : build_ast_from_re $src_root_dir/src/Rewrites.re
 build  src/Rewrites.d : build_deps src/Rewrites.reast
 build  src/Rewrites-CircuitVisualiser.cmj |  src/Rewrites-CircuitVisualiser.cmi $src_root_dir/lib/es6_global/src/Rewrites.bs.js : ml_cmj_cmi src/Rewrites.reast ||  src/Rewrites.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output es6-global:lib/es6_global/src
+build  src/Algebraic.reast : build_ast_from_re $src_root_dir/src/Algebraic.re
+build  src/Algebraic.d : build_deps src/Algebraic.reast
+build  src/Algebraic-CircuitVisualiser.cmj |  src/Algebraic-CircuitVisualiser.cmi $src_root_dir/lib/es6_global/src/Algebraic.bs.js : ml_cmj_cmi src/Algebraic.reast ||  src/Algebraic.d
   g_pkg_flg = $g_pkg_flg  -bs-package-output es6-global:lib/es6_global/src
 build  src/Hypernets.reast : build_ast_from_re $src_root_dir/src/Hypernets.re
 build  src/Hypernets.d : build_deps src/Hypernets.reast

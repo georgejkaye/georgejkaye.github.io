@@ -24,6 +24,13 @@ function generateUnicodeSubscript(n) {
   return s2;
 }
 
+function swap(a, b) {
+  return /* tuple */[
+          b,
+          a
+        ];
+}
+
 function t1(a, param, param$1) {
   return a;
 }
@@ -263,6 +270,7 @@ function printArray(a, f) {
 export {
   assert$prime ,
   generateUnicodeSubscript ,
+  swap ,
   t1 ,
   t2 ,
   t3 ,

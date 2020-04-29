@@ -152,6 +152,48 @@ function printSimpleLattice(elem) {
   }
 }
 
+function printSimpleLatticeLatex(elem) {
+  switch (elem[0]) {
+    case 0 :
+        if (elem[1] !== 0) {
+          throw [
+                LatticeError,
+                "not a lattice element"
+              ];
+        } else {
+          return "\\bot";
+        }
+    case 1 :
+        var match = elem[1];
+        if (match !== 0) {
+          if (match !== 1) {
+            throw [
+                  LatticeError,
+                  "not a lattice element"
+                ];
+          } else {
+            return "t";
+          }
+        } else {
+          return "f";
+        }
+    case 2 :
+        if (elem[1] !== 0) {
+          throw [
+                LatticeError,
+                "not a lattice element"
+              ];
+        } else {
+          return "\\top";
+        }
+    default:
+      throw [
+            LatticeError,
+            "not a lattice element"
+          ];
+  }
+}
+
 function simpleJoin(a, b) {
   var match = a[0];
   var exit = 0;
@@ -563,6 +605,7 @@ var simpleLattice = {
   orOp: simpleOr,
   notOp: simpleNot,
   print: printSimpleLattice,
+  printLatex: printSimpleLatticeLatex,
   parse: simpleParse
 };
 
@@ -600,6 +643,7 @@ export {
   top ,
   simpleLeq ,
   printSimpleLattice ,
+  printSimpleLatticeLatex ,
   simpleJoin ,
   simpleMeet ,
   simpleAnd ,
