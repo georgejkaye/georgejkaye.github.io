@@ -77,6 +77,56 @@ var fullAdder = Circuits$CircuitVisualiser.macro(Constructs$CircuitVisualiser.v,
           ]
         ]), /* [] */0);
 
+var flipFlop = Circuits$CircuitVisualiser.macro(Constructs$CircuitVisualiser.v, "sr_nor", "SR_{\\downarrow}", Circuits$CircuitVisualiser.composemany(/* :: */[
+          Circuits$CircuitVisualiser.trace(1, Circuits$CircuitVisualiser.composemany(/* :: */[
+                    Circuits$CircuitVisualiser.tensor(/* :: */[
+                          Circuits$CircuitVisualiser.composemany(/* :: */[
+                                Constructs$CircuitVisualiser.norGate(Constructs$CircuitVisualiser.v),
+                                /* :: */[
+                                  Circuits$CircuitVisualiser.fork(Constructs$CircuitVisualiser.v),
+                                  /* [] */0
+                                ]
+                              ]),
+                          /* :: */[
+                            Circuits$CircuitVisualiser.idcirc(Constructs$CircuitVisualiser.v, 1),
+                            /* [] */0
+                          ]
+                        ]),
+                    /* :: */[
+                      Circuits$CircuitVisualiser.tensor(/* :: */[
+                            Circuits$CircuitVisualiser.idcirc(Constructs$CircuitVisualiser.v, 1),
+                            /* :: */[
+                              Circuits$CircuitVisualiser.composemany(/* :: */[
+                                    Circuits$CircuitVisualiser.swap(Constructs$CircuitVisualiser.v, 1, 1),
+                                    /* :: */[
+                                      Constructs$CircuitVisualiser.norGate(Constructs$CircuitVisualiser.v),
+                                      /* :: */[
+                                        Circuits$CircuitVisualiser.fork(Constructs$CircuitVisualiser.v),
+                                        /* [] */0
+                                      ]
+                                    ]
+                                  ]),
+                              /* [] */0
+                            ]
+                          ]),
+                      /* :: */[
+                        Circuits$CircuitVisualiser.tensor(/* :: */[
+                              Circuits$CircuitVisualiser.swap(Constructs$CircuitVisualiser.v, 1, 1),
+                              /* :: */[
+                                Circuits$CircuitVisualiser.idcirc(Constructs$CircuitVisualiser.v, 1),
+                                /* [] */0
+                              ]
+                            ]),
+                        /* [] */0
+                      ]
+                    ]
+                  ])),
+          /* :: */[
+            Circuits$CircuitVisualiser.swap(Constructs$CircuitVisualiser.v, 1, 1),
+            /* [] */0
+          ]
+        ]), /* [] */0);
+
 var halfAdderApplied = Circuits$CircuitVisualiser.composemany(/* :: */[
       Circuits$CircuitVisualiser.tensor(/* :: */[
             Constructs$CircuitVisualiser.t,
@@ -105,7 +155,7 @@ var exampleFunctions = List.concat(/* :: */[
                 /* :: */[
                   Circuits$CircuitVisualiser.funcBlackBox(Constructs$CircuitVisualiser.v, "A", "\\text{A}", 2, 2),
                   /* :: */[
-                    Circuits$CircuitVisualiser.funcBlackBox(Constructs$CircuitVisualiser.v, "H", "\\text{H}", 1, 2),
+                    Circuits$CircuitVisualiser.funcBlackBox(Constructs$CircuitVisualiser.v, "H", "\\text{H}", 1, 1),
                     /* :: */[
                       Circuits$CircuitVisualiser.funcBlackBox(Constructs$CircuitVisualiser.v, "test", "\\text{test}", 3, 2),
                       /* :: */[
@@ -119,22 +169,25 @@ var exampleFunctions = List.concat(/* :: */[
                               /* :: */[
                                 Circuits$CircuitVisualiser.funcBlackBox(Constructs$CircuitVisualiser.v, "e", "\\text{e}", 2, 1),
                                 /* :: */[
-                                  Constructs$CircuitVisualiser.andGate(Constructs$CircuitVisualiser.v),
+                                  Circuits$CircuitVisualiser.funcBlackBox(Constructs$CircuitVisualiser.v, "bee", "\\text{b1}", 1, 3),
                                   /* :: */[
-                                    Constructs$CircuitVisualiser.orGate(Constructs$CircuitVisualiser.v),
+                                    Constructs$CircuitVisualiser.andGate(Constructs$CircuitVisualiser.v),
                                     /* :: */[
-                                      Constructs$CircuitVisualiser.xorGate(Constructs$CircuitVisualiser.v),
+                                      Constructs$CircuitVisualiser.orGate(Constructs$CircuitVisualiser.v),
                                       /* :: */[
-                                        Constructs$CircuitVisualiser.notGate(Constructs$CircuitVisualiser.v),
+                                        Constructs$CircuitVisualiser.xorGate(Constructs$CircuitVisualiser.v),
                                         /* :: */[
-                                          Constructs$CircuitVisualiser.multiplexer(Constructs$CircuitVisualiser.v),
+                                          Constructs$CircuitVisualiser.notGate(Constructs$CircuitVisualiser.v),
                                           /* :: */[
-                                            Constructs$CircuitVisualiser.first(Constructs$CircuitVisualiser.v),
+                                            Constructs$CircuitVisualiser.multiplexer(Constructs$CircuitVisualiser.v),
                                             /* :: */[
-                                              Constructs$CircuitVisualiser.second(Constructs$CircuitVisualiser.v),
+                                              Constructs$CircuitVisualiser.first(Constructs$CircuitVisualiser.v),
                                               /* :: */[
-                                                Constructs$CircuitVisualiser.id(Constructs$CircuitVisualiser.v, 2),
-                                                /* [] */0
+                                                Constructs$CircuitVisualiser.second(Constructs$CircuitVisualiser.v),
+                                                /* :: */[
+                                                  Constructs$CircuitVisualiser.id(Constructs$CircuitVisualiser.v, 2),
+                                                  /* [] */0
+                                                ]
                                               ]
                                             ]
                                           ]
@@ -161,7 +214,10 @@ var exampleFunctions = List.concat(/* :: */[
 
 var exampleMacros_001 = /* :: */[
   fullAdder,
-  /* [] */0
+  /* :: */[
+    flipFlop,
+    /* [] */0
+  ]
 ];
 
 var exampleMacros = /* :: */[
@@ -172,6 +228,7 @@ var exampleMacros = /* :: */[
 export {
   halfAdder ,
   fullAdder ,
+  flipFlop ,
   halfAdderApplied ,
   exampleFunctions ,
   exampleMacros ,

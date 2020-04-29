@@ -114,7 +114,7 @@ function printComponent$prime(v, c, l, i) {
           return "";
         }
     case /* Swap */4 :
-        return "×{" + (String(c[0]) + (", " + String(c[1])));
+        return "×{" + (String(c[0]) + (", " + (String(c[1]) + "}")));
     case /* Delay */6 :
         return "ẟ{" + (String(c[0]) + "}");
     case /* Trace */7 :
