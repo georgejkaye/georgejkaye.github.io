@@ -73,14 +73,13 @@ html {
   }
 }
 
-/* Sidebar links */
 .sidebar a {
   color: #fff;
 }
 
 /* About section */
 .sidebar-about h1 {
-  color: #fff;
+  color: #ff79c6;
   margin-top: 0;
   font-family: Helvetica, sans-serif;
   font-size: 3.25rem;
