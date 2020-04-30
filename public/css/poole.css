@@ -100,15 +100,18 @@ h6 {
 
 
 h1 {
+  color: #ff79c6;
   font-size: 2rem;
 }
 
 h2 {
+  color: #50fa7b;
   margin-top: 1rem;
   font-size: 1.5rem;
 }
 
 h3 {
+  color: #50fa7b;
   margin-top: 1.0rem;
   font-size: 1.25rem;
 }
@@ -391,7 +394,7 @@ tbody tr:nth-child(even) td {
 .page-title,
 .post-title,
 .post-title a {
-  color: #d6d3cd;
+  color: #ff79c6;
 }
 
 .page-title,
