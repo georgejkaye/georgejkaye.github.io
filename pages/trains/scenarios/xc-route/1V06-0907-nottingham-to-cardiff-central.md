@@ -18,6 +18,7 @@ Hello driver! Welcome aboard unit 170109, which is currently standing at Birming
 There are no delays reported but we have had word that some signals are on the blink, so you may have to request permission to pass them! Otherwise enjoy the ride!
 
 ## Downloads
+
 * [Direct download](/pages/trains/scenarios/downloads/1V06 0907 Nottingham to Cardiff Central v1.2.zip)
 * [Alan Thomson Sim](https://alanthomsonsim.com/?download=1v06-0907-nottingham-to-cardiff-central)
 
@@ -41,16 +42,17 @@ There are no delays reported but we have had word that some signals are on the b
 ### Payware
 
 #### Steam
+
 * [Class 170](http://store.steampowered.com/app/208364)
 * [Class 66 EWS v2.0](http://store.steampowered.com/app/222568)
 * [Arriva Trains Wales DMU Pack](https://store.steampowered.com/app/376941)*
 * [Class 150/1](https://store.steampowered.com/app/448184)*
-* [Class 390](https://store.steampowered.com/app/208343)* *(the old one)*
-    * I only own the S9BL Class 390, feel free to use RWTools to swap in the new DTG one!
+* [Class 390](https://store.steampowered.com/app/208343)**(the old one)*
+  * I only own the S9BL Class 390, feel free to use RWTools to swap in the new DTG one!
 * [Euro Loco and Asset Pack](http://store.steampowered.com/app/208300)*
 
-
 #### Armstrong Powerhouse
+
 * [Class 168/170/171 Enhancement Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_89&product_id=185)
 * [Class 43 (MTU)/Mk3 Enhancement Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_89&product_id=168)
 * [Class 321 Electric Multiple Unit Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=45_84&product_id=137)
@@ -60,15 +62,18 @@ There are no delays reported but we have had word that some signals are on the b
 * [Class 350 Enhancement Pack](*https://www.armstrongpowerhouse.com/index.php?route=product/product&product_id=194)
 
 #### Just Trains
+
 * [Voyager Advanced](https://www.justtrains.net/product/voyager-advanced-download)
 
 ### Freeware
+
 * [XC Route (Birmingham to Bristol)](https://xcroute.com)
-    * This route also has prerequisites, check carefully!
+  * This route also has prerequisites, check carefully!
 
 ### Reskins
 
 #### Alan Thomson Sim
+
 * [HST Great Western Railway 'Welshman'](https://alanthomsonsim.com/?download=hst-great-western-railway-welshman)*
 * [HST Great Western Railway 43093 'Old Oak Common'](https://alanthomsonsim.com/?download=hst-great-western-railway-43093-old-oak-common-2)*
 
