@@ -10,7 +10,7 @@ route: Western Mainlines (Part 1) / South Western Expressways to Reading (Part 2
 duration: 30 mins (Part 1) / 90 mins (Part 2)
 difficulty: Easy (Part 1) / Medium (Part 2)
 
-permalink: /trains/1J93-1807-london-paddington-to-frome
+permalink: /trains/scenarios/1J93-1807-london-paddington-to-frome
 ---
 
 Hello driver! Hello driver! Welcome aboard unit 43071, which is heading this High Speed Train standing at London Paddington. You are driving 1J93, the once a day 1807 service from London Paddington to Frome. You’ll be calling at London Paddington, Twyford, Reading, Theale, Thatcham, Newbury, Kintbury, Hungerford, Bedwyn, Pewsey, Westbury and Frome.
@@ -20,7 +20,7 @@ The timetable can get quite tight after Reading so drive to the best of your abi
 
 ## Downloads
 
-* [Direct download](/pages/trains/scenarios/1J93 1807 London Paddington to Frome v1.0.zip)
+* [Direct download](/pages/trains/scenarios/downloads/1J93 1807 London Paddington to Frome v1.0.zip)
 * [Alan Thomson Sim](https://alanthomsonsim.com/?download=1J93-1807-london-paddington-to-frome)
 
 ## Timetable

@@ -10,7 +10,7 @@ route: XC Route (Birmingham to Bristol)
 duration: 120 mins
 difficulty: Easy
 
-permalink: /trains/1V06-0907-nottingham-to-cardiff-central
+permalink: /trains/scenarios/1V06-0907-nottingham-to-cardiff-central
 ---
 
 Hello driver! Welcome aboard unit 170109, which is currently standing at Birmingham New Street. Today you’ll be driving service 1V06, the 0907 from Nottingham to Cardiff Central, on the leg between Birmingham New Street and Cardiff Central. You’ll be calling at University, Cheltenham Spa, Gloucester, Chepstow, Newport and Cardiff Central.
@@ -18,23 +18,23 @@ Hello driver! Welcome aboard unit 170109, which is currently standing at Birming
 There are no delays reported but we have had word that some signals are on the blink, so you may have to request permission to pass them! Otherwise enjoy the ride!
 
 ## Downloads
-* [Direct download](/pages/trains/scenarios/1V06 0907 Nottingham to Cardiff Central v1.2.zip)
+* [Direct download](/pages/trains/scenarios/downloads/1V06 0907 Nottingham to Cardiff Central v1.2.zip)
 * [Alan Thomson Sim](https://alanthomsonsim.com/?download=1v06-0907-nottingham-to-cardiff-central)
 
 ## Timetable
 
-| Location | Pl | Arr | Dep |
-|:-|:-:|:-:|:-:|
-| Birmingham New Street (BHM) | 11b | | 1030 |
-| University (UNI) | 2 | 1035 | 1036 |
-| *Bromsgrove (BMV)* | *4* | *pass* | *1049* |
-| *Ashchurch for Tewkesbury (ASC)* | *2* | *pass* | *1104* |
-| Cheltenham Spa (GCR) | 1 | 1110 | 1111 |
-| Gloucester (GCR) | 2 | 1120 | 1125 |
-| Chepstow (CPW) | 1 | 1150 | 1151 |
-| *Severn Tunnel Junction (STJ)* | *1* | *pass* | *1159* |
-| Newport (South Wales) (NWP) | 2 | 1210 | 1212 |
-| Cardiff Central | 4a | 1226 | |
+| Location                         |  Pl   |  Arr   |  Dep   |
+| :------------------------------- | :---: | :----: | :----: |
+| Birmingham New Street (BHM)      |  11b  |        |  1030  |
+| University (UNI)                 |   2   |  1035  |  1036  |
+| *Bromsgrove (BMV)*               |  *4*  | *pass* | *1049* |
+| *Ashchurch for Tewkesbury (ASC)* |  *2*  | *pass* | *1104* |
+| Cheltenham Spa (GCR)             |   1   |  1110  |  1111  |
+| Gloucester (GCR)                 |   2   |  1120  |  1125  |
+| Chepstow (CPW)                   |   1   |  1150  |  1151  |
+| *Severn Tunnel Junction (STJ)*   |  *1*  | *pass* | *1159* |
+| Newport (South Wales) (NWP)      |   2   |  1210  |  1212  |
+| Cardiff Central                  |  4a   |  1226  |        |
 
 ## Requirements
 

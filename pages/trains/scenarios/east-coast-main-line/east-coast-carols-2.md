@@ -10,7 +10,7 @@ route: East Coast Main Line (York - Peterborough)
 duration: 80 mins
 difficulty: Easy
 
-permalink: /trains/east-coast-carols-2
+permalink: /trains/scenarios/east-coast-carols-2
 ---
 
 Hello driver! Welcome back aboard the 1S23 1530 London Kings Cross to Glasgow Central service. Allow passengers to board ready for departure at 16:16. On this leg, call at Newark North Gate (16:43/16:44), Doncaster (17:08/17:10), and York (17:31/17:36). The snow is still falling so be careful!
@@ -20,7 +20,8 @@ It’s Christmas! So here’s a present for the festive season: a multipart scen
 I would strongly recommend reducing your graphics settings for this scenario, as there are places that are quite intensive and the game may crash!
 
 ## Downloads
-* [Direct download - AP Version](/pages/trains/scenarios/East Coast Carols Part 2 AP v1.0.zip)
+
+* [Direct download - AP Version](/pages/trains/scenarios/downloads/East Coast Carols Part 2 AP v1.0.zip)
 
 *This scenario does not have a workshop version as the York-Peterborough route is not on Steam*
 

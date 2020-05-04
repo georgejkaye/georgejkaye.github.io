@@ -10,28 +10,28 @@ route: Portsmouth Direct Line - London Waterloo to Portsmouth
 duration: 25 mins
 difficulty: Medium
 
-permalink: /trains/1D13-0824-london-waterloo-to-dorking
+permalink: /trains/scenarios/1D13-0824-london-waterloo-to-dorking
 ---
 
 The British summer has truly arrived with a heatwave surging across the country. Unfortunately this has not put the commuters in a good mood! Take the helm at 1D13 as far as Motspur Park and try to avoid upsetting them any further!
 
 ## Downloads
-* [Direct download](/pages/trains/scenarios/1D13 0824 London Waterloo to Dorking v1.0.zip)
+* [Direct download](/pages/trains/scenarios/downloads/1D13 0824 London Waterloo to Dorking v1.0.zip)
 * [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1459064187)
 * [Alan Thomson Sim](https://alanthomsonsim.com/?download=1d13-0824-london-waterloo-to-dorking)
 
 ## Timetable
 
-| Location | Pl | Arr | Dep |
-|:-|:-:|:-:|:-:|
-| London Waterloo (WAT) | 1 | | 0824 |
-| Vauxhall (VHX) | 8 | 0827 | 0828 |
-| *Queenstown Road Battersea (QRB)* | | *pass* | *0830* |
-| Clapham Junction (CLJ) | 11 | 0832 | 0833 |
-| Earlsfield (EAD) | 3 | 0836 | 0837 |
-| Wimbledon (WIM) | 8 | 0839 | 0840 |
-| Raynes Park (RAY) | 4 | 0843 | 0844 |
-| Motspur Park (MOT) | 2 | 0846 | |
+| Location                          |  Pl   |  Arr   |  Dep   |
+| :-------------------------------- | :---: | :----: | :----: |
+| London Waterloo (WAT)             |   1   |        |  0824  |
+| Vauxhall (VHX)                    |   8   |  0827  |  0828  |
+| *Queenstown Road Battersea (QRB)* |       | *pass* | *0830* |
+| Clapham Junction (CLJ)            |  11   |  0832  |  0833  |
+| Earlsfield (EAD)                  |   3   |  0836  |  0837  |
+| Wimbledon (WIM)                   |   8   |  0839  |  0840  |
+| Raynes Park (RAY)                 |   4   |  0843  |  0844  |
+| Motspur Park (MOT)                |   2   |  0846  |        |
 
 ## Requirements
 

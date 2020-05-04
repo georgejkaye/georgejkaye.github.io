@@ -20,7 +20,7 @@ It’s Christmas! So here’s a present for the festive season: a multipart scen
 I would strongly recommend reducing your graphics settings for this scenario, as there are places (such as Kings Cross) that are quite intensive and the game may crash!
 
 ## Downloads
-* [Direct download - AP Version](/pages/trains/scenarios/East Coast Carols Part 1 AP v1.0.zip)
+* [Direct download - AP Version](/pages/trains/scenarios/downloads/East Coast Carols Part 1 AP v1.0.zip)
 * [Steam Workshop - Non AP Version](http://steamcommunity.com/sharedfiles/filedetails/?id=1226799062)
 * [Direct download - Non AP Version](/pages/trains/scenarios/East Coast Carols Part 1 Non AP v1.0.zip)
 

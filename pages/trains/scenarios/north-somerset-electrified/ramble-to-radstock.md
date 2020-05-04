@@ -10,7 +10,7 @@ route: North Somerset Railway Electrified
 duration: 20 mins
 difficulty: Easy
 
-permalink: /trains/ramble-to-radstock
+permalink: /trains/scenarios/ramble-to-radstock
 ---
 
 When the North Somerset Railway proved very popular with local residents, GWR opted to start regular passenger services along the line. Today you'll be driving a fast service from Westbury to Radstock, calling at Frome Market and Mells Road along the way. Since you're a fast service you shouldn't be held up too much so enjoy this beautiful spring morning!
@@ -20,7 +20,7 @@ This is a fun fictional scenario using the North Somerset Railway Electrified li
 Have fun!
 
 ## Downloads
-* [Direct download](/pages/trains/scenarios/Ramble to Radstock v1.0.zip)
+* [Direct download](/pages/trains/scenarios/downloads/Ramble to Radstock v1.0.zip)
 * Steam Workshop *(currently not on Workshop as route not final)*
 
 ## Requirements

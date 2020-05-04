@@ -10,7 +10,7 @@ route: Riviera Line Electrified
 duration: 65 mins
 difficulty: Medium
 
-permalink: /trains/1Z56-1700-exeter-st-davids-to-paignton
+permalink: /trains/scenarios/1Z56-1700-exeter-st-davids-to-paignton
 ---
 
 Although the age is diesel is but a distant memory, the Intercity 125 'High Speed Train' is still fondly regarded by many railway enthusiasts. Fortunately, GWR have arranged a special railtour using one of their old HSTs and have chosen you to have the honour of driving this very special journey! You will be calling at Exeter St Davids, Dawlish, Teignmouth, Newton Abbot, Torquay and Paignton. 
@@ -20,25 +20,25 @@ This scenario uses the lovely Riviera Line Electrified by joethefish! I decided 
 Have fun!
 
 ## Downloads
-* [Direct download](/pages/trains/scenarios/1Z56 1700 Exeter St Davids to Paignton v2.0.zip)
+* [Direct download](/pages/trains/scenarios/downloads/1Z56 1700 Exeter St Davids to Paignton v2.0.zip)
 * [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1476297578)
 
 ## Timetable
 
-| Location | Pl | Arr | Dep |
-|:-|:-:|:-:|:-:|
-| Riverside Yard | 1 |  | 1652 |
-| Exeter St Davids (EXD) | 6 | 1658 | 1700 |
-| *Exeter St Thomas (EXT)* | *1* | *pass* | *1702* |
-| *Starcross (SCS)* | *1* | *pass* | *1710* | 
-| Dawlish Warren (DWW) | 1 | 1712 | 1715 |
-| Dawlish (DWL) | 1 | 1717  | 1719 |
-| Teignmouth (TGM) | 1 | 1724 | 1726 | 
-| Newton Abbot (NTA) | 2 | 1732 | 1734 |
-| *Torre (TRR)* | *1* | *pass* | *1741* |
-| Torquay (TQY) | 1 | 1743 | 1745 |
-| Paignton (PGN) | 1 | 1751 | 1753 |
-| Goodrington Yard Sidings | 4 | 1757 | |
+| Location                 |  Pl   |  Arr   |  Dep   |
+| :----------------------- | :---: | :----: | :----: |
+| Riverside Yard           |   1   |        |  1652  |
+| Exeter St Davids (EXD)   |   6   |  1658  |  1700  |
+| *Exeter St Thomas (EXT)* |  *1*  | *pass* | *1702* |
+| *Starcross (SCS)*        |  *1*  | *pass* | *1710* |
+| Dawlish Warren (DWW)     |   1   |  1712  |  1715  |
+| Dawlish (DWL)            |   1   |  1717  |  1719  |
+| Teignmouth (TGM)         |   1   |  1724  |  1726  |
+| Newton Abbot (NTA)       |   2   |  1732  |  1734  |
+| *Torre (TRR)*            |  *1*  | *pass* | *1741* |
+| Torquay (TQY)            |   1   |  1743  |  1745  |
+| Paignton (PGN)           |   1   |  1751  |  1753  |
+| Goodrington Yard Sidings |   4   |  1757  |        |
 
 ## Requirements
 

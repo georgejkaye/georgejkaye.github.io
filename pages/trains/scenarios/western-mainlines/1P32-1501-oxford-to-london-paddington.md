@@ -10,7 +10,7 @@ route: Western Mainlines
 duration: 60 mins
 difficulty: Easy
 
-permalink: /trains/1P32-1501-oxford-to-london-paddington
+permalink: /trains/scenarios/1P32-1501-oxford-to-london-paddington
 ---
 
 Hello driver! Welcome aboard unit 180102, which is currently standing at Oxford. Today you’ll be driving 1P32, the 1501 service from Oxford to London Paddington. You are scheduled to stop at Oxford, Reading, Slough and London Paddington.
@@ -19,18 +19,18 @@ You may be held at Didcot to allow a late-running service from Bristol to pass, 
 
 
 ## Downloads
-* [Direct download](/pages/trains/scenarios/1P32 1501 Oxford to London Paddington v1.1.zip)
+* [Direct download](/pages/trains/scenarios/downloads/1P32 1501 Oxford to London Paddington v1.1.zip)
 * [Alan Thomson Sim](https://alanthomsonsim.com/?download=1p32-1501-oxford-to-london-paddington)
 
 ## Timetable
 
-| Location | Pl | Arr | Dep |
-|:-|:-:|:-:|:-:|
-| Oxford (OXF) | 1 | | 1501 |
-| *Didcot East Jn* | | *pass* | *1512* |
-| Reading (RDG) | 10 | 1525 | 1527 |
-| Slough (SLO) | 3 | 1540 | 1541 |
-| London Paddington (PAD) | 5 | 1559 | |
+| Location                |  Pl   |  Arr   |  Dep   |
+| :---------------------- | :---: | :----: | :----: |
+| Oxford (OXF)            |   1   |        |  1501  |
+| *Didcot East Jn*        |       | *pass* | *1512* |
+| Reading (RDG)           |  10   |  1525  |  1527  |
+| Slough (SLO)            |   3   |  1540  |  1541  |
+| London Paddington (PAD) |   5   |  1559  |        |
 
 ## Requirements
 

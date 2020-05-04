@@ -10,7 +10,7 @@ route: Riviera Line Electrified
 duration: 40 mins
 difficulty: Medium
 
-permalink: /trains/1V41-0642-birmingham-new-street-to-paignton
+permalink: /trains/scenarios/1V41-0642-birmingham-new-street-to-paignton
 ---
 
 Today you are driving the 1V41 0642 Birmingham New Street to Paignton Virgin CrossCountry service, for the last leg from Exeter St Davids to Paignton. Traction is in the form of a Class 390 Pendolino. It is a lovely spring morning so it should be a good drive! You will be stopping at Newton Abbot, Torquay and finally Paignton.
@@ -20,24 +20,24 @@ This scenario uses the lovely Riviera Line Electrified by joethefish! I decided 
 Have fun!
 
 ## Downloads
-* [Direct download](/pages/trains/scenarios/1V41 0642 Birmingham New Street to Paignton v2.0.zip)
+* [Direct download](/pages/trains/scenarios/downloads/1V41 0642 Birmingham New Street to Paignton v2.0.zip)
 * [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1474607185)
 * [Alan Thomson Sim](https://alanthomsonsim.com/?download=1v41-0642-birmingham-new-street-to-paignton)
 
 ## Timetable
 
-| Location | Pl | Arr | Dep |
-|:-|:-:|:-:|:-:|
-| Exeter St Davids (EXD) | 4 |  | 0909 |
-| *Exeter St Thomas (EXT)* | *1* | *pass* | *0910* |
-| *Starcross (SCS)* | *1* | *pass* | *0916* |
-| *Dawlish Warren (DWW)* |  | *pass* | *0917* |
-| *Dawlish (DWL)* | *1* | *pass* | *0919* |
-| *Teignmouth (TGM)* | *1* | *pass* | *0922* |
-| Newton Abbot (NTA) | 2 | 0927 | 0929 |
-| *Torre (TRR)* | *1* | *pass* | *0937* |
-| Torquay (TQY) | 1 | 0938 | 0940 |
-| Paignton (PGN) | 2 | 0947 | |
+| Location                 |  Pl   |  Arr   |  Dep   |
+| :----------------------- | :---: | :----: | :----: |
+| Exeter St Davids (EXD)   |   4   |        |  0909  |
+| *Exeter St Thomas (EXT)* |  *1*  | *pass* | *0910* |
+| *Starcross (SCS)*        |  *1*  | *pass* | *0916* |
+| *Dawlish Warren (DWW)*   |       | *pass* | *0917* |
+| *Dawlish (DWL)*          |  *1*  | *pass* | *0919* |
+| *Teignmouth (TGM)*       |  *1*  | *pass* | *0922* |
+| Newton Abbot (NTA)       |   2   |  0927  |  0929  |
+| *Torre (TRR)*            |  *1*  | *pass* | *0937* |
+| Torquay (TQY)            |   1   |  0938  |  0940  |
+| Paignton (PGN)           |   2   |  0947  |        |
 
 ## Requirements
 
