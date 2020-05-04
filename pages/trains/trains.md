@@ -7,4 +7,4 @@ type: misc
 
 ## Great Western Main Line
 
-* [London Paddington](/gwml/london-paddington)
+* [London Paddington](/trains/gwml/london-paddington)
