@@ -9,7 +9,7 @@ route: XC Route (Birmingham to Bristol)
 duration: 30 mins
 difficulty: Medium
 
-permalink: /trains/2G85-1336-swindon-to-cheltenham-spa
+permalink: /trains/scenarios/2G85-1336-swindon-to-cheltenham-spa
 ---
 
 Hello driver! Welcome aboard unit 150129, which is currently standing at a signal at Standish Jn, south of Gloucester. It's a sweltering summer's day, and you are being held here to allow a delayed CrossCountry service to pass. Today you are driving service 2G85, the 1336 from Swindon to Cheltenham Spa, on the leg between Standish Jn and Cheltenham Spa. You'll be calling at Gloucester and Cheltenham Spa.
@@ -17,15 +17,15 @@ Hello driver! Welcome aboard unit 150129, which is currently standing at a signa
 One last thing to note is that there is a temporary speed restriction of 10mph over Barnwood Jn (which you will travel over as you leave Gloucester for Cheltenham) due to the heat causing the tracks to be in danger of buckling.
 
 ## Downloads
-* [Direct download](/pages/trains/scenarios/2G85 1336 Swindon to Cheltenham Spa v1.2.zip)
+* [Direct download](/pages/trains/scenarios/downloads/2G85 1336 Swindon to Cheltenham Spa v1.2.zip)
 * [Alan Thomson Sim](https://alanthomsonsim.com/?download=1v06-0907-nottingham-to-cardiff-central)
 
 ## Timetable
 
-| Location | Pl | Arr | Dep |
-|:-|:-:|:-:|:-:|
-| Gloucester (GCR) | 2 | 1428 | 1433 |
-| Cheltenham Spa (CNM) | 2 | 1445 | |
+| Location             |  Pl   |  Arr  |  Dep  |
+| :------------------- | :---: | :---: | :---: |
+| Gloucester (GCR)     |   2   | 1428  | 1433  |
+| Cheltenham Spa (CNM) |   2   | 1445  |       |
 
 ## Requirements
 

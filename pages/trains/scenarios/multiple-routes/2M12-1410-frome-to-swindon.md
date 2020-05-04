@@ -10,7 +10,7 @@ route: South Western Expressways, Western Mainlines
 duration: 30 mins (Part 1) / 30 mins (Part 2)
 difficulty: Easy (Part 1) / Medium (Part 2)
 
-permalink: /trains/2M12-1410-frome-to-swindon
+permalink: /trains/scenarios/2M12-1410-frome-to-swindon
 ---
 
 Hello driver! Welcome aboard unit 158960, which is currently standing at Frome. Today you’ll be driving 2M12, the 1410 service from Frome to Swindon, calling at Westbury, Trowbridge, Melksham, Chippenham, and Swindon. 
@@ -20,27 +20,27 @@ Unfortunately, you’ve been pathed behind a late-running freight train from Wha
 In Part 1, you’ll drive between Frome and Bradford Jn, calling at Frome, Westbury and Trowbridge. In Part 2, you’ll drive between Thingley Jn and Swindon, calling at Chippenham and Swindon.
 
 ## Downloads
-* [Direct download - Parts 1 and 2](/pages/trains/scenarios/2M12 1410 Frome to Swindon v1.0.zip)
+* [Direct download - Parts 1 and 2](/pages/trains/scenarios/downloads/2M12 1410 Frome to Swindon v1.0.zip)
 * [Alan Thomson Sim](https://alanthomsonsim.com/?download=2m12-1410-frome-to-swindon)
 
 ## Timetable
 
 ### Part 1
 
-| Location | Pl | Arr | Dep |
-|:-|:-:|:-:|:-:|
-| Frome (FRO) | | | 1410 |
-| Westbury (WSB) | 3 | 1419 | 1424 |
-| Trowbridge (TRO) | 1 | 1430 | 1431 |
-| *Bradford Jn* | | *pass* | *1433* |
+| Location         |  Pl   |  Arr   |  Dep   |
+| :--------------- | :---: | :----: | :----: |
+| Frome (FRO)      |       |        |  1410  |
+| Westbury (WSB)   |   3   |  1419  |  1424  |
+| Trowbridge (TRO) |   1   |  1430  |  1431  |
+| *Bradford Jn*    |       | *pass* | *1433* |
 
 ### Part 2
 
-| Location | Pl | Arr | Dep |
-|:-|:-:|:-:|:-:|
-| *Thingley Jn* |  | *pass* | *1445* |
-| Chippenham (CPM) | 2 | 1449 | 1450 |
-| Swindon (SWI) | 3 | 1507 | |
+| Location         |  Pl   |  Arr   |  Dep   |
+| :--------------- | :---: | :----: | :----: |
+| *Thingley Jn*    |       | *pass* | *1445* |
+| Chippenham (CPM) |   2   |  1449  |  1450  |
+| Swindon (SWI)    |   3   |  1507  |        |
 
 ## Requirements
 

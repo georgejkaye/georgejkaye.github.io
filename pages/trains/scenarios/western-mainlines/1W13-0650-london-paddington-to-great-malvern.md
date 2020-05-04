@@ -10,7 +10,7 @@ route: Western Mainlines
 duration: 50 mins
 difficulty: Easy
 
-permalink: /trains/1W13-0650-london-paddington-to-great-malvern
+permalink: /trains/scenarios/1W13-0650-london-paddington-to-great-malvern
 ---
 
 Hello driver! Welcome aboard unit 180103, which is currently standing at London Paddington. You are driving 1W13, the 0650 service from London Paddington to Great Malvern. In this scenario, you'll be driving as far as Oxford, calling at Slough, Reading and Oxford.
@@ -20,17 +20,17 @@ Although rush hour is just beginning, there are no problems reported so enjoy th
 
 
 ## Downloads
-* [Direct download](/pages/trains/scenarios/1W13 0650 London Paddington to Great Malvern v1.0.zip)
+* [Direct download](/pages/trains/scenarios/downloads/1W13 0650 London Paddington to Great Malvern v1.0.zip)
 * [Alan Thomson Sim](https://alanthomsonsim.com/?download=1w13-0650-london-paddington-to-great-malvern)
 
 ## Timetable
 
-| Location | Pl | Arr | Dep |
-|:-|:-:|:-:|:-:|
-| London Paddington (PAD) | 6 | | 0650 |
-| Slough (SLO) | 2 | 0705 | 0706 |
-| Reading (RDG) | 8 | 0717 | 0718 |
-| Oxford | 2 | 1559 | |
+| Location                |  Pl   |  Arr  |  Dep  |
+| :---------------------- | :---: | :---: | :---: |
+| London Paddington (PAD) |   6   |       | 0650  |
+| Slough (SLO)            |   2   | 0705  | 0706  |
+| Reading (RDG)           |   8   | 0717  | 0718  |
+| Oxford                  |   2   | 1559  |       |
 
 ## Requirements
 
