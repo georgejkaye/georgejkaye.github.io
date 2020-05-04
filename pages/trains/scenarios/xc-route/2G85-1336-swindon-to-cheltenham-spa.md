@@ -17,6 +17,7 @@ Hello driver! Welcome aboard unit 150129, which is currently standing at a signa
 One last thing to note is that there is a temporary speed restriction of 10mph over Barnwood Jn (which you will travel over as you leave Gloucester for Cheltenham) due to the heat causing the tracks to be in danger of buckling.
 
 ## Downloads
+
 * [Direct download](/pages/trains/scenarios/downloads/2G85 1336 Swindon to Cheltenham Spa v1.2.zip)
 * [Alan Thomson Sim](https://alanthomsonsim.com/?download=1v06-0907-nottingham-to-cardiff-central)
 
@@ -32,6 +33,7 @@ One last thing to note is that there is a temporary speed restriction of 10mph o
 ### Payware
 
 #### Steam
+
 * [Class 150/1](https://store.steampowered.com/app/448184)
 * [Euro Loco and Asset Pack](http://store.steampowered.com/app/208300)
 * [ECML London-Peterborough](http://store.steampowered.com/app/222618)
@@ -40,18 +42,21 @@ One last thing to note is that there is a temporary speed restriction of 10mph o
 * [Arriva Trains Wales DMU Pack](https://store.steampowered.com/app/376941)*
 
 #### Armstrong Powerhouse
+
 * [Class 150/1 Enhancement Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_89&product_id=175)
 * [Class 43 (MTU)/Mk3 Enhancement Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_89&product_id=168)
 * [Class 168/170/171 Enhancement Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_89&product_id=185)*
 * [Class 66 Enhancement Pack](https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_89&product_id=173)*
 
 #### Just Trains
+
 * [Voyager Advanced](https://www.justtrains.net/product/voyager-advanced-download)
 
 ### Freeware
+
 * [XC Route (Birmingham to Bristol)](https://xcroute.com)
     * This route also has prerequisites, check carefully!
 
-Requirements marked with an asterisk (*) feature fairly fleetingly and can be omitted without loss of enjoyment. 
+Requirements marked with an asterisk (*) feature fairly fleetingly and can be omitted without loss of enjoyment.
 
 If you don't have any of the requirements you can still play the scenario, just press F2 when the 'Missing consist' error comes up and click 'cancel' to bypass it.
