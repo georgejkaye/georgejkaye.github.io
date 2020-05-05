@@ -8,7 +8,8 @@ body {
 }
 
 table {
-    margin: 10px 0px 0px 10px;
+    border: none;
+    border-collapse: collapse;
 }
 
 h1 {
@@ -17,9 +18,22 @@ h1 {
     font-weight: light;
 }
 
+h2 {
+    padding: 5px 0px 5px 0px;
+}
+
 td {
     vertical-align: top;
     padding: 1px;
+}
+
+tbody {
+    width: 100%;
+    display: table;
+}
+
+button {
+    border: none;
 }
 
 input[type=text] {
@@ -67,7 +81,7 @@ g g polygon {
 /* Classes */
 
 .code {
-    font: 14px "Courier New", monospace;
+    font: "Courier New", monospace;
     background-color: #383a59;
     color: #f8f8f2;
     border-radius: 3px;
@@ -90,4 +104,35 @@ g g polygon {
 
 .darker {
     background-color: #21222c;
+}
+
+.lighter {
+    background-color: #383a59;
+}
+
+.scroll {
+    overflow: auto;
+}
+
+.function-table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 18pt;
+}
+
+.large-latex {
+    font-size: 24pt;
+}
+
+.function-div {
+    margin: 10px 0px 10px 0px;
+    overflow-y: scroll;
+    max-height: 50vh;
+}
+
+.centre {
+    text-align: center;
 }
