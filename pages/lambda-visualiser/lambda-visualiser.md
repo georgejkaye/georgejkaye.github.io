@@ -1,7 +1,7 @@
 ---
 layout: page2
 title: Final Year Project
-permalink: /lambda-visualiser/
+permalink: /lambda-visualiser
 type: project
 ---
 
