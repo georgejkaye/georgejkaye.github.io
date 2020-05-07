@@ -39,13 +39,13 @@ Currently my work involves defining hypergraphs and showing that these hypergrap
 **Diagrammatic semantics for digital circuits** \[[Visualiser](\circuits\visualiser)\] \[[Very basic talk](\pages\circuits\Diagrammatic semantics for digital circuits.pdf)\]  
 *Defining an operational semantics for digital circuits using hypergraphs.*
 
-**A visualiser for linear lambda-terms as rooted 3-valent maps** \[[Page](\fyp)\]  
+**A visualiser for linear lambda-terms as rooted 3-valent maps** \[[Page](\lambda-visualiser)\]  
 *A set of tools for the representation of lambda terms as their corresponding rooted maps. Developed for my MSci final year project.*
 
 ## Talks
 
 **A visualiser for linear lambda-terms as rooted 3-valent maps**  
-[CLA 2019](http://cla.tcs.uj.edu.pl/) *July 1-2, 2019* \[[Slides](/pages/fyp/docs/CLA'2019 - A visualiser for linear lambda-terms as rooted 3-valent maps.pdf)\]
+[CLA 2019](http://cla.tcs.uj.edu.pl/) *July 1-2, 2019* \[[Slides](/pages/lambda-calculus/docs/CLA'2019 - A visualiser for linear lambda-terms as rooted 3-valent maps.pdf)\]
 
 ## Visits
 
