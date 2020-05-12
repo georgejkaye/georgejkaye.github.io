@@ -11,23 +11,7 @@
     </div>
 
     <nav class="sidebar-nav">
-
-      {% if page.url == "/" | relative_url %}
       <a id="top-link" class="sidebar-nav-item home-item" href="{{ site.basurl }}#top">Home</a>
-      <a id="about-me-link" class="sidebar-nav-item home-item" href="{{ site.basurl }}#about-me">About</a>
-      <a id="projects-link" class="sidebar-nav-item home-item" href="{{ site.basurl }}#projects">Projects</a>
-      <a id="talks-link" class="sidebar-nav-item home-item" href="{{ site.basurl }}#talks">Talks</a>
-      <a id="teaching-link" class="sidebar-nav-item home-item" href="{{ site.basurl }}#teaching">Teaching</a>
-      <a id="misc-link" class="sidebar-nav-item home-item" href="{{ site.basurl }}#misc">Misc</a>
-      {% else %}
-      <a id="top-link" class="sidebar-nav-item" href="{{ '/' | relative_url }}">Home</a>
-      <a id="about-me-link" class="sidebar-nav-item" href="{{ site.basurl }}/#about-me">About</a>
-      <a id="projects-link" class="sidebar-nav-item" href="{{ site.basurl }}/#projects">Projects</a>
-      <a id="talks-link" class="sidebar-nav-item" href="{{ site.basurl }}/#talks">Talks</a>
-      <a id="teaching-link" class="sidebar-nav-item" href="{{ site.basurl }}/#teaching">Teaching</a>
-      <a id="misc-link" class="sidebar-nav-item" href="{{ site.basurl }}/#misc">Misc</a>
-      {% endif %}
-
       <a id="blog-link" class="sidebar-nav-item" href="{{ site.basurl }}/blog">Blog</a>
       <a id="git-link" class="sidebar-nav-item" href="{{ site.github }}">GitHub</a>
       <span class="sidebar-nav-item">Running <a href="http://hyde.getpoole.com/">Hyde</a>, a Jekyll theme</span>
