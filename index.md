@@ -3,7 +3,9 @@ layout: page2
 title: Home
 ---
 
-Hello! I'm George, a PhD student researcher at the University of Birmingham, under the supervision of [Dan Ghica](http://www.cs.bham.ac.uk/~drg/)!
+Hello! I'm George, a PhD student researcher at the University of Birmingham, under the supervision of [Dan Ghica](https://www.cs.bham.ac.uk/~drg/) and [Miriam Backens](https://www.cs.bham.ac.uk/~backensm/)!
+
+I am a member of the [Theory Group](https://www.cs.bham.ac.uk/research/groupings/theory/).
 
 ## About me
 
@@ -15,24 +17,19 @@ I occasionally take photos of pretty things and put them on [Instagram](https://
 
 Here are some [pictures](/pictures) of me!
 
-### Interests
+## Interests
 
 * Programming languages
 * The lambda calculus
+* Diagrams
 * Compilers
 * Reasoning
 
-### Current work
+## Current work
+
+![fadd.svg](images/circuit.svg)
 
 Currently my work involves defining hypergraphs and showing that these hypergraphs can be used to model a traced symmetric monoidal category. Eventually this will lead to developing a sound and complete diagrammatic semantics for digital circuits.
-
-### Contact me
-
-**Personal:** georgejkaye at gmail.com
-
-**University:** g.j.kaye at cs.bham.ac.uk
-
-**Where to find me:** ~~Office 244 (Desk J), School of Computer Science, University of Birmingham~~ My house, under lockdown!
 
 ## Projects
 
@@ -40,7 +37,7 @@ Currently my work involves defining hypergraphs and showing that these hypergrap
 *Defining an operational semantics for digital circuits using hypergraphs.*
 
 **A visualiser for linear lambda-terms as rooted 3-valent maps** \[[Page](\lambda-visualiser)\]  
-*A set of tools for the representation of lambda terms as their corresponding rooted maps. Developed for my MSci final year project.*
+*A set of tools for the representation of lambda terms as their corresponding rooted maps. Developed for my MSci final year project under the supervision of [Noam Zeilberger](http://noamz.org/).*
 
 ## Talks
 
@@ -60,6 +57,14 @@ Currently my work involves defining hypergraphs and showing that these hypergrap
 * **Spring 2020:** [Compilers & Languages](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/) \[[OCaml tutorial](/ocaml)\]
 * **Autumn 2019:** [Mathematical Foundations of Computer Science](https://www.cs.bham.ac.uk/internal/modules/2019/06-30181/)
 
+## Contact me
+
+**Personal:** georgejkaye at gmail.com
+
+**University:** g.j.kaye at cs.bham.ac.uk
+
+**Where to find me:** ~~Office 244 (Desk J), School of Computer Science, University of Birmingham~~ My house, under lockdown!
+
 ## Misc
 
-* [Train Simulator scenarios](/trains)
+* [Train Simulator scenarios](/trains/scenarios)
