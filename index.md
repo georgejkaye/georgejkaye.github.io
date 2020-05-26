@@ -42,7 +42,7 @@ Currently my work involves defining hypergraphs and showing that these hypergrap
 ## Talks
 
 **A visualiser for linear lambda-terms as rooted 3-valent maps**  
-[CLA 2019](http://cla.tcs.uj.edu.pl/) *July 1-2, 2019* \[[Slides](/pages/lambda-calculus/docs/CLA'2019 - A visualiser for linear lambda-terms as rooted 3-valent maps.pdf)\]
+[CLA 2019](http://cla.tcs.uj.edu.pl/) *July 1-2, 2019* \[[Slides](/pages/lambda-visualiser/docs/CLA'2019 - A visualiser for linear lambda-terms as rooted 3-valent maps.pdf)\]
 
 ## Visits
 
