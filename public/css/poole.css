@@ -130,9 +130,9 @@ p {
   text-align: justify;
 }
 
-strong {
+/*strong {
   color: #d6d3cd;
-}
+}*/
 
 
 /* Lists */
@@ -140,6 +140,7 @@ ul,
 ol,
 dl {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 dt {
@@ -509,4 +510,27 @@ a.pagination-item:hover {
   .small-scenario {
     width: 48%;
   }
+}
+
+.definition-header {
+  background-color: #383a59;
+  color: #50fa7b;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 110%;
+}
+
+.definition-body {
+  background-color: #383a59;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.definition-body-bullets {
+  background-color: #383a59;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
