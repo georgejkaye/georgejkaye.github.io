@@ -11,7 +11,7 @@
 
   <title>
     
-    Final Year Project &middot; George Kaye
+    Soundness &middot; George Kaye
     
   </title>
 
@@ -188,58 +188,36 @@
 
   <div id="top" class="content container">
     <div class="page">
-  <h1 class="page-title">Final Year Project</h1>
-  <h2 id="a-visualiser-for-λ-terms-as-rooted-maps">A visualiser for λ-terms as rooted maps</h2>
+  <h1 class="page-title">Soundness</h1>
+  <h2 id="notation">Notation</h2>
 
-<p>My MSci final year project: a set of tools to help investigation of terms from various fragments of the λ-calculus. The core function of the tools is to represent these λ-terms as <em>maps</em>. Background information can be found in the <a href="/pages/lambda-visualiser/docs/2019-04-08-final-report.pdf">Project Report</a>.</p>
+<p>For a totally ordered set $X$ we can write its order as $\torder{X}$. The $y$th element of a totally ordered set $X$ is denoted as $\proj{y} \circ X$. When considering two totally ordered sets $X$ and $Y$ with total orders $\torder{X}$ and $\torder{Y}$, we write as $\torder{X} \comborder \torder{Y}$ a total order on their disjoint union in which all elements of $X$ are less than elements in $Y$:</p>
 
-<p>These tools were presented at <a href="http://cla.tcs.uj.edu.pl/">CLA 2019</a>! You can download the slides <a href="/pages/lambda-visualiser/docs/CLA'2019 - A visualiser for linear lambda-terms as rooted 3-valent maps.pdf">here</a>.</p>
+<script type="math/tex; mode=display">% <![CDATA[
+\{(x, y) | (x, y \in X \wedge x < y) \lor (x, y \in Y \wedge x < y) \lor (x \in X \wedge y \in Y)\} %]]></script>
 
-<h2 id="tools">Tools</h2>
+<p>For example if $X = {\mf{a},\mf{b}}$, $\torder{X} = \mf{a} &lt; \mf{b}$ and $Y = {\mf{c},\mf{d}}$, $\torder{Y} = \mf{c} &lt; \mf{d}$ then $X \comborder Y = \mf{a} &lt; \mf{b} &lt; \mf{c} &lt; \mf{d}$.</p>
 
-<p>Two tools were made for the project:</p>
+<p>We call a function $\morph{f}{X}{Y}$ <em>well-defined</em> if $\forall x \in X. \,\exists y \in Y. \, f(x) = y$. For a function $\morph{f}{X}{Y}$, we denote by $\morph{f^*}{\powerset(X)}{\powerset(Y)}$ its pointwise application to each element in its input. When we have two functions $\morph{f}{X}{Y}$ and $\morph{g}{U}{V}$ where $X$ and $U$ are disjoint ($Y$ and $V$ do not necessarily have to be disjoint), we can define a function $\morph{f \djf g}{X’ \uplus U’}{Y \cup V}$, where $X’ \subseteq X$ and $U’ \subseteq U$, which acts as $f$ on elements of $X’$ and $g$ on elements of $U’$. If the sets are not disjoint, we can instead <em>override</em> the first by defining a function $\morph{f \ndjf g}{X’ \cup U’}{Y \cup V}$ such that</p>
 
-<ul>
-  <li><a href="/lambda-visualiser/visualiser"><strong>λ-term visualiser</strong></a></li>
-  <li><a href="/lambda-visualiser/gallery"><strong>λ-term gallery</strong></a></li>
-</ul>
+<script type="math/tex; mode=display">% <![CDATA[
+(f \oslash g)(x) = \begin{cases}
+    f(x) & \text{if}\ x \not\in Y \\
+    g(x) & \text{if}\ x \in Y
+\end{cases} %]]></script>
 
-<h3 id="λ-term-visualiser">λ-term visualiser</h3>
+<p>A very common use for this notation is to combine two disjoint functions
+$f : X \to Y$ and $g : U \to V$ and remap elements that also exist in
+some other set $Z$ to a new value $\star$. To represent this function
+$h : X \uplus U \to Y \cup V \uplus {\star}$ we would use the notation
+$h(v) = (f \oplus g) \oslash \{v \mapsto \star \,|\, v \in Z \}$. This
+function acts as $f$ or $g$ on elements of $X$ and $Y$ that do not exist
+in $Z$. We can also use other predicates to remap elements that satisfy
+some specific condition.</p>
 
-<p><img src="/pages/lambda-visualiser/pics/visualiser.png" alt="λ-term visualiser" /></p>
+<p>When using sequential ($\seq$) and parallel ($\tensor$) composition, $\tensor$ binds tighter than $\seq$, that is $f \tensor g \seq h \tensor k$ should be read as $(f \tensor g) \seq (h \tensor k)$. Equations should be read in diagrammatic order: sequential composition from left-to-right, parallel composition from top-to-bottom.</p>
 
-<p>This is a tool to visualise λ-terms as maps. A user can input a term and a set of free variables, and the tool will draw the corresponding map.</p>
-
-<h3 id="λ-term-gallery">λ-term gallery</h3>
-
-<p><img src="/pages/lambda-visualiser/pics/gallery.png" alt="λ-term gallery" /></p>
-
-<p>This tool builds on the visualiser to generate galleries of λ-terms that fulfill certain critera. The primary parameters for generating terms are the size and the number of free variables. Terms can be generated from the pure, linear or planar λ-calculus. The generated terms can also be filtered by a number of different properties, such as crossings in the generated maps.</p>
-
-<h3 id="λ-term-portraits">λ-term portraits</h3>
-
-<p><img src="/pages/lambda-visualiser/pics/redex1.png" alt="Redex 1" />
-<img src="/pages/lambda-visualiser/pics/redex2.png" alt="Redex 2" /></p>
-
-<p>All sorts of interesting information is provided about terms, such as the available beta-redexes. By hovering over these redexes, they will be highlighted in the term and on the visualised map. Reductions can be performed by clicking on the redexes, or alternatively the process can be animated in innermost or outermost strategies.</p>
-
-<h3 id="normalisation-graphs">Normalisation graphs</h3>
-
-<p><img src="/pages/lambda-visualiser/pics/normalisation-graph.png" alt="Normalisation graph" />
-<img src="/pages/lambda-visualiser/pics/omega.png" alt="Omega normalisation graph" />
-Normalisation graphs can also be generated for terms!</p>
-
-<h2 id="documentation">Documentation</h2>
-
-<p>The <a href="/pages/lambda-visualiser/docs/2018-10-26-project-proposal.pdf"><strong>Project Proposal</strong></a> is a brief overview of the aim of this project and a possible schedule.</p>
-
-<p>The <a href="/pages/lambda-visualiser/docs/2018-11-23-scientific-paper.pdf"><strong>Scientific Paper</strong></a> gives some background on the topics involved, and how the project was progressing towards the end of November.</p>
-
-<p>The <a href="/pages/lambda-visualiser/docs/2019-04-08-final-report.pdf"><strong>Project Report</strong></a> is the report from the end of the project - the dissertation!</p>
-
-<h2 id="source-code">Source code</h2>
-
-<p>The source code can be found on <a href="http://github.com/georgejkaye/lambda-visualiser">GitHub</a>.</p>
+<p><strong>Next:</strong> <a href="/circuits/soundness/hypergraphs">Hypergraphs</a></p>
 
 </div>
   </div>
