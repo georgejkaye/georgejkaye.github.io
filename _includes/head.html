@@ -39,5 +39,122 @@
     gtag('config', 'UA-124613172-1');
   </script>
 
+  <!-- Mathjax -->
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      extensions: [
+        "MathMenu.js",
+        "MathZoom.js",
+        "AssistiveMML.js",
+        "a11y/accessibility-menu.js"
+      ],
+      jax: ["input/TeX", "output/CommonHTML"],
+      TeX: {
+        extensions: [
+          "AMSmath.js",
+          "AMSsymbols.js",
+          "noErrors.js",
+          "noUndefined.js",
+        ],
+      },
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  {% raw %}
+  <div style="display: none">
+    $\newcommand{\nat}{\mathbb{N}}$
+    $\newcommand{\nat}{\mathbb{N}}$
+    $\newcommand{\mca}{\mathcal{A}}$
+    $\newcommand{\powerset}{\mathcal{P}}$
+    $\newcommand{\djf}{\oplus}$
+    $\newcommand{\ndjf}{\oslash}$
+    $\newcommand{\set}[1]{\underline{#1}}$
+    $\newcommand{\proj}[1]{\pi_#1}$
+    $\newcommand{\mf}[1]{\mathsf{#1}}$
+    $\newcommand{\torder}[1]{{{#1}_\leq}}$
+    $\newcommand{\comborder}{⧀}$
+    $\newcommand{\fall}[3]{\forall #1 \in #2 . \, #3}$
+    $\newcommand{\nor}{{\downarrow}}$
+    $\newcommand{\xor}{\oplus}$
+    $\newcommand{\pair}[2]{\langle #1,#2 \rangle}$
+    $\newcommand{\sig}{\Sigma_{\textbf{Circ}}}$
+    $\newcommand{\morph}[3]{#1 : #2 \to #3}$
+    $\newcommand{\lub}{\sqcup}$
+    $\newcommand{\latleq}{\sqsubseteq}$
+    $\newcommand{\latgeq}{\sqsupseteq}$
+    $\newcommand{\overbar}{\overline}$
+    $\newcommand{\args}[1]{\overbar{v_#1}}$
+    $\newcommand{\vals}{\overbar{v}}$
+    $\newcommand{\ubar}[1]{\underaccent{\bar}{#1}}$
+    $\newcommand{\seq}{\cdot}$
+    $\newcommand{\tensor}{\otimes}$
+    $\newcommand{\bigtensor}{\bigotimes}$
+    $\newcommand{\fork}{\curlywedge}$
+    $\newcommand{\join}{\curlyvee}$
+    $\newcommand{\stub}{{\sim}}$
+    $\newcommand{\swap}[2]{\times_{#1,#2}}$
+    $\newcommand{\dfork}[1]{\Delta_{#1}}$
+    $\newcommand{\djoin}[1]{\nabla_{#1}}$
+    $\newcommand{\delay}{\delta}$
+    $\newcommand{\trace}[2]{\text{Tr}^{#1}(#2)}$
+    $\newcommand{\iter}[2]{\text{iter}^{#1}(#2)}$
+    $\newcommand{\bb}[1]{\llb #1 \rrb}$
+    $\newcommand{\fix}[1]{\text{fix}(#1)}$
+    $\newcommand{\llb}{\llbracket}$
+    $\newcommand{\rrb}{\rrbracket}$
+    $\newcommand{\mcs}{\mathcal{S}}$
+    $\newcommand{\mcv}{\mathcal{V}}$
+    $\newcommand{\ecal}{\mathcal{E}}$
+    $\newcommand{\vcal}{\mathcal{V}}$
+    $\newcommand{\edges}{E}$
+    $\newcommand{\vt}{V^{\mathcal{T}}}$
+    $\newcommand{\vs}{V^{\mathcal{S}}}$
+    $\newcommand{\vleft}{\lambda}$
+    $\newcommand{\vright}{\rho}$
+    $\newcommand{\vtorder}{{\leq^{\mathcal{T}}}}$
+    $\newcommand{\vsorder}{{\leq^{\mathcal{S}}}}$
+    $\newcommand{\vtordern}[1]{{\leq^{\mathcal{T}}_#1}}$
+    $\newcommand{\vsordern}[1]{{\leq^{\mathcal{S}}_#1}}$
+    $\newcommand{\einput}{\alpha}$
+    $\newcommand{\eoutput}{\omega}$
+    $\newcommand{\vconnsr}{\kappa}$
+    $\newcommand{\vconnsl}{\kappa^{-1}}$
+    $\newcommand{\lcal}{\mathcal{L}}$
+    $\newcommand{\labels}{\Lambda}$
+    $\newcommand{\hyper}{((\vt, \vtorder), (\vs, \vsorder), E, \einput, \eoutput, vleft, \vright, \vconnsr, L, \labels)}$
+    $\newcommand{\hypern}[1]{((\vt_#1, \vtordern{#1}), (\vs_#1, \vsordern{#1}), E_#1, \einput_#1, \eoutput_#1, \vleft_#1, \vright_#1, \vconnsr_#1, L_#1, \labels_#1)}$
+    $\newcommand{\esources}{\mathsf{s}}$
+    $\newcommand{\etargets}{\mathsf{t}}$
+    $\newcommand{\rename}{\pi}$
+    $\newcommand{\renameinv}{\rename^{-1}}$
+    $\newcommand{\connsr}{f_{\rightarrow}}$
+    $\newcommand{\connsl}{f_{\leftarrow}}$
+    $\newcommand{\whomo}[2]{\leadsto^{#1}_{#2}}$
+    $\newcommand{\hwhomo}{\approx_h}$
+    $\newcommand{\hequiv}{\equiv_\mathsf{h}}$
+    $\newcommand{\hhomo}[2]{h_{#1\to#2}}$
+    $\newcommand{\circtochyp}{\varphi}$
+    $\newcommand{\chyptocirc}{\psi}$
+    $\newcommand{\inport}[2]{(#1,#2)^S}$
+    $\newcommand{\outport}[2]{(#1,#2)^T}$
+    $\newcommand{\vmaps}{\mathsf{vmap}^{\mathcal{S}}}$
+    $\newcommand{\vmapss}{\mathsf{vmap}^{\mathcal{S*}}}$
+    $\newcommand{\vmapt}{\mathsf{vmap}^{\mathcal{T}}}$
+    $\newcommand{\vmapts}{\mathsf{vmap}^{\mathcal{T*}}}$
+    $\newcommand{\emap}{\mathsf{emap}}$
+    $\newcommand{\id}{\mathsf{id}}$
+    $\newcommand{\agda}[2]{\texttt{[}#1\texttt{.#2.agda]}}$
+    $\newcommand{\uinfix}[1]{\texttt{\_}#1\texttt{\_}}$
+  </div>
+  {% endraw %}
 
 </head>

@@ -1,0 +1,141 @@
+---
+layout: page2
+permalink: /circuits/test
+---
+
+{% raw %}
+<h1 id="hypergraphs">Hypergraphs</h1>
+<p>The vertices and edges of our hypergraph are contained within some global, countably infinite set <span
+        class="math inline">$\mca$</span> of atoms.</p>
+
+<div class="definition-header"><b>Definition 1</b> (Hypergraph)</div>
+
+<div class="definition-body">
+    Let a hypergraph with <span class="math inline">$m$</span> inputs and <span class="math inline">$n$</span>
+    outputs comprise of</p>
+    <ul>
+        <li>
+            <p>Two finite sets <span class="math inline">$\vt \subset \mca$</span> (target) and <span
+                    class="math inline">$\vs \subset \mca$</span> (source) of vertices</p>
+            <ul>
+                <li>
+                    <p>such that <span class="math inline">$|\vt| = |\vs|$</span> and <span class="math inline">$\vt
+                            \cap
+                            \vs = \emptyset$</span></p>
+                </li>
+                <li>
+                    <p>equipped with total orders <span class="math inline">$\vtorder$</span> and <span
+                            class="math inline">$\vsorder$</span> respectively.</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>A finite set <span class="math inline">$E \subset \mca$</span> of edges and two extra edges <span
+                    class="math inline">$\einput$</span> (input) and <span class="math inline">$\eoutput$</span>
+                (output), <span class="math inline">$\einput, \eoutput \not\in E$</span></p>
+        </li>
+        <li>
+            <p>Two functions</p>
+            <ul>
+                <li>
+                    <p><span class="math inline">$\morph{\vleft \text{ (left)}}{\vt}{E \uplus \{\einput\}}$</span></p>
+                    <ul>
+                        <li>
+                            <p>with its inverse image <span class="math inline">$\morph{\etargets \text{ (targets)}}{E
+                                    \uplus \{\einput\}}{\powerset^{\vtorder}(\vt)}$</span></p>
+                        </li>
+                        <li>
+                            <p>such that <span class="math inline">$|\etargets(\einput)| = m$</span></p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span class="math inline">$\morph{\vright \text{ (right)}}{\vs}{E \uplus \{\eoutput\}}$</span>
+                    </p>
+                    <ul>
+                        <li>
+                            <p>with its inverse image <span class="math inline">$\morph{\esources \text{ (sources)}}{E
+                                    \uplus \{\eoutput\}}{\powerset^{\vsorder}(\vs)}$</span></p>
+                        </li>
+                        <li>
+                            <p>such that <span class="math inline">$|\esources(\eoutput)| = n$</span></p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>A bijective function <span class="math inline">$\morph{\vconnsr \text{ (connections)}}{\vt}{\vs}$</span>
+            </p>
+        </li>
+        <li>
+            <p>A finite set of labels <span class="math inline">$L$</span> and a labelling function <span
+                    class="math inline">$\morph{\labels \text{ (labels)}}{E}{L}$</span></p>
+            <ul>
+                <li>
+                    <p>such that <span class="math inline">$\forall e_1, e_2 \in E$</span>, if <span
+                            class="math inline">$\labels(e_1) = \labels(e_2)$</span> then</p>
+                    <ul>
+                        <li>
+                            <p><span class="math inline">$|\esources(e_1)| = |\esources(e_2)|$</span></p>
+                        </li>
+                        <li>
+                            <p><span class="math inline">$|\etargets(e_1)| = |\etargets(e_2)|$</span></p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<p>For a hypergraph with <span class="math inline">$m$</span> inputs and <span class="math inline">$n$</span>
+    outputs, we write it as <span class="math inline">$\morph{f}{m}{n}$</span>, where <span class="math inline">$m
+        \to n$</span> is the <em>type</em> of the hypergraph. The pair of sources and targets of an edge <span
+        class="math inline">$(\esources(e), \etargets(e))$</span> is referred to as its <em>interface</em> – if a
+    vertex is a member of either of these sets we say that it is <em>incident</em> on edge <span
+        class="math inline">$e$</span>. The input and output edge <span class="math inline">$\einput$</span> and
+    <span class="math inline">$\eoutput$</span> are ‘special’ edges that all hypergraphs have – they collect the
+    ‘dangling’ vertices on the left and the right edges of the hypergraph. Subsequently <span
+        class="math inline">$\etargets(\einput)$</span> and <span class="math inline">$\esources(\eoutput)$</span>
+    can be thought of as the input and output ‘ports’ of the entire hypergraph. We sometimes refer to the elements
+    of
+    the set <span class="math inline">$E$</span> as the <em>regular edges</em> of the hypergraph.</p>
+<p>The following is an example of a hypergraph, representing a flip-flop. The label <span
+        class="math inline">$\nor$</span> represents a NOR gate and <span class="math inline">$\fork$</span>
+    represents the forking of a wire.</p>
+<p><span id="ex:hypergraph" label="ex:hypergraph">[ex:hypergraph]</span><br />
+    <span class="math display">\[V^I = V^O = \{v_{0},v_{1},v_{2},v_{3},v_{4},v_{5},v_{6},v_{7}\}\]</span><span
+        class="math display">\[E = \{e_{0},e_{1},e_{2},e_{3}\}\]</span><span class="math display">\[\lambda =
+        \{v_{0}
+        \mapsto \alpha,v_{1} \mapsto \alpha,v_{2} \mapsto e_{0},v_{3} \mapsto e_{1},v_{4} \mapsto e_{1},v_{5}
+        \mapsto
+        e_{2},v_{6} \mapsto e_{3},v_{7} \mapsto e_{3}\}\]</span><span class="math display">\[\rho = \{v_{0} \mapsto
+        e_{0},v_{1} \mapsto e_{0},v_{2} \mapsto e_{1},v_{3} \mapsto e_{2},v_{4} \mapsto e_{2},v_{5} \mapsto
+        e_{3},v_{6}
+        \mapsto \omega,v_{7} \mapsto \omega\}\]</span><span class="math display">\[\kappa = \{v_{0} \mapsto
+        v_{0},v_{1}
+        \mapsto v_{4},v_{2} \mapsto v_{2},v_{3} \mapsto v_{6},v_{4} \mapsto v_{3},v_{5} \mapsto v_{5},v_{6} \mapsto
+        v_{1},v_{7} \mapsto v_{7}\}\]</span><span class="math display">\[L = \{\downarrow,
+        \curlywedge\}\]</span><span class="math display">\[\labels = \{e_{0} \mapsto \downarrow,e_{1} \mapsto
+        \curlywedge,e_{2} \mapsto
+        \downarrow,e_{3} \mapsto \curlywedge\}\]</span><span class="math display">\[\esources = \{e_{0}\mapsto
+        \{{v_{0}, v_{1}}\},e_{1}\mapsto \{{v_{2}}\},e_{2}\mapsto \{{v_{3}, v_{4}}\},e_{3}\mapsto
+        \{{v_{5}}\},\omega\mapsto \{{v_{6}, v_{7}}\}\}\]</span><span class="math display">\[\etargets =
+        \{\alpha\mapsto
+        \{{v_{0}, v_{1}}\},e_{0}\mapsto \{{v_{2}}\},e_{1}\mapsto \{{v_{3}, v_{4}}\},e_{2}\mapsto
+        \{{v_{5}}\},e_{3}\mapsto \{{v_{6}, v_{7}}\}\}\]</span></p>
+<p>This example can be seen graphically in Figure <a href="#fig:flipflop" data-reference-type="ref"
+        data-reference="fig:flipflop">[fig:flipflop]</a>, drawn both in an informal and formal style. Informally the
+    left and right maps are represented by wires from the left and right of the vertices, and the connections map is
+    represented by these vertices sharing a point. When drawing hypergraphs formally, we stack the vertices up
+    according
+    to their order, with source vertices on the left and the target vertices on the right. In our notation we label
+    vertices with a natural number, so the ordering is the ordering of the natural numbers. The edges are also
+    stacked,
+    although this order is irrelevant. The left (<span class="math inline">$\vleft$</span>) and right (<span
+        class="math inline">$\vright$</span>) maps are drawn as arrows pointing left or right appropriately. For
+    clarity, the connections (<span class="math inline">$\vconnsr$</span>) map will generally be written shorthand
+    as
+    an arrow and the vertex number, rather than cluttering up the graph with many arrows.</p>
+{% endraw %}
