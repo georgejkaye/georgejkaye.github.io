@@ -13,6 +13,7 @@ permalink:        pretty
 title:            George Kaye
 tagline:          'University of Birmingham'
 description:      'Hello world!'
+meta:             'Hello! I’m George, a PhD student researcher at the University of Birmingham, under the supervision of Dan Ghica and Miriam Backens!'
 url:              https://georgejkaye.com
 baseurl:          /
 repository:       georgejkaye/georgejkaye.github.io
