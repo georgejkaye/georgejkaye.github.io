@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Trains
-permalink: /trains/scenarios/
+permalink: /trains
 type: misc
 ---
 
