@@ -237,12 +237,6 @@ a.sidebar-nav-item:focus {
   margin-right: 10px;
 }
 
-@media (max-width: 52em) {
-  .small-title {
-    display: none;
-  }
-}
-
 .right-nav {
   display: flex;
   flex: 1;
@@ -253,10 +247,19 @@ a.sidebar-nav-item:focus {
 }
 
 @media (max-width: 52em) {
-  .nav-link {
+
+  .left-nav {
+    display: none;
+  }
+
+
+  .right-nav {
     display: none;
   }
 }
+
+
+
 
 
 .nav-link {
