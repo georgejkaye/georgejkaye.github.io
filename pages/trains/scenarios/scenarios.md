@@ -2,6 +2,7 @@
 layout: page
 title: Trains
 permalink: /trains
+tagline: The train now arriving at platform 1 is...
 type: misc
 ---
 
@@ -25,7 +26,7 @@ If you enjoyed my scenarios and would like to help me make more, feel free to [d
 - [South London Network](#south-london-network)
 - [South London to Brighton](#south-london-to-brighton)
 - [South Western Expressways](#south-western-expressways)
-  - [Original Route](#original-route)
+  - [Original route](#original-route)
   - [To Reading](#to-reading)
 - [Western Mainlines](#western-mainlines)
 - [XC Route (Birmingham - Bristol)](#xc-route-birmingham---bristol)
@@ -85,9 +86,12 @@ If you enjoyed my scenarios and would like to help me make more, feel free to [d
 
 ## South Western Expressways
 
-### Original Route
+### Original route
 
 [![2M12 1410 Frome to Swindon (Part 1)](/images/scenarios/2M12-1410-frome-to-swindon.jpg){:class="small-scenario"}](2M12-1410-frome-to-swindon)![6M08 0826 Westbury Up T.C. to Swindon](/images/scenarios/6M08-0826-westbury-up-tc-to-swindon.jpg){:class="small-scenario"}
+
+[Back to routes](#routes)
+{: class="top-link"}
 
 ### To Reading
 
