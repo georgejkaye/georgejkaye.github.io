@@ -5,7 +5,9 @@ permalink: /football/end-of-year-report
 ---
 
 ### *Ospina Colada 46 - 75 Wiltshire Wanderers*
+
 ### *Tekkaslovakia 79 - 96 Wiltshire Wanderers*
+
 ----------------------------------
 
 **The Wanderers bring their year to a close with two scintillating performances, putting them in a good position for the new year.**
@@ -23,13 +25,14 @@ The results were marked, if not exceptional. Despite a red card for Zeegelaar an
 Gameweek 17 provided a win for the Wanderers, who beat the Kim Jong-un XI 32-45. Strangely, Kolasinac did not play and was substituted for Hegazi, who provided an unexpected clean sheet to the team.
 
 ## The Selly Oak Derby
+
 ![Kaye versus Pol](/images/football/end-of-year-report/selly-oak-derby.png)
 
 Gameweek 18 saw the second Selly Oak Derby of the season, and Kaye was determined to keep his 100% record (having won the last derby in Gameweek 3). He brought in Tarkowski to boost his dodgy defense, and the Burnley man delivered, providing a clean sheet. Once again Kolasinac did not play, disappointing Kaye. Despite high scores from Salah and Sterling, the Baggies edged to victory 58-51 in a highly entertaining game.
 
 ## A Christmas Miracle
-![Kaye stars in the Wanderers Christmas video](/images/football/end-of-year-report/christmas.png)
 
+![Kaye stars in the Wanderers Christmas video](/images/football/end-of-year-report/christmas.png)
 
 The shock loss against Ospina Colada earlier in the season still haunted the team, and Kaye promised to make amends. The team did so in remarkable style, with trusty midfielders Salah and Sterling providing double figures, and Kane returning a remarkable 17 points as the Wanderers romped to victory 46-75.
 
@@ -37,19 +40,24 @@ Kaye did not stop there. Having grown tired of Kolasinac's failure to play, he t
 
 This Wanderers record led to Kaye's team bringing home the most points in all of their leagues. The astonishing performace was congratulated by several of Kaye's managerial friends. It is now up to Kaye to build on this performance and continue to challenge for the mid-table positions, rather than the bottom as was the case earlier in the season.
 
-
 ## Table
+
 ### The Streetly League *(The Rob League)*
+
 ![The Streetly League](/images/football/end-of-year-report/streetly.JPG)
 
 ### Malmesbuoys *(The Southerner League)*
+
 ![Malmesbuoys](/images/football/end-of-year-report/malmesbury.JPG)
 
 ### The Damo Classic *(The Damon League)*
+
 ![The Damo Classic](/images/football/end-of-year-report/damo.JPG)
 
 ### Who needs a degree? *(The Mark League)*
+
 ![Who needs a degree?](/images/football/end-of-year-report/mark.JPG)
 
 ### 511 You wan't some!!! *(The Wai'rose League)*
+
 ![511 You wan't some!!!](/images/football/end-of-year-report/wairose.JPG)

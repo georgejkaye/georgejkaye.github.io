@@ -6,8 +6,6 @@ alttext: Todd cradles his newly born child
 tagline: Todd has recently started his PhD, whereas I am still working hard in the final year of my MSci. Together we eat soup, visit pubs and struggle with second-year functional programming assignments. This time we embarked on a soupy lunch in Sloman which turned into so much more.
 ---
 
-*Todd has recently started his PhD, whereas I am still working hard in the final year of my MSci. Together we eat soup, visit pubs and struggle with second-year functional programming assignments.*
-
 Todd eagerly invited me to a 'soupy lunch in Sloman', so of course I could not refuse! I had previously accompanied Todd to big Sainsburys as he purchased the soup of the day, where I had also obtained a one hundred pack of Twining's Lady Grey teabags for £3.50 - a bargain!
 
 I arrived at Todd's office with urgency, straight from my Evaluation Methods and Statistics lecture (which had turned out to be suspiciously HCI-oriented, but that's a story for another time). We then wayfared to the first floor staff kitchen! To my amazement, Todd did not own some sort of plastic microwave bowl - an essential for anyone embarking on any soup-related mission! I promptly recommended that he purchase a Sistema bowl, and [found one on Amazon](https://www.amazon.co.uk/Sistema-1109-Microwave-Noodle-Bowl/dp/B009SD35IO/ref=sr_1_4?ie=UTF8&qid=1539087440&sr=8-4&keywords=sistema%2Bmicrowave%2Bbowl&th=1) for the low low price of £4.99.
