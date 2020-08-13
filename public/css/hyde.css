@@ -172,26 +172,66 @@ a.sidebar-nav-item:focus {
   vertical-align: middle;
 }
 
-.spacer {
-  width: 100%;
-  height: 50px;
-}
-
 .nav-bar {
+  text-align: center;
   display: flex;
   position: fixed;
   z-index: 999;
   background-color: #383a59;
-  height: 50px;
+  height: 75px;
   width: 100%;
+  border-bottom: 2px solid #282a36;
 }
 
 .left-nav {
+  flex: 1;
   display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.middle-nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-title a {
+  font-size: 22pt;
+  font-weight: bold;
+  color: #50fa7b;
+  margin: 10px;
+}
+
+.small-page-title a {
+  color: #ff79c6;
+  margin: 10px;
+  font-size: 22pt;
+  font-weight: bold;
+}
+
+.spacer {
+  height: 75px;
+}
+
+.nav-site-image {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
 }
 
 .right-nav {
   display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.nav-link {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* Container
