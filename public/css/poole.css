@@ -56,11 +56,7 @@ html {
   background-color: #282A36
 }
 
-@media (min-width: 38em) {
-  html {
-    font-size: 20px;
-  }
-}
+
 
 body {
   color: #d6d3cd;
