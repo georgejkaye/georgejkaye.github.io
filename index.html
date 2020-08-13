@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+<div class="nav-bar">
+  <div class="left-nav">
+    <a href=/>
+      <div class="site-name">
+        <div><img class="nav-site-image" src="/images/me/me.jpg" alt="me"></div>
+        <div class="small-title">George Kaye</div>
+      </div>
+    </a>
+  </div>
+  <div class="middle-nav">
+    <div class="mobile-site-image"><a href=/><img class="nav-site-image"
+          src="/images/me/me.jpg" alt="me"></a></div>
+    <div class="small-page-title">
+      <a href="#top">
+        
+        Home
+        
+      </a></div>
+  </div>
+  <div class="right-nav">
+    <div class="nav-link"><a href="https://github.com/georgejkaye">GitHub</a></div>
+    <div class="nav-link"><a href="/blog">Blog</a></div>
+  </div>
+</div>
+<div class="spacer">
+  &nbsp;
+</div>
+<div class="mobile-nav">
+  <div class="nav-link"><a href="https://github.com/georgejkaye">GitHub</a></div>
+  <div class="nav-link"><a href="/blog">Blog</a></div>
+</div>
 <head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -163,33 +194,24 @@
 
 <body>
 
-  <div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <img src="/images/me/me.jpg" alt="me" width="100px" height="100px">
-      <h1>
-        <a href="/">
+
+  <div class="title-bar">
+  <div class="container top-sticky">
+    <div class="top-bar">
+      <img class="site-image" src="/images/me/me.jpg" alt="me" width="100px" height="100px">
+      <span class="title"><a href="/">
+          
           George Kaye
-        </a>
-      </h1>
-      <p class="sidebar-lead">Hello world!</p>
+          
+        </a></span>
     </div>
 
-    <nav class="sidebar-nav">
-      <a id="top-link" class="sidebar-nav-item home-item" href="/">Home</a>
-      <a id="blog-link" class="sidebar-nav-item" href="blog">Blog</a>
-      <a id="git-link" class="sidebar-nav-item" href="https://github.com/georgejkaye">GitHub</a>
-      <span class="sidebar-nav-item">Running <a href="http://hyde.getpoole.com/">Hyde</a>, a Jekyll theme</span>
-    </nav>
-
-    <span class="sidebar-nav-item">&copy; 2020. All rights reserved.</span>
+    <div class="tagline">Hello world!</div>
   </div>
 </div>
 
-
-  <div id="top" class="content container">
+  <div id="text" class="content container">
     <div class="page">
-  <h1 class="page-title">Home</h1>
   <p>Hello! I’m George, a PhD student researcher at the University of Birmingham, under the supervision of <a href="https://www.cs.bham.ac.uk/~drg/">Dan Ghica</a> and <a href="https://www.cs.bham.ac.uk/~backensm/">Miriam Backens</a>!</p>
 
 <p>I am a member of the <a href="https://www.cs.bham.ac.uk/research/groupings/theory/">Theory Group</a>.</p>
@@ -216,7 +238,7 @@
 
 <h2 id="current-work">Current work</h2>
 
-<p><img src="images/circuit.svg" alt="fadd.svg" /></p>
+<p style="text-align: center"><img src="images/circuit.svg" alt="fadd.svg" /></p>
 
 <p>Currently my work involves defining hypergraphs and showing that these hypergraphs can be used to model a traced symmetric monoidal category. Eventually this will lead to developing a sound and complete diagrammatic semantics for digital circuits.</p>
 
