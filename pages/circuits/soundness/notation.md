@@ -1,5 +1,5 @@
 ---
-layout: page2
+layout: page
 title: Soundness
 permalink: /circuits/soundness/notation
 type: project

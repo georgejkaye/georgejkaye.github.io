@@ -1,5 +1,5 @@
 ---
-layout: page2
+layout: page
 title: Circuits • Hypergraphs
 permalink: /circuits/soundness/hypergraphs
 type: project

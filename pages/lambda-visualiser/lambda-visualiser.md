@@ -1,11 +1,10 @@
 ---
-layout: page2
+layout: page
 title: Final Year Project
 permalink: /lambda-visualiser
+tagline: A visualiser for λ-terms as rooted maps
 type: project
 ---
-
-## A visualiser for λ-terms as rooted maps
 
 My MSci final year project: a set of tools to help investigation of terms from various fragments of the λ-calculus. The core function of the tools is to represent these λ-terms as *maps*. Background information can be found in the [Project Report](/pages/lambda-visualiser/docs/2019-04-08-final-report.pdf).
 

@@ -1,5 +1,5 @@
 ---
-layout: page2
+layout: page
 title: Sunday Screenings
 permalink: /sunday-screenings/
 ---
@@ -8,31 +8,31 @@ Sunday Screenings are a new feature for the 2018-19 UoB season!
 
 ## Schedule
 
-| Date | Film |
-|:-:|:-|
-| 07/10 | [Starter for Ten](#0710-starter-for-ten) |
-| 14/10 | [Baby Driver](#1410-baby-driver) |
-| 21/10 | [Bridget Jones: The Edge of Reason](#2110-bridget-jones-the-edge-of-reason) |
-| 28/10 | [A Knight's Tale](#2810-a-knights-tale) |
-| 31/10 | [The Silence of the Lambs](#3110-the-silence-of-the-lambs) *(Spooky Screening)*|
-| 04/11 | [The Nightmare Before Christmas](#0411-the-nightmare-before-christmas) |
-| 11/11 | [Hot Fuzz](#1111-hot-fuzz) |
+| Date  | Film                                                                                                 |
+| :---: | :--------------------------------------------------------------------------------------------------- |
+| 07/10 | [Starter for Ten](#0710-starter-for-ten)                                                             |
+| 14/10 | [Baby Driver](#1410-baby-driver)                                                                     |
+| 21/10 | [Bridget Jones: The Edge of Reason](#2110-bridget-jones-the-edge-of-reason)                          |
+| 28/10 | [A Knight's Tale](#2810-a-knights-tale)                                                              |
+| 31/10 | [The Silence of the Lambs](#3110-the-silence-of-the-lambs) *(Spooky Screening)*                      |
+| 04/11 | [The Nightmare Before Christmas](#0411-the-nightmare-before-christmas)                               |
+| 11/11 | [Hot Fuzz](#1111-hot-fuzz)                                                                           |
 | 18/11 | [I'm a Celebrity... Get Me Out Of Here!](#1811-im-a-celebrity-get-me-out-of-here-series-18-premiere) |
-| 25/11 | [Coco](#2511-coco) |
-| 01/12 | [Love Actually](#0112-love-actually) |
-| 02/12 | [Arthur Christmas](#0212-arthur-christmas) |
-| 09/12 | [Gremlins](#0912-gremlins) |
-| 13/01 | [Kingsman](#1301-kingsman) |
-| 20/01 | [Sing Street](#2001-sing-street) |
-| 27/01 | [Spy Kids 2](#2701-spy-kids-2) |
-| 03/02 | [Singh is Kinng](#0302-singh-is-kinng) |
-| 10/02 | [Scooby-Doo](#1002-scooby-doo) |
-| 17/02 | [Ex Machina](#1702-ex-machina) |
-| 24/02 | [Back to the Future](#2402-back-to-the-future) |
-| 03/03 | [Slumdog Millionaire](#0303-slumdog-millionaire) |
-| 10/03 | [The Princess Diaries](#1003-the-princess-diaries)|
-| 17/03 | [Twilight](#1703-twilight)|
-| 24/03 | [The Wolf of Wall Street](#2403-the-wolf-of-wall-street)|
+| 25/11 | [Coco](#2511-coco)                                                                                   |
+| 01/12 | [Love Actually](#0112-love-actually)                                                                 |
+| 02/12 | [Arthur Christmas](#0212-arthur-christmas)                                                           |
+| 09/12 | [Gremlins](#0912-gremlins)                                                                           |
+| 13/01 | [Kingsman](#1301-kingsman)                                                                           |
+| 20/01 | [Sing Street](#2001-sing-street)                                                                     |
+| 27/01 | [Spy Kids 2](#2701-spy-kids-2)                                                                       |
+| 03/02 | [Singh is Kinng](#0302-singh-is-kinng)                                                               |
+| 10/02 | [Scooby-Doo](#1002-scooby-doo)                                                                       |
+| 17/02 | [Ex Machina](#1702-ex-machina)                                                                       |
+| 24/02 | [Back to the Future](#2402-back-to-the-future)                                                       |
+| 03/03 | [Slumdog Millionaire](#0303-slumdog-millionaire)                                                     |
+| 10/03 | [The Princess Diaries](#1003-the-princess-diaries)                                                   |
+| 17/03 | [Twilight](#1703-twilight)                                                                           |
+| 24/03 | [The Wolf of Wall Street](#2403-the-wolf-of-wall-street)                                             |
 
 ## 07/10: Starter for Ten
 ![Starter for Ten](/images/screenings/starter-for-ten/1.jpg){:class="post-img"}

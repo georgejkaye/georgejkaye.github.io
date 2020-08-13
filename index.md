@@ -1,5 +1,6 @@
 ---
-layout: page2
+layout: page
+tagline: Hello world!
 title: Home
 ---
 

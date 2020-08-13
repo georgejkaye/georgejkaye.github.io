@@ -1,6 +1,7 @@
 ---
-layout: page2
+layout: page
 title: Intro to Ocaml
+tagline: An introduction to a functional language
 permalink: /ocaml
 ---
 
