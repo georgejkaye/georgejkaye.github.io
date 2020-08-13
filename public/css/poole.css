@@ -113,7 +113,8 @@ h3 {
   font-size: 1.5rem;
 }
 
-h2::before {
+h2::before,
+h3::before {
   display: block;
   content: " ";
   margin-top: -85px;
