@@ -56,11 +56,7 @@ html {
   background-color: #282A36
 }
 
-@media (min-width: 38em) {
-  html {
-    font-size: 20px;
-  }
-}
+
 
 body {
   color: #d6d3cd;
@@ -91,6 +87,7 @@ h3,
 h4,
 h5,
 h6 {
+  text-align: center;
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
@@ -115,6 +112,16 @@ h3 {
   margin-top: 1.0rem;
   font-size: 1.5rem;
 }
+
+h2::before {
+  display: block;
+  content: " ";
+  margin-top: -85px;
+  height: 85px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 
 h4,
 h5,
@@ -409,6 +416,7 @@ tbody tr:nth-child(even) td {
   margin-top: -.5rem;
   margin-bottom: 1rem;
   color: #9a9a9a;
+  text-align: center;
 }
 
 /* Related posts */
@@ -533,4 +541,9 @@ a.pagination-item:hover {
   border-radius: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.top-link {
+  text-align: center;
+  font-weight: bold;
 }

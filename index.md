@@ -1,5 +1,6 @@
 ---
-layout: page2
+layout: page
+tagline: Hello world!
 title: Home
 ---
 
@@ -28,6 +29,7 @@ Here are some [pictures](/pictures) of me!
 ## Current work
 
 ![fadd.svg](images/circuit.svg)
+{: style="text-align: center" }
 
 Currently my work involves defining hypergraphs and showing that these hypergraphs can be used to model a traced symmetric monoidal category. Eventually this will lead to developing a sound and complete diagrammatic semantics for digital circuits.
 
