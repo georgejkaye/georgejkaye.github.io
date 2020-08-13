@@ -22,8 +22,8 @@ author:
   name:           'George Kaye'            
   avatar:         /images/me/me.jpg
 
-paginate:         5
-paginate_path:    "/blog/page:num/"
+#paginate:         0
+#paginate_path:    "/blog/page:num/"
 
 # Custom vars
 version:          2.1.0
@@ -33,7 +33,7 @@ misc:             /misc/
 
 # Gems
 plugins: 
-  - jekyll-paginate
+  #- jekyll-paginate
   - jekyll-gist
   - jekyll-github-metadata
   - jekyll-seo-tag
