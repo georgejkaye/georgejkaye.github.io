@@ -546,4 +546,5 @@ a.pagination-item:hover {
 .top-link {
   text-align: center;
   font-weight: bold;
+  margin: 25px;
 }
