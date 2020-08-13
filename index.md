@@ -18,6 +18,14 @@ I occasionally take photos of pretty things and put them on [Instagram](https://
 
 Here are some [pictures](/pictures) of me!
 
+### Contact me
+
+**Personal:** georgejkaye at gmail.com
+
+**University:** g.j.kaye at cs.bham.ac.uk
+
+**Where to find me:** ~~Office 244 (Desk J), School of Computer Science, University of Birmingham~~ My house, under lockdown!
+
 ## Interests
 
 * Programming languages
@@ -54,18 +62,13 @@ Currently my work involves defining hypergraphs and showing that these hypergrap
 
 ## Teaching
 
-### 2019-20
+### Spring 2020
 
-* **Spring 2020:** [Compilers & Languages](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/) \[[OCaml tutorial](/ocaml)\]
-* **Autumn 2019:** [Mathematical Foundations of Computer Science](https://www.cs.bham.ac.uk/internal/modules/2019/06-30181/)
+* [Compilers & Languages](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/), University of Birmingham, teaching assistant \[[OCaml tutorial](/ocaml)\]
 
-## Contact me
+### Autumn 2019
 
-**Personal:** georgejkaye at gmail.com
-
-**University:** g.j.kaye at cs.bham.ac.uk
-
-**Where to find me:** ~~Office 244 (Desk J), School of Computer Science, University of Birmingham~~ My house, under lockdown!
+* [Mathematical Foundations of Computer Science](https://www.cs.bham.ac.uk/internal/modules/2019/06-30181/), University of Birmingham, teaching assistant
 
 ## Misc
 
