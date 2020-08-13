@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+{% include nav.html %}
+
+<div class="spacer">
+  &nbsp;
+</div>
+
 {% include head.html %}
 
 <body>
 
-  {% include sidebar.html %}
 
-  <div id="top" class="content container">
+  {% include header.html %}
+
+  <div id="text" class="content container">
     {{ content }}
   </div>
 
