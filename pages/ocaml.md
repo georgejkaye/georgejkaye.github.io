@@ -30,13 +30,13 @@ Once you have installed the subsystem and set it up as specified in the link abo
 * `sudo apt install make m4 opam ocaml`
 * `opam install utop ocamlbuild`
 
-You will be prompted to input the password you created when installing the Linux Subsytem. During installation you may receive additional prompts for input - you should generally type 'y' (for yes). 
+You will be prompted to input the password you created when installing the Linux Subsytem. During installation you may receive additional prompts for input - you should generally type 'y' (for yes).
 
 You should now be able to access the OCaml toplevel with `utop`, as above.
 
 ### Running OCaml
 
-A majority of the code in this tutorial can be run in the *OCaml *toplevel**. You can access this by typing `ocaml` or `utop` (if it's installed). You can type things directly into the toplevel or paste functions from your text editor. If you keep your code in a file, you can type `#use file.ml` into the toplevel and the entire contents of the file will be pasted in (providing it all compiles!).
+A majority of the code in this tutorial can be run in the *OCaml toplevel*. You can access this by typing `ocaml` or `utop` (if it's installed). You can type things directly into the toplevel or paste functions from your text editor. If you keep your code in a file, you can type `#use file.ml` into the toplevel and the entire contents of the file will be pasted in (providing it all compiles!).
 
 When you actually want to compile a file to an executable, you should use the command `ocamlbuild -use-ocamlfind file.native`. OCamlfind is a very powerful tool that will automatically resolve dependencies for you, regardless of how many modules you use! More on modules later.
 
@@ -54,7 +54,7 @@ However, the beauty of OCaml's type system means we don't have to explicitly dec
 
 ## Evaluating expressions in the toplevel
 
-To play around with this, we'll experiment in the OCaml toplevel. Bring it up by typing `ocaml` or `utop` into your terminal.  We can now evaluate expressions, terminated by a double semicolon (;;). In this tutorial, any line that can be entered into the toplevel will be prefixed with a `#`.
+To play around with this, we'll experiment in the OCaml toplevel. Bring it up by typing `ocaml` or `utop` into your terminal.  We can now evaluate expressions, terminated by a double semicolon `;;`. In this tutorial, any line that can be entered into the toplevel will be prefixed with a `#`.
 
 ```ocaml
 # 1
@@ -259,7 +259,7 @@ What is this function saying? It matches an `int` against two cases. If it is eq
 
 Also note the `rec` keyword at the start of the function. This indicates to OCaml that we will be using this function again inside its definition, so it needs to keep track of it. Otherwise we will just receive a `Unbound value` error.
 
-Another example of a polymorphic function is a function that computes the maximum of two positive numbers recursively, by using the fact that if one number is equal to zero, the other must either be greater or equal to it.
+Another example of a recursive function is a function that computes the maximum of two positive numbers recursively, by using the fact that if one number is equal to zero, the other must either be greater or equal to it.
 
 ```ocaml
 # let rec max x y = match (x, y) with
