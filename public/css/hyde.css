@@ -166,6 +166,7 @@ a.sidebar-nav-item:focus {
 }
 
 .tagline {
+  font-size: 18pt;
   text-align: center;
   margin-top: 30px;
 }
@@ -174,15 +175,29 @@ a.sidebar-nav-item:focus {
   vertical-align: middle;
 }
 
+@media (max-width: 48em) {
+  .title {
+    font-size: 36pt;
+  }
+
+  .tagline {
+    font-size: 18pt;
+  }
+}
+
+
+
+
 .nav-bar {
   text-align: center;
   display: flex;
   position: fixed;
   z-index: 999;
   background-color: #383a59;
+  border-bottom: 2px solid #282a36;
   height: 75px;
   width: 100%;
-  border-bottom: 2px solid #282a36;
+
   padding-top: 10px;
 }
 
@@ -237,6 +252,19 @@ a.sidebar-nav-item:focus {
   margin-right: 10px;
 }
 
+.mobile-nav {
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: #383a59;
+  border-bottom: 2px solid #282a36;
+  flex-direction: row-reverse;
+}
+
+
 .right-nav {
   display: flex;
   flex: 1;
@@ -252,19 +280,25 @@ a.sidebar-nav-item:focus {
     display: none;
   }
 
-
   .right-nav {
     display: none;
   }
 }
 
+@media (min-width:52em) {
+  .mobile-site-image {
+    display: none;
+  }
 
-
-
+  .mobile-nav {
+    display: none;
+  }
+}
 
 .nav-link {
   margin-left: 10px;
   margin-right: 10px;
+  font-weight: bold;
 }
 
 /* Container
@@ -281,10 +315,14 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 32em) {
   .content {
-    max-width: 36em;
+    max-width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.centre-image {
+  text-align: center;
 }
 
 

@@ -8,6 +8,8 @@
     </a>
   </div>
   <div class="middle-nav">
+    <div class="mobile-site-image"><a href={{ "/" | relative_url }}><img class="nav-site-image"
+          src="{{ site.author.avatar }}" alt="me"></a></div>
     <div class="small-page-title">
       <a href="#top">
         {% if page.url == "/" | relative_url %}
@@ -21,4 +23,11 @@
     <div class="nav-link"><a href="https://github.com/georgejkaye">GitHub</a></div>
     <div class="nav-link"><a href="/blog">Blog</a></div>
   </div>
+</div>
+<div class="spacer">
+  &nbsp;
+</div>
+<div class="mobile-nav">
+  <div class="nav-link"><a href="https://github.com/georgejkaye">GitHub</a></div>
+  <div class="nav-link"><a href="/blog">Blog</a></div>
 </div>
