@@ -1,12 +1,19 @@
 <div class="nav-bar">
   <div class="left-nav">
-    <div>Home</div>
-    <div>Other</div>
-  </div>
-  <div class="title">
+    <img class="nav-site-image" src="{{ site.author.avatar }}" alt="me">
     <div class="small-title"><a href={{ "/" | relative_url }}>George Kaye</a></div>
   </div>
+  <div class="middle-nav">
+    <div class="small-page-title">
+      <a href="#top">
+        {% if page.url == "/" | relative_url %}
+        Home
+        {% else %}
+        {{ page.title }}
+        {% endif %}
+      </a></div>
+  </div>
   <div class="right-nav">
-
+    <div class="nav-link"><a href="https://github.com/georgejkaye">GitHub</a></div>
   </div>
 </div>
