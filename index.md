@@ -69,4 +69,4 @@ Currently my work involves defining hypergraphs and showing that these hypergrap
 
 ## Misc
 
-* [Train Simulator scenarios](/trains/scenarios)
+* [Train Simulator scenarios](/trains)
