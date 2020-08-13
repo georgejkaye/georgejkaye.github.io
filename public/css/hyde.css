@@ -162,6 +162,7 @@ a.sidebar-nav-item:focus {
   margin-left: 32px;
   line-height: 1;
   margin-top: 2%;
+  color: #f2f2f2;
 }
 
 .tagline {

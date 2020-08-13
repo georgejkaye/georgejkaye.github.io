@@ -413,6 +413,7 @@ tbody tr:nth-child(even) td {
   margin-bottom: 1rem;
   color: #9a9a9a;
   text-align: center;
+  font-weight: bold;
 }
 
 /* Related posts */

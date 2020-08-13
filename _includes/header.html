@@ -2,13 +2,13 @@
   <div class="container top-sticky">
     <div class="top-bar">
       <img class="site-image" src="{{ site.author.avatar }}" alt="me" width="100px" height="100px">
-      <span class="title"><a href="{{ "/" | relative_url }}">
-          {% if page.url == "/" | relative_url %}
-          {{ site.title }}
-          {% else %}
-          {{ page.title }}
-          {% endif %}
-        </a></span>
+      <span class="title">
+        {% if page.url == "/" | relative_url %}
+        {{ site.title }}
+        {% else %}
+        {{ page.title }}
+        {% endif %}
+      </span>
     </div>
 
     <div class="tagline">{{ page.tagline }}</div>
