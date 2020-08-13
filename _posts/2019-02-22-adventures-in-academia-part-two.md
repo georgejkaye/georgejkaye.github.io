@@ -6,8 +6,6 @@ alttext: T boys on tour
 tagline: Todd has recently started his PhD, whereas I am still working hard in the final year of my MSci. Together we eat soup, visit pubs and struggle with second-year functional programming assignments. This time we set out on an excursion to the Country Girl, with the surprise addition of Owen!
 ---
 
-*Todd has recently started his PhD, whereas I am still working hard in the final year of my MSci. Together we eat soup, visit pubs and struggle with second-year functional programming assignments.*
-
 Many months had passed since the last Adventure in Academia. A complex timetable mess meant that 't boys' had been unable to gather in a non-soup environment! But that was all about to change, as a date was set and the boys assembled. Our destination? The Country Girl.
 
 We met up in the Computer Science atrium, me coming from a lecture taught by Dave Parker and Todd coming from a tutorial for a module taught by Dave Parker. But suddenly a third ranger appeared - it was Owen! He had escaped the clutches of both the security lot and Ruth, and would join us on our adventure!
@@ -27,7 +25,6 @@ It was time for F N C! In a controversial and unprecedented move, all three atte
 When the meals I arrived I realised that I had made a fatal error - I hadn't read the menu properly and got garden peas rather than the clearly superior option of mushy peas! What's more, Owen's portion size turned out to be exactly the same size as ours - what great value! But there was something even more astonishing about the meals. As always, we were supplied with a wedge of lemon. But these were no ordinary wedges. They were legendary chargrilled wedges. Why were they chargrilled? Nobody knew! It was insane!
 
 ![The lemon](/images/adventures/002/3.jpg)
-
 *The lemon that caused a commotion*
 
 Alas, the meal soon concluded and we had to leave. But there was one more surprise in store... As we were packing up Ed message me asking if I wanted to watch Arsenal's clash with the Belarusian titans BATE Borisov at the pub that evening! Surely I couldn't go to the pub twice in one day?

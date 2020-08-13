@@ -6,8 +6,6 @@ alttext: Bad Times at the El Royale
 tagline: On an otherwise uneventful Wednesday, Todd dragged me to see a film about a hotel. I was immediately suspicious that this might actually be a fabled 'edgy film'. Was I right to be concerned or would this actually be a fantastic feature length episode of Four in a Bed?
 ---
 
-*On an otherwise uneventful Wednesday, Todd dragged me to see a film about a hotel. I was immediately suspicious that this might actually be a fabled 'edgy film'. Was I right to be concerned or would this actually be a fantastic feature length episode of Four in a Bed?*
-
 I had planned a peaceful night in on Wednesday 17th, but Todd had other plans. Apparently there was this new film out called 'Bad Times at the El Royale' and he was going to see it. Over soup in Sloman he extended an invitation and I proceeded to not commit for a good 24+ hours, causing great irritation to Todd and great amusement for me. Eventually I caved when a trip to the new Nandos in Selly was suggested, as you can't really turn down a Nandos.
 
 ![Nandos](/images/screenings/bad-times-at-the-el-royale/2.jpg){:class="post-img"}
@@ -36,7 +34,7 @@ While it took a little while to get going, once it started to pile on the intrig
 ![Thor shows up](/images/screenings/bad-times-at-the-el-royale/5.jpg){:class="post-img"}
 *It's Thor! What's he doing here?*
 
-As the film approaches its climax it starts to get a bit weird, and then Chris Hemsworth shows up out of nowhere playing a guy called Billie Jean or something. Although he's in a lot of the promotional material, I had forgotten that he was in the film so was genuinely surprised to see him rock up. As is tradition, he doesn't seem to wear many clothes, and gets naked in his first scene! He plays a strange hippie cult leader, and turns out to be the big bad of the film. He's not a very nice man, and kills some people! The reason he's there is because the Fifty Shades lady ran away from his cult, taking her brainwashed sister with her. Unfortunately the brainwashing was so good that the sister told Billie Jean where they had gone! 
+As the film approaches its climax it starts to get a bit weird, and then Chris Hemsworth shows up out of nowhere playing a guy called Billie Jean or something. Although he's in a lot of the promotional material, I had forgotten that he was in the film so was genuinely surprised to see him rock up. As is tradition, he doesn't seem to wear many clothes, and gets naked in his first scene! He plays a strange hippie cult leader, and turns out to be the big bad of the film. He's not a very nice man, and kills some people! The reason he's there is because the Fifty Shades lady ran away from his cult, taking her brainwashed sister with her. Unfortunately the brainwashing was so good that the sister told Billie Jean where they had gone!
 
 Pretty much everyone dies by the end, so the title of the film is fairly apt. I would not recommend the El Royale on TripAdvisor! The film, on the other hand, is definitely deserving of a recommendation! It wasn't as edgy as I thought it would be - while the plot isn't entirely straightforward (there are flashbacks peppered through, sometimes for no reason), it's not too artsy and flashbacks are in right now anyway. One downside I feel is that the film might lack some replay value once you know all of the mysteries. However it might be one of those films where you notice new things each time you watch it - as I've only watched it once I can't confirm or deny this.
 
@@ -45,5 +43,6 @@ As always, there was a large wait at Five Ways because the train was delayed - a
 **Bad Times at the El Royale gets 4/5 Yayes from Kaye!**
 
 #### Footnotes
+
 1. This was later revoked and the event will now go ahead!
 2. I'm not sure this is actually explained, it might have been the 'management'

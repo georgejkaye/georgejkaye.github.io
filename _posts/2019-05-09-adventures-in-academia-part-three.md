@@ -6,8 +6,6 @@ alttext: Some flapjacks
 tagline: Todd and Owen are in their first year of their PhDs, whereas I am still working hard in the final year of my MSci. Together we eat soup, visit pubs and struggle with second-year functional programming assignments. This time an appointment with soup evolved into yet another exciting adventure!
 ---
 
-*Todd and Owen are in their first year of their PhDs, whereas I am still working hard in the final year of my MSci. Together we eat soup, visit pubs and struggle with second-year functional programming assignments.*
-
 ***The following takes place between the hours of 12:00 and 16:00.***
 
 It was a Wednesday! And it was the Wednesday after my first exam of fourth year, which had gone suspiciously smoothly - no doubt I had got literally everything wrong and failed miserably.

@@ -9,7 +9,7 @@ type: project
 
 For a totally ordered set $X$ we can write its order as $\torder{X}$. The $y$th element of a totally ordered set $X$ is denoted as $\proj{y} \circ X$. When considering two totally ordered sets $X$ and $Y$ with total orders $\torder{X}$ and $\torder{Y}$, we write as $\torder{X} \comborder \torder{Y}$ a total order on their disjoint union in which all elements of $X$ are less than elements in $Y$:
 
-$$\{(x, y) | (x, y \in X \wedge x < y) \lor (x, y \in Y \wedge x < y) \lor (x \in X \wedge y \in Y)\}$$ 
+$$\{(x, y) | (x, y \in X \wedge x < y) \lor (x, y \in Y \wedge x < y) \lor (x \in X \wedge y \in Y)\}$$
 
 For example if $X = \{\mf{a},\mf{b}\}$, $\torder{X} = \mf{a} < \mf{b}$ and $Y = \{\mf{c},\mf{d}\}$, $\torder{Y} = \mf{c} < \mf{d}$ then $X \comborder Y = \mf{a} < \mf{b} < \mf{c} < \mf{d}$.
 

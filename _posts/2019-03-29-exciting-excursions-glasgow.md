@@ -6,8 +6,6 @@ alttext: Exciting Excursions - Glasgow
 tagline: I stumbled across some cheap advance tickets to Carlisle but strikes meant I ended up going all the way to Glasgow. Surely the rest of my trip would pass without incident?
 ---
 
-*I stumbled across some cheap advance tickets to Carlisle but strikes meant I ended up going all the way to Glasgow. Surely the rest of my trip would pass without incident?*
-
 One evening while engaging in some 'light' drinking with friends, I decided to check out some train fares (this is not deviant behaviour). To my surprise, I found that you could get to Carlisle via the legendary [Settle-Carlisle line](https://en.wikipedia.org/wiki/Settle%E2%80%93Carlisle_line) and back again for the low low price of £29! Eager to experience this important train pilgrimage, I snapped up the tickets and looked forwards to ticking some more stations off my list! Alas, all would not be so straightforward.
 
 A couple of days later, I discovered to my horror that Northern didn't actually run that many trains on Saturdays (something to do with a strike). This threw all my plans into turmoil - rail replacement buses wouldn't do! So I came up with a cunning plan and exploited ticket acceptance and my own hard-earned money to extend my trip up to Glasgow instead. This seemed like the most logical course of action to take.
