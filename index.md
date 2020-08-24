@@ -10,13 +10,16 @@ I am a member of the [Theory Group](https://www.cs.bham.ac.uk/research/groupings
 
 ## About me
 
-I play the piano, enjoy train journeys and walks down canals, and (unfortunately) support Arsenal.
+My primary research interests are in graphical calculi for compositional systems and the lambda calculus using monoidal categories, and reasoning about these structures diagrammatically and by using graph rewriting techniques. I am also interested in general programming languages and compilers, and love a good visualiser.
 
-I'm also currently School of Computer Science [Cookie Break](https://www.cs.bham.ac.uk/internal/research_students/cookiebreaks/) admin!
+![fadd.svg](images/circuit.svg)
+{: style="text-align: center" }
 
-I occasionally take photos of pretty things and put them on [Instagram](https://www.instagram.com/georgejkaye/).
+Currently I am working on a diagrammatic semantics for digital circuits, motivated by the work of Ghica and Jung \[[1](https://doi.org/10.1109/FMCAD.2016.7886659)\] \[[2](https://doi.org/10.4230/LIPIcs.CSL.2017.24)\]. I am using a variant of [hypergraphs](https://en.wikipedia.org/wiki/Hypergraphs) that are a sound and complete calculus for symmetric traced monoidal categories. The ultimate aim of this project is to define an automatic rewriting system for these hypergraphs that we can use as an effective and *efficient* operational semantics for digital circuits.
 
-Here are some [pictures](/pictures) of me!
+When I'm not researching, I play the piano and go on adventures usually involving trains, canals or both. I occasionally take photos of pretty things and put them on [Instagram](https://www.instagram.com/georgejkaye/). If you want something less pretty, here are some [pictures](/pictures) of me!
+
+I'm currently School of Computer Science [Cookie Break](https://www.cs.bham.ac.uk/internal/research_students/cookiebreaks/) admin! The Cookie Break is the School's longest running social event and it's an honour to be in charge of such an esteemed tradition.
 
 ### Contact me
 
@@ -25,21 +28,6 @@ Here are some [pictures](/pictures) of me!
 **University:** g.j.kaye at cs.bham.ac.uk
 
 **Where to find me:** ~~Office 244 (Desk J), School of Computer Science, University of Birmingham~~ My house, under lockdown!
-
-## Interests
-
-* Programming languages
-* The lambda calculus
-* Diagrams
-* Compilers
-* Reasoning
-
-## Current work
-
-![fadd.svg](images/circuit.svg)
-{: style="text-align: center" }
-
-Currently my work involves defining hypergraphs and showing that these hypergraphs can be used to model a traced symmetric monoidal category. Eventually this will lead to developing a sound and complete diagrammatic semantics for digital circuits.
 
 ## Projects
 
@@ -56,20 +44,44 @@ Currently my work involves defining hypergraphs and showing that these hypergrap
 
 ## Visits
 
-* [**MGS Christmas Seminar**](https://staffwww.dcs.shef.ac.uk/people/G.Struth/mgs_xmas19.html) (December 18, 2019)
-* [**SYCO 6, Leicester**](http://events.cs.bham.ac.uk/syco/6/) (December 16-17, 2019)
-* [**CLA 2019, Versailles**](http://cla.tcs.uj.edu.pl/) (July 1-2, 2019)
+~~[**SYCO 7, Estonia**](http://events.cs.bham.ac.uk/syco/7/)~~
+{: class="list-item-heading" }
+
+~~March 30-31, 2020~~
+{: class="list-item" }
+
+[**MGS Christmas Seminar**](https://staffwww.dcs.shef.ac.uk/people/G.Struth/mgs_xmas19.html)
+{: class="list-item-heading" }
+
+December 18, 2019
+{: class="list-item" }
+
+[**SYCO 6, Leicester**](http://events.cs.bham.ac.uk/syco/6/)
+{: class="list-item-heading" }
+
+December 16-17, 2019
+{: class="list-item" }
+
+[**CLA 2019, Versailles**](http://cla.tcs.uj.edu.pl/)
+{: class="list-item-heading" }
+
+July 1-2, 2019
+{: class="list-item" }
 
 ## Teaching
 
 ### Spring 2020
 
-* [Compilers & Languages](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/), University of Birmingham, teaching assistant \[[OCaml tutorial](/ocaml)\]
+[**Compilers & Languages**](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/)
+{: class="list-item-heading" }
+
+University of Birmingham, teaching assistant \[[OCaml tutorial](/ocaml)\]
+{: class="list-item" }
 
 ### Autumn 2019
 
-* [Mathematical Foundations of Computer Science](https://www.cs.bham.ac.uk/internal/modules/2019/06-30181/), University of Birmingham, teaching assistant
+[**Mathematical Foundations of Computer Science**](https://www.cs.bham.ac.uk/internal/modules/2019/06-30181/)
+{: class="list-item-heading" }
 
-## Misc
-
-* [Train Simulator scenarios](/trains)
+University of Birmingham, teaching assistant
+{: class="list-item" }

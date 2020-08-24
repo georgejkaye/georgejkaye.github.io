@@ -145,7 +145,7 @@ a.sidebar-nav-item:focus {
   width: 100%;
   z-index: 999;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2rem 0rem;
   color: rgba(255, 255, 255, .5);
   background-color: #383a59;
 }
@@ -154,6 +154,7 @@ a.sidebar-nav-item:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 40px;
 }
 
 .title {
@@ -161,14 +162,13 @@ a.sidebar-nav-item:focus {
   font-weight: bold;
   margin-left: 32px;
   line-height: 1;
-  margin-top: 2%;
+  margin-top: 12px;
   color: #f2f2f2;
 }
 
 .tagline {
   font-size: 18pt;
   text-align: center;
-  margin-top: 30px;
 }
 
 .site-image {
@@ -197,8 +197,8 @@ a.sidebar-nav-item:focus {
   border-bottom: 2px solid #282a36;
   height: 75px;
   width: 100%;
-
   padding-top: 10px;
+  opacity: 100%;
 }
 
 .left-nav {
@@ -274,6 +274,20 @@ a.sidebar-nav-item:focus {
   font-weight: bold;
 }
 
+
+.top-nav {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 10px;
+  border-bottom: 2px solid #282a36;
+  border-top: 2px solid #282a36;
+  padding: 10px 0px 10px 0px;
+}
+
 @media (max-width: 52em) {
 
   .left-nav {
@@ -326,29 +340,14 @@ a.sidebar-nav-item:focus {
 }
 
 
-/*
- * Reverse layout
- *
- * Flip the orientation of the page by placing the `.sidebar` on the right.
- */
-
-@media (min-width: 48em) {
-  .layout-reverse .sidebar {
-    left: auto;
-    right: 0;
-  }
-
-  .layout-reverse .content {
-    margin-left: 2rem;
-    margin-right: 20rem;
-  }
+/* List items */
+.list-item-heading {
+  margin: 0px;
+  text-align: center;
 }
 
-@media (min-width: 64em) {
-  .layout-reverse .content {
-    margin-left: 4rem;
-    margin-right: 22rem;
-  }
+.list-item {
+  text-align: center;
 }
 
 
