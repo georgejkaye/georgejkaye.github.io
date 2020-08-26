@@ -44,6 +44,13 @@ I'm currently School of Computer Science [Cookie Break](https://www.cs.bham.ac.u
 
 ## Visits
 
+[**ACT 2020, The internet**](https://act2020.mit.edu/)
+{: class="list-item-heading" }
+
+~~March 30-31, 2020~~
+{: class="list-item" }
+
+
 ~~[**SYCO 7, Estonia**](http://events.cs.bham.ac.uk/syco/7/)~~
 {: class="list-item-heading" }
 
