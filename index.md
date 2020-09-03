@@ -40,7 +40,7 @@ I'm currently School of Computer Science [Cookie Break](https://www.cs.bham.ac.u
 ## Talks
 
 **A visualiser for linear lambda-terms as rooted 3-valent maps**  
-[CLA 2019](http://cla.tcs.uj.edu.pl/) *July 1-2, 2019* \[[Slides](/pages/lambda-visualiser/docs/CLA'2019 - A visualiser for linear lambda-terms as rooted 3-valent maps.pdf)\]
+[CLA 2019](http://cla.tcs.uj.edu.pl/history/2019/) *July 1-2, 2019* \[[Slides](/pages/lambda-visualiser/docs/CLA'2019 - A visualiser for linear lambda-terms as rooted 3-valent maps.pdf)\]
 
 ## Visits
 
@@ -69,7 +69,7 @@ December 18, 2019
 December 16-17, 2019
 {: class="list-item" }
 
-[**CLA 2019, Versailles**](http://cla.tcs.uj.edu.pl/)
+[**CLA 2019, Versailles**](http://cla.tcs.uj.edu.pl/history/2019/)
 {: class="list-item-heading" }
 
 July 1-2, 2019
