@@ -47,7 +47,7 @@ I'm currently School of Computer Science [Cookie Break](https://www.cs.bham.ac.u
 [**ACT 2020, The internet**](https://act2020.mit.edu/)
 {: class="list-item-heading" }
 
-~~March 30-31, 2020~~
+July 6-10, 2020
 {: class="list-item" }
 
 
