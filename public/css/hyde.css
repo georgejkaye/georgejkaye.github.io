@@ -14,9 +14,145 @@ html {
   }
 }
 
-/* Title bar */
+/* Nav bar 
+ * This is the bar that contains the site name, page name and links
+ */
 
-.title-bar {
+
+/* The whole nav bar */
+
+.nav-bar {
+  text-align: center;
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  background-color: #383a59;
+  border-bottom: 2px solid #282a36;
+  height: 75px;
+  width: 100%;
+  padding-top: 10px;
+  opacity: 100%;
+}
+
+.nav-link {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Left space, for site name and my face 
+ * Doesn't get displayed at <48em
+ */
+
+.left-nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.nav-site-image {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.nav-bar-title {
+  font-size: 22pt;
+  font-weight: bold;
+  color: #50fa7b;
+  line-height: 1;
+  text-align: center;
+}
+
+
+@media (max-width: 48em) {
+
+  .left-nav {
+    display: none;
+  }
+
+}
+
+.site-name {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Middle space for page title
+ */
+
+@media (max-width: 48em) {
+  .middle-nav {
+    display: none;
+  }
+}
+
+.middle-nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar-page-title a {
+  color: #ff79c6;
+  margin: 10px;
+  font-size: 22pt;
+  font-weight: bold;
+}
+
+/* Right nav for the links */
+
+
+.right-nav {
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-right: 5px;
+}
+
+@media (max-width: 48em) {
+  .right-nav {
+    display: none;
+  }
+}
+
+.spacer {
+  height: 75px;
+}
+
+/* Mobile stuff, the links move down to a new bar and my face appears in the middle */
+
+.mobile-nav {
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: #383a59;
+  border-bottom: 2px solid #282a36;
+  flex-direction: row-reverse;
+}
+
+@media (min-width:48em) {
+  .mobile-site-image {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+}
+
+
+
+/* Header bar */
+
+.header-bar {
   width: 100%;
   z-index: 999;
   text-align: center;
@@ -25,14 +161,16 @@ html {
   background-color: #383a59;
 }
 
-.top-bar {
+/* Title bar, containing my face and the page title */
+
+.title-bar {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 1.5em;
 }
 
-.top-bar-item {
+.title-bar-item {
   display: flex;
   flex-basis: auto;
   align-self: center;
@@ -45,11 +183,6 @@ html {
   line-height: 1;
   margin-top: 12px;
   color: #f2f2f2;
-}
-
-.tagline {
-  font-size: 18pt;
-  text-align: center;
 }
 
 .site-image {
@@ -66,8 +199,12 @@ html {
 
 @media (max-width: 32em) {
 
-  .top-bar {
+  .title-bar {
     padding: 1em;
+  }
+
+  .title-bar-item {
+    margin: 0;
   }
 
   .site-image {
@@ -75,133 +212,14 @@ html {
   }
 }
 
+/* Tagline */
 
-.nav-bar {
-  text-align: center;
-  display: flex;
-  position: fixed;
-  z-index: 999;
-  background-color: #383a59;
-  border-bottom: 2px solid #282a36;
-  height: 75px;
-  width: 100%;
-  padding-top: 10px;
-  opacity: 100%;
-}
-
-.left-nav {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-}
-
-.site-name {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-@media (max-width: 48em) {
-  .middle-nav {
-    display: none;
-  }
-}
-
-.middle-nav {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.small-title {
-  font-size: 22pt;
-  font-weight: bold;
-  color: #50fa7b;
-  line-height: 1;
+.tagline {
+  font-size: 18pt;
   text-align: center;
 }
 
-.small-page-title a {
-  color: #ff79c6;
-  margin: 10px;
-  font-size: 22pt;
-  font-weight: bold;
-}
 
-.spacer {
-  height: 75px;
-}
-
-.nav-site-image {
-  height: 50px;
-  width: 50px;
-  margin-right: 10px;
-}
-
-.mobile-nav {
-  height: 50px;
-  font-size: 20px;
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  background-color: #383a59;
-  border-bottom: 2px solid #282a36;
-  flex-direction: row-reverse;
-}
-
-
-.right-nav {
-  display: flex;
-  flex: 1;
-  flex-direction: row-reverse;
-  align-items: center;
-  margin-right: 5px;
-  font-weight: bold;
-}
-
-
-.top-nav {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  margin-top: 10px;
-  border-bottom: 2px solid #282a36;
-  border-top: 2px solid #282a36;
-  padding: 10px 0px 10px 0px;
-}
-
-@media (max-width: 48em) {
-
-  .left-nav {
-    display: none;
-  }
-
-  .right-nav {
-    display: none;
-  }
-}
-
-@media (min-width:48em) {
-  .mobile-site-image {
-    display: none;
-  }
-
-  .mobile-nav {
-    display: none;
-  }
-}
-
-.nav-link {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-weight: bold;
-}
 
 /* Container */
 

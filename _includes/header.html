@@ -1,12 +1,12 @@
-<div class="title-bar">
-  <div class="mobile-image-bar">
+<div class="header-bar">
+  <div class="mobile-title-image-bar">
     <img class="mobile-image" src="{{ site.author.avatar }}" alt="me" width="100px" height="100px">
   </div>
-  <div class="top-bar">
-    <div class="top-bar-item">
+  <div class="title-bar">
+    <div class="title-bar-item">
       <img class="site-image" src="{{ site.author.avatar }}" alt="me" width="100px" height="100px">
     </div>
-    <div class="top-bar-item title">
+    <div class="title-bar-item title">
       {% if page.url == "/" | relative_url %}
       {{ site.title }}
       {% else %}
