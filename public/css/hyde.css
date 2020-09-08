@@ -114,21 +114,6 @@ a.sidebar-nav-item:focus {
   }
 }
 
-/* Sticky sidebar
- *
- * Add the `sidebar-sticky` class to the sidebar's container to affix it the
- * contents to the bottom of the sidebar in tablets and up.
- */
-
-@media (min-width: 48em) {
-  .sidebar-sticky {
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-    left: 1rem;
-  }
-}
-
 /* Title bar */
 
 /*@media (min-width: 48em) {
@@ -154,13 +139,19 @@ a.sidebar-nav-item:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 40px;
+  padding-bottom: 1.5em;
+}
+
+.top-bar-item {
+  display: flex;
+  flex-basis: auto;
+  align-self: center;
 }
 
 .title {
-  font-size: 48pt;
+  font-size: 3.5em;
   font-weight: bold;
-  margin-left: 32px;
+  margin-left: 0.33em;
   line-height: 1;
   margin-top: 12px;
   color: #f2f2f2;
@@ -172,20 +163,27 @@ a.sidebar-nav-item:focus {
 }
 
 .site-image {
+  display: flex;
   vertical-align: middle;
+  max-width: 100%;
 }
 
-@media (max-width: 48em) {
-  .title {
-    font-size: 36pt;
-  }
-
-  .tagline {
-    font-size: 18pt;
+@media (min-width: 32em) {
+  .mobile-image {
+    display: none;
   }
 }
 
+@media (max-width: 32em) {
 
+  .top-bar {
+    padding: 1em;
+  }
+
+  .site-image {
+    display: none;
+  }
+}
 
 
 .nav-bar {
@@ -288,7 +286,7 @@ a.sidebar-nav-item:focus {
   padding: 10px 0px 10px 0px;
 }
 
-@media (max-width: 52em) {
+@media (max-width: 48em) {
 
   .left-nav {
     display: none;
@@ -299,7 +297,7 @@ a.sidebar-nav-item:focus {
   }
 }
 
-@media (min-width:52em) {
+@media (min-width:48em) {
   .mobile-site-image {
     display: none;
   }
