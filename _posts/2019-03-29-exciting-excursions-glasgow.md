@@ -59,4 +59,4 @@ I popped into Sainsbury's to get myself a meal deal and a bag of peanut M&M's, t
 
 When I got home there was lots of pizza in my kitchen! I asked if I could have any. I could not.
 
-*You can read this page in [shamblespost form](/shamblesposts.txt)!*
+*You can read this page in [shamblespost form](/pages/shamblesposts.txt)!*
