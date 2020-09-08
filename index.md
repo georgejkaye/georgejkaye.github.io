@@ -10,7 +10,7 @@ I am a member of the [Theory Group](https://www.cs.bham.ac.uk/research/groupings
 
 ## About me
 
-My primary research interests are in graphical calculi for compositional systems and the lambda calculus using monoidal categories, and reasoning about these structures diagrammatically and by using graph rewriting techniques. I am also interested in general programming languages and compilers, and love a good visualiser.
+My primary research interests are in graphical calculi for compositional systems and the lambda calculus using monoidal categories, and reasoning about these structures diagrammatically and by using graph rewriting techniques. I am also interested in general programming languages and compilers. On a more practical side, I enjoy making and experimenting with visualisers for various theoretical concepts.
 
 ![fadd.svg](images/circuit.svg)
 {: style="text-align: center" }
