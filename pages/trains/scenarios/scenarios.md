@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Trains
+title: Train Simulator Scenarios
 permalink: /trains
 tagline: The train now arriving at platform 1 is...
 type: misc
