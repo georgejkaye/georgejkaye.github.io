@@ -1,6 +1,6 @@
 ---
 layout: page
-tagline: Hello world!
+tagline: Welcome to my website!
 title: Home
 permalink: /
 ---
