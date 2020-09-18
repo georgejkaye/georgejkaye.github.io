@@ -24,7 +24,7 @@ My primary research interests are in graphical calculi for compositional systems
 
 Currently I am working on a diagrammatic semantics for digital circuits, motivated by the work of Ghica and Jung \[[1](https://doi.org/10.1109/FMCAD.2016.7886659)\] \[[2](https://doi.org/10.4230/LIPIcs.CSL.2017.24)\]. I am using a variant of [hypergraphs](https://en.wikipedia.org/wiki/Hypergraphs) that are a sound and complete calculus for symmetric traced monoidal categories. The ultimate aim of this project is to define an automatic rewriting system for these hypergraphs that we can use as an effective and *efficient* operational semantics for digital circuits.
 
-When I'm not researching, I play the piano and go on adventures usually involving trains, canals or both. I occasionally take photos of pretty things and put them on [Instagram](https://www.instagram.com/georgejkaye/). If you want something less pretty, here are some [pictures](/pictures) of me! I also have a variety of [Train simulator scenarios](/trains) on offer.
+When I'm not researching, I play the piano and go on adventures usually involving trains, canals or both. I occasionally take photos of pretty things and put them on [Instagram](https://www.instagram.com/georgejkaye/). If you want something less pretty, here are some [pictures](/pictures) of me!
 
 I'm currently School of Computer Science [Cookie Break](https://www.cs.bham.ac.uk/internal/research_students/cookiebreaks/) admin! The Cookie Break is the School's longest running social event and it's an honour to be in charge of such an esteemed tradition.
 
@@ -35,6 +35,8 @@ I'm currently School of Computer Science [Cookie Break](https://www.cs.bham.ac.u
 
 **A visualiser for linear lambda-terms as rooted 3-valent maps** \[[Page](\lambda-visualiser)\]  
 *A set of tools for the representation of lambda terms as their corresponding rooted maps. Developed for my MSci final year project under the supervision of [Noam Zeilberger](http://noamz.org/).*
+
+[Other projects](/projects){: class="top-link" }
 
 ## Talks
 
@@ -55,18 +57,15 @@ I'm currently School of Computer Science [Cookie Break](https://www.cs.bham.ac.u
 
 ## Teaching
 
-### Spring 2020
+### 2019-20
 
-[**Compilers & Languages**](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/)
-{: class="list-item-heading" }
+[**Compilers & Languages**](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/) University of Birmingham, teaching assistant \[[OCaml tutorial](/ocaml)\]
 
-University of Birmingham, teaching assistant \[[OCaml tutorial](/ocaml)\]
-{: class="list-item" }
+[**Mathematical Foundations of Computer Science**](https://www.cs.bham.ac.uk/internal/modules/2019/06-30181/) University of Birmingham, teaching assistant
 
-### Autumn 2019
+## Misc
 
-[**Mathematical Foundations of Computer Science**](https://www.cs.bham.ac.uk/internal/modules/2019/06-30181/)
-{: class="list-item-heading" }
+[**Pictures**](/pictures)
 
-University of Birmingham, teaching assistant
-{: class="list-item" }
+[**Train simulator scenarios**](/trains)
+
