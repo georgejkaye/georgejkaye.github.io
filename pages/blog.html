@@ -8,13 +8,16 @@ permalink: /blog/
 <div class="posts">
   {% for post in site.posts %}
   <article class="post">
-    <h2 class="post-title">
-      <a href="{{ site.basurl }}{{ post.url }}">
+    <a href="{{ site.basurl }}{{ post.url }}">
+      <span class="post-title">
         {{ post.title }}
-      </a>
-    </h2>
+      </span>
+      <span class="post-subtitle">{{ post.subtitle }}</span>
+      <span><time datetime="{{ post.date | date_to_xmlschema }}"
+          class="post-date">{{ post.date | date_to_string }}</time></span>
+    </a>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+
 
     {% if post.image %}
     <p>
@@ -25,7 +28,7 @@ permalink: /blog/
     {% endif %}
 
     <p>{{ post.tagline }}</p>
-    <h6><a href="{{ site.basurl }}{{ post.url }}">Read more</a></h6>
+    <a class="top-link" href="{{ site.basurl }}{{ post.url }}">Read more</a>
 
   </article>
   {% endfor %}

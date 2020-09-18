@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Exciting Excursions - Glasgow
+title: Exciting Excursions
+subtitle: Glasgow
 image: /images/excursions/glasgow/0.jpg
 alttext: Exciting Excursions - Glasgow
 tagline: I stumbled across some cheap advance tickets to Carlisle but strikes meant I ended up going all the way to Glasgow. Surely the rest of my trip would pass without incident?
