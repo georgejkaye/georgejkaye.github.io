@@ -14,6 +14,24 @@ html {
   }
 }
 
+/* Colours */
+
+.dark {
+  background-color: #282a36;
+}
+
+.light {
+  background-color: #383a59;
+}
+
+.green-text {
+  color: #50fa7b;
+}
+
+.pink-text {
+  color: #ff79c6
+}
+
 /* Nav bar 
  * This is the bar that contains the site name, page name and links
  */
@@ -22,12 +40,26 @@ html {
 /* The whole nav bar */
 
 .nav-bar {
-  text-align: center;
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   z-index: 999;
-  background-color: #383a59;
   border-bottom: 2px solid #282a36;
+}
+
+
+@media (min-width: 50em) {
+  .wide {
+    max-width: 50em;
+  }
+}
+
+.nav-bar-content {
+  text-align: center;
+  display: flex;
+
   height: 75px;
   width: 100%;
   padding-top: 10px;
@@ -60,7 +92,6 @@ html {
 .nav-bar-title {
   font-size: 22pt;
   font-weight: bold;
-  color: #50fa7b;
   line-height: 1;
   text-align: center;
 }
@@ -178,7 +209,6 @@ html {
 .title {
   font-size: 3.5em;
   font-weight: bold;
-  margin-left: 0.33em;
   line-height: 1;
   margin-top: 12px;
   color: #f2f2f2;
@@ -230,7 +260,6 @@ html {
 
 @media (min-width: 32em) {
   .content {
-    max-width: 54em;
     margin-left: auto;
     margin-right: auto;
   }
