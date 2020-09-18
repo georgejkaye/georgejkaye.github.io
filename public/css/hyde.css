@@ -260,6 +260,11 @@ code {
   max-width: 100%;
 }
 
+.header-date {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
 @media (min-width: 54em) {
   .mobile-image {
     display: none;
