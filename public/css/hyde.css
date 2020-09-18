@@ -1,7 +1,9 @@
 html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 20px;
+  line-height: 1.5;
 }
+
 
 @media (max-width: 60em) {
   html {
@@ -11,20 +13,28 @@ html {
 
 /* Colours */
 
-.dark {
+html {
   background-color: #282a36;
 }
 
-.light {
+.nav-bar,
+.header-bar,
+.mobile-nav {
   background-color: #383a59;
 }
 
-.green-text {
+h2,
+h3,
+.definition-header {
   color: #50fa7b;
 }
 
-.pink-text {
-  color: #ff79c6
+h1,
+.nav-bar-title,
+.page-title,
+.post-title,
+.post-title a {
+  color: #ff79c6;
 }
 
 /* Nav bar 
@@ -45,7 +55,9 @@ html {
 
 
 @media (min-width: 54em) {
-  .wide {
+
+  .nav-bar-content,
+  .container {
     max-width: 54em;
   }
 }
@@ -113,7 +125,6 @@ html {
 }
 
 .nav-bar-page-title a {
-  color: #ff79c6;
   font-size: 2em;
   font-weight: bold;
 }
@@ -131,6 +142,10 @@ html {
 
 @media (max-width: 72em) {
   .right-nav {
+    /*display: none;*/
+  }
+
+  .home-link {
     display: none;
   }
 }
@@ -148,7 +163,6 @@ html {
   flex: 1;
   align-items: center;
   justify-content: center;
-  background-color: #383a59;
   border-bottom: 2px solid #282a36;
   flex-direction: row-reverse;
 }
@@ -171,7 +185,6 @@ html {
   text-align: center;
   padding: 2rem 0rem;
   color: rgba(255, 255, 255, .5);
-  background-color: #383a59;
 }
 
 /* Title bar, containing my face and the page title */
