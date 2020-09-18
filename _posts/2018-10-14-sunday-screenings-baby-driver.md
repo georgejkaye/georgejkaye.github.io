@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Sunday Screenings - Baby Driver
+title: Sunday Screenings
+subtitle: Baby Driver
 image: /images/screenings/baby-driver/1.jpg
 alttext: Baby Driver
 tagline: In the first official Sunday Screening of the term, the crew watches Baby Driver on the recommendation of my trusty housemate Alex. Is it just Fast & Furious - The Musical, or is it actually a bit more sophisticated than that?

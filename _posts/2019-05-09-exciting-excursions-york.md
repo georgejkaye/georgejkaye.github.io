@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Exciting Excursions - York
+title: Exciting Excursions
+subtitle: York
 image: /images/excursions/york/0.jpg
 alttext: Exciting Excursions - York
 tagline: I ventured up to York to meet the All The Stations people. Surely such a simple task would cause me no trouble?
