@@ -9,6 +9,12 @@ Hello! I'm George, a PhD student researcher at the University of Birmingham, und
 
 I am a member of the [Theory Group](https://www.cs.bham.ac.uk/research/groupings/theory/).
 
+### Contact me
+
+**University:** g.j.kaye at cs.bham.ac.uk
+
+**Where to find me:** Office 244 (Desk J), School of Computer Science, University of Birmingham
+
 ## About me
 
 My primary research interests are in graphical calculi for compositional systems and the lambda calculus using monoidal categories, and reasoning about these structures diagrammatically and by using graph rewriting techniques. I am also interested in general programming languages and compilers. On a more practical side, I enjoy making and experimenting with visualisers for various theoretical concepts.
@@ -21,14 +27,6 @@ Currently I am working on a diagrammatic semantics for digital circuits, motivat
 When I'm not researching, I play the piano and go on adventures usually involving trains, canals or both. I occasionally take photos of pretty things and put them on [Instagram](https://www.instagram.com/georgejkaye/). If you want something less pretty, here are some [pictures](/pictures) of me! I also have a variety of [Train simulator scenarios](/trains) on offer.
 
 I'm currently School of Computer Science [Cookie Break](https://www.cs.bham.ac.uk/internal/research_students/cookiebreaks/) admin! The Cookie Break is the School's longest running social event and it's an honour to be in charge of such an esteemed tradition.
-
-### Contact me
-
-**Personal:** georgejkaye at gmail.com
-
-**University:** g.j.kaye at cs.bham.ac.uk
-
-**Where to find me:** ~~Office 244 (Desk J), School of Computer Science, University of Birmingham~~ My house, under lockdown!
 
 ## Projects
 

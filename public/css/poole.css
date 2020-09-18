@@ -47,17 +47,6 @@ body {
   padding: 0;
 }
 
-html {
-  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-
-  font-family: 'Source Code Pro', monospace;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #282A36
-}
-
-
-
 body {
   color: #d6d3cd;
   -webkit-text-size-adjust: 100%;
@@ -101,13 +90,11 @@ h1 {
 }
 
 h2 {
-  color: #50fa7b;
   margin-top: 1rem;
   font-size: 2rem;
 }
 
 h3 {
-  color: #50fa7b;
   margin-top: 1.0rem;
   font-size: 1.5rem;
 }
@@ -518,7 +505,6 @@ a.pagination-item:hover {
 
 .definition-header {
   background-color: #383a59;
-  color: #50fa7b;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
