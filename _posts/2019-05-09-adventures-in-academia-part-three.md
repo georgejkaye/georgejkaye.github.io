@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Adventures in Academia - Part Three
+title: Adventures in Academia
+subtitle: Part Three
 image: /images/adventures/003/0.jpg
 alttext: Some flapjacks
 tagline: Todd and Owen are in their first year of their PhDs, whereas I am still working hard in the final year of my MSci. Together we eat soup, visit pubs and struggle with second-year functional programming assignments. This time an appointment with soup evolved into yet another exciting adventure!

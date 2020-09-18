@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Adventures in Academia - Part One
+title: Adventures in Academia
+subtitle: Part One
 image: /images/adventures/001/soup2.jpg
 alttext: Todd cradles his newly born child
 tagline: Todd has recently started his PhD, whereas I am still working hard in the final year of my MSci. Together we eat soup, visit pubs and struggle with second-year functional programming assignments. This time we embarked on a soupy lunch in Sloman which turned into so much more.

@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Adventures in Academia - Part Two
+title: Adventures in Academia
+subtitle: Part Two
 image: /images/adventures/002/0.jpg
 alttext: T boys on tour
 tagline: Todd has recently started his PhD, whereas I am still working hard in the final year of my MSci. Together we eat soup, visit pubs and struggle with second-year functional programming assignments. This time we set out on an excursion to the Country Girl, with the surprise addition of Owen!
