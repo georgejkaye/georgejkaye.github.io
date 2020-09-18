@@ -13,15 +13,22 @@
     <div class="nav-bar-page-title">
       <a href="#top">
         {% if page.url == "/" | relative_url %}
-        Home
+
         {% else %}
-        {{ page.title }}
+
         {% endif %}
       </a></div>
   </div>
   <div class="right-nav">
     <div class="nav-link"><a href="https://github.com/georgejkaye">GitHub</a></div>
     <div class="nav-link"><a href="/blog">Blog</a></div>
+    {% if page.title == "Home" %}
+    <div class="nav-link">•</div>
+    <div class="nav-link"><a href="#teaching">Teaching</a></div>
+    <div class="nav-link"><a href="#visits">Visits</a></div>
+    <div class="nav-link"><a href="#projects">Projects</a></div>
+    <div class="nav-link"><a href="#about-me">About</a></div>
+    {% endif %}
   </div>
 </div>
 <div class="spacer">
