@@ -11,6 +11,13 @@ html {
   }
 }
 
+img {
+  /*display: block;*/
+  width: 100%;
+  border-radius: 5px;
+}
+
+
 .project-img {
   width: 100%;
 }
@@ -43,7 +50,8 @@ a {
 h2,
 h3,
 .definition-header,
-.post-subtitle {
+.post-subtitle,
+.post-subtitle-small {
   color: #50fa7b;
 }
 
@@ -51,7 +59,8 @@ h3,
 h1,
 .nav-bar-title,
 .page-title,
-.post-title {
+.post-title,
+.post-title-small {
   color: #ff79c6;
 }
 
@@ -64,6 +73,10 @@ h6,
 .title,
 code {
   color: #f2f2f2;
+}
+
+.small {
+  font-size: 1em;
 }
 
 /* Nav bar 
@@ -331,10 +344,21 @@ code {
   font-weight: bold;
 }
 
+.post-title-small {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 .post-subtitle {
   font-size: 2em;
   margin-right: 0.2em;
 }
+
+.post-subtitle-small {
+  font-size: 1em;
+  margin-right: 0.2em;
+}
+
 
 .post-date {
   color: #9a9a9a;
