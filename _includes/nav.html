@@ -1,28 +1,27 @@
-<div class="nav-bar">
-  <div class="left-nav">
-    <a href={{ "/" | relative_url }}>
-      <div class="site-name">
-        <div><img class="nav-site-image" src="{{ site.author.avatar }}" alt="me"></div>
-        <div class="nav-bar-title">George Kaye</div>
-      </div>
-    </a>
+<div class="nav-bar light">
+  <div class="nav-bar-content light wide">
+    <div class="left-nav">
+      <a href={{ "/" | relative_url }}>
+        <div class="site-name">
+          <div><img class="nav-site-image" src="{{ site.author.avatar }}" alt="me"></div>
+          <div class="nav-bar-title pink-text">George Kaye</div>
+        </div>
+      </a>
+    </div>
+    <div class="right-nav">
+      <div class="nav-link"><a href="https://github.com/georgejkaye">GitHub</a></div>
+      <div class="nav-link"><a href="/blog">Blog</a></div>
+      {% if page.title == "Home" %}
+      <div class="nav-link">•</div>
+      <div class="nav-link"><a href="#teaching">Teaching</a></div>
+      <div class="nav-link"><a href="#visits">Visits</a></div>
+      <div class="nav-link"><a href="#projects">Projects</a></div>
+      <div class="nav-link"><a href="#about-me">About</a></div>
+      {% endif %}
+    </div>
   </div>
-  <div class="right-nav">
+  <div class="mobile-nav">
     <div class="nav-link"><a href="https://github.com/georgejkaye">GitHub</a></div>
     <div class="nav-link"><a href="/blog">Blog</a></div>
-    {% if page.title == "Home" %}
-    <div class="nav-link">•</div>
-    <div class="nav-link"><a href="#teaching">Teaching</a></div>
-    <div class="nav-link"><a href="#visits">Visits</a></div>
-    <div class="nav-link"><a href="#projects">Projects</a></div>
-    <div class="nav-link"><a href="#about-me">About</a></div>
-    {% endif %}
   </div>
-</div>
-<div class="spacer">
-  &nbsp;
-</div>
-<div class="mobile-nav">
-  <div class="nav-link"><a href="https://github.com/georgejkaye">GitHub</a></div>
-  <div class="nav-link"><a href="/blog">Blog</a></div>
 </div>
