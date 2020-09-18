@@ -45,36 +45,15 @@ I'm currently School of Computer Science [Cookie Break](https://www.cs.bham.ac.u
 
 ## Visits
 
-[**ACT 2020, The internet**](https://act2020.mit.edu/)
-{: class="list-item-heading" }
+[**ACT 2020, The internet**](https://act2020.mit.edu/) July 6-10, 2020
 
-July 6-10, 2020
-{: class="list-item" }
+~~[**SYCO 7, Estonia**](http://events.cs.bham.ac.uk/syco/7/) March 30-31, 2020~~
 
+[**MGS Christmas Seminar**](https://staffwww.dcs.shef.ac.uk/people/G.Struth/mgs_xmas19.html) December 18, 2019
 
-~~[**SYCO 7, Estonia**](http://events.cs.bham.ac.uk/syco/7/)~~
-{: class="list-item-heading" }
+[**SYCO 6, Leicester**](http://events.cs.bham.ac.uk/syco/6/) December 16-17, 2019
 
-~~March 30-31, 2020~~
-{: class="list-item" }
-
-[**MGS Christmas Seminar**](https://staffwww.dcs.shef.ac.uk/people/G.Struth/mgs_xmas19.html)
-{: class="list-item-heading" }
-
-December 18, 2019
-{: class="list-item" }
-
-[**SYCO 6, Leicester**](http://events.cs.bham.ac.uk/syco/6/)
-{: class="list-item-heading" }
-
-December 16-17, 2019
-{: class="list-item" }
-
-[**CLA 2019, Versailles**](http://cla.tcs.uj.edu.pl/history/2019/)
-{: class="list-item-heading" }
-
-July 1-2, 2019
-{: class="list-item" }
+[**CLA 2019, Versailles**](http://cla.tcs.uj.edu.pl/history/2019/) July 1-2, 2019
 
 ## Teaching
 

@@ -3,7 +3,7 @@ html {
   font-size: 20px;
 }
 
-@media (max-width: 52em) {
+@media (max-width: 60em) {
   html {
     font-size: 16px;
   }
@@ -261,3 +261,7 @@ html {
 }
 
 .list-item {}
+
+td.visit {
+  background-color: #282a36;
+}
