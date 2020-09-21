@@ -24,11 +24,11 @@ My primary research interests are in graphical calculi for compositional systems
 
 Currently I am working on a diagrammatic semantics for digital circuits, motivated by the work of Ghica and Jung \[[1](https://doi.org/10.1109/FMCAD.2016.7886659)\] \[[2](https://doi.org/10.4230/LIPIcs.CSL.2017.24)\]. I am using a variant of [hypergraphs](https://en.wikipedia.org/wiki/Hypergraphs) that are a sound and complete calculus for symmetric traced monoidal categories. The ultimate aim of this project is to define an automatic rewriting system for these hypergraphs that we can use as an effective and *efficient* operational semantics for digital circuits.
 
-When I'm not researching, I play the piano and go on adventures usually involving trains, canals or both. I occasionally take photos of pretty things and put them on [Instagram](https://www.instagram.com/georgejkaye/). If you want something less pretty, here are some [pictures](/pictures) of me!
+When I'm not researching, I play the piano and go on adventures usually involving trains, canals or both. I occasionally take photos of pretty things and put them on [Instagram](https://www.instagram.com/georgejkaye/). If you want something less pretty, here are some [pictures](/pictures) of me! I also (very rarely) use [Twitter](https://twitter.com/georgejkaye).
 
 I'm currently School of Computer Science [Cookie Break](https://www.cs.bham.ac.uk/internal/research_students/cookiebreaks/) admin! The Cookie Break is the School's longest running social event and it's an honour to be in charge of such an esteemed tradition.
 
-You might want to read [my CV](/pages/cv.pdf).
+You might want to read [my CV](/pages/cv.pdf). 
 
 ## Projects
 
