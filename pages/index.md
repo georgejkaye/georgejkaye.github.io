@@ -28,6 +28,8 @@ When I'm not researching, I play the piano and go on adventures usually involvin
 
 I'm currently School of Computer Science [Cookie Break](https://www.cs.bham.ac.uk/internal/research_students/cookiebreaks/) admin! The Cookie Break is the School's longest running social event and it's an honour to be in charge of such an esteemed tradition.
 
+You may wish to read [my CV](/pages/cv.pdf).
+
 ## Projects
 
 **Diagrammatic semantics for digital circuits** \[[Visualiser](\circuits\visualiser)\] \[[Very basic talk](\pages\circuits\Diagrammatic semantics for digital circuits.pdf)\]  
