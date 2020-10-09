@@ -94,6 +94,12 @@ code {
   border-bottom: 2px solid #282a36;
 }
 
+@media (min-width: 36em) {
+  .nav-bar {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 @media (min-width: 54em) {
 
