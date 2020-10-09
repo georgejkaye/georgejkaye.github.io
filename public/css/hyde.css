@@ -88,8 +88,6 @@ code {
 
 .nav-bar {
   width: 100%;
-  display: flex;
-  justify-content: center;
   position: fixed;
   z-index: 999;
   border-top: 2px solid #282a36;
@@ -214,28 +212,35 @@ code {
   height: 75px;
 }
 
+@media (max-width: 36em) {
+  .spacer {
+    height: 125px;
+  }
+}
+
+
 /* Mobile stuff, the links move down to a new bar and my face appears in the middle */
 
 .mobile-nav {
   height: 50px;
-  font-size: 20px;
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: center;
-  border-bottom: 2px solid #282a36;
+  border-top: 2px solid #282a36;
   flex-direction: row-reverse;
+  font-size: 1em;
+}
+
+@media (min-width: 36em) {
+  .mobile-nav {
+    display: none;
+  }
 }
 
 .mobile-site-image {
   display: none;
 }
-
-.mobile-nav {
-  display: none;
-}
-
-
 
 /* Header bar */
 
