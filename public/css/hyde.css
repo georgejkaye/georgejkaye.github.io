@@ -131,7 +131,6 @@ code {
 }
 
 /* Left space, for site name and my face 
- * Doesn't get displayed at <48em
  */
 
 .left-nav {
@@ -139,6 +138,13 @@ code {
   display: flex;
   align-items: center;
   margin-left: 10px;
+}
+
+@media (max-width: 36em) {
+  .left-nav {
+    justify-content: center;
+    margin-right: 10px;
+  }
 }
 
 .nav-site-image {
@@ -258,7 +264,6 @@ code {
   font-size: 3.5em;
   font-weight: bold;
   line-height: 1;
-  margin-top: 12px;
   margin-bottom: 0em;
 }
 
