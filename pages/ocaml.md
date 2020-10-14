@@ -7,7 +7,7 @@ permalink: /ocaml
 
 *This is based on a tutorial I taught for the [Compilers & Languages](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/) module.*
 
-So you want to learn Ocaml? Great - you're already on your way to joining the elite crowd that understand this fantastic (citation needed) language. Here you'll find a very basic tutorial to get you up and running with the language and its foibles.
+So you want to learn Ocaml? Great - you're already on your way to joining the elite crowd that understand this fantastic language. Here you'll find a very basic tutorial to get you up and running with the language and its foibles.
 
 ## Installing OCaml
 
@@ -24,15 +24,15 @@ There are various plugins for various text editors floating around. There is (of
 
 OCaml on Windows is a fickle beast! To avoid struggling around with dependencies, I would recommend you install the **[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)** and download Ubuntu from the Microsoft Store. This enables you to have a Linux environment within your Windows installation!
 
-Once you have installed the subsystem and set it up as specified in the link above, you must run these commands:
+Once you have installed the subsystem and set it up as specified in the link above, you must open the terminal (press `Ctrl`+`Alt`+`T`) and run these commands:
 
 * `sudo apt update`
 * `sudo apt install make m4 opam ocaml`
 * `opam install utop ocamlbuild`
 
-You will be prompted to input the password you created when installing the Linux Subsytem. During installation you may receive additional prompts for input - you should generally type 'y' (for yes).
+You will be prompted to input the password you created when installing the Linux Subsystem. During installation you may receive additional prompts for input - you should generally type 'y' (for yes).
 
-You should now be able to access the OCaml toplevel with `utop`, as above.
+You should now be able to access the OCaml toplevel in the terminal with `utop`, as above.
 
 ### Running OCaml
 
@@ -471,7 +471,7 @@ Let's go back to functions for a little bit. When defining functions, we don't a
 
 ```ocaml
 # let twice f x = f (f x)
-val apply2 : (a -> 'a) -> 'a = <fun>
+val apply2 : ('a -> 'a) -> 'a = <fun>
 ```
 
 Our polymorphic types have returned. We can see that the first argument to our function is `('a -> 'a)`, a function type that takes an argument of type `'a` and returns something of that same type. Why does the output have to be the same type as the input? Since we are applying the function twice, whatever comes out of it must also be able to go back into it, otherwise the function wouldn't work! The second argument is of type `'a`, which also makes sense since we need to feed it to our function.
@@ -488,7 +488,7 @@ twice add2
 
 We can see that the remainder of the type signature, the `'a -> 'a`, has changed into an `int -> int` to suit the types we have given.
 
-## Anonymous functions
+### Anonymous functions
 
 When dealing with higher order functions, it can be tiresome to have to separately define functions to pass to other functions, especially if they are only used once. To save ourselves time, we can use *anonymous functions* (also known as *lambda expressions*) that we can pass directly to the function. These are functions that do not have a name, that we define on the spot to be used once. For example, rather than explicitly defining the `add2` function, we could have used an anonymous function:
 
@@ -497,4 +497,4 @@ twice (fun x -> x + 2)
 - : int -> int = <fun>
 ```
 
-Think of `fun x -> x + 2` as a function that takes one argument `x`, and inserts it into the function on the other side of the arrow. 
+Think of `fun x -> x + 2` as a function that takes one argument `x`, and inserts it into the function on the other side of the arrow.

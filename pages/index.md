@@ -65,9 +65,13 @@ You might want to read [my CV](/pages/cv.pdf).
 
 ## Teaching
 
+### 2020-21
+
+[**Mathematical and Logical Foundations of Computer Science**](https://www.cs.bham.ac.uk/internal/modules/2020/06-35324/) University of Birmingham, teaching assistant
+
 ### 2019-20
 
-[**Compilers & Languages**](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/) University of Birmingham, teaching assistant \[[OCaml tutorial](/ocaml)\]
+[**Compilers & Languages**](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/) University of Birmingham, teaching assistant \[[ocaml tutorial](/ocaml)\]
 
 [**Mathematical Foundations of Computer Science**](https://www.cs.bham.ac.uk/internal/modules/2019/06-30181/) University of Birmingham, teaching assistant
 
