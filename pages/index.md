@@ -28,12 +28,19 @@ When I'm not researching, I play the piano and go on adventures usually involvin
 
 I'm currently School of Computer Science [Cookie Break](https://www.cs.bham.ac.uk/internal/research_students/cookiebreaks/) admin! The Cookie Break is the School's longest running social event and it's an honour to be in charge of such an esteemed tradition.
 
-You might want to read [my CV](/pages/cv.pdf). 
+You might want to read [my CV](/pages/cv.pdf).
 
 ## Publications
 
-**The Graphical Language of Symmetric Traced Monoidal Categories** \[[abstract](/pages/papers/hypergraphs-abstract.txt)\] \[[pdf](/pages/papers/hypergraphs-technical-report.pdf)\] \[[arxiv](https://arxiv.org/abs/2010.06319)\]  
-*with [Dan Ghica](https://www.cs.bham.ac.uk/~drg/)* 
+Click a publication to read the abstract.
+
+**The Graphical Language of Symmetric Traced Monoidal Categories** \[[pdf](/pages/papers/hypergraphs-technical-report.pdf)\] \[[arxiv](https://arxiv.org/abs/2010.06319)\]  
+Arxiv preprint *with [Dan Ghica](https://www.cs.bham.ac.uk/~drg/)*  
+{: class="publication" id="hypergraphs" }
+
+*This report examines a variant of hypergraphs known as linear hypergraphs, with the aim of creating a sound and complete graphical language for symmetric traced monoidal categories (STMCs). We begin by defining the category of linear hypergraphs as a full subcategory of traditional (simple) hypergraphs, in which vertices are the sources and target of exactly one edge each. By defining the operations of composition, symmetry and trace, we show that morphisms equal in an STMC can be interpreted as isomorphic linear hypergraphs (soundness) and that any linear hypergraph has a corresponding unique morphism up to the equations of the STMC (completeness). We use this graphical language to show how we can perform graph rewriting in an STMC using double pushout rewriting, by demonstrating that linear hypergraphs form a partial adhesive category.*
+{: class="abstract" id="hypergraphs-abstract" }
+
 
 
 ## Projects

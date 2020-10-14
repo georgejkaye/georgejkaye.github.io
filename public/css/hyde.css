@@ -411,3 +411,12 @@ code {
   font-weight: bold;
   margin: 25px 0px;
 }
+
+.abstract {
+  display: none;
+}
+
+.visible-abstract {
+  opacity: 1;
+  visibility: visible;
+}
