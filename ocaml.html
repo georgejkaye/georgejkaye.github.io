@@ -209,7 +209,7 @@
     <div class="page">
   <p><em>This is based on a tutorial I taught for the <a href="https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/">Compilers &amp; Languages</a> module.</em></p>
 
-<p>So you want to learn Ocaml? Great - you’re already on your way to joining the elite crowd that understand this fantastic (citation needed) language. Here you’ll find a very basic tutorial to get you up and running with the language and its foibles.</p>
+<p>So you want to learn Ocaml? Great - you’re already on your way to joining the elite crowd that understand this fantastic language. Here you’ll find a very basic tutorial to get you up and running with the language and its foibles.</p>
 
 <h2 id="installing-ocaml">Installing OCaml</h2>
 
@@ -228,7 +228,7 @@
 
 <p>OCaml on Windows is a fickle beast! To avoid struggling around with dependencies, I would recommend you install the <strong><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Windows Subsystem for Linux</a></strong> and download Ubuntu from the Microsoft Store. This enables you to have a Linux environment within your Windows installation!</p>
 
-<p>Once you have installed the subsystem and set it up as specified in the link above, you must run these commands:</p>
+<p>Once you have installed the subsystem and set it up as specified in the link above, you must open the terminal (press <code class="highlighter-rouge">Ctrl</code>+<code class="highlighter-rouge">Alt</code>+<code class="highlighter-rouge">T</code>) and run these commands:</p>
 
 <ul>
   <li><code class="highlighter-rouge">sudo apt update</code></li>
@@ -236,9 +236,9 @@
   <li><code class="highlighter-rouge">opam install utop ocamlbuild</code></li>
 </ul>
 
-<p>You will be prompted to input the password you created when installing the Linux Subsytem. During installation you may receive additional prompts for input - you should generally type ‘y’ (for yes).</p>
+<p>You will be prompted to input the password you created when installing the Linux Subsystem. During installation you may receive additional prompts for input - you should generally type ‘y’ (for yes).</p>
 
-<p>You should now be able to access the OCaml toplevel with <code class="highlighter-rouge">utop</code>, as above.</p>
+<p>You should now be able to access the OCaml toplevel in the terminal with <code class="highlighter-rouge">utop</code>, as above.</p>
 
 <h3 id="running-ocaml">Running OCaml</h3>
 
@@ -638,7 +638,7 @@
 <p>Let’s go back to functions for a little bit. When defining functions, we don’t actually need to restrict ourselves to things like <code class="highlighter-rouge">int</code> or <code class="highlighter-rouge">string</code>. We can actually take functions as arguments too! A function that does this is called a <em>higher order function</em>. Let’s create a function that takes a function as an argument, and applies it twice to some other argument.</p>
 
 <div class="language-ocaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">#</span> <span class="k">let</span> <span class="n">twice</span> <span class="n">f</span> <span class="n">x</span> <span class="o">=</span> <span class="n">f</span> <span class="p">(</span><span class="n">f</span> <span class="n">x</span><span class="p">)</span>
-<span class="k">val</span> <span class="n">apply2</span> <span class="o">:</span> <span class="p">(</span><span class="n">a</span> <span class="o">-&gt;</span> <span class="k">'</span><span class="n">a</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">'</span><span class="n">a</span> <span class="o">=</span> <span class="o">&lt;</span><span class="k">fun</span><span class="o">&gt;</span>
+<span class="k">val</span> <span class="n">apply2</span> <span class="o">:</span> <span class="p">(</span><span class="k">'</span><span class="n">a</span> <span class="o">-&gt;</span> <span class="k">'</span><span class="n">a</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">'</span><span class="n">a</span> <span class="o">=</span> <span class="o">&lt;</span><span class="k">fun</span><span class="o">&gt;</span>
 </code></pre></div></div>
 
 <p>Our polymorphic types have returned. We can see that the first argument to our function is <code class="highlighter-rouge">('a -&gt; 'a)</code>, a function type that takes an argument of type <code class="highlighter-rouge">'a</code> and returns something of that same type. Why does the output have to be the same type as the input? Since we are applying the function twice, whatever comes out of it must also be able to go back into it, otherwise the function wouldn’t work! The second argument is of type <code class="highlighter-rouge">'a</code>, which also makes sense since we need to feed it to our function.</p>
@@ -654,7 +654,7 @@
 
 <p>We can see that the remainder of the type signature, the <code class="highlighter-rouge">'a -&gt; 'a</code>, has changed into an <code class="highlighter-rouge">int -&gt; int</code> to suit the types we have given.</p>
 
-<h2 id="anonymous-functions">Anonymous functions</h2>
+<h3 id="anonymous-functions">Anonymous functions</h3>
 
 <p>When dealing with higher order functions, it can be tiresome to have to separately define functions to pass to other functions, especially if they are only used once. To save ourselves time, we can use <em>anonymous functions</em> (also known as <em>lambda expressions</em>) that we can pass directly to the function. These are functions that do not have a name, that we define on the spot to be used once. For example, rather than explicitly defining the <code class="highlighter-rouge">add2</code> function, we could have used an anonymous function:</p>
 
