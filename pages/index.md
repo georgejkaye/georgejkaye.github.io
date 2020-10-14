@@ -30,12 +30,18 @@ I'm currently School of Computer Science [Cookie Break](https://www.cs.bham.ac.u
 
 You might want to read [my CV](/pages/cv.pdf). 
 
+## Publications
+
+**The Graphical Language of Symmetric Traced Monoidal Categories** \[[abstract](/pages/papers/hypergraphs-abstract.txt)\] \[[pdf](/pages/papers/hypergraphs-technical-report.pdf)\] \[[arxiv](https://arxiv.org/abs/2010.06319)\]  
+*with [Dan Ghica](https://www.cs.bham.ac.uk/~drg/)* 
+
+
 ## Projects
 
-**Diagrammatic semantics for digital circuits** \[[Visualiser](\circuits\visualiser)\] \[[Very basic talk](\pages\circuits\Diagrammatic semantics for digital circuits.pdf)\]  
+**Diagrammatic semantics for digital circuits** \[[visualiser](\circuits\visualiser)\] \[[basic talk](\pages\circuits\Diagrammatic semantics for digital circuits.pdf)\]  
 *Defining an operational semantics for digital circuits using hypergraphs.*
 
-**A visualiser for linear lambda-terms as rooted 3-valent maps** \[[Page](\lambda-visualiser)\]  
+**A visualiser for linear lambda-terms as rooted 3-valent maps** \[[page](\lambda-visualiser)\]  
 *A set of tools for the representation of lambda terms as their corresponding rooted maps. Developed for my MSci final year project under the supervision of [Noam Zeilberger](http://noamz.org/).*
 
 [Other projects](/projects){: class="top-link" }
@@ -43,7 +49,7 @@ You might want to read [my CV](/pages/cv.pdf).
 ## Talks
 
 **A visualiser for linear lambda-terms as rooted 3-valent maps**  
-[CLA 2019](http://cla.tcs.uj.edu.pl/history/2019/) *July 1-2, 2019* \[[Slides](/pages/lambda-visualiser/docs/CLA'2019 - A visualiser for linear lambda-terms as rooted 3-valent maps.pdf)\]
+[CLA 2019](http://cla.tcs.uj.edu.pl/history/2019/) *July 1-2, 2019* \[[slides](/pages/lambda-visualiser/docs/CLA'2019 - A visualiser for linear lambda-terms as rooted 3-valent maps.pdf)\]
 
 ## Visits
 
