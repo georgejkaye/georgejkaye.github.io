@@ -20,12 +20,6 @@ $(document).ready(function () {
 		$(id).css("display") === "block" ? $(id).slideUp() : $(id).slideDown()
 	})
 
-	$('.abstract').click(function () {
-
-		var id = "#" + $(this).attr('id')
-		$(id).slideUp()
-	})
-
 	$('a').click(function (e) {
 		e.stopPropagation();
 	})
