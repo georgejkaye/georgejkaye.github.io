@@ -63,9 +63,9 @@ Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
 
 ## Visits
 
-[**SYNCHRON 2020, The internet**](http://synchron2020.inria.fr/) November 26-27, 2020
+[**SYNCHRON 2020, online**](http://synchron2020.inria.fr/) November 26-27, 2020
 
-[**ACT 2020, The internet**](https://act2020.mit.edu/) July 6-10, 2020
+[**ACT 2020, online**](https://act2020.mit.edu/) July 6-10, 2020
 
 ~~[**SYCO 7, Estonia**](http://events.cs.bham.ac.uk/syco/7/) March 30-31, 2020~~
 
