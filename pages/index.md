@@ -50,8 +50,6 @@ Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
 *We detail the development of a set of tools in Javascript to aid in the research of the topological properties of linear λ-terms when they are represented as 3-valent rooted maps. A λ-term visualiser was developed to visualise a λ-term specified by the user as a rooted map on the screen. The visualiser also includes functionality related to normalisation of terms, such as the option to view a normalisation graph or reduce a term to its normal form. To complement this a λ-term gallery was created to generate λ-terms that satisfied criteria specified by the user, and display their corresponding maps. While the focus of the project was on linear λ-terms, these tools also work for all pure λ-terms. The tools can be used for a variety of different applications, such as examining the structure of different terms, disproving conjectures regarding various subsets of the λ-calculus, or investigating special normalisation properties held by different sets of λ-terms. We evaluate the tools' success and acknowledge that while the tools suffer from performance issues when used for larger terms, they still fulfil many of the original aims of the project, and may still be very useful for systematic exploration of the λ-calculus in the future.*
 {: class="abstract" id="lambda-abstract" }
 
-[Other projects](/projects){: class="top-link" }
-
 ## Talks
 
 **The Graphical Language of Symmetric Traced Monoidal Categories**  
@@ -91,7 +89,8 @@ Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
 
 ## Misc
 
+[**Projects**](/projects)
+
 [**Pictures**](/pictures)
 
 [**Train simulator scenarios**](/trains)
-
