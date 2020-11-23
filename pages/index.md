@@ -41,24 +41,31 @@ Arxiv preprint *with [Dan Ghica](https://www.cs.bham.ac.uk/~drg/)*
 *We examine a variant of hypergraphs that we call linear hypergraphs, with the aim of creating a sound and complete graphical language for symmetric traced monoidal categories (STMCs). We first define the category of linear hypergraphs as a full subcategory of conventional (simple) hypergraphs, in which each vertex is either the source or the target of exactly one edge. The morphisms of a freely generated STMC can be then interpreted as linear hypergraphs, up to isomorphism (soundness). Moreover, any linear hypergraph is the representation of a unique STMC morphism, up to the equational theory of the category (completeness). This establishes linear hypergraphs as the graphical language of STMCs. Linear hypergraphs are then shown to form a partial adhesive category which means that a broad range of equational properties of some STMC can be specified as a graph rewriting system. The graphical language of digital circuits is presented as a case study.*
 {: class="abstract" id="hypergraphs-abstract" }
 
+### Masters project
 
+**A visualiser for linear lambda-terms as rooted 3-valent maps** \[[page](/lambda-visualiser)\] \[[pdf](/pages/papers/lambda-visualiser.pdf)\]  
+Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
+{: class="publication" id="lambda" }
 
-## Projects
-
-**Diagrammatic semantics for digital circuits** \[[visualiser](\circuits\visualiser)\] \[[basic talk](\pages\circuits\Diagrammatic semantics for digital circuits.pdf)\]  
-*Defining an operational semantics for digital circuits using hypergraphs.*
-
-**A visualiser for linear lambda-terms as rooted 3-valent maps** \[[page](\lambda-visualiser)\]  
-*A set of tools for the representation of lambda terms as their corresponding rooted maps. Developed for my MSci final year project under the supervision of [Noam Zeilberger](http://noamz.org/).*
+*We detail the development of a set of tools in Javascript to aid in the research of the topological properties of linear λ-terms when they are represented as 3-valent rooted maps. A λ-term visualiser was developed to visualise a λ-term specified by the user as a rooted map on the screen. The visualiser also includes functionality related to normalisation of terms, such as the option to view a normalisation graph or reduce a term to its normal form. To complement this a λ-term gallery was created to generate λ-terms that satisfied criteria specified by the user, and display their corresponding maps. While the focus of the project was on linear λ-terms, these tools also work for all pure λ-terms. The tools can be used for a variety of different applications, such as examining the structure of different terms, disproving conjectures regarding various subsets of the λ-calculus, or investigating special normalisation properties held by different sets of λ-terms. We evaluate the tools' success and acknowledge that while the tools suffer from performance issues when used for larger terms, they still fulfil many of the original aims of the project, and may still be very useful for systematic exploration of the λ-calculus in the future.*
+{: class="abstract" id="lambda-abstract" }
 
 [Other projects](/projects){: class="top-link" }
 
 ## Talks
 
+**The Graphical Language of Symmetric Traced Monoidal Categories**  
+[Birmingham Theory PhD Seminar](http://talks.bham.ac.uk/show/index/1803) *November 23, 2019* \[[slides](/pages/talks/2020-10-23-bravo.pdf)]
+
+**Diagrammatic Semantics for Digital Circuits (basic talk)**  
+[Research skills presentation](https://www.birmingham.ac.uk/postgraduate/courses/taught/maths/module/applied/research-skills.aspx) *January 27, 2020* \[[slides](/pages/talks/2020-01-27-research-skills.pdf)\]
+
 **A visualiser for linear lambda-terms as rooted 3-valent maps**  
-[CLA 2019](http://cla.tcs.uj.edu.pl/history/2019/) *July 1-2, 2019* \[[slides](/pages/lambda-visualiser/docs/CLA'2019 - A visualiser for linear lambda-terms as rooted 3-valent maps.pdf)\]
+[CLA 2019](http://cla.tcs.uj.edu.pl/history/2019/) *July 1, 2019* \[[slides](/pages/talks/2019-07-01-cla.pdf)\]
 
 ## Visits
+
+[**SYNCHRON 2020, The internet**](http://synchron2020.inria.fr/) November 26-27, 2020
 
 [**ACT 2020, The internet**](https://act2020.mit.edu/) July 6-10, 2020
 
