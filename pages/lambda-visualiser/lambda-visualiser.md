@@ -1,14 +1,20 @@
 ---
 layout: page
-title: Final Year Project
+title: The λ-term gallery
 permalink: /lambda-visualiser
 tagline: A visualiser for λ-terms as rooted maps
 type: project
 ---
 
-My MSci final year project: a set of tools to help investigation of terms from various fragments of the λ-calculus. The core function of the tools is to represent these λ-terms as *maps*. Background information can be found in the [Project Report](/pages/lambda-visualiser/docs/2019-04-08-final-report.pdf).
+My MSci final year project: a set of tools to help investigation of terms from various fragments of the λ-calculus.
+The core function of the tools is to represent these λ-terms as *maps*.
 
-These tools were presented at [CLA 2019](http://cla.tcs.uj.edu.pl/)! You can download the slides [here](/pages/lambda-visualiser/docs/CLA'2019 - A visualiser for linear lambda-terms as rooted 3-valent maps.pdf).
+These tools are currently being revamped in the chilly lockdown evenings - stay tuned!
+
+## Documents
+
+* [Dissertation](/pages/papers/2019-04-08-masters.pdf) This is my dissertation for my Masters degree.
+* [CLA 2019 talk](/pages/talks/2019-07-01-cla.pdf) These tools were presented at [CLA 2019](http://cla.tcs.uj.edu.pl/history/2019/)!
 
 ## Tools
 
@@ -41,14 +47,6 @@ All sorts of interesting information is provided about terms, such as the availa
 ![Normalisation graph](/pages/lambda-visualiser/pics/normalisation-graph.png)
 ![Omega normalisation graph](/pages/lambda-visualiser/pics/omega.png)
 Normalisation graphs can also be generated for terms!
-
-## Documentation
-
-The [**Project Proposal**](/pages/lambda-visualiser/docs/2018-10-26-project-proposal.pdf) is a brief overview of the aim of this project and a possible schedule.
-
-The [**Scientific Paper**](/pages/lambda-visualiser/docs/2018-11-23-scientific-paper.pdf) gives some background on the topics involved, and how the project was progressing towards the end of November.
-
-The [**Project Report**](/pages/lambda-visualiser/docs/2019-04-08-final-report.pdf) is the report from the end of the project - the dissertation!
 
 ## Source code
 
