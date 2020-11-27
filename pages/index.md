@@ -34,7 +34,7 @@ You might want to read [my CV](/pages/cv.pdf).
 
 Click a publication to read the abstract.
 
-**The Graphical Language of Symmetric Traced Monoidal Categories** \[[pdf](/pages/papers/hypergraphs-technical-report.pdf)\] \[[arxiv](https://arxiv.org/abs/2010.06319)\]  
+**The Graphical Language of Symmetric Traced Monoidal Categories** \[[pdf](/pages/papers/2020-10-19-hypergraphs-techreport.pdf)\] \[[arxiv](https://arxiv.org/abs/2010.06319)\] \[[bibtex](/pages/papers/2020-10-19-hypergraphs-techreport-bib.txt)\]  
 Arxiv preprint *with [Dan Ghica](https://www.cs.bham.ac.uk/~drg/)*  
 {: class="publication" id="hypergraphs" }
 
@@ -51,6 +51,9 @@ Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
 {: class="abstract" id="lambda-abstract" }
 
 ## Talks
+
+**Diagrammatic Semantics for Digital Circuits**  
+[SYNCHRON 2020](http://synchron2020.inria.fr) *November 27, 2019* \[[slides](/pages/talks/2020-10-27-synchron.pdf)]
 
 **The Graphical Language of Symmetric Traced Monoidal Categories**  
 [Birmingham Theory PhD Seminar](http://talks.bham.ac.uk/show/index/1803) *November 23, 2019* \[[slides](/pages/talks/2020-10-23-bravo.pdf)]

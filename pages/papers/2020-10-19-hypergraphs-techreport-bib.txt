@@ -1,0 +1,9 @@
+@misc{kaye2020graphical,
+  title         = {The Graphical Language of Symmetric Traced Monoidal Categories},
+  author        = {George Kaye},
+  year          = {2020},
+  eprint        = {2010.06319},
+  archiveprefix = {arXiv},
+  primaryclass  = {math.CT},
+  url           = {https://arxiv.org/abs/2010.06319}
+}
