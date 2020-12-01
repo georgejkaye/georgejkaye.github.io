@@ -53,10 +53,10 @@ Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
 ## Talks
 
 **Diagrammatic Semantics for Digital Circuits**  
-[SYNCHRON 2020](http://synchron2020.inria.fr) *November 27, 2019* \[[slides](/pages/talks/2020-10-27-synchron.pdf)]
+[SYNCHRON 2020](http://synchron2020.inria.fr) *November 27, 2019* \[[slides](/pages/talks/2020-11-27-synchron.pdf)]
 
 **The Graphical Language of Symmetric Traced Monoidal Categories**  
-[Birmingham Theory PhD Seminar](http://talks.bham.ac.uk/show/index/1803) *November 23, 2019* \[[slides](/pages/talks/2020-10-23-bravo.pdf)]
+[Birmingham Theory PhD Seminar](http://talks.bham.ac.uk/show/index/1803) *November 23, 2019* \[[slides](/pages/talks/2020-11-23-bravo.pdf)]
 
 **Diagrammatic Semantics for Digital Circuits (basic talk)**  
 [Research skills presentation](https://www.birmingham.ac.uk/postgraduate/courses/taught/maths/module/applied/research-skills.aspx) *January 27, 2020* \[[slides](/pages/talks/2020-01-27-research-skills.pdf)\]
