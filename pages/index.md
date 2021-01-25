@@ -43,7 +43,7 @@ Arxiv preprint *with [Dan Ghica](https://www.cs.bham.ac.uk/~drg/)*
 
 ### Masters project
 
-**A visualiser for linear lambda-terms as rooted 3-valent maps** \[[page](/lambda-visualiser)\] \[[pdf](/pages/papers/lambda-visualiser.pdf)\]  
+**A visualiser for linear lambda-terms as rooted 3-valent maps** \[[page](/lambda-visualiser)\] \[[pdf](/pages/papers/2019-04-08-masters.pdf)\]  
 Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
 {: class="publication" id="lambda" }
 
