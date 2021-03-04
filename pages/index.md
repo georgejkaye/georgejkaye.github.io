@@ -52,7 +52,7 @@ Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
 
 ## Talks
 
-**Diagrammatic Semantics with Symmetric Traced Monoidal Categories**
+**Diagrammatic Semantics with Symmetric Traced Monoidal Categories**  
 [Huawei Edinburgh PL Group Tech Talk](https://blogs.ed.ac.uk/he-lab/category/tech-talk/) *March 4, 2021* \[[slides](pages/talks/2021-03-04-huawei.pdf)]
 
 **Diagrammatic Semantics for Digital Circuits**  
