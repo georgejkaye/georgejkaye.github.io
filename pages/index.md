@@ -54,10 +54,10 @@ Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
 ## Talks
 
 **Diagrammatic Semantics with Symmetric Traced Monoidal Categories**  
-[Huawei Edinburgh PL Group Tech Talk](https://blogs.ed.ac.uk/he-lab/category/tech-talk/) *March 4, 2021* \[[slides](pages/talks/2021-03-04-huawei.pdf)] \[[page](https://blogs.ed.ac.uk/he-lab/2021/03/08/george-kaye-diagrammatic-semantics-with-symmetric-traced-monoidal-categories/)\] \[video (coming soon!)\]
+[Huawei Edinburgh PL Group Tech Talk](https://blogs.ed.ac.uk/he-lab/category/tech-talk/) *March 4, 2021* \[[slides](pages/talks/2021-03-04-huawei.pdf)] \[[page](https://blogs.ed.ac.uk/he-lab/2021/03/08/george-kaye-diagrammatic-semantics-with-symmetric-traced-monoidal-categories/)\] \[[video](https://youtu.be/UbTke5d2-Xs)\]
 
 **Diagrammatic Semantics for Digital Circuits**  
-[SYNCHRON 2020](http://synchron2020.inria.fr) *November 27, 2020* \[[slides](/pages/talks/2020-11-27-synchron.pdf)]
+[SYNCHRON 2020](http://synchron2020.inria.fr) *November 27, 2020* \[[slides](/pages/talks/2020-11-27-synchron.pdf)]\[[video](https://youtu.be/vaVt0EskUcE)\]
 
 **The Graphical Language of Symmetric Traced Monoidal Categories**  
 [Birmingham Theory PhD Seminar](http://talks.bham.ac.uk/show/index/1803) *November 23, 2020* \[[slides](/pages/talks/2020-11-23-bravo.pdf)]
