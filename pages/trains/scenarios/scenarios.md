@@ -3,7 +3,7 @@ layout: page
 title: Train Simulator Scenarios
 permalink: /trains
 tagline: The train now arriving at platform 1 is...
-type: misc
+type: trains
 ---
 
 I make Train Simulator scenarios!
