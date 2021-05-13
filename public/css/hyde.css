@@ -292,6 +292,7 @@ code {
 
 .header-date {
   font-weight: bold;
+  margin-top: 10px;
 }
 
 @media (min-width: 54em) {

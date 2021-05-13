@@ -8,7 +8,7 @@ permalink: /
 Hello! I'm George, a PhD student researcher at the University of Birmingham, under the supervision of [Dan Ghica](https://www.cs.bham.ac.uk/~drg/) and [Miriam Backens](https://www.cs.bham.ac.uk/~backensm/)!
 Currently I'm on an internship at the [Huawei Edinburgh Programming Languages Lab](https://blogs.ed.ac.uk/he-lab/).
 
-I am a member of the [Theory Group](https://www.birmingham.ac.uk/research/activity/computer-science/theory-of-computation).
+I am a member of the [University of Birmingham Theory Group](https://www.birmingham.ac.uk/research/activity/computer-science/theory-of-computation).
 
 ### Contact me
 
