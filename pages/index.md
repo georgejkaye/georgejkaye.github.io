@@ -96,8 +96,10 @@ Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
 
 ## Misc
 
-[**Projects**](/projects)
+[**Pictures**](/pictures) *Pictures of me*
 
-[**Pictures**](/pictures)
+[**Projects**](/projects) *Some things I've done*
+
+[**Railway stations**](/stations) *Photographing all the stations in Great Britain*
 
 [**Train simulator scenarios**](/trains)
