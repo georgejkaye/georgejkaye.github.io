@@ -5,7 +5,7 @@ subtitle: York
 image: /images/excursions/york/0.jpg
 alttext: Exciting Excursions - York
 tagline: I ventured up to York to meet the All The Stations people. Surely such a simple task would cause me no trouble?
-tags: "exciting excursions"
+tags: [adventures, excursions, york]
 ---
 
 On one of my many Facebook trawls, I discovered that the All The Stations people were going to be doing a book signing at the National Railway Museum! A signing for a book that I already owned! I checked my calendar, and decided that it was worth giving myself a day off revision for.

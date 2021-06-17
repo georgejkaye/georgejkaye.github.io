@@ -269,7 +269,7 @@ code {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .title {
@@ -281,7 +281,7 @@ code {
 
 .subtitle {
   font-size: 2em;
-  margin: 0em 0em;
+  margin: 0.25em 0em;
 }
 
 .site-image {
@@ -304,7 +304,7 @@ code {
 @media (max-width: 54em) {
 
   .title-bar {
-    padding: 1em;
+    padding: 0 1em;
   }
 
   .site-image {
@@ -318,6 +318,7 @@ code {
   max-width: 40em;
   font-size: 1.25em;
   text-align: center;
+  margin: 0 25px;
 }
 
 
@@ -377,12 +378,30 @@ code {
   margin-right: 0.2em;
 }
 
-
-.post-date {
+.post-info {
+  display: flex;
+  flex-direction: row;
   color: #9a9a9a;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
+.post-tag {
+  margin-left: 5px;
+  padding: 0 5px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  color: #000000;
+}
+
+.post-tagline {
+  margin-top: 10px;
+}
+
+.post-link {
+  margin-top: 10px;
+  font-weight: bold;
+}
 
 /* Papers */
 
