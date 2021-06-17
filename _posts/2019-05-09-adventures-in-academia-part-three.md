@@ -5,6 +5,7 @@ subtitle: Part Three
 image: /images/adventures/003/0.jpg
 alttext: Some flapjacks
 tagline: An appointment with soup evolves into yet another exciting adventure!
+tags: [adventures, academia, flapjack]
 ---
 
 ***The following takes place between the hours of 12:00 and 16:00.***

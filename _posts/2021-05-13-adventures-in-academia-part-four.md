@@ -2,6 +2,7 @@
 layout: post
 title: Adventures in Academia
 subtitle: Part Four
+tags: [adventures, academia, pie]
 image: /images/adventures/004/pie.jpg
 alttext: A candid shot on the brummie pie shop
 tagline: On a lovely day, Todd and I go in search of a pie.

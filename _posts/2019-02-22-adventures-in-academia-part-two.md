@@ -5,6 +5,7 @@ subtitle: Part Two
 image: /images/adventures/002/0.jpg
 alttext: T boys on tour
 tagline: We set out on an excursion to the Country Girl, with the surprise addition of Owen!
+tags: [adventures, academia, country girl]
 ---
 
 Many months had passed since the last Adventure in Academia. A complex timetable mess meant that 't boys' had been unable to gather in a non-soup environment! But that was all about to change, as a date was set and the boys assembled. Our destination? The Country Girl.

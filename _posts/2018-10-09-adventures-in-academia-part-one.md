@@ -5,6 +5,7 @@ subtitle: Part One
 image: /images/adventures/001/soup2.jpg
 alttext: Todd cradles his newly born child
 tagline: Todd and I embark on a soupy lunch in Sloman which turns into so much more.
+tags: [adventures, academia, soup]
 ---
 
 Todd eagerly invited me to a 'soupy lunch in Sloman', so of course I could not refuse! I had previously accompanied Todd to big Sainsburys as he purchased the soup of the day, where I had also obtained a one hundred pack of Twining's Lady Grey teabags for £3.50 - a bargain!

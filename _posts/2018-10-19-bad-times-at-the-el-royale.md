@@ -4,6 +4,7 @@ title: Bad Times at the El Royale
 image: /images/screenings/bad-times-at-the-el-royale/1.jpg
 alttext: Bad Times at the El Royale
 tagline: On an otherwise uneventful Wednesday, Todd dragged me to see a film about a hotel. I was immediately suspicious that this might actually be a fabled 'edgy film'. Was I right to be concerned or would this actually be a fantastic feature length episode of Four in a Bed?
+tags: [films]
 ---
 
 I had planned a peaceful night in on Wednesday 17th, but Todd had other plans. Apparently there was this new film out called 'Bad Times at the El Royale' and he was going to see it. Over soup in Sloman he extended an invitation and I proceeded to not commit for a good 24+ hours, causing great irritation to Todd and great amusement for me. Eventually I caved when a trip to the new Nandos in Selly was suggested, as you can't really turn down a Nandos.
