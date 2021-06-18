@@ -209,12 +209,6 @@ code {
   }
 }
 
-@media (max-width: 36em) {
-  .right-nav {
-    display: none;
-  }
-}
-
 .spacer {
   height: 75px;
 }
@@ -237,12 +231,6 @@ code {
   border-top: 2px solid #282a36;
   flex-direction: row-reverse;
   font-size: 1em;
-}
-
-@media (min-width: 36em) {
-  .mobile-nav {
-    display: none;
-  }
 }
 
 .mobile-site-image {
@@ -401,6 +389,18 @@ code {
 .post-link {
   margin-top: 10px;
   font-weight: bold;
+}
+
+@media (min-width: 36em) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 36em) {
+  .desktop {
+    display: none;
+  }
 }
 
 /* Papers */
