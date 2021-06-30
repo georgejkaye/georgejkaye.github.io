@@ -314,7 +314,7 @@ code {
 
 .content {
   margin: auto;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 4rem;
 }
 
@@ -439,4 +439,33 @@ code {
 .visible-abstract {
   opacity: 1;
   visibility: visible;
+}
+
+.profile-picture {
+  width: 275px;
+  float: right;
+  border-radius: 10px;
+  margin-left: 25px;
+}
+
+.profile-picture-mobile {
+  display: block;
+  text-align: center;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+
+@media (max-width: 36em) {
+  .profile-picture {
+    display: none;
+  }
+}
+
+@media (min-width: 36em) {
+  .profile-picture-mobile {
+    display: none;
+  }
 }
