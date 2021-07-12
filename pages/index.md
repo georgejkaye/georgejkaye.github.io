@@ -53,6 +53,9 @@ Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
 
 ## Talks
 
+**Rewriting Graphically with Cartesian Traced Categories**  
+[ACT 2021](https://www.cl.cam.ac.uk/events/act2021/) *July 12, 2021* \[[slides](pages/talks/2021-07-12-act.pdf)\] \[[extended abstract](pages/papers/2021-07-08-act.pdf)\]
+
 **Diagrammatic Semantics with Symmetric Traced Monoidal Categories**  
 [Huawei Edinburgh PL Group Tech Talk](https://blogs.ed.ac.uk/he-lab/category/tech-talk/) *March 4, 2021* \[[slides](pages/talks/2021-03-04-huawei.pdf)] \[[page](https://blogs.ed.ac.uk/he-lab/2021/03/08/george-kaye-diagrammatic-semantics-with-symmetric-traced-monoidal-categories/)\] \[[video](https://youtu.be/UbTke5d2-Xs)\]
 
@@ -69,6 +72,8 @@ Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
 [CLA 2019](http://cla.tcs.uj.edu.pl/history/2019/) *July 1, 2019* \[[slides](/pages/talks/2019-07-01-cla.pdf)\]
 
 ## Visits
+
+[**ACT 2021, Cambridge**](https://www.cl.cam.ac.uk/events/act2021/) July 12-16, 2021
 
 [**SYNCHRON 2020, online**](http://synchron2020.inria.fr/) November 26-27, 2020
 
