@@ -5,8 +5,11 @@ title: Home
 permalink: /
 ---
 
+![A nice picture of me](/images/me/me-2.webp){: .profile-picture}
+
 Hello! I'm George, a PhD student researcher at the University of Birmingham, under the supervision of [Dan Ghica](https://www.cs.bham.ac.uk/~drg/) and [Miriam Backens](https://www.cs.bham.ac.uk/~backensm/)!
-Currently I'm on an internship at the [Huawei Edinburgh Programming Languages Lab](https://blogs.ed.ac.uk/he-lab/).
+
+![A nice picture of me](/images/me/me-2.webp){: .profile-picture-mobile}
 
 I am a member of the [University of Birmingham Theory Group](https://www.birmingham.ac.uk/research/activity/computer-science/theory-of-computation).
 
@@ -54,7 +57,7 @@ Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
 ## Talks
 
 **Rewriting Graphically with Cartesian Traced Categories**  
-[ACT 2021](https://www.cl.cam.ac.uk/events/act2021/) *July 12, 2021* \[[slides](pages/talks/2021-07-12-act.pdf)\] \[[extended abstract](pages/papers/2021-07-08-act.pdf)\]
+[ACT 2021](https://www.cl.cam.ac.uk/events/act2021/) *July 12, 2021* \[[slides](pages/talks/2021-07-12-act.pdf)\] \[[extended abstract](pages/papers/2021-07-12-act.pdf)\]
 
 **Diagrammatic Semantics with Symmetric Traced Monoidal Categories**  
 [Huawei Edinburgh PL Group Tech Talk](https://blogs.ed.ac.uk/he-lab/category/tech-talk/) *March 4, 2021* \[[slides](pages/talks/2021-03-04-huawei.pdf)] \[[page](https://blogs.ed.ac.uk/he-lab/2021/03/08/george-kaye-diagrammatic-semantics-with-symmetric-traced-monoidal-categories/)\] \[[video](https://youtu.be/UbTke5d2-Xs)\]
