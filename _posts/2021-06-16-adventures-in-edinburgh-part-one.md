@@ -3,7 +3,7 @@ layout: post
 title: Adventures in Edinburgh
 tags: [adventures, edinburgh]
 subtitle: Part One
-image: /images/adventures/edi001/train.jpg
+image: /images/adventures/edi001/train.webp
 alttext: The view of Edinburgh castle from the Huawei office
 tagline: Todd and I ascend to Edinburgh for two weeks of hard work in the office. This time, we attempt to leave the flat.
 ---
@@ -33,7 +33,7 @@ We now proceeded to the Airbnb that Todd had booked.
 We located the key inside a lockbox on some random set of railings and recovered the keys.
 There were a plethora of keys inside, including a peculiar sawed-off key that Todd suggested that I should immediately remove, as it had not been required to pass the two barriers of security into the flat.
 
-![Todd examines the lockbox](/images/adventures/edi001/lockbox.jpg)
+![Todd examines the lockbox](/images/adventures/edi001/lockbox.webp)
 
 *Todd examines the lockbox*
 
@@ -80,7 +80,7 @@ Before we looked for an exit, I made a beeline for the promised space belonging 
 Now it was time to escape, but we realised that we had left the garage door remote in the flat!
 Thus we had once again run into a dead end.
 
-![Todd explores the underground car park](/images/adventures/edi001/garage.jpg)
+![Todd explores the underground car park](/images/adventures/edi001/garage.webp)
 
 *Todd was baffled by the abundance of space*
 

@@ -2,7 +2,7 @@
 layout: post
 title: Adventures in Academia
 subtitle: Part Three
-image: /images/adventures/003/0.jpg
+image: /images/adventures/003/0.webp
 alttext: Some flapjacks
 tagline: An appointment with soup evolves into yet another exciting adventure!
 tags: [adventures, academia, flapjack]

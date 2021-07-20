@@ -3,7 +3,7 @@ layout: post
 title: Adventures in Edinburgh
 tags: [adventures, edinburgh]
 subtitle: Part Two
-image: /images/adventures/edi002/tower.jpg
+image: /images/adventures/edi002/tower.webp
 alttext: Todd gets in the way of my picture of a nice tower
 tagline: Todd and I ascend to Edinburgh for two weeks of hard work in the office. This time, we eat a lot of food.
 ---
@@ -22,7 +22,7 @@ Regardless of the supposed fallacies in the experiment, I poured myself a wine g
 It tasted quite nice, but I noted the sweetness and hypothesised that I would probably not be able to drink lots of it at once.
 But I did finish the glass anyway.
 
-![Todd inspecting a regular Irn Bru, compared to the new old one](/images/adventures/edi002/bru.jpg)
+![Todd inspecting a regular Irn Bru, compared to the new old one](/images/adventures/edi002/bru.webp)
 
 *Todd inspecting a regular Irn Bru, compared to the new old one*
 
@@ -76,7 +76,7 @@ This was quite bad, as it meant that I had to get by for two weeks with very lit
 To solve this problem, I decided to also wear my shorts.
 As I was a man of substance and strength, I was sure I would be able to get by.
 
-![The view of Edinburgh castle from the pub](/images/adventures/edi002/view.png)
+![The view of Edinburgh castle from the pub](/images/adventures/edi002/view.webp)
 
 *The view of Edinburgh castle from the pub*
 
@@ -115,7 +115,7 @@ We debated how the rules of such a game would work: would you take a shot when y
 No clear solution was established.
 The chess set was then never used while we were in Edinburgh.
 
-![The music shop containing the portal to the backrooms](/images/adventures/edi002/music.jpg)
+![The music shop containing the portal to the backrooms](/images/adventures/edi002/music.webp)
 
 *The music shop containing the portal to the backrooms*
 
