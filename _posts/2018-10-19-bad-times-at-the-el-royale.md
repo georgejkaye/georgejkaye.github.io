@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bad Times at the El Royale
-image: /images/screenings/bad-times-at-the-el-royale/1.jpg
+image: /images/screenings/bad-times-at-the-el-royale/1-post.jpg
 alttext: Bad Times at the El Royale
 tagline: On an otherwise uneventful Wednesday, Todd dragged me to see a film about a hotel. I was immediately suspicious that this might actually be a fabled 'edgy film'. Was I right to be concerned or would this actually be a fantastic feature length episode of Four in a Bed?
 tags: [films]
