@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Blog
-tagline: Don't read this
+tagline: A compendium of wacky adventures and occasional seriousness
 permalink: /blog/
 ---
 
@@ -17,7 +17,7 @@ permalink: /blog/
     </a>
     </div>
     <div class="post-info">
-      <time datetime="{{ post.date | date_to_xmlschema }}">
+      <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
         {{ post.date | date_to_string }}
       </time>
       {% if post.tags.size > 0 %}
@@ -39,19 +39,29 @@ permalink: /blog/
     {% endif %}
 
     {% if post.image %}
-    <div>
-      <a href="{{ site.basurl }}{{ post.url }}">
-        <img src="{{ post.image }}" alt="{{ post.alttext }}" width="100%">
-      </a>
+    <div class="post-preview">
+      <div>
+        <a href="{{ site.basurl }}{{ post.url }}">
+          <img class="post-img" src="{{ post.image }}" alt="{{ post.alttext }}" width="100%">
+        </a>
+      </div>
+      <div>
+        <div class="post-tagline">
+          {{ post.tagline }}
+        </div>
+        <div class="post-link">
+          <a href="{{ site.basurl }}{{ post.url }}">Read more</a>
+        </div>
+      </div>
     </div>
-    {% endif %}
-
+    {% else %}
     <div class="post-tagline">
       {{ post.tagline }}
     </div>
     <div class="post-link">
       <a href="{{ site.basurl }}{{ post.url }}">Read more</a>
     </div>
+    {% endif %}
 
   </article>
   {% endfor %}
