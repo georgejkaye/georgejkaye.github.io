@@ -4,11 +4,11 @@ title: Adventures in Edinburgh
 tags: [adventures, edinburgh]
 subtitle: Part Three
 image: /images/adventures/edi003/mile.jpg
-alttext: 
+alttext: I enjoy a hearty meal on the Royal Mile.
 tagline: Todd and I ascend to Edinburgh for two weeks of hard work in the office. This time, we eat a duck and buy some milk.
 ---
 
-Todd was irritatingly smug that Andrew Neil had responded to his tweet.
+Todd was irritatingly smug that [Andrew Neil had responded to his tweet](https://twitter.com/afneil/status/1404746019070525443?s=19).
 This was greatly annoying as nobody has ever responded to me on Twitter, except for the guy who plays Maria's dad in Sarah Jane Adventures, who I make a habit of bantering with whenever I watch it.
 I also once won a competition to win some free orange twirls, but they fobbed me off with a hidden term and condition stating that only people living in the centre of Birmingham could get them delivered.
 I might have relented had this been a reasonable precondition, and if I were a moron.
