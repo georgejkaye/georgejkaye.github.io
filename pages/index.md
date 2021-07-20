@@ -5,11 +5,11 @@ title: Home
 permalink: /
 ---
 
-![A nice picture of me](/images/me/me-2.webp){: .profile-picture}
+![A nice picture of me](/images/me/me-3.webp){: .profile-picture}
 
 Hello! I'm George, a PhD student researcher at the University of Birmingham, under the supervision of [Dan Ghica](https://www.cs.bham.ac.uk/~drg/) and [Miriam Backens](https://www.cs.bham.ac.uk/~backensm/)!
 
-![A nice picture of me](/images/me/me-2.webp){: .profile-picture-mobile}
+![A nice picture of me](/images/me/me-3.webp){: .profile-picture-mobile}
 
 I am a member of the [University of Birmingham Theory Group](https://www.birmingham.ac.uk/research/activity/computer-science/theory-of-computation).
 
