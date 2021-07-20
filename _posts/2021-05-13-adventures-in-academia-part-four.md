@@ -3,7 +3,7 @@ layout: post
 title: Adventures in Academia
 subtitle: Part Four
 tags: [adventures, academia, pie]
-image: /images/adventures/004/pie.jpg
+image: /images/adventures/004/pie.webp
 alttext: A candid shot on the brummie pie shop
 tagline: On a lovely day, Todd and I go in search of a pie.
 ---
@@ -57,7 +57,7 @@ He stopped, half-removed his waterproof trousers from his bag, then stopped and 
 Throughout all of this I watched agape as the rain thundered around us.
 The whole procedure probably took about 30 seconds, but it felt like hours - we had to obtain pies, and fast!
 
-![Todd and I rapidly approach the pies](/images/adventures/004/rain.jpg)
+![Todd and I rapidly approach the pies](/images/adventures/004/rain.webp)
 
 *Todd and I on pie patrol*
 

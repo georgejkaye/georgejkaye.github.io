@@ -3,7 +3,7 @@ layout: post
 title: Adventures in Edinburgh
 tags: [adventures, edinburgh]
 subtitle: Part Three
-image: /images/adventures/edi003/mile.jpg
+image: /images/adventures/edi003/mile.webp
 alttext: I enjoy a hearty meal on the Royal Mile.
 tagline: Todd and I ascend to Edinburgh for two weeks of hard work in the office. This time, we eat a duck and buy some milk.
 ---
@@ -49,7 +49,7 @@ After we had descended a few sets of stairs, we found that they abruptly ended w
 We had descended into a cavern from which there was no exit!
 Fortunately we used our innate genius to retrace our steps and then proceed down the main staircase, eventually escaping from the building.
 
-![Todd attempts to proceed down the stairs](/images/adventures/edi003/stairs.jpg)
+![Todd attempts to proceed down the stairs](/images/adventures/edi003/stairs.webp)
 
 *Todd attempts to proceed down the stairs*
 
@@ -61,7 +61,7 @@ Once we pulled it out, many google searches suggested that, yes, the duck was me
 While we ate, Todd complained at length that the vegetables I had carefully prepared were cold.
 I rebutted that this was because of the length of time it took him to cook an already cooked duck, and decided I had won the argument.
 
-![Todd serves the duck](/images/adventures/edi003/duck.jpg)
+![Todd serves the duck](/images/adventures/edi003/duck.webp)
 
 *Todd serves the duck*
 
@@ -113,7 +113,7 @@ On the way, we passed the legendary bar of Lebowski's, which had sadly closed do
 This 'The Big Lebowski' themed bar was apparently one of the few places you could get a white russian, which is apparently the favoured drink of the the main character in 'The Big Lebowski' (presumably he is 'The Big Lebowski' otherwise I'm not sure why they'd have named the film that).
 Since I had never had a white russian, I didn't understand why this was a problem.
 
-![Todd laments the closure of Lebowski's](/images/adventures/edi003/lebowskis.jpg)
+![Todd laments the closure of Lebowski's](/images/adventures/edi003/lebowskis.webp)
 
 *Todd laments the closure of Lebowski's*
 
