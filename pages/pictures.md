@@ -13,7 +13,7 @@ type: about
 *I attempt to take a picture with other PhD students while in [Winterbourne House and Garden](https://www.winterbourne.org.uk/).*
 
 ![I punt a punt](/images/me/punt.webp)
-*I punt a punt in Cambridge. They haven't realised I'm not Oxbridge yet! Featuring [Alex Rice](https://alexarice.github.io/) and [Ionnais Markakis](https://www.cst.cam.ac.uk/people/im496).*
+*I punt a punt in Cambridge. They haven't realised I'm not Oxbridge yet! Featuring [Alex Rice](https://alexarice.github.io/) and [Ioannis Markakis](https://www.cst.cam.ac.uk/people/im496). Taken by [Calin Tataru](https://www.cst.cam.ac.uk/people/ct608).*
 
 ![ACT 2021](/images/me/act2021.webp)
 *The drinks reception at [ACT 2021](https://www.cl.cam.ac.uk/events/act2021/).*
