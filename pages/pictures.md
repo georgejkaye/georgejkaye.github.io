@@ -6,6 +6,12 @@ tagline: Some pictures of me through the years
 type: about
 ---
 
+![I stand in the grounds of Winterbourne House and Garden with my arms outstretched](/images/me/winterbourne1.webp)
+*I search for reasons not to remake my diagrams while in [Winterbourne House and Garden](https://www.winterbourne.org.uk/).*
+
+![I take a picture with lots of out of focus PhD students](/images/me/winterbourne2.webp)
+*I attempt to take a picture with other PhD students while in [Winterbourne House and Garden](https://www.winterbourne.org.uk/).*
+
 ![I punt a punt](/images/me/punt.webp)
 *I punt a punt in Cambridge. They haven't realised I'm not Oxbridge yet! Featuring [Alex Rice](https://alexarice.github.io/) and [Ionnais Markakis](https://www.cst.cam.ac.uk/people/im496).*
 
