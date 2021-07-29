@@ -490,3 +490,9 @@ code {
     display: none;
   }
 }
+
+/* pictures page table */
+
+.pictures-table tr:nth-child(2n) td {
+  background-color: transparent;
+}
