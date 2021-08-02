@@ -8,6 +8,7 @@ type: about
 
 {:.pictures-table}
 |-|-|
+| ![Todd and I stand awkwardly on the top of Arthur's Seat](/images/me/mount.webp) | *Todd and I conquer Arthur's Seat. Photo taken by [Cláudio Belo Lourenço](https://www.lri.fr/~blourenc/).*
 | ![I stand in the grounds of Winterbourne House and Garden with my arms outstretched](/images/me/winterbourne1.webp) | *I search for reasons not to remake my diagrams while in [Winterbourne House and Garden](https://www.winterbourne.org.uk/).* |
 | ![I take a picture with lots of out of focus PhD students](/images/me/winterbourne2.webp) | *I attempt to take a picture with other PhD students while in [Winterbourne House and Garden](https://www.winterbourne.org.uk/).*
 | ![I punt a punt](/images/me/punt.webp) | *I punt a punt in Cambridge. They haven't realised I'm not Oxbridge yet! Featuring [Alex Rice](https://alexarice.github.io/) and [Ioannis Markakis](https://www.cst.cam.ac.uk/people/im496). Taken by [Calin Tataru](https://www.cst.cam.ac.uk/people/ct608).* |

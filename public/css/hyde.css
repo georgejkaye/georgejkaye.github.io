@@ -496,3 +496,9 @@ code {
 .pictures-table tr:nth-child(2n) td {
   background-color: transparent;
 }
+
+.footnote {
+  border-top: 1px solid #eee;
+  padding-top: 25px;
+  font-style: italic;
+}
