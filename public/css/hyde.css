@@ -502,3 +502,7 @@ code {
   padding-top: 25px;
   font-style: italic;
 }
+
+.station-picture {
+  width: 32%;
+}
