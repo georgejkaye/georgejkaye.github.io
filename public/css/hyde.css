@@ -506,3 +506,9 @@ code {
 .station-picture {
   width: 32%;
 }
+
+@media (max-width: 60em) {
+  .station-picture {
+    width: 49%;
+  }
+}
