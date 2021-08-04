@@ -135,7 +135,7 @@ It turned out that the film did in fact have a plot and it was incredibly easy t
 Midway through the film, I dared to look at my phone for a fraction of a millisecond.
 This greatly enraged Todd and I was subject to several minutes of anger during which I was told that I would miss essential plot details.
 Given that this was just a film about bowling, I somewhat doubted this.
-It later transpired that Todd had told Tom de Jong about my transgression and I was subject to more abuse the next day on a video call.
+It later transpired that Todd had told [Tom de Jong](https://www.cs.bham.ac.uk/~txd880/) about my transgression and I was subject to more abuse the next day on a video call.
 
 ![Me and Todd enjoy a drink or two](/images/adventures/edi004/drinks.webp)
 
