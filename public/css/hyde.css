@@ -361,8 +361,12 @@ code {
 }
 
 @media (max-width: 52em) {
+  .post-preview {
+    flex-direction: column;
+  }
+
   .post-img {
-    width: 50vw;
+    width: 100%;
   }
 }
 
