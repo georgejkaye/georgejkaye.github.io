@@ -5,7 +5,9 @@ title: Railway stations
 permalink: /stations
 ---
 
+![Adderley Park](/images/trains/stations/add.jpg){:.station-picture}
 ![Bescot Stadium](/images/trains/stations/bsc.jpg){:.station-picture}
+![Birmingham New Street](/images/trains/stations/bhm.jpg){:.station-picture}
 ![Blake Street](/images/trains/stations/bkt.jpg){:.station-picture}
 ![Bordesley](/images/trains/stations/bbs.jpg){:.station-picture}
 ![Butlers Lane](/images/trains/stations/bul.jpg){:.station-picture}
@@ -43,6 +45,7 @@ permalink: /stations
 ![Tame Bridge Parkway](/images/trains/stations/tab.jpg){:.station-picture}
 ![The Lakes](/images/trains/stations/tlk.jpg){:.station-picture}
 ![Tyseley](/images/trains/stations/tys.jpg){:.station-picture}
+![University](/images/trains/stations/uni.jpg){:.station-picture}
 ![Water Orton](/images/trains/stations/wto.jpg){:.station-picture}
 ![Walsall](/images/trains/stations/wsl.jpg){:.station-picture}
 ![Yardley Wood](/images/trains/stations/yrd.jpg){:.station-picture}
