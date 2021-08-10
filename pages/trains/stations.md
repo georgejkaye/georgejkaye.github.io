@@ -5,47 +5,47 @@ title: Railway stations
 permalink: /stations
 ---
 
-![Adderley Park](/images/trains/stations/add.jpg){:.station-picture}
-![Bescot Stadium](/images/trains/stations/bsc.jpg){:.station-picture}
-![Birmingham New Street](/images/trains/stations/bhm.jpg){:.station-picture}
-![Blake Street](/images/trains/stations/bkt.jpg){:.station-picture}
-![Bordesley](/images/trains/stations/bbs.jpg){:.station-picture}
-![Butlers Lane](/images/trains/stations/bul.jpg){:.station-picture}
-![Cambridge](/images/trains/stations/cbg.jpg){:.station-picture}
-![Cambridge North](/images/trains/stations/cmb.jpg){:.station-picture}
-![Coseley](/images/trains/stations/csy.jpg){:.station-picture}
-![Coventry](/images/trains/stations/cov.jpg){:.station-picture}
-![Cromford](/images/trains/stations/cmf.jpg){:.station-picture}
-![Dalmeny](/images/trains/stations/dam.jpg){:.station-picture}
-![Duddeston](/images/trains/stations/dud.jpg){:.station-picture}
-![Four Oaks](/images/trains/stations/fok.jpg){:.station-picture}
-![Gravelly Hill](/images/trains/stations/gvh.jpg){:.station-picture}
-![Haymarket](/images/trains/stations/hym.jpg){:.station-picture}
-![Hackney Wick](/images/trains/stations/hkw.jpg){:.station-picture}
-![Jewellery Quarter](/images/trains/stations/jeq.jpg){:.station-picture}
-![Leamington Spa](/images/trains/stations/lms.jpg){:.station-picture}
-![Marston Green](/images/trains/stations/mgn.jpg){:.station-picture}
-![Matlock](/images/trains/stations/mat.jpg){:.station-picture}
-![Matlock Bath](/images/trains/stations/mtb.jpg){:.station-picture}
-![North Queensferry](/images/trains/stations/nqu.jpg){:.station-picture}
-![Nuneaton](/images/trains/stations/nun.jpg){:.station-picture}
-![Old Hill](/images/trains/stations/ohl.jpg){:.station-picture}
-![Polesworth](/images/trains/stations/psw.jpg){:.station-picture}
-![Sandwell and Dudley](/images/trains/stations/sad.jpg){:.station-picture}
-![Selly Oak](/images/trains/stations/sly.jpg){:.station-picture}
-![Shenstone](/images/trains/stations/sen.jpg){:.station-picture}
-![Shirley](/images/trains/stations/srl.jpg){:.station-picture}
-![Small Heath](/images/trains/stations/sma.jpg){:.station-picture}
-![Smethwick Galton Bridge](/images/trains/stations/sgb.jpg){:.station-picture}
-![Smethwick Rolfe Street](/images/trains/stations/smr.jpg){:.station-picture}
-![Stafford](/images/trains/stations/sta.jpg){:.station-picture}
-![Stechford](/images/trains/stations/scf.jpg){:.station-picture}
-![Stourbridge Junction](/images/trains/stations/sbj.jpg){:.station-picture}
-![Stourbridge Town](/images/trains/stations/sbt.jpg){:.station-picture}
-![Tame Bridge Parkway](/images/trains/stations/tab.jpg){:.station-picture}
-![The Lakes](/images/trains/stations/tlk.jpg){:.station-picture}
-![Tyseley](/images/trains/stations/tys.jpg){:.station-picture}
-![University](/images/trains/stations/uni.jpg){:.station-picture}
-![Water Orton](/images/trains/stations/wto.jpg){:.station-picture}
-![Walsall](/images/trains/stations/wsl.jpg){:.station-picture}
-![Yardley Wood](/images/trains/stations/yrd.jpg){:.station-picture}
+![Adderley Park](/images/trains/stations/add.webp){:.station-picture}
+![Bescot Stadium](/images/trains/stations/bsc.webp){:.station-picture}
+![Birmingham New Street](/images/trains/stations/bhm.webp){:.station-picture}
+![Blake Street](/images/trains/stations/bkt.webp){:.station-picture}
+![Bordesley](/images/trains/stations/bbs.webp){:.station-picture}
+![Butlers Lane](/images/trains/stations/bul.webp){:.station-picture}
+![Cambridge](/images/trains/stations/cbg.webp){:.station-picture}
+![Cambridge North](/images/trains/stations/cmb.webp){:.station-picture}
+![Coseley](/images/trains/stations/csy.webp){:.station-picture}
+![Coventry](/images/trains/stations/cov.webp){:.station-picture}
+![Cromford](/images/trains/stations/cmf.webp){:.station-picture}
+![Dalmeny](/images/trains/stations/dam.webp){:.station-picture}
+![Duddeston](/images/trains/stations/dud.webp){:.station-picture}
+![Four Oaks](/images/trains/stations/fok.webp){:.station-picture}
+![Gravelly Hill](/images/trains/stations/gvh.webp){:.station-picture}
+![Haymarket](/images/trains/stations/hym.webp){:.station-picture}
+![Hackney Wick](/images/trains/stations/hkw.webp){:.station-picture}
+![Jewellery Quarter](/images/trains/stations/jeq.webp){:.station-picture}
+![Leamington Spa](/images/trains/stations/lms.webp){:.station-picture}
+![Marston Green](/images/trains/stations/mgn.webp){:.station-picture}
+![Matlock](/images/trains/stations/mat.webp){:.station-picture}
+![Matlock Bath](/images/trains/stations/mtb.webp){:.station-picture}
+![North Queensferry](/images/trains/stations/nqu.webp){:.station-picture}
+![Nuneaton](/images/trains/stations/nun.webp){:.station-picture}
+![Old Hill](/images/trains/stations/ohl.webp){:.station-picture}
+![Polesworth](/images/trains/stations/psw.webp){:.station-picture}
+![Sandwell and Dudley](/images/trains/stations/sad.webp){:.station-picture}
+![Selly Oak](/images/trains/stations/sly.webp){:.station-picture}
+![Shenstone](/images/trains/stations/sen.webp){:.station-picture}
+![Shirley](/images/trains/stations/srl.webp){:.station-picture}
+![Small Heath](/images/trains/stations/sma.webp){:.station-picture}
+![Smethwick Galton Bridge](/images/trains/stations/sgb.webp){:.station-picture}
+![Smethwick Rolfe Street](/images/trains/stations/smr.webp){:.station-picture}
+![Stafford](/images/trains/stations/sta.webp){:.station-picture}
+![Stechford](/images/trains/stations/scf.webp){:.station-picture}
+![Stourbridge Junction](/images/trains/stations/sbj.webp){:.station-picture}
+![Stourbridge Town](/images/trains/stations/sbt.webp){:.station-picture}
+![Tame Bridge Parkway](/images/trains/stations/tab.webp){:.station-picture}
+![The Lakes](/images/trains/stations/tlk.webp){:.station-picture}
+![Tyseley](/images/trains/stations/tys.webp){:.station-picture}
+![University](/images/trains/stations/uni.webp){:.station-picture}
+![Water Orton](/images/trains/stations/wto.webp){:.station-picture}
+![Walsall](/images/trains/stations/wsl.webp){:.station-picture}
+![Yardley Wood](/images/trains/stations/yrd.webp){:.station-picture}
