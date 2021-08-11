@@ -2,6 +2,10 @@
 
 for f in * ; do
     filename=$(basename -- "$f")
-    filename="${filename%.*}"
-    cwebp $f -o "$filename.webp"
+    basename="${filename%.*}"
+    extension="${filename##*.}"
+    if [ "$extension" == "jpg" ] ; then
+        cwebp $f -o "$basename.webp"
+        rm $f
+    fi
 done

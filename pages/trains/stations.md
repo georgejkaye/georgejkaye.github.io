@@ -5,6 +5,7 @@ title: Railway stations
 permalink: /stations
 ---
 
+![Acocks Green](/images/trains/stations/acg.webp){:.station-picture}
 ![Adderley Park](/images/trains/stations/add.webp){:.station-picture}
 ![Bescot Stadium](/images/trains/stations/bsc.webp){:.station-picture}
 ![Birmingham New Street](/images/trains/stations/bhm.webp){:.station-picture}
@@ -23,6 +24,7 @@ permalink: /stations
 ![Haymarket](/images/trains/stations/hym.webp){:.station-picture}
 ![Hackney Wick](/images/trains/stations/hkw.webp){:.station-picture}
 ![Jewellery Quarter](/images/trains/stations/jeq.webp){:.station-picture}
+![Lea Hall](/images/trains/stations/leh.webp){:.station-picture}
 ![Leamington Spa](/images/trains/stations/lms.webp){:.station-picture}
 ![Marston Green](/images/trains/stations/mgn.webp){:.station-picture}
 ![Matlock](/images/trains/stations/mat.webp){:.station-picture}
