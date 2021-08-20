@@ -34,9 +34,9 @@ I'm currently School of Computer Science [Cookie Break](https://www.cs.bham.ac.u
 
 You might want to read [my CV](/pages/cv.pdf).
 
-## Publications
+## Papers
 
-Click a publication to read the abstract.
+Click a papers to read the abstract.
 
 **Rewriting Graphically With Symmetric Traced Monoidal Categories** \[[pdf](/pages/papers/2021-03-19-rewriting.pdf)\] \[[arxiv](https://arxiv.org/abs/2010.06319)\] \[[bibtex](/pages/papers/2021-03-19-rewriting.bib.txt)\]  
 Arxiv preprint *with [Dan Ghica](https://www.cs.bham.ac.uk/~drg/)*  
