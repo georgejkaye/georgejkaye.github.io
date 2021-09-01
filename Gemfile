@@ -10,3 +10,5 @@ gem "jekyll-gist"
 gem "jekyll-github-metadata"
 gem "jekyll-seo-tag"
 gem "jekyll-paginate"
+
+gem "webrick", "~> 1.7"
