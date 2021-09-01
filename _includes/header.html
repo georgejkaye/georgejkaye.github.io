@@ -1,12 +1,12 @@
 <div class="header-bar">
   <div class="title-bar">
-    <div class="title">
+    <h1 class="title">
       {% if page.url == "/" | relative_url %}
       Hello!
       {% else %}
       {{ page.title }}
       {% endif %}
-    </div>
+    </h1>
 
     <div class="subtitle">{{ page.subtitle }}</div>
   </div>
