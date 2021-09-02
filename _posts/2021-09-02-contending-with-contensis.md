@@ -26,7 +26,7 @@ There was a mild furore in the Theory Microsoft Teams team in which everyone tri
 Eventually it was revealed that the transfer to the central site had gone ahead and a lot of things that had once lived on the CS servers had been jettisoned into the ether, never to return.
 More importantly, this meant that all non-staff faces had also been jettisoned with them: we had been demoted to a list inside a container that wasn't even visible when you loaded the page.
 
-Even worse, the cookie break site vanished! 
+Even worse, the cookie break site vanished!
 Now how would we know who would host the longest running social event in the school?
 
 ## In which I acknowledge the benefits of the new system
@@ -114,7 +114,7 @@ There was only one option left: I would have to seek out Anupam in person.
 And there was a perfect time to do this: the first lunch back after my internship!
 This took place at the [scene of an earlier adventure](https://www.georgejkaye.com/2021/05/13/adventures-in-academia-part-four/), but his time there were no pies in sight!
 In fact, I had been promised fish and chips, but there were no fish and chips, so actually I got a crazy vegan burger with avocado mayo instead.
-Filled with the millenial energy endowed to me by this green sauce, I prepared to bring up the topic of the website.
+Filled with the millennial energy endowed to me by this green sauce, I prepared to bring up the topic of the website.
 This was a problem since the lunchtime chat was of course filled with all sorts of inane discourse, and it was very hard to get a word in edgeways!
 At one point [Ming](https://puzzledoyster.github.io/) was asked if he would pose for some prospectus pictures, which the rest of us watched while guffawing heartily.
 Eventually there was a natural lull, and I managed to take control of the conversation in order to bring up the website.
@@ -206,7 +206,7 @@ The ideal solution is obviously to teach everyone HTML, but I don't think people
 Although saying this, it probably takes just as long to get a working knowledge of HTML as it is to figure out what's going on with Contensis, so maybe it is a possibility.
 What the system really needs is the *option* to go 'under-the-hood' and let us manipulate the actual HTML.
 This strikes the perfect middle-ground: people who don't know what they're doing can continue about their business while we can get stuck in at the source.
-Editing the source direclty makes it a lot easier to manipulate the code of the page: we can copy and paste our widgets rather than having to try and find the three-pixel sweetspot that lets us drag it into the next column.
+Editing the source directly makes it a lot easier to manipulate the code of the page: we can copy and paste our widgets rather than having to try and find the three-pixel sweetspot that lets us drag it into the next column.
 There are plenty of editors that allow you to swap between wysiwyg and raw HTML on the fly.
 Since we're still only letting people edit the actual content of the page, we don't need to be too concerned about people messing up the consistent theming.
 And if we're worried about people not knowing what they're doing, we can lock away the option until they've done some training course.
