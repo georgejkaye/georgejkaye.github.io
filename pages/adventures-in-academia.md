@@ -6,7 +6,10 @@ permalink: /adventures-in-academia
 
 This page details the reading order for stories told within the wider Adventures in Academia universe.
 
-## The masters years
+
+## Reading order
+
+### The masters years
 
 * [Adventures in Academia 1](https://www.georgejkaye.com/2018/10/09/adventures-in-academia-part-one/)
 * [Bad Times at the El Royale](https://www.georgejkaye.com/2018/10/19/bad-times-at-the-el-royale/)
@@ -15,16 +18,14 @@ This page details the reading order for stories told within the wider Adventures
 * [Exciting Excursions York](https://www.georgejkaye.com/2019/05/09/exciting-excursions-york/)
 * [Adventures in Academia 3](https://www.georgejkaye.com/2019/05/09/adventures-in-academia-part-three/)
 
-## Post-lockdown adventures
+### Post-lockdown adventures
 
-* [Adventures in Academia 4]
-* [Adventures in Edinburgh 1]
-* [Adventures in Edinburgh 2]
-* [Adventures in Edinburgh 3]
-* [Adventures in Edinburgh 4]
+* [Adventures in Academia 4](https://www.georgejkaye.com/2021/05/13/adventures-in-academia-part-four/)
+* [Adventures in Edinburgh 1](https://www.georgejkaye.com/2021/06/16/adventures-in-edinburgh-part-one/)
+* [Adventures in Edinburgh 2](https://www.georgejkaye.com/2021/06/25/adventures-in-edinburgh-part-two/)
+* [Adventures in Edinburgh 3](https://www.georgejkaye.com/2021/07/20/adventures-in-edinburgh-part-three/)
+* [Adventures in Edinburgh 4](https://www.georgejkaye.com/2021/08/04/adventures-in-edinburgh-part-four/)
 
-## Summer shenanigans
+### Summer shenanigans
 
-* [Adventures in ACTademia 1]
-* [Adventures in ACTademia 2]
-* [Contending with Contensis]
+* [Contending with Contensis](https://www.georgejkaye.com/2021/09/02/contending-with-contensis/)

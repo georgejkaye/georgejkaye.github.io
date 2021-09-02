@@ -106,7 +106,7 @@ Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
 
 [**Pictures**](/pictures) *Pictures of me*
 
-[**Projects**](/projects) *Some things I've done*
+[**Adventures in Academia**](/adventures-in-academia) *A series of entertaining escapes*
 
 [**Railway stations**](/stations) *Photographing all the stations in Great Britain*
 
