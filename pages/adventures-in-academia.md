@@ -4,8 +4,7 @@ title: Adventures in Academia
 permalink: /adventures-in-academia
 ---
 
-This page details the reading order for stories told within the wider Adventures in Academia universe.
-
+This page serves as a homepage for stories told within the wider Adventures in Academia universe.
 
 ## Reading order
 
