@@ -517,3 +517,13 @@ code {
     width: 49%;
   }
 }
+
+.toggle-abstract {
+  font-weight: normal;
+  cursor: pointer;
+  color: #8be9fd;
+}
+
+.toggle-abstract:hover {
+  text-decoration: underline;
+}

@@ -1,27 +1,12 @@
 $(document).ready(function () {
-
-	$("a[href^=\\#]").click(function (e) {
-		e.preventDefault();
-		var aid = $(this).attr("href");
-		var offset = aid === "#top" ? 0 : $(aid).offset().top
-		$('html,body').animate({
-			scrollTop: offset
-		}, 'slow');
-	});
-
+	// Add ids to each header, so we can use them as anchors
 	$('h2,h3').not('.keep-id').each(function () {
 		var hyphenated = $(this).text().toLowerCase().replace(/[^a-z0-9\s-]/gi, '').replace(/\s/g, '-');
 		$(this).attr('id', hyphenated);
 	});
-
-	$('.publication').click(function () {
-
+	// Show an abstract when you click on a paper
+	$('.toggle-abstract').click(function () {
 		var id = "#" + $(this).attr('id') + "-abstract"
-		$(id).css("display") === "block" ? $(id).slideUp() : $(id).slideDown()
+		$(id).css("display") === "block" ? $(id).hide() : $(id).show()
 	})
-
-	$('a').click(function (e) {
-		e.stopPropagation();
-	})
-
 });

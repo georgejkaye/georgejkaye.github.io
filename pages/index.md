@@ -38,18 +38,16 @@ You might want to read [my CV](/pages/cv.pdf).
 
 Click a papers to read the abstract.
 
-**Rewriting Graphically With Symmetric Traced Monoidal Categories** \[[pdf](/pages/papers/2021-03-19-rewriting.pdf)\] \[[arxiv](https://arxiv.org/abs/2010.06319)\] \[[bibtex](/pages/papers/2021-03-19-rewriting.bib.txt)\]  
+**Rewriting Graphically With Symmetric Traced Monoidal Categories** \[[pdf](/pages/papers/2021-03-19-rewriting.pdf)\] \[[arxiv](https://arxiv.org/abs/2010.06319)\] \[[bibtex](/pages/papers/2021-03-19-rewriting.bib.txt)\] [**abstract**{:.toggle-abstract #hypergraphs }\]  
 Arxiv preprint *with [Dan Ghica](https://www.cs.bham.ac.uk/~drg/)*  
-{: class="publication" id="hypergraphs" }
 
 *We examine a variant of hypergraphs that we call interfaced linear hypergraphs, with the aim of creating a sound and complete graphical language for symmetric traced monoidal categories (STMCs) suitable for graph rewriting. In particular, we are interested in rewriting for categorical settings with a Cartesian structure, such as digital circuits. These are incompatible with previous languages where the trace is constructed using a compact closed or Frobenius structure, as combining these with Cartesian product can lead to degenerate diagrams. Instead we must consider an approach where the trace is constructed as an atomic operation. Interfaced linear hypergraphs are defined as regular hypergraphs in which each vertex is the source and target of exactly one edge each, equipped with an additional interface edge. The morphisms of a freely generated STMC are interpreted as interfaced linear hypergraphs, up to isomorphism (soundness). Moreover, any linear hypergraph is the representation of a unique STMC morphism, up to the equational theory of the category (completeness). This establishes interfaced linear hypergraphs as a suitable combinatorial language for STMCs. We then show how we can apply the theory of adhesive categories to our graphical language, meaning that a broad range of equational properties of STMCs can be specified as a graph rewriting system. The graphical language of digital circuits is presented as a case study.*
 {: class="abstract" id="hypergraphs-abstract" }
 
 ### Masters project
 
-**A visualiser for linear lambda-terms as rooted 3-valent maps** \[[page](/lambda-visualiser)\] \[[pdf](/pages/papers/2019-04-08-masters.pdf)\]  
+**A visualiser for linear lambda-terms as rooted 3-valent maps** \[[page](/lambda-visualiser)\] \[[pdf](/pages/papers/2019-04-08-masters.pdf)\]  [**abstract**{:.toggle-abstract #lambda }\]  
 Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
-{: class="publication" id="lambda" }
 
 *We detail the development of a set of tools in Javascript to aid in the research of the topological properties of linear λ-terms when they are represented as 3-valent rooted maps. A λ-term visualiser was developed to visualise a λ-term specified by the user as a rooted map on the screen. The visualiser also includes functionality related to normalisation of terms, such as the option to view a normalisation graph or reduce a term to its normal form. To complement this a λ-term gallery was created to generate λ-terms that satisfied criteria specified by the user, and display their corresponding maps. While the focus of the project was on linear λ-terms, these tools also work for all pure λ-terms. The tools can be used for a variety of different applications, such as examining the structure of different terms, disproving conjectures regarding various subsets of the λ-calculus, or investigating special normalisation properties held by different sets of λ-terms. We evaluate the tools' success and acknowledge that while the tools suffer from performance issues when used for larger terms, they still fulfil many of the original aims of the project, and may still be very useful for systematic exploration of the λ-calculus in the future.*
 {: class="abstract" id="lambda-abstract" }
