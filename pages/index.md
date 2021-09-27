@@ -90,15 +90,13 @@ Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
 
 ## Teaching
 
-### 2020-21
+**Autumn 2021** [**Mathematical and Logical Foundations of Computer Science**](https://www.cs.bham.ac.uk/internal/modules/2021/06-35324/) University of Birmingham, teaching assistant
 
-[**Mathematical and Logical Foundations of Computer Science**](https://www.cs.bham.ac.uk/internal/modules/2020/06-35324/) University of Birmingham, teaching assistant
+**Autumn 2020** [**Mathematical and Logical Foundations of Computer Science**](https://www.cs.bham.ac.uk/internal/modules/2020/06-35324/) University of Birmingham, teaching assistant
 
-### 2019-20
+**Spring 2020** [**Compilers & Languages**](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/) University of Birmingham, teaching assistant \[[ocaml tutorial](/ocaml)\]
 
-[**Compilers & Languages**](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/) University of Birmingham, teaching assistant \[[ocaml tutorial](/ocaml)\]
-
-[**Mathematical Foundations of Computer Science**](https://www.cs.bham.ac.uk/internal/modules/2019/06-30181/) University of Birmingham, teaching assistant
+**Autumn 2019** [**Mathematical Foundations of Computer Science**](https://www.cs.bham.ac.uk/internal/modules/2019/06-30181/) University of Birmingham, teaching assistant
 
 ## Misc
 
