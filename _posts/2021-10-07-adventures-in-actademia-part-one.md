@@ -98,6 +98,6 @@ I was told in no uncertain terms that I should have already submitted them, and 
 I rebutted that I had received no email requesting the slides, and spent the next ten minutes searching through my emails in case I had and could be proved wrong.
 Predictably, I was correct and the email had not been sent.
 A hurried few messages were then sent in the official ACT organisers chat, which I wasn't allowed to see, despite being the person who had just saved the conference from being a series of stand up comedy acts.
-It transpired that [Ionnais](https://www.cst.cam.ac.uk/people/im496) was supposed to have sent out an email asking for the slides, but this hadn't happened for one reason or another.
+It transpired that [Ioannis](https://www.cst.cam.ac.uk/people/im496) was supposed to have sent out an email asking for the slides, but this hadn't happened for one reason or another.
 An email promptly went out and I replied at ten minutes past eleven, the time at which the best emails are sent.
 Happy in the knowledge that I had saved ACT, I went to bed.
