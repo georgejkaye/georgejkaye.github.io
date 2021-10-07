@@ -28,3 +28,4 @@ This page serves as a homepage for stories told within the wider Adventures in A
 ### Summer shenanigans
 
 * [Contending with Contensis](https://www.georgejkaye.com/2021/09/02/contending-with-contensis/)
+* [Adventures in ACTademia 1](https://www.georgejkaye.com/2021/10/07/adventures-in-actademia-part-one/)
