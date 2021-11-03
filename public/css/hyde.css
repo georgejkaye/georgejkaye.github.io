@@ -88,7 +88,6 @@ code {
 
 .nav-bar {
   width: 100%;
-  position: fixed;
   z-index: 999;
   border-top: 2px solid #282a36;
   border-bottom: 2px solid #282a36;
@@ -96,6 +95,7 @@ code {
 
 @media (min-width: 36em) {
   .nav-bar {
+    position: fixed;
     display: flex;
     justify-content: center;
   }
@@ -215,7 +215,7 @@ code {
 
 @media (max-width: 36em) {
   .spacer {
-    height: 125px;
+    display: none;
   }
 }
 
