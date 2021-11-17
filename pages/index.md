@@ -52,6 +52,9 @@ Masters dissertation *supervised by [Noam Zeilberger](http://noamz.org)*
 
 ## Talks
 
+**Normalisation by Evaluation for Digital Circuits**  
+[SYCO 8](https://www.cl.cam.ac.uk/events/syco/8/) *December 13, 2021* \[[extended abstract](pages/papers/2021-12-13-syco.pdf)\]
+
 **Rewriting Graphically with Cartesian Traced Categories**  
 [ACT 2021](https://www.cl.cam.ac.uk/events/act2021/) *July 12, 2021* \[[slides](pages/talks/2021-07-12-act.pdf)\] \[[extended abstract](pages/papers/2021-07-12-act.pdf)\] \[[video](https://www.youtube.com/watch?v=We7FuoOCxyA&t=6378s)\]
 
