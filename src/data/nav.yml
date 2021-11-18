@@ -1,0 +1,19 @@
+all-links:
+    - title: Blog
+      target: /blog
+    - title: GitHub
+      target: https://github.com/georgejkaye
+home-links:
+    - title: Misc
+      target: "#misc"
+    - title: Teaching
+      target: "#teaching"
+    - title: Talks
+      target: "#talks"
+    - title: Papers
+      target: "#papers"
+    - title: About
+      target: "#about"
+trains-links:
+    - title: Trains
+      target: /trains

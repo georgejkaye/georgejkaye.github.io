@@ -1,0 +1,17 @@
+me:
+  name: George Kaye
+  address: Office 225 (Desk J), School of Computer Science, University of Birmingham
+  email: g.j.kaye at cs.bham.ac.uk
+  picture: /images/me/me-3.webp
+noam:
+  name: Noam Zeilberger
+  poss: "'s"
+  web: http://noamz.org
+dan:
+  name: Dan Ghica
+  poss: "'s"
+  web: https://www.cs.bham.ac.uk/~drg/
+miriam:
+  name: Miriam Backens
+  poss: "'"
+  web: https://www.cs.bham.ac.uk/~backensm/
