@@ -1,0 +1,7 @@
+@mastersthesis{kaye2020graphical,
+  title         = {A visualiser for linear lambda-terms as rooted 3-valent maps},
+  author        = {George Kaye},
+  year          = {2019},
+  school        = {University of Birmingham}
+  url           = {https://georgejkaye.com/files/papers/2019-04-08-masters.pdf}
+}

@@ -1,0 +1,77 @@
+@import "styles.scss";
+@import "colours.scss";
+
+$nav-height: 75px;
+
+.spacer {
+    height: $nav-height;
+}
+
+.nav-bar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 2px solid $background;
+    background-color: $accent;
+}
+
+.nav-bar-content {
+    text-align: center;
+    display: flex;
+    height: $nav-height;
+    width: 100%;
+    padding-top: 10px;
+
+    @media(min-width : $mobile-width) {
+        max-width: $mobile-width;
+    }
+}
+
+.left-nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.site-name {
+    display: flex;
+    align-items: center;
+}
+
+.right-nav {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.nav-site-image {
+    height: 50px;
+    width: 50px;
+    margin-right: 0.75em;
+}
+
+.nav-bar-title {
+    color: $pink;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+    padding: 2rem 0rem;
+}
+
+.subtitle,
+.tagline {
+    color: $subtitle;
+}
