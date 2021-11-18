@@ -1,0 +1,36 @@
+@import "colours.scss";
+
+.paper {
+    background-color: $accent;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.paper-title {
+    font-weight: bold;
+}
+
+.paper-details {
+    font-style: italic;
+}
+
+.author-text {
+    font-style: italic;
+}
+
+.author-me {
+    font-weight: bold;
+    color: $pink;
+}
+
+.toggle-abstract {
+    cursor: pointer;
+    color: $cyan;
+    text-decoration: underline;
+}
+
+.paper-abstract {
+    display: none;
+    font-style: italic;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+{% include components/head %}
+
+<body>
+
+  {% include components/nav %}
+  <div class="spacer">
+    &nbsp;
+  </div>
+  {% include components/title %}
+
+  <div id="text" class="content container wide">
+    {{ content }}
+  </div>
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="/scripts/scripts.js"></script>
+
+</body>
+
+</html>
