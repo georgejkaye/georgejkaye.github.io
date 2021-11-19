@@ -1,5 +1,5 @@
 <div class="paper">
-    <div class="paper-title">{{ paper.title }}</div>
+    <span class="paper-title">{{ paper.title }}</span>
 
     <!-- PDF -->
     {% if paper.arxiv %}
@@ -32,17 +32,23 @@
     <div class="paper-authors">
         {% for author in paper.authors %}
         {% assign person = people[author.name] %}
-        <span class="author{% if author.name == "me" %} author-me{%endif%}">
-            {% if author.text %}
-            {{ author.text }}
-            {% endif %}
-            {% if person.web %}
-            <a href={{ person.web }} title="{{ person.name }}{{ person.poss }} personal webpage">
+        <span class="author">
+            {% if author.name == "me" %}
+            <span class="author-me">
                 {% endif %}
-                {{- person.name -}}
+                {% if author.text %}
+                {{ author.text }}
+                {% endif %}
                 {% if person.web %}
-            </a>
-            {% endif %}
+                <a href={{ person.web }} title="{{ person.name }}{{ person.poss }} personal webpage">
+                    {% endif %}
+                    {{- person.name -}}
+                    {% if person.web %}
+                </a>
+                {% endif %}
+                {%-if author.name == "me" -%}
+            </span>
+            {%- endif -%}
             {%- if forloop.last -%}{% else %}, {% endif %}
         </span>
         {% endfor %}

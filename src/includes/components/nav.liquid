@@ -14,22 +14,24 @@
         </div>
         <div class="desktop right-nav">
             {% for link in nav.all-links %}
-            {% include macros/nav-link link=link %}
+            <div class="nav-link"><a href={{ link.target }}>{{ link.title }}</a></div>
             {% endfor %}
-            {% if page.title == "Home" %}
+            {% if title == "Home" %}
             <div class="nav-link home-link">•</div>
-            {% for link in nav.home-links %} {% include macros/nav-link %}
+            {% for link in nav.home-links %}
+            <div class="nav-link home-link"><a href={{ link.target }}>{{ link.title }}</a></div>
             {% endfor %}
             {% endif %}
             {% if page.type == "trains" %}
-            {% for link in home-links %}
-            {% include macros/nav-link %}
+            {% for link in train-links %}
+            <div class="nav-link"><a href={{ link.target }}>{{ link.title }}</a></div>
             {% endfor %}
             {% endif %}
         </div>
     </div>
-    <!-- <div class="mobile mobile-nav">
-        <div class="nav-link"><a href="https://github.com/georgejkaye">GitHub</a></div>
-        <div class="nav-link"><a href="/blog">Blog</a></div>
-    </div> -->
+    <div class="mobile mobile-nav">
+        {% for link in nav.all-links %}
+        <div class="nav-link"><a href={{ link.target }}>{{ link.title }}</a></div>
+        {% endfor %}
+    </div>
 </div>
