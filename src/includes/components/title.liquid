@@ -4,18 +4,13 @@
       {% if page.url == "/" %}
       Hello!
       {% else %}
-      {{ page.title }}
+      {{ title }}
       {% endif %}
     </h1>
 
-    <div class="subtitle">{{ page.subtitle }}</div>
+    <div class="subtitle">{{ subtitle }}</div>
   </div>
   <div class="tagline">{{ page.tagline }}</div>
-  {% if page.date %}
-  <div class="header-date post-info">
-    <time class="header-date">{{ page.date | date_to_string }}</time>
-  </div>
-  {% endif %}
   {% if page.tags.size > 0 %}
   <div class="post-info">
     {% for tag in page.tags %}

@@ -1,31 +1,5 @@
-<h2>About me</h2>
+<h2>Talks</h2>
 
-<div>
-    My primary research interests are in graphical calculi for compositional systems and the lambda calculus using
-    monoidal
-    categories, and reasoning about these structures diagrammatically and by using graph rewriting techniques.
-    I am also interested in general programming languages and compilers.
-    On a more practical side, I enjoy making and experimenting with visualisers for various theoretical concepts.
-</div>
-
-<img style="text-align:center" src="images/circuit.svg">
-
-<div>
-    Currently I am working on a diagrammatic semantics for digital circuits, motivated by the work of Ghica and Jung
-    <a href="https://doi.org/10.1109/FMCAD.2016.7886659">[1]</a> <a
-        href="https://doi.org/10.4230/LIPIcs.CSL.2017.24">[2]</a>.
-    I am using a variant of [hypergraphs](https://en.wikipedia.org/wiki/Hypergraphs) that are a sound and complete
-    calculus for symmetric traced monoidal categories.
-    The ultimate aim of this project is to define an automatic rewriting system for these hypergraphs that we can use as
-    an effective and *efficient* operational semantics for digital circuits.
-</div>
-
-<div>
-    When I'm not researching, I play the piano and go on adventures usually involving trains, canals or both.
-    I occasionally take photos of pretty things and put them on [Instagram](https://www.instagram.com/georgejkaye/).
-    If you want something less pretty, here are some [pictures](/pictures) of me! I also (very rarely) use
-    <a href={{ links.twitter }}>Twitter</a>.
-</div>
-
-<div></div>
-You might want to read <a href={{ links.cv }}>mv CV</a>.
+{% for talk in talks %}
+{% include macros/talk %}
+{% endfor %}

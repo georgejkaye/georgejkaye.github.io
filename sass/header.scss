@@ -1,4 +1,4 @@
-@import "styles.scss";
+@import "core.scss";
 @import "colours.scss";
 
 $nav-height: 75px;
@@ -21,11 +21,21 @@ $nav-height: 75px;
     text-align: center;
     display: flex;
     height: $nav-height;
-    width: 100%;
+    width: $content-width;
     padding-top: 10px;
 
-    @media(min-width : $mobile-width) {
+    @media(min-width: $mobile-width + 14em) {
         max-width: $mobile-width;
+    }
+
+    @media(max-width: $mobile-width + 14em) {
+        padding-left: 1em;
+        padding-right: 1em;
+        max-width: $mobile-width;
+    }
+
+    @media(min-width : $home-width) {
+        max-width: $content-width;
     }
 }
 
@@ -44,6 +54,12 @@ $nav-height: 75px;
 .right-nav {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
+
+    @media (max-width: $mobile-width) {
+        display: none;
+    }
+
 }
 
 .nav-site-image {
@@ -61,7 +77,14 @@ $nav-height: 75px;
     text-decoration: none;
 }
 
+.nav-link {
+    font-weight: bold;
+    font-size: 1em;
+    margin: 2px 10px 0 10px;
+}
+
 .header-bar {
+    background-color: $accent;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,4 +97,20 @@ $nav-height: 75px;
 .subtitle,
 .tagline {
     color: $subtitle;
+}
+
+.subtitle {
+    font-size: 1.25em;
+}
+
+.home-link {
+    @media (max-width: $home-width) {
+        display: none;
+    }
+}
+
+.mobile-nav {
+    @media (min-width: $mobile-width) {
+        display: none;
+    }
 }
