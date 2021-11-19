@@ -1,0 +1,29 @@
+@import "colours.scss";
+
+pre {
+    background-color: $accent;
+    padding: 25px;
+    color: $cyan;
+    border-radius: 5px;
+}
+
+.number {
+    color: $purple;
+}
+
+.operator,
+.punctuation {
+    color: #c9c5be;
+}
+
+.string {
+    color: $yellow;
+}
+
+.boolean {
+    color: $green;
+}
+
+.keyword {
+    color: $pink;
+}

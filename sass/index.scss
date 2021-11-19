@@ -1,0 +1,114 @@
+@import "colours.scss";
+
+// intro
+
+.profile-picture {
+    width: 275px;
+    float: right;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+
+// boxes
+
+.paper,
+.talk,
+.visit,
+.module {
+    background-color: $accent;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    margin: 15px 0px;
+}
+
+// paper
+
+.paper-title {
+    font-weight: bold;
+}
+
+.paper-details {
+    color: $green;
+    font-style: italic;
+}
+
+.paper-abstract {
+    display: none;
+    font-style: italic;
+}
+
+.author-text {
+    font-style: italic;
+}
+
+.author-me {
+    font-weight: bold;
+    color: $pink;
+}
+
+
+.toggle-abstract {
+    cursor: pointer;
+    color: $cyan;
+}
+
+
+
+// talks
+
+.talk-title {
+    font-weight: bold;
+}
+
+.talk-date {
+    font-style: italic;
+    color: $green;
+}
+
+
+// visits
+
+.visit-venue {
+    font-weight: bold;
+}
+
+.visit-cancelled {
+    text-decoration: line-through;
+}
+
+.visit-city {
+    color: $green
+}
+
+.visit-dates {
+    font-style: italic;
+}
+
+// teaching
+
+.module-title {
+    font-weight: bold;
+}
+
+.module-term {
+    color: $green;
+}
+
+.module-role {
+    font-style: italic;
+}
+
+.module-institution {
+    font-style: italic;
+}
+
+// misc
+
+.misc-link {
+    font-weight: bold;
+}
+
+.misc-text {
+    font-style: italic;
+}

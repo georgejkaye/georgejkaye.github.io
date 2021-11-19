@@ -1,0 +1,29 @@
+- venue: ACT 2021
+  web: https://www.cl.cam.ac.uk/events/act2021/
+  city: Cambridge
+  dates: July 12-16, 2021
+- venue: SYNCHRON 2020
+  web: http://synchron2020.inria.fr/
+  city: online
+  dates: November 26-27, 2021
+- venue: ACT 2020
+  web: https://act2020.mit.edu/
+  city: online
+  dates: July 6-10, 2020
+- venue: SYCO 7
+  web: https://www.cl.cam.ac.uk/events/syco/7/
+  city: Tallinn
+  dates: March 30-31, 2020
+  cancelled: yes
+- venue: MGS Christmas Seminar 2019
+  web: https://staffwww.dcs.shef.ac.uk/people/G.Struth/mgs_xmas19.html
+  city: Sheffield
+  dates: December 18, 2019
+- venue: SYCO 6
+  web: https://www.cl.cam.ac.uk/events/syco/6/
+  city: Leicester
+  dates: December 16-17, 2019
+- venue: CLA 2019
+  web: http://cla.tcs.uj.edu.pl/history/2019/
+  city: Versailles
+  dates: July 1-2, 2019

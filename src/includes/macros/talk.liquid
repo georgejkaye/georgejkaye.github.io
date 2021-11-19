@@ -1,0 +1,32 @@
+<div class="talk">
+    <div class="talk-title">{{ talk.title }}</div>
+
+    <div>
+        <span class="talk-venue"><a href={{ talk.web }} title="{{ talk.venue }} webpage">{{ talk.venue }}</a></span>
+        <span class="talk-date">{{ talk.date }}</span>
+
+        <!-- slides -->
+        {% if talk.slides %}
+        {%- capture target -%} /files/slides/{{ talk.slides }}.pdf {%- endcapture -%}
+        {%- capture title -%} Slides for '{{ talk.title }}' {%- endcapture -%}
+        {%- capture text -%} slides {%- endcapture -%}
+        {% include macros/button %}
+        {% endif %}
+
+        <!-- slides -->
+        {% if talk.extended-abstract %}
+        {%- capture target -%} /files/abstracts/{{ talk.abstract }}.pdf {%- endcapture -%}
+        {%- capture title -%} Extended abstract for '{{ talk.title }}' {%- endcapture -%}
+        {%- capture text -%} extended abstract {%- endcapture -%}
+        {% include macros/button %}
+        {% endif %}
+
+        <!-- slides -->
+        {% if talk.video %}
+        {%- capture target -%} {{ talk.video }} {%- endcapture -%}
+        {%- capture title -%} Video of '{{ talk.title }}' {%- endcapture -%}
+        {%- capture text -%} video {%- endcapture -%}
+        {% include macros/button %}
+        {% endif %}
+    </div>
+</div>

@@ -1,10 +1,5 @@
 <h2>Papers</h2>
 
-{% for paper in papers.papers %}
+{% for paper in papers %}
 {% include macros/paper %}
 {% endfor %}
-
-<h3>Masters project</h3>
-
-{% assign paper = papers.masters %}
-{% include macros/paper %}

@@ -1,15 +1,13 @@
-papers:
-  - title: Rewriting Graphically With Symmetric Traced Monoidal Categories
-    details: Arxiv preprint
-    authors:
-      - name: me
-      - text: with
-        name: dan
-    file: 2021-03-19-rewriting
-    arxiv: 2010.06319
-    abstract: We examine a variant of hypergraphs that we call interfaced linear hypergraphs, with the aim of creating a sound and complete graphical language for symmetric traced monoidal categories (STMCs) suitable for graph rewriting. In particular, we are interested in rewriting for categorical settings with a Cartesian structure, such as digital circuits. These are incompatible with previous languages where the trace is constructed using a compact closed or Frobenius structure, as combining these with Cartesian product can lead to degenerate diagrams. Instead we must consider an approach where the trace is constructed as an atomic operation. Interfaced linear hypergraphs are defined as regular hypergraphs in which each vertex is the source and target of exactly one edge each, equipped with an additional interface edge. The morphisms of a freely generated STMC are interpreted as interfaced linear hypergraphs, up to isomorphism (soundness). Moreover, any linear hypergraph is the representation of a unique STMC morphism, up to the equational theory of the category (completeness). This establishes interfaced linear hypergraphs as a suitable combinatorial language for STMCs. We then show how we can apply the theory of adhesive categories to our graphical language, meaning that a broad range of equational properties of STMCs can be specified as a graph rewriting system. The graphical language of digital circuits is presented as a case study.
-masters:
-  title: A visualiser for linear lambda-terms as rooted 3-valent maps
+- title: Rewriting Graphically With Symmetric Traced Monoidal Categories
+  details: Arxiv preprint
+  authors:
+    - name: me
+    - text: with
+      name: dan
+  file: 2021-03-19-rewriting
+  arxiv: 2010.06319
+  abstract: We examine a variant of hypergraphs that we call interfaced linear hypergraphs, with the aim of creating a sound and complete graphical language for symmetric traced monoidal categories (STMCs) suitable for graph rewriting. In particular, we are interested in rewriting for categorical settings with a Cartesian structure, such as digital circuits. These are incompatible with previous languages where the trace is constructed using a compact closed or Frobenius structure, as combining these with Cartesian product can lead to degenerate diagrams. Instead we must consider an approach where the trace is constructed as an atomic operation. Interfaced linear hypergraphs are defined as regular hypergraphs in which each vertex is the source and target of exactly one edge each, equipped with an additional interface edge. The morphisms of a freely generated STMC are interpreted as interfaced linear hypergraphs, up to isomorphism (soundness). Moreover, any linear hypergraph is the representation of a unique STMC morphism, up to the equational theory of the category (completeness). This establishes interfaced linear hypergraphs as a suitable combinatorial language for STMCs. We then show how we can apply the theory of adhesive categories to our graphical language, meaning that a broad range of equational properties of STMCs can be specified as a graph rewriting system. The graphical language of digital circuits is presented as a case study.
+- title: A visualiser for linear lambda-terms as rooted 3-valent maps
   details: Masters dissertation (2019), University of Birmingham
   file: 2019-04-08-masters
   authors:
