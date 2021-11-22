@@ -2,10 +2,8 @@
 layout: default
 title: Intro to Ocaml
 subtitle: An introduction to a functional language
-permalink: /ocaml.html
+permalink: /ocaml/
 ---
-
-*This is based on a tutorial I taught for the [Compilers & Languages](https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/) module.*
 
 So you want to learn Ocaml? Great - you're already on your way to joining the elite crowd that understand this fantastic language. Here you'll find a very basic tutorial to get you up and running with the language and its foibles.
 
