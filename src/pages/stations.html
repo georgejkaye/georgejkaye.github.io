@@ -1,0 +1,14 @@
+---
+layout: default
+title: Railway stations
+subtitle: I visit a lot of railway stations
+permalink: /stations/
+---
+
+<div class="stations">
+    {% for stn in stations %}
+    <div class="station">
+        <img class="station-img" src="/images/trains/stations/{{ stn.crs }}.webp" />
+    </div>
+    {% endfor %}
+</div>

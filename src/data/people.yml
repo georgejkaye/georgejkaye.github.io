@@ -15,3 +15,15 @@ miriam:
   name: Miriam Backens
   poss: "'"
   web: https://www.cs.bham.ac.uk/~backensm/
+claudio: 
+  name: Claudio Belo Lourenco
+  poss: "'s"
+  web: https://www.lri.fr/~blourenc/
+todd:
+  name: Todd Waugh Ambridge
+  poss: "'s"
+  web: http://www.cs.bham.ac.uk/~txw467
+calin:
+  name: Calin Tataru
+  poss: "'s"
+  web: https://www.cst.cam.ac.uk/people/ct608

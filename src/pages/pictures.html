@@ -1,0 +1,23 @@
+---
+layout: default
+title: Pictures
+subtitle: Some pictures of me through the years
+permalink: /pictures/
+---
+
+{% for picture in pictures %}
+<div class="picture-block">
+    <div>
+        <img src="images/{{ picture.src }}" alt={{ pictures.alt }}>
+    </div>
+    <div>
+        <div>
+            {{ picture.caption }}
+        </div>
+        <div>
+            {% assign taken-by=people[picture.taken-by] %}
+            Taken by <a href={{ taken-by.web }} title="{{ taken-by.name }}{{ taken-by.poss }} personal webpage">
+                {{ taken-by.name}}
+            </a> </div>
+    </div>
+</div> {% endfor %}
