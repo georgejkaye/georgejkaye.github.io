@@ -1,0 +1,36 @@
+---
+layout: default
+title: Blog
+tagline: A compendium of wacky adventures and occasional seriousness
+permalink: /blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html
+pagination:
+  data: collections.blog
+  size: 5
+  reverse: true
+---
+
+<div class="posts">
+    {% for post in pagination.items %}
+    <div class="post">
+        <div class="post-header">
+            <a href={{ post.url }}>
+                <h2 class="post-title">{{ post.data.title }}</h2>
+                {% if post.data.part %}
+                    {% assign subtitle=post.data.part %}
+                {% elsif post.data.subtitle %}
+                    {% assign subtitle=post.data.subtitle %}
+                {% endif %}            
+                <span class="post-subtitle">{{ subtitle }}</span>
+            </a>
+            <div class="post-date">{{ post.data.date | prettyDate }}</div>
+        </div>
+        <div class="post-content">
+            <img class="post-img" src={{ post.data.image }} alt={{ post.data.alt }}/>
+            <div class="post-preview">
+          {{ post.data.tagline }}
+          <a href={{ post.url }}>Read more</a>
+        </div> 
+      </div>
+    </div>
+    {% endfor %}
+</div>
