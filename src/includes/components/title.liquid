@@ -1,23 +1,35 @@
 <div class="header-bar">
-  <div class="title-bar">
-    <h1 class="title">
-      {% if page.url == "/" %}
-      Hello!
-      {% else %}
-      {{ title }}
-      {% endif %}
-    </h1>
+  <div class="header-bar-content">
+    <div class="title-bar">
+      <h1 class="title">
+        {% if page.url == "/" %}
+        Hello!
+        {% else %}
+        {{ title }}
+        {% endif %}
+      </h1>
 
-    <div class="subtitle">{{ subtitle }}</div>
-  </div>
-  <div class="tagline">{{ page.tagline }}</div>
-  {% if page.tags.size > 0 %}
-  <div class="post-info">
-    {% for tag in page.tags %}
-    <div class="post-tag">
-      {{ tag }}
+      {% if subtitle %}
+      {% assign subtitlet=subtitle %}
+      {% elsif part %}
+      {% assign subtitlet=part %}
+      {% endif %}
+
+      {% if subtitlet %}
+      <div class="subtitle">{{ subtitlet }}</div>
+      {% endif %}
     </div>
-    {% endfor %}
+    {% if tagline %}
+    <div class="tagline">{{ tagline }}</div>
+    {% endif %}
+    {% if page.tags.size > 0 %}
+    <div class="post-info">
+      {% for tag in page.tags %}
+      <div class="post-tag">
+        {{ tag }}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
-  {% endif %}
 </div>

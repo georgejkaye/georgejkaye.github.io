@@ -1,11 +1,11 @@
 ---
 layout: default
+tags: blog
+permalink: /blog/{{ title | slug }}{% if part %}/{{ part | slug }}{% endif %}/
 ---
 
 <div class="post">
-
-  <p><img class="main-post-img" src={{ page.image }} alt={{ page.alttext }}></p>
-
+  <img class="main-post-img" src={{ image }} alt={{ alt }}>
   {{ content }}
 </div>
 

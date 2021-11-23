@@ -1,5 +1,6 @@
 const yaml = require("js-yaml");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
+const moment = require("moment");
 
 module.exports = config => {
     config.addPassthroughCopy("images")
@@ -24,6 +25,11 @@ module.exports = config => {
     config.addLiquidFilter("firstChar", function (string) {
         return string.charAt(0).toLowerCase()
     })
+    // Inside the function you export...
+    config.addLiquidFilter("prettyDate", (date) => {
+        const utc = date.toUTCString();
+        return moment.utc(utc).format("DD MMMM YYYY");
+    });
     config.addDataExtension("yml", contents => yaml.load(contents))
     config.addPlugin(syntaxHighlight)
     config.setBrowserSyncConfig({
