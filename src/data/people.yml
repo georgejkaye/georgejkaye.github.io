@@ -27,3 +27,15 @@ calin:
   name: Calin Tataru
   poss: "'s"
   web: https://www.cst.cam.ac.uk/people/ct608
+ugur:
+  name: Ugur Kayas
+  poss: "'"
+  web: https://twitter.com/ugurrkayas
+alex:
+  name: Alex Rice
+  poss: "'s"
+  web: https://alexarice.github.io/
+ioannis:
+  name: Ioannis Markakis
+  poss: "'"
+  web: "https://www.cst.cam.ac.uk/people/im496"

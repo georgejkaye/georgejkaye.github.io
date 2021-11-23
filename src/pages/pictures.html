@@ -5,19 +5,41 @@ subtitle: Some pictures of me through the years
 permalink: /pictures/
 ---
 
+{% assign winterbourne="https://google.com" %}
+
 {% for picture in pictures %}
 <div class="picture-block">
-    <div>
-        <img src="images/{{ picture.src }}" alt={{ pictures.alt }}>
+    <div class="picture-picture">
+        <img src="/images/{{ picture.src }}" alt={{ pictures.alt }}>
     </div>
-    <div>
-        <div>
-            {{ picture.caption }}
-        </div>
-        <div>
-            {% assign taken-by=people[picture.taken-by] %}
-            Taken by <a href={{ taken-by.web }} title="{{ taken-by.name }}{{ taken-by.poss }} personal webpage">
-                {{ taken-by.name}}
-            </a> </div>
+    <div class="picture-caption">
+        {{ picture.caption }}
+        {% if picture.taken-by %}
+        <span>
+            {% assign taken-by=people[picture.taken-by.key] %}
+            {% if picture.taken-by.prequip %}
+            {{ picture.taken-by.prequip }}
+            {% else %}
+            {% if picture.featuring %}
+            Featuring
+            {% for person in picture.featuring %}
+            {% if forloop.first %}
+            {% elsif forloop.last %}
+            and
+            {%- else %}
+            ,
+            {%- endif %}
+            <a href="{{ people[person].link }}">{{ people[person].name }}</a>
+            {%- endfor -%}
+            .
+            {% endif %}
+            Taken by
+            {% endif %}
+            <a href={{ taken-by.web }} title="{{ taken-by.name }}{{ taken-by.poss }} personal webpage">
+                {{ taken-by.name -}}
+            </a>.
+        </span>
+        {% endif %}
     </div>
-</div> {% endfor %}
+</div>
+{% endfor %}
