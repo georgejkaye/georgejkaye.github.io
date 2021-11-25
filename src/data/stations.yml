@@ -2,10 +2,16 @@
   crs: acg
 - name: Adderley Park
   crs: add
+- name: Alvechurch
+  crs: alv
+- name: Barnt Green
+  crs: bnt
 - name: Bescot Stadium
   crs: bsc
 - name: Birmingham New Street
   crs: bhm
+- name: Birmingham Snow Hill
+  crs: bsw
 - name: Blake Street
   crs: bkt
 - name: Bordesley
@@ -30,6 +36,8 @@
   crs: cmf
 - name: Dalmeny
   crs: dam
+- name: Deansgate
+  crs: dgt
 - name: Duddeston
   crs: dud
 - name: Elephant & Castle
@@ -40,6 +48,8 @@
   crs: gvh
 - name: Hall Green
   crs: hlg
+- name: Hamstead
+  crs: hsd
 - name: Hatton
   crs: htn
 - name: Haymarket
@@ -58,6 +68,10 @@
   crs: lob
 - name: Lye
   crs: lye
+- name: Manchester Piccadilly
+  crs: man
+- name: Manchester Oxford Road
+  crs: mco
 - name: Marston Green
   crs: mgn
 - name: Matlock
@@ -98,6 +112,8 @@
   crs: sta
 - name: Stechford
   crs: scf
+- name: Stoke-on-Trent
+  crs: sot
 - name: Stourbridge Junction
   crs: sbj
 - name: Stourbridge Town
@@ -108,6 +124,8 @@
   crs: sut
 - name: Tame Bridge Parkway
   crs: tab
+- name: The Hawthorns
+  crs: thw
 - name: The Lakes
   crs: tlk
 - name: Tulse Hill
