@@ -5,3 +5,4 @@ node_modules/
 .jekyll-cache
 .metals
 .vscode/
+_site/
