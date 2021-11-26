@@ -1,3 +1,5 @@
+@import "colours.scss";
+
 // Pictures
 
 .picture-block {
@@ -20,13 +22,31 @@ img {
 // Stations
 
 .stations {
-    display: flex
 }
 
 .station {
-    width: 33%;
+    width: 300px
 }
 
 .station-img {
-    width: 100%;
+    width: 33%;
+}
+
+.counter {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.page-number {
+    margin: 0 5px;
+    font-size: 1.5em;
+    background-color: $accent;
+    padding: 5px 10px;
+    border-radius: 5px;;
+    font-family: monospace;
+}
+
+.current-page {
+    color: $pink;
+    font-weight: bold;
 }
