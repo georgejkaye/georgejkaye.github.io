@@ -6,76 +6,76 @@ $content-width: 54em;
 $small-content-width: 44em;
 
 html {
-    background-color: $background;
-    font-family: "Lato", Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
+  background-color: $background;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
 
-    @media (max-width: math($mobile-width + 14em)) {
-        font-size: 16px;
-    }
+  @media (max-width: $content-width) {
+    font-size: 16px;
+  }
 }
 
 body {
-    margin: 0;
-    color: $foreground;
+  margin: 0;
+  color: $foreground;
 }
 
 h1 {
-    font-size: 3.5em;
-    margin-top: 0;
-    margin-bottom: 0;
+  font-size: 3.5em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h2,
 h3,
 h4 {
-    color: $green;
+  color: $green;
 }
 
 h2 {
-    font-size: 2.5em;
-    margin-bottom: 0.25em;
+  font-size: 2.5em;
+  margin-bottom: 0.25em;
 }
 
 h2::before,
 h3::before {
-    display: block;
-    content: " ";
-    margin-top: -85px;
-    height: 85px;
-    visibility: hidden;
-    pointer-events: none;
+  display: block;
+  content: " ";
+  margin-top: -85px;
+  height: 85px;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 a {
-    color: $cyan;
-    text-decoration: none;
+  color: $cyan;
+  text-decoration: none;
 
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 p {
-    margin-top: 0;
-    margin-bottom: 10px;
-    text-align: justify;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: justify;
 }
 
 img {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .container {
-    margin: auto;
-    padding: 1rem 1rem;
+  margin: auto;
+  padding: 1rem 1rem;
 
-    @media (min-width: $mobile-width) {
-        max-width: $mobile-width;
-    }
+  @media (min-width: $mobile-width) {
+    max-width: $mobile-width;
+  }
 
-    @media (min-width: $home-width) {
-        max-width: $content-width;
-    }
+  @media (min-width: $home-width) {
+    max-width: $content-width;
+  }
 }

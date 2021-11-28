@@ -1,0 +1,7 @@
+<div class="counter">
+    {%- for page in pagination.pages -%}
+    <a href={{- pagination.hrefs[forloop.index0] -}}><span class="page-number{% if pagination.pageNumber == forloop.index0 %} current-page" aria-current="page{%- endif -%}">
+    {{- forloop.index -}}
+    </span></a>
+    {%- endfor -%}
+</div>
