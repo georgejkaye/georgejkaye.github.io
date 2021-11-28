@@ -1,0 +1,4 @@
+- from: "/stations/page-1/"
+  to: "/stations/"
+- from: "/blog/page-1/"
+  to: "/blog/"

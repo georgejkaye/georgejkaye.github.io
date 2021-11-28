@@ -4,117 +4,126 @@
 $nav-height: 75px;
 
 .spacer {
-    height: $nav-height;
+  height: $nav-height;
 }
 
 .nav-bar {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    z-index: 999;
-    border-bottom: 2px solid $background;
-    background-color: $accent;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 999;
+  border-bottom: 2px solid $background;
+  background-color: $accent;
 }
 
 .nav-bar-content {
-    text-align: center;
-    display: flex;
-    height: $nav-height;
-    width: $content-width;
-    padding-top: 10px;
+  text-align: center;
+  display: flex;
+  height: $nav-height;
+  width: $content-width;
+  padding-top: 10px;
 
-    @media(min-width: math($mobile-width + 14em)) {
-        max-width: $mobile-width;
-    }
+  @media (min-width: $mobile-width) {
+    max-width: $mobile-width;
+  }
 
-    @media(max-width: math($mobile-width + 14em)) {
-        padding-left: 1em;
-        padding-right: 1em;
-        max-width: $mobile-width;
-    }
+  @media (max-width: $mobile-width) {
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: $mobile-width;
+  }
 
-    @media(min-width : $home-width) {
-        max-width: $content-width;
-    }
+  @media (min-width: $home-width) {
+    max-width: $content-width;
+  }
 }
 
 .left-nav {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 .site-name {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .right-nav {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 
-    @media (max-width: $mobile-width) {
-        display: none;
-    }
-
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .nav-site-image {
-    height: 50px;
-    width: 50px;
-    margin-right: 0.75em;
+  height: 50px;
+  width: 50px;
+  margin-right: 0.75em;
 }
 
 .nav-bar-title {
-    color: $pink;
-    font-size: 2em;
-    font-weight: bold;
-    line-height: 1;
-    text-align: center;
-    text-decoration: none;
+  color: $pink;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
 }
 
 .nav-link {
-    font-weight: bold;
-    font-size: 1em;
-    margin: 2px 10px 0 10px;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 2px 10px 0 10px;
 }
 
 .header-bar {
-    background-color: $accent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    z-index: 999;
-    text-align: center;
-    padding: 2rem 0rem;
+  background-color: $accent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  z-index: 999;
+  text-align: center;
+  padding: 2rem 0rem;
 }
 
 .header-bar-content {
-    width: $content-width;
+  width: $content-width;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subtitle,
 .tagline {
-    color: $subtitle;
+  color: $subtitle;
+}
+
+.tagline {
+  text-align: center;
+  max-width: 80%;
+  margin-top: 10px;
+  font-size: 1.25em;
 }
 
 .subtitle {
-    font-size: 1.75em;
+  font-size: 1.75em;
 }
 
 .home-link {
-    @media (max-width: $home-width) {
-        display: none;
-    }
+  @media (max-width: $home-width) {
+    display: none;
+  }
 }
 
 .mobile-nav {
-    @media (min-width: $mobile-width) {
-        display: none;
-    }
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
 }
