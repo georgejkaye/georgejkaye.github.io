@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Adventures in Academia
-permalink: /adventures-in-academia/
+permalink: /adventures/
 ---
 
 This page serves as a homepage for stories told within the wider Adventures in Academia universe.

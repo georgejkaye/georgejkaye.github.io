@@ -10,6 +10,7 @@
 - title: A visualiser for linear lambda-terms as rooted 3-valent maps
   details: Masters dissertation (2019), University of Birmingham
   file: 2019-04-08-masters
+  page: /lamviz/
   authors:
     - name: me
     - text: supervised by
