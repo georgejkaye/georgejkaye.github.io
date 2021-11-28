@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Splendiferous Screenings
 part: Baby Driver
 date: 2018-10-14
 image: /images/screenings/baby-driver/1-post.jpg

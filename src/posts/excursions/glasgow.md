@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Exciting Excursions
 part: Glasgow
 date: 2019-03-29
 image: /images/excursions/glasgow/0.jpg

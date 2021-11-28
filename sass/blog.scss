@@ -26,6 +26,7 @@
 .post-date {
   color: #9a9a9a;
   font-weight: bold;
+  margin-right: 10px;
 }
 
 .post-img {
@@ -40,4 +41,19 @@
 .post-readmore {
   font-weight: bold;
   margin-top: 10px;
+}
+
+.post-tags {
+  margin-top: 25px;
+}
+
+.post-tag {
+  background-color: $foreground;
+  font-family: monospace;
+  color: $background;
+  font-weight: bold;
+  padding: 2px 5px 2.5px 5px;
+  border-radius: 5px;
+  margin: 0 2px;
+  text-align: center;
 }

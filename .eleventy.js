@@ -35,6 +35,7 @@ module.exports = config => {
     });
     config.addDataExtension("yml", contents => yaml.load(contents))
     config.addPlugin(syntaxHighlight)
+    config.setDataDeepMerge(true);
     config.setBrowserSyncConfig({
         files: './build/css/**/*.css'
     });

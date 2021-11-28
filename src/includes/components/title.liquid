@@ -4,6 +4,8 @@
       <h1 class="title">
         {% if page.url == "/" %}
         Hello!
+        {% else if page.title %}
+        {{ series }}
         {% else %}
         {{ title }}
         {% endif %}
@@ -22,12 +24,12 @@
     {% if tagline %}
     <div class="tagline">{{ tagline }}</div>
     {% endif %}
-    {% if page.tags.size > 0 %}
-    <div class="post-info">
-      {% for tag in page.tags %}
-      <div class="post-tag">
-        {{ tag }}
-      </div>
+    {% if tags.size > 0 %}
+    <div class="post-tags">
+      {% for tag in tags %}
+      <span class="post-tag">
+        {{- tag -}}
+      </span>
       {% endfor %}
     </div>
     {% endif %}

@@ -9,23 +9,34 @@ pagination:
   reverse: true
 ---
 
+{% include components/pagenumbers %}
+
 <div class="posts">
     {% for post in pagination.items %}
     <div class="post">
         <div class="post-header">
             <a href={{ post.url }}>
-                <h2 class="post-title">{{ post.data.title }}</h2>
-                {% if post.data.part %}
-                    {% assign subtitle=post.data.part %}
+                <h2 class="post-title">
+                {% if post.data.series %}
+                    {{ post.data.series }}
+                {% else %}
+                    {{ post.data.title }}
+                {% endif %}
+                </h2>
+                <span class="post-subtitle">
+            {% if post.data.part %}
+                    {{ post.data.part }}
                 {% elsif post.data.subtitle %}
-                    {% assign subtitle=post.data.subtitle %}
-                {% endif %}            
-                <span class="post-subtitle">{{ subtitle }}</span>
+                    {{ post.data.subtitle }}
+                {% endif %}     
+                </span>
             </a>
             <div class="post-info">
                 <span class="post-date">{{ post.data.date | prettyDate }}</span>
                 {% for tag in post.data.tags %}
-                <span class="tag">{{ tag }}</span>
+                {% if tag != "blog" %}
+                <span class="post-tag">{{- tag -}}</span>
+                {% endif %}
                 {% endfor %}
             </div>
         </div>

@@ -1,11 +1,12 @@
 ---
 layout: default
-tags: blog
-permalink: /blog/{{ title | slug }}{% if part %}/{{ part | slug }}{% endif %}/
+permalink: /blog/{% if dir %}{{ dir }}/{{ part | slug }}{% elsif series %}{{ series | slug }}/{{ part | slug }}{% else %}{{ title | slug }}{% endif %}/
 ---
 
 <div class="post">
+  {% if image %}
   <img class="main-post-img" src={{ image }} alt={{ alt }}>
+  {% endif %}
   {{ content }}
 </div>
 
@@ -17,7 +18,7 @@ permalink: /blog/{{ title | slug }}{% if part %}/{{ part | slug }}{% endif %}/
       <a href="{{ post.url }}">
         <span class="post-title-small">
           {{ post.title }}
-        </span>
+        </span>yar
         <span class="post-subtitle-small">{{ post.subtitle }}</span>
         <span>
           <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>

@@ -8,6 +8,8 @@ pagination:
   size: 9
 ---
 
+{% include components/pagenumbers %}
+
 <div class="stations">
     {% for stn in pagination.items %}
         <img class="station-img" src="/images/trains/stations/{{ stn.crs }}.webp" />
