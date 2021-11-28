@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Exciting Excursions
 part: York
 date: 2019-05-09
 image: /images/excursions/york/0.jpg

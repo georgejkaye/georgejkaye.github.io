@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Splendiferous Screenings
 part: Bad Times at the El Royale
 date: 2018-10-19
 image: /images/screenings/bad-times-at-the-el-royale/1-post.jpg

@@ -1,6 +1,14 @@
 <div class="paper">
     <span class="paper-title">{{ paper.title }}</span>
 
+    <!-- page -->
+    {% if paper.page %}
+    {%- capture target -%} {{ paper.page }} {%- endcapture -%}
+    {%- capture title -%} Page for '{{ paper.title }}' {%- endcapture -%}
+    {%- capture text -%} page {%- endcapture -%}
+    {% include macros/button %}
+    {% endif %}
+
     <!-- PDF -->
     {% if paper.arxiv %}
     {%- capture target -%} /files/papers/{{ paper.file }}.pdf {%- endcapture -%}
