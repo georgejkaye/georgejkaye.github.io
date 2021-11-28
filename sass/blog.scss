@@ -1,40 +1,43 @@
 @import "colours.scss";
 
 .post {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .post-content {
-    display: flex
+  display: flex;
 }
 
 .post-header {
-    margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .post-title {
-    color: $pink;
-    display: inline;
-    margin-right: 10px;
+  color: $pink;
+  display: inline;
+  margin-right: 10px;
 }
 
 .post-subtitle {
-    color: $green;
-    font-size: 1.75em;
+  color: $green;
+  font-size: 1.75em;
 }
 
 .post-date {
-    color: #9a9a9a;
-    font-weight: bold;
+  color: #9a9a9a;
+  font-weight: bold;
 }
 
 .post-img {
-    width: 100%;
+  width: 100%;
+  margin-right: 20px;
 }
 
 .post-preview {
-    width: 50%;
-    margin-left: 20px;
+  width: 50%;
 }
 
-.post-img {}
+.post-readmore {
+  font-weight: bold;
+  margin-top: 10px;
+}

@@ -25,6 +25,9 @@ module.exports = config => {
     config.addLiquidFilter("firstChar", function (string) {
         return string.charAt(0).toLowerCase()
     })
+    config.addLiquidFilter("increment", function (x) {
+        return x + 1
+    })
     // Inside the function you export...
     config.addLiquidFilter("prettyDate", (date) => {
         const utc = date.toUTCString();
