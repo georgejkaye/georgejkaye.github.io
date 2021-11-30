@@ -2,7 +2,7 @@
 layout: default
 title: Blog
 subtitle: A compendium of wacky adventures and occasional seriousness
-permalink: /blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber | increment }}/{% endif %}
+permalink: /blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | increment }}/{% endif %}
 pagination:
   data: collections.blog
   size: 5
@@ -13,47 +13,7 @@ pagination:
 
 <div class="posts">
     {% for post in pagination.items %}
-    <div class="post">
-        <div class="post-header">
-            <a href={{ post.url }}>
-                <h2 class="post-title">
-                {% if post.data.series %}
-                    {{ post.data.series }}
-                {% else %}
-                    {{ post.data.title }}
-                {% endif %}
-                </h2>
-                <span class="post-subtitle">
-            {% if post.data.part %}
-                    {{ post.data.part }}
-                {% elsif post.data.subtitle %}
-                    {{ post.data.subtitle }}
-                {% endif %}     
-                </span>
-            </a>
-            <div class="post-info">
-                <span class="post-date">{{ post.data.date | prettyDate }}</span>
-                {% for tag in post.data.tags %}
-                {% if tag != "blog" %}
-                <span class="post-tag">{{- tag -}}</span>
-                {% endif %}
-                {% endfor %}
-            </div>
-        </div>
-        <div class="post-content">
-            {% if post.data.image %}
-            <img class="post-img" src={{ post.data.image }} alt={{ post.data.alt }}/>
-            {% endif %}
-            <div class="post-preview">
-                <div>
-                {{ post.data.tagline }}
-                </div>
-                <div class="post-readmore">
-                    <a href={{ post.url }}>Read more</a>
-                </div>
-            </div> 
-      </div>
-    </div>
+    {% include blog-entry %}
     {% endfor %}
 
     {% include components/pagenumbers %}

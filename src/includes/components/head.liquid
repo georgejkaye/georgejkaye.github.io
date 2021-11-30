@@ -14,6 +14,8 @@
   <title>
     {% if title == "Home" %}
     {{ site.title }} &middot; {{ site.tagline }}
+    {% elsif series %}
+    {{ series }}: {{ part }}
     {% else %}
     {{ title }} &middot; {{ site.title }}
     {% endif %}
