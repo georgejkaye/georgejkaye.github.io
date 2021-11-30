@@ -14,6 +14,12 @@ module.exports = config => {
         }
         return str
     })
+    config.addLiquidFilter("strip", function (str) {
+        if (typeof (str) == "string") {
+            return str.replace(" <br> ", " ")
+        }
+        return str
+    })
     config.addLiquidFilter("first", function (arr) {
         return arr[0]
     })

@@ -1,0 +1,43 @@
+# Steam
+
+## Routes
+
+portsmouth-direct-extended:
+  name: "Portsmouth Direct Line: London Waterloo to Portsmouth"
+  link: https://store.steampowered.com/app/820203/
+portsmouth-direct:
+  name: "Portsmouth Direct Line"
+  link: https://store.steampowered.com/app/65218/
+south-london-network:
+  name: "South London Network"
+  link: https://store.steampowered.com/app/222638/
+
+## Rolling stock
+
+class-159:
+  name: "Class 159"
+  link: https://store.steampowered.com/app/222633/
+class-378:
+  name: "Class 378"
+  link: https://store.steampowered.com/app/258663/
+class-444:
+  name: "Class 444"
+  link: https://store.steampowered.com/app/65253/
+class-455-thomson:
+  name: "Class 455 (Thomson)"
+  link: https://store.steampowered.com/app/65229/
+
+
+# Reskins
+
+## DPSimulation
+
+class-456-south-west-trains:
+  name: "Class 456 'South West Trains'"
+  link: https://www.dpsimulation.org.uk/rf72reskins.html#RFEMU
+
+## superalbs
+
+class-159-south-west-turbo:
+  name: "Class 159 'South Western Turbo' DMU"
+  link: https://superalbs.weebly.com/train-sim-reskins.html

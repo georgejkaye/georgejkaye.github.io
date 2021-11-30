@@ -17,7 +17,7 @@
     {% elsif series %}
     {{ series }}: {{ part }}
     {% else %}
-    {{ title }} &middot; {{ site.title }}
+    {{ title | strip }} &middot; {{ site.title }}
     {% endif %}
   </title>
 
