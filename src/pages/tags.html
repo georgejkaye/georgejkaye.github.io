@@ -1,0 +1,18 @@
+---
+layout: default
+pagination:
+   data: collections.doublePagination
+   size: 1
+   alias: tag
+permalink: /blog/{{ tag.tagName }}/{% if tag.pageNumber > 0 %}{{ tag.pageNumber | increment }}/{% endif %}
+eleventyComputed:
+   title: "Posts tagged '{{ tag.tagName }}'"
+---
+
+{% include components/tag-pagenumbers %}
+
+{% for post in tag.pageData %}
+   {% include blog-entry %}
+{% endfor %}
+
+{% include components/tag-pagenumbers %}
