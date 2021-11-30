@@ -1,6 +1,6 @@
-- from: "/stations/page-1/"
+- from: "/stations/1/"
   to: "/stations/"
-- from: "/blog/page-1/"
+- from: "/blog/1/"
   to: "/blog/"
 - from: "/pages/fyp/visualiser/"
   to: "/lamviz/visualiser/"
