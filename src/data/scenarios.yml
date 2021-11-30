@@ -1,0 +1,66 @@
+- headcode: 1D13
+  time: 0824
+  origin: London Waterloo
+  destination: Dorking
+  traction: Class 455/8
+  toc: South West Trains
+  route: Portsmouth Direct Line - London Waterloo to Portsmouth
+  duration: 25
+  difficulty: Medium
+  description: The British summer has truly arrived with a heatwave surging across the country. Unfortunately this has not put the commuters in a good mood! Take the helm at 1D13 as far as Motspur Park and try to avoid upsetting them any further!
+  steam: 1459064187
+  ats: 1d13-0824-london-waterloo-to-dorking
+  timetable:
+    - location: London Waterloo (WAT)
+      platform: 1
+      dep: "0824"
+    - location: Vauxhall (VHX)
+      platform: 8 
+      arr: "0827"
+      dep: "0828"
+    - location: Queenstown Road Battersea (QRB)
+      pass: true
+      dep: "0830"
+    - location: Clapham Junction (CLJ)
+      platform: 11
+      arr: "0832"
+      dep: "0833"
+    - location: Earlsfield (EAD)
+      platform: 3
+      arr: "0836"
+      dep: "0837"
+    - location: Wimbledon (WIM)
+      platform: 8
+      arr: "0839"
+      dep: "0840"
+    - location: Raynes Park (RAY)
+      platform: 4
+      arr: "0843"
+      dep: "0844"
+    - location: Motspur Park (MOT)
+      platform: 2
+      arr: "0846"
+  requirements:
+    - section: Payware
+      sources:
+        - source: Steam
+          items:
+            - stock: portsmouth-direct-extended
+            - stock: portsmouth-direct
+            - stock: south-london-network
+            - stock: class-444
+            - stock: class-455-thomson
+            - stock: class-378
+            - stock: class-378
+              optional: true
+            - stock: class-159
+              optional: true
+    - section: Reskins
+      sources:
+      - source: DPSimulation (rfletcher)
+        items: 
+          - stock: class-456-south-west-trains
+      - source: Superalbs
+        items:
+          - stock: class-159-south-west-turbo
+            optional: true
