@@ -1,0 +1,19 @@
+name: Eleventy build
+
+on:
+  push:
+    branches: [ eleventy ]
+
+jobs:  
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        uses: mfyz/actions-eleventy@master
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v1.1.0
+        env:
+          PUBLISH_DIR: build 
+          PUBLISH_BRANCH: eleventy-test
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

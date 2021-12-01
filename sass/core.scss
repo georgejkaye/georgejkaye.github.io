@@ -6,6 +6,7 @@ $content-width: 54em;
 $small-content-width: 44em;
 
 html {
+  overflow-y: scroll;
   background-color: $background;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -85,6 +86,14 @@ table {
 thead {
   font-weight: bold;
   background-color: $accent;
+}
+
+thead > tr > td:nth-child(1) {
+  border-radius: 5px 0 0 0;
+}
+
+thead > tr > td:nth-last-child(1) {
+  border-radius: 0 5px 0 0;
 }
 
 td {

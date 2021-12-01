@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Adventures in Academia
 permalink: /adventures/
 ---

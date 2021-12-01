@@ -2,6 +2,9 @@
 
 ## Routes
 
+london-to-brighton:
+  name: London to Brighton
+  link: https://store.steampowered.com/app/208280
 portsmouth-direct-extended:
   name: "Portsmouth Direct Line: London Waterloo to Portsmouth"
   link: https://store.steampowered.com/app/820203/
@@ -14,9 +17,15 @@ south-london-network:
 
 ## Rolling stock
 
+class-59-2:
+  name: "Class 59/2"
+  link: https://store.steampowered.com/app/325973
 class-159:
   name: "Class 159"
   link: https://store.steampowered.com/app/222633/
+class-319:
+  name: "Class 319"
+  link: https://store.steampowered.com/app/258640
 class-378:
   name: "Class 378"
   link: https://store.steampowered.com/app/258663/
@@ -26,6 +35,20 @@ class-444:
 class-455-thomson:
   name: "Class 455 (Thomson)"
   link: https://store.steampowered.com/app/65229/
+class-455-8:
+  name: "Class 455/8 (DTG)"
+  link: https://store.steampowered.com/app/325963/
+class-465:
+  name: "Class 465"
+  link: https://store.steampowered.com/app/222576
+
+# Freeware
+
+## Workshop
+
+south-london-to-brighton:
+  name: "South London to Brighton"
+  link: https://steamcommunity.com/workshop/filedetails/?id=341200017
 
 
 # Reskins
@@ -40,4 +63,13 @@ class-456-south-west-trains:
 
 class-159-south-west-turbo:
   name: "Class 159 'South Western Turbo' DMU"
+  link: https://superalbs.weebly.com/train-sim-reskins.html
+class-387-1-thameslink-blue:
+  name: "Class 387/1 'Thameslink Blue'"
+  link: https://superalbs.weebly.com/train-sim-reskins.html
+class-319-thameslink-blue:
+  name: "Class 319 'Thameslink Blue'"
+  link: https://superalbs.weebly.com/train-sim-reskins.html
+class-387-2-gatwick-express:
+  name: "Class 387/2 'Gatwick Express'"
   link: https://superalbs.weebly.com/train-sim-reskins.html
