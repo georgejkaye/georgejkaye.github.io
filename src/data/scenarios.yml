@@ -1,66 +1,117 @@
-- headcode: 1D13
-  time: 0824
-  origin: London Waterloo
-  destination: Dorking
-  traction: Class 455/8
-  toc: South West Trains
-  route: Portsmouth Direct Line - London Waterloo to Portsmouth
-  duration: 25
-  difficulty: Medium
-  description: The British summer has truly arrived with a heatwave surging across the country. Unfortunately this has not put the commuters in a good mood! Take the helm at 1D13 as far as Motspur Park and try to avoid upsetting them any further!
-  steam: 1459064187
-  ats: 1d13-0824-london-waterloo-to-dorking
-  timetable:
-    - location: London Waterloo (WAT)
-      platform: 1
-      dep: "0824"
-    - location: Vauxhall (VHX)
-      platform: 8 
-      arr: "0827"
-      dep: "0828"
-    - location: Queenstown Road Battersea (QRB)
-      pass: true
-      dep: "0830"
-    - location: Clapham Junction (CLJ)
-      platform: 11
-      arr: "0832"
-      dep: "0833"
-    - location: Earlsfield (EAD)
-      platform: 3
-      arr: "0836"
-      dep: "0837"
-    - location: Wimbledon (WIM)
-      platform: 8
-      arr: "0839"
-      dep: "0840"
-    - location: Raynes Park (RAY)
-      platform: 4
-      arr: "0843"
-      dep: "0844"
-    - location: Motspur Park (MOT)
-      platform: 2
-      arr: "0846"
-  requirements:
-    - section: Payware
-      sources:
-        - source: Steam
+- name: Portsmouth Direct Line - London Waterloo to Portsmouth
+  slug: portsmouth-direct-extended
+  scenarios:
+  - headcode: 1D13
+    time: "0824"
+    updated: 2018-07-24
+    origin: London Waterloo
+    destination: Dorking
+    traction: Class 455/8
+    toc: South West Trains
+    route: Portsmouth Direct Line - London Waterloo to Portsmouth
+    alt: A South Western Railway Class 444 and a South Western Railway Class 455 stand at Vauxhaull station.
+    duration: 25
+    difficulty: Medium
+    description: The British summer has truly arrived with a heatwave surging across the country. Unfortunately this has not put the commuters in a good mood! Take the helm at 1D13 as far as Motspur Park and try to avoid upsetting them any further!
+    steam: 1459064187
+    timetable:
+      - location: London Waterloo (WAT)
+        platform: 1
+        dep: "0824"
+      - location: Vauxhall (VHX)
+        platform: 8 
+        arr: "0827"
+        dep: "0828"
+      - location: Queenstown Road Battersea (QRB)
+        pass: true
+        dep: "0830"
+      - location: Clapham Junction (CLJ)
+        platform: 11
+        arr: "0832"
+        dep: "0833"
+      - location: Earlsfield (EAD)
+        platform: 3
+        arr: "0836"
+        dep: "0837"
+      - location: Wimbledon (WIM)
+        platform: 8
+        arr: "0839"
+        dep: "0840"
+      - location: Raynes Park (RAY)
+        platform: 4
+        arr: "0843"
+        dep: "0844"
+      - location: Motspur Park (MOT)
+        platform: 2
+        arr: "0846"
+    requirements:
+      - section: Payware
+        sources:
+          - source: Steam
+            items:
+              - stock: portsmouth-direct-extended
+              - stock: portsmouth-direct
+              - stock: south-london-network
+              - stock: class-444
+              - stock: class-455-thomson
+              - stock: class-378
+              - stock: class-378
+                optional: true
+              - stock: class-159
+                optional: true
+      - section: Reskins
+        sources:
+        - source: DPSimulation (rfletcher)
+          items: 
+            - stock: class-456-south-west-trains
+        - source: Superalbs
           items:
-            - stock: portsmouth-direct-extended
-            - stock: portsmouth-direct
-            - stock: south-london-network
-            - stock: class-444
-            - stock: class-455-thomson
-            - stock: class-378
-            - stock: class-378
+            - stock: class-159-south-west-turbo
               optional: true
-            - stock: class-159
-              optional: true
-    - section: Reskins
-      sources:
-      - source: DPSimulation (rfletcher)
-        items: 
-          - stock: class-456-south-west-trains
-      - source: Superalbs
-        items:
-          - stock: class-159-south-west-turbo
-            optional: true
+- name: South London to Brighton
+  slug: south-london-to-brighton
+  scenarios:
+    - headcode: 1A15
+      updated: 2019-04-21
+      route: South London to Brighton
+      time: "1948"
+      origin: Brighton
+      destination: London Victoria
+      toc: Gatwick Express
+      traction: Class 387
+      duration: 70
+      difficulty: Hard  
+      alt: A Gatwick Express Class 387 stands at Gatwick Airport station, with a Thameslink Class 319 in the background.
+      description: "Hello driver! Your final task of the day is to drive the 1A15 Gatwick Express service to London Victoria, leaving Brighton at 19:48. You will be calling at Gatwick Airport and London Victoria only. Watch out though, as the weather is positively foul and could impede your progress towards the capital. We are also receiving reports that the train ahead of us has been experiencing engine troubles. Allow passengers to board and set up your cab ready for departure at 19:48!"
+      steam: 1123961570
+      requirements: 
+        - section: Payware
+          sources:
+            - source: Steam
+              items:
+              - stock: south-london-network
+              - stock: london-to-brighton
+              - stock: class-455-8
+              - stock: class-378
+              - stock: class-319
+              - stock: class-465
+              - stock: class-59-2
+              - stock: portsmouth-direct
+                optional: true
+              - stock: class-444
+                optional: true
+              - stock: class-455-thomson
+                optional: true
+        - section: Freeware
+          sources:
+            - source: Workshop
+              items:
+              - stock: south-london-to-brighton
+        - section: Reskins
+          sources:
+            - source: Superalbs
+              items:
+              - stock: class-387-1-thameslink-blue
+              - stock: class-319-thameslink-blue
+              - stock: class-387-2-gatwick-express
+          

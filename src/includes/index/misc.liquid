@@ -1,14 +1,8 @@
 <h2>Misc</h2>
 
+{% for link in misc %}
 <p>
-    <span class="misc-link"><a href="/pictures">Pictures</a></span>
-    <span class="misc-text">Pictures of me</span>
+    <span class="misc-link"><a href="{{ link.target }}" title="{{ link.page }}">{{ link.page }}</a></span>
+    <span class="misc-text">{{ link.text }}</span>
 </p>
-<p>
-    <span class="misc-link"><a href="/adventures">Adventures in Academia</a></span>
-    <span class="misc-text">A series of entertaining escapades</span>
-</p>
-<p>
-    <span class="misc-link"><a href="/stations">Railway stations</a></span>
-    <span class="misc-text">I take pictures of station signs</span>
-</p>
+{% endfor %}

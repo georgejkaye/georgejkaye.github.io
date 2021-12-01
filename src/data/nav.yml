@@ -15,5 +15,7 @@ home-links:
   - title: About
     target: "#about"
 trains-links:
-  - title: Trains
-    target: /trains
+  - title: Stations
+    target: /trains/stations/
+  - title: Train Simulator
+    target: /trains/scenarios/

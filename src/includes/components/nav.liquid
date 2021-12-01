@@ -22,8 +22,9 @@
             <div class="nav-link home-link"><a href={{ link.target }}>{{ link.title }}</a></div>
             {% endfor %}
             {% endif %}
-            {% if page.type == "trains" %}
-            {% for link in train-links %}
+            {% if type contains "trains" %}
+            <div class="nav-link home-link">•</div>
+            {% for link in nav.trains-links %}
             <div class="nav-link"><a href={{ link.target }}>{{ link.title }}</a></div>
             {% endfor %}
             {% endif %}
