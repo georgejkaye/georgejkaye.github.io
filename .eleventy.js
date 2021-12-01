@@ -42,6 +42,12 @@ module.exports = config => {
         const utc = date.toUTCString()
         return moment.utc(utc).format("DD MMMM YYYY")
     })
+    config.addLiquidFilter("scenarioTitle", (scenario) => {
+        return scenario.headcode + " " + scenario.time + " " + scenario.origin + " to " + scenario.destination
+    })
+    config.addLiquidFilter("scenarioSlug", (scenario) => {
+        return scenario.headcode + "-" + scenario.time + "-" + scenario.origin.toLowerCase() + "-to-" + scenario.destination.toLowerCase()
+    })
     config.addCollection("doublePagination", function (collection) {
         let tagSet = new Set()
         collection.getAllSorted().map(function (item) {
@@ -69,6 +75,11 @@ module.exports = config => {
             }
         }
         return tagMap
+    })
+    config.addCollection("scenarioList", function (collection) {
+        let scenarios = collection.getAllSorted()[0].data.scenarios
+        let scenarioArray = scenarios.reduce((acc, cur) => acc.concat(cur.scenarios), [])
+        return scenarioArray
     })
     config.addDataExtension("yml", contents => yaml.load(contents))
     config.addPlugin(syntaxHighlight)

@@ -1,0 +1,11 @@
+- page: Pictures
+  target: /pictures/
+  text: Pictures of me
+- page: Adventures in Academia
+  target: /adventures/
+  text: A series of entertaining escapades
+- page: Railway stations
+  target: /trains/stations/
+  text: I take pictures of station signs
+- page: Train simulator scenarios
+  target: /trains/scenarios/

@@ -1,0 +1,96 @@
+---
+pagination: 
+  data: collections.scenarioList
+  size: 1
+  alias: scenario
+permalink: /trains/scenarios/{{ scenario.headcode }}/
+eleventyComputed:
+    title: "{{ scenario.headcode }} <br> {{ scenario.origin }} to {{ scenario.destination }}"
+---
+
+<img src="/images/scenarios/{{ scenario.headcode }}.webp" alt="{{ scenario.alt }}" title="Scenario image for '{{ title }}'"></img>
+
+<div class="scenario-info">
+    <div><b>Traction:</b> {{ scenario.traction }}</div>
+    <div><b>TOC:</b> {{ scenario.toc }}</div>
+    <div><b>Route:</b> {{ scenario.route }}</div>
+    <div><b>Traction:</b> {{ scenario.traction }}</div>
+    <div><b>Duration:</b> {{ scenario.duration }} mins</b></div>
+    <div><b>Difficulty:</b> {{ scenario.difficulty }}</div>
+</div>
+
+<p class="scenario-description">
+    {{ scenario.description }}
+</p>
+
+<h2>Downloads</h2>
+
+<p>
+    <i>Last updated: {{ scenario.updated | prettyDate }}</i>
+</p>
+
+<ul>
+    <li>
+        <a href="/files/scenarios/{{ scenario.headcode }}.zip" title="Direct download link for '{{ title }}'">Direct download</a>
+    </li>
+    {% if scenario.steam %}
+    <li>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id={{ scenario.steam }}" title="Steam Workshop link for '{{ title }}'">Steam Workshop</a>
+    </li>
+    {% endif %}
+    <li>
+        <a href="https://alanthomsonsim.com/?download={{ scenario || scenarioSlug }}" title="Alan Thomson Sim link for '{{ title }}'">Alan Thomson Sim</a>
+    </li>
+</ul>
+
+{% if scenario.timetable %}
+<h2>Timetable</h2>
+
+<table class="timetable">
+    <thead>
+        <tr>
+            <td class="call-location">Location</td>
+            <td class="call-platform">Pl</td>
+            <td class="call-arr">Arr</td>
+            <td class="call-dep">Dep</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for call in scenario.timetable %}
+            <tr class="{% if call.pass %}call-pass{% endif %}">
+                <td class="{% if call.pass %}{% else %}call-location{% endif %}">{{ call.location }}</td>
+                <td class="call-platform">{{ call.platform }}</td>
+                <td class="call-arr">{{ call.dep }}</td>
+                <td class="call-dep">{{ call.arr }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endif %}
+
+<h2>Requirements</h2>
+
+{% for section in scenario.requirements %}
+<h3>{{ section.section }}</h3>
+{% for source in section.sources %}
+<h4>{{ source.source }}</h4>
+<ul>
+{% for item in source.items %}
+{% assign entry=dlc[item.stock] %}
+<li>
+    <a href="{{ entry.link }}" title="Download link for '{{ entry.name }}'">{{- entry.name -}}</a>
+    {%- if item.optional -%}
+    *
+    {%- endif -%}
+</li>
+{% endfor %}
+</ul>
+{% endfor %}
+{% endfor %}
+
+<p>
+    Requirements marked with an asterisk (*) feature fairly fleetingly and can be omitted without loss of enjoyment.
+</p>
+<p>
+    If you don’t have any of the requirements you can still play the scenario, just press F2 when the ‘Missing consist’ error comes up and click ‘cancel’ to bypass it.</div>
+</p>
