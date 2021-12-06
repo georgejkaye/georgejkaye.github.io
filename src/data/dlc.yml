@@ -2,15 +2,27 @@
 
 ## Routes
 
+chatham-medway:
+  name: Chatham Main & Medway Valley Lines
+  link: https://store.steampowered.com/app/677960/
+cross-city:
+  name: Birmingham Cross City
+  link: https://store.steampowered.com/app/1515063
+ecml-south:
+  name: East Coast Main Line South (London - Peterborough)
+  link: https://store.steampowered.com/app/222638
 london-to-brighton:
   name: London to Brighton
   link: https://store.steampowered.com/app/208280
-portsmouth-direct-extended:
+pdl-extended:
   name: "Portsmouth Direct Line: London Waterloo to Portsmouth"
   link: https://store.steampowered.com/app/820203/
-portsmouth-direct:
+pdl:
   name: "Portsmouth Direct Line"
   link: https://store.steampowered.com/app/65218/
+riviera-line:
+  name: "Riviera Line"
+  link: https://store.steampowered.com/app/222632
 south-london-network:
   name: "South London Network"
   link: https://store.steampowered.com/app/222638/
@@ -19,16 +31,28 @@ south-london-network:
 
 class-59-2:
   name: "Class 59/2"
-  link: https://store.steampowered.com/app/325973
+  link: https://store.steampowered.com/app/325973/
+class-66-ews:
+  name: "Class 66 EWS v2.0"
+  link: https://store.steampowered.com/app/222568
+class-68:
+  name: "Class 68"
+  link: https://store.steampowered.com/app/376930/
 class-159:
   name: "Class 159"
   link: https://store.steampowered.com/app/222633/
+class-170:
+  name: "Class 170"
+  link: https://store.steampowered.com/app/208364/
 class-319:
   name: "Class 319"
   link: https://store.steampowered.com/app/258640
 class-378:
   name: "Class 378"
   link: https://store.steampowered.com/app/258663/
+class-390: 
+  name: "Class 390"
+  link: https://store.steampowered.com/app/208343
 class-444:
   name: "Class 444"
   link: https://store.steampowered.com/app/65253/
@@ -40,36 +64,107 @@ class-455-8:
   link: https://store.steampowered.com/app/325963/
 class-465:
   name: "Class 465"
-  link: https://store.steampowered.com/app/222576
+  link: https://store.steampowered.com/app/222576/
+class-801:
+  name: "Class 801"
+  link: https://store.steampowered.com/app/222618/
+
+## Just Trains
+
+voyager-advanced:
+  name: Voyager Advanced
+  link: https://www.justtrains.net/product/voyager-advanced-2019/
+south-western-expressways:
+  name: South Western Expressways
+  link: https://www.justtrains.net/product/south-western-expressways
+western-mainlines:
+  name: Western Mainlines
+  link: https://www.justtrains.net/product/western-mainlines
+
+## AP 
+
+class-43-mtu-ep:
+  name: Class 43 (MTU)/Mk3 Enhancement Pack
+  link: https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_89&product_id=168
+class-150-dmu:
+  name: Class 150/2 Diesel Multiple Unit Pack
+  link: https://www.armstrongpowerhouse.com/index.php?route=product/product&path=45_84&product_id=181
+class-158-cummins-ep:
+  name: Class 158/159 (Cummins) Enhancement Park
+  link: https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_91&product_id=189
+class-170-ep:
+  name: Class 168/170/171 Enhancement Pack
+  link: https://www.armstrongpowerhouse.com/enhancements/multiple_unit/class_168-170-171_enhancement_pack
+class-350-ep:
+  name: Class 350 Enhancement Pack
+  link: https://www.armstrongpowerhouse.com/enhancements/multiple_unit/class_350_enhancement_pack
+jha:
+  name: JHA Wagon Pack
+  link: https://www.armstrongpowerhouse.com/index.php?route=product/product&path=45_85&product_id=107
 
 # Freeware
 
 ## Workshop
 
+riviera-line-electrified:
+  name: "Riviera Line Electrified"
+  link: "https://steamcommunity.com/workshop/filedetails/?id=564595230"
 south-london-to-brighton:
   name: "South London to Brighton"
   link: https://steamcommunity.com/workshop/filedetails/?id=341200017
-
 
 # Reskins
 
 ## DPSimulation
 
-class-456-south-west-trains:
+class-390-vt:
+  name: "Class 390 'Virgin'"
+  link: https://dpsimulation.org.uk/miscreskins.html
+class-456-swt:
   name: "Class 456 'South West Trains'"
-  link: https://www.dpsimulation.org.uk/rf72reskins.html#RFEMU
+  link: https://www.dpsimulation.org.uk/rf72emu.html
 
 ## superalbs
 
-class-159-south-west-turbo:
+class-159-swt:
   name: "Class 159 'South Western Turbo' DMU"
   link: https://superalbs.weebly.com/train-sim-reskins.html
-class-387-1-thameslink-blue:
-  name: "Class 387/1 'Thameslink Blue'"
-  link: https://superalbs.weebly.com/train-sim-reskins.html
-class-319-thameslink-blue:
+class-319-tl-blue:
   name: "Class 319 'Thameslink Blue'"
   link: https://superalbs.weebly.com/train-sim-reskins.html
-class-387-2-gatwick-express:
+class-375-se-blue:
+  name: "Class 375 'Southeastern Blue'"
+  link: https://superalbs.weebly.com/train-sim-reskins.html
+class-387-1-gwr:
+  name: "Class 387/1 'Great Western Railway'"
+  link: https://superalbs.weebly.com/train-sim-reskins.html
+class-387-1-tl-blue:
+  name: "Class 387/1 'Thameslink Blue'"
+  link: https://superalbs.weebly.com/train-sim-reskins.html
+class-387-2-gx:
   name: "Class 387/2 'Gatwick Express'"
   link: https://superalbs.weebly.com/train-sim-reskins.html
+class-800-gwr:
+  name: "Class 800 'Great Western Railway'"
+  link: https://superalbs.weebly.com/train-sim-reskins.html
+
+## BH Reskins
+
+class-68-drs:
+  name: "Class 68 'Direct Rail Services'"
+  link: https://www.facebook.com/photo.php?fbid=1114446985268228&set=oa.515760421890353&type=1&theater
+
+
+# Enhancements
+
+## ATS
+
+class-323-sp:
+  name: "Class 323 Sound Pack"
+  link: https://alanthomsonsim.com/downloads/class-323-sound-pack/
+
+## MJW
+
+class-323-revamp:
+  name: "Class 323 Revamp Pack"
+  link: https://www.major.wales/revamp-packs/class-323

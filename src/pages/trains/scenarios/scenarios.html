@@ -7,15 +7,17 @@ permalink: /trains/scenarios/
 
 <p>On this page you can find all the Train Simulator scenarios I've made.</p>
 
-{% for route in scenarios %}
-    <h3>{{ route.name }}</h3>
+{% for route in collections.routedScenarios %}
+    <h3>{{ dlc[route.name].name }}</h3>
+    <div class="route-scenarios">
     {% for scenario in route.scenarios %}
     <div class="scenario-preview">
         <a href="/trains/scenarios/{{ scenario.headcode }}" title="Main page for '{{ scenario | scenarioTitle }}'">
+            <img class="small-scenario" alt="{{ scenario.alt }}" src="/images/scenarios/{{ scenario.headcode }}.webp"/>
             <div class="scenario-title">{{ scenario | scenarioTitle }}</div>
             <div class="scenario-last-updated">Last updated {{ scenario.updated | prettyDate }}</div>
-            <img class="small-scenario" alt="{{ scenario.alt }}" src="/images/scenarios/{{ scenario.headcode }}.webp"/>
         </a>
     </div>
     {% endfor %}
+    </div>
 {% endfor %}

@@ -1,117 +1,333 @@
-- name: Portsmouth Direct Line - London Waterloo to Portsmouth
-  slug: portsmouth-direct-extended
-  scenarios:
-  - headcode: 1D13
-    time: "0824"
-    updated: 2018-07-24
-    origin: London Waterloo
-    destination: Dorking
-    traction: Class 455/8
-    toc: South West Trains
-    route: Portsmouth Direct Line - London Waterloo to Portsmouth
-    alt: A South Western Railway Class 444 and a South Western Railway Class 455 stand at Vauxhaull station.
-    duration: 25
-    difficulty: Medium
-    description: The British summer has truly arrived with a heatwave surging across the country. Unfortunately this has not put the commuters in a good mood! Take the helm at 1D13 as far as Motspur Park and try to avoid upsetting them any further!
-    steam: 1459064187
-    timetable:
-      - location: London Waterloo (WAT)
-        platform: 1
-        dep: "0824"
-      - location: Vauxhall (VHX)
-        platform: 8 
-        arr: "0827"
-        dep: "0828"
-      - location: Queenstown Road Battersea (QRB)
-        pass: true
-        dep: "0830"
-      - location: Clapham Junction (CLJ)
-        platform: 11
-        arr: "0832"
-        dep: "0833"
-      - location: Earlsfield (EAD)
-        platform: 3
-        arr: "0836"
-        dep: "0837"
-      - location: Wimbledon (WIM)
-        platform: 8
-        arr: "0839"
-        dep: "0840"
-      - location: Raynes Park (RAY)
-        platform: 4
-        arr: "0843"
-        dep: "0844"
-      - location: Motspur Park (MOT)
-        platform: 2
-        arr: "0846"
-    requirements:
-      - section: Payware
-        sources:
-          - source: Steam
-            items:
-              - stock: portsmouth-direct-extended
-              - stock: portsmouth-direct
-              - stock: south-london-network
-              - stock: class-444
-              - stock: class-455-thomson
-              - stock: class-378
-              - stock: class-378
-                optional: true
-              - stock: class-159
-                optional: true
-      - section: Reskins
-        sources:
-        - source: DPSimulation (rfletcher)
+- headcode: 2P04
+  time: "0912"
+  updated: 2020-04-21
+  origin: Longbridge
+  destination: Lichfield Trent Valley
+  traction: Class 323
+  toc: London Midland
+  routes: 
+    - cross-city
+  alt: A London Midland Class 323 heads down the Cross City Line.
+  duration: 
+    - 90
+  difficulty: 
+    - Easy
+  description: "It’s a beautiful Sunday morning and you’ll be spending it driving up and down the Cross-City Line. First you must take these two Class 323s to Longbridge as 5N04, and then drive the first northbound service of the day as 2P04. The lines will be very quiet on your way down to Longbridge, and even when things start to pick up on your way back there shouldn’t be too much traffic to deal with - have a good drive!"
+  requirements:
+    - section: Payware
+      sources: 
+        - source: Steam
           items: 
-            - stock: class-456-south-west-trains
+            - stock: cross-city
+            - stock: class-170
+              optional: true
+            - stock: portsmouth-direct-extended
+              optional: true
+        - source: Just Trains
+          items:
+            - stock: voyager-advanced
+        - source: Armstrong Powerhouse
+          items:
+            - stock: class-170-ep
+              optional: true
+            - stock: class-350-ep
+              optional: true
+    - section: Freeware
+      sources:
+        - source: Alan Thomson Sim
+          items:
+            - stock: class-323-sp
+              optional: true
+        - source: Major Wales
+          items:
+            - stock: class-323-revamp
+- headcode: 1D13
+  time: "0824"
+  updated: 2018-07-24
+  origin: London Waterloo
+  destination: Dorking
+  traction: Class 455/8
+  toc: South West Trains
+  routes: 
+    - pdl-extended
+  alt: A South Western Railway Class 444 and a South Western Railway Class 455 stand at Vauxhaull station.
+  duration: 
+    - 25
+  difficulty: 
+    - Medium
+  description: "The British summer has truly arrived with a heatwave surging across the country. Unfortunately this has not put the commuters in a good mood! Take the helm at 1D13 as far as Motspur Park and try to avoid upsetting them any further!"
+  steam: 1459064187
+  timetable:
+    - location: London Waterloo (WAT)
+      platform: 1
+      dep: "0824"
+    - location: Vauxhall (VHX)
+      platform: 8 
+      arr: "0827"
+      dep: "0828"
+    - location: Queenstown Road Battersea (QRB)
+      pass: true
+      dep: "0830"
+    - location: Clapham Junction (CLJ)
+      platform: 11
+      arr: "0832"
+      dep: "0833"
+    - location: Earlsfield (EAD)
+      platform: 3
+      arr: "0836"
+      dep: "0837"
+    - location: Wimbledon (WIM)
+      platform: 8
+      arr: "0839"
+      dep: "0840"
+    - location: Raynes Park (RAY)
+      platform: 4
+      arr: "0843"
+      dep: "0844"
+    - location: Motspur Park (MOT)
+      platform: 2
+      arr: "0846"
+  requirements:
+    - section: Payware
+      sources:
+        - source: Steam
+          items:
+            - stock: pdl-extended
+            - stock: pdl
+            - stock: south-london-network
+            - stock: class-444
+            - stock: class-455-thomson
+            - stock: class-378
+            - stock: class-378
+              optional: true
+            - stock: class-159
+              optional: true
+    - section: Reskins
+      sources:
+      - source: DPSimulation (rfletcher)
+        items: 
+          - stock: class-456-swt
+      - source: Superalbs
+        items:
+          - stock: class-159-swt
+            optional: true
+- headcode: 1V41
+  updated: 2020-05-04
+  routes: 
+    - riviera-line-electrified
+  time: "0642"
+  origin: Birmingham New Street
+  destination: Paignton
+  toc: Virgin Trains Cross Country
+  traction: Class 390
+  duration: 
+    - 40
+  difficulty:
+    - Medium
+  alt: A GWR Class 800 and a Virgin Trains Class 390 stand at Exeter St Davids.
+  description: "Today you are driving the 1V41 0642 Birmingham New Street to Paignton Virgin CrossCountry service, for the last leg from Exeter St Davids to Paignton. Traction is in the form of a Class 390 Pendolino. It is a lovely spring morning so it should be a good drive! You will be stopping at Newton Abbot, Torquay and finally Paignton."
+  steam: 1474607185
+  requirements:
+    - section: Payware
+      sources:
+        - source: Steam
+          items: 
+            - stock: riviera-line
+            - stock: class-390
+            - stock: south-london-network
+            - stock: class-68
+              optional: true
+            - stock: class-66-ews
+              optional: true
+            - stock: class-801
+    - section: Freeware
+      sources: 
+        - source: Steam Workshop
+          items:
+            - stock: riviera-line-electrified
+    - section: Reskins
+      sources:
+        - source: DPSimulation
+          items:
+            - stock: class-390-vt
         - source: Superalbs
           items:
-            - stock: class-159-south-west-turbo
+            - stock: class-800-gwr
+            - stock: class-387-1-gwr
+        - source: BH Reskins
+          items: 
+            - stock: class-68-drs
+- headcode: 1Z56
+  updated: 2020-05-04
+  routes:
+    - riviera-line-electrified
+  time: "1700"
+  origin: Exeter St Davids
+  destination: Paignton
+  toc: Great Western Railway
+  traction: High Speed Train
+  duration: 
+    - 65
+  difficulty: 
+    - Medium
+  alt: A GWR High Speed Train and Class 800 stand at Exeter St Davids.
+  description: "Although the age is diesel is but a distant memory, the Intercity 125 ‘High Speed Train’ is still fondly regarded by many railway enthusiasts. Fortunately, GWR have arranged a special railtour using one of their old HSTs and have chosen you to have the honour of driving this very special journey! You will be calling at Exeter St Davids, Dawlish, Teignmouth, Newton Abbot, Torquay and Paignton."
+  steam: 1476297578
+  requirements:
+    - section: Payware
+      sources:
+        - source: Steam
+          items:
+            - stock: riviera-line
+            - stock: class-390
+            - stock: ecml-south
+            - stock: class-68
               optional: true
-- name: South London to Brighton
-  slug: south-london-to-brighton
-  scenarios:
-    - headcode: 1A15
-      updated: 2019-04-21
-      route: South London to Brighton
-      time: "1948"
-      origin: Brighton
-      destination: London Victoria
-      toc: Gatwick Express
-      traction: Class 387
-      duration: 70
-      difficulty: Hard  
-      alt: A Gatwick Express Class 387 stands at Gatwick Airport station, with a Thameslink Class 319 in the background.
-      description: "Hello driver! Your final task of the day is to drive the 1A15 Gatwick Express service to London Victoria, leaving Brighton at 19:48. You will be calling at Gatwick Airport and London Victoria only. Watch out though, as the weather is positively foul and could impede your progress towards the capital. We are also receiving reports that the train ahead of us has been experiencing engine troubles. Allow passengers to board and set up your cab ready for departure at 19:48!"
-      steam: 1123961570
-      requirements: 
-        - section: Payware
-          sources:
-            - source: Steam
-              items:
-              - stock: south-london-network
-              - stock: london-to-brighton
-              - stock: class-455-8
-              - stock: class-378
-              - stock: class-319
-              - stock: class-465
-              - stock: class-59-2
-              - stock: portsmouth-direct
-                optional: true
-              - stock: class-444
-                optional: true
-              - stock: class-455-thomson
-                optional: true
-        - section: Freeware
-          sources:
-            - source: Workshop
-              items:
-              - stock: south-london-to-brighton
-        - section: Reskins
-          sources:
-            - source: Superalbs
-              items:
-              - stock: class-387-1-thameslink-blue
-              - stock: class-319-thameslink-blue
-              - stock: class-387-2-gatwick-express
+            - stock: class-66-ews
+              optional: true
+            - stock: class-801
+        - source: Armstrong Powerhouse
+          items:
+            - stock: class-43-mtu-ep
+    - section: Freeware
+      sources:
+        - source: Steam Workshop
+          items:
+            - stock: riviera-line-electrified
+    - section: Reskins
+      sources:
+        - source: DPSimulation
+          items: 
+            - stock: class-390-vt
+        - source: Superalbs
+          items:
+            - stock: class-800-gwr
+            - stock: class-387-1-gwr
+        - source: BH Reskins
+          items:
+            - stock: class-68-drs          
+- headcode: 2J69
+  updated: 2020-05-04
+  routes:
+    - south-london-network
+  time: "1540"
+  origin: London Bridge
+  destination: West Croydon
+  toc: Southern
+  traction: Class 455/8
+  duration: 
+    - 45
+  difficulty: 
+    - Easy
+  alt: Two Southern Class 455/8s sit at London Bridge, with a Thameslink Class 387 in the background.
+  description: "Hello driver! Today you are driving the 2J69 1540 London Bridge to West Croydon Southern service. As always the lines are busy but you should have no problems today! Prepare your cab and allow passengers on board for departure at 15:40. You will be calling at South Bermondsey, Queens Road Peckham, Peckham Rye, East Dulwich, North Dulwich, Tulse Hill, Streatham, Streatham Common, Norbury, Thornton Heath, Selhurst and West Croydon."
+  steam: 1097997024
+  requirements:
+    - section: Payware
+      sources:
+        - source: Steam
+          items: 
+            - stock: south-london-network
+            - stock: class-455-8
+            - stock: class-378
+            - stock: class-319
+            - stock: london-to-brighton
+    - section: Reskins
+      sources:
+        - source: Superalbs
+          items:
+            - stock: class-375-se-blue
+            - stock: class-387-1-tl-blue
+            - stock: class-319-tl-blue
+            - stock: class-387-2-gx
+- headcode: 1A15
+  updated: 2019-04-21
+  routes:
+    - south-london-to-brighton
+  time: "1948"
+  origin: Brighton
+  destination: London Victoria
+  toc: Gatwick Express
+  traction: Class 387
+  duration:
+    - 70
+  difficulty:
+    - Hard  
+  alt: A Gatwick Express Class 387 stands at Gatwick Airport station, with a Thameslink Class 319 in the background.
+  description: "Hello driver! Your final task of the day is to drive the 1A15 Gatwick Express service to London Victoria, leaving Brighton at 19:48. You will be calling at Gatwick Airport and London Victoria only. Watch out though, as the weather is positively foul and could impede your progress towards the capital. We are also receiving reports that the train ahead of us has been experiencing engine troubles. Allow passengers to board and set up your cab ready for departure at 19:48!"
+  steam: 1123961570
+  requirements: 
+    - section: Payware
+      sources:
+        - source: Steam
+          items:
+          - stock: south-london-network
+          - stock: london-to-brighton
+          - stock: class-455-8
+          - stock: class-378
+          - stock: class-319
+          - stock: class-465
+          - stock: class-59-2
+          - stock: portsmouth-direct
+            optional: true
+          - stock: class-444
+            optional: true
+          - stock: class-455-thomson
+            optional: true
+    - section: Freeware
+      sources:
+        - source: Workshop
+          items:
+          - stock: south-london-to-brighton
+    - section: Reskins
+      sources:
+        - source: Superalbs
+          items:
+          - stock: class-387-1-tl-blue
+          - stock: class-319-tl-blue
+          - stock: class-387-2-gx
+- headcode: 2M12
+  updated: 2020-05-04
+  routes: 
+    - south-western-expressways
+    - western-mainlines
+  time: "1410"
+  origin: Frome
+  destination: Swindon
+  toc: Great Western Railway
+  traction: Class 158
+  duration:
+    - 30
+    - 30
+  difficulty: 
+    - Easy
+    - Medium
+  alt: A GWR Class 158 stands at Westbury, with a GWR Class 150 in the background.
+  description: "Hello driver! Welcome aboard unit 158960, which is currently standing at Frome. Today you’ll be driving 2M12, the 1410 service from Frome to Swindon, calling at Westbury, Trowbridge, Melksham, Chippenham, and Swindon. Unfortunately, you’ve been pathed behind a late-running freight train from Whatley Quarry, so you may be chasing yellows until Westbury! It also looks like there’s some disruption on the GWML, so be prepared for delays!"
+  requirements:
+    - section: Payware
+      sources:
+        - source: Steam
+          items:
+            - stock: class-159
+            - stock: class-801
+            - stock: chatham-medway
+        - source: Armstrong Powerhouse
+          items: 
+            - stock: class-158-cummins-ep
+            - stock: jha
+            - stock: class-150-dmu 
+        - source: Just Trains
+          items:
+            - stock: south-western-expressways
+              part: 1
+            - stock: western-mainlines
+              part: 2
+    - section: Reskins
+      sources:
+        - source: Superalbs
+          items:
+            - stock: class-800-gwr
           
+
+      
