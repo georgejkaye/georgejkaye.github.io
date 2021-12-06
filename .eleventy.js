@@ -76,10 +76,23 @@ module.exports = config => {
         }
         return tagMap
     })
-    config.addCollection("scenarioList", function (collection) {
+    config.addCollection("routedScenarios", function (collection) {
         let scenarios = collection.getAllSorted()[0].data.scenarios
-        let scenarioArray = scenarios.reduce((acc, cur) => acc.concat(cur.scenarios), [])
-        return scenarioArray
+        let routed = []
+        for (let scenario of scenarios) {
+            for (let route of scenario.routes) {
+                let routeScens = routed.find(rt => rt.name == route)
+                if (routeScens) {
+                    routeScens.scenarios.push(scenario)
+                } else {
+                    routed.push({
+                        name: route,
+                        scenarios: [scenario]
+                    })
+                }
+            }
+        }
+        return routed
     })
     config.addDataExtension("yml", contents => yaml.load(contents))
     config.addPlugin(syntaxHighlight)
