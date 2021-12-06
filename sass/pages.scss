@@ -93,13 +93,15 @@ table.timetable > tbody > tr > td {
 
 // scenarios
 
-.small-scenario {
+.route-scenarios {
+  display: flex;
+  flex-direction: row;
 }
-
 .scenario-preview {
   display: flex;
   flex-direction: column;
   width: 49%;
+  margin: 0 1em;
 }
 
 .scenario-title {
