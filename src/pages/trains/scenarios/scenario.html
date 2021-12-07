@@ -19,7 +19,6 @@ eleventyComputed:
             {% if forloop.last %}{% else %}, {% endif %}
         {% endfor %}
     </div>
-    <div><b>Traction:</b> {{ scenario.traction }}</div>
     <div><b>Duration:</b> 
         {% for part in scenario.duration %}
             {{ part }} mins {% if forloop.index == 1 and forloop.last %}{% else %}(Part {{ forloop.index }}){% endif %} {% if forloop.last %}{% else %} / {% endif %}

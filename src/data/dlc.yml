@@ -11,6 +11,9 @@ cross-city:
 ecml-south:
   name: East Coast Main Line South (London - Peterborough)
   link: https://store.steampowered.com/app/222638
+geml:
+  name: Great Eastern Main Line
+  link: https://store.steampowered.com/app/222593
 london-to-brighton:
   name: London to Brighton
   link: https://store.steampowered.com/app/208280
@@ -26,15 +29,24 @@ riviera-line:
 south-london-network:
   name: "South London Network"
   link: https://store.steampowered.com/app/222638/
+wcml-over-shap:
+  name: "West Coast Main Line Over Shap"
+  link: https://store.steampowered.com/app/222613/
 
 ## Rolling stock
 
+class-57-fl:
+  name: "Class 57/0 Freightliner"
+  link: https://store.steampowered.com/app/222566/
 class-59-2:
   name: "Class 59/2"
   link: https://store.steampowered.com/app/325973/
 class-66-ews:
   name: "Class 66 EWS v2.0"
   link: https://store.steampowered.com/app/222568
+class-66-fl:
+  name: "Class 66 Freighliner v2.0"
+  link: https://store.steampowered.com/app/222562/
 class-68:
   name: "Class 68"
   link: https://store.steampowered.com/app/376930/
@@ -44,6 +56,9 @@ class-159:
 class-170:
   name: "Class 170"
   link: https://store.steampowered.com/app/208364/
+class-180:
+  name: "Class 180"
+  link: https://store.steampowered.com/app/277763/
 class-319:
   name: "Class 319"
   link: https://store.steampowered.com/app/258640
@@ -68,6 +83,9 @@ class-465:
 class-801:
   name: "Class 801"
   link: https://store.steampowered.com/app/222618/
+euro-assets:
+  name: Euro Loco and Asset Pack
+  link: https://store.steampowered.com/app/2083000
 
 ## Just Trains
 
@@ -86,6 +104,9 @@ western-mainlines:
 class-43-mtu-ep:
   name: Class 43 (MTU)/Mk3 Enhancement Pack
   link: https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_89&product_id=168
+class-66-ep: 
+  name: Class 66 Enhancement Pack
+  link: https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_89&product_id=173
 class-150-dmu:
   name: Class 150/2 Diesel Multiple Unit Pack
   link: https://www.armstrongpowerhouse.com/index.php?route=product/product&path=45_84&product_id=181
@@ -98,9 +119,15 @@ class-170-ep:
 class-350-ep:
   name: Class 350 Enhancement Pack
   link: https://www.armstrongpowerhouse.com/enhancements/multiple_unit/class_350_enhancement_pack
+class-444-ep:
+  name: Class 444/450 Enhancement Pack
+  link: https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_91&product_id=193
 jha:
   name: JHA Wagon Pack
   link: https://www.armstrongpowerhouse.com/index.php?route=product/product&path=45_85&product_id=107
+jna-c:
+  name: JNA-C Wagon Pack
+  link: https://www.armstrongpowerhouse.com/index.php?route=product/product&path=45_85&product_id=179
 
 # Freeware
 
@@ -112,6 +139,15 @@ riviera-line-electrified:
 south-london-to-brighton:
   name: "South London to Brighton"
   link: https://steamcommunity.com/workshop/filedetails/?id=341200017
+
+## VP
+
+south-western-expressways-reading:
+  name: "South Western Expressways to Reading"
+  link: https://www.vulcanproductions.co.uk/swetoreading.html
+class-57-wr:
+  name: Western Region Class 57/7 Pack
+  link: https://www.vulcanproductions.co.uk/diesel.html
 
 # Reskins
 
@@ -128,6 +164,9 @@ class-456-swt:
 
 class-159-swt:
   name: "Class 159 'South Western Turbo' DMU"
+  link: https://superalbs.weebly.com/train-sim-reskins.html
+class-166-fgw-pb:
+  name: "Class 166 'FGW Plain Blue'"
   link: https://superalbs.weebly.com/train-sim-reskins.html
 class-319-tl-blue:
   name: "Class 319 'Thameslink Blue'"
@@ -155,6 +194,13 @@ class-68-drs:
   link: https://www.facebook.com/photo.php?fbid=1114446985268228&set=oa.515760421890353&type=1&theater
 
 
+## UKTrainSim
+
+class-360-hx:
+  name: Class 360 Heathrow Connect and Express
+  link: https://www.uktrainsim.com/filelib-info.php?form_fileid=34469
+
+
 # Enhancements
 
 ## ATS
@@ -162,9 +208,15 @@ class-68-drs:
 class-323-sp:
   name: "Class 323 Sound Pack"
   link: https://alanthomsonsim.com/downloads/class-323-sound-pack/
+mk3-night-riviera:
+  name: "Night Riviera Mk3 Coach Pack"
+  link: https://alanthomsonsim.com/?download=night-riviera-mk3-coach-pack
 
 ## MJW
 
+class-180-revamp:
+  name: "Class 180 Revamp Pack"
+  link: https://www.major.wales/revamp-packs/180
 class-323-revamp:
   name: "Class 323 Revamp Pack"
   link: https://www.major.wales/revamp-packs/class-323
