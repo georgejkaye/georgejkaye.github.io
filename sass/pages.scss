@@ -96,11 +96,12 @@ table.timetable > tbody > tr > td {
 .route-scenarios {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .scenario-preview {
   display: flex;
   flex-direction: column;
-  width: 49%;
+  width: 45%;
   margin: 0 1em;
 }
 
