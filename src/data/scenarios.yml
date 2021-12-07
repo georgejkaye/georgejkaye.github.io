@@ -102,7 +102,7 @@
               optional: true
             - stock: class-159
               optional: true
-    - section: Reskins
+    - section: Freeware
       sources:
       - source: DPSimulation (rfletcher)
         items: 
@@ -145,8 +145,6 @@
         - source: Steam Workshop
           items:
             - stock: riviera-line-electrified
-    - section: Reskins
-      sources:
         - source: DPSimulation
           items:
             - stock: class-390-vt
@@ -194,8 +192,6 @@
         - source: Steam Workshop
           items:
             - stock: riviera-line-electrified
-    - section: Reskins
-      sources:
         - source: DPSimulation
           items: 
             - stock: class-390-vt
@@ -232,7 +228,7 @@
             - stock: class-378
             - stock: class-319
             - stock: london-to-brighton
-    - section: Reskins
+    - section: Freeware
       sources:
         - source: Superalbs
           items:
@@ -276,11 +272,9 @@
             optional: true
     - section: Freeware
       sources:
-        - source: Workshop
+        - source: Steam Workshop
           items:
           - stock: south-london-to-brighton
-    - section: Reskins
-      sources:
         - source: Superalbs
           items:
           - stock: class-387-1-tl-blue
@@ -323,11 +317,180 @@
               part: 1
             - stock: western-mainlines
               part: 2
-    - section: Reskins
+    - section: Freeware
       sources:
         - source: Superalbs
           items:
             - stock: class-800-gwr
-          
-
-      
+- headcode: 1J93
+  updated: 2020-05-04
+  routes:
+    - western-mainlines
+    - south-western-expressways-reading        
+  time: "1807"
+  origin: London Paddington
+  destination: Frome
+  toc: First Great Western
+  traction: High Speed Train
+  duration:
+    - 30
+    - 90
+  difficulty:
+    - Easy
+    - Medium
+  alt: A First Great Western HST speeds towards Newbury.
+  description: "Hello driver! Welcome aboard unit 43071, which is heading this High Speed Train standing at London Paddington. You are driving 1J93, the once a day 1807 service from London Paddington to Frome. You’ll be calling at London Paddington, Twyford, Reading, Theale, Thatcham, Newbury, Kintbury, Hungerford, Bedwyn, Pewsey, Westbury and Frome. The timetable can get quite tight after Reading so drive to the best of your ability."
+  requirements:
+    - section: Payware
+      sources:
+        - source: Steam
+          items:
+            - stock: class-180
+              part: 1
+            - stock: euro-assets
+            - stock: class-66-ews
+            - stock: class-66-fl
+            - stock: geml
+              part: 1
+            - stock: class-159
+              part: 2
+        - source: Armstrong Powerhouse
+          items:
+            - stock: class-43-mtu-ep
+            - stock: class-66-ep
+            - stock: jha
+            - stock: class-158-cummins-ep
+        - source: Just Trains
+          items: 
+            - stock: western-mainlines
+            - stock: south-western-expressways
+    - section: Freeware
+      sources:
+        - source: Vulcan Productions
+          items:
+            - stock: south-western-expressways-reading
+        - source: Major Wales
+          items: 
+            - stock: class-180-revamp
+              part: 1
+        - source: UKTrainSim
+          items:
+            - stock: class-360-hx
+              part: 1
+        - source: Superalbs
+          items:
+            - stock: class-166-fgw-pb
+- headcode: 1W13
+  updated: 2020-05-04
+  routes: 
+    - western-mainlines
+  time: "0650"
+  origin: "London Paddington"
+  destination: "Great Malvern"
+  toc: First Great Western
+  traction: Class 180
+  duration:
+    - 50
+  difficulty: 
+    - Easy
+  alt: A First Great Western Class 180 stands at London Paddington at sunset, with a First Great Western High Speed Train behind it.
+  description: "Hello driver! Welcome aboard unit 180103, which is currently standing at London Paddington. You are driving 1W13, the 0650 service from London Paddington to Great Malvern. In this scenario, you’ll be driving as far as Oxford, calling at Slough, Reading and Oxford. Although rush hour is just beginning, there are no problems reported so enjoy the early morning drive!"
+  requirements: 
+    - section: Payware
+      sources:
+        - source: Steam
+          items:
+            - stock: class-180
+            - stock: euro-assets
+            - stock: class-66-ews
+            - stock: class-66-fl
+            - stock: geml
+            - stock: pdl-extended
+              optional: true
+            - stock: class-57-fl
+              optional: true
+            - stock: wcml-over-shap
+              optional: true
+        - source: Armstrong Powerhouse
+          items:
+            - stock: class-43-mtu-ep
+            - stock: class-66-ep
+            - stock: jha
+            - stock: class-444-ep
+              optional: true
+        - source: Just Trains
+          items:
+            - stock: western-mainlines
+            - stock: voyager-advanced
+              optional: true
+    - section: Freeware
+      sources:
+        - source: Major Wales
+          items:
+            - stock: class-180-revamp
+        - source: Superalbs
+          items:
+            - stock: class-166-fgw-pb
+        - source: UKTrainSim
+          items:
+            - stock: class-360-hx
+        - source: Vulcan Productions
+          items:
+            - stock: class-57-wr
+              optional: true
+        - source: Alan Thomson Sim
+          items:
+            - stock: mk3-night-riviera
+              optional: true
+- headcode: 1P32 
+  time: "1501"
+  updated: 2020-04-21
+  origin: Oxford
+  destination: London Paddington
+  traction: Class 180
+  toc: First Great Western
+  routes:
+    - western-mainlines
+  duration:
+    - 60
+  difficulty:
+    - Easy
+  alt: A First Great Western Class 180 speeds through a station on the GWML on a blue sky day, with a First Great Western Class 166 standing at the station in the background.
+  description: "Hello driver! Welcome aboard unit 180102, which is currently standing at Oxford. Today you’ll be driving 1P32, the 1501 service from Oxford to London Paddington. You are scheduled to stop at Oxford, Reading, Slough and London Paddington. You may be held at Didcot to allow a late-running service from Bristol to pass, but otherwise there are no problems reported - let’s hope it stays that way!"
+  requirements:
+    - section: Payware
+      sources:
+        - source: Steam
+          items: 
+            - stock: class-180
+            - stock: euro-assets
+            - stock: class-66-ews
+            - stock: class-66-fl
+            - stock: geml
+            - stock: pdl-extended
+              optional: true
+        - source: Armstrong Powerhouse
+          items:
+            - stock: class-43-mtu-ep
+            - stock: class-66-ep
+            - stock: jha
+            - stock: jna-c
+              optional: true
+            - stock: class-444-ep
+              optional: true
+        - source: Just Trains
+          items:
+            - stock: western-mainlines
+            - stock: voyager-advanced
+              optional: true
+    - section: Freeware
+      sources:
+        - source: Major Wales
+          items:
+            - stock: class-180-revamp
+        - source: Superalbs
+          items: 
+            - stock: class-166-fgw-pb
+        - source: UKTrainSim
+          items:
+            - stock: class-360-hx

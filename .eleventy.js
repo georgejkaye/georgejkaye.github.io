@@ -92,7 +92,8 @@ module.exports = config => {
                 }
             }
         }
-        return routed
+        let sorted = routed.sort((a, b) => a.name.localeCompare(b.name))
+        return sorted
     })
     config.addDataExtension("yml", contents => yaml.load(contents))
     config.addPlugin(syntaxHighlight)
