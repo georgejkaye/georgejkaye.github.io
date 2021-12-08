@@ -1,12 +1,24 @@
 @import "colours.scss";
+@import "core.scss";
 
 // intro
-
 .profile-picture {
-    width: 275px;
-    float: right;
-    border-radius: 10px;
-    margin-left: 25px;
+  width: 275px;
+
+  @media (max-width: ($mobile-width + $buffer)) {
+    display: none;
+  }
+  float: right;
+  border-radius: 10px;
+  margin-left: 25px;
+}
+
+.mobile-profile-picture {
+  @media (min-width: ($mobile-width + $buffer)) {
+    display: none;
+  }
+  max-width: 250px;
+  margin: 10px auto;
 }
 
 // boxes
@@ -15,100 +27,96 @@
 .talk,
 .visit,
 .module {
-    background-color: $accent;
-    border-radius: 10px;
-    padding: 10px;
-    padding-left: 20px;
-    margin: 15px 0px;
+  background-color: $accent;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 20px;
+  margin: 15px 0px;
 }
 
 // paper
 
 .paper-title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .paper-details {
-    color: $green;
-    font-style: italic;
+  color: $green;
+  font-style: italic;
 }
 
 .paper-abstract {
-    display: none;
-    font-style: italic;
+  display: none;
+  font-style: italic;
 }
 
 .author-text {
-    font-style: italic;
+  font-style: italic;
 }
 
 .author-me {
-    font-weight: bold;
-    color: $pink;
+  font-weight: bold;
+  color: $pink;
 }
-
 
 .toggle-abstract {
-    cursor: pointer;
-    color: $cyan;
+  cursor: pointer;
+  color: $cyan;
 }
-
-
 
 // talks
 
 .talk-title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .talk-date {
-    font-style: italic;
-    color: $green;
+  font-style: italic;
+  color: $green;
 }
-
 
 // visits
 
 .visit-venue {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .visit-cancelled {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .visit-city {
-    color: $green
+  color: $green;
 }
 
 .visit-dates {
-    font-style: italic;
+  font-style: italic;
 }
 
 // teaching
 
 .module-title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .module-term {
-    color: $green;
+  color: $green;
 }
 
 .module-role {
-    font-style: italic;
+  font-style: italic;
 }
 
 .module-institution {
-    font-style: italic;
+  font-style: italic;
 }
 
 // misc
 
 .misc-link {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .misc-text {
-    font-style: italic;
+  font-style: italic;
 }
