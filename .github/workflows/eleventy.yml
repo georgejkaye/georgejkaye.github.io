@@ -24,5 +24,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v1.1.0
         env:
           PUBLISH_DIR: build 
-          PUBLISH_BRANCH: eleventy-test
+          PUBLISH_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
