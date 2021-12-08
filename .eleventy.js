@@ -8,6 +8,7 @@ module.exports = config => {
     config.addPassthroughCopy("files")
     config.addPassthroughCopy("scripts")
     config.addPassthroughCopy("CNAME")
+    config.addPassthroughCopy("keybase.txt")
     config.addLiquidFilter("join", function (arr) {
         var str = ""
         for (const s of arr) {
