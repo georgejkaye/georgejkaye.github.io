@@ -13,7 +13,7 @@ home-links:
   - title: Papers
     target: "#papers"
   - title: About
-    target: "#about"
+    target: "#about-me"
 trains-links:
   - title: Stations
     target: /trains/stations/
