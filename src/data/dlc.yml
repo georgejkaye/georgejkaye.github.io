@@ -35,6 +35,8 @@ wcml-over-shap:
 
 ## Rolling stock
 
+arriva-dmu:
+  name: "Arriva Trains Wales DMU Pack"
 class-57-fl:
   name: "Class 57/0 Freightliner"
   link: https://store.steampowered.com/app/222566/
@@ -50,6 +52,9 @@ class-66-fl:
 class-68:
   name: "Class 68"
   link: https://store.steampowered.com/app/376930/
+class-150-1:
+  name: "Class 150/1"
+  link: https://store.steampowered.com/app/448184
 class-159:
   name: "Class 159"
   link: https://store.steampowered.com/app/222633/
@@ -66,7 +71,10 @@ class-378:
   name: "Class 378"
   link: https://store.steampowered.com/app/258663/
 class-390: 
-  name: "Class 390"
+  name: "Class 390 (DTG)"
+  link: https://store.steampowered.com/app/208343
+class-390-s9bl:
+  name: "Class 390 (S9BL)"
   link: https://store.steampowered.com/app/208343
 class-444:
   name: "Class 444"
@@ -107,7 +115,10 @@ class-43-mtu-ep:
 class-66-ep: 
   name: Class 66 Enhancement Pack
   link: https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_89&product_id=173
-class-150-dmu:
+class-150-1-ep:
+  name: Class 150/1 Enhancement Pack
+  link: https://www.armstrongpowerhouse.com/index.php?route=product/product&path=36_89&product_id=175
+class-150-2-dmu:
   name: Class 150/2 Diesel Multiple Unit Pack
   link: https://www.armstrongpowerhouse.com/index.php?route=product/product&path=45_84&product_id=181
 class-158-cummins-ep:
@@ -116,6 +127,9 @@ class-158-cummins-ep:
 class-170-ep:
   name: Class 168/170/171 Enhancement Pack
   link: https://www.armstrongpowerhouse.com/enhancements/multiple_unit/class_168-170-171_enhancement_pack
+class-321-emu:
+  name: Class 321 Electric Multiple Unit Pack
+  link: https://www.armstrongpowerhouse.com/index.php?route=product/product&path=45_84&product_id=137
 class-350-ep:
   name: Class 350 Enhancement Pack
   link: https://www.armstrongpowerhouse.com/enhancements/multiple_unit/class_350_enhancement_pack
@@ -148,8 +162,6 @@ south-western-expressways-reading:
 class-57-wr:
   name: Western Region Class 57/7 Pack
   link: https://www.vulcanproductions.co.uk/diesel.html
-
-# Reskins
 
 ## DPSimulation
 
@@ -200,9 +212,6 @@ class-360-hx:
   name: Class 360 Heathrow Connect and Express
   link: https://www.uktrainsim.com/filelib-info.php?form_fileid=34469
 
-
-# Enhancements
-
 ## ATS
 
 class-323-sp:
@@ -211,6 +220,16 @@ class-323-sp:
 mk3-night-riviera:
   name: "Night Riviera Mk3 Coach Pack"
   link: https://alanthomsonsim.com/?download=night-riviera-mk3-coach-pack
+xc-route:
+  name: "XCRoute Birmingham - Bristol"
+  link: https://alanthomsonsim.com/downloads/xcroute-birmingham-to-bristol/
+
+hst-welshman:
+  name: "HST Great Western Railway 'Welshman'"
+  link: https://alanthomsonsim.com/?download=hst-great-western-railway-welshman
+hst-ooc:
+  name: "HST Great Western Railway 43093 'Old Oak Common'"
+  link: https://alanthomsonsim.com/?download=hst-great-western-railway-43093-old-oak-common-2
 
 ## MJW
 

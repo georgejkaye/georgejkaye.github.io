@@ -18,29 +18,29 @@
       sources: 
         - source: Steam
           items: 
-            - stock: cross-city
-            - stock: class-170
+            - item: cross-city
+            - item: class-170
               optional: true
-            - stock: portsmouth-direct-extended
+            - item: portsmouth-direct-extended
               optional: true
         - source: Just Trains
           items:
-            - stock: voyager-advanced
+            - item: voyager-advanced
         - source: Armstrong Powerhouse
           items:
-            - stock: class-170-ep
+            - item: class-170-ep
               optional: true
-            - stock: class-350-ep
+            - item: class-350-ep
               optional: true
     - section: Freeware
       sources:
         - source: Alan Thomson Sim
           items:
-            - stock: class-323-sp
+            - item: class-323-sp
               optional: true
         - source: Major Wales
           items:
-            - stock: class-323-revamp
+            - item: class-323-revamp
 - headcode: 1D13
   time: "0824"
   updated: 2018-07-24
@@ -92,24 +92,24 @@
       sources:
         - source: Steam
           items:
-            - stock: pdl-extended
-            - stock: pdl
-            - stock: south-london-network
-            - stock: class-444
-            - stock: class-455-thomson
-            - stock: class-378
-            - stock: class-378
+            - item: pdl-extended
+            - item: pdl
+            - item: south-london-network
+            - item: class-444
+            - item: class-455-thomson
+            - item: class-378
+            - item: class-378
               optional: true
-            - stock: class-159
+            - item: class-159
               optional: true
     - section: Freeware
       sources:
       - source: DPSimulation (rfletcher)
         items: 
-          - stock: class-456-swt
+          - item: class-456-swt
       - source: Superalbs
         items:
-          - stock: class-159-swt
+          - item: class-159-swt
             optional: true
 - headcode: 1V41
   updated: 2020-05-04
@@ -132,29 +132,29 @@
       sources:
         - source: Steam
           items: 
-            - stock: riviera-line
-            - stock: class-390
-            - stock: south-london-network
-            - stock: class-68
+            - item: riviera-line
+            - item: class-390
+            - item: south-london-network
+            - item: class-68
               optional: true
-            - stock: class-66-ews
+            - item: class-66-ews
               optional: true
-            - stock: class-801
+            - item: class-801
     - section: Freeware
       sources: 
         - source: Steam Workshop
           items:
-            - stock: riviera-line-electrified
+            - item: riviera-line-electrified
         - source: DPSimulation
           items:
-            - stock: class-390-vt
+            - item: class-390-vt
         - source: Superalbs
           items:
-            - stock: class-800-gwr
-            - stock: class-387-1-gwr
+            - item: class-800-gwr
+            - item: class-387-1-gwr
         - source: BH Reskins
           items: 
-            - stock: class-68-drs
+            - item: class-68-drs
 - headcode: 1Z56
   updated: 2020-05-04
   routes:
@@ -176,32 +176,32 @@
       sources:
         - source: Steam
           items:
-            - stock: riviera-line
-            - stock: class-390
-            - stock: ecml-south
-            - stock: class-68
+            - item: riviera-line
+            - item: class-390
+            - item: ecml-south
+            - item: class-68
               optional: true
-            - stock: class-66-ews
+            - item: class-66-ews
               optional: true
-            - stock: class-801
+            - item: class-801
         - source: Armstrong Powerhouse
           items:
-            - stock: class-43-mtu-ep
+            - item: class-43-mtu-ep
     - section: Freeware
       sources:
         - source: Steam Workshop
           items:
-            - stock: riviera-line-electrified
+            - item: riviera-line-electrified
         - source: DPSimulation
           items: 
-            - stock: class-390-vt
+            - item: class-390-vt
         - source: Superalbs
           items:
-            - stock: class-800-gwr
-            - stock: class-387-1-gwr
+            - item: class-800-gwr
+            - item: class-387-1-gwr
         - source: BH Reskins
           items:
-            - stock: class-68-drs          
+            - item: class-68-drs          
 - headcode: 2J69
   updated: 2020-05-04
   routes:
@@ -223,19 +223,19 @@
       sources:
         - source: Steam
           items: 
-            - stock: south-london-network
-            - stock: class-455-8
-            - stock: class-378
-            - stock: class-319
-            - stock: london-to-brighton
+            - item: south-london-network
+            - item: class-455-8
+            - item: class-378
+            - item: class-319
+            - item: london-to-brighton
     - section: Freeware
       sources:
         - source: Superalbs
           items:
-            - stock: class-375-se-blue
-            - stock: class-387-1-tl-blue
-            - stock: class-319-tl-blue
-            - stock: class-387-2-gx
+            - item: class-375-se-blue
+            - item: class-387-1-tl-blue
+            - item: class-319-tl-blue
+            - item: class-387-2-gx
 - headcode: 1A15
   updated: 2019-04-21
   routes:
@@ -257,29 +257,29 @@
       sources:
         - source: Steam
           items:
-          - stock: south-london-network
-          - stock: london-to-brighton
-          - stock: class-455-8
-          - stock: class-378
-          - stock: class-319
-          - stock: class-465
-          - stock: class-59-2
-          - stock: portsmouth-direct
+          - item: south-london-network
+          - item: london-to-brighton
+          - item: class-455-8
+          - item: class-378
+          - item: class-319
+          - item: class-465
+          - item: class-59-2
+          - item: portsmouth-direct
             optional: true
-          - stock: class-444
+          - item: class-444
             optional: true
-          - stock: class-455-thomson
+          - item: class-455-thomson
             optional: true
     - section: Freeware
       sources:
         - source: Steam Workshop
           items:
-          - stock: south-london-to-brighton
+          - item: south-london-to-brighton
         - source: Superalbs
           items:
-          - stock: class-387-1-tl-blue
-          - stock: class-319-tl-blue
-          - stock: class-387-2-gx
+          - item: class-387-1-tl-blue
+          - item: class-319-tl-blue
+          - item: class-387-2-gx
 - headcode: 2M12
   updated: 2020-05-04
   routes: 
@@ -303,25 +303,25 @@
       sources:
         - source: Steam
           items:
-            - stock: class-159
-            - stock: class-801
-            - stock: chatham-medway
+            - item: class-159
+            - item: class-801
+            - item: chatham-medway
         - source: Armstrong Powerhouse
           items: 
-            - stock: class-158-cummins-ep
-            - stock: jha
-            - stock: class-150-dmu 
+            - item: class-158-cummins-ep
+            - item: jha
+            - item: class-150-2-dmu 
         - source: Just Trains
           items:
-            - stock: south-western-expressways
+            - item: south-western-expressways
               part: 1
-            - stock: western-mainlines
+            - item: western-mainlines
               part: 2
     - section: Freeware
       sources:
         - source: Superalbs
           items:
-            - stock: class-800-gwr
+            - item: class-800-gwr
 - headcode: 1J93
   updated: 2020-05-04
   routes:
@@ -345,41 +345,41 @@
       sources:
         - source: Steam
           items:
-            - stock: class-180
+            - item: class-180
               part: 1
-            - stock: euro-assets
-            - stock: class-66-ews
-            - stock: class-66-fl
-            - stock: geml
+            - item: euro-assets
+            - item: class-66-ews
+            - item: class-66-fl
+            - item: geml
               part: 1
-            - stock: class-159
+            - item: class-159
               part: 2
         - source: Armstrong Powerhouse
           items:
-            - stock: class-43-mtu-ep
-            - stock: class-66-ep
-            - stock: jha
-            - stock: class-158-cummins-ep
+            - item: class-43-mtu-ep
+            - item: class-66-ep
+            - item: jha
+            - item: class-158-cummins-ep
         - source: Just Trains
           items: 
-            - stock: western-mainlines
-            - stock: south-western-expressways
+            - item: western-mainlines
+            - item: south-western-expressways
     - section: Freeware
       sources:
         - source: Vulcan Productions
           items:
-            - stock: south-western-expressways-reading
+            - item: south-western-expressways-reading
         - source: Major Wales
           items: 
-            - stock: class-180-revamp
+            - item: class-180-revamp
               part: 1
         - source: UKTrainSim
           items:
-            - stock: class-360-hx
+            - item: class-360-hx
               part: 1
         - source: Superalbs
           items:
-            - stock: class-166-fgw-pb
+            - item: class-166-fgw-pb
 - headcode: 1W13
   updated: 2020-05-04
   routes: 
@@ -400,47 +400,47 @@
       sources:
         - source: Steam
           items:
-            - stock: class-180
-            - stock: euro-assets
-            - stock: class-66-ews
-            - stock: class-66-fl
-            - stock: geml
-            - stock: pdl-extended
+            - item: class-180
+            - item: euro-assets
+            - item: class-66-ews
+            - item: class-66-fl
+            - item: geml
+            - item: pdl-extended
               optional: true
-            - stock: class-57-fl
+            - item: class-57-fl
               optional: true
-            - stock: wcml-over-shap
+            - item: wcml-over-shap
               optional: true
         - source: Armstrong Powerhouse
           items:
-            - stock: class-43-mtu-ep
-            - stock: class-66-ep
-            - stock: jha
-            - stock: class-444-ep
+            - item: class-43-mtu-ep
+            - item: class-66-ep
+            - item: jha
+            - item: class-444-ep
               optional: true
         - source: Just Trains
           items:
-            - stock: western-mainlines
-            - stock: voyager-advanced
+            - item: western-mainlines
+            - item: voyager-advanced
               optional: true
     - section: Freeware
       sources:
         - source: Major Wales
           items:
-            - stock: class-180-revamp
+            - item: class-180-revamp
         - source: Superalbs
           items:
-            - stock: class-166-fgw-pb
+            - item: class-166-fgw-pb
         - source: UKTrainSim
           items:
-            - stock: class-360-hx
+            - item: class-360-hx
         - source: Vulcan Productions
           items:
-            - stock: class-57-wr
+            - item: class-57-wr
               optional: true
         - source: Alan Thomson Sim
           items:
-            - stock: mk3-night-riviera
+            - item: mk3-night-riviera
               optional: true
 - headcode: 1P32 
   time: "1501"
@@ -462,35 +462,136 @@
       sources:
         - source: Steam
           items: 
-            - stock: class-180
-            - stock: euro-assets
-            - stock: class-66-ews
-            - stock: class-66-fl
-            - stock: geml
-            - stock: pdl-extended
+            - item: class-180
+            - item: euro-assets
+            - item: class-66-ews
+            - item: class-66-fl
+            - item: geml
+            - item: pdl-extended
               optional: true
         - source: Armstrong Powerhouse
           items:
-            - stock: class-43-mtu-ep
-            - stock: class-66-ep
-            - stock: jha
-            - stock: jna-c
+            - item: class-43-mtu-ep
+            - item: class-66-ep
+            - item: jha
+            - item: jna-c
               optional: true
-            - stock: class-444-ep
+            - item: class-444-ep
               optional: true
         - source: Just Trains
           items:
-            - stock: western-mainlines
-            - stock: voyager-advanced
+            - item: western-mainlines
+            - item: voyager-advanced
               optional: true
     - section: Freeware
       sources:
         - source: Major Wales
           items:
-            - stock: class-180-revamp
+            - item: class-180-revamp
         - source: Superalbs
           items: 
-            - stock: class-166-fgw-pb
+            - item: class-166-fgw-pb
         - source: UKTrainSim
           items:
-            - stock: class-360-hx
+            - item: class-360-hx
+- headcode: 1V06
+  traction: Class 170
+  toc: Arriva CrossCountry
+  routes:
+    - xc-route
+  duration:
+    - 120
+  difficulty:
+    - Easy
+  time: "0907"
+  origin: "Nottingham"
+  destination: "Cardiff Central"
+  updated: 2020-05-04
+  alt: A CrossCountry Class 170 drives on a lovely day.
+  description: "Hello driver! Welcome aboard unit 170109, which is currently standing at Birmingham New Street. Today you’ll be driving service 1V06, the 0907 from Nottingham to Cardiff Central, on the leg between Birmingham New Street and Cardiff Central. You’ll be calling at University, Cheltenham Spa, Gloucester, Chepstow, Newport and Cardiff Central. There are no delays reported but we have had word that some signals are on the blink, so you may have to request permission to pass them! Otherwise enjoy the ride!"
+  requirements: 
+    - section: Payware
+      sources:
+        - source: Steam
+          items:
+            - item: class-170
+            - item: class-66-ews
+            - item: arriva-dmu
+              optional: true
+            - item: class-150-1
+              optional: true
+            - item: class-390-s9bl
+              optional: true
+            - item: euro-assets
+              optional: true
+        - source: Armstrong Powerhouse
+          items:
+            - item: class-170-ep
+            - item: class-43-mtu-ep
+            - item: class-321-emu
+            - item: class-66-ep
+              optional: true
+            - item: class-150-1-ep
+              optional: true
+            - item: class-150-2-dmu
+              optional: true
+            - item: class-350-ep
+              optional: true
+        - source: Just Trains
+          items:
+            - item: voyager-advanced
+    - section: Freeware
+      sources: 
+        - source: Alan Thomson Sim
+          items:
+            - item: xc-route
+            - item: hst-welshman
+              optional: true
+            - item: hst-ooc
+              optional: true
+- headcode: 2G85
+  time: "1336"
+  updated: 2020-04-21
+  origin: Swindon
+  destination: Cheltenham Spa
+  traction: "Class 150/1"
+  toc: First Great Western
+  routes: 
+    - xc-route
+  duration:
+    - 30
+  difficulty:
+    - Medium
+  alt: A First Great Western Class 150/1 travels towards Cheltenham Spa.
+  description: "Hello driver! Welcome aboard unit 150129, which is currently standing at a signal at Standish Jn, south of Gloucester. It’s a sweltering summer’s day, and you are being held here to allow a delayed CrossCountry service to pass. Today you are driving service 2G85, the 1336 from Swindon to Cheltenham Spa, on the leg between Standish Jn and Cheltenham Spa. You’ll be calling at Gloucester and Cheltenham Spa. One last thing to note is that there is a temporary speed restriction of 10mph over Barnwood Jn (which you will travel over as you leave Gloucester for Cheltenham) due to the heat causing the tracks to be in danger of buckling." 
+  requirements:
+    - section: Payware
+      sources:
+        - source: Steam
+          items:
+            - item: class-150-1
+            - item: euro-assets
+            - item: ecml-south
+            - item: class-170
+              optional: true
+            - item: class-66-ews
+              optional: true
+            - item: arriva-dmu
+              optional: true
+        - source: Armstrong Powerhouse
+          items:
+            - item: class-150-1-ep
+            - item: class-43-mtu-ep
+            - item: class-170-ep
+              optional: true
+            - item: class-66-ep
+              optional: true
+        - source: Just Trains
+          items: 
+            - item: voyager-advanced
+    - section: Freeware
+      sources:
+      - source: Alan Thomson Sim
+        items:
+          - item: xc-route
+        

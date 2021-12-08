@@ -7,6 +7,7 @@ module.exports = config => {
     config.addPassthroughCopy("images")
     config.addPassthroughCopy("files")
     config.addPassthroughCopy("scripts")
+    config.addPassthroughCopy("CNAME")
     config.addLiquidFilter("join", function (arr) {
         var str = ""
         for (const s of arr) {
@@ -91,6 +92,10 @@ module.exports = config => {
                     })
                 }
             }
+        }
+        for (let route of routed) {
+            let scens = route.scenarios.sort((a, b) => b.updated - a.updated)
+            route.scenarios = scens
         }
         let sorted = routed.sort((a, b) => a.name.localeCompare(b.name))
         return sorted
