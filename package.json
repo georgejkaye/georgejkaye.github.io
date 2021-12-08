@@ -10,6 +10,8 @@
   "scripts": {
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "watch:sass": "npx sass sass:build/css --watch",
-    "start": "npm run watch:eleventy & npm run watch:sass"
+    "start": "npm run watch:eleventy & npm run watch:sass",
+    "build:eleventy": "npx @11ty/eleventy",
+    "build:sass": "npx sass sass:build/css"
   }
 }

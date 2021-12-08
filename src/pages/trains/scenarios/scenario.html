@@ -5,7 +5,7 @@ pagination:
   alias: scenario
 permalink: /trains/scenarios/{{ scenario.headcode }}/
 eleventyComputed:
-    title: "{{ scenario.headcode }} <br> {{ scenario.origin }} to {{ scenario.destination }}"
+    title: "{{ scenario.headcode }} {{ scenario.time }} <br> {{ scenario.origin }} to {{ scenario.destination }}"
 ---
 
 <img src="/images/scenarios/{{ scenario.headcode }}.webp" alt="{{ scenario.alt }}" title="Scenario image for '{{ title }}'"></img>
