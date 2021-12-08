@@ -86,7 +86,7 @@ eleventyComputed:
 <h4>{{ source.source }}</h4>
 <ul>
 {% for item in source.items %}
-{% assign entry=dlc[item.stock] %}
+{% assign entry=dlc[item.item] %}
 <li>
     <a href="{{ entry.link }}" title="Download link for '{{ entry.name }}'">{{- entry.name -}}</a>
     {% if item.part %}
