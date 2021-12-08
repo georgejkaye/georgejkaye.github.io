@@ -2,7 +2,7 @@ name: Eleventy build
 
 on:
   push:
-    branches: [ eleventy ]
+    branches: [ develop ]
 
 jobs:  
   build:
