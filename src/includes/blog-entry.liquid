@@ -27,14 +27,14 @@
     </div>
     <div class="post-content">
         {% if post.data.image %}
-        <img class="post-img" src={{ post.data.image }} alt={{ post.data.alt }}/>
+        <a href={{ post.url }} title="Read blog post '{{ post.title }}'"><img class="post-img" src={{ post.data.image }} alt={{ post.data.alt }}/></a>
         {% endif %}
         <div class="post-preview">
             <div>
             {{ post.data.tagline }}
             </div>
             <div class="post-readmore">
-                <a href={{ post.url }}>Read more</a>
+                <a href={{ post.url }} title="Read blog post '{{ post.title }}'>Read more</a>
             </div>
         </div> 
   </div>
