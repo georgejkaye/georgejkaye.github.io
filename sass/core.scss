@@ -1,9 +1,10 @@
 @import "colours.scss";
 
-$mobile-width: 44em;
-$home-width: 72em;
-$content-width: 54em;
-$small-content-width: 44em;
+$mobile-width: 500px;
+$content-width: 1000px;
+$small-content-width: 750px;
+$smaller-content-width: 600px;
+$buffer: 50px;
 
 html {
   overflow-y: scroll;
@@ -12,7 +13,7 @@ html {
   font-size: 20px;
   line-height: 1.5;
 
-  @media (max-width: $content-width) {
+  @media (max-width: ($small-content-width + $buffer)) {
     font-size: 16px;
   }
 }
@@ -102,13 +103,24 @@ td {
 
 .container {
   margin: auto;
+
+  @media (min-width: ($mobile-width + $buffer)) {
+    width: $mobile-width;
+  }
+
+  @media (min-width: ($smaller-content-width + $buffer)) {
+    width: $smaller-content-width;
+  }
+
+  @media (min-width: ($small-content-width + $buffer)) {
+    width: $small-content-width;
+  }
+
+  @media (min-width: ($content-width + $buffer)) {
+    width: $content-width;
+  }
+}
+
+.content {
   padding: 1rem 1rem;
-
-  @media (min-width: $mobile-width) {
-    max-width: $mobile-width;
-  }
-
-  @media (min-width: $home-width) {
-    max-width: $content-width;
-  }
 }
