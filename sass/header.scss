@@ -5,10 +5,15 @@ $nav-height: 75px;
 
 .spacer {
   height: $nav-height;
+  @media (max-width: ($mobile-width + $buffer)) {
+    display: none;
+  }
 }
 
 .nav-bar {
-  position: fixed;
+  @media (min-width: ($mobile-width + $buffer)) {
+    position: fixed;
+  }
   display: flex;
   justify-content: center;
   width: 100%;
@@ -21,21 +26,15 @@ $nav-height: 75px;
   text-align: center;
   display: flex;
   height: $nav-height;
-  width: $content-width;
-  padding-top: 10px;
+  padding: 10px 0 10px 0;
+  margin-bottom: 0.5em;
 
-  @media (min-width: $mobile-width) {
-    max-width: $mobile-width;
-  }
-
-  @media (max-width: $mobile-width) {
+  @media (max-width: ($mobile-width + $buffer)) {
     padding-left: 1em;
     padding-right: 1em;
-    max-width: $mobile-width;
-  }
 
-  @media (min-width: $home-width) {
-    max-width: $content-width;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -43,12 +42,19 @@ $nav-height: 75px;
   flex: 1;
   display: flex;
   align-items: center;
-  flex-direction: row;
+
+  @media (max-width: ($mobile-width + $buffer)) {
+    margin: auto;
+    justify-content: center;
+  }
 }
 
 .site-name {
   display: flex;
   align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
 }
 
 .right-nav {
@@ -56,15 +62,16 @@ $nav-height: 75px;
   flex-direction: row-reverse;
   align-items: center;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: ($mobile-width + $buffer)) {
     display: none;
   }
 }
 
 .nav-site-image {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   margin-right: 0.75em;
+  margin-bottom: 0;
 }
 
 .nav-bar-title {
@@ -117,13 +124,19 @@ $nav-height: 75px;
 }
 
 .home-link {
-  @media (max-width: $home-width) {
+  @media (max-width: ($content-width + $buffer)) {
     display: none;
   }
 }
 
-.mobile-nav {
-  @media (min-width: $mobile-width) {
+.nav-bar-mobile {
+  @media (min-width: ($mobile-width + $buffer)) {
     display: none;
   }
+  display: flex;
+  padding: 10px;
+  font-size: 1.25em;
+  background-color: $accent;
+  border-bottom: 2px solid $background;
+  justify-content: center;
 }
