@@ -1,0 +1,27 @@
+@import "colours.scss";
+
+.scenario-info {
+  margin-bottom: 10px;
+}
+
+.timetable {
+  width: 100%;
+}
+
+table.timetable > tbody > tr > td {
+  border-bottom: 1px solid $foreground;
+}
+
+.call-pass {
+  font-style: italic;
+}
+
+.call-platform,
+.call-arr,
+.call-dep {
+  text-align: center;
+}
+
+.call-location {
+  font-weight: bold;
+}
