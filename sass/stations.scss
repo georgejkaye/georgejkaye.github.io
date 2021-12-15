@@ -1,0 +1,13 @@
+@import "core.scss";
+
+.station {
+  width: 300px;
+}
+
+.station-img {
+  width: 33%;
+
+  @media (max-width: $content-width) {
+    width: 49%;
+  }
+}

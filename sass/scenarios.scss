@@ -1,0 +1,23 @@
+.route-scenarios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.scenario-preview {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 0 1em;
+}
+
+.scenario-title {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.scenario-last-updated {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 15px;
+}

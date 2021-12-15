@@ -4,6 +4,7 @@ pagination:
    size: 1
    alias: tag
 permalink: /blog/{{ tag.tagName }}/{% if tag.pageNumber > 0 %}{{ tag.pageNumber | increment }}/{% endif %}
+style: blog
 eleventyComputed:
    title: "Posts tagged '{{ tag.tagName }}'"
 ---
