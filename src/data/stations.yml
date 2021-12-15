@@ -62,6 +62,8 @@
   crs: leh
 - name: Leamington Spa
   crs: lms
+- name: London Euston
+  crs: eus
 - name: London Marylebone
   crs: myb
 - name: Longbridge
@@ -110,6 +112,8 @@
   crs: sri
 - name: Stafford
   crs: sta
+- name: Stansted Airport
+  crs: ssd
 - name: Stechford
   crs: scf
 - name: Stoke-on-Trent
@@ -128,6 +132,8 @@
   crs: thw
 - name: The Lakes
   crs: tlk
+- name: Tottenham Hale
+  crs: tom
 - name: Tulse Hill
   crs: tuh
 - name: Tyseley
