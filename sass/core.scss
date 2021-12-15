@@ -76,6 +76,7 @@ p {
 }
 
 img {
+  width: 100%;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -123,4 +124,23 @@ td {
 
 .content {
   padding: 1rem 1rem;
+}
+
+.counter {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.page-number {
+  margin: 0 5px;
+  font-size: 1.5em;
+  background-color: $accent;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+.current-page {
+  color: $pink;
+  font-weight: bold;
 }
