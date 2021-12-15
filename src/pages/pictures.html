@@ -9,7 +9,7 @@ permalink: /pictures/
 {% for picture in pictures %}
 <div class="picture-block">
     <div class="picture-picture">
-        <img src="/images/{{ picture.src }}" alt={{ pictures.alt }}>
+        <a href="/images/{{ picture.src }}" title="Original image"><img src="/images/{{ picture.src }}" alt={{ pictures.alt }}></a>
     </div>
     <div class="picture-caption">
         {{ picture.caption }}
