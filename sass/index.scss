@@ -23,6 +23,7 @@
 
 // boxes
 
+.news-item,
 .paper,
 .talk,
 .visit,
@@ -32,6 +33,12 @@
   padding: 10px;
   padding-left: 20px;
   margin: 15px 0px;
+}
+
+// news
+
+.news-date {
+  color: $green;
 }
 
 // paper
