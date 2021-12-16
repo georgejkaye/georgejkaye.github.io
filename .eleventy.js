@@ -44,6 +44,14 @@ module.exports = config => {
         const utc = date.toUTCString()
         return moment.utc(utc).format("DD MMMM YYYY")
     })
+    config.addLiquidFilter("prettyDateMDY", (date) => {
+        const utc = date.toUTCString()
+        return moment.utc(utc).format("MMMM DD, YYYY")
+    })
+    config.addLiquidFilter("fileDate", (date) => {
+        const utc = date.toUTCString()
+        return moment.utc(utc).format("YYYY-MM-DD")
+    })
     config.addLiquidFilter("scenarioTitle", (scenario) => {
         return scenario.headcode + " " + scenario.time + " " + scenario.origin + " to " + scenario.destination
     })
