@@ -1,30 +1,40 @@
 - title: Normalisation by Evaluation for Digital Circuits
   venue: SYCO 8
   web: https://www.cl.cam.ac.uk/events/syco/8/
-  date: December 13, 2021
-  extended-abstract: 2021-12-13-syco
-  slides: 2021-12-13-syco8
+  date: 2021-12-13
+  key: syco8
+  links:
+    slides: true
+    abstract: true
   repo: https://github.com/georgejkaye/syco8
 - title: Rewriting Graphically with Cartesian Traced Categories
   venue: ACT 2021
   web: https://www.cl.cam.ac.uk/events/act2021/
-  date: July 12, 2021
-  slides: 2021-07-12-act
-  extended-abstract: 2021-07-12-act
-  video: https://www.youtube.com/watch?v=We7FuoOCxyA&t=6378s
+  date: 2021-07-12
+  key: act21
+  links:
+    slides: true
+    abstract: true
+    video: https://www.youtube.com/watch?v=We7FuoOCxyA&t=6378s
 - title: Diagrammatic Semantics with Symmetric Traced Monoidal Categories
   venue: Huawei Edinburgh PL Group Tech Talk
   web: https://blogs.ed.ac.uk/he-lab/category/tech-talk/
-  date: March 4, 2021
-  slides: 2021-03-04-huawei
-  video: https://youtu.be/UbTke5d2-Xs
+  date: 2021-03-04
+  key: huawei
+  links:
+    slides: true
+    video: https://youtu.be/UbTke5d2-Xs
 - title: Diagrammatic Semantics for Digital Circuits
   venue: SYNCHRON 2020
   web: http://synchron2020.inria.fr/
-  date: November 27, 2020
-  slides: 2020-11-27-synchron
-  video: https://youtu.be/vaVt0EskUcE
+  key: synchron20
+  date: 2020-11-27
+  links:
+    slides: true
+    video: https://youtu.be/vaVt0EskUcE
 - title: A visualiser for linear lambda-terms as rooted 3-valent maps
   venue: CLA 2019
-  date: July 1, 2019
-  slides: 2019-07-01-cla
+  key: cla19
+  date: 2019-07-01
+  links:
+    slides: true
