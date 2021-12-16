@@ -3,27 +3,27 @@
 
     <div>
         <span class="talk-venue"><a href={{ talk.web }} title="{{ talk.venue }} webpage">{{ talk.venue }}</a></span>
-        <span class="talk-date">{{ talk.date }}</span>
+        <span class="talk-date">{{ talk.date | prettyDateMDY }}</span>
 
         <!-- slides -->
-        {% if talk.slides %}
-        {%- capture target -%} /files/slides/{{ talk.slides }}.pdf {%- endcapture -%}
+        {% if talk.links.slides %}
+        {%- capture target -%} /files/slides/{{ talk.date | fileDate }}-{{ talk.key }}.pdf {%- endcapture -%}
         {%- capture title -%} Slides for '{{ talk.title }}' {%- endcapture -%}
         {%- capture text -%} slides {%- endcapture -%}
         {% include macros/button %}
         {% endif %}
 
-        <!-- slides -->
-        {% if talk.extended-abstract %}
-        {%- capture target -%} /files/abstracts/{{ talk.abstract }}.pdf {%- endcapture -%}
+        <!-- abstract -->
+        {% if talk.links.abstract %}
+        {%- capture target -%} /files/abstracts/{{ talk.date | fileDate }}-{{ talk.key }}.pdf {%- endcapture -%}
         {%- capture title -%} Extended abstract for '{{ talk.title }}' {%- endcapture -%}
         {%- capture text -%} extended abstract {%- endcapture -%}
         {% include macros/button %}
         {% endif %}
 
-        <!-- slides -->
-        {% if talk.video %}
-        {%- capture target -%} {{ talk.video }} {%- endcapture -%}
+        <!-- video -->
+        {% if talk.links.video %}
+        {%- capture target -%} {{ talk.links.video }} {%- endcapture -%}
         {%- capture title -%} Video of '{{ talk.title }}' {%- endcapture -%}
         {%- capture text -%} video {%- endcapture -%}
         {% include macros/button %}
