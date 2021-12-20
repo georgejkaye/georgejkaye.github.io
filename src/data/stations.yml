@@ -4,6 +4,8 @@
   crs: add
 - name: Alvechurch
   crs: alv
+- name: Banbury
+  crs: ban
 - name: Barnt Green
   crs: btg
 - name: Bescot Stadium
@@ -38,6 +40,8 @@
   crs: dam
 - name: Deansgate
   crs: dgt
+- name: Didcot Parkway
+  crs: did
 - name: Duddeston
   crs: dud
 - name: Elephant & Castle
