@@ -28,5 +28,13 @@
         {%- capture text -%} video {%- endcapture -%}
         {% include macros/button %}
         {% endif %}
+
+        <!-- github -->
+        {% if talk.links.github %}
+        {%- capture target -%} https://github.com/georgejkaye?tab=repositories&q={{ talk.key }} {%- endcapture -%}
+        {%- capture title -%} Github repos for '{{ talk.title }}' {%- endcapture -%}
+        {%- capture text -%} github {%- endcapture -%}
+        {% include macros/button %}
+        {% endif %}
     </div>
 </div>
