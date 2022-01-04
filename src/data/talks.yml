@@ -6,6 +6,7 @@
   links:
     slides: true
     abstract: true
+    github: true
   repo: https://github.com/georgejkaye/syco8
 - title: Rewriting Graphically with Cartesian Traced Categories
   venue: ACT 2021
