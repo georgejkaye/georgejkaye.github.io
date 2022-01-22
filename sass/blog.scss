@@ -1,4 +1,5 @@
 @import "colours.scss";
+@import "core.scss";
 
 .post {
   margin-bottom: 1em;
@@ -6,6 +7,9 @@
 
 .post-content {
   display: flex;
+  @media (max-width: ($mobile-width + $buffer)) {
+    flex-direction: column;
+  }
 }
 
 .post-header {
@@ -32,10 +36,13 @@
 .post-img {
   width: 100%;
   margin-right: 20px;
+  flex: 1;
 }
 
 .post-preview {
-  width: 50%;
+  @media (min-width: ($mobile-width + $buffer)) {
+    width: 300px;
+  }
 }
 
 .post-readmore {

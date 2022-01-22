@@ -27,7 +27,9 @@
     </div>
     <div class="post-content">
         {% if post.data.image %}
-        <img class="post-img" src={{ post.data.image }} alt={{ post.data.alt }}/>
+        <div class="post-img">
+            <img src={{ post.data.image }} alt={{ post.data.alt }}/>
+        </div>
         {% endif %}
         <div class="post-preview">
             <div>
