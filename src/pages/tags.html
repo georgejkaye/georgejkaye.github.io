@@ -9,10 +9,10 @@ eleventyComputed:
    title: "Posts tagged '{{ tag.tagName }}'"
 ---
 
-{% include components/tag-pagenumbers %}
+{% include "components/tag-pagenumbers" %}
 
 {% for post in tag.pageData %}
-   {% include blog-entry %}
+   {% include "blog-entry" %}
 {% endfor %}
 
-{% include components/tag-pagenumbers %}
+{% include "components/tag-pagenumbers" %}

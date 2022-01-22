@@ -6,7 +6,7 @@
     {%- capture target -%} {{ paper.page }} {%- endcapture -%}
     {%- capture title -%} Page for '{{ paper.title }}' {%- endcapture -%}
     {%- capture text -%} page {%- endcapture -%}
-    {% include macros/button %}
+    {% include "macros/button" %}
     {% endif %}
 
     <!-- PDF -->
@@ -14,7 +14,7 @@
     {%- capture target -%} /files/papers/{{ paper.file }}.pdf {%- endcapture -%}
     {%- capture title -%} PDF version of '{{ paper.title }}' {%- endcapture -%}
     {%- capture text -%} pdf {%- endcapture -%}
-    {% include macros/button %}
+    {% include "macros/button" %}
     {% endif %}
 
     <!-- Arxiv version -->
@@ -22,14 +22,14 @@
     {%- capture target -%} https://arxiv.org/abs/{{ paper.arxiv }} {%- endcapture -%}
     {%- capture title -%} Arxiv page for '{{ paper.title }}'' {%- endcapture -%}
     {%- capture text -%} arxiv {%- endcapture -%}
-    {% include macros/button %}
+    {% include "macros/button" %}
     {% endif %}
 
     <!-- Bibtex -->
     {%- capture target -%} /files/papers/{{ paper.file }}.bib.txt {%- endcapture -%}
     {%- capture title -%} Bibtex entry for '{{ paper.title }}'' {%- endcapture -%}
     {%- capture text -%} bibtex {%- endcapture -%}
-    {% include macros/button %}
+    {% include "macros/button" %}
 
     <!-- Abstract-->
 
