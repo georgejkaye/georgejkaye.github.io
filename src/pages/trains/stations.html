@@ -8,7 +8,7 @@ pagination:
   size: 9
 ---
 
-{% include components/pagenumbers %}
+{% include "components/pagenumbers" %}
 
 <div class="stations">
     {% for stn in pagination.items %}
@@ -16,4 +16,4 @@ pagination:
     {% endfor %}
 </div>
 
-{% include components/pagenumbers %}
+{% include "components/pagenumbers" %}

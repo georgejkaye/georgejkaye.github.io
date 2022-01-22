@@ -1,5 +1,5 @@
 <div class="counter">
-    {% assign max={{ tag.pages }} %}
+    {% assign max="{{ tag.pages }}" %}
     {%- for i in (1..max) -%}
     {% if i != 1 %}{% assign num={{ i }}/ %}{% endif %}
     <a href="/blog/{{ tag.tagName }}/{{ num }}" title="Page {{ forloop.index }}"><span class="page-number{% if tag.pageNumber == forloop.index0 %} current-page" aria-current="page{%- endif -%}">
