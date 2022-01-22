@@ -10,7 +10,7 @@
         {%- capture target -%} /files/slides/{{ talk.date | fileDate }}-{{ talk.key }}.pdf {%- endcapture -%}
         {%- capture title -%} Slides for '{{ talk.title }}' {%- endcapture -%}
         {%- capture text -%} slides {%- endcapture -%}
-        {% include macros/button %}
+        {% include "macros/button" %}
         {% endif %}
 
         <!-- abstract -->
@@ -18,7 +18,7 @@
         {%- capture target -%} /files/abstracts/{{ talk.date | fileDate }}-{{ talk.key }}.pdf {%- endcapture -%}
         {%- capture title -%} Extended abstract for '{{ talk.title }}' {%- endcapture -%}
         {%- capture text -%} extended abstract {%- endcapture -%}
-        {% include macros/button %}
+        {% include "macros/button" %}
         {% endif %}
 
         <!-- video -->
@@ -26,7 +26,7 @@
         {%- capture target -%} {{ talk.links.video }} {%- endcapture -%}
         {%- capture title -%} Video of '{{ talk.title }}' {%- endcapture -%}
         {%- capture text -%} video {%- endcapture -%}
-        {% include macros/button %}
+        {% include "macros/button" %}
         {% endif %}
 
         <!-- github -->
@@ -34,7 +34,7 @@
         {%- capture target -%} https://github.com/georgejkaye?tab=repositories&q={{ talk.key }} {%- endcapture -%}
         {%- capture title -%} Github repos for '{{ talk.title }}' {%- endcapture -%}
         {%- capture text -%} github {%- endcapture -%}
-        {% include macros/button %}
+        {% include "macros/button" %}
         {% endif %}
     </div>
 </div>

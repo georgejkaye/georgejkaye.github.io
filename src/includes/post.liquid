@@ -1,7 +1,7 @@
 ---
 layout: default
 style: blog
-permalink: /blog/{% if dir %}{{ dir }}/{{ part | slug }}{% elsif series %}{{ series | slug }}/{{ part | slug }}{% else %}{{ title | slug }}{% endif %}/
+permalink: /blog/{% if dir %}{{ dir }}/{{ part | slugify }}{% elsif series %}{{ series | slugify }}/{{ part | slugify }}{% else %}{{ title | slugify }}{% endif %}/
 ---
 
 <div class="post">

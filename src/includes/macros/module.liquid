@@ -11,7 +11,7 @@
         {%- capture target -%} {{ link.target }} {%- endcapture -%}
         {%- capture title -%} {{ link.title }} {%- endcapture -%}
         {%- capture text -%} {{ link.text }} {%- endcapture -%}
-        {% include macros/button %}
+        {% include "macros/button" %}
         {% endfor %}
     </div>
 </div>

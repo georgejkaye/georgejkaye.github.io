@@ -10,12 +10,12 @@ pagination:
   reverse: true
 ---
 
-{% include components/pagenumbers %}
+{% include "components/pagenumbers" %}
 
 <div class="posts">
     {% for post in pagination.items %}
-    {% include blog-entry %}
+    {% include "blog-entry" %}
     {% endfor %}
 
-    {% include components/pagenumbers %}
+    {% include "components/pagenumbers" %}
 </div>
