@@ -127,8 +127,12 @@ td {
 }
 
 .counter {
-  margin: 25px 0;
+  margin: 25px auto;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-number {
