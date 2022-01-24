@@ -6,3 +6,4 @@ node_modules/
 .metals
 .vscode/
 _site/
+*.css*
