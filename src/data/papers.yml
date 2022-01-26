@@ -1,3 +1,12 @@
+- title: Full abstraction for digital circuits
+  details: Arxiv preprint
+  authors:
+    - name: dan
+    - name: me
+    - name: david
+  file: 2022-01-25-full-abstraction
+  arxiv: 2201.10456
+  abstract: This paper refines the existing axiomatic semantics of digital circuits with delay and feedback, in which circuits are constructed as morphisms in a freely generated cartesian traced (dataflow) category. First, we give a cleaner presentation, making a clearer distinction between syntax and semantics, including a full formalisation of the semantics as stream functions. As part of this effort, we refocus the categorical framework through the lens of string diagrams, which not only makes reading equations more intuitive but removes bureaucracy such as associativity from proofs. We also extend the existing framework with a new axiom, inspired by the Kleene fixed-point theorem, which allows circuits with non-delay-guarded feedback, typically handled poorly by traditional methodologies, to be replaced with a series of finitely iterated circuits. This eliminates the possibility of infinitely unfolding a circuit; instead, one can always reduce a circuit to some (possibly undefined) value. To fully characterise the stream functions that correspond to digital circuits, we examine how the behaviour of the latter can be modelled using Mealy machines. By establishing that the translation between sequential circuits and Mealy machines preserves their behaviour, one can observe that circuits always implement monotone stream functions with finite stream derivatives. 
 - title: Rewriting Graphically With Symmetric Traced Monoidal Categories
   details: Arxiv preprint
   authors:
