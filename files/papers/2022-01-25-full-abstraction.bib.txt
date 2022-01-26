@@ -1,0 +1,8 @@
+@misc{ghica2022abstraction,
+      title={Full abstraction for digital circuits}, 
+      author={Dan R. Ghica and George Kaye and David Sprunger},
+      year={2022},
+      eprint={2201.10456},
+      archivePrefix={arXiv},
+      primaryClass={cs.LO}
+}
