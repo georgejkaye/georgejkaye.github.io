@@ -88,16 +88,18 @@ module.exports = config => {
         let tagMap = []
         let tagArray = [...tagSet]
         for (let tagName of tagArray) {
-            let tagItems = collection.getFilteredByTag(tagName)
-            tagItems.reverse()
-            let pagedItems = lodashChunk(tagItems, paginationSize)
-            for (let pageNumber = 0, max = pagedItems.length; pageNumber < max; pageNumber++) {
-                tagMap.push({
-                    tagName: tagName,
-                    pageNumber: pageNumber,
-                    pageData: pagedItems[pageNumber],
-                    pages: pagedItems.length
-                })
+            if (tagName != "blog") {
+                let tagItems = collection.getFilteredByTag(tagName)
+                tagItems.reverse()
+                let pagedItems = lodashChunk(tagItems, paginationSize)
+                for (let pageNumber = 0, max = pagedItems.length; pageNumber < max; pageNumber++) {
+                    tagMap.push({
+                        tagName: tagName,
+                        pageNumber: pageNumber,
+                        pageData: pagedItems[pageNumber],
+                        pages: pagedItems.length
+                    })
+                }
             }
         }
         return tagMap

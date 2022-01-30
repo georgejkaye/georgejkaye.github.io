@@ -1,8 +1,18 @@
 <div class="counter">
-    {%- for page in pagination.pages -%}
+    {%- for i in (1..pages) -%}
     <div>
-        <a href="{{- pagination.hrefs[forloop.index0] -}}" title="Page {{ forloop.index }}"><span class="page-number{% if pagination.pageNumber == forloop.index0 %} current-page" aria-current="page{%- endif -%}">
-    {{- forloop.index -}}
-    </span></a></div>
+        <a href="{{- root -}}
+            {%- if i != 1 -%}
+                /{{- i -}}
+            {%- endif -%}" 
+           title="Page {{ i }}"
+        >
+            <span class="page-number{% if forloop.index0 == current %} current-page" 
+                  aria-current="page{%- endif -%}"
+        >
+            {{- forloop.index -}}
+            </span>
+        </a>
+    </div>
     {%- endfor -%}
 </div>
