@@ -27,7 +27,6 @@ $nav-height: 75px;
   display: flex;
   height: $nav-height;
   padding: 10px 0 10px 0;
-  margin-bottom: 0.5em;
 
   @media (max-width: ($mobile-width + $buffer)) {
     padding-left: 1em;
@@ -101,7 +100,6 @@ $nav-height: 75px;
 }
 
 .header-bar-content {
-  max-width: $content-width;
   display: flex;
   flex-direction: column;
   align-items: center;
