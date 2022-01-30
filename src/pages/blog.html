@@ -9,13 +9,16 @@ pagination:
   size: 5
   reverse: true
 ---
-
-{% include "components/pagenumbers" %}
+{% capture root %}
+   /blog
+{% endcapture %}
+{% assign pages = pagination.pages.size %}
+{% assign current = pagination.pageNumber %}
 
 <div class="posts">
-    {% for post in pagination.items %}
+  {% include "components/pagenumbers" %}
+  {% for post in pagination.items %}
     {% include "blog-entry" %}
-    {% endfor %}
-
-    {% include "components/pagenumbers" %}
+  {% endfor %}
+  {% include "components/pagenumbers" %}
 </div>
