@@ -5,14 +5,20 @@ pagination:
    alias: tag
 permalink: /blog/{{ tag.tagName }}/{% if tag.pageNumber > 0 %}{{ tag.pageNumber | increment }}/{% endif %}
 style: blog
+
 eleventyComputed:
    title: "Posts tagged '{{ tag.tagName }}'"
 ---
 
-{% include "components/tag-pagenumbers" %}
+{% capture root %}
+   /blog/{{ tag.tagName }}
+{% endcapture %}
+{% assign pages = tag.pages %}
+{% assign current = tag.pageNumber %}
+{% include "components/pagenumbers" %}
 
 {% for post in tag.pageData %}
    {% include "blog-entry" %}
 {% endfor %}
 
-{% include "components/tag-pagenumbers" %}
+{% include "components/pagenumbers" %}

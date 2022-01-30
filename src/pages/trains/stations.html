@@ -8,6 +8,11 @@ pagination:
   size: 12
 ---
 
+{% capture root %}
+   /trains/stations
+{% endcapture %}
+{% assign pages = pagination.pages.size %}
+{% assign current = pagination.pageNumber %}
 {% include "components/pagenumbers" %}
 
 <div class="stations">
