@@ -11,14 +11,19 @@
         {% endif %}
       </h1>
 
-      {% if subtitle %}
-      {% assign subtitlet=subtitle %}
-      {% elsif part %}
-      {% assign subtitlet=part %}
-      {% endif %}
+      {% capture subtitle-text %} 
+        {% if subtitle %}
+          {{ subtitle }}
+        {% elsif part %}
+          {{ part }}  
+          {% if part-title %}
+            : {{ part-title }}
+          {% endif %}
+        {% endif %}
+      {% endcapture %}
 
-      {% if subtitlet %}
-      <div class="subtitle">{{ subtitlet }}</div>
+      {% if subtitle-text %}
+        <div class="subtitle">{{ subtitle-text }}</div>
       {% endif %}
     </div>
     {% if tagline %}
