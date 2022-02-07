@@ -8,6 +8,8 @@
   crs: ban
 - name: Barnt Green
   crs: btg
+- name: Berkswell
+  crs: bkw
 - name: Bescot Stadium
   crs: bsc
 - name: Birmingham New Street
@@ -24,6 +26,8 @@
   crs: cbg
 - name: Cambridge North
   crs: cmb
+- name: Canley
+  crs: cnl
 - name: Chester Road
   crs: crd
 - name: Coseley
@@ -52,6 +56,8 @@
   crs: gvh
 - name: Hall Green
   crs: hlg
+- name: Hampton-in-Arden
+  crs: hia
 - name: Hamstead
   crs: hsd
 - name: Hatton
@@ -136,6 +142,8 @@
   crs: thw
 - name: The Lakes
   crs: tlk
+- name: Tile Hill
+  crs: tlh
 - name: Tottenham Hale
   crs: tom
 - name: Tulse Hill
