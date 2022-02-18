@@ -8,9 +8,12 @@
   "scripts": {
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "watch:sass": "npx sass sass:build/css --watch",
-    "start": "npm run watch:eleventy & npm run watch:sass",
+    "watch:tikz": "python helpers/convert.py tikz build/tikz",
+    "start": "yarn run watch:eleventy & yarn run watch:sass & yarn run watch:tikz",
     "build:eleventy": "npx @11ty/eleventy",
-    "build:sass": "npx sass sass:build/css"
+    "build:sass": "npx sass sass:build/css",
+    "build:tikz": "python helpers/convert.py tikz build/tikz",
+    "build": "yarn build:eleventy && yarn build:sass && yarn build:tikz"
   },
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",

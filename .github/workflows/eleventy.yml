@@ -20,6 +20,12 @@ jobs:
         run: yarn build:eleventy
       - name: Compile sass
         run: yarn build:sass
+      - name: Set up python
+        uses: actions/setup-python@v2
+      - name: Compile latex
+        run: xu-cheng/texlive-action/full@v1
+        with: 
+          run: yarn build:tikz
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v1.1.0
         env:
