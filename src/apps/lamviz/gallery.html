@@ -16,15 +16,15 @@ title: Lambda-term gallery
 <body>
 
     <div class="column gallery-column">
-        <h1>&lambda;-term gallery</h1>
+        <h1>λ-term gallery</h1>
 
-        <p><b><a href="/lamviz/visualiser/">&lambda;-term visualiser</a></b></p>
+        <p><b><a href="/lamviz/visualiser/">λ-term visualiser</a></b></p>
 
         <p>Graph display powerered by <a href="http://js.cytoscape.org/">Cytoscape.js</a></p>
 
         The underlying algorithms behind the term generators can be found <a href="Generator.hs">here</a> (in Haskell!).
 
-        <h2>&lambda; term generators</h2>
+        <h2>λ term generators</h2>
         n <input type="text" class="number-box" id="n"> k <input type="text" class="number-box" id="k">
 
         <input type="radio" id="pure" name="fragment" value="pure">
@@ -44,7 +44,7 @@ title: Lambda-term gallery
         Abstractions <input type="text" class="number-box" id="abstractions-box">
         Applications <input type="text" class="number-box" id="applications-box">
         Variables <input type="text" class="number-box" id="variables-box">
-        &beta;-redexes<input type="text" class="number-box" id="betas-box">
+        β-redexes<input type="text" class="number-box" id="betas-box">
         Sort <select id="sort">
             <option value=0>Default</value>
             <option value=1>Crossings: High-Low</value>
@@ -58,7 +58,7 @@ title: Lambda-term gallery
             (costly)<input type="checkbox" id="draw" checked onclick="toggleDraw()"> Use de Bruijn
             notation<input type="checkbox" id="de-bruijn" onclick="toggleDeBruijn()"></p>
         <p>Show crossings<input type="checkbox" id="crossings" checked onclick="toggleCrossings()"> Show
-            &beta;-reductions<input type="checkbox" id="beta" checked onclick="toggleBeta()"></p>
+            β-reductions<input type="checkbox" id="beta" checked onclick="toggleBeta()"></p>
 
 
         <button type="button" id="generate-btn" onclick='generateButton()'>Generate terms!</button>

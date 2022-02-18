@@ -1,5 +1,4 @@
 ---
-template: none
 permalink: /lamviz/visualiser/
 title: Lambda-term visualiser
 ---
@@ -16,19 +15,19 @@ title: Lambda-term visualiser
 
 <body>
 
-    <h1>&lambda;-term visualiser</h1>
+    <h1>λ-term visualiser</h1>
 
-    <p><b><a href="/lamviz/gallery/">&lambda;-term gallery</a></b></p>
+    <p><b><a href="/lamviz/gallery/">λ-term gallery</a></b></p>
 
     <p>Graph display powerered by <a href="http://js.cytoscape.org/">Cytoscape.js</a></p>
 
-    <p>Type a term t and an environment &Gamma; below!</p>
+    <p>Type a term t and an environment Γ below!</p>
 
-    <p><b>Example:</b> (&lambda;x. &lambda;y. x y) a b
+    <p><b>Example:</b> (λx. λy. x y) a b
         <br>t = (\x. \y. x y) a b
-        <br>&Gamma; = a b</b>
+        <br>Γ = a b</b>
 
-        <p>t = <input type="text" id="input"> &Gamma; = <input type="text" id="env"></p>
+        <p>t = <input type="text" id="input"> Γ = <input type="text" id="env"></p>
 
         <p>Define an alias <input type="text" id="function-name"> = <input type="text" id="function-body"> <button
                 type="button" id="function-btn" onclick="defineFunction();">Define</button></p>

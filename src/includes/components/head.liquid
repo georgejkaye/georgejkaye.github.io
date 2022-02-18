@@ -11,11 +11,11 @@
 
   <title>
     {% if title == "Home" %}
-    {{ site.title }} &middot; {{ site.tagline }}
+    {{ site.title }} · {{ site.tagline }}
     {% elsif series %}
     {{ series }}: {{ part }} 
     {% else %}
-    {{ title | strip }} &middot; {{ site.title }}
+    {{ title | strip }} · {{ site.title }}
     {% endif %}
   </title>
 
@@ -30,6 +30,11 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
     rel="stylesheet">
+    
+  <!-- Katex -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markdown-it-texmath/css/texmath.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css"/>
 
   <!-- Icons -->
   <link rel="icon" href="/images/favicon.ico" type="image/ico" />

@@ -71,3 +71,11 @@
   margin: 0 2px;
   text-align: center;
 }
+
+.inline-diagram {
+  padding-top: 7px;
+  display: inline;
+  height: 50px;
+  vertical-align: middle;
+  filter: invert(100%);
+}
