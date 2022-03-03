@@ -16,7 +16,7 @@
           {{ subtitle }}
         {% elsif part %}
           {{ part }}  
-          {% if part-title %}
+          {%- if part-title -%}
             : {{ part-title }}
           {% endif %}
         {% endif %}
@@ -28,6 +28,9 @@
     </div>
     {% if tagline %}
     <div class="tagline">{{ tagline }}</div>
+    {% endif %}
+    {% if date %}
+    <div class="title-date">{{ date | prettyDate }}</div>
     {% endif %}
     {% if tags.size > 0 %}
     <div class="post-tags">
