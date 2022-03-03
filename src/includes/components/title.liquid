@@ -29,6 +29,9 @@
     {% if tagline %}
     <div class="tagline">{{ tagline }}</div>
     {% endif %}
+    {% if date %}
+    <div class="title-date">{{ date | prettyDate }}</div>
+    {% endif %}
     {% if tags.size > 0 %}
     <div class="post-tags">
       {% for tag in tags %}
