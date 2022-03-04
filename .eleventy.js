@@ -5,7 +5,7 @@ const moment = require("moment")
 const lodashChunk = require("lodash.chunk")
 const markdownIt = require("./config/markdown.js")
 const { talk, visit, teaching, paper, navLink } = require("./src/includes/shortcodes/home")
-const { definition, proposition, example, theorem, proof } = require("./src/includes/shortcodes/environment")
+const { definition, proposition, example, theorem, proof, figure } = require("./src/includes/shortcodes/environment")
 
 
 module.exports = config => {
@@ -38,6 +38,7 @@ module.exports = config => {
     config.addPairedShortcode("prop", proposition)
     config.addPairedShortcode("thm", theorem)
     config.addPairedShortcode("proof", proof)
+    config.addPairedShortcode("figure", figure)
 
     /**
      * Remove newlines from titles of pages
