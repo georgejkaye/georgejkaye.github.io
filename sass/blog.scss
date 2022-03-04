@@ -61,10 +61,6 @@
   margin-top: 25px;
 }
 
-em {
-  color: $pink;
-}
-
 .post-tag {
   background-color: $foreground;
   font-family: monospace;
@@ -74,12 +70,4 @@ em {
   border-radius: 5px;
   margin: 0 2px;
   text-align: center;
-}
-
-.inline-diagram {
-  width: auto;
-  padding-top: 7px;
-  display: inline;
-  height: 50px;
-  vertical-align: middle;
 }
