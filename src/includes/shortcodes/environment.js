@@ -19,4 +19,13 @@ const proposition = (data, name) => environment("Proposition", data, name)
 const theorem = (data, name) => environment("Theorem", data, name)
 const proof = (data, name) => environment("Proof", data, name)
 
-module.exports = { definition, example, proposition, theorem, proof }
+const figure = (data) => {
+    const content = markdownIt.renderInline(data)
+    return outdent`
+        <div class="figure">
+            ${content}
+        </div>
+    `
+}
+
+module.exports = { definition, example, proposition, theorem, proof, figure }

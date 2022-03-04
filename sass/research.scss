@@ -5,7 +5,6 @@ img {
   width: auto;
   padding-top: 7px;
   display: inline;
-  height: 50px;
   vertical-align: middle;
 }
 
@@ -25,4 +24,13 @@ em {
 .example-name {
   font-weight: bold;
   font-size: 1.25em;
+  color: $pink;
+}
+
+.figure {
+  text-align: center;
+}
+
+.figure img {
+  height: auto;
 }
