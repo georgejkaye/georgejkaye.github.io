@@ -2,7 +2,9 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="/css/core.css" />
-  <link rel="stylesheet" href="/css/{{ style }}.css" />
+  {% for style in styles %}
+    <link rel="stylesheet" href="/css/{{ style }}.css" />
+  {% endfor %}
   <link rel="stylesheet" href="/css/header.css" />
   <link rel="stylesheet" href="/css/syntax.css" />
 

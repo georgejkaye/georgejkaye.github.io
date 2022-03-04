@@ -1,3 +1,4 @@
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const yaml = require("js-yaml")
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
 const moment = require("moment")
@@ -21,6 +22,7 @@ module.exports = config => {
     config.addDataExtension("yml", contents => yaml.load(contents))
 
     config.addPlugin(syntaxHighlight)
+    config.addPlugin(EleventyRenderPlugin)
 
     config.addShortcode("paper", paper)
     config.addShortcode("talk", talk)
@@ -29,6 +31,11 @@ module.exports = config => {
     config.addShortcode("nav", navLink)
 
     config.setLibrary("md", markdownIt);
+
+    config.addPairedShortcode(
+        "defn",
+        require("./src/includes/shortcodes/definition")
+    )
 
     /**
      * Remove newlines from titles of pages

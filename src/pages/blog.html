@@ -3,7 +3,8 @@ layout: default
 title: Blog
 subtitle: A compendium of wacky adventures and occasional seriousness
 permalink: /blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | increment }}/{% endif %}
-style: blog
+styles: 
+  - blog
 pagination:
   data: collections.blog
   size: 5

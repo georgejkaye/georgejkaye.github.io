@@ -60,7 +60,7 @@ def compile(dir, updated=None):
                     subprocess.run(["pdf2svg", pdf, svg_path])
                     subprocess.run(["rm", tex])
                     subprocess.run(["rm", pdf])
-                    subprocess.run(["rm", "*.log", f"*.aux",
+                    subprocess.run(["rm", "-f", "*.log", f"*.aux",
                                     "*.fls", f"*.fdb_latexmk"])
 
 
