@@ -21,6 +21,7 @@
     "@iktakahiro/markdown-it-katex": "^4.0.1",
     "js-yaml": "^4.1.0",
     "lodash.chunk": "^4.2.0",
+    "markdown-it": "^12.3.2",
     "markdown-it-attrs": "^4.1.4",
     "moment": "^2.29.3",
     "outdent": "^0.8.0",

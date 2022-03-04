@@ -4,7 +4,8 @@ pagination:
   size: 1
   alias: scenario
 permalink: /trains/scenarios/{{ scenario.headcode }}/
-style: scenario
+styles: 
+  - scenario
 eleventyComputed:
     title: "{{ scenario.headcode }} {{ scenario.time }} <br> {{ scenario.origin }} to {{ scenario.destination }}"
 ---
