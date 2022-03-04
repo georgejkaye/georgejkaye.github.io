@@ -7,3 +7,13 @@ node_modules/
 .vscode/
 _site/
 *.css*
+*/svg-inkscape/
+*.synctex(busy)
+*.synctex.gz
+*.aux
+*.blg
+*.log
+*.fdb_latexmk
+*.bbl
+*.out
+*.fls
