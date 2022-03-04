@@ -1,6 +1,7 @@
 ---
 layout: default
-style: blog
+styles: 
+  - blog
 permalink: /blog/{% if dir %}{{ dir }}/{{ part | slugify }}{% elsif series %}{{ series | slugify }}/{{ part | slugify }}{% else %}{{ title | slugify }}{% endif %}/
 ---
 
