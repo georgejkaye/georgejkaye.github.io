@@ -1,0 +1,28 @@
+@import "colours.scss";
+@import "core.scss";
+
+.inline-diagram {
+  width: auto;
+  padding-top: 7px;
+  display: inline;
+  height: 50px;
+  vertical-align: middle;
+}
+
+em {
+  color: $pink;
+}
+
+.definition,
+.example {
+  background-color: $accent;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.definition-name,
+.example-name {
+  font-weight: bold;
+  font-size: 1.25em;
+}
