@@ -8,11 +8,11 @@
   "scripts": {
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "watch:sass": "npx sass sass:build/css --watch",
-    "watch:tikz": "python tikz/convert.py tikz build --watch",
+    "watch:tikz": "python figures/convert.py figures build --watch",
     "start": "yarn run watch:eleventy & yarn run watch:sass & yarn run watch:tikz",
     "build:eleventy": "npx @11ty/eleventy",
     "build:sass": "npx sass sass:build/css",
-    "build:tikz": "python tikz/convert.py tikz build",
+    "build:tikz": "python figures/convert.py figures build",
     "build": "yarn build:eleventy && yarn build:sass && yarn build:tikz"
   },
   "dependencies": {

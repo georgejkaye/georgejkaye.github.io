@@ -6,7 +6,7 @@ const lodashChunk = require("lodash.chunk")
 const markdownIt = require("./config/markdown.js")
 const { talk, visit, teaching, paper, navLink } = require("./src/includes/shortcodes/home")
 const { definition, proposition, example, theorem, proof, figure } = require("./src/includes/shortcodes/environment")
-
+const { tikz } = require("./src/includes/shortcodes/tikz")
 
 module.exports = config => {
     config.setDataDeepMerge(true)
@@ -39,6 +39,8 @@ module.exports = config => {
     config.addPairedShortcode("thm", theorem)
     config.addPairedShortcode("proof", proof)
     config.addPairedShortcode("figure", figure)
+
+    config.addShortcode("tikz", tikz)
 
     /**
      * Remove newlines from titles of pages
