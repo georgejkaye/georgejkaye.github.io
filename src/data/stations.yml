@@ -158,8 +158,12 @@
   crs: wsl
 - name: Warwick Parkway
   crs: wrp
+- name: Wilmcote
+  crs: wvs
 - name: Wilnecote
   crs: wne
+- name: Wootton Wawen
+  crs: www
 - name: Worcester Foregate Street
   crs: wof
 - name: Wylde Green
