@@ -13,7 +13,8 @@ em {
 }
 
 .definition,
-.example {
+.example,
+.remark {
   background-color: $accent;
   padding: 15px 20px;
   border-radius: 10px;
@@ -21,7 +22,8 @@ em {
 }
 
 .definition-name,
-.example-name {
+.example-name,
+.remark-name {
   font-weight: bold;
   font-size: 1.25em;
   color: $pink;
@@ -30,9 +32,13 @@ em {
 .figure {
   text-align: center;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 10px auto;
+  justify-content: center;
 }
 
 .figure img {
   height: auto;
-  margin: 0 5px;
+  margin: 0 15px;
 }

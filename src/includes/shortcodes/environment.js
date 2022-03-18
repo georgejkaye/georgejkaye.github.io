@@ -18,6 +18,7 @@ const example = (data, name) => environment("Example", data, name)
 const proposition = (data, name) => environment("Proposition", data, name)
 const theorem = (data, name) => environment("Theorem", data, name)
 const proof = (data, name) => environment("Proof", data, name)
+const remark = (data, name) => environment("Remark", data, name)
 
 const figure = (data) => {
     const content = markdownIt.renderInline(data)
@@ -28,4 +29,4 @@ const figure = (data) => {
     `
 }
 
-module.exports = { definition, example, proposition, theorem, proof, figure }
+module.exports = { definition, example, proposition, theorem, proof, figure, remark }
