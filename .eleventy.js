@@ -5,7 +5,7 @@ const moment = require("moment")
 const lodashChunk = require("lodash.chunk")
 const markdownIt = require("./config/markdown.js")
 const { talk, visit, teaching, paper, navLink } = require("./src/includes/shortcodes/home")
-const { definition, proposition, example, theorem, proof, figure } = require("./src/includes/shortcodes/environment")
+const { definition, proposition, example, theorem, proof, figure, remark } = require("./src/includes/shortcodes/environment")
 const { tikz } = require("./src/includes/shortcodes/tikz")
 
 module.exports = config => {
@@ -39,6 +39,7 @@ module.exports = config => {
     config.addPairedShortcode("thm", theorem)
     config.addPairedShortcode("proof", proof)
     config.addPairedShortcode("figure", figure)
+    config.addPairedShortcode("remark", remark)
 
     config.addShortcode("tikz", tikz)
 
