@@ -10,6 +10,8 @@
   crs: btg
 - name: Berkswell
   crs: bkw
+- name: Beeston
+  crs: bee
 - name: Bescot Stadium
   crs: bsc
 - name: Birmingham New Street
@@ -66,6 +68,8 @@
   crs: hym
 - name: Hackney Wick
   crs: hkw
+- name: Henley-in-Arden
+  crs: hnl
 - name: Jewellery Quarter
   crs: jeq
 - name: Lea Hall
@@ -90,6 +94,8 @@
   crs: mat
 - name: Matlock Bath
   crs: mtb
+- name: Nottingham
+  crs: not
 - name: North Queensferry
   crs: nqu
 - name: Northfield
@@ -104,6 +110,8 @@
   crs: psw
 - name: Redditch
   crs: rdt
+- name: Rowley Regis
+  crs: row
 - name: Sandwell and Dudley
   crs: sad
 - name: Selly Oak
