@@ -76,6 +76,10 @@
   crs: leh
 - name: Leamington Spa
   crs: lms
+- name: Leeds
+  crs: lds
+- name: Lichfield City
+  crs: lic
 - name: London Euston
   crs: eus
 - name: London Marylebone
