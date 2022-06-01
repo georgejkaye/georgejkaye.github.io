@@ -1,4 +1,4 @@
-<h2>News</h2>
+## News
 
 {% for item in news %}
 <div class="news-item">

@@ -1,5 +1,5 @@
 <h2>Talks</h2>
 
 {% for talk in talks %}
-{% include "macros/talk" %}
+{% talk talk %}
 {% endfor %}
