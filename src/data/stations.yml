@@ -32,6 +32,8 @@
   crs: cnl
 - name: Chester Road
   crs: crd
+- name: Chirk
+  crs: crk
 - name: Coseley
   crs: csy
 - name: Coventry
@@ -116,6 +118,8 @@
   crs: rdt
 - name: Rowley Regis
   crs: row
+- name: Ruabon
+  crs: rua
 - name: Sandwell and Dudley
   crs: sad
 - name: Selly Oak
@@ -124,6 +128,8 @@
   crs: sen
 - name: Shirley
   crs: srl
+- name: Shrewsbury
+  crs: shr
 - name: Small Heath
   crs: sma
 - name: Smethwick Galton Bridge
