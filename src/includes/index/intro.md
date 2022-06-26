@@ -4,10 +4,13 @@
 ![A picture of me, with the Forth Bridge in the background]({{ people.me.picture }})
 {: .profile-picture}
 
+
 Hello! I’m George, a PhD student researcher at the University of Birmingham, under the supervision of [Dan Ghica]({{ people.dan.web }}) and [Miriam Backens]({{ people.miriam.web }}).
 
 I am a member of the [University of Birmingham Theory Group]({{ links.theory }}).
 Along with [Tom de Jong]({{ people.tdj.web }}), I organise the research group's [weekly seminar](http://talks.bham.ac.uk/show/index/86) and maintain its website.
+
+Currently I also work part time at the [Huawei Edinburgh Programming Languages Lab](https://blogs.ed.ac.uk/he-lab/).
 
 ### Contact me
 
