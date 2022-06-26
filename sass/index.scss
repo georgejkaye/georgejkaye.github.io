@@ -13,7 +13,7 @@
   margin-left: 25px;
 }
 
-.mobile-profile-picture {
+.mobile-picture {
   @media (min-width: ($mobile-width + $buffer)) {
     display: none;
   }
