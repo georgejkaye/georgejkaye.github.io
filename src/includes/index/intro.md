@@ -1,4 +1,5 @@
-![A picture of me, with the Forth Bridge in the background]({{ people.me.picture }}){: .mobile-profile-picture}
+![A picture of me, with the Forth Bridge in the background]({{ people.me.picture }})
+{: .mobile-picture}
 
 ![A picture of me, with the Forth Bridge in the background]({{ people.me.picture }})
 {: .profile-picture}
