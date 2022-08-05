@@ -56,8 +56,14 @@
   crs: eph
 - name: Four Oaks
   crs: fok
+- name: Gatwick Airport
+  crs: gtw
 - name: Gravelly Hill
   crs: gvh
+- name: Great Malvern
+  crs: gmv
+- name: Glasgow Queen Street
+  crs: glq
 - name: Hall Green
   crs: hlg
 - name: Hampton-in-Arden
@@ -72,6 +78,10 @@
   crs: hkw
 - name: Henley-in-Arden
   crs: hnl
+- name: Henley-on-Thames
+  crs: hot
+- name: High Street
+  crs: hst
 - name: Jewellery Quarter
   crs: jeq
 - name: Lea Hall
@@ -82,6 +92,8 @@
   crs: lds
 - name: Lichfield City
   crs: lic
+- name: London Bridge
+  crs: lbg
 - name: London Euston
   crs: eus
 - name: London Marylebone
@@ -114,6 +126,8 @@
   crs: olt
 - name: Polesworth
   crs: psw
+- name: Reading
+  crs: rdg
 - name: Redditch
   crs: rdt
 - name: Rowley Regis
@@ -166,6 +180,8 @@
   crs: tom
 - name: Tulse Hill
   crs: tuh
+- name: Twyford
+  crs: twy
 - name: Tyseley
   crs: tys
 - name: University
