@@ -1,9 +1,12 @@
-@misc{kaye2020graphical,
-  title         = {Rewriting Graphically with Symmetric Traced Monoidal Categories},
-  author        = {George Kaye},
-  year          = {2021},
-  eprint        = {2010.06319},
+@article{kaye2021rewritinga,
+  title = {Rewriting {{Graphically}} with {{Symmetric Traced Monoidal Categories}}},
+  author = {Kaye, George},
+  date = {2021-03-18},
+  eprint = {2010.06319},
+  eprinttype = {arxiv},
+  primaryclass = {math},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2010.06319},
   archiveprefix = {arXiv},
-  primaryclass  = {math.CT},
-  url           = {https://arxiv.org/abs/2010.06319}
+  keywords = {Mathematics - Category Theory}
 }
