@@ -5,7 +5,7 @@
   key: act2022
   links:
     abstract: true
-    slides: false
+    slides: true
     github: true
   repo: 
 - title: Normalisation by Evaluation for Digital Circuits
