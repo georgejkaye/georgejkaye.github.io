@@ -1,0 +1,12 @@
+@article{ghica2022compositional,
+  title = {A Compositional Theory of Digital Circuits},
+  author = {Ghica, Dan R. and Kaye, George and Sprunger, David},
+  date = {2022-08-01},
+  eprint = {2201.10456},
+  eprinttype = {arxiv},
+  primaryclass = {cs, math},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2201.10456},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Logic in Computer Science,Computer Science - Programming Languages,Mathematics - Category Theory}
+}
