@@ -80,7 +80,7 @@ const paper = (paper, people) => {
         </div>
     `
     let paperReturn = outdent`
-        <div class="paper">
+        <div class="card">
             ${titleText}
             ${buttonText}
             ${detailsText}
@@ -123,7 +123,7 @@ const talk = (talk) => {
     ]
     let buttonText = makeButtons(buttons)
     return outdent`
-        <div class="talk">
+        <div class="card">
             <div class="talk-title">${talk.title}</div>
             <div>
                 <span class="talk-venue">
@@ -148,7 +148,7 @@ const visit = (visit) => {
     `
     var output = talk.cancelled ? outdent`<span class="visit-cancelled>${output}</span>` : output
     return outdent`
-        <div class="visit">
+        <div class="card">
             ${output}
         </div>
     `
@@ -175,11 +175,23 @@ const teaching = (teaching) => {
         )
         : ""
     return outdent`
-        <div class="module">
+        <div class="card">
         ${first}
         ${links}
         </div ></div >
     `
 }
 
-module.exports = { talk, visit, teaching, paper, navLink }
+const misc = (link) => {
+    let text = link.text
+        ? `<span class="misc-text">${link.text}</span>`
+        : ""
+    return outdent`
+    <p>
+        <span class="misc-link"><a href="${link.target}">${link.page}</a></span>
+        ${text}
+    </p>
+    `
+}
+
+module.exports = { talk, visit, teaching, paper, navLink, misc }

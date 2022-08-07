@@ -1,19 +1,16 @@
 all-links:
+  - title: Home
+    target: "/"
+  - title: Papers
+    target: "/papers/"
+  - title: Talks
+    target: "/talks/"
+  - title: Teaching
+    target: "/teaching/"
+  - title: Blog
+    target: /blog/
   - title: GitHub
     target: https://github.com/georgejkaye
-  - title: Blog
-    target: /blog
-home-links:
-  - title: Misc
-    target: "#misc"
-  - title: Teaching
-    target: "#teaching"
-  - title: Talks
-    target: "#talks"
-  - title: Papers
-    target: "#papers"
-  - title: About
-    target: "#about-me"
 trains-links:
   - title: Stations
     target: /trains/stations/

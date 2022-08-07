@@ -1,0 +1,26 @@
+@import "colours.scss";
+
+.talk-title {
+  font-weight: bold;
+}
+
+.talk-date {
+  font-style: italic;
+  color: $green;
+}
+
+.visit-venue {
+  font-weight: bold;
+}
+
+.visit-cancelled {
+  text-decoration: line-through;
+}
+
+.visit-city {
+  color: $green;
+}
+
+.visit-dates {
+  font-style: italic;
+}

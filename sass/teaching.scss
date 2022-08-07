@@ -1,0 +1,17 @@
+@import "colours.scss";
+
+.module-title {
+    font-weight: bold;
+  }
+
+  .module-term {
+    color: $green;
+  }
+
+  .module-role {
+    font-style: italic;
+  }
+
+  .module-institution {
+    font-style: italic;
+  }
