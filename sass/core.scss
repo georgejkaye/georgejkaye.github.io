@@ -1,7 +1,7 @@
 @import "colours.scss";
 
 $mobile-width: 500px;
-$content-width: 1000px;
+$content-width: 800px;
 $small-content-width: 750px;
 $smaller-content-width: 600px;
 $buffer: 50px;
@@ -72,7 +72,6 @@ a {
 p {
   margin-top: 0;
   margin-bottom: 10px;
-  text-align: justify;
 }
 
 img {
@@ -107,24 +106,26 @@ td {
   margin: auto;
 
   @media (min-width: ($mobile-width + $buffer)) {
-    width: $mobile-width;
+    max-width: $mobile-width;
   }
 
   @media (min-width: ($smaller-content-width + $buffer)) {
-    width: $smaller-content-width;
+    max-width: $smaller-content-width;
   }
 
   @media (min-width: ($small-content-width + $buffer)) {
-    width: $small-content-width;
+    max-width: $small-content-width;
   }
 
   @media (min-width: ($content-width + $buffer)) {
-    width: $content-width;
+    max-width: $content-width;
   }
 }
 
+$content-padding: 16px;
+
 .content {
-  padding: 1rem 1rem;
+  padding: $content-padding;
 }
 
 .counter {
@@ -148,4 +149,12 @@ td {
 .current-page {
   color: $pink;
   font-weight: bold;
+}
+
+.card {
+  background-color: $accent;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 20px;
+  margin: 15px 0px;
 }

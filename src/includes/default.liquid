@@ -5,10 +5,20 @@
 
 <body>
 
-  {% include "components/nav" %}
-  <div class="spacer">
-    &nbsp;
+  <div class="site-name-bar">
+    <div class="site-name-centre container">
+        <img class="nav-site-image" src="{{ people.me.picture }}" alt="me">
+        <a class="site-name" href="/">
+          George Kaye
+        </a>
+    </div>
+    <div class="nav-bar container">
+      {% for link in nav.all-links %}
+          <a class="nav-link" href={{ link.target }}>{{ link.title }}</a>
+      {% endfor %}
+    </div>
   </div>
+
   {% include "components/title" %}
 
   <div id="text" class="content container wide">
