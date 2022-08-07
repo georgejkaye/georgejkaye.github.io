@@ -3,7 +3,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
 const moment = require("moment")
 const lodashChunk = require("lodash.chunk")
 const markdownIt = require("./config/markdown.js")
-const { talk, visit, teaching, paper, navLink } = require("./src/includes/shortcodes/home")
+const { talk, visit, teaching, paper, misc, navLink } = require("./src/includes/shortcodes/home")
 
 
 module.exports = config => {
@@ -26,6 +26,7 @@ module.exports = config => {
     config.addShortcode("talk", talk)
     config.addShortcode("visit", visit)
     config.addShortcode("teaching", teaching)
+    config.addShortcode("misc", misc)
     config.addShortcode("nav", navLink)
 
     config.setLibrary("md", markdownIt);
