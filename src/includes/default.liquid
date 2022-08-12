@@ -14,7 +14,7 @@
     </div>
     <div class="nav-bar container">
       {% for link in nav.all-links %}
-          <a class="nav-link" href={{ link.target }}>{{ link.title }}</a>
+          <a class="nav-link {% if link.target == page.url %}selected{% endif %}" href={{ link.target }}>{{ link.title }}</a>
       {% endfor %}
     </div>
   </div>
