@@ -27,12 +27,17 @@ $nav-height: 75px;
   padding: 0 $content-padding 10px $content-padding;
   background-color: $accent;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .nav-link {
   font-weight: bold;
   font-size: 1.1em;
   margin-right: 20px;
+}
+
+.selected {
+  color: $green;
 }
 
 .nav-site-image {
