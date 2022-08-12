@@ -2,16 +2,17 @@
 
 .paper-title {
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 .paper-details {
     color: $green;
     font-style: italic;
+
 }
 
-.paper-abstract {
-    display: none;
-    font-style: italic;
+.paper-authors {
+    font-size: 1.1em;
 }
 
 .author-text {
@@ -19,7 +20,6 @@
 }
 
 .author-me {
-    font-weight: bold;
     color: $pink;
 }
 
@@ -27,3 +27,12 @@
     cursor: pointer;
     color: $cyan;
 }
+
+.paper-abstract {
+    margin: 0.5em 0;
+}
+
+.paper-buttons{
+    margin-bottom: 0.5em;
+}
+
