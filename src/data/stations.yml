@@ -4,16 +4,26 @@
   crs: add
 - name: Alvechurch
   crs: alv
+- name: Aldershot
+  crs: aht
+- name: Ash
+  crs: ash
+- name: Ashurst New Forest
+  crs: anf
 - name: Banbury
   crs: ban
 - name: Barnt Green
   crs: btg
-- name: Berkswell
-  crs: bkw
+- name: Beaulieu Road
+  crs: beu
 - name: Beeston
   crs: bee
+- name: Berkswell
+  crs: bkw
 - name: Bescot Stadium
   crs: bsc
+- name: Birmingham International
+  crs: bhi
 - name: Birmingham New Street
   crs: bhm
 - name: Birmingham Snow Hill
@@ -22,6 +32,8 @@
   crs: bkt
 - name: Bordesley
   crs: bbs
+- name: Brockenhurst
+  crs: bcu
 - name: Butlers Lane
   crs: bul
 - name: Cambridge
@@ -102,6 +114,10 @@
   crs: lob
 - name: Lye
   crs: lye
+- name: Lymington Pier
+  crs: lyp
+- name: Lymington Town
+  crs: lyt
 - name: Manchester Piccadilly
   crs: man
 - name: Manchester Oxford Road
@@ -196,6 +212,8 @@
   crs: wvs
 - name: Wilnecote
   crs: wne
+- name: Woking
+  crs: wok
 - name: Wootton Wawen
   crs: www
 - name: Worcester Foregate Street
