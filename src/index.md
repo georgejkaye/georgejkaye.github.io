@@ -31,9 +31,11 @@ You might want to read [mv CV]({{ links.cv }}).
 
 ## Contact me
 
-* **University:** {{ people.me.email.uni }}
-* **Personal:** {{ people.me.email.personal }}
-* {{ people.me.address }}
+**University:** {{ people.me.email.uni }}
+
+**Personal:** {{ people.me.email.personal }}
+
+{{ people.me.address }}
 
 ## Misc
 
