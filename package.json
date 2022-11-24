@@ -19,7 +19,7 @@
     "js-yaml": "^4.1.0",
     "lodash.chunk": "^4.2.0",
     "markdown-it-attrs": "^4.1.4",
-    "moment": "^2.29.3",
+    "moment": "^2.29.4",
     "outdent": "^0.8.0",
     "sass": "^1.43.4"
   },
