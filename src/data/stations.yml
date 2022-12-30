@@ -10,6 +10,8 @@
   crs: ash
 - name: Ashurst New Forest
   crs: anf
+- name: Aston
+  crs: ast
 - name: Banbury
   crs: ban
 - name: Barnt Green
@@ -42,6 +44,8 @@
   crs: cmb
 - name: Canley
   crs: cnl
+- name: Chester
+  crs: ctr
 - name: Chester Road
   crs: crd
 - name: Chirk
@@ -66,6 +70,8 @@
   crs: dud
 - name: Elephant & Castle
   crs: eph
+- name: Farringdon
+  crs: zfd
 - name: Four Oaks
   crs: fok
 - name: Gatwick Airport
@@ -184,6 +190,8 @@
   crs: sty
 - name: Sutton Coldfield
   crs: sut
+- name: Swindon
+  crs: swi
 - name: Tame Bridge Parkway
   crs: tab
 - name: The Hawthorns
