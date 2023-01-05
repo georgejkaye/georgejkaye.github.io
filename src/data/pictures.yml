@@ -1,19 +1,22 @@
+- caption: The conference photo for SYCO 10, taking in the Informatics Building.
+  alt: The attendants of SYCO 10 stand in the atrium of a modern building, with a Christmas tree to the right of the frame.
+  src: me/syco10.webp
 - caption: The conference photo for ACT 2022, taken outside the McCance building.
   alt: The attendants of ACT 2022 stand in a garden, with some of them spilling out of the frame.
   src: me/act2022.webp
 - caption: The conference photo for SYCO 8, taken on the steps of the conference venue, the Opetajata Maja (Teacher's House).
   alt: The attendants of SYCO 8 stand on the steps in front of a pale yellow building, with a copper green canopy above them.
-  src: me/syco8.webp  
+  src: me/syco8.webp
   taken-by:
     key: amar
 - caption: Todd and I conquer Arthur's Seat.
   alt: Todd and I stand awkwardly on the top of Arthur's Seat.
-  taken-by: 
+  taken-by:
     key: claudio
   src: me/mount.webp
 - caption: I search for reasons not to remake my diagrams while in Winterbourne House and Garden.
   alt: I stand in the grounds of Winterbourne House and Garden with my arms outstretched.
-  taken-by: 
+  taken-by:
     key: ugur
   src: me/winterbourne1.webp
 - caption: I attempt to take a picture with other PhD students while in Winterbourne House and Garden.
@@ -21,28 +24,28 @@
   src: me/winterbourne2.webp
 - caption: I punt a punt in Cambridge. They haven't realised I'm not Oxbridge yet!
   alt: I gingerly punt a punt in Cambridge. Alex Rice and Ioannis Markakis are looking up at me in concern.
-  featuring: 
+  featuring:
     - alex
     - ioannis
-  taken-by: 
+  taken-by:
     key: calin
   src: me/punt.webp
 - caption: The drinks reception at ACT 2021.
   alt: A group picture of the ACT 2021 participants. I stand at the back right holding a small bottle of wine.
-  src: me/act2021.webp 
+  src: me/act2021.webp
 - caption: I eat churros in Chancellor's Court.
   alt: I sit crosslegged on the grass in front of a redbrick building, holding a cup of churros in one hand and a half-eaten churro in the other.
-  taken-by: 
+  taken-by:
     key: todd
     prequip: As always, taken by
-  src: me/churros.jpg
+  src: me/churros.webp
 - caption: Me and my colleagues <a href="{{ people.todd.web }}">Todd Waugh Ambridge</a> and Owen Michael Pemberton enjoying a meal at the Country Girl!
-  src: me/countrygirl.jpg
+  src: me/countrygirl.webp
   alt: From left to right, Owen, Todd and I sit around a pub table with a bottle of Heinz mayonnaise and an empty glass with a lemon slice in it.
 - caption: On the way to Cardiff!
-  taken-by: 
+  taken-by:
     key: todd
     prequip: Kindly taken by my colleague
-  src: me/train.jpg
+  src: me/train.webp
   alt: I sit on a CrossCountry train, looking wistfully out of the window at a pastoral scene.
 
