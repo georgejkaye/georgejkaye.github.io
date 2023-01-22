@@ -146,6 +146,8 @@
   crs: ohl
 - name: Olton
   crs: olt
+- name: Penkridge
+  crs: pkg
 - name: Polesworth
   crs: psw
 - name: Reading
@@ -156,6 +158,8 @@
   crs: row
 - name: Ruabon
   crs: rua
+- name: Rugeley Trent Valley
+  crs: rgl
 - name: Sandwell and Dudley
   crs: sad
 - name: Selly Oak
