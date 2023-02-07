@@ -1,3 +1,11 @@
+- title: A compositional theory for digital circuits
+  venue: LFCS seminar, Edinburgh
+  web: https://web.inf.ed.ac.uk/lfcs/events/lfcs-seminars
+  date: 2023-02-07
+  key: lfcs
+  links:
+    slides: true
+    github: true
 - title: Fully abstract categorical semantics for digital circuits
   venue: ACT 2022
   web: https://msp.cis.strath.ac.uk/act2022/
@@ -7,8 +15,7 @@
     abstract: true
     slides: true
     github: true
-  repo:
-- title: Normalisation by Evaluation for Digital Circuits
+- title: Normalisation by evaluation for digital circuits
   venue: SYCO 8
   web: https://www.cl.cam.ac.uk/events/syco/8/
   date: 2021-12-13
@@ -17,7 +24,7 @@
     slides: true
     abstract: true
     github: true
-- title: Rewriting Graphically with Cartesian Traced Categories
+- title: Rewriting graphically with Cartesian traced categories
   venue: ACT 2021
   web: https://www.cl.cam.ac.uk/events/act2021/
   date: 2021-07-12
@@ -26,7 +33,7 @@
     slides: true
     abstract: true
     video: https://www.youtube.com/watch?v=We7FuoOCxyA&t=6378s
-- title: Diagrammatic Semantics with Symmetric Traced Monoidal Categories
+- title: Diagrammatic semantics with symmetric traced monoidal categories
   venue: Huawei Edinburgh PL Group Tech Talk
   web: https://blogs.ed.ac.uk/he-lab/category/tech-talk/
   date: 2021-03-04
@@ -34,7 +41,7 @@
   links:
     slides: true
     video: https://youtu.be/UbTke5d2-Xs
-- title: Diagrammatic Semantics for Digital Circuits
+- title: Diagrammatic semantics for digital circuits
   venue: SYNCHRON 2020
   web: http://synchron2020.inria.fr/
   key: synchron20
