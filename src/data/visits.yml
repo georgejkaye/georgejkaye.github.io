@@ -1,3 +1,15 @@
+- venue: Huawei string diagrams workshop
+  web: https://blogs.ed.ac.uk/he-lab/2023/01/20/bayesday-workshop-on-diagrammatic-methods-to-formalise-and-reason-about-programming-languages-and-their-implementation/
+  city: Edinburgh
+  dates: January 24, 2023
+- venue: SYCO 10
+  web: https://www.cl.cam.ac.uk/events/syco/10/
+  city: Edinburgh
+  dates: December 19-20, 2022
+- venue: ACT 2022
+  web: https://msp.cis.strath.ac.uk/act2022/
+  city: Glasgow
+  dates: July 18-22, 2022
 - venue: MGS 2022
   web: https://www.cs.nott.ac.uk/~psznk/events/mgs22.html
   city: Nottingham
