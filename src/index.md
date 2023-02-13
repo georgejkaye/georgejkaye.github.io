@@ -28,20 +28,19 @@ I also use [Twitter]({{ links.twitter }}).
 
 You might want to read [mv CV]({{ links.cv }}).
 
-
 ## Contact me
 
-**University:** {{ people.me.email.uni }}
+* **University email:** {{ people.me.email.uni }}
+* **Personal email:** {{ people.me.email.personal }}
+* **Address:** {{ people.me.address }}
+## Links
 
-**Personal:** {{ people.me.email.personal }}
-
-{{ people.me.address }}
-
-## Misc
-
-{% for link in misc %}
-{% misc link %}
-{% endfor %}
+* [**Pictures of me**](/pictures)
+* [**ORCiD**]({{ links.orcid }})
+* [**Twitter**]({{ links.twitter}})
+* [**Instagram**]({{ links.instagram }})
+* [**Adventures in Academia**](/adventures) *A serites of entertaining escapades*
+* [**Railway station signs**](/trains/stations) *I take pictures of station signs*
 
 ## Contributing
 
