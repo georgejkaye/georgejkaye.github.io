@@ -4,10 +4,10 @@
     - name: dan
     - name: me
     - name: david
-  file: 2022-08-01-circuits
+  file: 2023-02-13-compositional-circuits
   arxiv: 2201.10456
   abstract:
-    We model digital circuits with delay and feedback as morphisms in a symmetric traced monoidal category and present a fully abstract equational theory for reasoning with them.
+    We model digital circuits with delay and feedback as morphisms in a symmetric traced monoidal category, formalise their semantics as stream functions with certain properties, and present equational theory for reasoning with them.
 - title: Rewriting Graphically With Symmetric Traced Monoidal Categories
   details: Arxiv preprint
   authors:
