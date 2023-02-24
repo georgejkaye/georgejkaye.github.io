@@ -1,0 +1,10 @@
+@misc{ghica2023rewriting,
+  doi = {10.48550/arXiv.2302.09631},
+  url = {https://arxiv.org/abs/2302.09631},
+  author = {Ghica, Dan R. and Kaye, George},
+  keywords = {Logic in Computer Science (cs.LO), Category Theory (math.CT), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Mathematics, FOS: Mathematics},
+  title = {Rewriting modulo traced comonoid structure},
+  publisher = {arXiv},
+  year = {2023},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}

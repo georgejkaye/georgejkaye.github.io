@@ -1,3 +1,12 @@
+- title: Rewriting modulo traced comonoid structure
+  details: Arxiv preprint
+  authors:
+    - name: dan
+    - name: me
+  file: 2023-02-19-rewriting-traced-comonoid
+  arxiv: 2302.09631
+  abstract:
+    We adapt the existing work on rewriting string diagrams using hypergraphs in order to apply it to settings with a traced comonoid structure, which happens to be where we model digital circuits.
 - title: A compositional theory of digital circuits
   details: Arxiv preprint
   authors:
