@@ -16,6 +16,8 @@
   crs: ban
 - name: Barnt Green
   crs: btg
+- name: Bearley
+  crs: ber
 - name: Beaulieu Road
   crs: beu
 - name: Beeston
@@ -50,6 +52,8 @@
   crs: crd
 - name: Chirk
   crs: crk
+- name: Claverdon
+  crs: clv
 - name: Coseley
   crs: csy
 - name: Coventry
@@ -218,6 +222,8 @@
   crs: wto
 - name: Walsall
   crs: wsl
+- name: Warwick
+  crs: wrw
 - name: Warwick Parkway
   crs: wrp
 - name: Wilmcote
