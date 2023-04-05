@@ -1,3 +1,11 @@
+- title: A compositisonal theory of digital circuits
+  venue: Midlands Graduate School 2023
+  web: https://www.cs.bham.ac.uk/~mhe/events/MGS23/
+  date: 2023-04-05
+  key: mgs2023
+  links:
+    slides: true
+    github: true
 - title: A compositional theory for digital circuits
   venue: LFCS seminar, Edinburgh
   web: https://web.inf.ed.ac.uk/lfcs/events/lfcs-seminars
