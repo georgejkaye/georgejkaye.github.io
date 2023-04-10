@@ -54,6 +54,8 @@
   crs: crk
 - name: Claverdon
   crs: clv
+- name: Colwall
+  crs: cwl
 - name: Coseley
   crs: csy
 - name: Coventry
@@ -110,6 +112,8 @@
   crs: leh
 - name: Leamington Spa
   crs: lms
+- name: Ledbury
+  crs: led
 - name: Leeds
   crs: lds
 - name: Lichfield City
