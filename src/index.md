@@ -11,7 +11,7 @@ style: index
 {: .profile-picture}
 
 Hello! I’m George, a PhD student researcher at the University of Birmingham, under the supervision of [Dan Ghica]({{ people.dan.web }}) and [Miriam Backens]({{ people.miriam.web }}).
-I am a member of the [University of Birmingham Theory Group]({{ links.theory }}), and organise the research group's [weekly seminar](http://talks.bham.ac.uk/show/index/86).
+I am a member of the [University of Birmingham Theory Group]({{ links.theory }}), and organise the research group's [weekly seminar](http://talks.bham.ac.uk/show/index/86) alongside [Chris Barrett](https://chrisbarrett2.github.io/).
 
 Currently I also work part time at the [Huawei Edinburgh Programming Languages Lab](https://blogs.ed.ac.uk/he-lab/).
 
