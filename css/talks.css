@@ -1,0 +1,31 @@
+.talk-title {
+  font-weight: bold;
+}
+
+.talk-date {
+  font-style: italic;
+  color: #50fa7b;
+}
+
+.visit-venue {
+  font-weight: bold;
+}
+
+.visit-cancelled {
+  text-decoration: line-through;
+}
+
+.visit-city {
+  color: #50fa7b;
+}
+
+.visit-dates {
+  font-style: italic;
+}
+
+.talk-buttons {
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+}
+
+/*# sourceMappingURL=talks.css.map */
