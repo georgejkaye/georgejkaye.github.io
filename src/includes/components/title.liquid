@@ -10,18 +10,16 @@
         {{ title }}
         {% endif %}
       </h1>
-
-      {% capture subtitle-text %} 
+      {% capture subtitle-text %}
         {% if subtitle %}
           {{ subtitle }}
         {% elsif part %}
-          {{ part }}  
+          {{ part }}
           {%- if part-title -%}
             : {{ part-title }}
           {% endif %}
         {% endif %}
       {% endcapture %}
-
       {% if subtitle-text %}
         <div class="subtitle">{{ subtitle-text }}</div>
       {% endif %}
