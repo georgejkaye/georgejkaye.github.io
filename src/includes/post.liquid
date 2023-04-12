@@ -3,14 +3,12 @@ layout: default
 style: blog
 permalink: /blog/{% if dir %}{{ dir }}/{{ part | slugify }}{% elsif series %}{{ series | slugify }}/{{ part | slugify }}{% else %}{{ title | slugify }}{% endif %}/
 ---
-
 <div class="post">
   {% if image %}
   <img class="main-post-img" src={{ image }} alt={{ alt }}>
   {% endif %}
   {{ content }}
 </div>
-
 {% if page.disclaimer %}
 <div class="footnote">{{ page.disclaimer }}</div>
 {% endif %}
