@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/core.css" />
+  <link rel="stylesheet" href="/css/.css" />
+  <link rel="stylesheet" href="/css/header.css" />
+  <link rel="stylesheet" href="/css/syntax.css" />
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>
+    
+    The λ-term gallery &middot; George Kaye
+    
+  </title>
+  <meta name="description" content="">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,600;1,300;1,600&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <!-- Icons -->
+  <link rel="icon" href="/images/favicon.ico" type="image/ico" />
+</head>
+<body>
+  <div class="site-name-bar">
+    <div class="site-name-centre container">
+        <img class="nav-site-image" src="/images/me/me-3.webp" alt="me">
+        <a class="site-name" href="/">
+          George Kaye
+        </a>
+    </div>
+    <div class="nav-bar container">
+      
+          <a class="nav-link " href=/>Home</a>
+      
+          <a class="nav-link " href=/papers/>Papers</a>
+      
+          <a class="nav-link " href=/talks/>Talks</a>
+      
+          <a class="nav-link " href=/teaching/>Teaching</a>
+      
+          <a class="nav-link " href=/blog/>Blog</a>
+      
+          <a class="nav-link " href=https://github.com/georgejkaye>GitHub</a>
+      
+    </div>
+  </div>
+  <div class="header-bar">
+  <div class="header-bar-content container">
+    <div class="title-bar">
+      <h1 class="title">
+        
+        
+        
+        The λ-term gallery
+        
+      </h1>
+
+      
+
+      
+        <div class="subtitle"> 
+        
+      </div>
+      
+    </div>
+    
+    <div class="tagline">A visualiser for λ-terms as rooted maps</div>
+    
+    
+    
+  </div>
+</div>
+  <div id="text" class="content container wide">
+    <p>My MSci final year project: a set of tools to help investigation of terms from various fragments of the λ-calculus.
+The core function of the tools is to represent these λ-terms as <em>maps</em>.</p>
+<p>These tools are currently being revamped in the chilly lockdown evenings - stay tuned!</p>
+<h2>Documents</h2>
+<ul>
+<li><a href="/files/papers/2019-04-08-masters.pdf">Dissertation</a> This is my dissertation for my Masters degree.</li>
+<li><a href="/files/talks/2019-07-01-cla.pdf">CLA 2019 talk</a> These tools were presented at <a href="http://cla.tcs.uj.edu.pl/history/2019/">CLA 2019</a>!</li>
+</ul>
+<h2>Tools</h2>
+<p>Two tools were made for the project:</p>
+<ul>
+<li><a href="/lambda-visualiser/visualiser"><strong>λ-term visualiser</strong></a></li>
+<li><a href="/lambda-visualiser/gallery"><strong>λ-term gallery</strong></a></li>
+</ul>
+<h3>λ-term visualiser</h3>
+<p><img src="/images/lamviz/visualiser.png" alt="λ-term visualiser"></p>
+<p>This is a tool to visualise λ-terms as maps. A user can input a term and a set of free variables, and the tool will draw the corresponding map.</p>
+<h3>λ-term gallery</h3>
+<p><img src="/images/lamviz/gallery.png" alt="λ-term gallery"></p>
+<p>This tool builds on the visualiser to generate galleries of λ-terms that fulfill certain critera. The primary parameters for generating terms are the size and the number of free variables. Terms can be generated from the pure, linear or planar λ-calculus. The generated terms can also be filtered by a number of different properties, such as crossings in the generated maps.</p>
+<h3>λ-term portraits</h3>
+<p><img src="/images/lamviz/redex1.png" alt="Redex 1">
+<img src="/images/lamviz/redex2.png" alt="Redex 2"></p>
+<p>All sorts of interesting information is provided about terms, such as the available beta-redexes. By hovering over these redexes, they will be highlighted in the term and on the visualised map. Reductions can be performed by clicking on the redexes, or alternatively the process can be animated in innermost or outermost strategies.</p>
+<h3>Normalisation graphs</h3>
+<p><img src="/images/lamviz/normalisation-graph.png" alt="Normalisation graph">
+<img src="/images/lamviz/omega.png" alt="Omega normalisation graph">
+Normalisation graphs can also be generated for terms!</p>
+<h2>Source code</h2>
+<p>The source code can be found on <a href="http://github.com/georgejkaye/lambda-visualiser">GitHub</a>.</p>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="/scripts/scripts.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124613172-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-124613172-1');
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+pre {
+  background-color: #383a59;
+  padding: 25px;
+  color: #8be9fd;
+  border-radius: 5px;
+}
+
+.number {
+  color: #bd93f9;
+}
+
+.operator,
+.punctuation {
+  color: #c9c5be;
+}
+
+.string {
+  color: #f1fa8c;
+}
+
+.boolean {
+  color: #50fa7b;
+}
+
+.keyword {
+  color: #ff79c6;
+}
+
+/*# sourceMappingURL=syntax.css.map */

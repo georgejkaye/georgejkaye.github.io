@@ -1,0 +1,36 @@
+.paper-title {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.paper-details {
+  color: #50fa7b;
+  font-style: italic;
+}
+
+.paper-authors {
+  font-size: 1.1em;
+}
+
+.author-text {
+  font-style: italic;
+}
+
+.author-me {
+  color: #ff79c6;
+}
+
+.toggle-abstract {
+  cursor: pointer;
+  color: #8be9fd;
+}
+
+.paper-abstract {
+  margin: 0.5em 0;
+}
+
+.paper-buttons {
+  margin-bottom: 0.5em;
+}
+
+/*# sourceMappingURL=papers.css.map */
