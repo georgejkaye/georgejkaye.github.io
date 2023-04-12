@@ -4,10 +4,10 @@
         <a href="{{- root -}}
             {%- if i != 1 -%}
                 /{{- i -}}
-            {%- endif -%}" 
+            {%- endif -%}"
            title="Page {{ i }}"
         >
-            <span class="page-number{% if forloop.index0 == current %} current-page" 
+            <span class="page-number{% if forloop.index0 == current %} current-page"
                   aria-current="page{%- endif -%}"
         >
             {{- forloop.index -}}
