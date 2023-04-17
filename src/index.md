@@ -26,7 +26,7 @@ I occasionally take photos of pretty things and put them on [Instagram]({{ links
 If you want something less pretty, here are some [pictures of me](/pictures)!
 I also use [Twitter]({{ links.twitter }}).
 
-You might want to read [mv CV]({{ links.cv }}).
+You might want to read [my CV]({{ links.cv }}).
 
 ## Contact me
 
@@ -39,7 +39,7 @@ You might want to read [mv CV]({{ links.cv }}).
 * [**ORCiD**]({{ links.orcid }})
 * [**Twitter**]({{ links.twitter}})
 * [**Instagram**]({{ links.instagram }})
-* [**Adventures in Academia**](/adventures) *A serites of entertaining escapades*
+* [**Adventures in Academia**](/adventures) *A series of entertaining escapades*
 * [**Railway station signs**](/trains/stations) *I take pictures of station signs*
 
 ## Contributing
