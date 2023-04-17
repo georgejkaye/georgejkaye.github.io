@@ -45,4 +45,4 @@ You might want to read [my CV]({{ links.cv }}).
 ## Contributing
 
 If you find a mistake, make an [issue](https://github.com/georgejkaye/georgejkaye.github.io/issues) and I'll try to sort it out.
-Alternatively, you can fix it yourself with a [pull request](https://github.com/georgejkaye/georgejkaye.github.io/pulls)!
+Alternatively, you can figure out how my static site generator works and fix it yourself with a [pull request](https://github.com/georgejkaye/georgejkaye.github.io/pulls)!
