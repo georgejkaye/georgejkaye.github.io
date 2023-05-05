@@ -74,6 +74,8 @@
   crs: did
 - name: Duddeston
   crs: dud
+- name: Earlswood
+  crs: ewd
 - name: Elephant & Castle
   crs: eph
 - name: Farringdon
@@ -166,6 +168,8 @@
   crs: row
 - name: Ruabon
   crs: rua
+- name: Rugby
+  crs: rug
 - name: Rugeley Trent Valley
   crs: rgl
 - name: Sandwell and Dudley
@@ -242,5 +246,7 @@
   crs: wof
 - name: Wylde Green
   crs: wyl
+- name: Wythall
+  crs: wyt
 - name: Yardley Wood
   crs: yrd
