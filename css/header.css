@@ -1,7 +1,7 @@
 html {
   overflow-y: scroll;
   background-color: #282a36;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 1.5;
 }
@@ -169,7 +169,7 @@ td {
 .site-name {
   color: #ff79c6;
   font-size: 2em;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .nav-bar {
@@ -182,7 +182,6 @@ td {
 }
 
 .nav-link {
-  font-weight: bold;
   font-size: 1.1em;
   margin-right: 20px;
 }
