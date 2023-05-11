@@ -20,6 +20,7 @@ h1 {
   font-size: 3.5em;
   margin-top: 0;
   margin-bottom: 0;
+  text-align: center;
 }
 
 h2,
@@ -168,6 +169,8 @@ td {
 
 .mobile-picture {
   max-width: 250px;
+  display: block;
+  margin: 0 auto;
 }
 @media (min-width: 550px) {
   .mobile-picture {
