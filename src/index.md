@@ -4,10 +4,10 @@ title: Home
 style: index
 ---
 
-[![A picture of me, with the Forth Bridge in the background]({{ people.me.picture }})](/images/fancam.mp4)
+[![A picture of me, with the Forth Bridge in the background]({{ people.me.picture }})](/fancam)
 {: .mobile-picture}
 
-[![A picture of me, with the Forth Bridge in the background]({{ people.me.picture }})](/images/fancam.mp4)
+[![A picture of me, with the Forth Bridge in the background]({{ people.me.picture }})](/fancam)
 {: .profile-picture}
 
 Hello! I’m George, a PhD student researcher at the University of Birmingham, under the supervision of [Dan Ghica]({{ people.dan.web }}) and [Miriam Backens]({{ people.miriam.web }}).
