@@ -50,6 +50,6 @@ Alternatively, you can figure out how my static site generator works and fix it 
 
 #### Douvk webring
 
-← [Bruno da Rocha Paiva](https://brunorochapaiva.github.io/)
+[← Bruno da Rocha Paiva](https://brunorochapaiva.github.io/)
 •
-[Jon Freer](https://jonfreer.co.uk/) →
+[Jon Freer →](https://jonfreer.co.uk/)
