@@ -33,6 +33,12 @@ You might want to read [my CV]({{ links.cv }}).
 * **University email:** {{ people.me.email.uni }}
 * **Personal email:** {{ people.me.email.personal }}
 * **Address:** {{ people.me.address }}
+
+## Contributing
+
+If you find a mistake, make an [issue](https://github.com/georgejkaye/georgejkaye.github.io/issues) and I'll try to sort it out.
+Alternatively, you can figure out how my static site generator works and fix it yourself with a [pull request](https://github.com/georgejkaye/georgejkaye.github.io/pulls)!
+
 ## Links
 
 * [**Pictures of me**](/pictures)
@@ -42,7 +48,8 @@ You might want to read [my CV]({{ links.cv }}).
 * [**Adventures in Academia**](/adventures) *A series of entertaining escapades*
 * [**Railway station signs**](/trains/stations) *I take pictures of station signs*
 
-## Contributing
+#### Douvk webring
 
-If you find a mistake, make an [issue](https://github.com/georgejkaye/georgejkaye.github.io/issues) and I'll try to sort it out.
-Alternatively, you can figure out how my static site generator works and fix it yourself with a [pull request](https://github.com/georgejkaye/georgejkaye.github.io/pulls)!
+← [Bruno da Rocha Paiva](https://brunorochapaiva.github.io/)
+•
+[Jon Freer](https://jonfreer.co.uk/) →
