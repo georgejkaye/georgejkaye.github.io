@@ -220,11 +220,11 @@ td, th {
 
 .subtitle,
 .tagline {
+  text-align: center;
   color: rgba(255, 255, 255, 0.5);
 }
 
 .tagline {
-  max-width: 90%;
   margin-top: 10px;
   font-size: 1.25em;
 }
