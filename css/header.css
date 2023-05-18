@@ -89,7 +89,7 @@ thead > tr > td:nth-last-child(1) {
   border-radius: 0 5px 0 0;
 }
 
-td {
+td, th {
   padding: 0.25em 0.5rem;
 }
 
@@ -221,10 +221,10 @@ td {
 .subtitle,
 .tagline {
   color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }
 
 .tagline {
-  max-width: 90%;
   margin-top: 10px;
   font-size: 1.25em;
 }
