@@ -1,4 +1,7 @@
-# Erin's wedding
+---
+title: Barnsdale
+permalink: /trips/2023-06-02-barnsdale/
+---
 
 ## Rutters Meadow to Birmingham
 
