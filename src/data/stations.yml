@@ -52,6 +52,8 @@
   crs: crd
 - name: Chirk
   crs: crk
+- name: Church Stretton
+  crs: ctt
 - name: Claverdon
   crs: clv
 - name: Colwall
@@ -250,3 +252,5 @@
   crs: wyt
 - name: Yardley Wood
   crs: yrd
+- name: York
+  crs: yrk
