@@ -31,7 +31,6 @@ You might want to read [my CV]({{ links.cv }}).
 ## Contact me
 
 * **University email:** {{ people.me.email.uni }}
-* **Personal email:** {{ people.me.email.personal }}
 * **Address:** {{ people.me.address }}
 
 ## Contributing
