@@ -3,19 +3,14 @@ const moment = require("moment")
 
 const navLink = `<div class="nav-link"><a href={{ link.target }}>{{ link.title }}</a></div>`
 
-const button = (array, target, title, text) =>
+const button = (element, array, target, title, text) =>
     array.push(
-        outdent`<span class="link-button"><a href="${target}" title="${title}">${text}</a></span>`
+        outdent`<span class="link-button"><a href="${target(element)}" title="${title(element)}">${text}</a></span>`
     )
 
-const buttonOrBlank = (array, key, link, title, text) => {
+const buttonOrBlank = (paper, array, key, link, title, text) => {
     if (key) {
-        button(
-            array,
-            link,
-            title,
-            text
-        )
+        button(paper, array, link, title, text)
     }
 }
 
@@ -30,30 +25,58 @@ const paper = (paper, people) => {
     let titleText = `<span class="paper-title"> ${paper.title}</span>`
     let buttons = []
     buttonOrBlank(
+        paper,
         buttons,
         paper.page,
-        paper.page,
-        `Page for '${paper.page}`,
+        (paper) => paper.page,
+        (paper) => `Page for '${paper.page}`,
         "page"
     )
     buttonOrBlank(
+        paper,
         buttons,
-        paper.arxiv,
-        `/files/papers/${paper.file}.pdf`,
-        `PDF version of '${paper.title}'`,
-        `pdf`
+        paper.publication,
+        (paper) => `https://doi.org/${paper.publication.doi}`,
+        (paper) => `Published version of '${paper.title}'`,
+        `paper`
     )
     buttonOrBlank(
+        paper,
+        buttons,
+        paper.publication,
+        (paper) => `/files/papers/${paper.publication.name}.pdf`,
+        (paper) => `PDF of '${paper.title}' (published version)`,
+        `(pdf)`
+    )
+    buttonOrBlank(
+        paper,
         buttons,
         paper.arxiv,
-        `https://arxiv.org/abs/${paper.arxiv}`,
-        `Arxiv page for '${paper.title}'`,
+        (paper) => `https://arxiv.org/abs/${paper.arxiv.id}`,
+        (paper) => `Arxiv page for '${paper.title}'`,
         `arxiv`
     )
-    button(
+    buttonOrBlank(
+        paper,
         buttons,
-        `/files/papers/${paper.file}.bib.txt`,
-        `Bibtex entry for '${paper.title}'`,
+        paper.arxiv,
+        (paper) => `/files/papers/${paper.arxiv.date}-${paper.key}.pdf`,
+        (paper) => `PDF version of '${paper.title}' (arxiv version)`,
+        `(pdf)`
+    )
+    buttonOrBlank(
+        paper,
+        buttons,
+        paper.page,
+        (paper) => `/files/papers/${paper.file}`,
+        (paper) => `PDF version of '${paper.title}'`,
+        `pdf`
+    )
+    button(
+        paper,
+        buttons,
+        (paper) => `/files/papers/${paper.file}.bib.txt`,
+        (paper) => `Bibtex entry for '${paper.title}'`,
         `bibtex`
     )
     let buttonText = outdent`
@@ -100,31 +123,35 @@ const talk = (talk) => {
     let fileDate = moment.utc(date).format("YYYY-MM-DD")
     let buttons = []
     buttonOrBlank(
+        talk,
         buttons,
         talk.links.slides,
-        `/files/slides/${fileDate}-${talk.key}-slides.pdf`,
-        `Slides for '${talk.title}`,
+        (t) => `/files/slides/${fileDate}-${t.key}-slides.pdf`,
+        (t) => `Slides for '${t.title}`,
         `slides`
     )
     buttonOrBlank(
+        talk,
         buttons,
         talk.links.abstract,
-        `/files/abstracts/${fileDate}-${talk.key}-abstract.pdf`,
-        `Extended abstract for ${talk.title}`,
+        (t) => `/files/abstracts/${fileDate}-${t.key}-abstract.pdf`,
+        (t) => `Extended abstract for ${t.title}`,
         `extended abstract`
     )
     buttonOrBlank(
+        talk,
         buttons,
         talk.links.video,
-        `${talk.links.video}`,
-        `Video of '${talk.title}'`,
+        (t) => `${t.links.video}`,
+        (t) => `Video of '${t.title}'`,
         `video`
     )
     buttonOrBlank(
+        talk,
         buttons,
         talk.links.github,
-        `https://github.com/georgejkaye?tab=repositories&q=${talk.key}`,
-        `Github repos for '${talk.title}`,
+        (t) => `https://github.com/georgejkaye?tab=repositories&q=${t.key}`,
+        (t) => `Github repos for '${t.title}`,
         `github`
     )
     let buttonText = outdent`<div class="talk-buttons">
@@ -176,9 +203,10 @@ const teaching = (teaching) => {
         makeButtons(
             teaching.links.map((link) =>
                 button(
+                    teaching,
                     buttons,
-                    link.target,
-                    link.title,
+                    (link) => link.target,
+                    (link) => link.title,
                     link.text
                 ))
         )
