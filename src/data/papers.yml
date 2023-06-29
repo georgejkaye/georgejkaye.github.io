@@ -1,10 +1,15 @@
 - title: Rewriting modulo traced comonoid structure
-  details: Arxiv preprint, to appear in FSCD 2023
+  details: FSCD 2023
+  key: rewriting-traced-comonoid
   authors:
     - name: dan
     - name: me
-  file: 2023-02-19-rewriting-traced-comonoid
-  arxiv: 2302.09631
+  publication:
+    name: fscd2023
+    doi: 10.4230/LIPIcs.FSCD.2023.14
+  arxiv:
+    id: 2302.09631
+    date: "2023-02-19"
   abstract:
     We adapt the existing work on rewriting string diagrams using hypergraphs in order to apply it to settings with a traced comonoid structure, which happens to be where we model digital circuits.
 - title: A compositional theory of digital circuits
@@ -13,8 +18,10 @@
     - name: dan
     - name: me
     - name: david
-  file: 2023-02-13-compositional-circuits
-  arxiv: 2201.10456
+  key: compositional-circuits
+  arxiv:
+    id: 2201.10456
+    date: "2023-02-13"
   abstract:
     We model digital circuits with delay and feedback as morphisms in a symmetric traced monoidal category, formalise their semantics as stream functions with certain properties, and present equational theory for reasoning with them.
 - title: Rewriting Graphically With Symmetric Traced Monoidal Categories
@@ -23,13 +30,15 @@
     - name: me
     - text: with
       name: dan
-  file: 2021-03-19-rewriting
-  arxiv: 2010.06319
+  key: rewriting
+  arxiv:
+    id: 2010.06319
+    date: "2021-03-19"
   abstract:
     We examine a variant of hypergraphs with the aim of creating a sound and complete graphical language for symmetric traced monoidal categories.
 - title: A visualiser for linear lambda-terms as rooted 3-valent maps
   details: Masters dissertation (2019), University of Birmingham
-  file: 2019-04-08-masters
+  file: 2019-04-08-masters.pdf
   page: /lamviz/
   authors:
     - name: me
