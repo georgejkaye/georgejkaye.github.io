@@ -1,3 +1,11 @@
+- title: Rewriting modulo traced comonoid structure
+  venue: FSCD 2023, Rome
+  web: https://easyconferences.eu/fscd2023/
+  date: 2023-07-04
+  key: fscd2023
+  links:
+    slides: true
+    github: true
 - title: A compositional theory of digital circuits
   venue: Midlands Graduate School 2023
   web: https://www.cs.bham.ac.uk/~mhe/events/MGS23/
