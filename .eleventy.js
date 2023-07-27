@@ -5,11 +5,11 @@ const lodashChunk = require("lodash.chunk")
 const markdownIt = require("./config/markdown.js")
 const { talk, visit, teaching, paper, misc, navLink } = require("./src/includes/shortcodes/home")
 
-
 module.exports = config => {
     config.setDataDeepMerge(true)
-    config.setBrowserSyncConfig({
-        files: './build/css/**/*.css'
+
+    config.setServerOptions({
+        watch: ['./build/css/**/*.css']
     })
 
     config.addPassthroughCopy("images")
