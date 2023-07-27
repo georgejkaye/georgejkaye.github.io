@@ -1,5 +1,5 @@
 ---
-pagination: 
+pagination:
   data: scenarios
   size: 1
   alias: scenario
@@ -20,7 +20,7 @@ eleventyComputed:
             {% if forloop.last %}{% else %}, {% endif %}
         {% endfor %}
     </div>
-    <div><b>Duration:</b> 
+    <div><b>Duration:</b>
         {% for part in scenario.duration %}
             {{ part }} mins {% if forloop.index == 1 and forloop.last %}{% else %}(Part {{ forloop.index }}){% endif %} {% if forloop.last %}{% else %} / {% endif %}
         {% endfor %}</div>
@@ -50,7 +50,7 @@ eleventyComputed:
     </li>
     {% endif %}
     <li>
-        <a href="https://alanthomsonsim.com/?download={{ scenario || scenarioSlug }}" title="Alan Thomson Sim link for '{{ title }}'">Alan Thomson Sim</a>
+        <a href="https://alanthomsonsim.com/?download={{ scenario | scenarioSlug }}" title="Alan Thomson Sim link for '{{ title }}'">Alan Thomson Sim</a>
     </li>
 </ul>
 
