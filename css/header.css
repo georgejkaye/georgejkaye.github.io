@@ -216,6 +216,7 @@ td, th {
 .header-bar-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .subtitle,
