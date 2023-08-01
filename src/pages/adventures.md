@@ -30,3 +30,9 @@ This page serves as a homepage for stories told within the wider Adventures in A
 * [Adventures in ACTademia 1](/blog/adventures/act2021/part-one)
 * [Adventures in ACTademia 2](/blog/adventures/act2021/part-two)
 * [Adventures in ACTademia 3](/blog/adventures/act2021/part-three)
+
+### Stirchley shenanigans
+
+* [Adventures in Academia 5](/blog/adventures/part-five/)
+* [Adventures in Academia 6](/blog/adventures/part-six/)
+* [Adventures in Academia 7](/blog/adventures/part-seven/)
