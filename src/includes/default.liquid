@@ -3,17 +3,27 @@
 {% include "components/head" %}
 <body>
   <div class="site-name-bar">
-    <div class="site-name-centre container">
+    <div class="site-name-centre">
         <img class="nav-site-image" src="{{ people.me.picture }}" alt="me">
         <a class="site-name" href="/">
           George Kaye
         </a>
     </div>
-    <div class="nav-bar container">
+    <div class="nav-bar">
       {% for link in nav.all-links %}
           <a class="nav-link {% if link.target == page.url %}selected{% endif %}" href={{ link.target }}>{{ link.title }}</a>
       {% endfor %}
     </div>
+    <div class="nav-button">
+        <img title="Open navigation" id="nav-hamburger" src="/images/hamburger.svg" />
+    </div>
+  </div>
+  <div id="nav-mobile" class="nav-mobile">
+    {% for link in nav.all-links %}
+        <div>
+          <a class="nav-link-mobile {% if link.target == page.url %}selected{% endif %}" href={{ link.target }}>{{ link.title }}</a>
+        </div>
+    {% endfor %}
   </div>
   {% include "components/title" %}
   <div id="text" class="content container wide">
