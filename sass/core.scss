@@ -8,7 +8,7 @@ $buffer: 50px;
 html {
   overflow-y: scroll;
   background-color: $background;
-  font-family: 'Roboto', sans-serif;
+  font-family: monospace;
   line-height: 1.5;
 
   @media (max-width: ($content-width + $buffer)) {
