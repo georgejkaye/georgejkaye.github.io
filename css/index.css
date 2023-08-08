@@ -1,7 +1,7 @@
 html {
   overflow-y: scroll;
   background-color: #282a36;
-  font-family: monospace;
+  font-family: "Source Code Pro", monospace;
   line-height: 1.5;
 }
 @media (max-width: 850px) {
@@ -11,7 +11,7 @@ html {
 }
 @media (min-width: 850px) {
   html {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
