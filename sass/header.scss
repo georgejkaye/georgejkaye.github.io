@@ -6,34 +6,38 @@ $nav-height: 75px;
 .site-name-bar {
   background-color: $accent;
   border-bottom: 2px solid $background;
+  display: flex;
+  padding: 15px;
+  align-content: center;
 }
 
 .site-name-centre {
   display: flex;
-  margin: auto;
   align-items: center;
-  padding: $content-padding;
 }
 
 .site-name {
   color: $pink;
-  font-size: 2em;
+  font-size: 25px;
   font-weight: 600;
 }
 
 .nav-bar {
+  flex: 1;
   display: flex;
   margin: auto;
-  padding: 0 $content-padding 10px $content-padding;
   background-color: $accent;
-  flex-wrap: wrap;
-  align-items: center;
+  justify-content: right;
+
+  @media (max-width: ($content-width + $buffer)) {
+    display: none;
+  }
 }
 
 .nav-link {
-  // font-weight: bold;
+  font-weight: bold;
   font-size: 1.1em;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .selected {
@@ -41,9 +45,9 @@ $nav-height: 75px;
 }
 
 .nav-site-image {
-  height: 60px;
-  width: 60px;
-  margin-right: 0.75em;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
   margin-bottom: 0;
 }
 
@@ -57,7 +61,6 @@ $nav-height: 75px;
 }
 
 .header-bar {
-  background-color: $accent;
   margin: auto;
   padding: $content-padding;
 }
@@ -98,5 +101,41 @@ $nav-height: 75px;
   font-size: 1.25em;
   background-color: $accent;
   border-bottom: 2px solid $background;
-  justify-content: center;
+  align-content: center;
+}
+
+.nav-button {
+  @media (min-width: ($content-width + $buffer)) {
+    display: none;
+  }
+  align-self: flex-end;
+  fill: $foreground;
+  cursor: pointer;
+  line-height: 0;
+  margin: auto 0 auto auto;
+}
+
+#nav-hamburger {
+  margin: 0;
+  height: 30px;
+}
+
+.nav-mobile {
+  @media (min-width: ($content-width + $buffer)) {
+    display: none;
+  }
+  @media (max-width: ($content-width + $buffer)) {
+    display: flex;
+  }
+  background-color: $accent;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.nav-link-mobile {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px;
 }
