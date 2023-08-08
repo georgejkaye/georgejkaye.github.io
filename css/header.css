@@ -1,7 +1,7 @@
 html {
   overflow-y: scroll;
   background-color: #282a36;
-  font-family: monospace;
+  font-family: "Source Code Pro", monospace;
   line-height: 1.5;
 }
 @media (max-width: 850px) {
@@ -11,7 +11,7 @@ html {
 }
 @media (min-width: 850px) {
   html {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -180,7 +180,7 @@ button {
 
 .site-name {
   color: #ff79c6;
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 600;
 }
 
@@ -199,7 +199,7 @@ button {
 
 .nav-link {
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 25px;
   margin-left: 20px;
 }
 
@@ -210,17 +210,8 @@ button {
 .nav-site-image {
   height: 50px;
   width: 50px;
-  margin-right: 10px;
+  margin-right: 20px;
   margin-bottom: 0;
-}
-
-.nav-bar-title {
-  color: #ff79c6;
-  font-size: 2em;
-  font-weight: bold;
-  line-height: 1;
-  text-align: center;
-  text-decoration: none;
 }
 
 .header-bar {
