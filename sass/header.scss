@@ -18,7 +18,7 @@ $nav-height: 75px;
 
 .site-name {
   color: $pink;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -36,7 +36,7 @@ $nav-height: 75px;
 
 .nav-link {
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 20px;
   margin-left: 20px;
 }
 
@@ -47,17 +47,8 @@ $nav-height: 75px;
 .nav-site-image {
   height: 50px;
   width: 50px;
-  margin-right: 10px;
+  margin-right: 20px;
   margin-bottom: 0;
-}
-
-.nav-bar-title {
-  color: $pink;
-  font-size: 2em;
-  font-weight: bold;
-  line-height: 1;
-  text-align: center;
-  text-decoration: none;
 }
 
 .header-bar {
