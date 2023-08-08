@@ -1,7 +1,7 @@
 html {
   overflow-y: scroll;
   background-color: #282a36;
-  font-family: "Roboto", sans-serif;
+  font-family: monospace;
   line-height: 1.5;
 }
 @media (max-width: 850px) {
@@ -131,21 +131,23 @@ button {
 }
 
 .content {
-  padding: 16px;
+  padding: 0 20px 20px 20px;
 }
 
 .counter {
-  margin: 25px auto;
+  padding: 20px 0 40px 0;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 20px 0px;
 }
 
 .page-number {
-  margin: 0 5px;
-  font-size: 1.5em;
+  margin: 5px;
+  font-size: 1em;
+  font-weight: bold;
   background-color: #383a59;
   padding: 5px 10px;
   border-radius: 5px;
@@ -159,9 +161,14 @@ button {
 
 .card {
   background-color: #383a59;
-  padding: 10px;
-  padding-left: 20px;
+  padding: 10px 20px;
   margin: 0 15px 10px 15px;
+}
+
+.stations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .station {
@@ -169,11 +176,12 @@ button {
 }
 
 .station-img {
+  margin-bottom: 0px;
   width: 32%;
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .station-img {
-    width: 49%;
+    width: 48%;
   }
 }
 
