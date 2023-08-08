@@ -132,6 +132,7 @@ td, th {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .page-number {
@@ -160,7 +161,7 @@ td, th {
 }
 
 .station-img {
-  width: 33%;
+  width: 32%;
 }
 @media (max-width: 800px) {
   .station-img {
