@@ -16,6 +16,8 @@
   crs: ban
 - name: Barnt Green
   crs: btg
+- name: Barrow-in-Furness
+  crs: bif
 - name: Bearley
   crs: ber
 - name: Beaulieu Road
@@ -58,6 +60,8 @@
   crs: clv
 - name: Colwall
   crs: cwl
+- name: Corkickle
+  crs: ckl
 - name: Coseley
   crs: csy
 - name: Coventry
@@ -112,6 +116,8 @@
   crs: hst
 - name: Jewellery Quarter
   crs: jeq
+- name: Lancaster
+  crs: lan
 - name: Lea Hall
   crs: leh
 - name: Leamington Spa
@@ -136,6 +142,10 @@
   crs: lyp
 - name: Lymington Town
   crs: lyt
+- name: Malvern Link
+  crs: mvl
+- name: Manchester Airport
+  crs: mia
 - name: Manchester Piccadilly
   crs: man
 - name: Manchester Oxford Road
@@ -162,6 +172,8 @@
   crs: pkg
 - name: Polesworth
   crs: psw
+- name: Preston
+  crs: pre
 - name: Reading
   crs: rdg
 - name: Redditch
@@ -236,8 +248,12 @@
   crs: wrw
 - name: Warwick Parkway
   crs: wrp
+- name: Whitehaven
+  crs: wth
 - name: Wilmcote
   crs: wvs
+- name: Wilmslow
+  crs: wml
 - name: Wilnecote
   crs: wne
 - name: Woking
