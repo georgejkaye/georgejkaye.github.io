@@ -107,6 +107,13 @@ button {
   line-height: 0;
 }
 
+code {
+  color: #c9c5be;
+  background-color: #383a59;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
 .container,
 .header-bar-content {
   margin: auto;
