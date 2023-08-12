@@ -3,10 +3,12 @@ const moment = require("moment")
 
 const navLink = `<div class="nav-link"><a href={{ link.target }}>{{ link.title }}</a></div>`
 
-const button = (element, array, target, title, text) =>
+const button = (element, array, target, title, text) => {
+    console.log(element)
     array.push(
         outdent`<span class="link-button"><a href="${target(element)}" title="${title(element)}">${text}</a></span>`
     )
+}
 
 const buttonOrBlank = (paper, array, key, link, title, text) => {
     if (key) {
@@ -203,7 +205,7 @@ const teaching = (teaching) => {
         makeButtons(
             teaching.links.map((link) =>
                 button(
-                    teaching,
+                    link,
                     buttons,
                     (link) => link.target,
                     (link) => link.title,
