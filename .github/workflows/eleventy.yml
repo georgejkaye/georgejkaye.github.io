@@ -18,10 +18,23 @@ jobs:
         run: yarn build:eleventy
       - name: Compile sass
         run: yarn build:sass
-      - name: Deploy
+      - name: Push to main branch
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
           BRANCH: main
           FOLDER: build
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy on server
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ vars.HOST }}
+          username: ${{ vars.DEPLOY_USER }}
+          key: ${{ secrets.KEY }}
+          script_stop: true
+          script: |
+            cd ${{ vars.PROJECT_REPO }}
+            git pull
+            cp -r * ${{ vars.SITE_DIRECTORY }}
+            rm -rf ${{ vars.SITE_DIRECTORY }}/.git
+
