@@ -4,7 +4,6 @@ const moment = require("moment")
 const navLink = `<div class="nav-link"><a href={{ link.target }}>{{ link.title }}</a></div>`
 
 const button = (element, array, target, title, text) => {
-    console.log(element)
     array.push(
         outdent`<span class="link-button"><a href="${target(element)}" title="${title(element)}">${text}</a></span>`
     )
