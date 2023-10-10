@@ -62,6 +62,8 @@
   crs: cwl
 - name: Corkickle
   crs: ckl
+- name: Corrour
+  crs: crr
 - name: Coseley
   crs: csy
 - name: Coventry
@@ -86,10 +88,14 @@
   crs: eph
 - name: Farringdon
   crs: zfd
+- name: Fort William
+  crs: ftw
 - name: Four Oaks
   crs: fok
 - name: Gatwick Airport
   crs: gtw
+- name: Glenfinnan
+  crs: glf
 - name: Gravelly Hill
   crs: gvh
 - name: Great Malvern
@@ -114,8 +120,12 @@
   crs: hot
 - name: High Street
   crs: hst
+- name: Honeybourne
+  crs: hyb
 - name: Jewellery Quarter
   crs: jeq
+- name: Kingham
+  crs: kgm
 - name: Lancaster
   crs: lan
 - name: Lea Hall
@@ -156,6 +166,8 @@
   crs: mat
 - name: Matlock Bath
   crs: mtb
+- name: Moreton-in-Marsh
+  crs: mim
 - name: Nottingham
   crs: not
 - name: North Queensferry
@@ -164,12 +176,16 @@
   crs: nfd
 - name: Nuneaton
   crs: nun
+- name: Oakham
+  crs: okh
 - name: Old Hill
   crs: ohl
 - name: Olton
   crs: olt
 - name: Penkridge
   crs: pkg
+- name: Perry Barr
+  crs: pry
 - name: Polesworth
   crs: psw
 - name: Preston
@@ -192,6 +208,8 @@
   crs: sly
 - name: Shenstone
   crs: sen
+- name: Shipton
+  crs: sip
 - name: Shirley
   crs: srl
 - name: Shrewsbury
@@ -206,6 +224,8 @@
   crs: sri
 - name: Stafford
   crs: sta
+- name: Stamford
+  crs: smd
 - name: Stansted Airport
   crs: ssd
 - name: Stechford
@@ -224,6 +244,8 @@
   crs: swi
 - name: Tame Bridge Parkway
   crs: tab
+- name: Telford Central
+  crs: tfc
 - name: The Hawthorns
   crs: thw
 - name: The Lakes
@@ -256,12 +278,18 @@
   crs: wml
 - name: Wilnecote
   crs: wne
+- name: Witton
+  crs: wtt
 - name: Woking
   crs: wok
 - name: Wootton Wawen
   crs: www
 - name: Worcester Foregate Street
   crs: wof
+- name: Worcester Shrub Hill
+  crs: wos
+- name: Worcestershire Parkway
+  crs: wop
 - name: Wylde Green
   crs: wyl
 - name: Wythall
