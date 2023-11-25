@@ -72,8 +72,7 @@ p {
 }
 
 img {
-  width: 100%;
-  margin-bottom: 10px;
+  max-width: 100%;
 }
 
 table {
@@ -247,9 +246,12 @@ code {
 }
 
 .post-img {
+  margin: 0 0 10px 0;
+}
+
+.post-img > img {
   display: block;
   width: 100%;
-  flex: 1;
 }
 
 .post-readmore {
