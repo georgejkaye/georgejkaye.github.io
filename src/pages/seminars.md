@@ -10,18 +10,24 @@ run smoothly.
 
 ## To do list
 
+### Termly
+
 | Task | Time |
 |-|-|
 | [Get a `talks@bham` account](#get-a-talksbham-account) | Immediately |
 | [Establish the seminar slot](#establish-the-seminar-slot) | Start of term |
 | [Book the rooms](#book-the-rooms) | Start of term |
 | [Add seminars to `talks@bham`](#add-seminars-to-talksbham) | Start of term |
-| [Solicit speaker suggestions](#solicit-speaker-suggestions) | Throughout the term |
+| [Solicit speaker suggestions](#solicit-speaker-suggestions) | Start of term |
+| [Advertise `talks@bham` functionality](#advertise-talksbham-functionality) | Start of term |
 
 ### Per seminar
 
 | Task | Time |
 |-|-|
+| [Negotiate with the host](#negotiate-with-the-host) | After speaker has been suggested |
+| [Make contact with the speaker](#make-contact-with-the-speaker) | After host has confirmed slot |
+| [Negotiate with the speaker](#negotiate-with-the-speaker) | After speaker has replied |
 | [Add speaker to `talks@bham`](#add-speaker-to-talksbham) | When speaker is confirmed |
 | [Upgrade seminar to departmental series (optional)](#upgrade-the-talk-to-the-departmental-series-optional) | When speaker is confirmed |
 | [Book the speaker a hotel (where appropriate)](#book-the-speaker-a-hotel-where-appropriate) | When speaker is confirmed |
@@ -190,7 +196,7 @@ It is also the responsibility of the speaker to organise a social event for the
 speaker if one is desired, unless they ask you very nicely and you are feeling
 benevolent.
 
-### Make contact
+### Make contact with the speaker
 
 Once you are set on a slot, give the host the go-ahead to invite their speaker,
 ideally with you in cc.
