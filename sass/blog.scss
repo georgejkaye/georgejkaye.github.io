@@ -70,9 +70,12 @@
 }
 
 .post-img {
+  margin: 0 0 10px 0;
+}
+
+.post-img > img {
   display: block;
   width: 100%;
-  flex: 1;
 }
 
 .post-readmore {
