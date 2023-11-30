@@ -1,3 +1,11 @@
+- title: A Fully Compositional Theory of Digital Circuits
+  venue: SYNCHRON 2023, Kiel
+  web: https://www.rtsys.informatik.uni-kiel.de/en/synchron-2023
+  date: 2023-11-27
+  key: synchron2023
+  links:
+    slides: true
+    github: true
 - title: Rewriting modulo traced comonoid structure
   venue: FSCD 2023, Rome
   web: https://easyconferences.eu/fscd2023/
