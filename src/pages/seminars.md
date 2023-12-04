@@ -302,12 +302,30 @@ If you're interested, I have
 ### Set up seminar room
 
 On the day of the seminar, your only job is to set up the room!
+
+#### Seating
+
+These days it's good to set up at least 25 seats since we're a large group now!
+Depending on how the room is when you arrive it might be preferable for some of
+the rows to also have tables, but that's up to you.
+
+#### Zoom
+
+You need to set up the computer in the room and join the theory seminar zoom
+call.
 I already have [a guide on how to set up LG23](https://georgejkaye.com/lg23)
 which you might find useful since LG23 is a bit non-standard.
 Other rooms in the university are a bit more straightforward.
 
-The important things to do are to set up the Zoom call and to get the slides on
-the screen.
+Make sure the online participants (if there are any) can hear you!
+
+#### Slides
+
+You will also need to get the slides up on the screen.
+Once they are, ensure that the speaker can actually change slides by flicking
+through them a little.
+
+#### Chairing
 
 Once you are ready to go, the host can begin their chairing duties.
 Even though you are now relinquished of responsibility, I find it's often good
