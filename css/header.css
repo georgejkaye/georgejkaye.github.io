@@ -1,8 +1,9 @@
 html {
   overflow-y: scroll;
   background-color: #282a36;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Manrope", sans-serif;
   line-height: 1.5;
+  font-size: 18px;
 }
 @media (max-width: 850px) {
   html {
@@ -11,7 +12,7 @@ html {
 }
 @media (min-width: 850px) {
   html {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -24,7 +25,6 @@ h1 {
   font-size: 3.5em;
   margin-top: 0;
   margin-bottom: 0;
-  text-align: center;
 }
 
 h2,
@@ -46,16 +46,6 @@ h3 {
 
 h4 {
   font-size: 1.5em;
-}
-
-h2::before,
-h3::before {
-  display: block;
-  content: " ";
-  margin-top: -85px;
-  height: 85px;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 a {
@@ -187,7 +177,7 @@ code {
 .site-name {
   color: #ff79c6;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .nav-bar {
@@ -228,11 +218,6 @@ code {
 .header-bar-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.title-bar {
-  padding: 0 25px;
 }
 
 .subtitle,
