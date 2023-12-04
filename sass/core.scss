@@ -8,15 +8,16 @@ $buffer: 50px;
 html {
   overflow-y: scroll;
   background-color: $background;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Manrope", sans-serif;
   line-height: 1.5;
+  font-size: 18px;
 
   @media (max-width: ($content-width + $buffer)) {
     font-size: 16px;
   }
 
   @media (min-width: ($content-width + $buffer)) {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -29,7 +30,6 @@ h1 {
   font-size: 3.5em;
   margin-top: 0;
   margin-bottom: 0;
-  text-align: center;
 }
 
 h2,
@@ -51,16 +51,6 @@ h3 {
 
 h4 {
   font-size: 1.5em;
-}
-
-h2::before,
-h3::before {
-  display: block;
-  content: " ";
-  margin-top: -85px;
-  height: 85px;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 a {
