@@ -139,7 +139,8 @@ logged in.
 ![The talks@bham navigation bar, with 'Add a new talk' circled](/images/seminars/adding.webp)
 
 To make sure it doesn't get forgotten later, you should make sure the Zoom
-details are added to the
+details are added to the page; there's a sheet on the seminar organisation
+spreadsheet which has a template you can copy.
 
 ### Solicit speaker suggestions
 
