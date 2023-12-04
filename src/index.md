@@ -11,9 +11,9 @@ style: index
 {: .profile-picture}
 
 Hello! I’m George, a PhD student researcher at the University of Birmingham, under the supervision of [Dan Ghica]({{ people.dan.web }}) and [Miriam Backens]({{ people.miriam.web }}).
-I am a member of the [University of Birmingham Theory Group]({{ links.theory }}), and organise the research group's [weekly seminar](http://talks.bham.ac.uk/show/index/86) alongside [Chris Barrett](https://chrisbarrett2.github.io/).
+I am a member of the [University of Birmingham Theory Group]({{ links.theory }}), and organise the research group's [weekly seminar](http://talks.bham.ac.uk/show/index/86).
 
-Currently I also work part time at the [Huawei Edinburgh Programming Languages Lab](https://blogs.ed.ac.uk/he-lab/).
+I also used to work part time at the [Huawei Edinburgh Programming Languages Lab](https://blogs.ed.ac.uk/he-lab/).
 
 ## About me
 
@@ -47,7 +47,15 @@ Alternatively, you can figure out how my static site generator works and fix it 
 * [**Adventures in Academia**](/adventures) *A series of entertaining escapades*
 * [**Railway station signs**](/trains/stations) *I take pictures of station signs*
 
-#### Douvk webring
+I've made some guides to impart the admin knowledge I've gained from four years
+of doing things in the Birmingham theory group to help the next generation.
+
+* [**Setting up LG23**](/lg23)
+* [**Running the theory seminar**](/seminars)
+
+## Douvk webring
+
+Get to know other PhD students from my Birmingham days.
 
 [← Bruno da Rocha Paiva](https://brunorochapaiva.github.io/)
 •
