@@ -81,6 +81,10 @@ should make an effort to accommodate the seminar!
 Even if the slot does have to be moved, the first preference is to keep the
 seminar on Fridays.
 
+If the slot changes, you should also let whoever manages the
+[cs-calendar@contacts.bham.ac.uk](mailto:cs-calendar@contacts.bham.ac.uk)
+school calendar know, so they can update it on there.
+
 ### Book the rooms
 
 Once the slot is confirmed, you need to book the rooms.
