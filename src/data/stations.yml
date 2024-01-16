@@ -2,10 +2,12 @@
   crs: acg
 - name: Adderley Park
   crs: add
-- name: Alvechurch
-  crs: alv
+- name: Albrighton
+  crs: alb
 - name: Aldershot
   crs: aht
+- name: Alvechurch
+  crs: alv
 - name: Ash
   crs: ash
 - name: Ashurst New Forest
@@ -66,6 +68,8 @@
   crs: crr
 - name: Coseley
   crs: csy
+- name: Cosford
+  crs: cos
 - name: Coventry
   crs: cov
 - name: Cradley Heath
@@ -96,6 +100,8 @@
   crs: gtw
 - name: Glenfinnan
   crs: glf
+- name: Gloucester
+  crs: gcr
 - name: Gravelly Hill
   crs: gvh
 - name: Great Malvern
@@ -182,6 +188,8 @@
   crs: ohl
 - name: Olton
   crs: olt
+- name: Partick
+  crs: ptk
 - name: Penkridge
   crs: pkg
 - name: Perry Barr
@@ -232,6 +240,8 @@
   crs: scf
 - name: Stoke-on-Trent
   crs: sot
+- name: Stone
+  crs: sne
 - name: Stourbridge Junction
   crs: sbj
 - name: Stourbridge Town
@@ -252,6 +262,8 @@
   crs: tlk
 - name: Tile Hill
   crs: thl
+- name: Totnes
+  crs: tot
 - name: Tottenham Hale
   crs: tom
 - name: Tulse Hill
