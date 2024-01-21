@@ -1,6 +1,6 @@
 /**
  * Functions used by all pages.
- * 
+ *
  * @author George Kaye
  */
 
@@ -94,9 +94,9 @@ function getStats(currentTerm, labels) {
         )) +
         getRow(getCell("", getButton("normalise-btn", "normaliseButton()", "Normalise", normalForm) + getButton("watch-reduction-btn", "playReduction()", "Watch normalisation", normalForm) +
             '<select ' + selectDisabled + ' id="strategy">' +
-            "<option value=0>Outermost</value>" +
-            "<option value=1>Innermost</value>" +
-            "<option value=2>Random</value>" +
+            "<option value=0>Outermost</option>" +
+            "<option value=1>Innermost</option>" +
+            "<option value=2>Random</option>" +
             "<select>" +
             getButton("stop-btn", "stopNormalisationPlayback()", "Stop", !reducing))) +
         getRow(getCell("", getButton("back-btn", "backButton();", "Back", false))) +
@@ -149,9 +149,9 @@ function viewPortrait(exhibitName, term, label, full, i) {
             getDiv("", "", "", "", getButton("fullScreen-btn", "exitFullScreenMapButton(\'" + exhibit + "\');", "Exit full screen") +
                 getButton("watch-reduction-btn", "playReduction()", "Watch normalisation") +
                 '<select id="strategy">' +
-                "<option value=0>Outermost</value>" +
-                "<option value=1>Innermost</value>" +
-                "<option value=2>Random</value>" +
+                "<option value=0>Outermost</option>" +
+                "<option value=1>Innermost</option>" +
+                "<option value=2>Random</option>" +
                 "<select>" +
                 getButton("normalise-button", "normaliseButton()", "Normalise") +
                 getButton("reset-button", "resetViewButton()", "Reset to original view") +

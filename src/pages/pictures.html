@@ -10,7 +10,7 @@ permalink: /pictures/
 {% for picture in pictures %}
 <div class="picture-block">
     <div class="picture-picture">
-        <a href="/images/{{ picture.src }}" title="Original image"><img src="/images/{{ picture.src }}" alt={{ pictures.alt }}></a>
+        <a href="/images/{{ picture.src }}" title="Original image"><img src="/images/{{ picture.src }}" alt="{{ pictures.alt }}"></a>
     </div>
     <div class="picture-caption">
         {{ picture.caption }}
@@ -35,7 +35,7 @@ permalink: /pictures/
             {% endif %}
             Taken by
             {% endif %}
-            <a href={{ taken-by.web }} title="{{ taken-by.name }}{{ taken-by.poss }} personal webpage">
+            <a href="{{ taken-by.web }}" title="{{ taken-by.name }}{{ taken-by.poss }} personal webpage">
                 {{ taken-by.name -}}
             </a>.
         </span>
