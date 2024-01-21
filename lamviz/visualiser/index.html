@@ -1,60 +1,82 @@
-
-<!DOCTYPE html>
-<meta charset="UTF-8">
+<!doctype html>
+<meta charset="UTF-8" />
 <html>
-
-<head>
+  <head>
     <title>Lambda-term visualiser</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
-    <link rel="stylesheet" href="/scripts/lamviz/style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/scripts/lamviz/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <h1>&lambda;-term visualiser</h1>
 
-    <p><b><a href="/lamviz/gallery/">&lambda;-term gallery</a></b></p>
+    <p>
+      <b><a href="/lamviz/gallery/">&lambda;-term gallery</a></b>
+    </p>
 
-    <p>Graph display powerered by <a href="http://js.cytoscape.org/">Cytoscape.js</a></p>
+    <p>
+      Graph display powerered by
+      <a href="http://js.cytoscape.org/">Cytoscape.js</a>
+    </p>
 
     <p>Type a term t and an environment &Gamma; below!</p>
 
-    <p><b>Example:</b> (&lambda;x. &lambda;y. x y) a b
-        <br>t = (\x. \y. x y) a b
-        <br>&Gamma; = a b</b>
+    <p>
+      <b>Example:</b> (&lambda;x. &lambda;y. x y) a b <br />t = (\x. \y. x y) a
+      b <br />&Gamma; = a b
+    </p>
 
-        <p>t = <input type="text" id="input"> &Gamma; = <input type="text" id="env"></p>
+    <p>
+      t = <input type="text" id="input" /> &Gamma; =
+      <input type="text" id="env" />
+    </p>
 
-        <p>Define an alias <input type="text" id="function-name"> = <input type="text" id="function-body"> <button
-                type="button" id="function-btn" onclick="defineFunction();">Define</button></p>
+    <p>
+      Define an alias <input type="text" id="function-name" /> =
+      <input type="text" id="function-body" />
+      <button type="button" id="function-btn" onclick="defineFunction();">
+        Define
+      </button>
+    </p>
 
-        <p id="bulk"><button type="button" id="bulk-btn" onclick="revealBulkButton();">Bulk define
-                aliases</button><button type="button" id="clear-all-btn" onclick="removeFunctionsButton();">Clear
-                all</button></p>
+    <p id="bulk">
+      <button type="button" id="bulk-btn" onclick="revealBulkButton();">
+        Bulk define aliases</button
+      ><button
+        type="button"
+        id="clear-all-btn"
+        onclick="removeFunctionsButton();"
+      >
+        Clear all
+      </button>
+    </p>
 
-        <p id="function-list"></p>
+    <p id="function-list"></p>
 
-        <button type="button" id="execute-btn" onclick="executeButton();">Execute</button>
+    <button type="button" id="execute-btn" onclick="executeButton();">
+      Execute
+    </button>
 
-        <br>
+    <br />
 
-        <h2 id="result"></h2>
+    <h2 id="result"></h2>
 
-        <p id="church-room"></p>
-        <p id="normalisation-studio"></p>
+    <p id="church-room"></p>
+    <p id="normalisation-studio"></p>
 
-        <img id="image" src="">
+    <img id="image" src="" />
 
-        <script src="/scripts/lamviz/definition.js"></script>
-        <script src="/scripts/lamviz/parser.js"></script>
-        <script src="/scripts/lamviz/cytoscape.min.js"></script>
-        <script src="/scripts/lamviz/graph.js"></script>
-        <script src="/scripts/lamviz/html.js"></script>
-        <script src="/scripts/lamviz/sharedFunctions.js"></script>
-        <script src="/scripts/lamviz/visualiserFunctions.js"></script>
-        <script src="/scripts/lamviz/evaluator.js"></script>
-        <script src="/scripts/lamviz/generator.js"></script>
-
-</body>
-
+    <script src="/scripts/lamviz/definition.js"></script>
+    <script src="/scripts/lamviz/parser.js"></script>
+    <script src="/scripts/lamviz/cytoscape.min.js"></script>
+    <script src="/scripts/lamviz/graph.js"></script>
+    <script src="/scripts/lamviz/html.js"></script>
+    <script src="/scripts/lamviz/sharedFunctions.js"></script>
+    <script src="/scripts/lamviz/visualiserFunctions.js"></script>
+    <script src="/scripts/lamviz/evaluator.js"></script>
+    <script src="/scripts/lamviz/generator.js"></script>
+  </body>
 </html>
