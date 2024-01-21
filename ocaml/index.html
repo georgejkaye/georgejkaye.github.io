@@ -1,271 +1,721 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="/css/core.css" />
-  <link rel="stylesheet" href="/css/.css" />
-  <link rel="stylesheet" href="/css/header.css" />
-  <link rel="stylesheet" href="/css/syntax.css" />
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <title>
-    
-    Intro to Ocaml &middot; George Kaye
-    
-  </title>
-  <meta name="description" content="">
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Icons -->
-  <link rel="icon" href="/images/favicon.ico" type="image/ico" />
-</head>
-<body>
-  <div class="site-name-bar">
-    <div class="site-name-centre">
-        <img class="nav-site-image" src="/images/me/me-3.webp" alt="me">
-        <a class="site-name" href="/">
-          George Kaye
-        </a>
-    </div>
-    <div class="nav-bar">
-      
-          <a class="nav-link " href=/>Home</a>
-      
-          <a class="nav-link " href=/papers/>Papers</a>
-      
-          <a class="nav-link " href=/talks/>Talks</a>
-      
-          <a class="nav-link " href=/teaching/>Teaching</a>
-      
-          <a class="nav-link " href=/blog/>Blog</a>
-      
-          <a class="nav-link " href=https://github.com/georgejkaye>GitHub</a>
-      
-    </div>
-    <div class="nav-button">
-        <img title="Open navigation" id="nav-hamburger" src="/images/hamburger.svg" />
-    </div>
-  </div>
-  <div id="nav-mobile" class="nav-mobile">
-    
-        <div>
-          <a class="nav-link-mobile " href=/>Home</a>
-        </div>
-    
-        <div>
-          <a class="nav-link-mobile " href=/papers/>Papers</a>
-        </div>
-    
-        <div>
-          <a class="nav-link-mobile " href=/talks/>Talks</a>
-        </div>
-    
-        <div>
-          <a class="nav-link-mobile " href=/teaching/>Teaching</a>
-        </div>
-    
-        <div>
-          <a class="nav-link-mobile " href=/blog/>Blog</a>
-        </div>
-    
-        <div>
-          <a class="nav-link-mobile " href=https://github.com/georgejkaye>GitHub</a>
-        </div>
-    
-  </div>
-  <div class="header-bar">
-  <div class="header-bar-content container">
-    <div class="title-bar">
-      <h1 class="title">
-        
-        
-        
-        Intro to Ocaml
-        
-      </h1>
-      
-      
-        <div class="subtitle">
-        
-          An introduction to a functional language
-        
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/core.css" />
+    <link rel="stylesheet" href="/css/.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <!-- Enable responsiveness on mobile devices-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <title>Intro to Ocaml &middot; George Kaye</title>
+    <meta name="description" content="" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link rel="icon" href="/images/favicon.ico" type="image/ico" />
+  </head>
+  <body>
+    <div class="site-name-bar">
+      <div class="site-name-centre">
+        <img class="nav-site-image" src="/images/me/me-3.webp" alt="me" />
+        <a class="site-name" href="/"> George Kaye </a>
       </div>
-      
+      <div class="nav-bar">
+        <a class="nav-link" href="/">Home</a>
+
+        <a class="nav-link" href="/papers/">Papers</a>
+
+        <a class="nav-link" href="/talks/">Talks</a>
+
+        <a class="nav-link" href="/teaching/">Teaching</a>
+
+        <a class="nav-link" href="/blog/">Blog</a>
+
+        <a class="nav-link" href="https://github.com/georgejkaye">GitHub</a>
+      </div>
+      <div class="nav-button">
+        <img
+          title="Open navigation"
+          id="nav-hamburger"
+          src="/images/hamburger.svg"
+        />
+      </div>
     </div>
-    
-    
-    
-  </div>
-</div>
-  <div id="text" class="content container wide">
-    <p>So you want to learn Ocaml? Great - you're already on your way to joining the elite crowd that understand this fantastic language. Here you'll find a very basic tutorial to get you up and running with the language and its foibles.</p>
-<h2>Installing OCaml</h2>
-<p>You will need:</p>
-<ul>
-<li><strong><a href="https://opam.ocaml.org/doc/Install.html">OPAM</a></strong></li>
-<li><strong><a href="https://ocaml.org/docs/install.html">OCaml</a></strong></li>
-</ul>
-<p>You can then open the OCaml toplevel with <code>ocaml</code>. Alternatively (and I would recommend it!) you can install <strong>UTop</strong> with <code>opam install utop</code>, which gives you a much nicer command line interface by typing <code>utop</code> into the terminal.</p>
-<p>There are various plugins for various text editors floating around. There is (of course) an Emacs mode: you will need <strong><a href="https://github.com/ocaml/tuareg">Tuareg</a></strong> for running OCaml within Emacs and <strong><a href="https://github.com/ocaml/merlin">Merlin</a></strong> for context-sensitive completion. For people like me who use VS Code, there is <a href="https://marketplace.visualstudio.com/items?itemName=freebroccolo.reasonml">this extension</a> - this also provides support for ReasonML, a language based off OCaml that compiles to Javascript!</p>
-<h3>Windows</h3>
-<p>OCaml on Windows is a fickle beast! To avoid struggling around with dependencies, I would recommend you install the <strong><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Windows Subsystem for Linux</a></strong> and download Ubuntu from the Microsoft Store. This enables you to have a Linux environment within your Windows installation!</p>
-<p>Once you have installed the subsystem and set it up as specified in the link above, you must open the terminal (press <code>Ctrl</code>+<code>Alt</code>+<code>T</code>) and run these commands:</p>
-<ul>
-<li><code>sudo apt update</code></li>
-<li><code>sudo apt install make m4 opam ocaml</code></li>
-<li><code>opam install utop ocamlbuild</code></li>
-</ul>
-<p>You will be prompted to input the password you created when installing the Linux Subsystem. During installation you may receive additional prompts for input - you should generally type 'y' (for yes).</p>
-<p>You should now be able to access the OCaml toplevel in the terminal with <code>utop</code>, as above.</p>
-<h3>Running OCaml</h3>
-<p>A majority of the code in this tutorial can be run in the <em>OCaml toplevel</em>. You can access this by typing <code>ocaml</code> or <code>utop</code> (if it's installed). You can type things directly into the toplevel or paste functions from your text editor. If you keep your code in a file, you can type <code>#use file.ml</code> into the toplevel and the entire contents of the file will be pasted in (providing it all compiles!).</p>
-<p>When you actually want to compile a file to an executable, you should use the command <code>ocamlbuild -use-ocamlfind file.native</code>. OCamlfind is a very powerful tool that will automatically resolve dependencies for you, regardless of how many modules you use! More on modules later.</p>
-<h2>A statically typed language</h2>
-<p><a href="https://ocaml.org/">OCaml</a> is a functional programming language, It is statically typed, so everything has a distinct type (unlike dynamically typed programming languages like Python, where you can mash pretty much anything together without the compiler complaining). The advantage of statically typed languages is that more errors are caught at <em>compile-time</em> rather than <em>run-time</em>. For example, something like <code>&quot;hello&quot; * true</code> will simply refuse to compile. This can make debugging significantly easier!</p>
-<p>Some examples of types we'll be using are</p>
-<ul>
-<li><code>int</code> positive and negative integers</li>
-<li><code>bool</code> true and false</li>
-<li><code>string</code> things like <code>&quot;hello!&quot;</code></li>
-</ul>
-<p>However, the beauty of OCaml's type system means we don't have to explicitly declare types! It will infer them from what we type in.</p>
-<h2>Evaluating expressions in the toplevel</h2>
-<p>To play around with this, we'll experiment in the OCaml toplevel. Bring it up by typing <code>ocaml</code> or <code>utop</code> into your terminal.  We can now evaluate expressions, terminated by a double semicolon <code>;;</code>. In this tutorial, any line that can be entered into the toplevel will be prefixed with a <code>#</code>.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token number">1</span><br><span class="token operator">-</span> <span class="token punctuation">:</span> int <span class="token operator">=</span> <span class="token number">1</span><br><span class="token punctuation">#</span> <span class="token number">4</span> <span class="token operator">+</span> <span class="token number">4</span><br><span class="token operator">-</span> <span class="token punctuation">:</span> int <span class="token operator">=</span> <span class="token number">8</span></code></pre>
-<p>The expression that appears after we enter something in the toplevel is called the <em>type signature</em> - it represents the type of what we have just given OCaml. You can see that OCaml has correctly deduced that these are integers. Strings and booleans work in the same way. String concatenation is performed with <code>^</code>.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token string">"hello"</span> <span class="token operator">^</span> <span class="token string">" world!"</span><br><span class="token operator">-</span> <span class="token punctuation">:</span> string <span class="token operator">=</span> <span class="token string">"hello world!"</span> <br><span class="token punctuation">#</span> <span class="token boolean">true</span> <span class="token operator">&amp;&amp;</span> <span class="token boolean">false</span><br><span class="token operator">-</span> <span class="token punctuation">:</span> bool <span class="token operator">=</span> <span class="token boolean">false</span></code></pre>
-<p>Again, OCaml has worked out we are dealing with strings and booleans.</p>
-<h2>Let bindings</h2>
-<p>These expressions we've typed in do not persist - we need a way to assign them to variables. Fortunately, we have let bindings, the OCaml way of saying variable assignment:</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> greeting <span class="token operator">=</span> <span class="token string">"hello!"</span><br><span class="token keyword">val</span> greeting <span class="token punctuation">:</span> string <span class="token operator">=</span> <span class="token string">"hello"</span><br><br><span class="token punctuation">#</span> <span class="token keyword">let</span> zero <span class="token operator">=</span> <span class="token number">0</span><br><span class="token keyword">val</span> zero <span class="token punctuation">:</span> int <span class="token operator">=</span> <span class="token number">0</span></code></pre>
-<p>The type signatures now contain the name of the variable in addition to the type data from before! We can recall these variables in the toplevel by typing their names.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> greeting<br><span class="token keyword">val</span> greeting <span class="token punctuation">:</span> string <span class="token operator">=</span> <span class="token string">"hello"</span><br><br><span class="token punctuation">#</span> zero <br><span class="token keyword">val</span> zero <span class="token punctuation">:</span> int <span class="token operator">=</span> <span class="token number">0</span></code></pre>
-<p>You can also use the <code>in</code> keyword to perform multiple operations in one defintion sequentially.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> calculation <span class="token operator">=</span><br>    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token keyword">in</span><br>        x <span class="token operator">*</span> <span class="token number">2</span><br><span class="token keyword">val</span> calculation <span class="token punctuation">:</span> int <span class="token operator">=</span> <span class="token number">6</span><br><br><span class="token punctuation">#</span> calculation<br><span class="token keyword">val</span> calculation <span class="token punctuation">:</span> int <span class="token operator">=</span> <span class="token number">6</span></code></pre>
-<h2>Functions</h2>
-<p>Of course variables aren't very fun on their own, we want to make functions that do things based on their arguments! Defining functions is very similar to defining variables.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> greet name <span class="token operator">=</span> <span class="token string">"hello "</span> <span class="token operator">^</span> name<br><span class="token keyword">val</span> greet <span class="token punctuation">:</span> string <span class="token operator">-></span> string <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>Note that the type signature is a little bit different to what we're used to now! Let's break it down. On the left hand side, we have <code>string -&gt; string</code>, which indicates that our function takes a string, and produces another string. The <code>&lt;fun&gt;</code> on the right hand side indicates that we have created a function - it cannot be reduced down to a value until we pass it some argument.</p>
-<p>To use our function, we simply place our arguments after the name of the function.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> greet <span class="token string">"George"</span><br><span class="token operator">-</span> <span class="token punctuation">:</span> string <span class="token operator">=</span> <span class="token string">"hello George"</span></code></pre>
-<p>Now that we have given the function a string, OCaml has been able to reduce it down to just a string.</p>
-<p>Functions can of course have multiple arguments too:</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> formal firstname lastname <span class="token operator">=</span> <span class="token string">"good morning "</span> <span class="token operator">^</span> firstname <span class="token operator">^</span> <span class="token string">" "</span> <span class="token operator">^</span> lastname<br><span class="token keyword">val</span> formal <span class="token punctuation">:</span> string <span class="token operator">-></span> string <span class="token operator">-></span> string <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>We can see that our type signature now indicates that <em>two</em> strings must be given as arguments in order to produce the string output.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> formal <span class="token string">"George"</span> <span class="token string">"Kaye"</span><br><span class="token operator">-</span> <span class="token punctuation">:</span> string <span class="token operator">=</span> <span class="token string">"good morning George Kaye"</span></code></pre>
-<p>What if we only apply this function to one of its arguments? Will it break everything?</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> formal <span class="token string">"George"</span><br><span class="token operator">-</span> <span class="token punctuation">:</span> string <span class="token operator">-></span> string <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>Nope, we've just created another function! This is called a <em>partial evaluation</em> of a function. In essence, we have created an optimised version of the original <code>formal</code> function that can only be used for people with the name <code>George</code> (a fantastic name!). Partial evaluations are used all the time under the hood in compilers.</p>
-<p>In fact, rather than thinking about type signatures as a load of arguments and one single output, we can split the type signature at any point and provide some of the arguments, and get a function whose type signature is anything left over.</p>
-<h2>If statements and pattern matching</h2>
-<p>A key programming concept is changing program flow with if statements, and of course OCaml is no exception:</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> yesorno yes <span class="token operator">=</span> <span class="token keyword">if</span> yes <span class="token keyword">then</span> <span class="token string">"yes!"</span> <span class="token keyword">else</span> <span class="token string">"no..."</span><br><span class="token keyword">val</span> yesorno <span class="token punctuation">:</span> bool <span class="token operator">-></span> string <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>Note that OCaml has, as always, deduced that <code>yes</code> must be a boolean because we are using it as a condition in our if statement. However, if statements can get a bit unwieldy, especially if we start chaining them together. Instead, it can be more elegant to use <em>pattern matching</em>!</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> yesorno' yes <span class="token operator">=</span> <span class="token keyword">match</span> yes <span class="token keyword">with</span><br><span class="token operator">|</span> <span class="token boolean">true</span>  <span class="token operator">-></span> <span class="token string">"yes!"</span><br><span class="token operator">|</span> <span class="token boolean">false</span> <span class="token operator">-></span> <span class="token string">"no..."</span><br><span class="token keyword">val</span> yesorno' <span class="token punctuation">:</span> bool <span class="token operator">-></span> string <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>The behaviour and type signature of the function haven't changed, but the possible values of <code>yes</code> are now laid out a lot more neatly. You can see it's very similar to a switch statement in other languages. Another thing we can do to make our function slightly more concise is to drop the <code>match x with</code> if we are pattern matching on the final argument:</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> yesorno'' <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token boolean">true</span>  <span class="token operator">-></span> <span class="token string">"yes!"</span><br><span class="token operator">|</span> <span class="token boolean">false</span> <span class="token operator">-></span> <span class="token string">"no..."</span><br><span class="token keyword">val</span> yesorno''<span class="token punctuation">:</span> bool <span class="token operator">-></span> string <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>You of course are not restricted to pattern matching with booleans! But most types have far more possible cases than the two booleans. Writing out all the possible cases would take a very long time, so we can use <em>wildcard</em> cases to catch anything we haven't already pattern matched on.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> is_zero <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token number">0</span> <span class="token operator">-></span> <span class="token boolean">true</span><br><span class="token operator">|</span> n <span class="token operator">-></span> <span class="token boolean">false</span><br><span class="token keyword">val</span> is_zero <span class="token operator">=</span> int <span class="token operator">-></span> bool <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>If we feed this function <code>0</code>, it will return true, but any other number will reach the <code>n</code> case and therefore return false. This means that every element of <code>int</code> will still be mapped to an output, making this a <em>total function</em>. What if we skip some cases?</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> binary <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token number">0</span> <span class="token operator">-></span> <span class="token boolean">false</span><br><span class="token operator">|</span> <span class="token number">1</span> <span class="token operator">-></span> <span class="token boolean">true</span><br>Characters <span class="token number">14</span><span class="token operator">-</span><span class="token number">14</span><span class="token punctuation">:</span><br>Warning <span class="token number">8</span><span class="token punctuation">:</span> this pattern matching is not exhaustive<span class="token punctuation">.</span><br>Here is an example <span class="token keyword">of</span> a case that is not matched<span class="token punctuation">:</span><br><span class="token number">2</span><br><span class="token keyword">val</span> binary <span class="token punctuation">:</span> int <span class="token operator">-></span> bool <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>OCaml is clever enough to realise that our pattern matching is not <em>exhaustive</em> - there are cases (such as <code>2</code>) that do not have a mapping and will cause an error if we try to input them. Let's do it anyway!</p>
-<pre class="language-ocaml"><code class="language-ocaml">binary <span class="token number">2</span><span class="token punctuation">;;</span><br>Exception<span class="token punctuation">:</span> Match_failure <span class="token punctuation">(</span><span class="token string">"//toplevel//"</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">14</span><span class="token punctuation">)</span></code></pre>
-<p>Predictably, we have received an exception. But what if we only want to define this function for those arguments and fail with a message saying so? Fortunately this isn't hard to implement.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> binary <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token number">0</span> <span class="token operator">-></span> <span class="token boolean">false</span><br><span class="token operator">|</span> <span class="token number">1</span> <span class="token operator">-></span> <span class="token boolean">true</span><br><span class="token operator">|</span> <span class="token punctuation">_</span> <span class="token operator">-></span> failwith <span class="token string">"binary: invalid argument"</span><br><span class="token keyword">val</span> binary <span class="token punctuation">:</span> int <span class="token operator">-></span> bool <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>The underscore means that we don't care about the value of the argument, only that we want anything that has not been matched yet to follow this case. OCaml doesn't complain that our pattern matching isn't exhaustive any more! However you should be careful when doing this, since it can hide away bugs caused by non-exhaustive pattern matching.</p>
-<p>We can match on multiple arguments too:</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> or_gate x y <span class="token operator">=</span> <span class="token keyword">match</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token keyword">with</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span>   <span class="token operator">-></span> <span class="token boolean">true</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>  <span class="token operator">-></span> <span class="token boolean">true</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span>  <span class="token operator">-></span> <span class="token boolean">true</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token boolean">false</span><br><span class="token keyword">val</span> or_gate <span class="token punctuation">:</span> bool <span class="token operator">-></span> bool <span class="token operator">-></span> bool <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>This isn't the most efficient way we can implement this though, since we know that any pair of arguments that has at least one true will return true. If we use the underscore wildcard again we can save ourself a case:</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> or_gate x y <span class="token operator">=</span> <span class="token keyword">match</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token keyword">with</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">,</span><span class="token punctuation">_</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token boolean">true</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token punctuation">_</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token boolean">true</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token punctuation">_</span><span class="token punctuation">,</span><span class="token punctuation">_</span><span class="token punctuation">)</span>    <span class="token operator">-></span> <span class="token boolean">false</span><br><span class="token keyword">val</span> or_gate <span class="token punctuation">:</span> bool <span class="token operator">-></span> bool <span class="token operator">-></span> bool <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>An important thing to note with these functions is that even though we are changing the program flow based on the inputs, the type signature is always the same. A function of type <code>int -&gt; int</code> must <em>always</em> return an <code>int</code>. It cannot return an <code>int</code> for some values and <code>bool</code> for others!</p>
-<h2>Recursion</h2>
-<p>One of the most powerful mechanics in OCaml is <em>recursion</em>, which allows us to call functions from inside themselves! It is the functional parallel to <em>iteration</em> in imperative languages (e.g. using for loops). A classic example of a recursive function is the factorial function n! = n * n-1 * ... * 1.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> <span class="token keyword">rec</span> factorial <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token number">0</span> <span class="token operator">-></span> <span class="token number">1</span><br><span class="token operator">|</span> n <span class="token operator">-></span> factorial <span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> n<br><span class="token keyword">val</span> factorial <span class="token punctuation">:</span> int <span class="token operator">-></span> int</code></pre>
-<p>What is this function saying? It matches an <code>int</code> against two cases. If it is equal to zero, we return 1, as 0! = 1. If it is any other value, we use the fact that n! = (n-1!) * n. We call <code>factorial (n-1)</code> to work out what (n-1)! is, then we multiply it by n to get n!.</p>
-<p>Also note the <code>rec</code> keyword at the start of the function. This indicates to OCaml that we will be using this function again inside its definition, so it needs to keep track of it. Otherwise we will just receive a <code>Unbound value</code> error.</p>
-<p>Another example of a recursive function is a function that computes the maximum of two positive numbers recursively, by using the fact that if one number is equal to zero, the other must either be greater or equal to it.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> <span class="token keyword">rec</span> max x y <span class="token operator">=</span> <span class="token keyword">match</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token keyword">with</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token operator">-></span> y<br><span class="token operator">|</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">-></span> x<br><span class="token operator">|</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token operator">-></span> max <span class="token punctuation">(</span>x<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">(</span>y<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><br><span class="token keyword">val</span> max <span class="token punctuation">:</span> int <span class="token operator">-></span> int <span class="token operator">-></span> int</code></pre>
-<p>Obviously don't call this function with negative numbers otherwise you might be here some time.</p>
-<h2>Polymorphism</h2>
-<p>Let's look at some different kinds of functions. What about a function that simply returns whatever you give it? This is called the <em>identity</em> function and while it may seem pointless, it can be useful when reasoning about programs.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> id x <span class="token operator">=</span> x<br><span class="token keyword">val</span> id <span class="token punctuation">:</span> <span class="token type-variable function">'a</span> <span class="token operator">-></span> <span class="token type-variable function">'a</span> <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>Where did these <code>'a</code> types come from? We've not seen them before! These are <em>polymorphic types</em>, which means they can be <em>anything</em> and the function will still work! After all, a function that returns its argument will not run any differently whether we give it an <code>int</code>, a <code>bool</code>, a <code>string</code>, or anything else! OCaml will automatically work this out and use these special types with a <code>'</code> character before them to show that they are polymorphic. We don't have to stick to just <code>'a</code> either, take a look at this function that returns the first one of its arguments:</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> first x y <span class="token operator">=</span> x<br><span class="token keyword">val</span> first <span class="token punctuation">:</span> <span class="token type-variable function">'a</span> <span class="token operator">-></span> <span class="token type-variable function">'b</span> <span class="token operator">-></span> <span class="token type-variable function">'a</span></code></pre>
-<p>We know that the output of the function must be the same type as its input, so both of these are <code>'a</code>. However the second argument's type is completely irrelevant. We can't just call it <code>'a</code> as well because that would restrict it to being the same type as the first argument, which we know isn't necessarily the case. So we use a different polymorphic type <code>'b</code>.</p>
-<h2>Data structures</h2>
-<p>We can do a lot with our basic types. But to do more interesting things we need to use <em>data structures</em>, several of which are built into OCaml. Let's look at a few of them.</p>
-<h3>Tuples</h3>
-<p>Tuples can be used to contain any number of arbitrary data types, which can be useful when we want to return multiple things at once from a function. We have already seen 2-tuples, or pairs, when pattern matching on multiple arguments!</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> pair <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><br><span class="token keyword">val</span> pair <span class="token punctuation">:</span> int <span class="token operator">*</span> bool <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><br><span class="token punctuation">#</span> <span class="token keyword">let</span> triple <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">,</span> <span class="token number">46</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><br><span class="token keyword">val</span> triple <span class="token punctuation">:</span> string <span class="token operator">*</span> int <span class="token operator">*</span> bool <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">,</span> <span class="token number">46</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span></code></pre>
-<p>A tuple's type signature shows the types contained within separated by the <code>*</code> symbol. Their length is fixed in their type signature - functions cannot return arbitrary tuples but must always return a pair, or a triple, and so on.</p>
-<p>You can pattern match on tuples to access their elements:</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> swap <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token punctuation">(</span>y<span class="token punctuation">,</span> x<span class="token punctuation">)</span><br><span class="token keyword">val</span> swap <span class="token operator">=</span> <span class="token type-variable function">'a</span> <span class="token operator">*</span> <span class="token type-variable function">'b</span> <span class="token operator">-></span> <span class="token type-variable function">'b</span> <span class="token operator">*</span> <span class="token type-variable function">'a</span></code></pre>
-<p>OCaml can use type inference to deduce the types inside a tuple, even if it can't deduce them all. For example, this function that selects either the second or third element of the triple depending on the first restricts its first element to <code>bool</code>, and since functions must always return the same type, the second and third elements must also be the same type.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> select <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">,</span> x<span class="token punctuation">,</span> <span class="token punctuation">_</span><span class="token punctuation">)</span>  <span class="token operator">-></span> x<br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token punctuation">_</span><span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token operator">-></span> y<br><span class="token keyword">val</span> select <span class="token punctuation">:</span> bool <span class="token operator">*</span> <span class="token type-variable function">'a</span> <span class="token operator">*</span> <span class="token type-variable function">'a</span> <span class="token operator">-></span> <span class="token type-variable function">'a</span> <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>You might be thinking that this looks very similar to just using n arguments for a function, and indeed it is! A function taking an n-tuple as an argument is <em>isomorphic</em> to a function taking n arguments, which means we can switch between them without losing any data. Changing a function that takes a tuple as an argument into one that takes multiple arguments is called <em>currying</em>, after <a href="https://en.wikipedia.org/wiki/Haskell_Curry">Haskell Curry</a>.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> swap_curried x y <span class="token operator">=</span> <span class="token keyword">match</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token keyword">with</span><br><span class="token operator">|</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token punctuation">(</span>y<span class="token punctuation">,</span> x<span class="token punctuation">)</span><br><span class="token keyword">val</span> swap_curried <span class="token punctuation">:</span> <span class="token type-variable function">'a</span> <span class="token operator">-></span> <span class="token type-variable function">'b</span> <span class="token operator">-></span> <span class="token type-variable function">'b</span> <span class="token operator">*</span> <span class="token type-variable function">'a</span> <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<h3>Lists</h3>
-<p>Lists are another data type that are used very frequently in OCaml. They are similar to arrays, with a key difference. In arrays, you can access any element in one operation. In lists, you can only access the first element (called the <em>head</em> of the list), and the 'rest' of the list as a sublist (called the <em>tail</em>). Lists can either be empty or take the structure <code>x :: xs</code>, where <code>x</code> is the head and <code>xs</code> is the tail. In the <code>numbers</code> example, <code>1</code> is the head and <code>[2;3;4;5]</code> is the tail.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> empty <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><br><span class="token keyword">val</span> empty <span class="token punctuation">:</span> <span class="token type-variable function">'a</span> list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><br><span class="token punctuation">#</span> <span class="token keyword">let</span> singleton <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token boolean">true</span><span class="token punctuation">]</span><br><span class="token keyword">val</span> singleton <span class="token punctuation">:</span> bool list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token boolean">true</span><span class="token punctuation">]</span><br><span class="token punctuation">#</span> <span class="token keyword">let</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">2</span><span class="token punctuation">;</span><span class="token number">3</span><span class="token punctuation">;</span><span class="token number">4</span><span class="token punctuation">;</span><span class="token number">5</span><span class="token punctuation">]</span><br><span class="token keyword">val</span> numbers <span class="token punctuation">:</span> int list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">2</span><span class="token punctuation">;</span><span class="token number">3</span><span class="token punctuation">;</span><span class="token number">4</span><span class="token punctuation">;</span><span class="token number">5</span><span class="token punctuation">]</span></code></pre>
-<p>List concatenation is performed with the <code>@</code> operator.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> biglist <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">@</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">;</span><span class="token number">4</span><span class="token punctuation">]</span><br><span class="token keyword">val</span> biglist <span class="token punctuation">:</span> int list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">2</span><span class="token punctuation">;</span><span class="token number">3</span><span class="token punctuation">;</span><span class="token number">4</span><span class="token punctuation">]</span></code></pre>
-<p>We can pattern match on lists based on whether they are empty or of the form <code>x :: xs</code>. For example, we can write functions that extract the head or the tail of a list, keeping in mind that these operations will fail on an empty list:</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> head <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>        <span class="token operator">-></span> failwith <span class="token string">"empty list"</span><br><span class="token operator">|</span> <span class="token punctuation">(</span>x <span class="token punctuation">::</span> xs<span class="token punctuation">)</span> <span class="token operator">-></span> x<br><span class="token keyword">val</span> head <span class="token punctuation">:</span> <span class="token type-variable function">'a</span> list <span class="token operator">-></span> <span class="token type-variable function">'a</span> <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span><br><br><span class="token punctuation">#</span> <span class="token keyword">let</span> tail <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>        <span class="token operator">-></span> failwith <span class="token string">"empty list"</span><br><span class="token operator">|</span> <span class="token punctuation">(</span>x <span class="token punctuation">::</span> xs<span class="token punctuation">)</span> <span class="token operator">-></span> xs<br><span class="token keyword">val</span> tail <span class="token punctuation">:</span> <span class="token type-variable function">'a</span> list <span class="token operator">-></span> <span class="token type-variable function">'a</span> list <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>Note that the head of the list is just an element of type <code>'a</code>, whereas the tail of a list is another list <code>'a list</code>.</p>
-<p>A common operation on lists is to find their length, which we can do recursively. An empty list has length 0, and other lists have length 1 + the length of their tail.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> <span class="token keyword">rec</span> length <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>        <span class="token operator">-></span> <span class="token number">0</span><br><span class="token operator">|</span> <span class="token punctuation">(</span>x <span class="token punctuation">::</span> xs<span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token number">1</span> <span class="token operator">+</span> length xs<br><span class="token keyword">val</span> length <span class="token punctuation">:</span> <span class="token type-variable function">'a</span> list <span class="token operator">-></span> int <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<h3>Binary trees</h3>
-<p>Both tuples and lists are built into OCaml by default. We'll now look at how to define a slightly more advanced data structure, called <em>binary trees</em>. A binary tree has nodes, which must have two children (hence the binary part of their name), and leaves, which have no children. The node at the 'bottom' of the tree is called the <em>root</em>.</p>
-<pre><code>        .   &lt;-- root of the tree
+    <div id="nav-mobile" class="nav-mobile">
+      <div>
+        <a class="nav-link-mobile" href="/">Home</a>
+      </div>
+
+      <div>
+        <a class="nav-link-mobile" href="/papers/">Papers</a>
+      </div>
+
+      <div>
+        <a class="nav-link-mobile" href="/talks/">Talks</a>
+      </div>
+
+      <div>
+        <a class="nav-link-mobile" href="/teaching/">Teaching</a>
+      </div>
+
+      <div>
+        <a class="nav-link-mobile" href="/blog/">Blog</a>
+      </div>
+
+      <div>
+        <a class="nav-link-mobile" href="https://github.com/georgejkaye"
+          >GitHub</a
+        >
+      </div>
+    </div>
+    <div class="header-bar">
+      <div class="header-bar-content container">
+        <div class="title-bar">
+          <h1 class="title">Intro to Ocaml</h1>
+
+          <div class="subtitle">An introduction to a functional language</div>
+        </div>
+      </div>
+    </div>
+    <div id="text" class="content container wide">
+      <p>
+        So you want to learn Ocaml? Great - you're already on your way to
+        joining the elite crowd that understand this fantastic language. Here
+        you'll find a very basic tutorial to get you up and running with the
+        language and its foibles.
+      </p>
+      <h2>Installing OCaml</h2>
+      <p>You will need:</p>
+      <ul>
+        <li>
+          <strong
+            ><a href="https://opam.ocaml.org/doc/Install.html">OPAM</a></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="https://ocaml.org/docs/install.html">OCaml</a></strong
+          >
+        </li>
+      </ul>
+      <p>
+        You can then open the OCaml toplevel with <code>ocaml</code>.
+        Alternatively (and I would recommend it!) you can install
+        <strong>UTop</strong> with <code>opam install utop</code>, which gives
+        you a much nicer command line interface by typing <code>utop</code> into
+        the terminal.
+      </p>
+      <p>
+        There are various plugins for various text editors floating around.
+        There is (of course) an Emacs mode: you will need
+        <strong><a href="https://github.com/ocaml/tuareg">Tuareg</a></strong>
+        for running OCaml within Emacs and
+        <strong><a href="https://github.com/ocaml/merlin">Merlin</a></strong>
+        for context-sensitive completion. For people like me who use VS Code,
+        there is
+        <a
+          href="https://marketplace.visualstudio.com/items?itemName=freebroccolo.reasonml"
+          >this extension</a
+        >
+        - this also provides support for ReasonML, a language based off OCaml
+        that compiles to Javascript!
+      </p>
+      <h3>Windows</h3>
+      <p>
+        OCaml on Windows is a fickle beast! To avoid struggling around with
+        dependencies, I would recommend you install the
+        <strong
+          ><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10"
+            >Windows Subsystem for Linux</a
+          ></strong
+        >
+        and download Ubuntu from the Microsoft Store. This enables you to have a
+        Linux environment within your Windows installation!
+      </p>
+      <p>
+        Once you have installed the subsystem and set it up as specified in the
+        link above, you must open the terminal (press
+        <code>Ctrl</code>+<code>Alt</code>+<code>T</code>) and run these
+        commands:
+      </p>
+      <ul>
+        <li><code>sudo apt update</code></li>
+        <li><code>sudo apt install make m4 opam ocaml</code></li>
+        <li><code>opam install utop ocamlbuild</code></li>
+      </ul>
+      <p>
+        You will be prompted to input the password you created when installing
+        the Linux Subsystem. During installation you may receive additional
+        prompts for input - you should generally type 'y' (for yes).
+      </p>
+      <p>
+        You should now be able to access the OCaml toplevel in the terminal with
+        <code>utop</code>, as above.
+      </p>
+      <h3>Running OCaml</h3>
+      <p>
+        A majority of the code in this tutorial can be run in the
+        <em>OCaml toplevel</em>. You can access this by typing
+        <code>ocaml</code> or <code>utop</code> (if it's installed). You can
+        type things directly into the toplevel or paste functions from your text
+        editor. If you keep your code in a file, you can type
+        <code>#use file.ml</code> into the toplevel and the entire contents of
+        the file will be pasted in (providing it all compiles!).
+      </p>
+      <p>
+        When you actually want to compile a file to an executable, you should
+        use the command <code>ocamlbuild -use-ocamlfind file.native</code>.
+        OCamlfind is a very powerful tool that will automatically resolve
+        dependencies for you, regardless of how many modules you use! More on
+        modules later.
+      </p>
+      <h2>A statically typed language</h2>
+      <p>
+        <a href="https://ocaml.org/">OCaml</a> is a functional programming
+        language, It is statically typed, so everything has a distinct type
+        (unlike dynamically typed programming languages like Python, where you
+        can mash pretty much anything together without the compiler
+        complaining). The advantage of statically typed languages is that more
+        errors are caught at <em>compile-time</em> rather than
+        <em>run-time</em>. For example, something like
+        <code>&quot;hello&quot; * true</code> will simply refuse to compile.
+        This can make debugging significantly easier!
+      </p>
+      <p>Some examples of types we'll be using are</p>
+      <ul>
+        <li><code>int</code> positive and negative integers</li>
+        <li><code>bool</code> true and false</li>
+        <li><code>string</code> things like <code>&quot;hello!&quot;</code></li>
+      </ul>
+      <p>
+        However, the beauty of OCaml's type system means we don't have to
+        explicitly declare types! It will infer them from what we type in.
+      </p>
+      <h2>Evaluating expressions in the toplevel</h2>
+      <p>
+        To play around with this, we'll experiment in the OCaml toplevel. Bring
+        it up by typing <code>ocaml</code> or <code>utop</code> into your
+        terminal. We can now evaluate expressions, terminated by a double
+        semicolon <code>;;</code>. In this tutorial, any line that can be
+        entered into the toplevel will be prefixed with a <code>#</code>.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token number">1</span><br><span class="token operator">-</span> <span class="token punctuation">:</span> int <span class="token operator">=</span> <span class="token number">1</span><br><span class="token punctuation">#</span> <span class="token number">4</span> <span class="token operator">+</span> <span class="token number">4</span><br><span class="token operator">-</span> <span class="token punctuation">:</span> int <span class="token operator">=</span> <span class="token number">8</span></code></pre>
+      <p>
+        The expression that appears after we enter something in the toplevel is
+        called the <em>type signature</em> - it represents the type of what we
+        have just given OCaml. You can see that OCaml has correctly deduced that
+        these are integers. Strings and booleans work in the same way. String
+        concatenation is performed with <code>^</code>.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token string">"hello"</span> <span class="token operator">^</span> <span class="token string">" world!"</span><br><span class="token operator">-</span> <span class="token punctuation">:</span> string <span class="token operator">=</span> <span class="token string">"hello world!"</span> <br><span class="token punctuation">#</span> <span class="token boolean">true</span> <span class="token operator">&amp;&amp;</span> <span class="token boolean">false</span><br><span class="token operator">-</span> <span class="token punctuation">:</span> bool <span class="token operator">=</span> <span class="token boolean">false</span></code></pre>
+      <p>
+        Again, OCaml has worked out we are dealing with strings and booleans.
+      </p>
+      <h2>Let bindings</h2>
+      <p>
+        These expressions we've typed in do not persist - we need a way to
+        assign them to variables. Fortunately, we have let bindings, the OCaml
+        way of saying variable assignment:
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> greeting <span class="token operator">=</span> <span class="token string">"hello!"</span><br><span class="token keyword">val</span> greeting <span class="token punctuation">:</span> string <span class="token operator">=</span> <span class="token string">"hello"</span><br><br><span class="token punctuation">#</span> <span class="token keyword">let</span> zero <span class="token operator">=</span> <span class="token number">0</span><br><span class="token keyword">val</span> zero <span class="token punctuation">:</span> int <span class="token operator">=</span> <span class="token number">0</span></code></pre>
+      <p>
+        The type signatures now contain the name of the variable in addition to
+        the type data from before! We can recall these variables in the toplevel
+        by typing their names.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> greeting<br><span class="token keyword">val</span> greeting <span class="token punctuation">:</span> string <span class="token operator">=</span> <span class="token string">"hello"</span><br><br><span class="token punctuation">#</span> zero <br><span class="token keyword">val</span> zero <span class="token punctuation">:</span> int <span class="token operator">=</span> <span class="token number">0</span></code></pre>
+      <p>
+        You can also use the <code>in</code> keyword to perform multiple
+        operations in one defintion sequentially.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> calculation <span class="token operator">=</span><br>    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token keyword">in</span><br>        x <span class="token operator">*</span> <span class="token number">2</span><br><span class="token keyword">val</span> calculation <span class="token punctuation">:</span> int <span class="token operator">=</span> <span class="token number">6</span><br><br><span class="token punctuation">#</span> calculation<br><span class="token keyword">val</span> calculation <span class="token punctuation">:</span> int <span class="token operator">=</span> <span class="token number">6</span></code></pre>
+      <h2>Functions</h2>
+      <p>
+        Of course variables aren't very fun on their own, we want to make
+        functions that do things based on their arguments! Defining functions is
+        very similar to defining variables.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> greet name <span class="token operator">=</span> <span class="token string">"hello "</span> <span class="token operator">^</span> name<br><span class="token keyword">val</span> greet <span class="token punctuation">:</span> string <span class="token operator">-></span> string <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        Note that the type signature is a little bit different to what we're
+        used to now! Let's break it down. On the left hand side, we have
+        <code>string -&gt; string</code>, which indicates that our function
+        takes a string, and produces another string. The
+        <code>&lt;fun&gt;</code> on the right hand side indicates that we have
+        created a function - it cannot be reduced down to a value until we pass
+        it some argument.
+      </p>
+      <p>
+        To use our function, we simply place our arguments after the name of the
+        function.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> greet <span class="token string">"George"</span><br><span class="token operator">-</span> <span class="token punctuation">:</span> string <span class="token operator">=</span> <span class="token string">"hello George"</span></code></pre>
+      <p>
+        Now that we have given the function a string, OCaml has been able to
+        reduce it down to just a string.
+      </p>
+      <p>Functions can of course have multiple arguments too:</p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> formal firstname lastname <span class="token operator">=</span> <span class="token string">"good morning "</span> <span class="token operator">^</span> firstname <span class="token operator">^</span> <span class="token string">" "</span> <span class="token operator">^</span> lastname<br><span class="token keyword">val</span> formal <span class="token punctuation">:</span> string <span class="token operator">-></span> string <span class="token operator">-></span> string <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        We can see that our type signature now indicates that
+        <em>two</em> strings must be given as arguments in order to produce the
+        string output.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> formal <span class="token string">"George"</span> <span class="token string">"Kaye"</span><br><span class="token operator">-</span> <span class="token punctuation">:</span> string <span class="token operator">=</span> <span class="token string">"good morning George Kaye"</span></code></pre>
+      <p>
+        What if we only apply this function to one of its arguments? Will it
+        break everything?
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> formal <span class="token string">"George"</span><br><span class="token operator">-</span> <span class="token punctuation">:</span> string <span class="token operator">-></span> string <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        Nope, we've just created another function! This is called a
+        <em>partial evaluation</em> of a function. In essence, we have created
+        an optimised version of the original <code>formal</code> function that
+        can only be used for people with the name <code>George</code> (a
+        fantastic name!). Partial evaluations are used all the time under the
+        hood in compilers.
+      </p>
+      <p>
+        In fact, rather than thinking about type signatures as a load of
+        arguments and one single output, we can split the type signature at any
+        point and provide some of the arguments, and get a function whose type
+        signature is anything left over.
+      </p>
+      <h2>If statements and pattern matching</h2>
+      <p>
+        A key programming concept is changing program flow with if statements,
+        and of course OCaml is no exception:
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> yesorno yes <span class="token operator">=</span> <span class="token keyword">if</span> yes <span class="token keyword">then</span> <span class="token string">"yes!"</span> <span class="token keyword">else</span> <span class="token string">"no..."</span><br><span class="token keyword">val</span> yesorno <span class="token punctuation">:</span> bool <span class="token operator">-></span> string <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        Note that OCaml has, as always, deduced that <code>yes</code> must be a
+        boolean because we are using it as a condition in our if statement.
+        However, if statements can get a bit unwieldy, especially if we start
+        chaining them together. Instead, it can be more elegant to use
+        <em>pattern matching</em>!
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> yesorno' yes <span class="token operator">=</span> <span class="token keyword">match</span> yes <span class="token keyword">with</span><br><span class="token operator">|</span> <span class="token boolean">true</span>  <span class="token operator">-></span> <span class="token string">"yes!"</span><br><span class="token operator">|</span> <span class="token boolean">false</span> <span class="token operator">-></span> <span class="token string">"no..."</span><br><span class="token keyword">val</span> yesorno' <span class="token punctuation">:</span> bool <span class="token operator">-></span> string <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        The behaviour and type signature of the function haven't changed, but
+        the possible values of <code>yes</code> are now laid out a lot more
+        neatly. You can see it's very similar to a switch statement in other
+        languages. Another thing we can do to make our function slightly more
+        concise is to drop the <code>match x with</code> if we are pattern
+        matching on the final argument:
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> yesorno'' <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token boolean">true</span>  <span class="token operator">-></span> <span class="token string">"yes!"</span><br><span class="token operator">|</span> <span class="token boolean">false</span> <span class="token operator">-></span> <span class="token string">"no..."</span><br><span class="token keyword">val</span> yesorno''<span class="token punctuation">:</span> bool <span class="token operator">-></span> string <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        You of course are not restricted to pattern matching with booleans! But
+        most types have far more possible cases than the two booleans. Writing
+        out all the possible cases would take a very long time, so we can use
+        <em>wildcard</em> cases to catch anything we haven't already pattern
+        matched on.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> is_zero <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token number">0</span> <span class="token operator">-></span> <span class="token boolean">true</span><br><span class="token operator">|</span> n <span class="token operator">-></span> <span class="token boolean">false</span><br><span class="token keyword">val</span> is_zero <span class="token operator">=</span> int <span class="token operator">-></span> bool <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        If we feed this function <code>0</code>, it will return true, but any
+        other number will reach the <code>n</code> case and therefore return
+        false. This means that every element of <code>int</code> will still be
+        mapped to an output, making this a <em>total function</em>. What if we
+        skip some cases?
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> binary <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token number">0</span> <span class="token operator">-></span> <span class="token boolean">false</span><br><span class="token operator">|</span> <span class="token number">1</span> <span class="token operator">-></span> <span class="token boolean">true</span><br>Characters <span class="token number">14</span><span class="token operator">-</span><span class="token number">14</span><span class="token punctuation">:</span><br>Warning <span class="token number">8</span><span class="token punctuation">:</span> this pattern matching is not exhaustive<span class="token punctuation">.</span><br>Here is an example <span class="token keyword">of</span> a case that is not matched<span class="token punctuation">:</span><br><span class="token number">2</span><br><span class="token keyword">val</span> binary <span class="token punctuation">:</span> int <span class="token operator">-></span> bool <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        OCaml is clever enough to realise that our pattern matching is not
+        <em>exhaustive</em> - there are cases (such as <code>2</code>) that do
+        not have a mapping and will cause an error if we try to input them.
+        Let's do it anyway!
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml">binary <span class="token number">2</span><span class="token punctuation">;;</span><br>Exception<span class="token punctuation">:</span> Match_failure <span class="token punctuation">(</span><span class="token string">"//toplevel//"</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">14</span><span class="token punctuation">)</span></code></pre>
+      <p>
+        Predictably, we have received an exception. But what if we only want to
+        define this function for those arguments and fail with a message saying
+        so? Fortunately this isn't hard to implement.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> binary <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token number">0</span> <span class="token operator">-></span> <span class="token boolean">false</span><br><span class="token operator">|</span> <span class="token number">1</span> <span class="token operator">-></span> <span class="token boolean">true</span><br><span class="token operator">|</span> <span class="token punctuation">_</span> <span class="token operator">-></span> failwith <span class="token string">"binary: invalid argument"</span><br><span class="token keyword">val</span> binary <span class="token punctuation">:</span> int <span class="token operator">-></span> bool <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        The underscore means that we don't care about the value of the argument,
+        only that we want anything that has not been matched yet to follow this
+        case. OCaml doesn't complain that our pattern matching isn't exhaustive
+        any more! However you should be careful when doing this, since it can
+        hide away bugs caused by non-exhaustive pattern matching.
+      </p>
+      <p>We can match on multiple arguments too:</p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> or_gate x y <span class="token operator">=</span> <span class="token keyword">match</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token keyword">with</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span>   <span class="token operator">-></span> <span class="token boolean">true</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>  <span class="token operator">-></span> <span class="token boolean">true</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span>  <span class="token operator">-></span> <span class="token boolean">true</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token boolean">false</span><br><span class="token keyword">val</span> or_gate <span class="token punctuation">:</span> bool <span class="token operator">-></span> bool <span class="token operator">-></span> bool <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        This isn't the most efficient way we can implement this though, since we
+        know that any pair of arguments that has at least one true will return
+        true. If we use the underscore wildcard again we can save ourself a
+        case:
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> or_gate x y <span class="token operator">=</span> <span class="token keyword">match</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token keyword">with</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">,</span><span class="token punctuation">_</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token boolean">true</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token punctuation">_</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token boolean">true</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token punctuation">_</span><span class="token punctuation">,</span><span class="token punctuation">_</span><span class="token punctuation">)</span>    <span class="token operator">-></span> <span class="token boolean">false</span><br><span class="token keyword">val</span> or_gate <span class="token punctuation">:</span> bool <span class="token operator">-></span> bool <span class="token operator">-></span> bool <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        An important thing to note with these functions is that even though we
+        are changing the program flow based on the inputs, the type signature is
+        always the same. A function of type <code>int -&gt; int</code> must
+        <em>always</em> return an <code>int</code>. It cannot return an
+        <code>int</code> for some values and <code>bool</code> for others!
+      </p>
+      <h2>Recursion</h2>
+      <p>
+        One of the most powerful mechanics in OCaml is <em>recursion</em>, which
+        allows us to call functions from inside themselves! It is the functional
+        parallel to <em>iteration</em> in imperative languages (e.g. using for
+        loops). A classic example of a recursive function is the factorial
+        function n! = n * n-1 * ... * 1.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> <span class="token keyword">rec</span> factorial <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token number">0</span> <span class="token operator">-></span> <span class="token number">1</span><br><span class="token operator">|</span> n <span class="token operator">-></span> factorial <span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> n<br><span class="token keyword">val</span> factorial <span class="token punctuation">:</span> int <span class="token operator">-></span> int</code></pre>
+      <p>
+        What is this function saying? It matches an <code>int</code> against two
+        cases. If it is equal to zero, we return 1, as 0! = 1. If it is any
+        other value, we use the fact that n! = (n-1!) * n. We call
+        <code>factorial (n-1)</code> to work out what (n-1)! is, then we
+        multiply it by n to get n!.
+      </p>
+      <p>
+        Also note the <code>rec</code> keyword at the start of the function.
+        This indicates to OCaml that we will be using this function again inside
+        its definition, so it needs to keep track of it. Otherwise we will just
+        receive a <code>Unbound value</code> error.
+      </p>
+      <p>
+        Another example of a recursive function is a function that computes the
+        maximum of two positive numbers recursively, by using the fact that if
+        one number is equal to zero, the other must either be greater or equal
+        to it.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> <span class="token keyword">rec</span> max x y <span class="token operator">=</span> <span class="token keyword">match</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token keyword">with</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token operator">-></span> y<br><span class="token operator">|</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">-></span> x<br><span class="token operator">|</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token operator">-></span> max <span class="token punctuation">(</span>x<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">(</span>y<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><br><span class="token keyword">val</span> max <span class="token punctuation">:</span> int <span class="token operator">-></span> int <span class="token operator">-></span> int</code></pre>
+      <p>
+        Obviously don't call this function with negative numbers otherwise you
+        might be here some time.
+      </p>
+      <h2>Polymorphism</h2>
+      <p>
+        Let's look at some different kinds of functions. What about a function
+        that simply returns whatever you give it? This is called the
+        <em>identity</em> function and while it may seem pointless, it can be
+        useful when reasoning about programs.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> id x <span class="token operator">=</span> x<br><span class="token keyword">val</span> id <span class="token punctuation">:</span> <span class="token type-variable function">'a</span> <span class="token operator">-></span> <span class="token type-variable function">'a</span> <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        Where did these <code>'a</code> types come from? We've not seen them
+        before! These are <em>polymorphic types</em>, which means they can be
+        <em>anything</em> and the function will still work! After all, a
+        function that returns its argument will not run any differently whether
+        we give it an <code>int</code>, a <code>bool</code>, a
+        <code>string</code>, or anything else! OCaml will automatically work
+        this out and use these special types with a <code>'</code> character
+        before them to show that they are polymorphic. We don't have to stick to
+        just <code>'a</code> either, take a look at this function that returns
+        the first one of its arguments:
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> first x y <span class="token operator">=</span> x<br><span class="token keyword">val</span> first <span class="token punctuation">:</span> <span class="token type-variable function">'a</span> <span class="token operator">-></span> <span class="token type-variable function">'b</span> <span class="token operator">-></span> <span class="token type-variable function">'a</span></code></pre>
+      <p>
+        We know that the output of the function must be the same type as its
+        input, so both of these are <code>'a</code>. However the second
+        argument's type is completely irrelevant. We can't just call it
+        <code>'a</code> as well because that would restrict it to being the same
+        type as the first argument, which we know isn't necessarily the case. So
+        we use a different polymorphic type <code>'b</code>.
+      </p>
+      <h2>Data structures</h2>
+      <p>
+        We can do a lot with our basic types. But to do more interesting things
+        we need to use <em>data structures</em>, several of which are built into
+        OCaml. Let's look at a few of them.
+      </p>
+      <h3>Tuples</h3>
+      <p>
+        Tuples can be used to contain any number of arbitrary data types, which
+        can be useful when we want to return multiple things at once from a
+        function. We have already seen 2-tuples, or pairs, when pattern matching
+        on multiple arguments!
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> pair <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><br><span class="token keyword">val</span> pair <span class="token punctuation">:</span> int <span class="token operator">*</span> bool <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><br><span class="token punctuation">#</span> <span class="token keyword">let</span> triple <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">,</span> <span class="token number">46</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><br><span class="token keyword">val</span> triple <span class="token punctuation">:</span> string <span class="token operator">*</span> int <span class="token operator">*</span> bool <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">,</span> <span class="token number">46</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span></code></pre>
+      <p>
+        A tuple's type signature shows the types contained within separated by
+        the <code>*</code> symbol. Their length is fixed in their type signature
+        - functions cannot return arbitrary tuples but must always return a
+        pair, or a triple, and so on.
+      </p>
+      <p>You can pattern match on tuples to access their elements:</p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> swap <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token punctuation">(</span>y<span class="token punctuation">,</span> x<span class="token punctuation">)</span><br><span class="token keyword">val</span> swap <span class="token operator">=</span> <span class="token type-variable function">'a</span> <span class="token operator">*</span> <span class="token type-variable function">'b</span> <span class="token operator">-></span> <span class="token type-variable function">'b</span> <span class="token operator">*</span> <span class="token type-variable function">'a</span></code></pre>
+      <p>
+        OCaml can use type inference to deduce the types inside a tuple, even if
+        it can't deduce them all. For example, this function that selects either
+        the second or third element of the triple depending on the first
+        restricts its first element to <code>bool</code>, and since functions
+        must always return the same type, the second and third elements must
+        also be the same type.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> select <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">,</span> x<span class="token punctuation">,</span> <span class="token punctuation">_</span><span class="token punctuation">)</span>  <span class="token operator">-></span> x<br><span class="token operator">|</span> <span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token punctuation">_</span><span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token operator">-></span> y<br><span class="token keyword">val</span> select <span class="token punctuation">:</span> bool <span class="token operator">*</span> <span class="token type-variable function">'a</span> <span class="token operator">*</span> <span class="token type-variable function">'a</span> <span class="token operator">-></span> <span class="token type-variable function">'a</span> <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        You might be thinking that this looks very similar to just using n
+        arguments for a function, and indeed it is! A function taking an n-tuple
+        as an argument is <em>isomorphic</em> to a function taking n arguments,
+        which means we can switch between them without losing any data. Changing
+        a function that takes a tuple as an argument into one that takes
+        multiple arguments is called <em>currying</em>, after
+        <a href="https://en.wikipedia.org/wiki/Haskell_Curry">Haskell Curry</a>.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> swap_curried x y <span class="token operator">=</span> <span class="token keyword">match</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token keyword">with</span><br><span class="token operator">|</span> <span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token punctuation">(</span>y<span class="token punctuation">,</span> x<span class="token punctuation">)</span><br><span class="token keyword">val</span> swap_curried <span class="token punctuation">:</span> <span class="token type-variable function">'a</span> <span class="token operator">-></span> <span class="token type-variable function">'b</span> <span class="token operator">-></span> <span class="token type-variable function">'b</span> <span class="token operator">*</span> <span class="token type-variable function">'a</span> <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <h3>Lists</h3>
+      <p>
+        Lists are another data type that are used very frequently in OCaml. They
+        are similar to arrays, with a key difference. In arrays, you can access
+        any element in one operation. In lists, you can only access the first
+        element (called the <em>head</em> of the list), and the 'rest' of the
+        list as a sublist (called the <em>tail</em>). Lists can either be empty
+        or take the structure <code>x :: xs</code>, where <code>x</code> is the
+        head and <code>xs</code> is the tail. In the
+        <code>numbers</code> example, <code>1</code> is the head and
+        <code>[2;3;4;5]</code> is the tail.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> empty <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><br><span class="token keyword">val</span> empty <span class="token punctuation">:</span> <span class="token type-variable function">'a</span> list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><br><span class="token punctuation">#</span> <span class="token keyword">let</span> singleton <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token boolean">true</span><span class="token punctuation">]</span><br><span class="token keyword">val</span> singleton <span class="token punctuation">:</span> bool list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token boolean">true</span><span class="token punctuation">]</span><br><span class="token punctuation">#</span> <span class="token keyword">let</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">2</span><span class="token punctuation">;</span><span class="token number">3</span><span class="token punctuation">;</span><span class="token number">4</span><span class="token punctuation">;</span><span class="token number">5</span><span class="token punctuation">]</span><br><span class="token keyword">val</span> numbers <span class="token punctuation">:</span> int list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">2</span><span class="token punctuation">;</span><span class="token number">3</span><span class="token punctuation">;</span><span class="token number">4</span><span class="token punctuation">;</span><span class="token number">5</span><span class="token punctuation">]</span></code></pre>
+      <p>List concatenation is performed with the <code>@</code> operator.</p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> biglist <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">@</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">;</span><span class="token number">4</span><span class="token punctuation">]</span><br><span class="token keyword">val</span> biglist <span class="token punctuation">:</span> int list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">2</span><span class="token punctuation">;</span><span class="token number">3</span><span class="token punctuation">;</span><span class="token number">4</span><span class="token punctuation">]</span></code></pre>
+      <p>
+        We can pattern match on lists based on whether they are empty or of the
+        form <code>x :: xs</code>. For example, we can write functions that
+        extract the head or the tail of a list, keeping in mind that these
+        operations will fail on an empty list:
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> head <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>        <span class="token operator">-></span> failwith <span class="token string">"empty list"</span><br><span class="token operator">|</span> <span class="token punctuation">(</span>x <span class="token punctuation">::</span> xs<span class="token punctuation">)</span> <span class="token operator">-></span> x<br><span class="token keyword">val</span> head <span class="token punctuation">:</span> <span class="token type-variable function">'a</span> list <span class="token operator">-></span> <span class="token type-variable function">'a</span> <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span><br><br><span class="token punctuation">#</span> <span class="token keyword">let</span> tail <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>        <span class="token operator">-></span> failwith <span class="token string">"empty list"</span><br><span class="token operator">|</span> <span class="token punctuation">(</span>x <span class="token punctuation">::</span> xs<span class="token punctuation">)</span> <span class="token operator">-></span> xs<br><span class="token keyword">val</span> tail <span class="token punctuation">:</span> <span class="token type-variable function">'a</span> list <span class="token operator">-></span> <span class="token type-variable function">'a</span> list <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        Note that the head of the list is just an element of type
+        <code>'a</code>, whereas the tail of a list is another list
+        <code>'a list</code>.
+      </p>
+      <p>
+        A common operation on lists is to find their length, which we can do
+        recursively. An empty list has length 0, and other lists have length 1 +
+        the length of their tail.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> <span class="token keyword">rec</span> length <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>        <span class="token operator">-></span> <span class="token number">0</span><br><span class="token operator">|</span> <span class="token punctuation">(</span>x <span class="token punctuation">::</span> xs<span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token number">1</span> <span class="token operator">+</span> length xs<br><span class="token keyword">val</span> length <span class="token punctuation">:</span> <span class="token type-variable function">'a</span> list <span class="token operator">-></span> int <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <h3>Binary trees</h3>
+      <p>
+        Both tuples and lists are built into OCaml by default. We'll now look at
+        how to define a slightly more advanced data structure, called
+        <em>binary trees</em>. A binary tree has nodes, which must have two
+        children (hence the binary part of their name), and leaves, which have
+        no children. The node at the 'bottom' of the tree is called the
+        <em>root</em>.
+      </p>
+      <pre><code>        .   &lt;-- root of the tree
        / \
       .   .   &lt;-- nodes
      / \ / \
     4  1 5  7   &lt;-- leaves
 </code></pre>
-<p>How do we define these in OCaml? We can use the <code>type</code> syntax.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">type</span> intTree <span class="token operator">=</span><br><span class="token operator">|</span> Leaf <span class="token keyword">of</span> int<br><span class="token operator">|</span> Node <span class="token keyword">of</span> intTree <span class="token operator">*</span> intTree<br><span class="token keyword">type</span> intTree <span class="token operator">=</span> Leaf <span class="token keyword">of</span> int <span class="token operator">|</span> Node <span class="token keyword">of</span> intTree <span class="token operator">*</span> intTree</code></pre>
-<p>This type definition means that an intTree can be either a <code>Leaf</code> containing an <code>int</code> OR a <code>Node</code> containing a pair of <code>intTree</code>s (note the <code>*</code> we saw earlier indicating a tuple). Because the definition of a <code>Node</code> contains more <code>intTrees</code>, this is a recursive data structure, like lists.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> leaf <span class="token operator">=</span> Leaf <span class="token number">5</span><br><span class="token keyword">val</span> leaf <span class="token punctuation">:</span> intTree <span class="token operator">=</span> Leaf <span class="token number">5</span><span class="token punctuation">;;</span><br><span class="token punctuation">#</span> <span class="token keyword">let</span> tree <span class="token operator">=</span> Node <span class="token punctuation">(</span>Node <span class="token punctuation">(</span>Leaf <span class="token number">4</span><span class="token punctuation">,</span> Leaf <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Node <span class="token punctuation">(</span>Leaf <span class="token number">5</span><span class="token punctuation">,</span> Leaf <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">)</span><br><span class="token keyword">val</span> tree <span class="token punctuation">:</span> intTree <span class="token operator">=</span> Node <span class="token punctuation">(</span>Node <span class="token punctuation">(</span>Leaf <span class="token number">4</span><span class="token punctuation">,</span> Leaf <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Node <span class="token punctuation">(</span>Leaf <span class="token number">5</span><span class="token punctuation">,</span> Leaf <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
-<p>As with lists, we can easily do pattern matching on our new data structure:</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> is_leaf <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> Leaf x              <span class="token operator">-></span> <span class="token boolean">true</span><br><span class="token operator">|</span> Node <span class="token punctuation">(</span>left<span class="token punctuation">,</span> right<span class="token punctuation">)</span>  <span class="token operator">-></span> <span class="token boolean">false</span><br><span class="token keyword">val</span> is_leaf <span class="token punctuation">:</span> intTree <span class="token operator">-></span> bool <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>An useful operation on binary trees is to <em>traverse</em> them and collect any leaves we encounter in a list. We're going to need recursion again!</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> <span class="token keyword">rec</span> traverse <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> Leaf x             <span class="token operator">-></span> <span class="token punctuation">[</span>x<span class="token punctuation">]</span> <br><span class="token operator">|</span> Node <span class="token punctuation">(</span>left<span class="token punctuation">,</span> right<span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token punctuation">(</span>traverse left<span class="token punctuation">)</span> <span class="token operator">@</span> <span class="token punctuation">(</span>traverse right<span class="token punctuation">)</span><br><span class="token keyword">val</span> traverse <span class="token punctuation">:</span> intTree <span class="token operator">-></span> int list <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>If this function is given a leaf, it creates a single-element list with that element in it. If it is given a node, it must traverse the left and right subtrees and find all the elements. Then it has to concatenate these two lists together.</p>
-<p>Another property of trees is their <em>height</em>. It is defined as the longest path from the root of a tree to a leaf. So the height of a leaf is 0 since no path is required, and the height of a node is 1 (for the current node) + the height of its tallest subtree.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> <span class="token keyword">rec</span> height <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> Leaf x             <span class="token operator">-></span> <span class="token number">0</span><br><span class="token operator">|</span> Node <span class="token punctuation">(</span>left<span class="token punctuation">,</span> right<span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token number">1</span> <span class="token operator">+</span> max <span class="token punctuation">(</span>height left<span class="token punctuation">)</span> <span class="token punctuation">(</span>height right<span class="token punctuation">)</span><br><span class="token keyword">val</span> height <span class="token punctuation">:</span> intTree <span class="token operator">-></span> int <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>We don't even have to restrict ourselves to trees of <code>int</code>s. Remember our polymorphic types <code>'a</code> and so on? We can use them to define polymorphic data structures.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token keyword">type</span> <span class="token type-variable function">'a</span> tree <span class="token operator">=</span><br><span class="token operator">|</span> Leaf <span class="token keyword">of</span> <span class="token type-variable function">'a</span><br><span class="token operator">|</span> Node <span class="token keyword">of</span> <span class="token type-variable function">'a</span> tree <span class="token operator">*</span> <span class="token type-variable function">'a</span> tree<br><span class="token keyword">type</span> <span class="token type-variable function">'a</span> tree <span class="token operator">=</span> Leaf <span class="token keyword">of</span> <span class="token type-variable function">'a</span> <span class="token operator">|</span> Node <span class="token keyword">of</span> <span class="token type-variable function">'a</span> tree <span class="token operator">*</span> <span class="token type-variable function">'a</span> tree</code></pre>
-<p>Now we can define trees of whatever type we like!</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> bools <span class="token operator">=</span> Node <span class="token punctuation">(</span>Leaf <span class="token boolean">true</span><span class="token punctuation">,</span> Node <span class="token punctuation">(</span>Leaf <span class="token boolean">false</span><span class="token punctuation">,</span> Leaf <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">)</span><br><span class="token keyword">val</span> bools <span class="token punctuation">:</span> bool tree <span class="token operator">=</span> Node <span class="token punctuation">(</span>Leaf <span class="token boolean">true</span><span class="token punctuation">,</span> Node <span class="token punctuation">(</span>Leaf <span class="token boolean">false</span><span class="token punctuation">,</span> Leaf <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">)</span><br><span class="token punctuation">#</span> <span class="token keyword">let</span> strings <span class="token operator">=</span> Node <span class="token punctuation">(</span>Node <span class="token punctuation">(</span>Leaf <span class="token string">"OCaml"</span><span class="token punctuation">,</span> Leaf <span class="token string">"is"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Leaf <span class="token string">"great!"</span><span class="token punctuation">)</span><br><span class="token keyword">val</span> strings <span class="token punctuation">:</span> string tree <span class="token operator">=</span> Node <span class="token punctuation">(</span>Node <span class="token punctuation">(</span>Leaf <span class="token string">"OCaml"</span><span class="token punctuation">,</span> Leaf <span class="token string">"is"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Leaf <span class="token string">"great!"</span><span class="token punctuation">)</span></code></pre>
-<p>If we redefine our functions from earlier we can see that OCaml works out that our <code>'a tree</code> definition is more general so it uses it in the type signature.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> <span class="token keyword">rec</span> traverse <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> Leaf x             <span class="token operator">-></span> <span class="token punctuation">[</span>x<span class="token punctuation">]</span> <br><span class="token operator">|</span> Node <span class="token punctuation">(</span>left<span class="token punctuation">,</span> right<span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token punctuation">(</span>traverse left<span class="token punctuation">)</span> <span class="token operator">@</span> <span class="token punctuation">(</span>traverse right<span class="token punctuation">)</span><br><span class="token keyword">val</span> traverse <span class="token punctuation">:</span> <span class="token type-variable function">'a</span> tree <span class="token operator">-></span> <span class="token type-variable function">'a</span> list <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span><br><br><span class="token punctuation">#</span> traverse strings<br><span class="token operator">-</span> <span class="token punctuation">:</span> string list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"OCaml"</span><span class="token punctuation">;</span> <span class="token string">"is"</span><span class="token punctuation">;</span> <span class="token string">"great!"</span><span class="token punctuation">]</span></code></pre>
-<h2>Higher order functions</h2>
-<p>Let's go back to functions for a little bit. When defining functions, we don't actually need to restrict ourselves to things like <code>int</code> or <code>string</code>. We can actually take functions as arguments too! A function that does this is called a <em>higher order function</em>. Let's create a function that takes a function as an argument, and applies it twice to some other argument.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> twice f x <span class="token operator">=</span> f <span class="token punctuation">(</span>f x<span class="token punctuation">)</span><br><span class="token keyword">val</span> apply2 <span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token type-variable function">'a</span> <span class="token operator">-></span> <span class="token type-variable function">'a</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token type-variable function">'a</span> <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>Our polymorphic types have returned. We can see that the first argument to our function is <code>('a -&gt; 'a)</code>, a function type that takes an argument of type <code>'a</code> and returns something of that same type. Why does the output have to be the same type as the input? Since we are applying the function twice, whatever comes out of it must also be able to go back into it, otherwise the function wouldn't work! The second argument is of type <code>'a</code>, which also makes sense since we need to feed it to our function.</p>
-<p>Let's create a function that fits the pattern <code>('a -&gt; 'a)</code> and partially apply the <code>twice</code> function.</p>
-<pre class="language-ocaml"><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> add2 x <span class="token operator">=</span> x <span class="token operator">+</span> <span class="token number">2</span><br><span class="token keyword">val</span> add2 <span class="token punctuation">:</span> int <span class="token operator">-></span> int <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span><br><br>twice add2<br><span class="token operator">-</span> <span class="token punctuation">:</span> int <span class="token operator">-></span> int <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>We can see that the remainder of the type signature, the <code>'a -&gt; 'a</code>, has changed into an <code>int -&gt; int</code> to suit the types we have given.</p>
-<h3>Anonymous functions</h3>
-<p>When dealing with higher order functions, it can be tiresome to have to separately define functions to pass to other functions, especially if they are only used once. To save ourselves time, we can use <em>anonymous functions</em> (also known as <em>lambda expressions</em>) that we can pass directly to the function. These are functions that do not have a name, that we define on the spot to be used once. For example, rather than explicitly defining the <code>add2</code> function, we could have used an anonymous function:</p>
-<pre class="language-ocaml"><code class="language-ocaml">twice <span class="token punctuation">(</span><span class="token keyword">fun</span> x <span class="token operator">-></span> x <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">)</span><br><span class="token operator">-</span> <span class="token punctuation">:</span> int <span class="token operator">-></span> int <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
-<p>Think of <code>fun x -&gt; x + 2</code> as a function that takes one argument <code>x</code>, and inserts it into the function on the other side of the arrow.</p>
-
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="/scripts/scripts.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124613172-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-124613172-1');
-  </script>
-</body>
+      <p>
+        How do we define these in OCaml? We can use the
+        <code>type</code> syntax.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">type</span> intTree <span class="token operator">=</span><br><span class="token operator">|</span> Leaf <span class="token keyword">of</span> int<br><span class="token operator">|</span> Node <span class="token keyword">of</span> intTree <span class="token operator">*</span> intTree<br><span class="token keyword">type</span> intTree <span class="token operator">=</span> Leaf <span class="token keyword">of</span> int <span class="token operator">|</span> Node <span class="token keyword">of</span> intTree <span class="token operator">*</span> intTree</code></pre>
+      <p>
+        This type definition means that an intTree can be either a
+        <code>Leaf</code> containing an <code>int</code> OR a
+        <code>Node</code> containing a pair of <code>intTree</code>s (note the
+        <code>*</code> we saw earlier indicating a tuple). Because the
+        definition of a <code>Node</code> contains more <code>intTrees</code>,
+        this is a recursive data structure, like lists.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> leaf <span class="token operator">=</span> Leaf <span class="token number">5</span><br><span class="token keyword">val</span> leaf <span class="token punctuation">:</span> intTree <span class="token operator">=</span> Leaf <span class="token number">5</span><span class="token punctuation">;;</span><br><span class="token punctuation">#</span> <span class="token keyword">let</span> tree <span class="token operator">=</span> Node <span class="token punctuation">(</span>Node <span class="token punctuation">(</span>Leaf <span class="token number">4</span><span class="token punctuation">,</span> Leaf <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Node <span class="token punctuation">(</span>Leaf <span class="token number">5</span><span class="token punctuation">,</span> Leaf <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">)</span><br><span class="token keyword">val</span> tree <span class="token punctuation">:</span> intTree <span class="token operator">=</span> Node <span class="token punctuation">(</span>Node <span class="token punctuation">(</span>Leaf <span class="token number">4</span><span class="token punctuation">,</span> Leaf <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Node <span class="token punctuation">(</span>Leaf <span class="token number">5</span><span class="token punctuation">,</span> Leaf <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+      <p>
+        As with lists, we can easily do pattern matching on our new data
+        structure:
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> is_leaf <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> Leaf x              <span class="token operator">-></span> <span class="token boolean">true</span><br><span class="token operator">|</span> Node <span class="token punctuation">(</span>left<span class="token punctuation">,</span> right<span class="token punctuation">)</span>  <span class="token operator">-></span> <span class="token boolean">false</span><br><span class="token keyword">val</span> is_leaf <span class="token punctuation">:</span> intTree <span class="token operator">-></span> bool <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        An useful operation on binary trees is to <em>traverse</em> them and
+        collect any leaves we encounter in a list. We're going to need recursion
+        again!
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> <span class="token keyword">rec</span> traverse <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> Leaf x             <span class="token operator">-></span> <span class="token punctuation">[</span>x<span class="token punctuation">]</span> <br><span class="token operator">|</span> Node <span class="token punctuation">(</span>left<span class="token punctuation">,</span> right<span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token punctuation">(</span>traverse left<span class="token punctuation">)</span> <span class="token operator">@</span> <span class="token punctuation">(</span>traverse right<span class="token punctuation">)</span><br><span class="token keyword">val</span> traverse <span class="token punctuation">:</span> intTree <span class="token operator">-></span> int list <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        If this function is given a leaf, it creates a single-element list with
+        that element in it. If it is given a node, it must traverse the left and
+        right subtrees and find all the elements. Then it has to concatenate
+        these two lists together.
+      </p>
+      <p>
+        Another property of trees is their <em>height</em>. It is defined as the
+        longest path from the root of a tree to a leaf. So the height of a leaf
+        is 0 since no path is required, and the height of a node is 1 (for the
+        current node) + the height of its tallest subtree.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> <span class="token keyword">rec</span> height <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> Leaf x             <span class="token operator">-></span> <span class="token number">0</span><br><span class="token operator">|</span> Node <span class="token punctuation">(</span>left<span class="token punctuation">,</span> right<span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token number">1</span> <span class="token operator">+</span> max <span class="token punctuation">(</span>height left<span class="token punctuation">)</span> <span class="token punctuation">(</span>height right<span class="token punctuation">)</span><br><span class="token keyword">val</span> height <span class="token punctuation">:</span> intTree <span class="token operator">-></span> int <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        We don't even have to restrict ourselves to trees of <code>int</code>s.
+        Remember our polymorphic types <code>'a</code> and so on? We can use
+        them to define polymorphic data structures.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token keyword">type</span> <span class="token type-variable function">'a</span> tree <span class="token operator">=</span><br><span class="token operator">|</span> Leaf <span class="token keyword">of</span> <span class="token type-variable function">'a</span><br><span class="token operator">|</span> Node <span class="token keyword">of</span> <span class="token type-variable function">'a</span> tree <span class="token operator">*</span> <span class="token type-variable function">'a</span> tree<br><span class="token keyword">type</span> <span class="token type-variable function">'a</span> tree <span class="token operator">=</span> Leaf <span class="token keyword">of</span> <span class="token type-variable function">'a</span> <span class="token operator">|</span> Node <span class="token keyword">of</span> <span class="token type-variable function">'a</span> tree <span class="token operator">*</span> <span class="token type-variable function">'a</span> tree</code></pre>
+      <p>Now we can define trees of whatever type we like!</p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> bools <span class="token operator">=</span> Node <span class="token punctuation">(</span>Leaf <span class="token boolean">true</span><span class="token punctuation">,</span> Node <span class="token punctuation">(</span>Leaf <span class="token boolean">false</span><span class="token punctuation">,</span> Leaf <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">)</span><br><span class="token keyword">val</span> bools <span class="token punctuation">:</span> bool tree <span class="token operator">=</span> Node <span class="token punctuation">(</span>Leaf <span class="token boolean">true</span><span class="token punctuation">,</span> Node <span class="token punctuation">(</span>Leaf <span class="token boolean">false</span><span class="token punctuation">,</span> Leaf <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">)</span><br><span class="token punctuation">#</span> <span class="token keyword">let</span> strings <span class="token operator">=</span> Node <span class="token punctuation">(</span>Node <span class="token punctuation">(</span>Leaf <span class="token string">"OCaml"</span><span class="token punctuation">,</span> Leaf <span class="token string">"is"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Leaf <span class="token string">"great!"</span><span class="token punctuation">)</span><br><span class="token keyword">val</span> strings <span class="token punctuation">:</span> string tree <span class="token operator">=</span> Node <span class="token punctuation">(</span>Node <span class="token punctuation">(</span>Leaf <span class="token string">"OCaml"</span><span class="token punctuation">,</span> Leaf <span class="token string">"is"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Leaf <span class="token string">"great!"</span><span class="token punctuation">)</span></code></pre>
+      <p>
+        If we redefine our functions from earlier we can see that OCaml works
+        out that our <code>'a tree</code> definition is more general so it uses
+        it in the type signature.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> <span class="token keyword">rec</span> traverse <span class="token operator">=</span> <span class="token keyword">function</span><br><span class="token operator">|</span> Leaf x             <span class="token operator">-></span> <span class="token punctuation">[</span>x<span class="token punctuation">]</span> <br><span class="token operator">|</span> Node <span class="token punctuation">(</span>left<span class="token punctuation">,</span> right<span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token punctuation">(</span>traverse left<span class="token punctuation">)</span> <span class="token operator">@</span> <span class="token punctuation">(</span>traverse right<span class="token punctuation">)</span><br><span class="token keyword">val</span> traverse <span class="token punctuation">:</span> <span class="token type-variable function">'a</span> tree <span class="token operator">-></span> <span class="token type-variable function">'a</span> list <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span><br><br><span class="token punctuation">#</span> traverse strings<br><span class="token operator">-</span> <span class="token punctuation">:</span> string list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"OCaml"</span><span class="token punctuation">;</span> <span class="token string">"is"</span><span class="token punctuation">;</span> <span class="token string">"great!"</span><span class="token punctuation">]</span></code></pre>
+      <h2>Higher order functions</h2>
+      <p>
+        Let's go back to functions for a little bit. When defining functions, we
+        don't actually need to restrict ourselves to things like
+        <code>int</code> or <code>string</code>. We can actually take functions
+        as arguments too! A function that does this is called a
+        <em>higher order function</em>. Let's create a function that takes a
+        function as an argument, and applies it twice to some other argument.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> twice f x <span class="token operator">=</span> f <span class="token punctuation">(</span>f x<span class="token punctuation">)</span><br><span class="token keyword">val</span> apply2 <span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token type-variable function">'a</span> <span class="token operator">-></span> <span class="token type-variable function">'a</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token type-variable function">'a</span> <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        Our polymorphic types have returned. We can see that the first argument
+        to our function is <code>('a -&gt; 'a)</code>, a function type that
+        takes an argument of type <code>'a</code> and returns something of that
+        same type. Why does the output have to be the same type as the input?
+        Since we are applying the function twice, whatever comes out of it must
+        also be able to go back into it, otherwise the function wouldn't work!
+        The second argument is of type <code>'a</code>, which also makes sense
+        since we need to feed it to our function.
+      </p>
+      <p>
+        Let's create a function that fits the pattern
+        <code>('a -&gt; 'a)</code> and partially apply the
+        <code>twice</code> function.
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml"><span class="token punctuation">#</span> <span class="token keyword">let</span> add2 x <span class="token operator">=</span> x <span class="token operator">+</span> <span class="token number">2</span><br><span class="token keyword">val</span> add2 <span class="token punctuation">:</span> int <span class="token operator">-></span> int <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span><br><br>twice add2<br><span class="token operator">-</span> <span class="token punctuation">:</span> int <span class="token operator">-></span> int <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        We can see that the remainder of the type signature, the
+        <code>'a -&gt; 'a</code>, has changed into an
+        <code>int -&gt; int</code> to suit the types we have given.
+      </p>
+      <h3>Anonymous functions</h3>
+      <p>
+        When dealing with higher order functions, it can be tiresome to have to
+        separately define functions to pass to other functions, especially if
+        they are only used once. To save ourselves time, we can use
+        <em>anonymous functions</em> (also known as <em>lambda expressions</em>)
+        that we can pass directly to the function. These are functions that do
+        not have a name, that we define on the spot to be used once. For
+        example, rather than explicitly defining the <code>add2</code> function,
+        we could have used an anonymous function:
+      </p>
+      <pre
+        class="language-ocaml"
+      ><code class="language-ocaml">twice <span class="token punctuation">(</span><span class="token keyword">fun</span> x <span class="token operator">-></span> x <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">)</span><br><span class="token operator">-</span> <span class="token punctuation">:</span> int <span class="token operator">-></span> int <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token keyword">fun</span><span class="token operator">></span></code></pre>
+      <p>
+        Think of <code>fun x -&gt; x + 2</code> as a function that takes one
+        argument <code>x</code>, and inserts it into the function on the other
+        side of the arrow.
+      </p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/scripts/scripts.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-124613172-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-124613172-1");
+    </script>
+  </body>
 </html>
