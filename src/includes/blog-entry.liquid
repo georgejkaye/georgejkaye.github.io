@@ -1,6 +1,6 @@
 <div class="card post">
     <div class="post-header">
-        <a href={{ post.url }}>
+        <a href="{{ post.url }}">
             <div class="post-titles">
                 <div class="post-title">
                     {% if post.data.series %}
@@ -32,7 +32,7 @@
     <div class="post-content">
         {% if post.data.image %}
         <div class="post-img">
-            <img src={{ post.data.image }} alt={{ post.data.alt }}/>
+            <img src="{{ post.data.image }}" alt="{{ post.data.alt }}"/>
         </div>
         {% endif %}
         <div class="post-preview">
@@ -40,7 +40,7 @@
             {{ post.data.tagline }}
             </div>
             <div class="post-readmore">
-                <a href={{ post.url }} title="Read blog post '{{ post.data.title }}'">Read more</a>
+                <a href="{{ post.url }}" title="Read blog post '{{ post.data.title }}'">Read more</a>
             </div>
         </div>
   </div>

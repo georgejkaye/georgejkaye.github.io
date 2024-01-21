@@ -18,6 +18,8 @@ jobs:
         run: yarn build:eleventy
       - name: Compile sass
         run: yarn build:sass
+      - name: Prettify code
+        run: yarn format
       - name: Push to main branch
         uses: s0/git-publish-subdir-action@develop
         env:

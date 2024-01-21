@@ -10,7 +10,8 @@
     "watch:sass": "npx sass sass:build/css --watch",
     "start": "npm run watch:eleventy & npm run watch:sass",
     "build:eleventy": "npx @11ty/eleventy",
-    "build:sass": "npx sass sass:build/css"
+    "build:sass": "npx sass sass:build/css",
+    "format": "npx prettier --ignore-path .prettierignore --write build"
   },
   "dependencies": {
     "@11ty/eleventy": "2",
@@ -20,6 +21,7 @@
     "markdown-it-attrs": "^4.1.4",
     "moment": "^2.29.4",
     "outdent": "^0.8.0",
+    "prettier": "^3.2.4",
     "sass": "^1.43.4"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 const outdent = require("outdent")
 const moment = require("moment")
 
-const navLink = `<div class="nav-link"><a href={{ link.target }}>{{ link.title }}</a></div>`
+const navLink = `<div class="nav-link"><a href="{{ link.target }}">{{ link.title }}</a></div>`
 
 const button = (element, array, target, title, text) => {
     array.push(
@@ -192,7 +192,7 @@ const visit = (visit) => {
 const teaching = (teaching) => {
     var first = outdent`
             <div class="module-title">
-                <a href=${teaching.web} title="Module page for ${teaching.title}">${teaching.title}</a>
+                <a href="${teaching.web}" title="Module page for ${teaching.title}">${teaching.title}</a>
             </div>
             <div>
                 <span class="module-term">${teaching.term}</span>
