@@ -1,19 +1,17 @@
 /**
  * Functions to generate terms from various fragments of the lambda calculus.
- * 
+ *
  * @author George Kaye
  */
 
 var varName = 0;
 
 function genVarName() {
-    varName += 1;
-    return "b" + varName.toString();
+  varName += 1;
+  return "b" + varName.toString();
 }
 
-var memoisedTerms = [
-    []
-]
+var memoisedTerms = [[]];
 
 /**
  * Generate all pure lambda terms with a given number of subterms and free variables.
@@ -22,11 +20,9 @@ var memoisedTerms = [
  * @return {Object[]} The array of generated terms.
  */
 function generateTerms(n, k) {
+  varName = 0;
 
-    varName = 0;
-
-    return generateTermsHelper(n, k, 0);
-
+  return generateTermsHelper(n, k, 0);
 }
 
 /**
@@ -36,94 +32,86 @@ function generateTerms(n, k) {
  * @return {Object[]} The array of generated terms.
  */
 function generateTermsHelper(n, k, p) {
+  if (
+    memoisedTerms[n] != undefined &&
+    memoisedTerms[n][k.length] != undefined
+  ) {
+    var memo = memoisedTerms[n][k.length];
 
-    if (memoisedTerms[n] != undefined && memoisedTerms[n][k.length] != undefined) {
-        var memo = memoisedTerms[n][k.length];
+    for (var i = 0; i < memo.length; i++) {
+      if (arraysEqual(memo[i][0], k)) {
+        return [...memo[i][1]];
+      }
+    }
 
-        for (var i = 0; i < memo.length; i++) {
-            if (arraysEqual(memo[i][0], k)) {
-                return [...memo[i][1]];
-            }
+    var memoVars = memo[0][0];
+    var memoTerms = memo[0][1];
+    var newTerms = [];
+
+    for (var i = 0; i < memoTerms.length; i++) {
+      var workingTerm = memoTerms[i];
+
+      for (var j = 0; j < k.length; j++) {
+        workingTerm = substituteVariable(k[j], memoVars[j], workingTerm);
+      }
+
+      newTerms.push(workingTerm);
+    }
+
+    memo[memo.length] = [k, [...newTerms]];
+    return newTerms;
+  }
+
+  var terms = [];
+
+  switch (n) {
+    case 0:
+      break;
+    case 1:
+      for (i = 0; i <= k - 1; i++) {
+        terms[i] = new LambdaVariable(i, "");
+      }
+      break;
+    default:
+      var absTerms = generateTermsHelper(n - 1, k + 1, p);
+
+      for (i = 0; i < absTerms.length; i++) {
+        absTerms[i] = new LambdaAbstraction(absTerms[i], genVarName());
+      }
+
+      var appTerms = [];
+      var x = 0;
+
+      for (var m = 1; m <= n - 2; m++) {
+        var lhsTerms = generateTermsHelper(m, k, p);
+        var rhsTerms = generateTermsHelper(n - 1 - m, k, p + 1);
+
+        for (a = 0; a < lhsTerms.length; a++) {
+          for (b = 0; b < rhsTerms.length; b++) {
+            appTerms[x] = new LambdaApplication(lhsTerms[a], rhsTerms[b]);
+            x++;
+          }
         }
+      }
 
-        var memoVars = memo[0][0];
-        var memoTerms = memo[0][1];
-        var newTerms = [];
+      terms = absTerms.concat(appTerms);
+      break;
+  }
 
-        for (var i = 0; i < memoTerms.length; i++) {
-            var workingTerm = memoTerms[i];
+  if (memoisedTerms[n] == undefined) {
+    memoisedTerms[n] = [];
+  }
 
-            for (var j = 0; j < k.length; j++) {
-                workingTerm = substituteVariable(k[j], memoVars[j], workingTerm);
-            }
+  if (memoisedTerms[n][k.length] == undefined) {
+    memoisedTerms[n][k.length] = [];
+  }
 
-            newTerms.push(workingTerm);
+  memoisedTerms[n][k.length].push([k, [...terms]]);
 
-        }
-
-        memo[memo.length] = [k, [...newTerms]];
-        return newTerms;
-
-    }
-
-    var terms = [];
-
-    switch (n) {
-        case 0:
-            break;
-        case 1:
-            for (i = 0; i <= k - 1; i++) {
-                terms[i] = new LambdaVariable(i, "");
-            }
-            break;
-        default:
-
-            var absTerms = generateTermsHelper(n - 1, k + 1, p);
-
-            for (i = 0; i < absTerms.length; i++) {
-                absTerms[i] = new LambdaAbstraction(absTerms[i], genVarName());
-            }
-
-            var appTerms = [];
-            var x = 0;
-
-            for (var m = 1; m <= n - 2; m++) {
-
-                var lhsTerms = generateTermsHelper(m, k, p);
-                var rhsTerms = generateTermsHelper(n - 1 - m, k, p + 1);
-
-                for (a = 0; a < lhsTerms.length; a++) {
-                    for (b = 0; b < rhsTerms.length; b++) {
-
-                        appTerms[x] = new LambdaApplication(lhsTerms[a], rhsTerms[b]);
-                        x++;
-                    }
-                }
-            }
-
-            terms = absTerms.concat(appTerms);
-            break;
-
-    }
-
-    if (memoisedTerms[n] == undefined) {
-        memoisedTerms[n] = [];
-    }
-
-    if (memoisedTerms[n][k.length] == undefined) {
-        memoisedTerms[n][k.length] = [];
-    }
-
-    memoisedTerms[n][k.length].push([k, [...terms]]);
-
-    return terms;
-
+  return terms;
 }
 
-
-var memoisedPlanarTerms = [
-    []
-];
+var memoisedPlanarTerms = [[]];
 
 /**
  * Generate all planar lambda terms with a given number of subterms and free variables.
@@ -132,16 +120,15 @@ var memoisedPlanarTerms = [
  * @return {Object[]} The array of generated terms.
  */
 function generatePlanarTerms(n, k) {
+  varName = 0;
 
-    varName = 0;
+  var ks = [];
 
-    var ks = [];
+  for (var i = k - 1; i >= 0; i--) {
+    ks[k - i - 1] = i;
+  }
 
-    for (var i = k - 1; i >= 0; i--) {
-        ks[k - i - 1] = i;
-    }
-
-    return generatePlanarTermsHelper(n, ks);
+  return generatePlanarTermsHelper(n, ks);
 }
 
 /**
@@ -151,97 +138,95 @@ function generatePlanarTerms(n, k) {
  * @return {Object[]} The array of generated terms.
  */
 function generatePlanarTermsHelper(n, k) {
+  if (
+    memoisedPlanarTerms[n] != undefined &&
+    memoisedPlanarTerms[n][k.length] != undefined
+  ) {
+    var memo = memoisedPlanarTerms[n][k.length];
 
-    if (memoisedPlanarTerms[n] != undefined && memoisedPlanarTerms[n][k.length] != undefined) {
-        var memo = memoisedPlanarTerms[n][k.length];
+    for (var i = 0; i < memo.length; i++) {
+      if (arraysEqual(memo[i][0], k)) {
+        return [...memo[i][1]];
+      }
+    }
 
-        for (var i = 0; i < memo.length; i++) {
-            if (arraysEqual(memo[i][0], k)) {
-                return [...memo[i][1]];
+    var memoVars = memo[0][0];
+    var memoTerms = memo[0][1];
+    var newTerms = [];
+
+    for (var i = 0; i < memoTerms.length; i++) {
+      var workingTerm = memoTerms[i];
+
+      for (var j = 0; j < k.length; j++) {
+        workingTerm = substituteVariable(k[j], memoVars[j], workingTerm);
+      }
+
+      newTerms.push(workingTerm);
+    }
+
+    memo[memo.length] = [k, [...newTerms]];
+    return newTerms;
+  }
+
+  var terms = [];
+
+  switch (n) {
+    case 0:
+      break;
+    case 1:
+      if (k.length === 1) {
+        terms[0] = new LambdaVariable(k[0], "");
+      }
+
+      break;
+    default:
+      var absTerms = generatePlanarTermsHelper(
+        n - 1,
+        k
+          .map(function (e) {
+            return e + 1;
+          })
+          .concat(0),
+      );
+
+      for (i = 0; i < absTerms.length; i++) {
+        absTerms[i] = new LambdaAbstraction(absTerms[i], genVarName());
+      }
+
+      var appTerms = [];
+      var x = 0;
+
+      for (var m = 1; m <= n - 2; m++) {
+        for (var i = 0; i <= k.length; i++) {
+          var lhsTerms = generatePlanarTermsHelper(m, k.slice(0, i));
+          var rhsTerms = generatePlanarTermsHelper(n - 1 - m, k.slice(i));
+
+          for (a = 0; a < lhsTerms.length; a++) {
+            for (b = 0; b < rhsTerms.length; b++) {
+              appTerms[x] = new LambdaApplication(lhsTerms[a], rhsTerms[b]);
+              x++;
             }
+          }
         }
+      }
 
-        var memoVars = memo[0][0];
-        var memoTerms = memo[0][1];
-        var newTerms = [];
+      terms = absTerms.concat(appTerms);
+      break;
+  }
 
-        for (var i = 0; i < memoTerms.length; i++) {
-            var workingTerm = memoTerms[i];
+  if (memoisedPlanarTerms[n] == undefined) {
+    memoisedPlanarTerms[n] = [];
+  }
 
-            for (var j = 0; j < k.length; j++) {
-                workingTerm = substituteVariable(k[j], memoVars[j], workingTerm);
-            }
+  if (memoisedPlanarTerms[n][k.length] == undefined) {
+    memoisedPlanarTerms[n][k.length] = [];
+  }
 
-            newTerms.push(workingTerm);
-
-        }
-
-        memo[memo.length] = [k, [...newTerms]];
-        return newTerms;
-
-    }
-
-    var terms = [];
-
-    switch (n) {
-        case 0:
-            break;
-        case 1:
-
-            if (k.length === 1) {
-                terms[0] = new LambdaVariable(k[0], "");
-            }
-
-            break;
-        default:
-
-            var absTerms = generatePlanarTermsHelper(n - 1, k.map(function (e) {
-                return e + 1;
-            }).concat(0));
-
-            for (i = 0; i < absTerms.length; i++) {
-                absTerms[i] = new LambdaAbstraction(absTerms[i], genVarName());
-            }
-
-            var appTerms = [];
-            var x = 0;
-
-            for (var m = 1; m <= n - 2; m++) {
-                for (var i = 0; i <= k.length; i++) {
-
-                    var lhsTerms = generatePlanarTermsHelper(m, k.slice(0, i));
-                    var rhsTerms = generatePlanarTermsHelper(n - 1 - m, k.slice(i));
-
-                    for (a = 0; a < lhsTerms.length; a++) {
-                        for (b = 0; b < rhsTerms.length; b++) {
-                            appTerms[x] = new LambdaApplication(lhsTerms[a], rhsTerms[b]);
-                            x++;
-                        }
-                    }
-                }
-            }
-
-            terms = absTerms.concat(appTerms);
-            break;
-
-    }
-
-    if (memoisedPlanarTerms[n] == undefined) {
-        memoisedPlanarTerms[n] = [];
-    }
-
-    if (memoisedPlanarTerms[n][k.length] == undefined) {
-        memoisedPlanarTerms[n][k.length] = [];
-    }
-
-    memoisedPlanarTerms[n][k.length].push([k, [...terms]]);
-    return terms;
-
+  memoisedPlanarTerms[n][k.length].push([k, [...terms]]);
+  return terms;
 }
 
-var memoisedLinearTerms = [
-    []
-]
+var memoisedLinearTerms = [[]];
 
 /**
  * Generate all linear lambda terms with a given number of subterms and free variables.
@@ -250,16 +235,15 @@ var memoisedLinearTerms = [
  * @return {Object[]} The array of generated terms.
  */
 function generateLinearTerms(n, k) {
+  varName = 0;
 
-    varName = 0;
+  var ks = [];
 
-    var ks = [];
+  for (var i = k - 1; i >= 0; i--) {
+    ks[k - i - 1] = i;
+  }
 
-    for (var i = k - 1; i >= 0; i--) {
-        ks[k - i - 1] = i;
-    }
-
-    return generateLinearTermsHelper(n, ks);
+  return generateLinearTermsHelper(n, ks);
 }
 
 /**
@@ -269,98 +253,99 @@ function generateLinearTerms(n, k) {
  * @return {Object[]} The array of generated terms.
  */
 function generateLinearTermsHelper(n, k) {
+  if (
+    memoisedLinearTerms[n] != undefined &&
+    memoisedLinearTerms[n][k.length] != undefined
+  ) {
+    var memo = memoisedLinearTerms[n][k.length];
 
-    if (memoisedLinearTerms[n] != undefined && memoisedLinearTerms[n][k.length] != undefined) {
-        var memo = memoisedLinearTerms[n][k.length];
+    for (var i = 0; i < memo.length; i++) {
+      if (arraysEqual(memo[i][0], k)) {
+        return [...memo[i][1]];
+      }
+    }
 
-        for (var i = 0; i < memo.length; i++) {
-            if (arraysEqual(memo[i][0], k)) {
-                return [...memo[i][1]];
+    var memoVars = memo[0][0];
+    var memoTerms = memo[0][1];
+    var newTerms = [];
+
+    for (var i = 0; i < memoTerms.length; i++) {
+      var workingTerm = memoTerms[i];
+
+      for (var j = 0; j < k.length; j++) {
+        workingTerm = substituteVariable(k[j], memoVars[j], workingTerm);
+      }
+
+      newTerms.push(workingTerm);
+    }
+
+    memo[memo.length] = [k, [...newTerms]];
+    return newTerms;
+  }
+
+  var terms = [];
+
+  switch (n) {
+    case 0:
+      break;
+    case 1:
+      if (k.length === 1) {
+        terms[0] = new LambdaVariable(k[0], "");
+      }
+
+      break;
+    default:
+      var absTerms = generateLinearTermsHelper(
+        n - 1,
+        k
+          .map(function (e) {
+            return e + 1;
+          })
+          .concat(0),
+      );
+
+      for (i = 0; i < absTerms.length; i++) {
+        absTerms[i] = new LambdaAbstraction(absTerms[i], genVarName());
+      }
+
+      var appTerms = [];
+      var x = 0;
+
+      var chooses = chooseArrays(k);
+
+      for (var m = 1; m <= n - 2; m++) {
+        for (var i = 0; i < chooses.length; i++) {
+          var ks1 = chooses[i];
+          var ks2 = k.filter(function (e) {
+            return !ks1.includes(e);
+          });
+
+          var lhsTerms = generateLinearTermsHelper(m, ks1);
+          var rhsTerms = generateLinearTermsHelper(n - 1 - m, ks2);
+
+          for (a = 0; a < lhsTerms.length; a++) {
+            for (b = 0; b < rhsTerms.length; b++) {
+              appTerms[x] = new LambdaApplication(lhsTerms[a], rhsTerms[b]);
+              x++;
             }
+          }
         }
+      }
 
-        var memoVars = memo[0][0];
-        var memoTerms = memo[0][1];
-        var newTerms = [];
+      terms = absTerms.concat(appTerms);
+      break;
+  }
 
-        for (var i = 0; i < memoTerms.length; i++) {
-            var workingTerm = memoTerms[i];
+  if (memoisedLinearTerms[n] == undefined) {
+    memoisedLinearTerms[n] = [];
+  }
 
-            for (var j = 0; j < k.length; j++) {
-                workingTerm = substituteVariable(k[j], memoVars[j], workingTerm);
-            }
+  if (memoisedLinearTerms[n][k.length] == undefined) {
+    memoisedLinearTerms[n][k.length] = [];
+  }
 
-            newTerms.push(workingTerm);
-
-        }
-
-        memo[memo.length] = [k, [...newTerms]];
-        return newTerms;
-
-    }
-
-    var terms = [];
-
-    switch (n) {
-        case 0:
-            break;
-        case 1:
-
-            if (k.length === 1) {
-                terms[0] = new LambdaVariable(k[0], "");
-            }
-
-            break;
-        default:
-
-            var absTerms = generateLinearTermsHelper(n - 1, k.map(function (e) {
-                return e + 1;
-            }).concat(0));
-
-            for (i = 0; i < absTerms.length; i++) {
-                absTerms[i] = new LambdaAbstraction(absTerms[i], genVarName());
-            }
-
-            var appTerms = [];
-            var x = 0;
-
-            var chooses = chooseArrays(k);
-
-            for (var m = 1; m <= n - 2; m++) {
-                for (var i = 0; i < chooses.length; i++) {
-
-                    var ks1 = chooses[i];
-                    var ks2 = k.filter(function (e) {
-                        return !(ks1.includes(e));
-                    });
-
-                    var lhsTerms = generateLinearTermsHelper(m, ks1);
-                    var rhsTerms = generateLinearTermsHelper(n - 1 - m, ks2);
-
-                    for (a = 0; a < lhsTerms.length; a++) {
-                        for (b = 0; b < rhsTerms.length; b++) {
-                            appTerms[x] = new LambdaApplication(lhsTerms[a], rhsTerms[b]);
-                            x++;
-                        }
-                    }
-                }
-            }
-
-            terms = absTerms.concat(appTerms);
-            break;
-    }
-
-    if (memoisedLinearTerms[n] == undefined) {
-        memoisedLinearTerms[n] = [];
-    }
-
-    if (memoisedLinearTerms[n][k.length] == undefined) {
-        memoisedLinearTerms[n][k.length] = [];
-    }
-
-    memoisedLinearTerms[n][k.length].push([k, [...terms]]);
-    return terms;
-
+  memoisedLinearTerms[n][k.length].push([k, [...terms]]);
+  return terms;
 }
 
 /**
@@ -369,15 +354,13 @@ function generateLinearTermsHelper(n, k) {
  * @return {Object[[]]} All the different ways elements can be chosen.
  */
 function chooseArrays(xs) {
+  var arrays = [];
 
-    var arrays = [];
+  for (i = 0; i <= xs.length; i++) {
+    arrays = arrays.concat(chooseElems(xs, i));
+  }
 
-    for (i = 0; i <= xs.length; i++) {
-        arrays = arrays.concat(chooseElems(xs, i));
-    }
-
-    return arrays;
-
+  return arrays;
 }
 
 /**
@@ -387,7 +370,7 @@ function chooseArrays(xs) {
  * @return {Object[[]]} All the different ways elements can be chosen.
  */
 function chooseElems(xs, k) {
-    return chooseElemsHelper(xs, k, []);
+  return chooseElemsHelper(xs, k, []);
 }
 
 /**
@@ -398,21 +381,23 @@ function chooseElems(xs, k) {
  * @return {Object[[]]} All the different ways elements can be chosen.
  */
 function chooseElemsHelper(xs, k, acc) {
+  if (k === 0) {
+    return [[]];
+  }
 
-    if (k === 0) {
-        return [
-            []
-        ];
-    }
+  if (xs.length === k) {
+    return acc.concat([xs]);
+  }
 
-    if (xs.length === k) {
-        return acc.concat([xs]);
-    }
+  var otherArrays = chooseElems(xs.slice(1), k - 1);
 
-    var otherArrays = chooseElems(xs.slice(1), k - 1);
-
-    return chooseElemsHelper(xs.slice(1), k, (acc.concat(otherArrays.map(function (e) {
-        return [xs[0]].concat(e)
-    }))));
-
+  return chooseElemsHelper(
+    xs.slice(1),
+    k,
+    acc.concat(
+      otherArrays.map(function (e) {
+        return [xs[0]].concat(e);
+      }),
+    ),
+  );
 }

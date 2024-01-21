@@ -82,7 +82,8 @@ thead > tr > td:nth-last-child(1) {
   border-radius: 0 5px 0 0;
 }
 
-td, th {
+td,
+th {
   padding: 0.25em 0.5rem;
 }
 

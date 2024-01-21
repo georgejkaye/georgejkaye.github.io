@@ -1,74 +1,117 @@
-
-<!DOCTYPE html>
-<meta charset="UTF-8">
+<!doctype html>
+<meta charset="UTF-8" />
 <html>
-
-<head>
+  <head>
     <title>Lambda-term gallery</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
-    <link rel="stylesheet" href="/scripts/lamviz/style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/scripts/lamviz/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="column gallery-column">
-        <h1>&lambda;-term gallery</h1>
+      <h1>&lambda;-term gallery</h1>
 
-        <p><b><a href="/lamviz/visualiser/">&lambda;-term visualiser</a></b></p>
+      <p>
+        <b><a href="/lamviz/visualiser/">&lambda;-term visualiser</a></b>
+      </p>
 
-        <p>Graph display powerered by <a href="http://js.cytoscape.org/">Cytoscape.js</a></p>
+      <p>
+        Graph display powerered by
+        <a href="http://js.cytoscape.org/">Cytoscape.js</a>
+      </p>
 
-        The underlying algorithms behind the term generators can be found <a href="Generator.hs">here</a> (in Haskell!).
+      The underlying algorithms behind the term generators can be found
+      <a href="Generator.hs">here</a> (in Haskell!).
 
-        <h2>&lambda; term generators</h2>
-        n <input type="text" class="number-box" id="n"> k <input type="text" class="number-box" id="k">
+      <h2>&lambda; term generators</h2>
+      n <input type="text" class="number-box" id="n" /> k
+      <input type="text" class="number-box" id="k" />
 
-        <input type="radio" id="pure" name="fragment" value="pure">
-        <label for="pure">Pure</label>
-        <input type="radio" id="linear" name="fragment" value="linear">
-        <label for="pure">Linear</label>
-        <input type="radio" id="planar" checked name="fragment" value="planar">
-        <label for="pure">Planar</label>
+      <input type="radio" id="pure" name="fragment" value="pure" />
+      <label for="pure">Pure</label>
+      <input type="radio" id="linear" name="fragment" value="linear" />
+      <label for="pure">Linear</label>
+      <input type="radio" id="planar" checked name="fragment" value="planar" />
+      <label for="pure">Planar</label>
 
-        <p>You might need to be patient for larger values of n and k while the maps are drawn. For n > 10 be
-            prepared to
-            wait a while, or until the universe collapses!</p>
-        <p>For larger terms, you may wish to disable map generation to speed up the process a bit.</p>
+      <p>
+        You might need to be patient for larger values of n and k while the maps
+        are drawn. For n > 10 be prepared to wait a while, or until the universe
+        collapses!
+      </p>
+      <p>
+        For larger terms, you may wish to disable map generation to speed up the
+        process a bit.
+      </p>
 
-        <h3 id="filtering-options">Filtering options</h3>
-        Crossings <input type="text" class="number-box" id="crossings-box">
-        Abstractions <input type="text" class="number-box" id="abstractions-box">
-        Applications <input type="text" class="number-box" id="applications-box">
-        Variables <input type="text" class="number-box" id="variables-box">
-        &beta;-redexes<input type="text" class="number-box" id="betas-box">
-        Sort <select id="sort">
-            <option value=0>Default</value>
-            <option value=1>Crossings: High-Low</value>
-            <option value=2>Crossings: Low-High</value>
-            <option value=3>Beta-redexes: High-Low</value>
-            <option value=4>Beta-redexes: Low-High</value>
-        </select>
+      <h3 id="filtering-options">Filtering options</h3>
+      Crossings
+      <input type="text" class="number-box" id="crossings-box" /> Abstractions
+      <input type="text" class="number-box" id="abstractions-box" />
+      Applications
+      <input type="text" class="number-box" id="applications-box" /> Variables
+      <input type="text" class="number-box" id="variables-box" />
+      &beta;-redexes<input type="text" class="number-box" id="betas-box" /> Sort
+      <select id="sort">
+        <option value="0">Default</option>
+        <option value="1">Crossings: High-Low</option>
+        <option value="2">Crossings: Low-High</option>
+        <option value="3">Beta-redexes: High-Low</option>
+        <option value="4">Beta-redexes: Low-High</option>
+      </select>
 
-        <h3>Generation options</h3>
-        <p>Write out terms<input type="checkbox" id="write" checked onclick="toggleWrite()"> Draw maps
-            (costly)<input type="checkbox" id="draw" checked onclick="toggleDraw()"> Use de Bruijn
-            notation<input type="checkbox" id="de-bruijn" onclick="toggleDeBruijn()"></p>
-        <p>Show crossings<input type="checkbox" id="crossings" checked onclick="toggleCrossings()"> Show
-            &beta;-reductions<input type="checkbox" id="beta" checked onclick="toggleBeta()"></p>
+      <h3>Generation options</h3>
+      <p>
+        Write out terms<input
+          type="checkbox"
+          id="write"
+          checked
+          onclick="toggleWrite()"
+        />
+        Draw maps (costly)<input
+          type="checkbox"
+          id="draw"
+          checked
+          onclick="toggleDraw()"
+        />
+        Use de Bruijn notation<input
+          type="checkbox"
+          id="de-bruijn"
+          onclick="toggleDeBruijn()"
+        />
+      </p>
+      <p>
+        Show crossings<input
+          type="checkbox"
+          id="crossings"
+          checked
+          onclick="toggleCrossings()"
+        />
+        Show &beta;-reductions<input
+          type="checkbox"
+          id="beta"
+          checked
+          onclick="toggleBeta()"
+        />
+      </p>
 
+      <button type="button" id="generate-btn" onclick="generateButton()">
+        Generate terms!
+      </button>
+      <h3 id="error" style="color: red"></h3>
 
-        <button type="button" id="generate-btn" onclick='generateButton()'>Generate terms!</button>
-        <h3 id="error" style="color:red"></h3>
+      <b>
+        <p id="number-of-terms"></p>
+      </b>
+      <b>
+        <p id="help"></p>
+      </b>
 
-        <b>
-            <p id="number-of-terms"></p>
-        </b>
-        <b>
-            <p id="help"></p>
-        </b>
-
-        <p id="church-room"></p>
-        <p id="normalisation-studio"></p>
+      <p id="church-room"></p>
+      <p id="normalisation-studio"></p>
     </div>
 
     <script src="/scripts/lamviz/definition.js"></script>
@@ -80,7 +123,5 @@
     <script src="/scripts/lamviz/galleryFunctions.js"></script>
     <script src="/scripts/lamviz/evaluator.js"></script>
     <script src="/scripts/lamviz/generator.js"></script>
-
-</body>
-
+  </body>
 </html>
