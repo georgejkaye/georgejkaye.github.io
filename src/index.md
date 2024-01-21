@@ -46,6 +46,8 @@ Alternatively, you can figure out how my static site generator works and fix it 
 * [**Instagram**]({{ links.instagram }})
 * [**Adventures in Academia**](/adventures) *A series of entertaining escapades*
 * [**Railway station signs**](/trains/stations) *I take pictures of station signs*
+* [**Thesis tracker**](thesis.georgejkaye.com)
+* [**Blanket visualiser**](blanket.georgejkaye.com) *Following the progress of a temperature blanket*
 
 I've made some guides to impart the admin knowledge I've gained from four years
 of doing things in the Birmingham theory group to help the next generation.
