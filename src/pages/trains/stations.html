@@ -17,7 +17,7 @@ pagination:
 
 <div class="stations">
     {% for stn in pagination.items %}
-        <img class="station-img" src="/images/trains/stations/{{ stn.crs }}.webp" />
+        <img class="station-img" alt="{{ stn.name }}" title="{{ stn.name }}" src="/images/trains/stations/{{ stn.crs }}.webp" />
     {% endfor %}
 </div>
 
