@@ -109,6 +109,12 @@ code {
   border-radius: 5px;
 }
 
+.title {
+  @media (max-width: ($mobile-width + $buffer)) {
+    padding: 0 20px;
+  }
+}
+
 .container,
 .header-bar-content {
   margin: auto;
