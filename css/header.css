@@ -104,6 +104,12 @@ code {
   border-radius: 5px;
 }
 
+@media (max-width: 550px) {
+  .title {
+    padding: 0 20px;
+  }
+}
+
 .container,
 .header-bar-content {
   margin: auto;
@@ -217,7 +223,6 @@ code {
 
 .header-bar {
   margin: auto;
-  padding: 20px 0 0 0;
 }
 
 .header-bar-content {
