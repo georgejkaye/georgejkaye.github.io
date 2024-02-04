@@ -20,7 +20,7 @@
   to: "/lamviz/gallery/"
 - from: "/lambda-visualiser/"
   to: "/lamviz/"
-- from: "/trains/stations"
+- from: "/trains/stations/"
   to: "/trains/stations/A/"
 
 # blogposts
