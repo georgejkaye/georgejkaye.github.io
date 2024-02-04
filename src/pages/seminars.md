@@ -10,16 +10,20 @@ run smoothly.
 
 ## To do list
 
+### Initially
+
+| Task | Time |
+|-|-|
+| [Get a `researchseminars.org` account](#get-a-researchseminarsorg-account) | Immediately |
+
 ### Termly
 
 | Task | Time |
 |-|-|
-| [Get a `talks@bham` account](#get-a-talksbham-account) | Immediately |
 | [Establish the seminar slot](#establish-the-seminar-slot) | Start of term |
 | [Book the rooms](#book-the-rooms) | Start of term |
-| [Add seminars to `talks@bham`](#add-seminars-to-talksbham) | Start of term |
 | [Solicit speaker suggestions](#solicit-speaker-suggestions) | Start of term |
-| [Advertise `talks@bham` functionality](#advertise-talksbham-functionality) | Start of term |
+| [Advertise `researchseminars.org` functionality](#advertise-researchseminarsorg-functionality) | Start of term |
 
 ### Per seminar
 
@@ -28,7 +32,7 @@ run smoothly.
 | [Negotiate with the host](#negotiate-with-the-host) | After speaker has been suggested |
 | [Make contact with the speaker](#make-contact-with-the-speaker) | After host has confirmed slot |
 | [Negotiate with the speaker](#negotiate-with-the-speaker) | After speaker has replied |
-| [Add speaker to `talks@bham`](#add-speaker-to-talksbham) | When speaker is confirmed |
+| [Add speaker to `researchseminars.org`](#add-speaker-to-researchseminarsorg) | When speaker is confirmed |
 | [Upgrade seminar to departmental series (optional)](#upgrade-the-talk-to-the-departmental-series-optional) | When speaker is confirmed |
 | [Book the speaker a hotel (where appropriate)](#book-the-speaker-a-hotel-where-appropriate) | When speaker is confirmed |
 | [Get title and abstract](#get-title-and-abstract) | Week before seminar |
@@ -38,26 +42,30 @@ run smoothly.
 
 ## General tasks
 
-### Get a `talks@bham` account
+### Get a `researchseminars.org` account
 
-The seminars are listed and advertised on [talks@bham](talks.bham.ac.uk).
-`talks@bham` is used for talks all over the university, including some other
-seminar series in the department, such as the departmental seminar series.
+The seminars are listed and advertised on
+[researchseminars.org](https://researchseminars.org).
 Users can sign up to email announcements for emails, or subscribe to `.ics`
 calendars for series they are interested in.
+Formerly, talks were hosted on `talks@bham`, but this was deprecated in 2024
+because it was unmaintained and not compliant with university data and security
+policies.
+Allegedly people in EPS are looking at making a better version; it's up to you
+how invested you get in this saga.
 
 If you haven't already got an account, you can sign up using the
-[Request an account page](http://talks.bham.ac.uk/user/new).
-Note that you will need to use a `bham.ac.uk` account otherwise the email won't
-be sent to you!
+[Request an account page](https://researchseminars.org/user/register/).
+To be able to moderate the seminar page you'll need to be *endorsed* by an
+already endorsed user; the previous seminar organiser should be able to do this.
+If they are otherwise incapacitated, you can
+[email the research seminars endorsement Google group](mailto:researchseminars-endorsement@googlegroups.com)
+or in the worst case [ask me to do it](mailto:georgejkaye@gmail.com).
 
-Once you have an account, check everything works by [logging in](http://talks.bham.ac.uk/login/other_users).
-You can also log in by clicking 'Birmingham users' in the left hand bar.
-
-![The navigation bar for talks@bham, with 'Birmingham users' circled](/images/seminars/loggingin.webp)
+Once you have an account, check everything works by [logging in](https://researchseminars.org/user/info).
 
 The talk list we're interested in is the
-[Theoretical computer science seminar](http://talks.bham.ac.uk/show/index/86).
+[University of Birmingham theoretical computer science seminar](https://researchseminars.org/seminar/TheoryCSBham).
 Once you have an account, the previous organiser(s) can add you as an admin to
 this list so you can add and modify talks.
 
@@ -81,7 +89,9 @@ should make an effort to accommodate the seminar!
 Even if the slot does have to be moved, the first preference is to keep the
 seminar on Fridays.
 
-If the slot changes, you should also let whoever manages the
+If the slot changes, you should update the `Time slot` field in the
+[Manage seminar series page](https://researchseminars.org/edit/seminar/?shortname=TheoryCSBham),
+and should also let whoever manages the
 [cs-calendar@contacts.bham.ac.uk](mailto:cs-calendar@contacts.bham.ac.uk)
 school calendar know, so they can update it on there.
 
@@ -132,20 +142,6 @@ it!
 *(I currently can't provide any guidance on how to use it because I myself can't
 access it. However, I'll get a staff account soon so I can add some pictures.)*
 
-### Add seminars to `talks@bham`
-
-With the rooms booked, the (unassigned) talks can all be added to `talks@bham`.
-You can add a new talk at the
-[Add a new talk page](http://talks.bham.ac.uk/talk/edit?list_id=86), which can
-also be found in the navigation bar on the left of `talks@bham` once you are
-logged in.
-
-![The talks@bham navigation bar, with 'Add a new talk' circled](/images/seminars/adding.webp)
-
-To make sure it doesn't get forgotten later, you should make sure the Zoom
-details are added to the page; there's a sheet on the seminar organisation
-spreadsheet which has a template you can copy.
-
 ### Solicit speaker suggestions
 
 Send out an email to the Theory mailing list and put a message on the Discord
@@ -170,16 +166,11 @@ before you invite anyone.
 If a host has the funding to host someone from further afield for a couple of
 days, they are of course welcome to do so!
 
-### Advertise `talks@bham` functionality
+### Advertise `researchseminars.org` functionality
 
-It is good to periodically advertise the functionality `talks@bham` offers for
+It is good to periodically advertise the functionality `researchseminars.org` offers for
 keeping up to date with the seminars.
-Users can set up email reminders or add the list to their calendar.
-
-![The top of a seminar list page on talks@bham, with 'Send me email reminders' and 'Subscribe using ical/vcal' circled](/images/seminars/reminders.webp)
-
-Remember that `talks@bham` will only send emails to those with `bham.ac.uk`
-email addresses!
+Users can select 'favourite seminars' and add the list to their calendar.
 
 ## Arranging specific seminar slots
 
@@ -227,22 +218,37 @@ tag.
 
 ![A row of the theory seminar spreadsheet, filled in with 'George Kaye', 'University of Birmingham', 'g.j.kaye@pgr.bham.ac.uk', 'George' and 'Confirmed' highlighted in green](/images/seminars/confirmed.webp)
 
-### Add speaker to `talks@bham`
+By default, the seminar should be delivered **using slides**, as this is the
+easiest way to keep the seminar hybrid.
+If the speaker would like to do a whiteboard,
+**it is crucial that you, the organisers, are informed as soon as possible**
+so that you can make alternative arrangements.
+At the time of writing LG23 does not have very good whiteboard capture; in the
+past we have remedied this by booking out
+[a room in the University with whiteboard capture](https://intranet.birmingham.ac.uk/as/libraryservices/lrat/technical-advice/rooms-equipped-with-panopto-plus.aspx)
+so this can be streamed online.
+The School also has an [Owl camera](https://owllabs.com/products/meeting-owl-3)
+which may come in useful; ask someone in Operations about this if you want to
+use it.
 
-At this point you should add the speaker's details to the relevant page on
-`talks@bham`, which you should have made earlier.
-This can be done by clicking the 'Edit this talk' button at the top of the talk
-page.
+### Add speaker to `researchseminars.org`
 
-![The top of a talks page, with 'Edit this talk' circled](/images/seminars/editing.webp)
+At this point you should add the speaker's details to the seminar schedule.
+This can be done by clicking the 'Manage' tab at the top of the
+`researchseminars.org` site, and clicking `schedule` in the relevant seminar
+row.
+
+![The manage tab of the researchseminars.org interface, showing the theory seminar row with the 'schedule' link in it](/images/seminars/manage.webp)
+
+It is then straightforward to put the details in the right slot.
+
+![A list of seminars, with the details for George Kaye in the top one](/images/seminars/editing.webp)
 
 ### Upgrade the talk to the departmental series *(optional)*
 
 The CS department has a departmental seminar series, aptly named the Computer
 Science Seminar Series; some of these talks are even toted as 'Distinguished
 Seminars'.
-More details can be found on the
-[Computer Science Seminar Series `talks@bham` page](http://talks.bham.ac.uk/show/index/3137).
 These seminars are usually followed by refreshments or a buffet lunch in the
 atrium.
 
@@ -260,20 +266,14 @@ committee because they have become overwhelmed by requests for speakers in their
 series, so they can't afford all the refreshments needed.
 So make sure you ask politely :)
 
-If a theory seminar talk is upgraded to a departmental seminar, it will
-eventually appear on their `talks@bham` page.
-You can then remove it from the theory seminar list and 'include' the version
-from the departmental list, which can be done by clicking the appropriate button
-at the top of the page.
-This means we don't have two copies of the talk page floating around!
-
-![The top of a `talks@bham` page, with 'Add to your list(s)' circled](/images/seminars/otherlist.webp)
-
 ### Book the speaker a hotel *(where appropriate)*
 
 If the speaker will be staying overnight, it is cordial to book them a hotel
 room so that they aren't as much out of pocket.
-This can be done by sending an email to Research Support at
+Since January 2024, the Theory Group are responsible for managing their own
+budget, so you should get in touch with the Theme Lead to okay the request.
+Once they've given it the thumbs up, you can get the hotel booked by sending an
+email to Research Support at
 [cs-researchsupport@contacts.bham.ac.uk](mailto:cs-researchsupport@contacts.bham.ac.uk).
 Research Support will contact the speaker to confirm their details and the hotel
 room will be booked.
@@ -282,12 +282,11 @@ room will be booked.
 
 The start of the week before the talk, you should make contact with the speaker
 again for their title and abstract.
-`talks@bham` sends out emails at `04:06` on Sunday giving information about talks
-in the upcoming week, so ideally the full details of the talk will be in place
-before then.
 I also like to request the speaker sends across their slides, making it less
 stressful to set up in advance, and to remind them that the seminar is 50
 minutes plus questions.
+This can also flag up any miscommunication in which the speaker thinks they are
+giving a whiteboard talk and they or the host haven't told you.
 
 You should cc in the host into this email and let the speaker know that the host
 will be greeting and entertaining them once they arrive.
@@ -298,11 +297,11 @@ before the talk begins!
 
 The week of the talk, you should announce the talk both on the theory mailing
 list and on Discord. In the email you should include the title, abstract and
-Zoom details; in the Discord message I tend just to link to the `talks@bham`
-page to avoid cluttering the channel.
+Zoom details; in the Discord message I tend just to link to the talk page to
+avoid cluttering the channel.
 
 If you're interested, I have
-[a script to generate the emails](https://github.com/georgejkaye/talks-bot).
+[a script to generate the emails and the Discord messages](https://github.com/georgejkaye/talks-bot).
 
 ### Set up seminar room
 
@@ -349,14 +348,15 @@ The speaker will need to fill out the intimidating-looking
 Their expenses need to go in the top half of the form, i.e. *not* the section
 labelled 'For project use only'.
 The appropriate codes can be found in the seminar spreadsheet.
-It is nice to pre-fill out a row to show the speaker how it is done.
+It is nice to pre-fill out a row to show the speaker how it is done; I've put
+some dummy codes in below just in case someone tries to spend all the Theory
+budget on a night at Snobs.
 
 ![The first claims section of the non-staff expenses form, filled out with 'Trains - Cambridge to Birmingham' and 'Lunch at Staff House' along with some dummy values for 'Company', 'Analysis', 'Cost Centre', 'Activity', 'Source of Funds' and 'Amount'](/images/seminars/claim.webp)
 
-Once the speaker has filled out the form, they should send it to Research
-Support at
-[cs-researchsupport@contacts.bham.ac.uk](mailto:cs-researchsupport@contacts.bham.ac.uk)
-with you in cc, stating that they are claiming for the theory seminar.
+Once the speaker has filled out the form, they should send it to the Theory
+Theme Lead with you and
+[cs-researchsupport@contacts.bham.ac.uk](mailto:cs-researchsupport@contacts.bham.ac.uk) in cc.
 With any luck, the claim will be processed quickly and the speaker will get
 their money back in a few weeks.
 (At the time of writing, Research Support are *very* efficient; this may have
