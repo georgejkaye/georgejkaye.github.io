@@ -104,6 +104,12 @@ code {
   border-radius: 5px;
 }
 
+@media (max-width: 550px) {
+  .title {
+    padding: 0 20px;
+  }
+}
+
 .container,
 .header-bar-content {
   margin: auto;
@@ -180,9 +186,7 @@ code {
 
 .mobile-picture {
   max-width: 250px;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 @media (min-width: 550px) {
   .mobile-picture {
