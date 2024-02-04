@@ -1,6 +1,6 @@
 <div class="counter">
-    {%- for i in (1..pages) -%}
-    <div>
+    {%- for i in (1..pagination.pages.size) -%}
+    <div class="number-block">
         <a href="{{- root -}}
             {%- if i != 1 -%}
                 /{{- i -}}
