@@ -141,7 +141,23 @@ module.exports = config => {
         let sorted = routed.sort((a, b) => a.name.localeCompare(b.name))
         return sorted
     })
-
+    /**
+     * Create a collection indexed by letters that start station names
+     */
+    config.addCollection("alphabetisedStations", function (collection) {
+        let stations = collection.getAllSorted()[0].data.stations
+        let alphabetised = {}
+        for(let station of stations) {
+            let name = station.name
+            let letter = name.charAt(0).toUpperCase()
+            if(letter in alphabetised){
+                alphabetised[letter].push(station)
+            } else {
+                alphabetised[letter] = [station]
+            }
+        }
+        return alphabetised
+    })
     return {
         dir: {
             input: "src",

@@ -45,7 +45,7 @@ Alternatively, you can figure out how my static site generator works and fix it 
 * [**Twitter**]({{ links.twitter}})
 * [**Instagram**]({{ links.instagram }})
 * [**Adventures in Academia**](/adventures) *A series of entertaining escapades*
-* [**Railway station signs**](/trains/stations) *I take pictures of station signs*
+* [**Railway station signs**](/trains/stations/A) *I take pictures of station signs*
 
 I like doing little coding projects: here are some of them:
 
