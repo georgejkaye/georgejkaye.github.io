@@ -1,0 +1,21 @@
+---
+title: Railway stations
+subtitle: I visit a lot of railway stations
+permalink: /trains/stations/{% if pagination.pageNumber >= 0 %}{{ pagination.pages[pagination.pageNumber] }}/{% endif %}
+style: stations
+pagination:
+  data: collections.alphabetisedStations
+  size: 1
+---
+
+{% assign root = "/trains/stations" %}
+{% assign collection = pagination.pages %}
+{% include "components/collectionlinks" %}
+
+<div class="stations">
+    {% for stn in collections.alphabetisedStations[pagination.pages[pagination.pageNumber]] %}
+        <img class="station-img" alt="{{ stn.name }}" title="{{ stn.name }}" src="/images/trains/stations/{{ stn.crs }}.webp" />
+    {% endfor %}
+</div>
+
+{% include "components/collectionlinks" %}

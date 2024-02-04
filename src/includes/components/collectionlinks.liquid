@@ -1,0 +1,15 @@
+<div class="counter">
+    {%- for item in collection -%}
+    <div class="number-block">
+        <a href="{{- root -}}/{{- item -}}"
+           title="Page {{ item }}"
+        >
+            <span class="page-number{% if forloop.index0 == pagination.pageNumber %} current-page"
+                  aria-current="page{%- endif -%}"
+        >
+            {{- item -}}
+            </span>
+        </a>
+    </div>
+    {%- endfor -%}
+</div>
