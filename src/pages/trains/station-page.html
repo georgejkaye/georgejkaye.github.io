@@ -14,7 +14,13 @@ pagination:
 
 <div class="stations">
     {% for stn in collections.alphabetisedStations[pagination.pages[pagination.pageNumber]] %}
-        <img class="station-img" alt="{{ stn.name }}" title="{{ stn.name }}" src="/images/trains/stations/{{ stn.crs }}.webp" />
+        <a class="station-img" href="https://wikipedia.org/wiki/{{ stn.name }} railway station">
+          <img
+            alt="{{ stn.name }}"
+            title="{{ stn.name }}"
+            src="/images/trains/stations/{{ stn.crs }}.webp"
+          />
+        </a>
     {% endfor %}
 </div>
 
