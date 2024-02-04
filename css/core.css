@@ -132,17 +132,21 @@ code {
 }
 
 .counter {
-  padding: 20px 0 40px 0;
-  text-align: center;
+  padding: 20px 0;
+  text-align: left;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   gap: 20px 0px;
+  margin-left: -5px;
+}
+
+.number-block {
+  margin: 0 5px;
 }
 
 .page-number {
-  margin: 5px;
   font-size: 1em;
   font-weight: bold;
   background-color: #383a59;
