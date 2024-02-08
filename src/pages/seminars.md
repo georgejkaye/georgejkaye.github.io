@@ -159,9 +159,7 @@ This is because we can *definitely* reimburse train travel in the UK.
 If someone is from further away (e.g. Scotland) then they are likely to require
 a hotel overnight.
 This *is* possible and we have done it several times before, but be sure to
-check this with Research Support at
-[cs-researchsupport@contacts.bham.ac.uk](mailto:cs-researchsupport@contacts.bham.ac.uk)
-before you invite anyone.
+check this with the Theory Theme Lead first before you invite anyone.
 
 If a host has the funding to host someone from further afield for a couple of
 days, they are of course welcome to do so!
@@ -181,7 +179,8 @@ procedure works quite nicely.
 ### Negotiate with the host
 
 When you have some speaker suggestions, send some emails to the prospective
-hosts offering them *one* slot from the schedule.
+hosts offering them *one* slot from the schedule, preferably starting with thei
+earliest available.
 If they can't do this one, keep offering until you are both satisfied.
 This prevents the deadlock of having all the slots 'pending' with nobody
 replying to you!
