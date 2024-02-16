@@ -1,3 +1,11 @@
+- title: A Fully Compositional Theory of Sequential Digital Circuits
+  venue: UCL PPLV seminar
+  web: http://pplv.cs.ucl.ac.uk/pplv_research_seminar/
+  date: 2024-02-15
+  key: ucl
+  links:
+    slides: true
+    github: true
 - title: A Fully Compositional Theory of Digital Circuits
   venue: SYNCHRON 2023, Kiel
   web: https://www.rtsys.informatik.uni-kiel.de/en/synchron-2023
