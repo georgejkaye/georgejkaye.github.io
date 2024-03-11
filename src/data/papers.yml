@@ -38,7 +38,7 @@
     We examine a variant of hypergraphs with the aim of creating a sound and complete graphical language for symmetric traced monoidal categories.
 - title: A visualiser for linear lambda-terms as rooted 3-valent maps
   details: Masters dissertation (2019), University of Birmingham
-  file: 2019-04-08-masters.pdf
+  key: masters
   page: /lamviz/
   authors:
     - name: me

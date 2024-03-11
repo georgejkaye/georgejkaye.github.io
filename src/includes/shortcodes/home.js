@@ -61,7 +61,7 @@ const paper = (paper, people) => {
         paper,
         buttons,
         paper.arxiv,
-        (paper) => `/files/papers/${paper.arxiv.date}-${paper.key}.pdf`,
+        (paper) => `/files/papers/${paper.key}.pdf`,
         (paper) => `PDF version of '${paper.title}' (arxiv version)`,
         `(pdf)`
     )
@@ -69,14 +69,14 @@ const paper = (paper, people) => {
         paper,
         buttons,
         paper.page,
-        (paper) => `/files/papers/${paper.file}`,
+        (paper) => `/files/papers/${paper.key}.pdf`,
         (paper) => `PDF version of '${paper.title}'`,
         `pdf`
     )
     button(
         paper,
         buttons,
-        (paper) => `/files/papers/${paper.file}.bib.txt`,
+        (paper) => `/files/papers/${paper.key}.bib.txt`,
         (paper) => `Bibtex entry for '${paper.title}'`,
         `bibtex`
     )
