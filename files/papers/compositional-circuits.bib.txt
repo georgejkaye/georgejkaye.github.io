@@ -1,10 +1,8 @@
-@misc{ghica2023circuits,
-  doi = {10.48550/arXiv.2201.10456},
-  url = {https://arxiv.org/abs/2201.10456},
-  author = {Ghica, Dan R. and Kaye, George and Sprunger, David},
-  keywords = {Logic in Computer Science (cs.LO), Programming Languages (cs.PL), Category Theory (math.CT), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Mathematics, FOS: Mathematics},
-  title = {A compositional theory of digital circuits},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {arXiv.org perpetual, non-exclusive license}
+@misc{ghica2024fully,
+      title={A Fully Compositional Theory of Sequential Digital Circuits: Denotational, Operational and Algebraic Semantics}, 
+      author={Dan R. Ghica and George Kaye and David Sprunger},
+      year={2024},
+      eprint={2201.10456},
+      archivePrefix={arXiv},
+      primaryClass={cs.LO}
 }
