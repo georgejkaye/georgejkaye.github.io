@@ -175,11 +175,13 @@ const talk = (talk) => {
 
 const visit = (visit) => {
     var output = outdent`
-        <span class="visit-venue">
+        <div class="visit-venue">
             <a href="${visit.web}" title="${visit.venue} webpage">${visit.venue}</a>
-        </span>
-        <span class="visit-city">${visit.city}</span>
-        <span class="visit-dates">${visit.dates}</span>
+        </div>
+        <div>
+            <span class="visit-city">${visit.city}</span>
+            <span class="visit-dates">${visit.dates}</span>
+        </div>
     `
     var output = talk.cancelled ? outdent`<span class="visit-cancelled>${output}</span>` : output
     return outdent`
