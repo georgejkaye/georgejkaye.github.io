@@ -1,20 +1,36 @@
-- venue: SYNCHRON 2023
+- venue: Twelfth Symposium on Compositional Structures (SYCO 12)
+  web: https://www.cl.cam.ac.uk/events/syco/12/
+  city: Birmingham
+  dates: 15-16 April 2024
+- venue: Fifth Meeting of the Southern and Midlands Logic Seminar (SMLS5)
+  web: https://bctcs2024.github.io/
+  city: Bath
+  dates: 05 April 2024
+- venue: MGS Christmas Seminar 2023
+  web: https://www.anupamdas.com/mgs-xmas-23/
+  city: Birmingham
+  dates: 14 December 2023
+- venue: Fourth Meeting of the Southern and Midlands Logic Seminar (SMLS4)
+  web: https://www.anupamdas.com/smls4/
+  city: Birmingham
+  dates: 13 December 2023
+- venue: International Open Workshop on Synchronous Programming 2023 (SYNCHRON 2023)
   web: https://www.rtsys.informatik.uni-kiel.de/en/synchron-2023
   city: Kiel
   dates: November 27-December 01, 2023
-- venue: FSCD 2023
+- venue: 8th International Conference on Formal Structures for Computation and Deduction (FSCD 2023)
   web: https://easyconferences.eu/fscd2023/
   city: Rome
   dates: July 03-06, 2023
-- venue: Second Meeting of the Southern Logic Seminar
+- venue: Second Meeting of the Southern Logic Seminar (SLS2)
   web: http://zanasi.com/fabio/SLS/SLS-ucl.html
   city: London
   dates: May 16, 2023
-- venue: SYCO 11
+- venue: Eleventh Symposium on Compositional Structures (SYCO 11)
   web: https://www.cl.cam.ac.uk/events/syco/11/
   city: Paris
   dates: April 20-21, 2023
-- venue: First Meeting of the Southern Logic Seminar
+- venue: First Meeting of the Southern Logic Seminar (SLS1)
   web: https://t-powell.github.io/southern_logic_seminar/sls_bath.html
   city: Bath
   dates: February 23, 2023
@@ -22,35 +38,35 @@
   web: https://blogs.ed.ac.uk/he-lab/2023/01/20/bayesday-workshop-on-diagrammatic-methods-to-formalise-and-reason-about-programming-languages-and-their-implementation/
   city: Edinburgh
   dates: January 24, 2023
-- venue: SYCO 10
+- venue: Tenth Symposium on Compositional Structures (SYCO 10)
   web: https://www.cl.cam.ac.uk/events/syco/10/
   city: Edinburgh
   dates: December 19-20, 2022
-- venue: ACT 2022
+- venue: Applied Category Theory 2022 (ACT 2022)
   web: https://msp.cis.strath.ac.uk/act2022/
   city: Glasgow
   dates: July 18-22, 2022
-- venue: MGS 2022
+- venue: Midlands Graduate School 2022 (MGS 2022)
   web: https://www.cs.nott.ac.uk/~psznk/events/mgs22.html
   city: Nottingham
   dates: April 10-14, 2022
-- venue: SYCO 8
+- venue: Eighth Symposium on Compositional Structures (SYCO 8)
   web: https://www.cl.cam.ac.uk/events/syco/8/
   city: Tallinn
   dates: December 13-14, 2021
-- venue: ACT 2021
+- venue: Applied Category Theory 2021 (ACT 2021)
   web: https://www.cl.cam.ac.uk/events/act2021/
   city: Cambridge
   dates: July 12-16, 2021
-- venue: SYNCHRON 2020
+- venue: International Open Workshop on Synchronous Programming 2020 (SYNCRHON 2020)
   web: http://synchron2020.inria.fr/
   city: online
   dates: November 26-27, 2021
-- venue: ACT 2020
+- venue: Applied Category Theory 2020 (ACT 2020)
   web: https://act2020.mit.edu/
   city: online
   dates: July 6-10, 2020
-- venue: SYCO 7
+- venue: Seventh Symposium on Compositional Structures (SYCO 7)
   web: https://www.cl.cam.ac.uk/events/syco/7/
   city: Tallinn
   dates: March 30-31, 2020
@@ -59,11 +75,11 @@
   web: https://staffwww.dcs.shef.ac.uk/people/G.Struth/mgs_xmas19.html
   city: Sheffield
   dates: December 18, 2019
-- venue: SYCO 6
+- venue: Sixth Symposium on Compositional Structures (SYCO 6)
   web: https://www.cl.cam.ac.uk/events/syco/6/
   city: Leicester
   dates: December 16-17, 2019
-- venue: CLA 2019
+- venue: Computational Logic and Applications 2019 (CLA'19)
   web: http://cla.tcs.uj.edu.pl/history/2019/
   city: Versailles
   dates: July 1-2, 2019
