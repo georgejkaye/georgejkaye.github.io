@@ -13,8 +13,8 @@ These tools are currently being revamped in the chilly lockdown evenings - stay 
 
 ## Documents
 
-* [Dissertation](/files/papers/2019-04-08-masters.pdf) This is my dissertation for my Masters degree.
-* [CLA 2019 talk](/files/talks/2019-07-01-cla.pdf) These tools were presented at [CLA 2019](http://cla.tcs.uj.edu.pl/history/2019/)!
+* [Dissertation](/files/papers/masters.pdf) This is my dissertation for my Masters degree.
+* [CLA 2019 talk](/files/slides/2019-07-01-cla19-slides.pdf) These tools were presented at [CLA 2019](http://cla.tcs.uj.edu.pl/history/2019/)!
 
 ## Tools
 
