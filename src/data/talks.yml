@@ -1,4 +1,12 @@
 - title: A Fully Compositional Theory of Sequential Digital Circuits
+  venue: 5th Meeting of the Southern and Midlands Logic Seminar
+  web: https://bctcs2024.github.io/
+  date: 2024-04-05
+  key: smls5
+  links:
+    slides: true
+    github: true
+- title: A Fully Compositional Theory of Sequential Digital Circuits
   venue: UCL PPLV seminar
   web: http://pplv.cs.ucl.ac.uk/pplv_research_seminar/
   date: 2024-02-15
