@@ -59,6 +59,7 @@ I like doing little coding projects: here are some of them:
 
 * [**Thesis tracker**](https://thesis.georgejkaye.com)
 * [**Blanket visualiser**](https://blanket.georgejkaye.com) Following the progress of a temperature blanket
+* [**Delay Repay Calculator**](https://delayrepay.georgejkaye.com) Work out how much delay repay you'll get
 
 I've made some guides to impart the admin knowledge I've gained from four years
 of doing things in the Birmingham theory group to help the next generation:
