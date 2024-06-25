@@ -1,4 +1,12 @@
 - title: A Fully Compositional Theory of Sequential Digital Circuits
+  venue: 7th International Conference on Applied Category Theory (ACT 2024)
+  web: https://oxford24.github.io/
+  date: 2024-06-21
+  key: act2024
+  links:
+    slides: true
+    github: true
+- title: A Fully Compositional Theory of Sequential Digital Circuits
   venue: 5th Meeting of the Southern and Midlands Logic Seminar
   web: https://bctcs2024.github.io/
   date: 2024-04-05
