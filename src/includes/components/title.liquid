@@ -1,43 +1,39 @@
-<div class="header-bar">
-  <div class="header-bar-content container">
-    <div class="title-bar">
-      <h1 class="title">
-        {% if page.url == "/" %}
-        Hello!
-        {% else if page.title %}
-        {{ series }}
-        {% else %}
-        {{ title }}
-        {% endif %}
-      </h1>
-      {% capture subtitle-text %}
-        {% if subtitle %}
-          {{ subtitle }}
-        {% elsif part %}
-          {{ part }}
-          {%- if part-title -%}
-            : {{ part-title }}
-          {% endif %}
-        {% endif %}
-      {% endcapture %}
-      {% if subtitle-text %}
-        <div class="subtitle">{{ subtitle-text }}</div>
+<div class="header-bar-content container">
+  <h1 class="title">
+    {% if page.url == "/" %}
+    Hello!
+    {% else if page.title %}
+    {{ series }}
+    {% else %}
+    {{ title }}
+    {% endif %}
+  </h1>
+  {% capture subtitle-text %}
+    {% if subtitle %}
+      {{ subtitle }}
+    {% elsif part %}
+      {{ part }}
+      {%- if part-title -%}
+        : {{ part-title }}
       {% endif %}
-    </div>
-    {% if tagline %}
-    <div class="tagline">{{ tagline }}</div>
     {% endif %}
-    {% if date %}
-    <div class="title-date">{{ date | prettyDate }}</div>
+  {% endcapture %}
+  {% if subtitle-text %}
+    <div class="subtitle">{{ subtitle-text }}</div>
+  {% endif %}
+  {% if tagline %}
+  <div class="tagline">{{ tagline }}</div>
+  {% endif %}
+  {% if date %}
+  <div class="title-date">{{ date | prettyDate }}</div>
+  {% endif %}
+  {% if tags.size > 0 %}
+  <div class="post-tags">
+    {% for tag in tags %}
+    {% if tag != "blog" %}
+    {% include "components/tag" %}
     {% endif %}
-    {% if tags.size > 0 %}
-    <div class="post-tags">
-      {% for tag in tags %}
-      {% if tag != "blog" %}
-      {% include "components/tag" %}
-      {% endif %}
-      {% endfor %}
-    </div>
-    {% endif %}
+    {% endfor %}
   </div>
-</div>
+  {% endif %}
+  </div>

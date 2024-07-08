@@ -52,13 +52,11 @@ $nav-height: 75px;
   margin-bottom: 0;
 }
 
-.header-bar {
+
+.header-bar-content {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.header-bar-content {
   display: flex;
   flex-direction: column;
   @media (max-width: ($mobile-width + $buffer)) {
