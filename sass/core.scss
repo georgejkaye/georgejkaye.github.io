@@ -26,6 +26,10 @@ body {
   color: $foreground;
 }
 
+h1, h2,h3,h4,h5 {
+  font-weight: 300;
+}
+
 h1 {
   font-size: 3.5em;
   margin-top: 0;
@@ -104,12 +108,6 @@ code {
   border-radius: 5px;
 }
 
-.title {
-  @media (max-width: ($mobile-width + $buffer)) {
-    padding: 0 20px;
-  }
-}
-
 .container,
 .header-bar-content {
   margin: auto;
@@ -134,7 +132,7 @@ $content-padding: 16px;
 }
 
 .counter {
-  padding: 20px 0;
+  padding-bottom: 20px;
   text-align: left;
   display: flex;
   flex-wrap: wrap;
@@ -148,13 +146,18 @@ $content-padding: 16px;
   margin: 0 5px;
 }
 
+.number-block > a {
+  text-decoration: none;
+}
+
+
 .page-number {
   font-size: 1em;
-  font-weight: bold;
   background-color: $accent;
   padding: 5px 10px;
   border-radius: 5px;
   font-family: monospace;
+  text-decoration: none;
 }
 
 .current-page {
@@ -165,5 +168,8 @@ $content-padding: 16px;
 .card {
   background-color: $accent;
   padding: 10px 20px;
-  margin: 0 15px 10px 15px;
+  margin: 0 0 10px 0;
+  @media (max-width: ($mobile-width + $buffer)) {
+    padding: 0 20px 10px 20px;
+  }
 }
