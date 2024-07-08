@@ -16,13 +16,23 @@
   margin-bottom: 0.5em;
 }
 
+.post-header > a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.post-header > a {
+  text-decoration: none;
+}
+
 .post-titles {
   display: flex;
-  margin-bottom: 10px;
   @media (min-width: ($content-width + $buffer)) {
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    gap: 10px;
   }
   @media (max-width: ($content-width + $buffer)) {
     flex-direction: column;
@@ -38,29 +48,19 @@
 
 .post-subtitle {
   color: $green;
-  font-size: 1.25em;
-  @media (min-width: ($content-width + $buffer)) {
-    margin-left: auto;
-    text-align: right;
-  }
+  font-size: 1.5em;
 }
 
 
 .post-info {
   display: flex;
-  gap: 5px;
+  flex-direction: column;
   margin-bottom: 15px;
   align-items: flex-start;
 
   @media (max-width: ($content-width + $buffer)) {
     flex-direction: column;
   }
-}
-
-.post-date {
-  background-color: $green;
-  font-family: monospace;
-  color: $background;
 }
 
 .title-date {
@@ -87,19 +87,15 @@
 .post-tags {
   display: flex;
   gap: 5px;
-  @media (min-width: ($content-width + $buffer)) {
-    margin-left: auto;
-  }
-}
-
-.post-tag {
-  background-color: $foreground;
-  font-family: monospace;
-  color: $background;
 }
 
 .post-info-item {
   font-weight: bold;
-  padding: 2px 5px 2.5px 5px;
   border-radius: 5px;
+}
+
+a .post-tag {
+  &:hover {
+    text-decoration: underline;
+  }
 }
