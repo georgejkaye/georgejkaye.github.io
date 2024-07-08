@@ -21,6 +21,14 @@ body {
   color: #f2f2f2;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 300;
+}
+
 h1 {
   font-size: 3.5em;
   margin-top: 0;
@@ -100,12 +108,6 @@ code {
   border-radius: 5px;
 }
 
-@media (max-width: 550px) {
-  .title {
-    padding: 0 20px;
-  }
-}
-
 .container,
 .header-bar-content {
   margin: auto;
@@ -134,7 +136,7 @@ code {
 }
 
 .counter {
-  padding: 20px 0;
+  padding-bottom: 20px;
   text-align: left;
   display: flex;
   flex-wrap: wrap;
@@ -148,13 +150,17 @@ code {
   margin: 0 5px;
 }
 
+.number-block > a {
+  text-decoration: none;
+}
+
 .page-number {
   font-size: 1em;
-  font-weight: bold;
   background-color: #383a59;
   padding: 5px 10px;
   border-radius: 5px;
   font-family: monospace;
+  text-decoration: none;
 }
 
 .current-page {
@@ -165,7 +171,12 @@ code {
 .card {
   background-color: #383a59;
   padding: 10px 20px;
-  margin: 0 15px 10px 15px;
+  margin: 0 0 10px 0;
+}
+@media (max-width: 550px) {
+  .card {
+    padding: 0 20px 10px 20px;
+  }
 }
 
 .site-name-bar {
@@ -184,7 +195,8 @@ code {
 .site-name {
   color: #ff79c6;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .nav-bar {
@@ -219,11 +231,18 @@ code {
 
 .header-bar {
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .header-bar-content {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 550px) {
+  .header-bar-content {
+    padding: 0 20px;
+  }
 }
 
 .subtitle,
