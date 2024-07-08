@@ -19,7 +19,8 @@ $nav-height: 75px;
 .site-name {
   color: $pink;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .nav-bar {
@@ -53,11 +54,16 @@ $nav-height: 75px;
 
 .header-bar {
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .header-bar-content {
   display: flex;
   flex-direction: column;
+  @media (max-width: ($mobile-width + $buffer)) {
+    padding: 0 20px;
+  }
 }
 
 .subtitle,
