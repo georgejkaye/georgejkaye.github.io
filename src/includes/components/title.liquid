@@ -1,12 +1,12 @@
 <div class="header-bar-content container">
   <h1 class="title">
     {% if page.url == "/" %}
-    Hello!
-    {% else if series %}
-    {{ series }}
+      Hello!
+    {% elsif series %}
+      {{ series }}
     {% else %}
-    {{ title }}
-    {% endif %}
+      {{ title }}
+    {% endif  %}
   </h1>
   {% capture subtitle-text %}
     {% if subtitle %}
