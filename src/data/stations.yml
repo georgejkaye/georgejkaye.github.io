@@ -14,8 +14,14 @@
   crs: anf
 - name: Aston
   crs: ast
+- name: Ayr
+  crs: ayr
+- name: Balloch
+  crs: bhc
 - name: Banbury
   crs: ban
+- name: Basingstoke
+  crs: bsk
 - name: Barnt Green
   crs: btg
 - name: Barrow-in-Furness
@@ -40,8 +46,12 @@
   crs: bkt
 - name: Bordesley
   crs: bbs
+- name: Bristol Parkway
+  crs: bpw
 - name: Brockenhurst
   crs: bcu
+- name: Burton-on-Trent
+  crs: but
 - name: Butlers Lane
   crs: bul
 - name: Cambridge
@@ -72,6 +82,8 @@
   crs: cos
 - name: Coventry
   crs: cov
+- name: Coventry Arena
+  crs: caa
 - name: Cradley Heath
   crs: cra
 - name: Crewe
@@ -84,6 +96,10 @@
   crs: dgt
 - name: Didcot Parkway
   crs: did
+- name: Dorridge
+  crs: ddg
+- name: Droitwich Spa
+  crs: dtw
 - name: Duddeston
   crs: dud
 - name: Earlswood
@@ -126,6 +142,8 @@
   crs: hot
 - name: High Street
   crs: hst
+- name: Holyhead
+  crs: hhd
 - name: Honeybourne
   crs: hyb
 - name: Jewellery Quarter
@@ -134,6 +152,10 @@
   crs: kgm
 - name: Lancaster
   crs: lan
+- name: Langley Green
+  crs: lgg
+- name: Lapworth
+  crs: lpw
 - name: Lea Hall
   crs: leh
 - name: Leamington Spa
@@ -142,6 +164,8 @@
   crs: led
 - name: Leeds
   crs: lds
+- name: Leicester
+  crs: lei
 - name: Lichfield City
   crs: lic
 - name: London Bridge
@@ -150,6 +174,8 @@
   crs: eus
 - name: London Marylebone
   crs: myb
+- name: London St Pancras International
+  crs: stp
 - name: Longbridge
   crs: lob
 - name: Lye
@@ -210,6 +236,8 @@
   crs: rug
 - name: Rugeley Trent Valley
   crs: rgl
+- name: Salford Central
+  crs: sfd
 - name: Sandwell and Dudley
   crs: sad
 - name: Selly Oak
@@ -230,6 +258,8 @@
   crs: smr
 - name: Spring Road
   crs: sri
+- name: Solihull
+  crs: sol
 - name: Stafford
   crs: sta
 - name: Stamford
@@ -254,6 +284,8 @@
   crs: swi
 - name: Tame Bridge Parkway
   crs: tab
+- name: Tamworth
+  crs: tam
 - name: Telford Central
   crs: tfc
 - name: The Hawthorns
@@ -282,8 +314,16 @@
   crs: wrw
 - name: Warwick Parkway
   crs: wrp
+- name: Wellington
+  crs: wln
 - name: Whitehaven
   crs: wth
+- name: Widney Manor
+  crs: wmr
+- name: Wigan North Western
+  crs: wgn
+- name: Wigan Wallgate
+  crs: wgw
 - name: Wilmcote
   crs: wvs
 - name: Wilmslow
