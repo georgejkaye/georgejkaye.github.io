@@ -10,25 +10,19 @@ style: index
 [![A picture of me, with the Forth Bridge in the background]({{ people.me.picture }})](/fancam)
 {: .profile-picture}
 
-Hello! I’m George, a PhD student researcher at the University of Birmingham, under the supervision of [Dan Ghica]({{ people.dan.web }}) and [Miriam Backens]({{ people.miriam.web }}).
-I am a member of the [University of Birmingham Theory Group]({{ links.theory }}), and helped run
-the [weekly seminar](https://researchseminars.org/seminar/TheoryCSBham) from
-March 2022 to March 2024.
+Hello! I’m George. Currently I work as a backend software developer as part of
+the Insurance Products Integration Development team at
+[Acturis Ltd](https://www.acturis.com/).
 
-I also used to work part time at the [Huawei Edinburgh Programming Languages Lab](https://blogs.ed.ac.uk/he-lab/).
+From 2019 to 2024 I was a PhD student at the University of Birmingham, under the supervision of [Dan Ghica]({{ people.dan.web }}) and [Miriam Backens]({{ people.miriam.web }}), as a member of the [University of Birmingham Theory Group]({{ links.theory }}), I helped run the [weekly seminar](https://researchseminars.org/seminar/TheoryCSBham) from
+March 2022 to March 2024 and also looked after the [group website](https://www.birmingham.ac.uk/research/activity/computer-science/theory-of-computation/people).
+
+Between 2021 and 2024 I also used to work part time at the [Huawei Edinburgh Programming Languages Lab](https://blogs.ed.ac.uk/he-lab/).
 
 ## About me
 
-My primary research interests are in graphical calculi for compositional systems and the lambda calculus using monoidal categories, and reasoning about these structures diagrammatically using [string diagrams](https://doi.org/10.48550/arXiv.0908.3347).
 
-I am currently writing up my PhD thesis on **a fully compositional theory of sequential digital circuits with delay and feedback**.
-This project is based on work by [Ghica and Jung](https://doi.org/10.4230/LIPIcs.CSL.2017.24) who modelled digital circuits as
-morphisms in a [symmetric traced monoidal category](https://en.wikipedia.org/wiki/Traced_monoidal_category).
-My job was to tidy this all up and make it formal, leading to three sound and complete semantics for sequential circuits:
-a **denotational** semantics of monotone stream functions, a reductions-based **operational semantics**, and
-an **algebraic semantics**.
-Using recent work on [string diagram graph rewriting](https://doi.org/10.1145/3502719), this gives us a framework suitable
-for performing **graph rewriting** on digital circuits.
+
 
 When I'm not researching, I play the piano and go on adventures usually involving trains, canals or both.
 I occasionally take photos of pretty things and put them on [Instagram]({{ links.instagram }}).
@@ -38,8 +32,7 @@ You might want to read [my CV]({{ links.cv }}).
 
 ## Contact me
 
-* **University email:** {{ people.me.email.uni }}
-* **Address:** {{ people.me.address }}
+georgejkaye@gmail.com
 
 ## Contributing
 

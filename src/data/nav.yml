@@ -1,12 +1,8 @@
 all-links:
   - title: Home
     target: "/"
-  - title: Papers
-    target: "/papers/"
-  - title: Talks
-    target: "/talks/"
-  - title: Teaching
-    target: "/teaching/"
+  - title: Research
+    target: "/research/"
   - title: Blog
     target: /blog/
   - title: GitHub
