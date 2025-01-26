@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../sass/papers.scss","../../sass/colours.scss"],"names":[],"mappings":"AAEA;EACI;EACA;;;AAGJ;EACI,OCHI;EDIJ;;;AAIJ;EACI;;;AAGJ;EACI;;;AAGJ;EACI,OCfE;;;ADkBN;EACI;EACA,OCvBG;;;AD0BP;EACI;;;AAGJ;EACI","file":"papers.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/papers.scss","../../sass/colours.scss"],"names":[],"mappings":"AAEA;EACI;EACA;;;AAGJ;EACI,OCHI;;;ADMR;EACI;;;AAGJ;EACI;;;AAGJ;EACI,OCbE;;;ADgBN;EACI;EACA,OCrBG;;;ADwBP;EACI;;;AAGJ;EACI","file":"papers.css"}
