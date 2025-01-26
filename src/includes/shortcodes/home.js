@@ -170,7 +170,7 @@ const talk = (talk) => {
             <div class="talk-title">${talk.title}</div>
             <div>
                 <span class="talk-venue">
-                    <a href="${talk.web}" title="${talk.venue} webpage">${talk.venue}</a>
+                    <a href="${talk.web}" title="${talk.venue} webpage">${talk.venue}</a>,
                 </span>
                 <span class="talk-date">
                     ${prettyDate}
@@ -187,7 +187,7 @@ const visit = (visit) => {
             <a href="${visit.web}" title="${visit.venue} webpage">${visit.venue}</a>
         </div>
         <div>
-            <span class="visit-city">${visit.city}</span>
+            <span class="visit-city">${visit.city},</span>
             <span class="visit-dates">${visit.dates}</span>
         </div>
     `
@@ -201,13 +201,10 @@ const visit = (visit) => {
 
 const teaching = (teaching) => {
     var first = outdent`
-            <div class="module-title">
-                <a href="${teaching.web}" title="Module page for ${teaching.title}">${teaching.title}</a>
-            </div>
-            <div>
-                <span class="module-term">${teaching.term}</span>
-                <span class="module-role">${teaching.role}</span>
-                <span class="module-institution">${teaching.institution}</span>
+        <div class="module-title">
+            <a href="${teaching.web}" title="Module page for ${teaching.title}">${teaching.title}</a>
+        </div>
+        <div><span class="module-term">${teaching.term}</span>
     `
     let buttons = []
     if (teaching.links) {
