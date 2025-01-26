@@ -1,0 +1,60 @@
+.paper-title {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.paper-details {
+  color: #50fa7b;
+}
+
+.paper-authors {
+  font-size: 1.1em;
+}
+
+.author-me {
+  color: #ff79c6;
+}
+
+.toggle-abstract {
+  cursor: pointer;
+  color: #8be9fd;
+}
+
+.paper-abstract {
+  margin: 0.25em 0;
+}
+
+.paper-buttons {
+  margin-bottom: 0.5em;
+}
+
+.talk-title {
+  font-weight: bold;
+}
+
+.talk-date {
+  color: #50fa7b;
+}
+
+.visit-venue {
+  font-weight: bold;
+}
+
+.visit-cancelled {
+  text-decoration: line-through;
+}
+
+.visit-city {
+  color: #50fa7b;
+}
+
+.visit-dates {
+  font-style: italic;
+}
+
+.talk-buttons {
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+}
+
+/*# sourceMappingURL=research.css.map */
