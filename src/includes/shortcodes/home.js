@@ -73,6 +73,14 @@ const paper = (paper, people) => {
         (paper) => `PDF version of '${paper.title}'`,
         `pdf`
     )
+    buttonOrBlank(
+        paper,
+        buttons,
+        paper.paper,
+        (paper) => `/files/papers/${paper.key}.pdf`,
+        (paper) => `PDF version of '${paper.title}'`,
+        `pdf`
+    )
     button(
         paper,
         buttons,
@@ -105,7 +113,7 @@ const paper = (paper, people) => {
         }
             , "")}</div>`
     let abstractText = outdent`
-        <div id="${paper.file}-abstract" class="paper-abstract" >
+        <div id="${paper.key}-abstract" class="paper-abstract" >
             ${paper.abstract}
         </div>
     `
