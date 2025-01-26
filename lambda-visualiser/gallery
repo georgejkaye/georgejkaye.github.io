@@ -38,15 +38,7 @@
             
         
             
-              <a class="nav-link" href="/papers/">Papers</a>
-            
-        
-            
-              <a class="nav-link" href="/talks/">Talks</a>
-            
-        
-            
-              <a class="nav-link" href="/teaching/">Teaching</a>
+              <a class="nav-link" href="/research/">Research</a>
             
         
             
@@ -74,15 +66,7 @@
           </div>
       
           <div>
-            <a class="nav-link-mobile" href="/papers/">Papers</a>
-          </div>
-      
-          <div>
-            <a class="nav-link-mobile" href="/talks/">Talks</a>
-          </div>
-      
-          <div>
-            <a class="nav-link-mobile" href="/teaching/">Teaching</a>
+            <a class="nav-link-mobile" href="/research/">Research</a>
           </div>
       
           <div>

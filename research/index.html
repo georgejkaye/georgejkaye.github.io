@@ -4,12 +4,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!-- CSS -->
     <link rel="stylesheet" href="/css/core.css" />
-    <link rel="stylesheet" href="/css/talks.css" />
+    <link rel="stylesheet" href="/css/research.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/syntax.css" />
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Talks &middot; George Kaye</title>
+    <title>Research &middot; George Kaye</title>
     <meta name="description" content="" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,7 +31,7 @@
         <div class="nav-bar">
           <a class="nav-link" href="/">Home</a>
 
-          <a class="nav-link" href="/research/">Research</a>
+          <span class="nav-link selected">Research</span>
 
           <a class="nav-link" href="/blog/">Blog</a>
 
@@ -52,7 +52,7 @@
         </div>
 
         <div>
-          <a class="nav-link-mobile" href="/research/">Research</a>
+          <a class="nav-link-mobile selected" href="/research/">Research</a>
         </div>
 
         <div>
@@ -66,12 +66,328 @@
         </div>
       </div>
       <div class="header-bar-content container">
-        <h1 class="title">Talks</h1>
+        <h1 class="title">Research</h1>
 
         <div class="subtitle"></div>
       </div>
     </header>
     <main id="text" class="content container wide">
+      <p>
+        I used to do research before I went off to do software development
+        instead. On this page you can find everything I did during that time; if
+        you have any questions, please don't hesitate to reach out!
+      </p>
+      <ul>
+        <li><a href="#research-interests">Research interests</a></li>
+        <li><a href="#papers">Papers</a></li>
+        <li><a href="#talks">Talks</a></li>
+        <li><a href="#visits">Visits</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+      </ul>
+      <h2>Research interests</h2>
+      <p>
+        My primary research interests are in graphical calculi for compositional
+        systems and the lambda calculus using monoidal categories, and reasoning
+        about these structures diagrammatically using
+        <a href="https://doi.org/10.48550/arXiv.0908.3347">string diagrams</a>.
+      </p>
+      <p>
+        My PhD thesis detailed
+        <strong
+          >a fully compositional theory of sequential digital circuits with
+          delay and feedback</strong
+        >. This project was based on work by
+        <a href="https://doi.org/10.4230/LIPIcs.CSL.2017.24">Ghica and Jung</a>
+        who modelled digital circuits as morphisms in a
+        <a href="https://en.wikipedia.org/wiki/Traced_monoidal_category"
+          >symmetric traced monoidal category</a
+        >. My job was to tidy this all up and make it formal, leading to three
+        sound and complete semantics for sequential circuits: a
+        <strong>denotational</strong> semantics of monotone stream functions, a
+        reductions-based <strong>operational semantics</strong>, and an
+        <strong>algebraic semantics</strong>. Using recent work on
+        <a href="https://doi.org/10.1145/3502719"
+          >string diagram graph rewriting</a
+        >, this gives us a framework suitable for performing
+        <strong>graph rewriting</strong> on digital circuits.
+      </p>
+      <h2>Papers</h2>
+      <div class="card">
+        <span class="paper-title">
+          Foundations of Digital Circuits: Denotation, Operational, and
+          Algebraic Semantics</span
+        >
+        <div class="paper-authors">
+          <span class="author author-me">George Kaye</span>
+        </div>
+        <div class="paper-details">PhD thesis, University of Birmingham</div>
+        <div id="thesis-abstract" class="paper-abstract">
+          This thesis details the culmination of a project to define a fully
+          compositional theory of synchronous sequential circuits built from
+          primitive components, motivated by applying techniques successfully
+          used in programming languages to hardware. The first part of the
+          thesis defines the syntactic foundations required to create sequential
+          circuit morphisms, and then builds three different semantic theories
+          on top of this: denotational, operational and algebraic. We
+          characterise the denotational semantics of sequential circuits as
+          certain causal stream functions, as well as providing a link to
+          existing circuit methodologies by mapping between circuit morphisms,
+          stream functions and Mealy machines. The operational semantics is
+          defined as a strategy for applying some global transformations
+          followed by local reductions in order to demonstrate how a circuit
+          processes a value, leading to a notion of observational equivalence.
+          The algebraic semantics consists of equations for bringing circuits
+          into a pseudo-normal form, and then encoding between different state
+          sets. This part of the thesis concludes with a discussion of some
+          novel applications, such as those for using partial evaluation for
+          digital circuits. While mathematically rigorous, the categorical
+          string diagram formalism is not suited for reasoning computationally.
+          The second part of this thesis details an extension of existing work
+          on string diagram rewriting with hypergraphs so that it is compatible
+          with the traced comonoid structure present in the category of digital
+          circuits. We identify the properties that characterise cospans of
+          hypergraphs corresponding to traced comonoid terms, and demonstrate
+          how to identify rewriting contexts valid for rewriting modulo traced
+          comonoid structure. We apply the graph rewriting framework to fixed
+          point operators as well as the operational semantics from the first
+          part, and present a new hardware description language based on these
+          theoretical developments.
+        </div>
+        <div class="talk-buttons">
+          <div>
+            <span class="link-button"
+              ><a
+                href="/files/papers/thesis.pdf"
+                title="PDF version of 'Foundations of Digital Circuits: Denotation, Operational, and Algebraic Semantics'"
+                >pdf</a
+              ></span
+            >
+            •
+            <span class="link-button"
+              ><a
+                href="/files/papers/thesis.bib.txt"
+                title="Bibtex entry for 'Foundations of Digital Circuits: Denotation, Operational, and Algebraic Semantics'"
+                >bibtex</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <span class="paper-title">
+          Rewriting modulo traced comonoid structure</span
+        >
+        <div class="paper-authors">
+          <span class="author"
+            ><a
+              href="https://www.cs.bham.ac.uk/~drg/"
+              title="Dan Ghica's personal webpage"
+              >Dan Ghica</a
+            ></span
+          >, <span class="author author-me">George Kaye</span>
+        </div>
+        <div class="paper-details">FSCD 2023</div>
+        <div id="rewriting-traced-comonoid-abstract" class="paper-abstract">
+          We adapt the existing work on rewriting string diagrams using
+          hypergraphs in order to apply it to settings with a traced comonoid
+          structure, which happens to be where we model digital circuits.
+        </div>
+        <div class="talk-buttons">
+          <div>
+            <span class="link-button"
+              ><a
+                href="https://doi.org/10.4230/LIPIcs.FSCD.2023.14"
+                title="Published version of 'Rewriting modulo traced comonoid structure'"
+                >paper</a
+              ></span
+            >
+            •
+            <span class="link-button"
+              ><a
+                href="/files/papers/fscd2023.pdf"
+                title="PDF of 'Rewriting modulo traced comonoid structure' (published version)"
+                >(pdf)</a
+              ></span
+            >
+            •
+            <span class="link-button"
+              ><a
+                href="https://arxiv.org/abs/2302.09631"
+                title="Arxiv page for 'Rewriting modulo traced comonoid structure'"
+                >arxiv</a
+              ></span
+            >
+            •
+            <span class="link-button"
+              ><a
+                href="/files/papers/rewriting-traced-comonoid.pdf"
+                title="PDF version of 'Rewriting modulo traced comonoid structure' (arxiv version)"
+                >(pdf)</a
+              ></span
+            >
+            •
+            <span class="link-button"
+              ><a
+                href="/files/papers/rewriting-traced-comonoid.bib.txt"
+                title="Bibtex entry for 'Rewriting modulo traced comonoid structure'"
+                >bibtex</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <span class="paper-title">
+          A compositional theory of digital circuits</span
+        >
+        <div class="paper-authors">
+          <span class="author"
+            ><a
+              href="https://www.cs.bham.ac.uk/~drg/"
+              title="Dan Ghica's personal webpage"
+              >Dan Ghica</a
+            ></span
+          >, <span class="author author-me">George Kaye</span>,
+          <span class="author"
+            ><a
+              href="https://davidsprunger.com/"
+              title="David Sprunger's personal webpage"
+              >David Sprunger</a
+            ></span
+          >
+        </div>
+        <div class="paper-details">Arxiv preprint</div>
+        <div id="compositional-circuits-abstract" class="paper-abstract">
+          We model digital circuits with delay and feedback as morphisms in a
+          symmetric traced monoidal category, formalise their semantics as
+          stream functions with certain properties, and present equational
+          theory for reasoning with them.
+        </div>
+        <div class="talk-buttons">
+          <div>
+            <span class="link-button"
+              ><a
+                href="https://arxiv.org/abs/2201.10456"
+                title="Arxiv page for 'A compositional theory of digital circuits'"
+                >arxiv</a
+              ></span
+            >
+            •
+            <span class="link-button"
+              ><a
+                href="/files/papers/compositional-circuits.pdf"
+                title="PDF version of 'A compositional theory of digital circuits' (arxiv version)"
+                >(pdf)</a
+              ></span
+            >
+            •
+            <span class="link-button"
+              ><a
+                href="/files/papers/compositional-circuits.bib.txt"
+                title="Bibtex entry for 'A compositional theory of digital circuits'"
+                >bibtex</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <span class="paper-title">
+          Rewriting Graphically With Symmetric Traced Monoidal Categories</span
+        >
+        <div class="paper-authors">
+          <span class="author author-me">George Kaye</span>,
+          <span class="author"
+            >with
+            <a
+              href="https://www.cs.bham.ac.uk/~drg/"
+              title="Dan Ghica's personal webpage"
+              >Dan Ghica</a
+            ></span
+          >
+        </div>
+        <div class="paper-details">Arxiv preprint</div>
+        <div id="rewriting-abstract" class="paper-abstract">
+          We examine a variant of hypergraphs with the aim of creating a sound
+          and complete graphical language for symmetric traced monoidal
+          categories.
+        </div>
+        <div class="talk-buttons">
+          <div>
+            <span class="link-button"
+              ><a
+                href="https://arxiv.org/abs/2010.06319"
+                title="Arxiv page for 'Rewriting Graphically With Symmetric Traced Monoidal Categories'"
+                >arxiv</a
+              ></span
+            >
+            •
+            <span class="link-button"
+              ><a
+                href="/files/papers/rewriting.pdf"
+                title="PDF version of 'Rewriting Graphically With Symmetric Traced Monoidal Categories' (arxiv version)"
+                >(pdf)</a
+              ></span
+            >
+            •
+            <span class="link-button"
+              ><a
+                href="/files/papers/rewriting.bib.txt"
+                title="Bibtex entry for 'Rewriting Graphically With Symmetric Traced Monoidal Categories'"
+                >bibtex</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <span class="paper-title">
+          A visualiser for linear lambda-terms as rooted 3-valent maps</span
+        >
+        <div class="paper-authors">
+          <span class="author author-me">George Kaye</span>,
+          <span class="author"
+            >supervised by
+            <a
+              href="http://noamz.org"
+              title="Noam Zeilberger's personal webpage"
+              >Noam Zeilberger</a
+            ></span
+          >
+        </div>
+        <div class="paper-details">
+          Masters dissertation (2019), University of Birmingham
+        </div>
+        <div id="masters-abstract" class="paper-abstract">
+          We detail the development of a set of tools to aid in the research of
+          the topological properties of linear λ-terms when they are represented
+          as 3-valent rooted maps.
+        </div>
+        <div class="talk-buttons">
+          <div>
+            <span class="link-button"
+              ><a href="/lamviz/" title="Page for '/lamviz/">page</a></span
+            >
+            •
+            <span class="link-button"
+              ><a
+                href="/files/papers/masters.pdf"
+                title="PDF version of 'A visualiser for linear lambda-terms as rooted 3-valent maps'"
+                >pdf</a
+              ></span
+            >
+            •
+            <span class="link-button"
+              ><a
+                href="/files/papers/masters.bib.txt"
+                title="Bibtex entry for 'A visualiser for linear lambda-terms as rooted 3-valent maps'"
+                >bibtex</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+      <h2>Talks</h2>
       <div class="card">
         <div class="talk-title">
           A Fully Compositional Theory of Sequential Digital Circuits
@@ -523,7 +839,7 @@
           </div>
         </div>
       </div>
-      <h3>Visits</h3>
+      <h2>Visits</h2>
       <div class="card">
         <div class="visit-venue">
           <a
@@ -814,6 +1130,74 @@
           <span class="visit-city">Versailles,</span>
           <span class="visit-dates">July 1-2, 2019</span>
         </div>
+      </div>
+      <h2>Teaching</h2>
+      <div class="card">
+        <div class="module-title">
+          <a
+            href="https://www.cs.bham.ac.uk/internal/modules/2023/06-35393/"
+            title="Module page for Theories of Computation"
+            >Theories of Computation</a
+          >
+        </div>
+        <div><span class="module-term">Spring 2024</span></div>
+      </div>
+      <div class="card">
+        <div class="module-title">
+          <a
+            href="https://www.cs.bham.ac.uk/internal/modules/2021/06-35393/"
+            title="Module page for Theories of Computation"
+            >Theories of Computation</a
+          >
+        </div>
+        <div><span class="module-term">Spring 2022</span></div>
+      </div>
+      <div class="card">
+        <div class="module-title">
+          <a
+            href="https://www.cs.bham.ac.uk/internal/modules/2021/06-35324/"
+            title="Module page for Mathematical and Logical Foundations of Computer Science"
+            >Mathematical and Logical Foundations of Computer Science</a
+          >
+        </div>
+        <div><span class="module-term">Autumn 2021</span></div>
+      </div>
+      <div class="card">
+        <div class="module-title">
+          <a
+            href="https://www.cs.bham.ac.uk/internal/modules/2020/06-35324/"
+            title="Module page for Mathematical and Logical Foundations of Computer Science"
+            >Mathematical and Logical Foundations of Computer Science</a
+          >
+        </div>
+        <div><span class="module-term">Autumn 2020</span></div>
+      </div>
+      <div class="card">
+        <div class="module-title">
+          <a
+            href="https://www.cs.bham.ac.uk/internal/modules/2019/06-02578/"
+            title="Module page for Compilers & Languages"
+            >Compilers & Languages</a
+          >
+        </div>
+        <div>
+          <span class="module-term">Spring 2020</span>
+          <span class="link-button"
+            ><a href="/ocaml" title="OCaml tutorial page"
+              >ocaml tutorial</a
+            ></span
+          >
+        </div>
+      </div>
+      <div class="card">
+        <div class="module-title">
+          <a
+            href="https://www.cs.bham.ac.uk/internal/modules/2019/06-30181/"
+            title="Module page for Mathematical Foundations of Computer Science"
+            >Mathematical Foundations of Computer Science</a
+          >
+        </div>
+        <div><span class="module-term">Autumn 2019</span></div>
       </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
