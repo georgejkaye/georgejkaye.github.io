@@ -1,3 +1,11 @@
+- title: "Foundations of Digital Circuits: Denotation, Operational, and Algebraic Semantics"
+  details: PhD thesis, University of Birmingham
+  key: thesis
+  authors:
+    - name: me
+  abstract: "This thesis details the culmination of a project to define a fully compositional theory of synchronous sequential circuits built from primitive components, motivated by applying techniques successfully used in programming languages to hardware. The first part of the thesis defines the syntactic foundations required to create sequential circuit morphisms, and then builds three different semantic theories on top of this: denotational, operational and algebraic. We characterise the denotational semantics of sequential circuits as certain causal stream functions, as well as providing a link to existing circuit methodologies by mapping between circuit morphisms, stream functions and Mealy machines. The operational semantics is defined as a strategy for applying some global transformations followed by local reductions in order to demonstrate how a circuit processes a value, leading to a notion of observational equivalence. The algebraic semantics consists of equations for bringing circuits into a pseudo-normal form, and then encoding between different state sets. This part of the thesis concludes with a discussion of some novel applications, such as those for using partial evaluation for digital circuits. While mathematically rigorous, the categorical string diagram formalism is not suited for reasoning computationally. The second part of this thesis details an extension of existing work on string diagram rewriting with hypergraphs so that it is compatible with the traced comonoid structure present in the category of digital circuits. We identify the properties that characterise cospans of hypergraphs corresponding to traced comonoid terms, and demonstrate how to identify rewriting contexts valid for rewriting modulo traced comonoid structure. We apply the graph rewriting framework to fixed point operators as well as the operational semantics from the first part, and present a new hardware description language based on these theoretical developments."
+  paper:
+    name: thesis
 - title: Rewriting modulo traced comonoid structure
   details: FSCD 2023
   key: rewriting-traced-comonoid
@@ -10,8 +18,7 @@
   arxiv:
     id: 2302.09631
     date: "2023-02-19"
-  abstract:
-    We adapt the existing work on rewriting string diagrams using hypergraphs in order to apply it to settings with a traced comonoid structure, which happens to be where we model digital circuits.
+  abstract: We adapt the existing work on rewriting string diagrams using hypergraphs in order to apply it to settings with a traced comonoid structure, which happens to be where we model digital circuits.
 - title: A compositional theory of digital circuits
   details: Arxiv preprint
   authors:
@@ -22,8 +29,7 @@
   arxiv:
     id: 2201.10456
     date: "2023-02-13"
-  abstract:
-    We model digital circuits with delay and feedback as morphisms in a symmetric traced monoidal category, formalise their semantics as stream functions with certain properties, and present equational theory for reasoning with them.
+  abstract: We model digital circuits with delay and feedback as morphisms in a symmetric traced monoidal category, formalise their semantics as stream functions with certain properties, and present equational theory for reasoning with them.
 - title: Rewriting Graphically With Symmetric Traced Monoidal Categories
   details: Arxiv preprint
   authors:
@@ -34,8 +40,7 @@
   arxiv:
     id: 2010.06319
     date: "2021-03-19"
-  abstract:
-    We examine a variant of hypergraphs with the aim of creating a sound and complete graphical language for symmetric traced monoidal categories.
+  abstract: We examine a variant of hypergraphs with the aim of creating a sound and complete graphical language for symmetric traced monoidal categories.
 - title: A visualiser for linear lambda-terms as rooted 3-valent maps
   details: Masters dissertation (2019), University of Birmingham
   key: masters

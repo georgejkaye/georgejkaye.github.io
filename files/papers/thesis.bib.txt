@@ -1,0 +1,8 @@
+@phdthesis{kaye2024foundations,
+  title         = {Foundations of Digital Circuits},
+  subtitle      = {Denotation, Operational, and Algebraic Semantics}
+  author        = {George Kaye},
+  school        = {University of Birmingham},
+  date          = {2024-11-09}
+  url           = {https://georgejkaye.com/files/papers/thesis.pdf}
+}
