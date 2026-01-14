@@ -1,3 +1,13 @@
+- title: Rewriting Modulo Traced Comonoid Structure
+  details: Logical Methods in Computer Science, Volume 22, Issue 1
+  key: rewriting-traced-comonoid-lmcs
+  authors:
+    - name: dan
+    - name: me
+  publication:
+    name: lmcs-rewriting
+    doi: 10.46298/lmcs-22(1:2)2026
+  abstract: "In this paper we adapt previous work on rewriting string diagrams using hypergraphs to the case where the underlying category has a traced comonoid structure, in which wires can be forked and the outputs of a morphism can be connected to its input. Such a structure is particularly interesting because any traced Cartesian (dataflow) category has an underlying traced comonoid structure. We show that certain subclasses of hypergraphs are fully complete for traced comonoid categories: that is to say, every term in such a category has a unique corresponding hypergraph up to isomorphism, and from every hypergraph with the desired properties, a unique term in the category can be retrieved up to the axioms of traced comonoid categories. We also show how the framework of double pushout rewriting (DPO) can be adapted for traced comonoid categories by characterising the valid pushout complements for rewriting in our setting. We conclude by presenting a case study in the form of recent work on an equational theory for sequential circuits: circuits built from primitive logic gates with delay and feedback. The graph rewriting framework allows for the definition of an operational semantics for sequential circuits."
 - title: "Foundations of Digital Circuits: Denotation, Operational, and Algebraic Semantics"
   details: PhD thesis, University of Birmingham
   key: thesis
