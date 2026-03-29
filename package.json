@@ -5,6 +5,7 @@
     "type": "git",
     "url": "https://github.com/georgejkaye/georgejkaye.github.io"
   },
+  "type": "module",
   "scripts": {
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "watch:sass": "npx sass sass:build/css --watch",
@@ -14,7 +15,7 @@
     "format": "npx prettier --ignore-path .prettierignore --write build"
   },
   "dependencies": {
-    "@11ty/eleventy": "2",
+    "@11ty/eleventy": "^3",
     "@iktakahiro/markdown-it-katex": "^4.0.1",
     "js-yaml": "^4.1.1",
     "katex": "^0.16.21",

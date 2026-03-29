@@ -16,7 +16,7 @@
   to: "/files/papers/2019-04-08-masters.pdf"
 - from: "/lambda-visualiser/visualiser/"
   to: "/lamviz/visualiser/"
-- from: "/lambda-visualiser/gallery"
+- from: "/lambda-visualiser/gallery/"
   to: "/lamviz/gallery/"
 - from: "/lambda-visualiser/"
   to: "/lamviz/"
