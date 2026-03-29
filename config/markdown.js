@@ -1,6 +1,6 @@
 import markdownItDefault from 'markdown-it';
 import markdownItAttrs from "markdown-it-attrs";
-import markdownItKatex from "@iktakahiro/markdown-it-katex";
+import markdownItKatex from "@vscode/markdown-it-katex";
 
 const markdownIt = markdownItDefault({
     html: true,
@@ -8,6 +8,6 @@ const markdownIt = markdownItDefault({
     linkify: true,
 });
 
-const markdownLib = markdownIt.use(markdownItAttrs).use(markdownItKatex)
+const markdownLib = markdownIt.use(markdownItAttrs).use(markdownItKatex.default)
 
 export default markdownLib;
