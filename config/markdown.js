@@ -1,6 +1,6 @@
-const markdownItDefault = require('markdown-it');
-const markdownItAttrs = require("markdown-it-attrs")
-const markdownItKatex = require("@iktakahiro/markdown-it-katex")
+import markdownItDefault from 'markdown-it';
+import markdownItAttrs from "markdown-it-attrs";
+import markdownItKatex from "@iktakahiro/markdown-it-katex";
 
 const markdownIt = markdownItDefault({
     html: true,
@@ -10,4 +10,4 @@ const markdownIt = markdownItDefault({
 
 const markdownLib = markdownIt.use(markdownItAttrs).use(markdownItKatex)
 
-module.exports = markdownLib;
+export default markdownLib;

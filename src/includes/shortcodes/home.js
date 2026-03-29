@@ -1,7 +1,7 @@
-const outdent = require("outdent")
-const moment = require("moment")
+import outdent from "outdent"
+import moment from "moment"
 
-const navLink = `<div class="nav-link"><a href="{{ link.target }}">{{ link.title }}</a></div>`
+export const navLink = () => `<div class="nav-link"><a href="{{ link.target }}">{{ link.title }}</a></div>`
 
 const button = (element, array, target, title, text) => {
     array.push(
@@ -22,7 +22,7 @@ const makeButtons = (buttons) =>
         </div>
     `
 
-const paper = (paper, people) => {
+export const paper = (paper, people) => {
     let titleText = `<span class="paper-title"> ${paper.title}</span>`
     let buttons = []
     buttonOrBlank(
@@ -126,7 +126,7 @@ const paper = (paper, people) => {
     return paperReturn
 }
 
-const talk = (talk) => {
+export const talk = (talk) => {
     let date = talk.date.toUTCString()
     let prettyDate = moment.utc(date).format("MMMM DD, YYYY")
     let fileDate = moment.utc(date).format("YYYY-MM-DD")
@@ -181,7 +181,7 @@ const talk = (talk) => {
     `
 }
 
-const visit = (visit) => {
+export const visit = (visit) => {
     var output = outdent`
         <div class="visit-venue">
             <a href="${visit.web}" title="${visit.venue} webpage">${visit.venue}</a>
@@ -199,7 +199,7 @@ const visit = (visit) => {
     `
 }
 
-const teaching = (teaching) => {
+export const teaching = (teaching) => {
     var first = outdent`
         <div class="module-title">
             <a href="${teaching.web}" title="Module page for ${teaching.title}">${teaching.title}</a>
@@ -227,7 +227,7 @@ const teaching = (teaching) => {
     `
 }
 
-const misc = (link) => {
+export const misc = (link) => {
     let text = link.text
         ? `<span class="misc-text">${link.text}</span>`
         : ""
@@ -238,5 +238,3 @@ const misc = (link) => {
     </p>
     `
 }
-
-module.exports = { talk, visit, teaching, paper, navLink, misc }
