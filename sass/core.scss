@@ -27,7 +27,7 @@ body {
 }
 
 h1, h2,h3,h4,h5 {
-  font-weight: 300;
+  font-weight: 600;
 }
 
 h1 {
@@ -166,10 +166,9 @@ $content-padding: 16px;
 }
 
 .card {
-  background-color: $accent;
-  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   margin: 0 0 10px 0;
-  @media (max-width: ($mobile-width + $buffer)) {
-    padding: 0 20px 10px 20px;
-  }
+  margin-bottom: 30px;
 }
