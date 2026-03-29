@@ -1,11 +1,11 @@
-const yaml = require("js-yaml")
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
-const moment = require("moment")
-const lodashChunk = require("lodash.chunk")
-const markdownIt = require("./config/markdown.js")
-const { talk, visit, teaching, paper, misc, navLink } = require("./src/includes/shortcodes/home")
+import yaml from "js-yaml"
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight"
+import moment from "moment"
+import lodashChunk from "lodash.chunk"
+import markdownIt from "./config/markdown.js"
+import { talk, visit, teaching, paper, misc, navLink } from "./src/includes/shortcodes/home.js"
 
-module.exports = config => {
+export default function(config) {
     config.setDataDeepMerge(true)
 
     config.setServerOptions({
