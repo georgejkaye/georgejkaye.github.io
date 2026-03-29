@@ -26,7 +26,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 300;
+  font-weight: 600;
 }
 
 h1 {
@@ -169,14 +169,11 @@ code {
 }
 
 .card {
-  background-color: #383a59;
-  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   margin: 0 0 10px 0;
-}
-@media (max-width: 550px) {
-  .card {
-    padding: 0 20px 10px 20px;
-  }
+  margin-bottom: 30px;
 }
 
 .site-name-bar {
@@ -195,7 +192,7 @@ code {
 .site-name {
   color: #ff79c6;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
 }
 
