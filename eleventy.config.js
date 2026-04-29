@@ -4,6 +4,9 @@ import moment from "moment"
 import lodashChunk from "lodash.chunk"
 import markdownIt from "./config/markdown.js"
 import { talk, visit, teaching, paper, misc, navLink } from "./src/includes/shortcodes/home.js"
+import "tsx/esm";
+import { renderToStaticMarkup } from "react-dom/server";
+
 
 export default function(config) {
     config.setDataDeepMerge(true)
@@ -11,6 +14,17 @@ export default function(config) {
     config.setServerOptions({
         watch: ['./build/css/**/*.css']
     })
+
+    config.addExtension(["11ty.jsx", "11ty.ts", "11ty.tsx"], {
+        key: "11ty.js",
+        compile: () =>
+            async function (data) {
+                let content = await this.defaultRenderer(data);
+                return renderToStaticMarkup(content);
+            }
+        }
+    )
+    config.addTemplateFormats(["11ty.jsx", "11ty.ts", "11ty.tsx"]);
 
     config.addPassthroughCopy("images")
     config.addPassthroughCopy("files")
