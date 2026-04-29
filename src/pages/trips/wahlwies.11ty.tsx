@@ -244,6 +244,8 @@ export default ({ permalink }: Data) => {
       <h3>Wahlwies to Zurich</h3>
       <ServiceList services={mondayTrains} />
       <TicketList tickets={mondayTickets} />
+      <h3>Zurich to London City</h3>
+      <h3>London City to Birmingham New Street</h3>
       <h2>Total</h2>
       <div className="text-2xl font-bold">£{(thursdayTickets.reduce((acc, cur) => acc + cur.price, 0)
         + fridayTickets.reduce((acc, cur) => acc + cur.price, 0)
@@ -253,11 +255,6 @@ export default ({ permalink }: Data) => {
   );
 };
 
-// #### Tickets
-
-// | Ticket | Origin | Destination | Price |
-// | :- | :- | :- | :- |
-// | Super Sparpreis Europa | Wahlwies | Zurich HB | £21.00 |
 
 // ### Zurich to London City Airport
 
