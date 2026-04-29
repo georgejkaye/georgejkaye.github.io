@@ -8,7 +8,7 @@ import "tsx/esm";
 import { renderToStaticMarkup } from "react-dom/server";
 
 
-export default function(config) {
+export default function (config) {
     config.setDataDeepMerge(true)
 
     config.setServerOptions({
@@ -22,7 +22,7 @@ export default function(config) {
                 let content = await this.defaultRenderer(data);
                 return renderToStaticMarkup(content);
             }
-        }
+    }
     )
     config.addTemplateFormats(["11ty.jsx", "11ty.ts", "11ty.tsx"]);
 
@@ -161,10 +161,10 @@ export default function(config) {
     config.addCollection("alphabetisedStations", function (collection) {
         let stations = collection.getAllSorted()[0].data.stations
         let alphabetised = {}
-        for(let station of stations) {
+        for (let station of stations) {
             let name = station.name
             let letter = name.charAt(0).toUpperCase()
-            if(letter in alphabetised){
+            if (letter in alphabetised) {
                 alphabetised[letter].push(station)
             } else {
                 alphabetised[letter] = [station]
