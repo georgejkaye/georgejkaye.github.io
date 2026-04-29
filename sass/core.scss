@@ -26,7 +26,11 @@ body {
   color: $foreground;
 }
 
-h1, h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 600;
 }
 
@@ -40,7 +44,7 @@ h2,
 h3,
 h4 {
   color: $green;
-  margin-top: 0.5em;
+  margin-top: 0.25em;
   margin-bottom: 0.5em;
 }
 
@@ -79,15 +83,16 @@ thead {
   background-color: $accent;
 }
 
-thead > tr > td:nth-child(1) {
+thead>tr>td:nth-child(1) {
   border-radius: 5px 0 0 0;
 }
 
-thead > tr > td:nth-last-child(1) {
+thead>tr>td:nth-last-child(1) {
   border-radius: 0 5px 0 0;
 }
 
-td, th {
+td,
+th {
   padding: 0.25em 0.5rem;
 }
 
@@ -112,6 +117,8 @@ code {
 .header-bar-content {
   margin: auto;
 
+  padding: 0 20px 0 20px;
+
   @media (min-width: ($mobile-width + $buffer)) {
     max-width: $mobile-width;
   }
@@ -126,10 +133,6 @@ code {
 }
 
 $content-padding: 16px;
-
-.content {
-  padding: 0 20px 20px 20px;
-}
 
 .counter {
   padding-bottom: 20px;
@@ -146,7 +149,7 @@ $content-padding: 16px;
   margin: 0 5px;
 }
 
-.number-block > a {
+.number-block>a {
   text-decoration: none;
 }
 
