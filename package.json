@@ -9,11 +9,11 @@
   "scripts": {
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "watch:sass": "npx sass sass:build/css --watch",
-    "watch:tailwindcss": "npx @tailwindcss/cli -i tailwind.css -o build/css/tailwind.css --watch",
+    "watch:tailwindcss": "npx @tailwindcss/cli -i tailwind/tailwind.css -o build/css/tailwind.css --watch",
     "start": "concurrently \"npm run watch:eleventy\" \"npm run watch:sass\" \"npm run watch:tailwindcss\"",
     "build:eleventy": "npx @11ty/eleventy",
     "build:sass": "npx sass sass:build/css",
-    "build:tailwindcss": "npx @tailwindcss/cli -i tailwind.css -o build/css/tailwind.css",
+    "build:tailwindcss": "npx @tailwindcss/cli -i tailwind/tailwind.css -o build/css/tailwind.css",
     "format": "npx prettier --ignore-path .prettierignore --write build"
   },
   "dependencies": {
