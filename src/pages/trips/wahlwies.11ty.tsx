@@ -69,10 +69,11 @@ const TicketCard = ({ ticket }: { ticket: Ticket }) => (
   </div>
 )
 
-const TicketList = ({ tickets }: { tickets: Ticket[] }) => (
+const TicketList = ({ tickets, advice }: { tickets: Ticket[], advice?: string }) => (
   <div>
     <h4>Tickets</h4>
     <div className="flex flex-col gap-4">
+      {advice && <div>{advice}</div>}
       {tickets.map(ticket => <TicketCard key={`${ticket.start}:${ticket.end}`} ticket={ticket} />)}
       <div className="flex flex-row">
         <div className="flex-1 text-xl font-bold">Total</div>
@@ -297,18 +298,21 @@ export default ({ permalink }: Data) => {
     }]
   return (
     <div>
+      <div>Prices obtained using the appropriate booking-fee-free sites, converting EUR to GBP where appropriate using the Monzo rate. National Rail services have 26-30 railcard applied.</div>
       <h2>Thursday 02 July</h2>
       <h3>Birmingham to Strasbourg</h3>
       <ServiceList services={thursdayTrains} />
-      <TicketList tickets={thursdayTickets} />
+      <div></div>
+      <TicketList tickets={thursdayTickets} advice={"Book via your preferred National Rail ticket provider, Eurostar, and SNCF Connect."} />
       <h2>Friday 03 July</h2>
       <h3>Strasbourg to Wahlwies</h3>
+      <div>Book via DB Navigator app.</div>
       <ServiceList services={fridayTrains} />
-      <TicketList tickets={fridayTickets} />
+      <TicketList tickets={fridayTickets} advice={"Book via teh DB Navigator app."} />
       <h2>Monday 06 July</h2>
       <h3>Wahlwies to Zurich</h3>
       <ServiceList services={mondayTrains} />
-      <TicketList tickets={mondayContinentalTrainTickets} />
+      <TicketList tickets={mondayContinentalTrainTickets} advice={"Book via the DB Navigator app."} />
       <h3>Zurich to London City</h3>
       <ServiceList services={mondayPlanes} />
       <TicketList tickets={mondayPlaneTickets} />
