@@ -56,7 +56,6 @@ $nav-height: 75px;
 .header-bar-content {
   margin: auto;
   margin-top: 20px;
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   @media (max-width: ($mobile-width + $buffer)) {
