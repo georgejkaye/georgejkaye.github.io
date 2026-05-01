@@ -111,6 +111,7 @@ code {
 .container,
 .header-bar-content {
   margin: auto;
+  padding: 0 20px 20px 20px;
 }
 @media (min-width: 550px) {
   .container,
@@ -129,10 +130,6 @@ code {
   .header-bar-content {
     max-width: 800px;
   }
-}
-
-.content {
-  padding: 0 20px 20px 20px;
 }
 
 .counter {
