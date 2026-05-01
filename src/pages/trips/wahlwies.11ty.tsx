@@ -146,7 +146,7 @@ export default ({ permalink }: Data) => {
         name: "Eurostar Standard",
         start: "London St Pancras International",
         end: "Paris Nord",
-        price: 136.5
+        price: 90
       },
       {
         name: "Tarif Standard Seconde",
