@@ -7,7 +7,6 @@ node_modules/
 .jekyll-cache
 .metals
 _site/
-*.css*
 
 ./*pdf
 *synctex.gz
