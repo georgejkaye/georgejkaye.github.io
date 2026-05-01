@@ -152,7 +152,7 @@ export default ({ permalink }: Data) => {
         name: "Tarif Standard Seconde",
         start: "Paris Est",
         end: "Strasbourg",
-        price: 56.6
+        price: 53.53
       }
     ]
   const fridayTrains =
@@ -194,7 +194,7 @@ export default ({ permalink }: Data) => {
         name: "Normalpreis Europa",
         start: "Strasbourg",
         end: "Wahlwies",
-        price: 51
+        price: 48.52
       }
     ]
   const mondayTrains =
@@ -236,7 +236,7 @@ export default ({ permalink }: Data) => {
         name: "Super Sparpreis Europa",
         start: "Wahlwies",
         end: "Zurich HB",
-        price: 21
+        price: 19.85
       }
     ]
   const mondayPlanes = [
