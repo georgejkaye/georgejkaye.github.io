@@ -2,32 +2,39 @@ interface Service {
   id: string;
   operator: string;
   origin: string;
-  dep: Date;
+  dep?: Date;
   depHourOffset?: number
   destination: string;
-  arr: Date;
+  arr?: Date;
   arrHourOffset?: number
 }
 
 const ServiceCard = ({ service }: { service: Service }) => {
-  const depHourGb = new Date(service.dep.getTime())
-  depHourGb.setHours(depHourGb.getHours() - (service.depHourOffset ?? 0))
-  const arrHourGb = new Date(service.arr.getTime())
-  arrHourGb.setHours(arrHourGb.getHours() - (service.arrHourOffset ?? 0))
-  const duration = arrHourGb.getTime() - depHourGb.getTime()
+  const depHourGb = !service.dep ? undefined : new Date(service.dep.getTime())
+  if (depHourGb) {
+    depHourGb.setHours(depHourGb.getHours() - (service.depHourOffset ?? 0))
+  }
+  const arrHourGb = !service.arr ? undefined : new Date(service.arr.getTime())
+  if (arrHourGb) {
+    arrHourGb.setHours(arrHourGb.getHours() - (service.arrHourOffset ?? 0))
+  }
+  const duration = !arrHourGb || !depHourGb ? undefined : arrHourGb.getTime() - depHourGb.getTime()
   return (
     <div className="flex flex-col gap-2 rounded-xl">
       <div className="flex flex-row items-center">
-        <div className="text-2xl w-20">{service.dep.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}</div>
+        <div className="text-2xl w-20">{!service.dep ? "xx:xx" : service.dep.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}</div>
         <div className="text-xl font-bold">{service.origin}</div>
       </div>
       <div className="flex flex-row items-center">
-        <div className="text-2xl w-20">{service.arr.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}</div>
+        <div className="text-2xl w-20">{!service.arr ? "xx:xx" : service.arr.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}</div>
         <div className="text-xl font-bold">{service.destination}</div>
       </div>
       <div className="flex flex-row gap-2">
-        <div>{Math.floor(duration / 3600000)}h {Math.floor(duration / 60000 % 60)}m</div>
-        <div>•</div>
+        {duration && (
+          <>
+            <div>{Math.floor(duration / 3600000)}h {Math.floor(duration / 60000 % 60)}m</div>
+            <div>•</div>
+          </>)}
         <div>{service.operator}</div>
         <div>•</div>
         <div>{service.id}</div>
@@ -36,14 +43,13 @@ const ServiceCard = ({ service }: { service: Service }) => {
   )
 }
 
-const ConnectionCard = ({ first, second }: { first: Service, second: Service }) => {
-  const connectionTime = second.dep.getTime() - first.arr.getTime()
+const ConnectionCard = ({ incomingArr, outgoingDep }: { incomingArr: Date, outgoingDep: Date }) => {
+  const connectionTime = outgoingDep.getTime() - incomingArr.getTime()
   return (
     <div className="rounded-xl">
       {Math.floor(connectionTime / 3600000)} hour {Math.floor(connectionTime / 60000 % 60)} minute connection
     </div>
   )
-
 }
 
 interface Ticket {
@@ -80,12 +86,15 @@ const ServiceList = ({ services }: { services: Service[] }) => (
   <div>
     <h4>Itinerary</h4>
     <div className="flex flex-col gap-6">
-      {services.map((service, i) => (
-        <>
-          <ServiceCard key={service.id} service={service} />
-          {i !== services.length - 1 && <ConnectionCard first={service} second={services[i + 1]} />}
-        </>
-      ))}
+      {services.map((service, i) => {
+        const nextService = i >= services.length ? undefined : services[i + 1]
+        return (
+          <>
+            <ServiceCard key={service.id} service={service} />
+            {service.arr && nextService && nextService.dep && <ConnectionCard incomingArr={service.arr} outgoingDep={nextService.dep} />}
+          </>
+        )
+      })}
     </div>
   </div>
 )
@@ -221,7 +230,7 @@ export default ({ permalink }: Data) => {
         arrHourOffset: 1
       }
     ]
-  const mondayTickets =
+  const mondayContinentalTrainTickets =
     [
       {
         name: "Super Sparpreis Europa",
@@ -230,6 +239,62 @@ export default ({ permalink }: Data) => {
         price: 21
       }
     ]
+  const mondayPlanes = [
+    {
+      id: "BA8768",
+      operator: "British Airways",
+      origin: "Zurich",
+      dep: new Date(2026, 6, 6, 19, 15),
+      depHourOffset: 1,
+      destination: "London City",
+      arr: new Date(2026, 6, 6, 19, 50),
+      arrHourOffset: 0
+    }]
+  const mondayPlaneTickets =
+    [
+      {
+        name: "Economy",
+        start: "Zurich",
+        end: "London City",
+        price: 96
+      }
+    ]
+  const mondayGbTrains = [
+    {
+      id: "DLR",
+      operator: "TfL",
+      origin: "London City Airport",
+      destination: "Bank"
+    },
+    {
+      id: "Northern",
+      operator: "TfL",
+      origin: "Bank",
+      destination: "Euston"
+    },
+    {
+      id: "W02001",
+      operator: "Avanti West Coast",
+      origin: "London Euston",
+      dep: new Date(2026, 6, 6, 21, 29),
+      depHourOffset: 0,
+      destination: "Birmingham New Street",
+      arr: new Date(2026, 6, 6, 23, 2),
+      arrHourOffset: 0
+    }]
+  const mondayGbTrainTickets =
+    [{
+      name: "Zones 1-3",
+      start: "London City Airport",
+      end: "Euston",
+      price: 3.30
+    },
+    {
+      name: "Off-Peak Single",
+      start: "London Euston",
+      end: "Birmingham New Street",
+      price: 33.60
+    }]
   return (
     <div>
       <h2>Thursday 02 July</h2>
@@ -243,26 +308,20 @@ export default ({ permalink }: Data) => {
       <h2>Monday 06 July</h2>
       <h3>Wahlwies to Zurich</h3>
       <ServiceList services={mondayTrains} />
-      <TicketList tickets={mondayTickets} />
+      <TicketList tickets={mondayContinentalTrainTickets} />
       <h3>Zurich to London City</h3>
+      <ServiceList services={mondayPlanes} />
+      <TicketList tickets={mondayPlaneTickets} />
       <h3>London City to Birmingham New Street</h3>
+      <ServiceList services={mondayGbTrains} />
+      <TicketList tickets={mondayGbTrainTickets} />
       <h2>Total</h2>
       <div className="text-2xl font-bold">£{(thursdayTickets.reduce((acc, cur) => acc + cur.price, 0)
         + fridayTickets.reduce((acc, cur) => acc + cur.price, 0)
-        + mondayTickets.reduce((acc, cur) => acc + cur.price, 0)).toFixed(2)
+        + mondayContinentalTrainTickets.reduce((acc, cur) => acc + cur.price, 0)
+        + mondayPlaneTickets.reduce((acc, cur) => acc + cur.price, 0)
+        + mondayGbTrainTickets.reduce((acc, cur) => acc + cur.price, 0)).toFixed(2)
       }</div>
     </div>
   );
 };
-
-
-// ### Zurich to London City Airport
-
-// |||
-// | - | - |
-// |**Price**|£96.00|
-
-// ||||
-// | - | - | - |
-// | Zurich | ZRH | 19:15 |
-// | London City | LCY | 19:50 |
