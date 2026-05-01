@@ -1,7 +1,7 @@
 name: Eleventy build
 on:
   push:
-    branches: [ develop ]
+    branches: [develop]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,13 +11,15 @@ jobs:
       - name: Set up node
         uses: actions/setup-node@v6.3.0
         with:
-          node-version: '24'
+          node-version: "24"
       - name: Install dependencies
         run: yarn
       - name: Build website
         run: yarn build:eleventy
       - name: Compile sass
         run: yarn build:sass
+      - name: Build tailwind css
+        run: yarn build:tailwindcss
       - name: Prettify code
         run: yarn format
       - name: Push to main branch
@@ -39,4 +41,3 @@ jobs:
             git pull
             cp -r * ${{ vars.SITE_DIRECTORY }}
             rm -rf ${{ vars.SITE_DIRECTORY }}/.git
-
