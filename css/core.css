@@ -111,6 +111,7 @@ code {
 .container,
 .header-bar-content {
   margin: auto;
+  padding: 0 20px 20px 20px;
 }
 @media (min-width: 550px) {
   .container,
