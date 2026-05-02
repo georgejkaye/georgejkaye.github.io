@@ -6,7 +6,8 @@ interface Service {
   depHourOffset?: number
   destination: string;
   arr?: Date;
-  arrHourOffset?: number
+  arrHourOffset?: number,
+  seat?: string
 }
 
 const ServiceCard = ({ service }: { service: Service }) => {
@@ -38,6 +39,11 @@ const ServiceCard = ({ service }: { service: Service }) => {
         <div>{service.operator}</div>
         <div>•</div>
         <div>{service.id}</div>
+        {service.seat && (
+          <>
+            <div>•</div>
+            <div>{service.seat}</div>
+          </>)}
       </div>
     </div>
   )
@@ -147,7 +153,8 @@ export default ({ permalink }: Data) => {
         name: "Eurostar Standard",
         start: "London St Pancras International",
         end: "Paris Nord",
-        price: 90
+        price: 90,
+        seat: "Coach 13 Seat 14"
       },
       {
         name: "Tarif Standard Seconde",
