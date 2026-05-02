@@ -233,7 +233,7 @@ export default ({ permalink }: Data) => {
         origin: "Singen (Hohentwiel)",
         depHourOffset: 1,
         dep: new Date(2026, 6, 6, 10, 32),
-        destination: "Wahlwies",
+        destination: "Zurich HB",
         arr: new Date(2026, 6, 6, 11, 23),
         arrHourOffset: 1
       }
