@@ -120,6 +120,7 @@ export default ({ permalink }: Data) => {
         dep: new Date(2026, 6, 2, 8, 17),
         destination: "London Euston",
         arr: new Date(2026, 6, 2, 9, 41),
+        seat: "F45"
       },
       {
         id: "9022",
@@ -128,7 +129,8 @@ export default ({ permalink }: Data) => {
         dep: new Date(2026, 6, 2, 11, 31),
         destination: "Paris Nord",
         arr: new Date(2026, 6, 2, 14, 49),
-        arrHourOffset: 1
+        arrHourOffset: 1,
+        seat: "Coach 13 Seat 14"
       },
       {
         id: "9577",
@@ -153,8 +155,7 @@ export default ({ permalink }: Data) => {
         name: "Eurostar Standard",
         start: "London St Pancras International",
         end: "Paris Nord",
-        price: 90,
-        seat: "Coach 13 Seat 14"
+        price: 90
       },
       {
         name: "Tarif Standard Seconde",
