@@ -141,7 +141,7 @@ export default ({ permalink }: Data) => {
         name: "Advance Single",
         start: "Birmingham New Street",
         end: "London Euston",
-        price: 25.6
+        price: 28.95
       },
       {
         name: "Eurostar Standard",
