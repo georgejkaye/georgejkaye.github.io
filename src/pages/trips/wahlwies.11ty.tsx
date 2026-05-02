@@ -140,7 +140,8 @@ export default ({ permalink }: Data) => {
         dep: new Date(2026, 6, 2, 15, 55),
         destination: "Strasbourg",
         arr: new Date(2026, 6, 2, 17, 41),
-        arrHourOffset: 1
+        arrHourOffset: 1,
+        seat: "Coach 2 Seat 214"
       }
     ]
   const thursdayTickets =
