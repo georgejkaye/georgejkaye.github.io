@@ -213,7 +213,7 @@ export default ({ permalink }: Data) => {
         origin: "Wahlwies",
         dep: new Date(2026, 6, 6, 9, 53),
         depHourOffset: 1,
-        destination: "Offenburg",
+        destination: "Radolfzell",
         arr: new Date(2026, 6, 6, 10, 4),
         arrHourOffset: 1
       },
