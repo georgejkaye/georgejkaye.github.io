@@ -289,7 +289,8 @@ export default ({ permalink }: Data) => {
       depHourOffset: 0,
       destination: "Birmingham New Street",
       arr: new Date(2026, 6, 6, 23, 2),
-      arrHourOffset: 0
+      arrHourOffset: 0,
+      seat: "B58"
     }]
   const mondayGbTrainTickets =
     [{
