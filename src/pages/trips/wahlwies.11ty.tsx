@@ -159,10 +159,10 @@ export default ({ permalink }: Data) => {
         price: 90
       },
       {
-        name: "Tarif Standard Seconde",
+        name: "Tarif Standard Première",
         start: "Paris Est",
         end: "Strasbourg",
-        price: 53.53
+        price: 57.04
       }
     ]
   const fridayTrains =
