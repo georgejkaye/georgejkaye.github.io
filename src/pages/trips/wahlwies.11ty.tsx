@@ -318,7 +318,7 @@ export default ({ permalink }: Data) => {
       <h3>Strasbourg to Wahlwies</h3>
       <div>Book via DB Navigator app.</div>
       <ServiceList services={fridayTrains} />
-      <TicketList tickets={fridayTickets} advice={"Book via teh DB Navigator app."} />
+      <TicketList tickets={fridayTickets} advice={"Book via the DB Navigator app."} />
       <h2>Monday 06 July</h2>
       <h3>Wahlwies to Zurich</h3>
       <ServiceList services={mondayTrains} />
