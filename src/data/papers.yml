@@ -1,3 +1,14 @@
+- title: "A Complete Theory of Sequential Digital Circuits: Denotational, Operational and Algebraic Semantics"
+  details: Logical Methods in Computer Science, Volume 22, Issue 2
+  key: lmcs-circuits
+  authors:
+    - name: dan
+    - name: me
+    - name: david
+  publication:
+    name: lmcs-circuits
+    doi: 10.46298/lmcs-22(2:34)2026
+  abstract: "Digital circuits, despite having been studied for nearly a century and used at scale for about half that time, have until recently evaded a fully compositional theoretical in which arbitrary circuits may be freely composed together without consulting their internals. Recent work remedied this theoretical shortcoming by showing how digital circuits can be presented compositionally as morphisms in a freely generated symmetric traced category. However, this was done informally; in this paper we refine and expand the previous work in several ways, culminating in the presentation of three sound and complete semantics for digital circuits: denotational, operational and algebraic. For the denotational semantics, we establish a correspondence between stream functions with certain properties and circuits constructed syntactically. For the operational semantics, we present the reductions required to model how a circuit processes a value, including the addition of a new reduction for eliminating non-delay-guarded feedback; this leads to an adequate notion of observational equivalence for digital circuits. Finally, we define a new family of equations for translating circuits into bisimilar circuits of a 'normal form', leading to a complete algebraic semantics for sequential circuits."
 - title: Rewriting Modulo Traced Comonoid Structure
   details: Logical Methods in Computer Science, Volume 22, Issue 1
   key: rewriting-traced-comonoid-lmcs
@@ -30,28 +41,6 @@
     id: 2302.09631
     date: "2023-02-19"
   abstract: We adapt the existing work on rewriting string diagrams using hypergraphs in order to apply it to settings with a traced comonoid structure, which happens to be where we model digital circuits.
-- title: A compositional theory of digital circuits
-  details: Arxiv preprint
-  authors:
-    - name: dan
-    - name: me
-    - name: david
-  key: compositional-circuits
-  arxiv:
-    id: 2201.10456
-    date: "2023-02-13"
-  abstract: We model digital circuits with delay and feedback as morphisms in a symmetric traced monoidal category, formalise their semantics as stream functions with certain properties, and present equational theory for reasoning with them.
-- title: Rewriting Graphically With Symmetric Traced Monoidal Categories
-  details: Arxiv preprint
-  authors:
-    - name: me
-    - text: with
-      name: dan
-  key: rewriting
-  arxiv:
-    id: 2010.06319
-    date: "2021-03-19"
-  abstract: We examine a variant of hypergraphs with the aim of creating a sound and complete graphical language for symmetric traced monoidal categories.
 - title: A visualiser for linear lambda-terms as rooted 3-valent maps
   details: Masters dissertation (2019), University of Birmingham
   key: masters
