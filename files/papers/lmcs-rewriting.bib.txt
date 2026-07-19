@@ -1,0 +1,13 @@
+@article{ghica2026rewriting
+    title      = {Rewriting Modulo Traced Comonoid Structure},
+    author     = {Dan R. Ghica and George Kaye},
+    url        = {https://lmcs.episciences.org/12969},
+    doi        = {10.46298/lmcs-22(1:2)2026},
+    journal    = {Logical Methods in Computer Science},
+    issn       = {1860-5974},
+    volume     = {Volume 22, Issue 1},
+    eid        = 2,
+    year       = {2026},
+    month      = {Jan},
+    keywords   = {Logic in Computer Science, Category Theory},
+}
