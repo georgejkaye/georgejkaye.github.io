@@ -26,7 +26,7 @@
     "lodash.chunk": "^4.2.0",
     "markdown-it": "^14.2.0",
     "markdown-it-attrs": "^4.1.4",
-    "moment": "^2.29.4",
+    "moment": "^2.31.0",
     "outdent": "^0.8.0",
     "postcss": "^8.5.18",
     "prettier": "^3.2.4",
